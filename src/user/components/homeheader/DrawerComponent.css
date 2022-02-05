@@ -1,0 +1,114 @@
+#header-menuicon{
+    margin-right:10px;
+    margin-left:220px;
+    width: 60px;
+    height:180px;
+    display:flex;
+   
+}
+#header-search{
+    margin-top:800px;
+    width: 250px;
+}
+#header-closeicon{
+    width:40px;
+    height:150px;
+    display:flex;
+    color:#6BDCFC;
+    margin-left:200px;
+    margin-top: -35px;
+}
+
+@media(max-width:960px) {
+    #header-menuicon{
+        margin-left:560px;
+        width:70px;
+        height:160px;
+        display:flex;
+       
+    }
+    #header-search{
+        margin-top:650px;
+        width: 730px;
+        height: 50px;
+    }
+    .logo-heading{
+        font-family: 'Courgette', cursive;
+        color:black;
+           font-size: 66px;
+           font-weight:400;
+           margin-top: 5%;
+           margin-left: 0px;
+       } 
+       #header-closeicon{
+        width:80px;
+        height:150px;
+        display:flex;
+        color:#6BDCFC;
+        margin-left:500px;
+        margin-top: -25px;
+    }
+}
+@media(max-width:767px) {
+    #header-menuicon{
+        margin-left:180px;
+        height:200px;
+        display:flex;
+       
+    }
+    #header-search{
+        margin-top:320px;
+        width: 270px;
+        height: 30px;
+
+    }
+    .logo-heading{
+        font-family: 'Courgette', cursive;
+        color:black;
+           font-size: 40px;
+           font-weight:400;
+           margin-top: 5%;
+           margin-left: 0px;
+       } 
+       #header-closeicon{
+        width:40px;
+        height:150px;
+        display:flex;
+        color:#6BDCFC;
+        margin-left:180px;
+        margin-top: -35px;
+    }
+}
+    
+@media (max-width:480px) {
+    #header-menuicon{
+        margin-left:200px;
+        height:180px;
+        display:flex;
+        width:60px;
+    }
+    #header-search{
+        margin-top:450px;
+        width: 340px;
+        height: 30px;
+
+    }
+    .logo-heading{
+        font-family: 'Courgette', cursive;
+        color:black;
+           font-size: 36px;
+           font-weight:400;
+           margin-top: 5%;
+           margin-left: 0px;
+       } 
+       #header-closeicon{
+        width:40px;
+        height:150px;
+        display:flex;
+        color:#6BDCFC;
+        margin-left:200px;
+        margin-top: -35px;
+    }
+}
+
+    

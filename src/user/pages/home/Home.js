@@ -7,8 +7,8 @@ function Home() {
   return(
     <div>
       <Homeheader/>
-      <h1>Home</h1>
-      <Footer />
+      {/* <h1>Home</h1>
+      <Footer /> */}
   </div>
   );
 

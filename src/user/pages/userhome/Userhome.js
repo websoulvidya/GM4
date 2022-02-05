@@ -10,7 +10,7 @@ function Userhome() {
   return(
     <div>
       <Userheader/>
-      <h1>Home</h1>
+      {/* <h1>Home</h1>
       <Link to="/tournament" >Tournament</Link>
       <Link to="/scrims" >Scrims</Link>
       <Link to="/dailymatch" >Dailymatch</Link>
@@ -18,7 +18,7 @@ function Userhome() {
 
 
 
-      <Footer />
+      <Footer /> */}
   </div>
   );
 
