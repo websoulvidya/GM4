@@ -43,7 +43,7 @@ Link:hover{
 }
 
 
-.sub-links{
+/* .sub-links{
     font-size: 18px;
     color:rgb(102 98 98);
     font-weight: 600;
@@ -55,7 +55,7 @@ Link:hover{
 }
 .sub-links:hover{
     background-color:gainsboro;
-}
+} */
 
 @media (min-width:1025px) and (max-width: 1280px)
 {
