@@ -144,23 +144,23 @@ export default function Homeheader() {
 
                     {/* searchbar portion ends */}
 
-                        <Typography class="header-link" >Login</Typography>
+                        <Typography class="header-link" >LOGIN</Typography>
 
                         <Typography class="header-link"
                         aria-controls="basic-menu"
                         aria-haspopup="true"
                         aria-expanded={openMenu ? 'true':undefined}
-                        onClick={handleClick}
-                        >More
+                        onMouseOver={handleClick}
+                        >MORE
                         </Typography>
-                        <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} sx={{width:"360px"}}>
-                                    <MenuItem onClick={handleClose} class="sub-link"><Link to="/about" style={{textDecoration:"none"}}>About US</Link></MenuItem>
-                                    <MenuItem onClick={handleClose}><Link to="/ourteam" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
-                                    <MenuItem onClick={handleClose}><Link to="/careers" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
-                                    <MenuItem onClick={handleClose}><Link to="/advertise" style={{textDecoration:"none"}}>Advertise</Link></MenuItem>
-                                    <MenuItem onClick={handleClose}><Link to="/blog" style={{textDecoration:"none"}}>Blog</Link></MenuItem>
-                                    <MenuItem onClick={handleClose}><Link to="/orghome"style={{textDecoration:"none"}}>Organiser</Link></MenuItem>
-                                    <MenuItem onClick={handleClose}><Link to="/userhome" style={{textDecoration:"none"}}>Users</Link></MenuItem>
+                        <Menu id="basic-menu" class="MuiMenu-root" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose}>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/about" class="header-sublink" style={{textDecoration:"none"}}>About US</Link></MenuItem>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/ourteam" class="header-sublink" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/careers" class="header-sublink" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/advertise" class="header-sublink" style={{textDecoration:"none"}}>Advertise</Link></MenuItem>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/blog" class="header-sublink" style={{textDecoration:"none"}}>Blog</Link></MenuItem>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/orghome" class="header-sublink" style={{textDecoration:"none"}}>Organiser</Link></MenuItem>
+                                    <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/userhome" class="header-sublink" style={{textDecoration:"none"}}>Users</Link></MenuItem>
 
                                 </Menu>
 

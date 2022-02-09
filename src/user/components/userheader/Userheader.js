@@ -137,25 +137,25 @@ function Userheader() {
            
 
 
-            <Link to="/userhome" style={{textDecoration:"none"}} ><Typography class="header-links">Home</Typography></Link>
+            <Link to="/userhome" style={{textDecoration:"none"}} ><Typography class="header-links">HOME</Typography></Link>
         
             <Link to="/useridp" style={{textDecoration:"none"}}><Typography class="header-links">IDP</Typography></Link>
           
-            <Link to="/notification"style={{textDecoration:"none"}} ><Typography class="header-links">Notification</Typography></Link>
+            <Link to="/notification"style={{textDecoration:"none"}} ><Typography class="header-links">NOTIFICATION</Typography></Link>
           
 
               <Typography class="header-links"
                   aria-controls="basic-menu"
                   aria-haspopup="true"
                   aria-expanded={openMenu ? 'true':undefined}
-                  onClick={handleClick}
-                  >Username
+                  onMouseOver={handleClick}
+                  >USERNAME
               </Typography>
-              <Menu  id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} sx={{color:"rgb(102 98 98)",fontWeight:"700",width:"260px"}}>
-                                    <MenuItem class="sub-links" onClick={handleClose} style={{color:"rgb(102 98 98)"}}><Link to="/profile" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
-                                    <MenuItem class="sub-links" onClick={handleClose}><Link to="/changepass" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
-                                    <MenuItem class="sub-links" onClick={handleClose}><Link to="/mybookings" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
-                                    <MenuItem class="sub-links" onClick={handleClose}><Link to="/logout" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+              <Menu  id="basic-menu" class="MuiMenu-root" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} >
+                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/profile" class="header-sublink" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
+                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/changepass" class="header-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
+                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/mybookings" class="header-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
+                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/logout" class="header-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
                                     
 
                                 </Menu>

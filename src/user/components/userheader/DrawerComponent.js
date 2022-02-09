@@ -101,7 +101,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/userhome" style={{textDecoration:"none"}} ><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>Home</Typography></Link></ListItemText>
+                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/userhome" style={{textDecoration:"none"}} ><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>HOME</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
@@ -111,7 +111,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                 </ListItem>
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/notification"style={{textDecoration:"none"}} ><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>Notification</Typography></Link></ListItemText>
+                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/notification"style={{textDecoration:"none"}} ><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>NOTIFICATION</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 
@@ -121,7 +121,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                             aria-haspopup="true"
                             aria-expanded={openMenu ? 'true':undefined}
                             onClick={handleClick}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>
-                                Username</Typography>
+                                USERNAME</Typography>
                         </ListItemText>
                         <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} style={{width:"80%",marginTop:"450px"}}>
                             <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/profile" style={{textDecoration:"none"}}>Profile</Link></MenuItem>

@@ -110,7 +110,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
             <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px"}}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>Login</Typography></ListItemText>
+                    <ListItemText style={{margin:"10px 0 10px 10px"}}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>LOGIN</Typography></ListItemText>
                 </ListItemIcon>
             </ListItem>
 
@@ -120,7 +120,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                         aria-haspopup="true"
                         aria-expanded={openMenu ? 'true':undefined}
                         onClick={handleClick}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>
-                            More</Typography>
+                            MORE</Typography>
                     </ListItemText>
                     <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} style={{width:"80%",marginTop:"270px"}}>
                         <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/about" style={{textDecoration:"none"}}>About US</Link></MenuItem>
@@ -137,7 +137,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             </ListItem>
 
             <Search id="header-search">
-                <SearchIconWrapper>
+                <SearchIconWrapper sx={{}}>
                 <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                 </SearchIconWrapper>
                 <StyledInputBase 
