@@ -1,0 +1,351 @@
+body{
+    margin:auto;
+    font-family:open sans;
+    overflow-x: hidden;
+    
+}
+.circles{
+    background-repeat:no-repeat;
+    margin-top: -30px;
+    background-size: cover;
+}
+.regheader:before {
+     content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 64px;
+        top: 52px;
+        opacity: 0.5;
+        margin-top: 40px;
+}
+.regheader{
+    background-color: #6bdcfc;
+    padding: 30px;
+    color: white;
+    text-align: left;
+    padding-left: 7%;
+}
+.joinhead{
+    text-align: left;
+}
+.openbtn{
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: -4.5px;
+    margin-right: 5%;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+}
+.openbtn:hover{
+    cursor: pointer;
+}
+.slotlistbtn {
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+}
+.slotlistbtn:hover{
+    cursor: pointer;
+}
+.closebtn{
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+}
+.closebtn:hover{
+    cursor: pointer;
+}
+.uk-input{
+    border-radius: 5px !important;
+}
+.uk-input:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-input:focus{
+    border: 1px solid #6bdcfc !important;
+}
+.regform{
+    margin-left: 22%;
+    border: 1px solid #6bdcfc;
+    padding: 20px;
+    width:50%;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #ffff;
+}
+​
+/* #circle1 {
+    position: absolute;
+    width: 80%;
+    height: 180px;
+    margin-left: -40%;
+    top: 80%;
+    shape-outside: circle();
+    clip-path: circle();
+    background: red;
+}
+#circle2 {
+    position: absolute;
+    width: 80%;
+    height: 180px;
+    top: 70%;
+    left: 60%;
+    shape-outside: circle();
+    clip-path: circle();
+    background: orange;
+}
+#circle3 {
+    position: absolute;
+    width: 2%;
+    height: 90px;
+    top: 36%;
+    left: 200px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: green;
+}
+#circle4 {
+    position: absolute;
+    width: 2%;
+    height: 90px;
+    right: 80px;
+    bottom: 300px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: blue;
+}
+#circle5 {
+    position: absolute;
+    width: 10%;
+    height: 90px;
+    bottom: 200px;
+    left: 90px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: maroon;
+}
+#circle6 {
+    position: absolute;
+    width: 10%;
+    height: 90px;
+    bottom: 200px;
+    right: 130px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: mediumvioletred;
+}
+#circle7 {
+    position: absolute;
+    width: 10%;
+    height: 90px;
+    bottom: 50px;
+    right: 200px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: #ccff66;
+} */
+​
+@media only screen and (max-device-width : 640px) {
+    .openbtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .slotlistbtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .closebtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .regform{
+        width: 60%;
+        margin-left: 15%;
+    } 
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 60px;
+        top: 70px;
+        opacity: 0.5;
+     
+        
+        
+    } 
+    .regheader{
+        padding-left: 20%;
+    }
+    /* .circles{
+        background-image: none;
+    } */
+}
+​
+@media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .regform{
+        width: 65%;
+        margin-left: 15%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 120px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+    .regheader{
+        padding-left: 20%;
+    }
+    /* .circles{
+        background-image: none;
+    } */
+}
+​
+@media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    #circle2{
+        width: 30%;
+        margin-left: 10%;
+        max-width: 100%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 130px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+    .regheader{
+        padding-left: 15%;
+    }
+    .circles{
+        background-image: none;
+    }
+    .smallcircles{
+        background-repeat:no-repeat;
+    
+        background-size: cover;
+    }
+}
+​
+@media only screen and (min-device-width: 1101px) and (max-device-width : 1300px){
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+​
+@media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
+    .regform{
+        width: 40%;
+        margin-left: 27%;
+    }
+}
+​
+@media only screen and (min-device-width : 2400px) and (max-width : 2800px){
+    .regform{
+        width: 35%;
+        margin-left: 30%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .circles{
+        background-repeat:no-repeat;
+        
+        background-size: 2560px 1200px;
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 130px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+}

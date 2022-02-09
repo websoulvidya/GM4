@@ -18,6 +18,7 @@ import Careers from '../user/pages/more/careers/Careers';
 import Ourteam from '../user/pages/more/ourteam/Ourteam';
 
 
+
 //usermodule page links
 
 import Userheader from '../user/components/userheader/Userheader';
@@ -51,6 +52,7 @@ import Addtournament from '../organisation/pages/addtournaments/Addtournament';
 import Addscrims from "../organisation/pages/addscrims/Addscrims";
 import Adddailymatch from "../organisation/pages/adddailymatches/Adddailymatches";
 import Addopenrooms from "../organisation/pages/addopenrooms/Addopenrooms";
+import Tournamentlist from '../organisation/pages/addtournaments/Tournamentlist'
 
 
 
@@ -118,6 +120,7 @@ export default function Navigate() {
     <Route path="/addscrims" element={<Addscrims />}/>
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>
+    <Route path="/Tournamentlist" element={<Tournamentlist />}/>
 
 
 
