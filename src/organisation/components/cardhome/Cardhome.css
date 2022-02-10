@@ -1,0 +1,119 @@
+.card_home_main{
+    margin-left:-150px;
+    margin-top:-90px;
+}
+@media(max-width:640px){
+    .card_home_main{
+       padding-top: 830%;
+       margin-left: 30px;
+       margin-left:-185px ;
+      } 
+}
+#card_first{
+    width:300px;
+    height:200px;
+    
+    
+}
+#card_first:hover{
+    background-color: #6BDCFC;
+    }
+@media(max-width:640px){
+    #card_first{
+       
+        margin-left: 20px;
+    }
+}
+#card_second{
+    width:300px;
+    height:200px;
+    
+    
+}
+#card_second:hover{
+    background-color: #6BDCFC;
+    }
+@media(max-width:640px){
+    #card_second{
+        margin-top: -100px;
+        margin-top: 120px;
+        
+    }
+}
+#card_third{
+    width:300px;
+    height:200px;
+    
+    
+}
+#card_third:hover{
+    background-color: #6BDCFC;
+    }
+@media(max-width:640px){
+    #card_third{
+        margin-left: 20px;
+        
+    }
+}
+#card_four{
+    width:300px;
+    height:200px;
+    
+    
+}
+#card_four:hover{
+    background-color: #6BDCFC;
+    }
+@media(max-width:640px){
+    #card_four{
+        margin-top: -100px;
+        margin-top: 120px;
+         
+        
+        
+    }
+}
+
+
+#card_first:hover{
+background-color: #6BDCFC;
+}
+#addtournament_first_heading{
+    color:gray ;
+    font-weight: 400;
+    margin-top: 40px;
+}
+#addtournament_first_heading:hover{
+    color:#6BDCFC ;
+}
+.button_main_card{
+    width:250px;
+    height: 200px;
+    background-color: white;
+    border-color: none;
+    border-color: #6BDCFC;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-bottom-width: thick;
+
+    
+}
+#card_second_main{
+    margin-top:100px;
+}
+@media(max-width:640px){
+    #card_second_main{
+        padding-top: 10%;
+    }
+    #card_first_main{
+        margin-top: 100%;
+    }
+}
+@media only screen and (min-device-width: 527px) and (max-device-width : 1000px){
+    .card_home_main{
+        
+    } 
+    #card_first_main{
+    
+    }
+}
