@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.home-main-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+/* first slider block starts*/
+
+.userslider-images{
+    height: 580px;
+    width:100%;
+}
+.userslider-image{
+    width:85%;
+    height: 580px;
+}
+.user-arrow-svg{
+    color:#ffff ;
+    width:40px;
+    height:40px;
+    margin: 20px 10px 20px 10px;
+    background-color:#6BDCFC;
+    font-size: 2rem;
+    opacity: .85;
+    border: 1px solid #6BDCFC;
+    border-radius: 50%;
+    padding:5px;
+}
+.user-arrow-svg:hover{
+    background-color:#6BDCFC;
+    color:rgb(102 98 98);
+
+}
+
+/* first slider block ends*/

@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import {AppBar,Toolbar,Typography,useMediaQuery,useTheme} from '@mui/material';
 import Box from '@mui/material/Box';
 
+import logo from '../../assets/logo.jpeg';
+
+
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -54,7 +57,7 @@ export default function Homeheader() {
         pointerEvents: 'none',
         display: 'flex',
         alignItems: 'center',
-        marginLeft:"90%;"
+        // marginLeft:"90%;"
         //   justifyContent: 'right',
         }));
 
@@ -69,7 +72,7 @@ export default function Homeheader() {
             height:"10%",
             color:"#fffff",
             [theme.breakpoints.up('md')]: {
-            width: '64ch',
+            // width: '64ch',
             //   '&:focus': {
             //     width: '20ch',
             //   },
@@ -104,12 +107,13 @@ export default function Homeheader() {
 
   return (
       <>
-    <AppBar elevation={0} position="static" id="App">
+    <AppBar  position="static" id="App">
         <Toolbar>
             <Box sx={{ display:"flex",justifyContent:"space-between",width:"40%",alignItems:"center" }} component="div">
 
                 <Box sx={{display:"flex"}}>
-                        <h1 class="logo-heading">GM4</h1>
+                        {/* <h1 class="logo-heading">GM4</h1> */}
+                        <img src={logo}  alt="" style={{marginLeft:"20px"}}/>
                 </Box>
 
                 <Link to="/" ></Link>
@@ -133,10 +137,10 @@ export default function Homeheader() {
                     {/* searchbar portion */}
 
                     <Search id="header-searchbar">
-                            <SearchIconWrapper >
-                            <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
+                            <SearchIconWrapper id="header-searchicon" >
+                            <SearchIcon  sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                             </SearchIconWrapper>
-                            <StyledInputBase 
+                            <StyledInputBase id="search-content"
                             placeholder="Search…"
                             inputProps={{ 'aria-label': 'search' }}
                             />
@@ -150,7 +154,7 @@ export default function Homeheader() {
                         aria-controls="basic-menu"
                         aria-haspopup="true"
                         aria-expanded={openMenu ? 'true':undefined}
-                        onMouseOver={handleClick}
+                        onClick={handleClick}
                         >MORE
                         </Typography>
                         <Menu id="basic-menu" class="MuiMenu-root" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose}>
@@ -166,7 +170,7 @@ export default function Homeheader() {
 
                     </Box>
 
-                ) };
+                ) }
                 
             
 

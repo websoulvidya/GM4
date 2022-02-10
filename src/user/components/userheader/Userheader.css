@@ -20,7 +20,14 @@
     background-color:#ffffff;
     color: #ffff;
 }
-
+.userlogo-heading{
+    font-family: 'Courgette', cursive;
+    color:black;
+       font-size: 36px;
+       font-weight:400;
+       margin-top: 5%;
+       margin-left: 0px;
+   } 
 Link:hover{
     text-decoration:none;
 }
@@ -41,61 +48,222 @@ Link:hover{
     color:#6BDCFC;
     text-decoration: none;
 }
-
-
-/* .sub-links{
-    font-size: 18px;
-    color:rgb(102 98 98);
-    font-weight: 600;
-    display: flex;
-    margin-left: 0px;
-    align-items: center;
-    margin-top: 15px;
-    text-decoration: none;
-}
-.sub-links:hover{
-    background-color:gainsboro;
-} */
-
-@media (min-width:1025px) and (max-width: 1280px)
-{
-    /* #App{
-        
-        height: 80px;
-        
-    } */
-    .header-links{
-        font-size: 18px;
-        color:rgb(102 98 98);
-        font-weight: 700;
-        display: flex;
-        margin-left: 30px;
-        align-items: center;
-        margin-top: 12px;
-        text-decoration: none;
+@media(max-width: 1500px) {
+    #App{
+        height: 60px;
+        width:100%;
     }
     #userheader-searchbar{
-        margin-left: 90px;
-        width:60%;
+        margin-left: 140px;
+        width:70ch;
+        height:30px;
+        margin-top: 15px;
     }
-}
-@media (min-width:960px) and (max-width: 1024px){
-    #userheader-searchbar{
-        margin-left: 90px;
-        width:30%;
-    }
-    .header-links{
-        font-size: 18px;
-        color:rgb(102 98 98);
-        font-weight: 700;
-        display: flex;
-        margin-left: 30px;
-        align-items: center;
-        margin-top: 12px;
-        text-decoration: none;
-    }
-}
     
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-6px;
+        margin-right: 462px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 18px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 1400px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 120px;
+        width:66ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-left: -12px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 18px;
+        margin-left: 22px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 18px;
+        color:rgb(102 98 98) !important;
+    }
+    
+
+} 
+@media(max-width: 1300px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 120px;
+        width:58ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 290px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 18px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 1200px) {
+    #userheader-searchbar{
+        margin-left: 90px;
+        width:54ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 290px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 1024px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 50px;
+        width:44ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 290px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 960px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    .logo-heading{
+        font-family: 'Courgette', cursive;
+        color:black;
+           font-size: 26px;
+           font-weight:400;
+           margin-top: 5%;
+           margin-left: 0px;
+       } 
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:44ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 55px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 270px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
 
     
 

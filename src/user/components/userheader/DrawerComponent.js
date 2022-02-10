@@ -47,7 +47,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
         pointerEvents: 'none',
         display: 'flex',
         alignItems: 'center',
-        marginLeft:"90%;"
+        // marginLeft:"90%;"
         //   justifyContent: 'right',
         }));
 
@@ -62,7 +62,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             height:"20%",
             color:"#fffff",
             [theme.breakpoints.up('md')]: {
-            width: '24ch',
+            // width: '24ch',
             //   '&:focus': {
             //     width: '20ch',
             //   },
@@ -101,44 +101,48 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/userhome" style={{textDecoration:"none"}} ><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>HOME</Typography></Link></ListItemText>
+                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/userhome" style={{textDecoration:"none"}} >
+                            <Typography class="header-link">HOME</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/useridp" style={{textDecoration:"none"}}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>IDP</Typography></Link></ListItemText>
+                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/useridp" style={{textDecoration:"none"}}>
+                            <Typography class="header-link">IDP</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/notification"style={{textDecoration:"none"}} ><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>NOTIFICATION</Typography></Link></ListItemText>
+                        <ListItemText style={{margin:"10px 0 10px 10px"}}>
+                            <Link to="/notification"style={{textDecoration:"none"}} >
+                                <Typography class="header-link">NOTIFICATION</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 
                 <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
-                        <ListItemText style={{margin:"10px 0 10px 10px",fontSize:"34px",fontFamily:"Roboto,Arial, Helvetica, sans-serif",fontWeight:"600",color:"white"}} aria-controls="basic-menu"
+                        <ListItemText style={{margin:"10px 0 10px 10px"}} aria-controls="basic-menu"
                             aria-haspopup="true"
                             aria-expanded={openMenu ? 'true':undefined}
-                            onClick={handleClick}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>
+                            onClick={handleClick}><Typography class="header-link">
                                 USERNAME</Typography>
                         </ListItemText>
                         <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} style={{width:"80%",marginTop:"450px"}}>
-                            <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/profile" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
-                            <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/changepass" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
-                            <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/mybookings" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
-                            <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/logout" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/profile" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/changepass" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/mybookings" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/logout" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
 
                         </Menu>
                                         
                     </ListItemIcon>
                 </ListItem>
 
-                <Search id="header-search">
-                    <SearchIconWrapper>
+                <Search id="header-searchbar">
+                    <SearchIconWrapper id="header-searchicon">
                     <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                     </SearchIconWrapper>
-                    <StyledInputBase 
+                    <StyledInputBase id="search-content"
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
                     />

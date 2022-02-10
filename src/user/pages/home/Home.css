@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.home-main-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+/* first slider block starts*/
+
+/* .uk-circle-nav>*>* {
+   
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    background: 0 0;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #6BDCFC;
+    transition: .2s ease-in-out;
+    transition-property: background-color,border-color;
+} */
+/* .uk-dotnav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: -12px;
+}
+.uk-dotnav>.uk-active>* {
+    background-color: rgba(102,102,102,.6);
+    border-color: transparent;
+} */
+.slider-images{
+    height: 580px;
+    width:100%;
+}
+.slider-image{
+    width:85%;
+    height: 580px;
+}
+.arrow-svg{
+    color:#ffff ;
+    width:40px;
+    height:40px;
+    margin: 20px 10px 20px 10px;
+    background-color:#6BDCFC;
+    font-size: 2rem;
+    opacity: .85;
+    border: 1px solid #6BDCFC;
+    border-radius: 50%;
+    padding:5px;
+}
+.arrow-svg:hover{
+    background-color:#6BDCFC;
+    color:rgb(102 98 98);
+
+}
+
+/* first slider block ends*/
+
+@media (min-width: 361px) and (max-width: 399px) {
+    /* first slider block starts*/
+.slider-images{
+    height: 400px;
+    width:100%;
+}
+.slider-image{
+    width:70%;
+    height: 180px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+.arrow-svg{
+    color:#ffff ;
+    width:40px;
+    height:20px;
+    margin: -220px -10px 10px -10px;
+    background-color:#6BDCFC;
+    font-size: 4rem;
+    opacity: .85;
+    border: 1px solid #6BDCFC;
+    border-radius: 50%;
+    padding:2px;
+    position:relative;
+}
+.arrow-svg:hover{
+    background-color:#6BDCFC;
+    color:rgb(102 98 98);
+
+}
+
+/* first slider block ends*/
+}
+
+@media (min-width: 300px) and (max-width: 360px) {
+
+/* first slider block starts*/
+.slider-images{
+    height: 400px;
+    width:100%;
+}
+.slider-image{
+    width:70%;
+    height: 180px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+.arrow-svg{
+    color:#ffff ;
+    width:40px;
+    height:20px;
+    margin: -220px -10px 10px -10px;
+    background-color:#6BDCFC;
+    font-size: 4rem;
+    opacity: .85;
+    border: 1px solid #6BDCFC;
+    border-radius: 50%;
+    padding:2px;
+    position:relative;
+}
+.arrow-svg:hover{
+    background-color:#6BDCFC;
+    color:rgb(102 98 98);
+
+}
+
+/* first slider block ends*/
+}
+

@@ -65,7 +65,7 @@ function Userheader() {
         height:"20%",
         color:"#fffff",
         [theme.breakpoints.up('sm')]: {
-          width: '64ch',
+          // width: '64ch',
         //   '&:focus': {
         //     width: '20ch',
         //   },
@@ -104,7 +104,7 @@ function Userheader() {
       <Toolbar>
         <Box sx={{ display:"flex" ,justifyContent:"space-between",width:"40%",alignItems:"center"}} component="div">
           <Box sx={{display:"flex"}}>
-                        <h1 class="logo-heading">GM4</h1>
+                        <h1 class="userlogo-heading">GM4</h1>
           </Box>
 
            
@@ -123,10 +123,10 @@ function Userheader() {
             {/* searchbar portion */}
 
            <Search id="userheader-searchbar" >
-                        <SearchIconWrapper >
-                        <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
+                        <SearchIconWrapper id="userheader-searchicon">
+                        <SearchIcon  sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                         </SearchIconWrapper>
-                        <StyledInputBase 
+                        <StyledInputBase id="usersearch-content"
                         placeholder="Search…"
                         inputProps={{ 'aria-label': 'search' }}
                         />
@@ -148,14 +148,14 @@ function Userheader() {
                   aria-controls="basic-menu"
                   aria-haspopup="true"
                   aria-expanded={openMenu ? 'true':undefined}
-                  onMouseOver={handleClick}
+                  onClick={handleClick}
                   >USERNAME
               </Typography>
               <Menu  id="basic-menu" class="MuiMenu-root" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} >
-                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/profile" class="header-sublink" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
-                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/changepass" class="header-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
-                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/mybookings" class="header-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
-                                    <MenuItem  id="home-headermenu" onClick={handleClose}><Link to="/logout" class="header-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+                                    <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/profile" class="header-sublink" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
+                                    <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/changepass" class="header-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
+                                    <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/mybookings" class="header-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
+                                    <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/logout" class="header-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
                                     
 
                                 </Menu>

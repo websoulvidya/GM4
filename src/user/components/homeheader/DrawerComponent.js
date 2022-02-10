@@ -7,6 +7,10 @@ import { styled, alpha } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import logo from '../../assets/logo.jpeg';
+
+
 import "./DrawerComponent.css";
 
 
@@ -47,7 +51,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
         pointerEvents: 'none',
         display: 'flex',
         alignItems: 'center',
-        marginLeft:"90%;"
+        // marginLeft:"90%;"
         //   justifyContent: 'right',
         }));
 
@@ -62,7 +66,6 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             height:"20%",
             color:"#fffff",
             [theme.breakpoints.up('md')]: {
-            width: '24ch',
             //   '&:focus': {
             //     width: '20ch',
             //   },
@@ -81,6 +84,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
     const handleClose=()=>{
         setAnchorEl(null);
+        
     };
     // dropdown code ends
 
@@ -100,8 +104,8 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                 <ListItemIcon>
                     <ListItemText>
                         <Box sx={{display:"flex",marginTop:"5px",marginLeft:"15px",backgroundColor:"#ffff"}}>
-                        {/* <img src={logo} alt="logo" /> */}
-                        <h1 class="logo-heading">GM4</h1>
+                        <img src={logo}  class="logo-heading" alt="logo" />
+                        {/* <h1 class="logo-heading">GM4</h1> */}
                         <CloseIcon id="header-closeicon"/>
                         </Box>
                     </ListItemText>
@@ -110,39 +114,40 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
             <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px"}}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>LOGIN</Typography></ListItemText>
+                    <ListItemText style={{margin:"10px 0 10px 10px"}}><Typography class="header-link">LOGIN</Typography></ListItemText>
                 </ListItemIcon>
             </ListItem>
 
             <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(false)}>
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px",fontSize:"34px",fontFamily:"Roboto,Arial, Helvetica, sans-serif",fontWeight:"600",color:"white"}} aria-controls="basic-menu"
+                    <ListItemText style={{margin:"10px 0 10px 10px"}} aria-controls="basic-menu"
                         aria-haspopup="true"
                         aria-expanded={openMenu ? 'true':undefined}
-                        onClick={handleClick}><Typography style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}>
+                        onClick={handleClick} ><Typography class="header-link">
                             MORE</Typography>
                     </ListItemText>
-                    <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} style={{width:"80%",marginTop:"270px"}}>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/about" style={{textDecoration:"none"}}>About US</Link></MenuItem>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/ourteam" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/careers" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/advertise" style={{textDecoration:"none"}}>Advertise</Link></MenuItem>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/blog" style={{textDecoration:"none"}}>Blog</Link></MenuItem>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/orghome"style={{textDecoration:"none"}}>Organiser</Link></MenuItem>
-                        <MenuItem onClick={handleClose} style={{fontSize:"30px",fontFamily:"Open Sans",fontWeight:"600",color:"rgb(102 98 98)"}}><Link to="/userhome" style={{textDecoration:"none"}}>Users</Link></MenuItem>
+                    <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose}>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/about" style={{textDecoration:"none"}}>About US</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/ourteam" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/careers" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/advertise" style={{textDecoration:"none"}}>Advertise</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/blog" style={{textDecoration:"none"}}>Blog</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/orghome"style={{textDecoration:"none"}}>Organiser</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/userhome" style={{textDecoration:"none"}}>Users</Link></MenuItem>
 
                     </Menu>
                                     
                 </ListItemIcon>
             </ListItem>
 
-            <Search id="header-search">
-                <SearchIconWrapper sx={{}}>
+            <Search  id="header-searchbar">
+                <SearchIconWrapper id="header-searchicon">
                 <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                 </SearchIconWrapper>
-                <StyledInputBase 
+                <StyledInputBase id="search-content"
                 placeholder="Search…"
                 inputProps={{ 'aria-label': 'search' }}
+                endIcon={<KeyboardArrowDownIcon sx={{width:"30px",color:"red",marginLeft:"-30px"}}/>}
                 />
             </Search>
 
