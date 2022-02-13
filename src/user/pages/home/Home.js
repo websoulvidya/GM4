@@ -1,6 +1,12 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Home.css';
+
 import {Link} from 'react-router-dom';
+import {Grid,Box,Button} from '@mui/material';
+
+import Aos from  'aos';
+import "aos/dist/aos.css";
+
 
 import Homeheader from '../../components/homeheader/Homeheader';
 import Footer from '../../components/footer/Footer';
@@ -9,17 +15,28 @@ import img1 from '../../assets/homepage/homeslider1.jpg'
 import img2 from '../../assets/homepage/homeslider.jpg'
 import img3 from '../../assets/homepage/homeslider2.jpg'
 import img4 from '../../assets/homepage/images2.jpg'
-import ScrimImg from "../../assets/Tournament/team.jpeg";
+import TournamentImg from "../../assets/homepage/image3.jpg";
+import ScrimsImg from "../../assets/homepage/image4.jpg";
+import DailymatchImg from "../../assets/homepage/image1.jpg";
+import OpenImg from "../../assets/homepage/image4.jpg";
+import Banner from "../../assets/homepage/banner3.jpg";
 
 
 
 
 
 function Home() {
+
+    // funcion for aos
+    useEffect(() => {
+      Aos.init({duration:1000});
+  },[]);
+
   return(
     <div>
       <Homeheader/>
           <div className="home-main-wrapper">
+             
 
               {/* first slider block starts*/}
               <div uk-slider="center:true,autoplay:true,autoplay-interval: 100">
@@ -74,215 +91,106 @@ function Home() {
 
               </div>
 
-              {/* first slider block ends */}
+        {/* first slider block ends */}
 
 
-              {/* home card section starts */}
+        {/* home card section starts */}
 
-        <div className='scrims-card-list'>
-          <div class="uk-child-width-1-2@l uk-child-width-1-3@m uk-grid uk-text-center main-card" uk-grid>
-              
+        <div className='home-card-list'>
+              <div className='home_headerclip'>
+                <h1>Match Category</h1>
+              </div>
+            <div class="home-card-main">
+                <Grid container spacing={{ xs: 2, }} columns={{ xs: 4, sm: 8, md: 12 }} >
 
-          {/* first card  */}
-            <div className='scrims-carditems'>
-              <div class="scrims-card">
-                <div className='scrims-main-titile'>
-                  <h3>Scrims name</h3>
-                </div>
-                <div className='scrims-team-img'>
-                  <img src={ScrimImg} />
-                </div>
-                <div className='scrims-rule'>
-                  <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
-    
-                </div>
-               
-                <div className='scrims-time-section'>
-                  <h6>match time</h6>
-                  <p className='match-time'>3:00</p>
-                  <span>idp time</span>
-                  <p className='idp-time'>2:45</p>
-                </div>
-                <div className='scrims-date'>
-                  <p className='scrims-matchtitle'>Match date</p>
-                  <span classname="scrims-matchdate">16-01-2022</span>
-                </div>
-                <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  {/* first card  */}
+                    <Grid item xs={12}  md={6} lg={6} >
+                      <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up ">
+                          <div className='home-carditems'  data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#E7658E'}}>
+                            <div class="home-card ">
+                              <div className='home-main-title'>
+                                <h3>Tournaments</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>        
+                    </Grid>
+                    {/* first card ends  */}
+        
 
-                  </progress>
-
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
-                </div>
-                <div className='scrims-reg-section'>
-                  <h6>Hosted By</h6>
-                  <p>E-Sports Team</p>
-
-                  <a >reg now</a>
-                </div>
+                    {/* second card  */}
+                    <Grid item xs={12}  md={6} lg={6} >
+                      <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up">
+                          <div className='home-carditems' data-aos="slide-left" data-aos-duration="800" style={{backgroundColor: '#EDAE57'}}>
+                            <div class="home-card">
+                              <div className='home-main-title'>
+                                <h3>Scrims</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Grid>
+            
+                    {/* second card ends  */}
+                    
+                    {/* third card  */}
+                    <Grid item xs={12}  md={6} lg={6} >
+                      <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up">
+                          <div className='home-carditems' data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#A27CFB'}}>
+                            <div class="home-card">
+                              <div className='home-main-title'>
+                                <h3>Daily match</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Grid>
+            
+                      {/* third card ends  */}
+                      
+                      {/* fourth card  */}
+                    <Grid item xs={12}  md={6} lg={6} >
+                      <div class="uk-animation-toggle" tabindex="0">
+                        <div class="uk-animation-scale-up">
+                          <div className='home-carditems' data-aos="slide-left" data-aos-duration="800" style={{backgroundColor: '#72E1BA'}}>
+                            <div class="home-card" >
+                              <div className='home-main-title'>
+                                <h3>Open rooms</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Grid>
+                    {/* fourth card ends  */}
+                </Grid>
               </div>
             </div>
-            {/* first card ends  */}
-            {/* first card  */}
-            <div className='scrims-carditems'>
-              <div class="scrims-card">
-                <div className='scrims-main-titile'>
-                  <h3>Scrims name</h3>
-                </div>
-                <div className='scrims-team-img'>
-                  <img src={ScrimImg} />
-                </div>
-                <div className='scrims-rule'>
-                  <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
-    
-                </div>
-               
-                <div className='scrims-time-section'>
-                  <h6>match time</h6>
-                  <p className='match-time'>3:00</p>
-                  <span>idp time</span>
-                  <p className='idp-time'>2:45</p>
-                </div>
-                <div className='scrims-date'>
-                  <p className='scrims-matchtitle'>Match date</p>
-                  <span classname="scrims-matchdate">16-01-2022</span>
-                </div>
-                <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+          {/* home card section ends */}
+          <Grid item xs={12}  md={12} lg={12} >
 
-                  </progress>
+              <div class="home-banner">
+              <img src={Banner} class="banner-image" alt=""/>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
-                </div>
-                <div className='scrims-reg-section'>
-                  <h6>Hosted By</h6>
-                  <p>E-Sports Team</p>
-
-                  <a >reg now</a>
-                </div>
               </div>
-            </div>
-            {/* first card ends  */}
-            {/* first card  */}
-            <div className='scrims-carditems'>
-              <div class="scrims-card">
-                <div className='scrims-main-titile'>
-                  <h3>Scrims name</h3>
-                </div>
-                <div className='scrims-team-img'>
-                  <img src={ScrimImg} />
-                </div>
-                <div className='scrims-rule'>
-                  <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
-    
-                </div>
-               
-                <div className='scrims-time-section'>
-                  <h6>match time</h6>
-                  <p className='match-time'>3:00</p>
-                  <span>idp time</span>
-                  <p className='idp-time'>2:45</p>
-                </div>
-                <div className='scrims-date'>
-                  <p className='scrims-matchtitle'>Match date</p>
-                  <span classname="scrims-matchdate">16-01-2022</span>
-                </div>
-                <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+          </Grid>
 
-                  </progress>
-
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
-                </div>
-                <div className='scrims-reg-section'>
-                  <h6>Hosted By</h6>
-                  <p>E-Sports Team</p>
-
-                  <a >reg now</a>
-                </div>
-              </div>
-            </div>
-            {/* first card ends  */}
-            {/* first card  */}
-            <div className='scrims-carditems'>
-              <div class="scrims-card">
-                <div className='scrims-main-titile'>
-                  <h3>Scrims name</h3>
-                </div>
-                <div className='scrims-team-img'>
-                  <img src={ScrimImg} />
-                </div>
-                <div className='scrims-rule'>
-                  <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
-    
-                </div>
-               
-                <div className='scrims-time-section'>
-                  <h6>match time</h6>
-                  <p className='match-time'>3:00</p>
-                  <span>idp time</span>
-                  <p className='idp-time'>2:45</p>
-                </div>
-                <div className='scrims-date'>
-                  <p className='scrims-matchtitle'>Match date</p>
-                  <span classname="scrims-matchdate">16-01-2022</span>
-                </div>
-                <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
-
-                  </progress>
-
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
-                </div>
-                <div className='scrims-reg-section'>
-                  <h6>Hosted By</h6>
-                  <p>E-Sports Team</p>
-
-                  <a >reg now</a>
-                </div>
-              </div>
-            </div>
-            {/* first card ends  */}
-
-
-
-
-
-
-
-
-          </div>
         </div>
-
-
-
-              {/* home card section ends */}
-
-
-
-          </div>
-
-
-
-
-
-
-
 
           {/* <Link to="/tournament" >Tournament</Link>
       <Link to="/scrims" >Scrims</Link>
       <Link to="/dailymatch" >Dailymatch</Link>
       <Link to="/openrooms" >Openrooms</Link> */}
 
+      
 
-
-          
-
-          
+      
       {/* <Footer /> */}
   </div>
   );

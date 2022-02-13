@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {AppBar,Toolbar,Typography,useMediaQuery,useTheme} from '@mui/material';
 import Box from '@mui/material/Box';
 
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo.png';
 
 
 
@@ -113,7 +113,7 @@ export default function Homeheader() {
 
                 <Box sx={{display:"flex"}}>
                         {/* <h1 class="logo-heading">GM4</h1> */}
-                        <img src={logo}  alt="" style={{marginLeft:"20px"}}/>
+                        <img src={logo}  alt="" class="header-logo" />
                 </Box>
 
                 <Link to="/" ></Link>

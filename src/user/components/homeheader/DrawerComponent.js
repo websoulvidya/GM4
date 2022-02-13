@@ -8,7 +8,7 @@ import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo.png';
 
 
 import "./DrawerComponent.css";
@@ -97,14 +97,14 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
     <div>
         
 
-        <Drawer anchor="left" open={openDrawer}>
+        <Drawer anchor="left" open={openDrawer}> 
 
-            <List style={{backgroundColor:"#fffff",width:"820px"}}>
+            <List style={{backgroundColor:"#fffff",width:"900px"}}>
             <ListItem divider style={{backgroundColor:"white",marginTop:"-10px"}} onClick={()=>setOpenDrawer(false)}>
                 <ListItemIcon>
                     <ListItemText>
                         <Box sx={{display:"flex",marginTop:"5px",marginLeft:"15px",backgroundColor:"#ffff"}}>
-                        <img src={logo}  class="logo-heading" alt="logo" />
+                        <img src={logo}  class="header-logo" alt="logo" />
                         {/* <h1 class="logo-heading">GM4</h1> */}
                         <CloseIcon id="header-closeicon"/>
                         </Box>
@@ -127,13 +127,13 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                             MORE</Typography>
                     </ListItemText>
                     <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose}>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/about" style={{textDecoration:"none"}}>About US</Link></MenuItem>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/ourteam" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/careers" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/advertise" style={{textDecoration:"none"}}>Advertise</Link></MenuItem>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/blog" style={{textDecoration:"none"}}>Blog</Link></MenuItem>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/orghome"style={{textDecoration:"none"}}>Organiser</Link></MenuItem>
-                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/userhome" style={{textDecoration:"none"}}>Users</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/about" class="header-sublink" style={{textDecoration:"none"}}>About US</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/ourteam" class="header-sublink" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/careers" class="header-sublink" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/advertise" class="header-sublink" style={{textDecoration:"none"}}>Advertise</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/blog"class="header-sublink" style={{textDecoration:"none"}}>Blog</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/orghome" class="header-sublink" style={{textDecoration:"none"}}>Organiser</Link></MenuItem>
+                        <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/userhome" class="header-sublink" style={{textDecoration:"none"}}>Users</Link></MenuItem>
 
                     </Menu>
                                     
@@ -164,6 +164,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 {openDrawer ?"x":
                     <MenuIcon style={{width:"40px",height:"150px",display:"flex",marginLeft:"650px"}}/>
     }</IconButton>)  */}
+                                    <img src={logo}  alt="" class="header-logo" />
 
         <IconButton  onClick={()=> setOpenDrawer(true)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
             {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>

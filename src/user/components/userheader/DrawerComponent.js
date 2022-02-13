@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import './Drawercomponent.css';
 import {Drawer,Typography,List,ListItem,ListItemIcon,ListItemText,Menu,MenuItem,Box} from '@mui/material'
 import { Link } from 'react-router-dom';
 import InputBase from '@mui/material/InputBase';
@@ -7,6 +8,7 @@ import { styled, alpha } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import logo from '../../assets/logo.png';
 
 
 
@@ -87,13 +89,13 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
   return (
     <div>
         <Drawer anchor="left" open={openDrawer}>
-            <List style={{backgroundColor:"#fffff",width:"850px"}}>
+            <List style={{backgroundColor:"#fffff",width:"900px"}}>
                 <ListItem divider style={{backgroundColor:"white",marginTop:"-10px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
                         <ListItemText>
                             <Box sx={{display:"flex",marginTop:"5px",marginLeft:"15px",backgroundColor:"#ffff"}}>
-                            <h1 class="logo-heading">GM4</h1>
-                            <CloseIcon id="header-closeicon"/>
+                            <img src={logo}  class="userheader-logo" alt="logo" />
+                            <CloseIcon id="userheader-closeicon"/>
                             </Box>
                         </ListItemText>
                     </ListItemIcon>
@@ -102,20 +104,20 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
                         <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/userhome" style={{textDecoration:"none"}} >
-                            <Typography class="header-link">HOME</Typography></Link></ListItemText>
+                            <Typography class="userheader-link">HOME</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
                         <ListItemText style={{margin:"10px 0 10px 10px"}}><Link to="/useridp" style={{textDecoration:"none"}}>
-                            <Typography class="header-link">IDP</Typography></Link></ListItemText>
+                            <Typography class="userheader-link">IDP</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
                         <ListItemText style={{margin:"10px 0 10px 10px"}}>
                             <Link to="/notification"style={{textDecoration:"none"}} >
-                                <Typography class="header-link">NOTIFICATION</Typography></Link></ListItemText>
+                                <Typography class="userheader-link">NOTIFICATION</Typography></Link></ListItemText>
                     </ListItemIcon>
                 </ListItem>
                 
@@ -124,25 +126,25 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                         <ListItemText style={{margin:"10px 0 10px 10px"}} aria-controls="basic-menu"
                             aria-haspopup="true"
                             aria-expanded={openMenu ? 'true':undefined}
-                            onClick={handleClick}><Typography class="header-link">
+                            onClick={handleClick}><Typography class="userheader-link">
                                 USERNAME</Typography>
                         </ListItemText>
                         <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} style={{width:"80%",marginTop:"450px"}}>
-                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/profile" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
-                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/changepass" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
-                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/mybookings" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
-                            <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/logout" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/profile" class="header-sublink" style={{textDecoration:"none",color:"rgb(102 98 98)"}}>Profile</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/changepass" class="header-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/mybookings" class="header-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
+                            <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/logout" class="header-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
 
                         </Menu>
                                         
                     </ListItemIcon>
                 </ListItem>
 
-                <Search id="header-searchbar">
-                    <SearchIconWrapper id="header-searchicon">
+                <Search id="userheader-searchbar">
+                    <SearchIconWrapper id="userheader-searchicon">
                     <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                     </SearchIconWrapper>
-                    <StyledInputBase id="search-content"
+                    <StyledInputBase id="usersearch-content"
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
                     />
@@ -159,7 +161,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
         <IconButton  onClick={()=> setOpenDrawer(true)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
             {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
-            :<MenuIcon id="header-menuicon" style={{color:"#6BDCFC"}} />}
+            :<MenuIcon id="userheader-menuicon" style={{color:"#6BDCFC"}} />}
         </IconButton>
 
       

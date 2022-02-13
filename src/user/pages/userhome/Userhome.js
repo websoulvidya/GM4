@@ -1,22 +1,41 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Userhome.css';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import {Link} from 'react-router-dom';
+import {Grid,Box,Button} from '@mui/material';
+
+import Aos from  'aos';
+import "aos/dist/aos.css";
+
 
 import img1 from '../../assets/homepage/homeslider1.jpg'
 import img2 from '../../assets/homepage/homeslider.jpg'
 import img3 from '../../assets/homepage/homeslider2.jpg'
 import img4 from '../../assets/homepage/images2.jpg'
+import TournamentImg from "../../assets/homepage/image3.jpg";
+import ScrimsImg from "../../assets/homepage/image4.jpg";
+import DailymatchImg from "../../assets/homepage/image1.jpg";
+import OpenImg from "../../assets/homepage/image4.jpg";
+
+import Banner from "../../assets/homepage/banner.jpg";
+
 
 
 
 
 function Userhome() {
+
+  
+    // funcion for aos
+    useEffect(() => {
+      Aos.init({duration:1000});
+  },[]);
+
   return(
     <div>
       <Userheader/>
-      <div className="home-main-wrapper">
+      <div className="userhome-main-wrapper">
 
               {/* first slider block starts*/}
               <div uk-slider="center:true,autoplay:true,autoplay-interval: 100">
@@ -64,21 +83,110 @@ function Userhome() {
                   <li uk-slider-item="2"><a href="" class="slider-link"></a></li>
                   <li uk-slider-item="3"><a href="" class="slider-link"></a></li>
                   </ul> */}
-                           
-
-
-                            
-
+              
               </div>
 
               {/* first slider block ends */}
 
-      
-      <Link to="/tournament" >Tournament</Link>
-      <Link to="/scrims" >Scrims</Link>
-      <Link to="/dailymatch" >Dailymatch</Link>
-      <Link to="/openrooms" >Openrooms</Link>
 
+              {/*user home card section starts */}
+
+              <div className='userhome-card-list'>
+                  <div className='userhome_headerclip'>
+                    <h1>Match Category</h1>
+                  </div>
+                  <div class="userhome-card-main">
+                      <Grid container spacing={{ xs: 2, }} columns={{ xs: 4, sm: 8, md: 12 }} >
+
+                        {/* first card  */}
+                          <Grid item xs={12}  md={6} lg={6} >
+                            <div class="uk-animation-toggle" tabindex="0">
+                              <div class="uk-animation-scale-up ">
+                                <div className='userhome-carditems'  data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#E7658E'}}>
+                                  <div class="userhome-card ">
+                                    <div className='userhome-main-title'>
+                                      <h3>Tournaments</h3>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>        
+                          </Grid>
+                          {/* first card ends  */}
+
+                          {/* second card  */}
+                          <Grid item xs={12}  md={6} lg={6} >
+                            <div class="uk-animation-toggle" tabindex="0">
+                              <div class="uk-animation-scale-up">
+                                <div className='userhome-carditems' data-aos="slide-left" data-aos-duration="800" style={{backgroundColor: '#EDAE57'}}>
+                                  <div class="userhome-card">
+                                    <div className='userhome-main-title'>
+                                      <h3>Scrims</h3>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Grid>
+                         {/* second card ends  */}
+                          
+                          {/* third card  */}
+                          <Grid item xs={12}  md={6} lg={6} >
+                            <div class="uk-animation-toggle" tabindex="0">
+                              <div class="uk-animation-scale-up">
+                                <div className='userhome-carditems' data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#A27CFB'}}>
+                                  <div class="userhome-card">
+                                    <div className='userhome-main-title'>
+                                      <h3>Daily match</h3>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Grid>
+                  
+                            {/* third card ends  */}
+                            
+                            {/* fourth card  */}
+                          <Grid item xs={12}  md={6} lg={6} >
+                            <div class="uk-animation-toggle" tabindex="0">
+                              <div class="uk-animation-scale-up">
+                                <div className='userhome-carditems' data-aos="slide-left" data-aos-duration="800" style={{backgroundColor: '#72E1BA'}}>
+                                  <div class="userhome-card">
+                                    <div className='userhome-main-title'>
+                                      <h3>Open rooms</h3>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Grid>
+                          {/* fourth card ends  */}
+                      </Grid>
+                    </div>
+                  </div>
+                {/*user home card section ends */}
+
+
+                <Grid item xs={12}  md={12} lg={12} >
+
+                    <div class="userhome-banner">
+                    <img src={Banner} class="userbanner-image" alt=""/>
+
+                    </div>
+                </Grid>
+
+        
+
+
+              
+
+      
+      
 
       </div>
       {/* <Footer /> */}

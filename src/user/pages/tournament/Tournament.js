@@ -94,7 +94,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <a ><Link to="/tournament/registration">reg now</Link></a>
                 </div>
               </div>
             </div>

@@ -20,20 +20,39 @@
     background-color:#ffffff;
     color: #ffff;
 }
-.userlogo-heading{
-    font-family: 'Courgette', cursive;
-    color:black;
-       font-size: 36px;
-       font-weight:400;
-       margin-top: 5%;
-       margin-left: 0px;
+.userheader-logo{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 200px;
+    height:50px;
+    margin-right: 80px;
    } 
 Link:hover{
     text-decoration:none;
 }
 
+#userheader-searchbar{
+    margin-left: 70px;
+    width:60ch;
+    height:30px;
+}
+#userheader-searchicon{
+    margin-left:90%;
+}
+#usersearch-content{
+    align-items: center;
+    margin-top:-4px;
+    margin-right: 240px;
+    align-items: left;
+}
+#userhome-headermenu{
+    width: 180px;
+    font-size: 16px;
+    color:rgb(102 98 98);
+}
 
-.header-links{
+.userheader-links{
     font-size: 18px;
     color:rgb(102 98 98);
     font-weight: 700;
@@ -43,12 +62,424 @@ Link:hover{
     margin-top: 12px;
     text-decoration: none;
 }
-
-.header-links:hover{
+.userheader-links:hover{
     color:#6BDCFC;
     text-decoration: none;
 }
-@media(max-width: 1500px) {
+
+.userheader-sublink{
+    color:rgb(102 98 98);
+
+}
+@media (min-width: 1551px) and (max-width: 1628px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 200px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:85ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:93%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-left: -340px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 35px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1430px) and (max-width: 1550px) {
+
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 200px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:75ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 370px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 35px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1429px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 150px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:65ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 370px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1349px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 130px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:70ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 400px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1134px) and (max-width: 1279px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 100px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:62ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 370px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+@media (min-width: 1024px) and (max-width: 1133px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 200px;
+        height:50px;
+        margin-right: 100px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:50ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:90%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 240px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 200px;
+        height:50px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 20px;
+        width:46ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:90%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 240px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+
+/* @media(max-width: 1500px) {
     #App{
         height: 60px;
         width:100%;
@@ -263,7 +694,7 @@ Link:hover{
         color:rgb(102 98 98);
     }
 
-} 
+}  */
 
     
 

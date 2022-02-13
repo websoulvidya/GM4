@@ -33,6 +33,8 @@ import Scrims from "../user/pages/scrims/Scrims";
 import Dailymatch from "../user/pages/dailymatch/Dailymatch";
 import Openrooms from "../user/pages/openrooms/Openrooms";
 
+import Tournamentreg from '../user/pages/tournament/Tournamentreg';
+
 
 
 
@@ -98,6 +100,7 @@ export default function Navigate() {
       <Route path="/changepass" element={<Changepass />}/>
       <Route path="/mybookings" element={<Mybookings />}/>
       <Route path="/tournament" element={<Tournament />}/>
+      <Route path="/tournament/registration" element={<Tournamentreg />}/>
       <Route path="/scrims" element={<Scrims />}/>
       <Route path="/dailymatch" element={<Dailymatch />}/>
       <Route path="/openrooms" element={<Openrooms />}/>
