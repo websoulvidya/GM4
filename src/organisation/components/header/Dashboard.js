@@ -19,11 +19,7 @@ import './Dashboard.css';
 import { HeightTwoTone } from '@mui/icons-material';
 
 
-
-
-
-
-
+import logo from '../../assets/homeimages/logo.png';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -183,19 +179,24 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" id='apporg' sx={{backgroundColor:"white"}}>
         <Toolbar>
          
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { sm: 'block' } }}
           >
            <h1 className='headerlogoorg'>GM4</h1>
-          </Typography>
+           <img src={logo}  alt="" class="header-logo" />
+
+          </Typography> */}
+          <Box sx={{display:"flex"}}>
+              <img src={logo}  alt="" class="headerlogo-org" />
+          </Box>
           <Search id="header-searchbarorg">
-            <SearchIconWrapper>
+            <SearchIconWrapper id="org-searchicon">
               <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
             </SearchIconWrapper>
-            <StyledInputBase
+            <StyledInputBase id="org-searchinput"
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />

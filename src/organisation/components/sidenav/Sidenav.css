@@ -1,13 +1,22 @@
 .sidenav{
-    margin-top: 80px;
+    margin-top: 10px;
     width: 400px;
-    height: 700px;
+    height: 1200px;
     
 }
-@media(max-width:640px){
-    .sidenav{
-        margin-left: -10px;
-    }
+.button_nav{
+    margin: 25px;
+    margin-left: 60px;
+    
+}
+#buttons_nav:hover{
+    background-color:#6BDCFC ;
+}
+#buttons_nav{
+    width:300px;
+ height: 60px;
+ border-color: #6BDCFC;
+ 
 }
 .navhead{
     margin-top:15px;
@@ -16,25 +25,136 @@
 .navhead:hover{
     color: white;
 }
-/*main div of each buttons*/
-.button_nav{
-    margin: 25px;
-    
-}
-#buttons_nav{
-    width:300px;
- height: 60px;
- border-color: #6BDCFC;
- 
-}
-
-#buttons_nav:hover{
-    
-    background-color:#6BDCFC ;
-}
-@media(max-width:640px){
-    #buttons_nav:hover{
-        background-color:#6BDCFC ;
-        color: white;
+@media (min-width: 768px) and (max-width: 899px) {
+    .sidenav{
+        margin-top: 15px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin-top: 40px;
+        margin-left:35%;
+    }
+    #buttons_nav{
+        width:500px;
+        height: 60px;  
+        margin-left:25%;   
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
     }
 }
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .sidenav{
+        margin-top: 15px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin-top: 40px;
+        margin-left:30%;
+    }
+    #buttons_nav{
+        width:420px;
+        height: 60px;  
+        margin-left:10%;   
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 531px) and (max-width: 599px) {
+    .sidenav{
+        margin-top: 15px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin-top: 40px;
+        margin-left:22%;
+    }
+    #buttons_nav{
+        width:380px;
+        height: 60px;  
+        margin-left:5%;   
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 532px) {
+    .sidenav{
+        margin-top: 15px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+    #buttons_nav{
+        width:380px;
+        height: 60px;  
+        margin-left:15px;   
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 399px) {
+    .sidenav{
+        margin-top: 15px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    #buttons_nav{
+        width:300px;
+        height: 60px;  
+        margin-left:5px;   
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 360px) {
+    .sidenav{
+        margin-top: 15px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin-top: 25px;
+        margin-left: 0px;
+        
+    }
+    #buttons_nav{
+        width:300px;
+        height: 60px;  
+        margin-left:-35px;   
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+

@@ -1,1054 +1,4805 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-.tournament-main-wrapper{
-    width: 100%;
-    height: auto;
-    position: relative;
 
-}
-/* header clip */
-.tournament_headerclip {
-    height: 8rem;
-    width:99%;
-    /* width: calc(89% - -81px)!important; */
-    background-color: #6BDCFC;
-    color: #ffff;
-    display: flex;
-    align-items: center;
-    padding-left: 6rem;
-}
-.tournament_headerclip h1{
-    text-align: left;
-    font-size: 52px;
-    font-weight: 700;
-    color: #ffff;
-    text-transform: uppercase;
-    left: -19px;
-    top: 8px;
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .tournament-main-wrapper{
+        width: 100%;
+        height: auto;
+        position: relative;
     
-    position: relative;
-}
-.tournament_headerclip h1:before {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 4rem;
-    background-color: #ffff;
-    left: -19px;
-    top: -5px;
-    opacity: 0.5;
-
-}
-/* end */
-.tournament-card-list{
-    margin:20px 30px;
-    padding-right: 32px;
-}
-.main-card{
-   width:100%;
-    box-sizing: border-box;
-}
-.tournament-carditems{
-    width: calc(22% - 10px)!important;
-    height: auto;
-    left: 5%;
-    border: 1px solid #ADE0EE;
-    border-radius: 18px !important;
-    box-shadow: 5px 5px #ADE0EE;
-    position: relative;
-    padding-left: 0!important;
-    margin: 0 1.5% 55px 1.5%!important;
- 
-}
-.tour-card{
-    width: 100%;
-    height: 237px;
-    border-radius: 3px solid;
-    position: relative;
-}
-.tournament-main-titile{
-    width: 100%;
-    position: relative;
-}
-.tournament-main-titile h3{
-    color: black;
-    font-size: 18px;
-    text-transform: uppercase;
-    top: 10px;
-   left: 24%;
-   font-weight: 600;
-    position: absolute;
-}
-.tournamnet-team-img{
-    width: 174px;
-    height: auto;
-    position: absolute;
-    left: 0;
-   
-}
-.tournamnet-team-img img{
-    border-radius: 6px;
-    left: -10px;
-    position: relative;
-    width: 174px;
-    transform: scale(1.3);
-    /* height: 138px; */
-    bottom: 1;
-    top: 61px;
     }
-.tour-reg-section{
-    width: 236px;
-    background-color: #6BDCFC;
-    height: 59px;
-    position: absolute;
-    bottom: -31px;
-    right:0;
-    border-radius: 4px;
-   
-}
-.tour-reg-section h6{
-    color: white;
-    font-weight: 600;
-    left: -30%;
-    font-size: 15px;
-    position: relative;
-    text-transform: uppercase;
-    top: 11px;
-}
-.tour-reg-section p{
-    color: white;
-    font-weight: bolder;
-    left: 3%;
-    font-size: 10px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 18px;
-    color: black;
-
-}
-
-.tour-reg-section a{
-    color: white;
-    font-weight: 600;
-    right: -69px;
-    font-size: 15px;
-    position: relative;
-    bottom: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.tour-reg-section a::after{
-    content: '';
-    width: 2px;
-    height: 35px;
-    background-color: white;
-    display: block;
-    position: relative;
-    top: -31px;
-    left: 53px;
-
-}
-.tour-reg-section a:hover{
-    text-decoration: none;
-    color: black;
-}
-.tour-pay-section{
-    width: 30%;
-    height: 75px;
-    position: absolute;
-    bottom: 104px;
-    right: 56px;
-    border-radius: 4px;
-}
-.tour-pay-section h6{
-    color: rgb(131, 128, 128);
-    font-weight: 600;
-    left: -30%;
-    font-size: 15px;
-    position: relative;
-    text-transform: uppercase;
-    top: 11px;
-
-}
-.tour-pay-section span{
-    color: rgb(131, 128, 128);
-    font-weight: 600;
-    right: -69px;
-    font-size: 15px;
-    position: relative;
-    top: -31px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.tour-pay-section span::after{
-    content: '';
-    width: 2px;
-    height: 35px;
-    background-color: rgb(131, 128, 128);
-    display: block;
-    position: relative;
-    top: -24px;
-    left: 7px;
-
-}
-.tour-pay-section  .entry-fee{
-    font-weight: bolder;
-    right: -16%;
-    font-size: 10px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 18px;
-    color: black;
-}
-.tour-pay-section .prize-pool{
-    
-    font-weight: bolder;
-    left: 16%;
-    font-size: 10px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 18px;
-    color: black;
-
-
-}
-.tournament-rule{
-  
-    background-color: #e0f0f5;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    float: right;
-    top: 10px;
-    right: 14px;
-}
-.rule-icon{
-    position: relative;
-    top: 3px;
-    
-}
-.tour-progress-bar{
-    width: 46%;
-    position: absolute;
-    right: 10px;
-    bottom: 34%;
-}
-.progressbar-active{
-    height:24px;
-    width:20%;
-}
-progress {
-    display: block;
-    position: relative;
-     border-radius: 7px;
-    width: 100%;
-    height: 6px;
-
-    }
-
-    progress[value]::-webkit-progress-bar {
-        background-color: rgb(131, 128, 128);
-        border-radius: 10px;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: #6BDCFC;
-        border-radius: 10px;
-        
-    }
-    .progressbar-left-text{
-    position: relative;
-    top: 4px;
-    left: 0;
-    font-size: 12px;
-    color: rgb(102 98 98);
-    font-weight: 700;
-    float: left;
-    margin: 0;
-        
-}
-.progressbar-right-text{
-    position: relative;
-    top: 2px;
-    right: 0;
-    font-size: 12px;
-    float: right;
-    color: rgb(102 98 98);
-    font-weight: 700;
-    margin: 0;
-}
-/* Modal css */
-.modal_close {
-    background-color: #6BDCFC;
-    color: white;
-    width: 5rem;
-    height: 2.5rem;
-    border: none;
-    font-size: 18px;
-    margin-top: 1rem;
-}
-.modal_box {
-    border: none !important;
-    border-radius: 7px;
-}
-.rules_modal::-webkit-scrollbar {
-    width: 5px;
-}
-.rules_modal::-webkit-scrollbar-track {
-    box-shadow: inset 005px grey;
-}
-.rules_modal::-webkit-scrollbar-thumb {
-    background-color: #87CEEB;
-    border-radius: 15px;
-}
-.rules_modal::-webkit-scrollbar-thumb:hover {
-    background-color: #6BDCFC;
-}
-/* end */
-
-/* bg circle */
-
-  
-/* end */
-/* Responsive Start Here */
-/* 1500pixel */
-@media screen and  (max-device-width: 1500px) { 
+    /* header clip */
     .tournament_headerclip {
-        width: calc(89% - -81px)!important;
-           }
-    .tour-card{
-         height: 221px;
+        height: 8rem;
+        width:100%;
+        top:2px;
+        background-color: #6BDCFC;
+        color: #ffff;
+        display: flex;
+        align-items: center;
     }
-.uk-grid{
-  margin-left: 0;
-}
-    .tournamnet-team-img img{
-        left: -35px;
-        width: 153px;
-        transform: scale(1.1);
-        top: 61px;
-        }
-    .tour-reg-section{
+    .tournament_headerclip h1{
+        text-align: left;
+        font-size: 52px;
+        font-weight: 700;
+        color: #ffff;
+        text-transform: uppercase;
+        left:8%;
+        top: 8px;
+        
+        position: relative;
+    }
+    .tournament_headerclip h1:before {
+        content: "";
         position: absolute;
-       }
-       .tournament-main-titile h3{
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: -19px;
+        top: -5px;
+        opacity: 0.5;
+
+    }
+    /* end */
+
+    .tournament-card-list{
+        margin:3% 2% 3% 2%;
+        /* padding-right: 32px; */
+    }
+    .tournament-main-card{
+       width:100%;
+        box-sizing: border-box;
+    }
+
+    /* first card starts */
+    .tournament-carditems{
+        width: calc(22% - 10px)!important;
+        height: auto;
+        left: 5.5%;
+        border: 1px solid #ADE0EE;
+        border-radius: 18px !important;
+        box-shadow: 5px 5px #ADE0EE;
+        position: relative;
+        padding-left: 0!important;
+        margin: 0 1.5% 55px 1.5%!important;
+     
+    }
+    .tour-card{
+        width: 100%;
+        height: 221px;
+        border-radius: 3px solid;
+        position: relative;
+    }
+    .tournament-main-titile{
+        width: 100%;
+        position: relative;
+    }
+    .tournament-main-titile h3{
         color: black;
         font-size: 18px;
         text-transform: uppercase;
-        top: 10px;
-       left: 18%;
+        top: 11px;
+       left: 5%;
        font-weight: 600;
         position: absolute;
-    
     }
-    .tour-pay-section h6 {
-        color: rgb(102 98 98);
-        font-weight: 800;
-        left: -19%;
-        font-size: 12px;
-        top: 22px;
-    }
-    .tour-pay-section span{
-        color: rgb(102 98 98);
-        font-weight: 800;
-        left: 64px;
-        font-size: 12px;
-        top: -22px;
-}
-.tour-pay-section span::after {
-    height: 23px;
-    top: -20px;
-    left: 5px;
-}
-.tournament-rule {
-    top: 7px;
-    right: 8px;
-}
-.tour-progress-bar {
-    width: 50%;
-    position: absolute;
-    right: 5px;
-    bottom: 30%;
-}
-.progressbar-left-text,.progressbar-right-text  {
-    font-size: 10px;
-    color: rgb(102 98 98);
-    font-weight: 700;
-}
-.tour-pay-section .entry-fee {
-    right: -29%;
-    top: 18px;
-  
-}
-}
-/* end 1500pixel */
-
-/* 1400piexl */
-@media screen and  (max-device-width: 1400px) { 
-    .tournament_headerclip {
-        width: calc(84% - -128px)!important;
-    }
-    .tournamnet-team-img {
-        width: 131px;
+    .tournamnet-team-img{
+        width: 110px;
         height: auto;
         position: absolute;
         left: 0;
+        top: 73px;
+
+       
     }
     .tournamnet-team-img img{
-        left: -17px;
-        width: 153px;
-        transform: scale(1.1);
-        top: 61px;
+        border-radius: 6px;
+        left: -10px;
+        position: relative;
+        /* width: 174px; */
+        transform: scale(1.3);
+        /* height: 138px; */
+        bottom: 1;
         }
 
-}
-@media screen and (max-device-width: 1300px) { 
-    .tournament_headerclip {
-        width: calc(84% - -114px)!important;
-    }
-    .tournament-carditems {
-        width: calc(22% - 7px)!important;
-        height: auto;
-        left: 5%;
-        border: 1px solid #ADE0EE;
-        border-radius: 18px !important;
-        box-shadow: 5px 5px #ade0ee;
-        position: relative;
-        padding-left: 0!important;
-        margin: 0 1.7% 55px 1.7%!important;
-    }
-        .tournament-main-titile h3 {
-        color: black;
+        .tournament-rule{
+  
+            background-color: #e0f0f5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            float: right;
+            top: 10px;
+            right: 14px;
+        }
+        .rule-icon{
+            position: relative;
+            top: 3px;
+            
+        }
+
+    /* Modal css */
+    .modal_close {
+        background-color: #6BDCFC;
+        color: white;
+        width: 5rem;
+        height: 2.5rem;
+        border: none;
         font-size: 18px;
-        text-transform: uppercase;
-        top: 10px;
-        left: 11%;
-        font-weight: 600;
+        margin-top: 1rem;
+    }
+    .modal_box {
+        border: none !important;
+        border-radius: 7px;
+    }
+    #modal-modal-title{
+        margin-left: 0%;
+    }
+    #modal-modal-description{
+        margin:5% 0% 5% 0%;
+    }
+    .rules_modal::-webkit-scrollbar {
+        width: 5px;
+    }
+    .rules_modal::-webkit-scrollbar-track {
+        box-shadow: inset 005px grey;
+    }
+    .rules_modal::-webkit-scrollbar-thumb {
+        background-color: #87CEEB;
+        border-radius: 15px;
+    }
+    .rules_modal::-webkit-scrollbar-thumb:hover {
+        background-color: #6BDCFC;
+    }
+    /* end */
+
+    .tour-pay-section{
+        width: 30%;
+        height: 75px;
         position: absolute;
+        bottom: 104px;
+        right: 60px;
+        border-radius: 4px;
     }
-    .tour-pay-section span {
-        color: rgb(102 98 98);
-        font-weight: 900;
-        left: 64px;
-        font-size: 10px;
-        top: -19px;
-    }
-    .tour-pay-section h6 {
-        color: rgb(102 98 98);
-        font-weight: 900;
-        left: -6%;
-        font-size: 10px;
+    .tour-pay-section h6{
+        color: rgb(131, 128, 128);
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 800;
+        left: -21%;
+        font-size: 12px;
         top: 22px;
+    
+    }
+    .tour-pay-section span{
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 63px;
+        font-size: 13px;
+        top: -21px;
+    }
+    .tour-pay-section span::after{
+        content: '';
+        width: 2px;
+        background-color: rgb(131, 128, 128);
+        display: block;
+        position: relative;
+        height: 23px;
+        top: -20px;
+        left: 2px;
+    
+    }
+    .tour-pay-section  .entry-fee{
+        font-weight: bolder;
+        font-size: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 18px;
+        color: black;
+        right: -29%;
+    }
+    .tour-pay-section .prize-pool{
+        
+        font-weight: bolder;
+        left: 16%;
+        font-size: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 19px;
+        color: black;
+    
+    
     }
 
-}
-/* end */
-/* 1200 pixel */
-@media screen and (max-device-width: 1200px) { 
-    body{
-        margin: 0 !important;
-        padding: 0 !important;
-        
+
+
+    .tour-progress-bar{
+        position: absolute;
+        width: 50%;
+        position: absolute;
+        right: 5px;
+        bottom: 30%;
     }
-    .tournament_headerclip {
-        width: calc(84% - -109px)!important;
+    .progressbar-active{
+        height:24px;
+        width:20%;
     }
-    .tournament-carditems{
-        width: calc(22% - -81px)!important;
-        height: auto;
-        left: 5%;
-        border: 1px solid #ADE0EE;
-        border-radius: 18px !important;
-        box-shadow: 5px 5px #ade0ee;
+    progress {
+        display: block;
         position: relative;
-        padding-left: 0!important;
-        margin: 0 2% 55px 2%!important;
+         border-radius: 7px;
+        width: 100%;
+        height: 6px;
+    
+        }
+    
+        progress[value]::-webkit-progress-bar {
+            background-color: rgb(131, 128, 128);
+            border-radius: 10px;
+        }
+        progress[value]::-webkit-progress-value {
+            background-color: #6BDCFC;
+            border-radius: 10px;
+            
+        }
+       .tour-progress-bar .progressbar-left-text{
+        position: relative;
+        top: 3px;
+        left: -10px;
+        color: rgb(102 98 98);
+        font-weight: 700;
+        float: left;
+        margin: 0;
+        font-size: 12px;
+            
+    }
+    .tour-progress-bar .progressbar-right-text{
+        position: relative;
+        top: 3px;
+        right: 4px;
+        font-size: 12px;
+        float: right;
+        color: rgb(102 98 98);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .tour-reg-section{
+        width: 236px;
+        background-color: #6BDCFC;
+        height: 59px;
+        position: absolute;
+        bottom: -31px;
+        right:0;
+        border-radius: 4px;
+       
+    }
+    .tour-reg-section h6{
+        color: white;
+        font-weight: 600;
+        left: -30%;
+        font-size: 15px;
+        position: relative;
+        text-transform: uppercase;
+        top: 11px;
+    }
+    .tour-reg-section p{
+        color: white;
+        font-weight: bolder;
+        left: 3%;
+        font-size: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 18px;
+        color: black;
+    
+    }
+    
+    .tour-reg-section a{
+        color: white;
+        font-weight: 600;
+        right: -25px;
+        font-size: 15px;
+        position: relative;
+        bottom: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .tour-reg-section a::after{
+        content: '';
+        width: 2px;
+        height: 32px;
+        background-color: white;
+        display: block;
+        position: relative;
+        top: -25px;
+        left: 53px;
+    
+    }
+    .tour-reg-section a:hover{
+        text-decoration: none;
+        color:#ffff;
+    }
+
+    .tournament-footer{
+        margin-top:20%;
+    }
+
+    @media (min-width: 1837px) and (max-width: 2000px) {
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+            display: flex;
+            align-items: center;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:3% 1% 3% 1%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(21% - 10px)!important;
+            height: auto;
+            left: 4.5%;
+            padding-left: 0!important;
+            margin: 0 1.8% 55px 1.8%!important;
+         
         }
         .tour-card{
-          height: 209px;
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
         }
         .tournament-main-titile h3{
             color: black;
-           font-size: 18px;
-           text-transform: uppercase;
-           top: 10px;
-            left: 22%;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
            font-weight: 600;
-           position: absolute;
+            position: absolute;
         }
         .tournamnet-team-img{
-            width: 171px;
+            width: 130px;
             height: auto;
             position: absolute;
             left: 0;
+            top: 73px;
+    
+           
         }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 5px;
+        }
+        .rules_modal::-webkit-scrollbar-track {
+            box-shadow: inset 005px grey;
+        }
+        .rules_modal::-webkit-scrollbar-thumb {
+            background-color: #87CEEB;
+            border-radius: 15px;
+        }
+        .rules_modal::-webkit-scrollbar-thumb:hover {
+            background-color: #6BDCFC;
+        }
+        /* end */
+    
         .tour-pay-section{
-            width: 37%;
-           height: 75px;
-          position: absolute;
-            bottom: 93px;
-           right: 56px;
-          border-radius: 4px;
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(102 98 98);
-           font-weight: 900;
-           left: -11%;
+            font-weight: 800;
+            left: -30%;
             font-size: 12px;
             top: 22px;
+        
         }
         .tour-pay-section span{
-           color: rgb(102 98 98);
-           font-weight: 900;
-            left: 79px;
-            font-size: 12px;
-            top: -22px;
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
         }
         .tour-pay-section span::after{
-          height: 23px;
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
             top: -20px;
-           left: 15px;
+            left: 2px;
+        
         }
-        .tour-pay-section .prize-pool{
+        .tour-pay-section  .entry-fee{
             font-weight: bolder;
-            left: 33%;
             font-size: 10px;
             position: absolute;
-        text-transform: uppercase;
+            text-transform: uppercase;
             top: 18px;
-           color: black;
+            color: black;
+            right: -29%;
         }
-        .tour-pay-section .entry-fee{
-            right: -25%;
-            top: 18px;
-        } 
-
-}
-/* end */
-@media screen and (max-device-width: 1100px) { 
-    body{
-        margin: 0 !important;
-        padding: 0 !important;
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 19px;
+            color: black;
         
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 25%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 0px;
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            top: 18px;    
+        }
+        
+        .tour-reg-section a{
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tournament-footer{
+            margin-top:20%;
+        }
     }
+
+
+    @media (min-width: 1781px) and (max-width: 1836px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+            display: flex;
+            align-items: center;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:3% 1% 3% 1%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(22% - 10px)!important;
+            height: auto;
+            left: 4%;
+            padding-left: 0!important;
+            margin: 0 1.6% 55px 1.6%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 130px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 5px;
+        }
+        .rules_modal::-webkit-scrollbar-track {
+            box-shadow: inset 005px grey;
+        }
+        .rules_modal::-webkit-scrollbar-thumb {
+            background-color: #87CEEB;
+            border-radius: 15px;
+        }
+        .rules_modal::-webkit-scrollbar-thumb:hover {
+            background-color: #6BDCFC;
+        }
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -30%;
+            font-size: 12px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 19px;
+            color: black;
+        
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 25%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 0px;
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            top: 18px;    
+        }
+        
+        .tour-reg-section a{
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tournament-footer{
+            margin-top:20%;
+        }
+    }
+
+
+
+    @media (min-width: 1629px) and (max-width: 1780px) {
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+            display: flex;
+            align-items: center;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:3% 1% 3% 1%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(22% - 10px)!important;
+            height: auto;
+            left: 4%;
+            padding-left: 0!important;
+            margin: 0 1.6% 55px 1.6%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 120px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 5px;
+        }
+        .rules_modal::-webkit-scrollbar-track {
+            box-shadow: inset 005px grey;
+        }
+        .rules_modal::-webkit-scrollbar-thumb {
+            background-color: #87CEEB;
+            border-radius: 15px;
+        }
+        .rules_modal::-webkit-scrollbar-thumb:hover {
+            background-color: #6BDCFC;
+        }
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -30%;
+            font-size: 12px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 19px;
+            color: black;
+        
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 25%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 0px;
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            top: 18px;    
+        }
+        
+        .tour-reg-section a{
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tournament-footer{
+            margin-top:20%;
+        }
+    }
+
+
+
+    @media (min-width: 1551px) and (max-width: 1628px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+            display: flex;
+            align-items: center;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:3% 2% 3% 2%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(22% - 10px)!important;
+            height: auto;
+            left: 5%;
+            padding-left: 0!important;
+            margin: 0 1.5% 55px 1.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 120px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 5px;
+        }
+        .rules_modal::-webkit-scrollbar-track {
+            box-shadow: inset 005px grey;
+        }
+        .rules_modal::-webkit-scrollbar-thumb {
+            background-color: #87CEEB;
+            border-radius: 15px;
+        }
+        .rules_modal::-webkit-scrollbar-thumb:hover {
+            background-color: #6BDCFC;
+        }
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -30%;
+            font-size: 12px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 19px;
+            color: black;
+        
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 25%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 0px;
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            top: 18px;    
+        }
+        
+        .tour-reg-section a{
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tournament-footer{
+            margin-top:20%;
+        }
+    }
+    
+
+
+
+    @media (min-width: 1430px) and (max-width: 1550px) {
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+            display: flex;
+            align-items: center;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:3% 2% 3% 2%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(22% - 10px)!important;
+            height: auto;
+            left: 5%;
+            padding-left: 0!important;
+            margin: 0 1.5% 55px 1.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 120px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 5px;
+        }
+        .rules_modal::-webkit-scrollbar-track {
+            box-shadow: inset 005px grey;
+        }
+        .rules_modal::-webkit-scrollbar-thumb {
+            background-color: #87CEEB;
+            border-radius: 15px;
+        }
+        .rules_modal::-webkit-scrollbar-thumb:hover {
+            background-color: #6BDCFC;
+        }
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -30%;
+            font-size: 12px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 19px;
+            color: black;
+        
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 25%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 0px;
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            top: 18px;    
+        }
+        
+        .tour-reg-section a{
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tournament-footer{
+            margin-top:20%;
+        }
+    }
+    
+
+
+    @media (min-width: 1350px) and (max-width: 1429px) {
+        
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .tournament-main-wrapper{
+        width: 100%;
+        height: auto;
+        position: relative;
+    
+    }
+    /* header clip */
     .tournament_headerclip {
-        width: calc(82% - -102px)!important;
+        height: 8rem;
+        width:100%;
+        top:2px;
+        display: flex;
+        align-items: center;
     }
-    .tournament-carditems {
-        width: calc(29% - -135px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
+    .tournament_headerclip h1{
+        text-align: left;
+        font-size: 52px;
+        font-weight: 700;
+        left:8%;
+        top: 8px;
+        
+        position: relative;
     }
-    .tournamnet-team-img {
-        width: 236px;
+    .tournament_headerclip h1:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        left: -19px;
+        top: -5px;
+        opacity: 0.5;
+
+    }
+    /* end */
+
+    .tournament-card-list{
+        margin:3% 2% 3% 2%;
+        /* padding-right: 32px; */
+    }
+    .tournament-main-card{
+       width:100%;
+        box-sizing: border-box;
+    }
+
+    /* first card starts */
+    .tournament-carditems{
+        width: calc(22% - 10px)!important;
+        height: auto;
+        left: 5.5%;
+        padding-left: 0!important;
+        margin: 0 1.5% 55px 1.5%!important;
+     
+    }
+    .tour-card{
+        width: 100%;
+        height: 221px;
+        border-radius: 3px solid;
+        position: relative;
+    }
+    .tournament-main-titile{
+        width: 100%;
+        position: relative;
+    }
+    .tournament-main-titile h3{
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        top: 11px;
+       left: 5%;
+       font-weight: 600;
+        position: absolute;
+    }
+    .tournamnet-team-img{
+        width: 110px;
         height: auto;
         position: absolute;
         left: 0;
-    }
+        top: 73px;
 
-    .tournamnet-team-img img {
-        left: -40px;
-        width: 172px;
-        transform: scale(1.25);
-        top: 56px;
-    }
-
-    .tournament-main-titile h3 {
-        font-size: 19px;
-        left: 30%;
-    
-    }
-    .tour-pay-section h6 {
-       left: -30%;
-        font-size: 13px;
        
     }
-    .tour-pay-section span {
-        left: 85px;
-        font-size: 13px;
-       
-    }
-    .tour-pay-section span::after {
-        height: 23px;
-        top: -20px;
-        left: 13px;
-    }
-    .tour-pay-section .prize-pool {
-
-        left: 14%;
-        font-size: 11px;
-        top: 20px;
+    .tournamnet-team-img img{
+        border-radius: 6px;
+        left: -10px;
+        position: relative;
+        /* width: 174px; */
+        transform: scale(1.3);
+        /* height: 138px; */
+        bottom: 1;
         }
-    .tour-pay-section .entry-fee {
-        right: -14%;
-        top: 18px;
-        font-size: 11px;
-        }
-        .tournament-rule {
-            top: 7px;
-            right: 13px;
-        }
-}
 
-/* 1000pixel */
-@media screen and (max-device-width: 1000px)
-{
-    .tournament_headerclip {
-        width: calc(80% - -104px)!important;
-    }
-.tournament-carditems {
-    width: calc(29% - -127px)!important;
-    margin: 0px 3.5% 57px 3.5% !important;
-}
-.tournament-main-titile h3 {
-        left: 24%;
-   
-}
-.tour-pay-section h6 {
-    left: -26%;
-    font-size: 13px;
-    top: 22px;
-}
-.tour-pay-section span {
-    left: 76px;
-    font-size: 13px;
-}
-.tour-pay-section .prize-pool {
-       left: 19%;
-}
-.tour-pay-section .entry-fee {
-    right: -15%;
-    top: 18px;
-}
-.tour-progress-bar {
-    width: 49%;
-    position: absolute;
-    right: 11px;
-    bottom: 30%;
-}
-.tournament-rule {
-    top: 7px;
-    right: 13px;
-}
-.tournamnet-team-img {
-    width: 211px;
-    height: auto;
-    position: absolute;
-    left: 0;
-}
-
-.tournamnet-team-img img {
-    left: -40px;
-    width: 152px;
-    transform: scale(1.23);
-    top: 56px;
-}
-}
-/* end */
-/* 900pixel */
-@media screen and (max-device-width: 900px)
-{
-    .tournament_headerclip {
-        width: calc(78% - -102px)!important;
-    }
-    .tournament-carditems {
-        width: calc(27% - -129px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
-    }
-.tournament-main-titile h3 {
-        left: 24%;
-   
-}
-.tour-pay-section h6 {
-    left: -18%;
-    font-size: 12px;
-    top: 22px;
-}
-.tour-pay-section span {
-    left: 76px;
-    font-size: 12px;
-}
-.tour-pay-section .prize-pool {
-       left: 19%;
-       font-size: 11px;
-}
-.tour-pay-section .entry-fee {
-    right: -15%;
-    top: 18px;
-    font-size: 11px;
-}
-.tour-progress-bar {
-    width: 49%;
-    position: absolute;
-    right: 11px;
-    bottom: 30%;
-}
-.tournament-rule {
-    top: 7px;
-    right: 13px;
-}
-.tournamnet-team-img {
-    width: 211px;
-    height: auto;
-    position: absolute;
-    left: 0;
-}
-
-.tournamnet-team-img img {
-    left: -40px;
-    width: 152px;
-    transform: scale(1.23);
-    top: 56px;
-}
-}
-/* end */
-/* 850pixel */
-@media screen and (max-device-width: 850px)
-{
-    .tournament_headerclip {
-        width: calc(76% - -101px)!important;
-    }
-    .tournament-carditems {
-        width: calc(25% - -131px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
-    }
-    .tournament-main-titile h3 {
-        left: 16%;
-    }
-.tour-pay-section h6 {
-    left: -9%;
-    font-size: 11px;
-    top: 22px;
-}
-.tour-pay-section span {
-    left: 71px;
-    font-size: 11px;
-    top: -19px;
-}
-.tour-pay-section span::after {
-    height: 23px;
-    top: -20px;
-    left: 19px;
-}
-.tour-pay-section .prize-pool {
-       left: 37%;
-       font-size: 11px;
-}
-.tour-pay-section .entry-fee {
-    right: -25%;
-    top: 18px;
-    font-size: 11px;
-}
-.tour-progress-bar {
-    right: 8px;
-    bottom: 30%;
-}
-.tournament-rule {
-    top: 7px;
-    right: 13px;
-}
-.tournamnet-team-img {
-    width: 201px;
-    height: auto;
-    position: absolute;
-    left: 0;
-}
-
-.tournamnet-team-img img {
-    left: -40px;
-    width: 137px;
-    transform: scale(1.22);
-    top: 56px;
-}
-}
-/* end */
-/* 770pixel */
-@media screen and (max-device-width: 770px)
-{
-    .tournament_headerclip {
-        width: calc(75% - -96px)!important;
-    }
-    .tournament-carditems {
-        width: calc(23% - -135px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
-    }
-    .tournament-main-titile h3 {
-        left: 16%;
-    }
-.tour-pay-section h6 {
-    left: -9%;
-    font-size: 11px;
-    top: 22px;
-}
-.tour-pay-section span {
-    left: 71px;
-    font-size: 11px;
-    top: -19px;
-}
-.tour-pay-section span::after {
-    height: 23px;
-    top: -20px;
-    left: 15px;
-}
-.tour-pay-section .prize-pool {
-       left: 37%;
-       font-size: 11px;
-}
-.tour-pay-section .entry-fee {
-    right: -30%;
-    top: 18px;
-    font-size: 11px;
-}
-.tour-progress-bar {
-    right: 12px;
-    bottom: 30%;
-}
-.tournament-rule {
-    top: 7px;
-    right: 13px;
-}
-.tournamnet-team-img {
-    width: 201px;
-    height: auto;
-    position: absolute;
-    left: 0;
-}
-
-.tournamnet-team-img img {
-    left: -47px;
-    width: 119px;
-    transform: scale(1.3);
-    top: 65px;
-}
-}
-/* end */
-/* 640pixel */
-@media screen and (max-device-width: 640px)
-{
-    .tournament_headerclip {
-        width: calc(70% - -97px)!important;
-    }
-    .tournament-carditems {
-        width: calc(49% - -141px)!important;
-        margin: 0px 5.5% 58px 16.5% !important;
-    }
-    .tournament-main-titile h3 {
-        left: 27%;
-    }
-    .tour-pay-section {
-        width: 40%;
-        }
-.tour-pay-section h6 {
-    left: -31%;
-    font-size: 13px;
-    top: 22px;
-
-}
-.tour-pay-section span {
-    left: 86px;
-    font-size: 14px;
-    top: -20px;
-
-}
-.tour-pay-section span::after {
-       left: 15px;
-}
-.tour-pay-section .prize-pool {
-    left: 16%;
-    font-size: 12px;
-}
-.tour-pay-section .entry-fee {
-    right: -11%;
-    top: 18px;
-    font-size: 12px;
-}
-.tour-progress-bar {
-    right: 16px;
-    bottom: 30%;
-    width: 52%;
+        .tournament-rule{
   
-    }
-.tournament-rule {
-    top: 7px;
-    right: 13px;
-}
-.tournamnet-team-img {
-    width: 234px;
-    height: auto;
-    position: absolute;
-    left: 0;
-}
-
-.tournamnet-team-img img {
-    left: -47px;
-    width: 130px;
-    transform: scale(1.5);
-    top: 65px;
-}
-}
-/* end */
-/* 400pixel */
-@media screen and (max-device-width: 400px)
-{
-
-    body{
-        margin: 0 !important;
-        padding: 0 !important;
-        
-    }
-    .tournament-main-wrapper{
-        width: 100%;
-        height: auto;
-        position: relative;
-        overflow-x: hidden;
-    
-    }
-    .tournament_headerclip h1 {
-        text-align: left;
-        font-size: 44px;
-        font-weight: 700;
-        color: #ffff;
-        text-transform: uppercase;
-        left: -55px;
-        top: 8px;
-        position: relative;
-    }
-    .tournament-main-titile h3 {
-        left: 25%;
-    }
-    .tournament-card-list {
-          margin: 16px -47px;
-         padding-right: 39px;
-        
+            background-color: #e0f0f5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            float: right;
+            top: 10px;
+            right: 14px;
         }
-    .tournament-carditems {
-        width: calc(47% - -148px)!important;
-           margin: 0px 5.5% 58px 16.5% !important;
-          
-        }
-        .tournamnet-team-img {
-            width: 176px;
-        }
-        .tournamnet-team-img img {
-            left: -26px;
-            width: 101px;
-            transform: scale(1.6);
-            top: 74px;
-        }
-        .tour-pay-section h6 {
-            left: -23%;
-            font-size: 13px;
-            top: 22px;
-        }
-        .tour-pay-section .prize-pool {
-            left: 18%;
-            font-size: 12px;
-        }
-        .tour-pay-section span {
-            left: 69px;
-            font-size: 13px;
-            top: -20px;
-        }
-        .tour-pay-section span::after {
-            left: 20px;
-        }
-        .tournament-rule {
-            top: 7px;
-            right: 16px;
-        }
-        .tour-pay-section .entry-fee {
-            right: -10%;
-            top: 18px;
-            font-size: 12px;
-        }
-        .tour-pay-section .prize-pool {
-            left: 18%;
-            font-size: 12px;
-        }
-}
-/* end */
-/* 300pixel */
-@media screen and (max-device-width: 360px)
-{
-
-    body{
-        margin: 0 !important;
-        padding: 0 !important;
-        
-    }
-    .tournament-main-wrapper{
-        width: 100%;
-        height: auto;
-        position: relative;
-        overflow-x: hidden;
-    
-    }
-    .tournament_headerclip h1 {
-        text-align: left;
-        font-size: 44px;
-        font-weight: 700;
-        color: #ffff;
-        text-transform: uppercase;
-        left: -55px;
-        top: 8px;
-        position: relative;
-    }
-    .tournament-main-titile h3 {
-        left: 21%;
-    }
-    .tournament-card-list {
-          margin: 16px -47px;
-         padding-right: 39px;
-        
-        }
-    .tournament-carditems {
-        width: calc(47% - -148px)!important;
-           margin: 0px 5.5% 58px 16.5% !important;
-          
-        }
-        .tournamnet-team-img {
-            width: 155px;
-        }
-        .tournamnet-team-img img {
-            left: -15px;
-            width: 87px;
-            transform: scale(1.7);
-            top: 74px;
-        }
-        .tour-pay-section h6 {
-           
-        left: -17%;
-        font-size: 13px;
-        top: 22px;
-           
+        .rule-icon{
+            position: relative;
+            top: 3px;
             
         }
-        .tour-pay-section .prize-pool {
-            left: 18%;
-            font-size: 12px;
+
+    /* Modal css */
+    .modal_close {
+        width: 5rem;
+        height: 2.5rem;
+        border: none;
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+    .modal_box {
+        border: none !important;
+        border-radius: 7px;
+    }
+    #modal-modal-title{
+        margin-left: 0%;
+    }
+    #modal-modal-description{
+        margin:5% 0% 5% 0%;
+    }
+    .rules_modal::-webkit-scrollbar {
+        width: 5px;
+    }
+    .rules_modal::-webkit-scrollbar-track {
+        box-shadow: inset 005px grey;
+    }
+    .rules_modal::-webkit-scrollbar-thumb {
+        background-color: #87CEEB;
+        border-radius: 15px;
+    }
+    .rules_modal::-webkit-scrollbar-thumb:hover {
+        background-color: #6BDCFC;
+    }
+    /* end */
+
+    .tour-pay-section{
+        width: 30%;
+        height: 75px;
+        position: absolute;
+        bottom: 104px;
+        right: 60px;
+        border-radius: 4px;
+    }
+    .tour-pay-section h6{
+        font-weight: 800;
+        left: -21%;
+        font-size: 12px;
+        top: 22px;
+    
+    }
+    .tour-pay-section span{
+        font-weight: 800;
+        left: 63px;
+        font-size: 13px;
+        top: -21px;
+    }
+    .tour-pay-section span::after{
+        content: '';
+        width: 2px;
+        background-color: rgb(131, 128, 128);
+        display: block;
+        position: relative;
+        height: 23px;
+        top: -20px;
+        left: 2px;
+    
+    }
+    .tour-pay-section  .entry-fee{
+        font-weight: bolder;
+        font-size: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 18px;
+        color: black;
+        right: -29%;
+    }
+    .tour-pay-section .prize-pool{
+        
+        font-weight: bolder;
+        left: 16%;
+        font-size: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 19px;
+        color: black;
+    
+    
+    }
+
+
+
+    .tour-progress-bar{
+        position: absolute;
+        width: 50%;
+        position: absolute;
+        right: 5px;
+        bottom: 30%;
+    }
+    .progressbar-active{
+        height:24px;
+        width:20%;
+    }
+    progress {
+        display: block;
+        position: relative;
+         border-radius: 7px;
+        width: 100%;
+        height: 6px;
+    
         }
-        .tour-pay-section span {
-            left: 69px;
-            font-size: 13px;
-            top: -20px;
+    
+        progress[value]::-webkit-progress-bar {
+            background-color: rgb(131, 128, 128);
+            border-radius: 10px;
         }
-        .tour-pay-section span::after {
-            left: 21px;
+        progress[value]::-webkit-progress-value {
+            background-color: #6BDCFC;
+            border-radius: 10px;
+            
         }
-        .tournament-rule {
-            top: 7px;
-            right: 16px;
-        }
-        .tour-pay-section .entry-fee {
-            right: -10%;
-            top: 18px;
-            font-size: 12px;
-        }
-        .tour-pay-section .prize-pool {
-            left: 18%;
-            font-size: 12px;
-        }
+       .tour-progress-bar .progressbar-left-text{
+        top: 3px;
+        left: -10px;
+        font-weight: 700;
+        float: left;
+        margin: 0;
+        font-size: 12px;
+    }
+    .tour-progress-bar .progressbar-right-text{
+        top: 3px;
+        right: 4px;
+        font-size: 12px;
+        float: right;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .tour-reg-section{
+        width: 236px;
+        height: 59px;
+        bottom: -31px;
+        right:0;
+        border-radius: 4px;
+    }
+    .tour-reg-section h6{
+        font-weight: 600;
+        left: -30%;
+        font-size: 15px;
+        top: 11px;
+    }
+    .tour-reg-section p{
+        font-weight: bolder;
+        left: 3%;
+        font-size: 10px;
+        top: 18px;    
+    }
+    
+    .tour-reg-section a{
+        right: -25px;
+        font-size: 15px;
+        position: relative;
+        bottom: 12px;
+    }
+    .tour-reg-section a::after{
+        content: '';
+        width: 2px;
+        height: 32px;
+        top: -25px;
+        left: 53px;
+    
+    }
+    .tournament-footer{
+        margin-top:20%;
+    }
 }
-/* end */
+
+
+    @media (min-width: 1280px) and (max-width: 1349px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+           
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -1px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:5% 0% 2% 0%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(28% - 10px)!important;
+            height: auto;
+            left: 7%;
+            margin: 0 2% 6% 2%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 20px;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 130px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            transform: scale(1.3);
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            background-color: #6BDCFC;
+            color: white;
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+     
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            color: rgb(131, 128, 128);
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 800;
+            left: -40%;
+            font-size: 16px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 63px;
+            font-size: 15px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 14px;
+            top: 22px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 14px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 22px;
+            color: black;
+        
+        
+        }
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 19px;
+            bottom: 30%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            position: relative;
+            top: 3px;
+            left: 0px;
+            color: rgb(102 98 98);
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 14px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            position: relative;
+            top: 3px;
+            right: 4px;
+            font-size: 14px;
+            float: right;
+            color: rgb(102 98 98);
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+           
+        }
+        .tour-reg-section h6{
+            
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            text-transform: uppercase;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            color: white;
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+        
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tour-reg-section a:hover{
+            text-decoration: none;
+            color:#ffff;
+        }
+        .tournament-footer{
+            margin-top:40%;
+        }
+    }
+    @media (min-width: 1134px) and (max-width: 1279px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+           
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:5% 0% 3% 0%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(28% - 10px)!important;
+            height: auto;
+            left: 3.5%;
+            margin: 0 2.5% 8% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 110px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            background-color: #6BDCFC;
+            color: white;
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+     
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            color: rgb(131, 128, 128);
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 800;
+            left: -28%;
+            font-size: 14px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 12px;
+            top: 22px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            
+            font-weight: bolder;
+            left: 16%;
+            font-size: 12px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 22px;
+            color: black;
+        
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 30%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            position: relative;
+            top: 3px;
+            left: 0px;
+            color: rgb(102 98 98);
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            position: relative;
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            color: rgb(102 98 98);
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+           
+        }
+        .tour-reg-section h6{
+            
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            text-transform: uppercase;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            color: white;
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+        
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tour-reg-section a:hover{
+            text-decoration: none;
+            color:#ffff;
+        }
+        .tournament-footer{
+            margin-top:50%;
+        }
+    }
+
+
+
+    @media (min-width: 1024px) and (max-width: 1133px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+           
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:5% 0% 3% 0%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(40% - 10px)!important;
+            height: auto;
+            left: 7%;
+            margin: 0 4% 8% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 241px;           
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 7%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 140px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 78px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            background-color: #6BDCFC;
+            color: white;
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -46%;
+            font-size: 18px;
+            top: 2px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 17px;
+            top: -43px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            position: relative;
+            height: 23px;
+            top: -22px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 17px;
+            position: absolute;
+            top: 17px;
+            right: -20%;
+        }
+        .tour-pay-section .prize-pool{
+            left: -5%;
+            font-size: 17px;
+            position: absolute;
+            top: 17px;
+        
+        
+        }
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 23%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            position: relative;
+            top: 3px;
+            left: -3px;
+            float: left;
+            margin: 0;
+            font-size: 16px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            position: relative;
+            top: 3px;
+            right: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 276px;
+            background-color: #6BDCFC;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+           
+        }
+        .tour-reg-section h6{
+            color: white;
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            text-transform: uppercase;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            color: white;
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+        
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tour-reg-section a:hover{
+            text-decoration: none;
+            color:#ffff;
+        }
+        .tournament-footer{
+            margin-top:50%;
+        }
+    }
+
+
+    
+    @media (min-width: 900px) and (max-width: 1023px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+           
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:5% 0% 3% 0%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(40% - 10px)!important;
+            height: auto;
+            left: 7%;
+            margin: 0 4% 8% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 241px;           
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 7%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 140px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 78px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            background-color: #6BDCFC;
+            color: white;
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -46%;
+            font-size: 18px;
+            top: 2px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 17px;
+            top: -43px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            position: relative;
+            height: 23px;
+            top: -22px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 17px;
+            position: absolute;
+            top: 17px;
+            right: -20%;
+        }
+        .tour-pay-section .prize-pool{
+            left: -5%;
+            font-size: 17px;
+            position: absolute;
+            top: 17px;
+        
+        
+        }
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 23%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            position: relative;
+            top: 3px;
+            left: -3px;
+            float: left;
+            margin: 0;
+            font-size: 16px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            position: relative;
+            top: 3px;
+            right: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            background-color: #6BDCFC;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+           
+        }
+        .tour-reg-section h6{
+            color: white;
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            text-transform: uppercase;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            color: white;
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+        
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tour-reg-section a:hover{
+            text-decoration: none;
+            color:#ffff;
+        }
+        .tournament-footer{
+            margin-top:50%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 899px) {
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 8rem;
+            width:100%;
+            top:2px;
+           
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 52px;
+            font-weight: 700;
+            left:8%;
+            top: 8px;
+            
+            position: relative;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -5px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:5% 0% 3% 0%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(40% - 10px)!important;
+            height: auto;
+            left: 6%;
+            margin: 0 4% 10% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;           
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 130px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            background-color: #6BDCFC;
+            color: white;
+            width: 5rem;
+            height: 2.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 0%;
+        }
+        #modal-modal-description{
+            margin:5% 0% 5% 0%;
+        }
+
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            color: rgb(131, 128, 128);
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 800;
+            left: -38%;
+            font-size: 16px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 63px;
+            font-size: 14px;
+            top: -22px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 14px;
+            position: absolute;
+            top: 22px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{
+            left: 13%;
+            font-size: 14px;
+            position: absolute;
+            top: 22px;
+            color: black;
+        
+        
+        }
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 30%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            position: relative;
+            top: 3px;
+            left: -3px;
+            float: left;
+            margin: 0;
+            font-size: 14px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            position: relative;
+            top: 3px;
+            right: 4px;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            background-color: #6BDCFC;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+           
+        }
+        .tour-reg-section h6{
+            color: white;
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            text-transform: uppercase;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            color: white;
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+        
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tour-reg-section a:hover{
+            text-decoration: none;
+            color:#ffff;
+        }
+        .tournament-footer{
+            margin-top:50%;
+        }
+    }
+    
+
+
+
+
+
+    @media (min-width: 600px) and (max-width: 767px) {
+        body{
+            margin: 0 !important;
+            padding: 0 !important;
+            
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 7rem;
+            width:100%;
+            top:2px;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 44px;
+            left:14%;
+            top: 8px;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -8px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:15% 2% 3% 2%;
+            /* padding-right: 32px; */
+        }
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(76% - 10px)!important;
+            left: 6%;
+            margin: 0 2.5% 15% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 320px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            font-size: 30px;
+            top: 13px;
+            left: 7%;
+            font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 180px;
+            left: 0;
+            top: 110px;
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            transform: scale(1.3);
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+                width: 40px;
+                height: 40px;
+                position: relative;
+                float: right;
+                top: 15px;
+                right: 23px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 4px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 6.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+            left:10%;
+            margin-left: 10%;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 10%;
+        }
+        #modal-modal-description{
+            margin:10% 10% 10% 10%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -45%;
+            font-size: 18px;
+            top: -35px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 18px;
+            top: -85px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            height: 23px;
+            top: -24px;
+            left: 10px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 20px;
+            top: -25px;
+            right: -15%;
+        }
+        .tour-pay-section .prize-pool{   
+            font-weight: bolder;
+            left: 1%;
+            font-size: 20px;
+            top: -25px;    
+        }
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 24%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 1px;
+            float: left;
+            margin: 0;
+            font-size: 18px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 300px;
+            height: 70px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            left: -28%;
+            font-size: 18px;
+            position: relative;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            left: 4%;
+            font-size: 13px;
+            top: 20px;
+            color: black;
+        }
+        
+        .tour-reg-section a{
+            right: -34px;
+            font-size: 18px;
+            position: relative;
+            bottom: 12px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -23px;
+            left: 62px;
+        
+        }
+        .tournament-footer{
+            margin-top:70%;
+        }
+    }
+
+
+
+
+    @media (min-width: 531px) and (max-width: 599px) {
+        body{
+            margin: 0 !important;
+            padding: 0 !important;
+            
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 7rem;
+            width:100%;
+            top:2px;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 38px;
+            left:14%;
+            top: 8px;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -13px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:15% 2% 3% 2%;
+            /* padding-right: 32px; */
+        }
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(76% - 10px)!important;
+            left: 14%;
+            margin: 0 2.5% 15% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 285px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            font-size: 28px;
+            top: 11px;
+            left: 7%;
+            font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 170px;
+            left: 0;
+            top: 90px;
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            transform: scale(1.3);
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+                width: 40px;
+                height: 40px;
+                position: relative;
+                float: right;
+                top: 12px;
+                right: 23px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 4px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 6.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+            left:10%;
+            margin-left: 10%;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 10%;
+        }
+        #modal-modal-description{
+            margin:10% 10% 10% 10%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            font-weight: 800;
+            left: -37%;
+            font-size: 18px;
+            top: -18px;
+        
+        }
+        .tour-pay-section span{
+            font-weight: 800;
+            left: 63px;
+            font-size: 18px;
+            top: -64px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            height: 23px;
+            top: -24px;
+            left: 10px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 18px;
+            top: 0px;
+            right: -20%;
+        }
+        .tour-pay-section .prize-pool{   
+            font-weight: bolder;
+            left: 10%;
+            font-size: 18px;
+            top: 0px;    
+        }
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 24%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 1px;
+            float: left;
+            margin: 0;
+            font-size: 18px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 280px;
+            height: 70px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            left: -28%;
+            font-size: 18px;
+            position: relative;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            left: 4%;
+            font-size: 13px;
+            top: 20px;
+            color: black;
+        }
+        
+        .tour-reg-section a{
+            right: -31px;
+            font-size: 18px;
+            position: relative;
+            bottom: 14px;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -20px;
+            left: 62px;
+        
+        }
+        .tournament-footer{
+            margin-top:80%;
+        }
+    }
+
+
+    @media (min-width: 400px) and (max-width: 532px) {
+        body{
+            margin: 0 !important;
+            padding: 0 !important;
+            
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 7rem;
+            width:100%;
+            top:2px;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 36px;
+            left:14%;
+            top: 8px;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -13px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:15% 2% 3% 2%;
+            /* padding-right: 32px; */
+        }
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(85% - 10px)!important;
+            left: 13%;
+            margin: 0 2.5% 25% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 255px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            font-size: 26px;
+            top: 11px;
+           left: 6%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 155px;
+            left: 0;
+            top: 85px;
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            transform: scale(1.3);
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                position: relative;
+                float: right;
+                top: 14px;
+                right: 15px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            width: 5rem;
+            height: 6.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+            left:10%;
+            margin-left: 10%;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 10%;
+        }
+        #modal-modal-description{
+            margin:10% 10% 10% 10%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            color: rgb(131, 128, 128);
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 800;
+            left: -32%;
+            font-size: 16px;
+            top: 5px;
+        
+        }
+        .tour-pay-section span{
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 63px;
+            font-size: 15px;
+            top: -39px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -24px;
+            left: 10px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 16px;
+            top: 16px;
+            right: -20%;
+        }
+        .tour-pay-section .prize-pool{   
+            font-weight: bolder;
+            left: 10%;
+            font-size: 16px;
+            top: 16px;    
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 24%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+           .tour-progress-bar .progressbar-left-text{
+            top: 3px;
+            left: 1px;
+            float: left;
+            margin: 0;
+            font-size: 16px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            top: 3px;
+            right: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+        }
+        .tour-reg-section h6{
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            left: 3%;
+            font-size: 10px;
+            top: 18px;
+            color: black;
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 16px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tournament-footer{
+            margin-top:80%;
+        }
+    }
+
+
+@media (min-width: 361px) and (max-width: 399px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    /* header clip */
+    .tournament_headerclip {
+        height: 7rem;
+        width:100%;
+        top:2px;
+    }
+    .tournament_headerclip h1{
+        text-align: left;
+        font-size: 36px;
+        left:14%;
+        top: 8px;
+    }
+    .tournament_headerclip h1:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        left: -19px;
+        top: -13px;
+        opacity: 0.5;
+
+    }
+    /* end */
+
+    .tournament-card-list{
+        margin:20% 2% 3% 2%;
+        /* padding-right: 32px; */
+    }
+    /* first card starts */
+    .tournament-carditems{
+        width: calc(90% - 10px)!important;
+        left: 12%;
+        margin: 0 2.5% 25% 2.5%!important;
+     
+    }
+    .tour-card{
+        width: 100%;
+        height: 221px;
+        border-radius: 3px solid;
+        position: relative;
+    }
+    .tournament-main-titile h3{
+        font-size: 20px;
+        top: 11px;
+       left: 5%;
+       font-weight: 600;
+        position: absolute;
+    }
+    .tournamnet-team-img{
+        width: 130px;
+        left: 0;
+        top: 73px;
+    }
+    .tournamnet-team-img img{
+        border-radius: 6px;
+        left: -10px;
+        position: relative;
+        transform: scale(1.3);
+        bottom: 1;
+        }
+
+        .tournament-rule{
+  
+            background-color: #e0f0f5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            float: right;
+            top: 10px;
+            right: 15px;
+        }
+        .rule-icon{
+            position: relative;
+            top: 3px;
+            
+        }
+
+    /* Modal css */
+    .modal_close {
+        width: 5rem;
+        height: 6.5rem;
+        border: none;
+        font-size: 18px;
+        margin-top: 1rem;
+        left:10%;
+        margin-left: 10%;
+    }
+    .modal_box {
+        border: none !important;
+        border-radius: 7px;
+    }
+    #modal-modal-title{
+        margin-left: 10%;
+    }
+    #modal-modal-description{
+        margin:10% 10% 10% 10%;
+    }
+    .rules_modal::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* end */
+
+    .tour-pay-section{
+        width: 30%;
+        height: 75px;
+        position: absolute;
+        bottom: 104px;
+        right: 60px;
+        border-radius: 4px;
+    }
+    .tour-pay-section h6{
+        color: rgb(131, 128, 128);
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 800;
+        left: -32%;
+        font-size: 14px;
+        top: 22px;
+    
+    }
+    .tour-pay-section span{
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 63px;
+        font-size: 13px;
+        top: -21px;
+    }
+    .tour-pay-section span::after{
+        content: '';
+        width: 2px;
+        background-color: rgb(131, 128, 128);
+        display: block;
+        position: relative;
+        height: 23px;
+        top: -20px;
+        left: 2px;
+    
+    }
+    .tour-pay-section  .entry-fee{
+        font-weight: bolder;
+        font-size: 14px;
+        top: 18px;
+        right: -29%;
+    }
+    .tour-pay-section .prize-pool{   
+        font-weight: bolder;
+        left: 16%;
+        font-size: 14px;
+        top: 19px;    
+    }
+
+
+
+    .tour-progress-bar{
+        position: absolute;
+        width: 50%;
+        position: absolute;
+        right: 15px;
+        bottom: 24%;
+    }
+    .progressbar-active{
+        height:24px;
+        width:20%;
+    }
+    progress {
+        display: block;
+        position: relative;
+         border-radius: 7px;
+        width: 100%;
+        height: 6px;
+    
+        }
+       .tour-progress-bar .progressbar-left-text{
+        position: relative;
+        top: 3px;
+        left: 1px;
+        color: rgb(102 98 98);
+        font-weight: 700;
+        float: left;
+        margin: 0;
+        font-size: 14px;
+            
+    }
+    .tour-progress-bar .progressbar-right-text{
+        position: relative;
+        top: 3px;
+        right: 4px;
+        font-size: 14px;
+        float: right;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .tour-reg-section{
+        width: 236px;
+        height: 59px;
+        position: absolute;
+        bottom: -31px;
+        right:0;
+        border-radius: 4px;
+    }
+    .tour-reg-section h6{
+        left: -30%;
+        font-size: 15px;
+        position: relative;
+        top: 11px;
+    }
+    .tour-reg-section p{
+        left: 3%;
+        font-size: 10px;
+        top: 18px;
+        color: black;
+    }
+    
+    .tour-reg-section a{
+        color: white;
+        font-weight: 600;
+        right: -25px;
+        font-size: 15px;
+        position: relative;
+        bottom: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .tour-reg-section a::after{
+        content: '';
+        width: 2px;
+        height: 32px;
+        top: -25px;
+        left: 53px;
+    
+    }
+    .tournament-footer{
+        margin-top:90%;
+    }
+}
+
+
+    
+    @media (min-width: 300px) and (max-width: 360px) {
+        body{
+            margin: 0 !important;
+            padding: 0 !important;
+            
+        }
+        .tournament-main-wrapper{
+            width: 100%;
+            height: auto;
+            position: relative;
+        
+        }
+        /* header clip */
+        .tournament_headerclip {
+            height: 7rem;
+            width:100%;
+            top:2px;
+        }
+        .tournament_headerclip h1{
+            text-align: left;
+            font-size: 26px;
+            left:14%;
+            top: 8px;
+        }
+        .tournament_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            left: -19px;
+            top: -13px;
+            opacity: 0.5;
+    
+        }
+        /* end */
+    
+        .tournament-card-list{
+            margin:15% 2% 3% 2%;
+            /* padding-right: 32px; */
+        }
+        .tournament-main-card{
+           width:100%;
+            box-sizing: border-box;
+        }
+    
+        /* first card starts */
+        .tournament-carditems{
+            width: calc(90% - 10px)!important;
+            left: 13%;
+            margin: 0 2.5% 25% 2.5%!important;
+         
+        }
+        .tour-card{
+            width: 100%;
+            height: 221px;
+            border-radius: 3px solid;
+            position: relative;
+        }
+        .tournament-main-titile{
+            width: 100%;
+            position: relative;
+        }
+        .tournament-main-titile h3{
+            color: black;
+            font-size: 18px;
+            text-transform: uppercase;
+            top: 11px;
+           left: 5%;
+           font-weight: 600;
+            position: absolute;
+        }
+        .tournamnet-team-img{
+            width: 110px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: 73px;
+    
+           
+        }
+        .tournamnet-team-img img{
+            border-radius: 6px;
+            left: -10px;
+            position: relative;
+            /* width: 174px; */
+            transform: scale(1.3);
+            /* height: 138px; */
+            bottom: 1;
+            }
+    
+            .tournament-rule{
+      
+                background-color: #e0f0f5;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                float: right;
+                top: 10px;
+                right: 14px;
+            }
+            .rule-icon{
+                position: relative;
+                top: 3px;
+                
+            }
+    
+        /* Modal css */
+        .modal_close {
+            background-color: #6BDCFC;
+            color: white;
+            width: 5rem;
+            height: 6.5rem;
+            border: none;
+            font-size: 18px;
+            margin-top: 1rem;
+            left:10%;
+            margin-left: 10%;
+        }
+        .modal_box {
+            border: none !important;
+            border-radius: 7px;
+        }
+        #modal-modal-title{
+            margin-left: 10%;
+        }
+        #modal-modal-description{
+            margin:10% 10% 10% 10%;
+        }
+        .rules_modal::-webkit-scrollbar {
+            width: 5px;
+        }
+        .rules_modal::-webkit-scrollbar-track {
+            box-shadow: inset 005px grey;
+        }
+        .rules_modal::-webkit-scrollbar-thumb {
+            background-color: #87CEEB;
+            border-radius: 15px;
+        }
+        .rules_modal::-webkit-scrollbar-thumb:hover {
+            background-color: #6BDCFC;
+        }
+        /* end */
+    
+        .tour-pay-section{
+            width: 30%;
+            height: 75px;
+            position: absolute;
+            bottom: 104px;
+            right: 60px;
+            border-radius: 4px;
+        }
+        .tour-pay-section h6{
+            color: rgb(131, 128, 128);
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 800;
+            left: -25%;
+            font-size: 14px;
+            top: 22px;
+        
+        }
+        .tour-pay-section span{
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 63px;
+            font-size: 13px;
+            top: -21px;
+        }
+        .tour-pay-section span::after{
+            content: '';
+            width: 2px;
+            background-color: rgb(131, 128, 128);
+            display: block;
+            position: relative;
+            height: 23px;
+            top: -20px;
+            left: 2px;
+        
+        }
+        .tour-pay-section  .entry-fee{
+            font-weight: bolder;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+            right: -29%;
+        }
+        .tour-pay-section .prize-pool{   
+            font-weight: bolder;
+            left: 16%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 19px;
+            color: black;
+        
+        }
+    
+    
+    
+        .tour-progress-bar{
+            position: absolute;
+            width: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 30%;
+        }
+        .progressbar-active{
+            height:24px;
+            width:20%;
+        }
+        progress {
+            display: block;
+            position: relative;
+             border-radius: 7px;
+            width: 100%;
+            height: 6px;
+        
+            }
+        
+            progress[value]::-webkit-progress-bar {
+                background-color: rgb(131, 128, 128);
+                border-radius: 10px;
+            }
+            progress[value]::-webkit-progress-value {
+                background-color: #6BDCFC;
+                border-radius: 10px;
+                
+            }
+           .tour-progress-bar .progressbar-left-text{
+            position: relative;
+            top: 3px;
+            left: 1px;
+            color: rgb(102 98 98);
+            font-weight: 700;
+            float: left;
+            margin: 0;
+            font-size: 12px;
+                
+        }
+        .tour-progress-bar .progressbar-right-text{
+            position: relative;
+            top: 3px;
+            right: 4px;
+            font-size: 12px;
+            float: right;
+            color: rgb(102 98 98);
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .tour-reg-section{
+            width: 236px;
+            background-color: #6BDCFC;
+            height: 59px;
+            position: absolute;
+            bottom: -31px;
+            right:0;
+            border-radius: 4px;
+           
+        }
+        .tour-reg-section h6{
+            color: white;
+            font-weight: 600;
+            left: -30%;
+            font-size: 15px;
+            position: relative;
+            text-transform: uppercase;
+            top: 11px;
+        }
+        .tour-reg-section p{
+            color: white;
+            font-weight: bolder;
+            left: 3%;
+            font-size: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 18px;
+            color: black;
+        
+        }
+        
+        .tour-reg-section a{
+            color: white;
+            font-weight: 600;
+            right: -25px;
+            font-size: 15px;
+            position: relative;
+            bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .tour-reg-section a::after{
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 53px;
+        
+        }
+        .tour-reg-section a:hover{
+            text-decoration: none;
+            color:#ffff;
+        }
+        .tournament-footer{
+            margin-top:70%;
+        }
+    }

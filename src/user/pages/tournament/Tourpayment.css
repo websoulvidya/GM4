@@ -1,0 +1,138 @@
+
+.tourpayment_header{
+    height: 8rem;
+    width: -webkit-fill-available;
+    background-color: #87ceeb;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+.tourpayment_header h1{
+    padding-top: 6px;
+    text-align: left;
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+.tourpayment_header h1:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: white;
+    left: 64px;
+    top: 92px;
+    opacity: 0.5;
+}
+
+.tour-QR_code_section{
+    width: 32rem;
+    height: 36rem;
+    margin-top:10%;
+    margin-bottom: 4rem;
+    border: 2px solid #87ceeb;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+
+}
+.tour-QR_code img{
+    width: 70%;
+    margin-top: 3rem;
+    margin-bottom: 1.9rem;
+}
+.tour-QR_code_section h5{
+    margin-bottom: -2rem;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: #87ceeb;
+}
+.tour-QR_code_section h4{
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+.tour-QR_code_section hr{
+    margin-top: 0;
+    color: #D7D3CE;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.tour-payment_method_img ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tour-payment_method_img img{
+    width: 4rem;
+}
+.tour-payment-footer{
+    margin-top:20%;
+}
+@media only screen and (min-device-width: 1601px)and (max-device-width : 2000px) {
+    .tour-payment-footer{
+        margin-top:30%;
+    }
+}
+
+@media only screen and (min-device-width: 1501px)and (max-device-width : 1600px) {
+    .tour-payment-footer{
+        margin-top:30%;
+    }
+}
+@media only screen and (min-device-width:1301px)and (max-device-width : 1500px) {
+    .tour-payment-footer{
+        margin-top:30%;
+    }
+}
+@media only screen and (min-device-width:1024px)and (max-device-width : 1300px) {
+    .tour-payment-footer{
+        margin-top:40%;
+    }
+}
+@media only screen and (min-device-width: 900px)and (max-device-width : 1023px) {
+    .tour-payment-footer{
+        margin-top:50%;
+    }
+}
+@media only screen and (min-device-width: 641px)and (max-device-width : 899px) {
+    .tour-payment-footer{
+        margin-top:60%;
+    }
+}
+@media only screen and (min-device-width: 481px)and (max-device-width : 640px) {
+    .tour-payment-footer{
+        margin-top:60%;
+    }
+}
+
+
+@media (max-width:480px) {
+   
+    .tour-QR_code_section{
+        width: 22rem;
+        height: auto;
+    }
+    .tourpayment_header h1:before{
+        display: none;
+    }
+    .tourpayment_header{
+        padding-left: 2rem;
+    }
+    .tourpayment_header h1{
+        font-size: 38px;
+    }
+    .tourpayment_header{
+        height: 7rem;
+    }
+    .tour-payment-footer{
+        margin-top:80%;
+    }
+}

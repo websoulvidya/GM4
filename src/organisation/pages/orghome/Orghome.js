@@ -15,19 +15,18 @@ import Typography from '@mui/material/Typography';
 import './Orghome.css';
 function Orghome() {
   return(
-    <div>
-      <Dashboard/>
-      <div class="uk-column-1-2">
-      <Sidenav/>
-        <Cardhome/>
+      <div  style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
+        <div>
+          <Dashboard/>
         </div>
-      
-      
-     
-     
-
-    
-  </div>
+        <div class="uk-column-1-2">
+          <Sidenav/>
+          <Cardhome/>
+        </div>
+        <div class="org-footer">
+          <Footer/>
+        </div>
+      </div>
   );
 
 }

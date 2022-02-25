@@ -6,7 +6,7 @@ import Footer from '../../components/footer/Footer';
 import "../../pages/tournament/Tournament.css";
 
 
-import TeamImg from "../../assets/Tournament/team.jpeg";
+import TeamImg from "../../assets/homepage/team.jpeg";
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
@@ -28,14 +28,17 @@ function Tournament() {
   const handleClose = () => setOpen(false);
   return (
 
-    <div> 
+    <div className="tournament" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}> 
       <Userheader />
       <div className='tournament-main-wrapper'>
       <div className='tournament_headerclip'>
         <h1>Tournament</h1>
       </div>
          <div className='tournament-card-list'>
-          <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-grid uk-text-center main-card" uk-grid>
+          <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-1@s uk-grid uk-text-center tournament-main-card" uk-grid>
+
+            {/* first card starts */}
+
             <div className='tournament-carditems'>
               <div class="tour-card">
                 <div className='tournament-main-titile'>
@@ -94,11 +97,11 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a ><Link to="/tournament/registration">reg now</Link></a>
+                    <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
-
+            {/* first card ends */}
            
      
             <div className='tournament-carditems'>
@@ -130,7 +133,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -165,7 +168,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -200,7 +203,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -235,7 +238,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -270,7 +273,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -306,7 +309,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -340,7 +343,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -374,7 +377,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -408,7 +411,7 @@ function Tournament() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <Link to="/tournament/registration" style={{textDecoration:"none"}}><a style={{textDecoration:"none"}}>register now</a></Link>
                 </div>
               </div>
             </div>
@@ -417,9 +420,11 @@ function Tournament() {
           </div>
         </div>
 
-      </div>;
+      </div>
       
-      {/* <Footer /> */}
+      <div class="tournament-footer">
+      <Footer />
+      </div>
     
      
     </div>

@@ -12,11 +12,8 @@ import "aos/dist/aos.css";
 import img1 from '../../assets/homepage/homeslider1.jpg'
 import img2 from '../../assets/homepage/homeslider.jpg'
 import img3 from '../../assets/homepage/homeslider2.jpg'
-import img4 from '../../assets/homepage/images2.jpg'
-import TournamentImg from "../../assets/homepage/image3.jpg";
-import ScrimsImg from "../../assets/homepage/image4.jpg";
-import DailymatchImg from "../../assets/homepage/image1.jpg";
-import OpenImg from "../../assets/homepage/image4.jpg";
+import img4 from '../../assets/homepage/homeslider6.jpg'
+
 
 import Banner from "../../assets/homepage/banner.jpg";
 
@@ -33,7 +30,7 @@ function Userhome() {
   },[]);
 
   return(
-    <div>
+    <div className="userhome" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
       <Userheader/>
       <div className="userhome-main-wrapper">
 
@@ -88,7 +85,6 @@ function Userhome() {
 
               {/* first slider block ends */}
 
-
               {/*user home card section starts */}
 
               <div className='userhome-card-list'>
@@ -105,9 +101,8 @@ function Userhome() {
                                 <div className='userhome-carditems'  data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#E7658E'}}>
                                   <div class="userhome-card ">
                                     <div className='userhome-main-title'>
-                                      <h3>Tournaments</h3>
+                                      <Link to="/tournament" style={{textDecoration:"none"}}><h3>Tournaments</h3></Link>
                                     </div>
-                                    
                                   </div>
                                 </div>
                               </div>
@@ -122,7 +117,7 @@ function Userhome() {
                                 <div className='userhome-carditems' data-aos="slide-left" data-aos-duration="800" style={{backgroundColor: '#EDAE57'}}>
                                   <div class="userhome-card">
                                     <div className='userhome-main-title'>
-                                      <h3>Scrims</h3>
+                                        <Link to="/scrims" style={{textDecoration:"none"}}><h3>Scrims</h3></Link>
                                     </div>
                                     
                                   </div>
@@ -139,7 +134,7 @@ function Userhome() {
                                 <div className='userhome-carditems' data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#A27CFB'}}>
                                   <div class="userhome-card">
                                     <div className='userhome-main-title'>
-                                      <h3>Daily match</h3>
+                                      <Link to="/dailymatch" style={{textDecoration:"none"}}><h3>Daily match</h3></Link>
                                     </div>
                                     
                                   </div>
@@ -157,7 +152,7 @@ function Userhome() {
                                 <div className='userhome-carditems' data-aos="slide-left" data-aos-duration="800" style={{backgroundColor: '#72E1BA'}}>
                                   <div class="userhome-card">
                                     <div className='userhome-main-title'>
-                                      <h3>Open rooms</h3>
+                                      <Link to="/openrooms" style={{textDecoration:"none"}}><h3>Open rooms</h3></Link>
                                     </div>
                                     
                                   </div>
@@ -182,15 +177,22 @@ function Userhome() {
 
         
 
+          {/* <Link to="/tournament" >Tournament</Link>
+      <Link to="/scrims" >Scrims</Link>
+      <Link to="/dailymatch" >Dailymatch</Link>
+      <Link to="/openrooms" >Openrooms</Link> */}
+
 
               
 
       
       
 
-      </div>
-      {/* <Footer /> */}
-  </div>
+          </div>
+          <div class="home-footer">
+          <Footer />
+          </div>  
+    </div>
   );
 
 }
