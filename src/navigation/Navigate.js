@@ -51,6 +51,7 @@ import Addtournament from '../organisation/pages/addtournaments/Addtournament';
 import Addscrims from "../organisation/pages/addscrims/Addscrims";
 import Adddailymatch from "../organisation/pages/adddailymatches/Adddailymatches";
 import Addopenrooms from "../organisation/pages/addopenrooms/Addopenrooms";
+import Dailymatchslotlist from "../organisation/pages/adddailymatches/Dailymatchslotlist";
 
 
 
@@ -59,6 +60,7 @@ import Addopenrooms from "../organisation/pages/addopenrooms/Addopenrooms";
 import Signup from '../authentication/signup/Signup';
 import Login from '../authentication/login/Login';
 import Forgotpassword from '../authentication/forgotpassword/Forgotpassword';
+
 
 
 
@@ -118,6 +120,7 @@ export default function Navigate() {
     <Route path="/addscrims" element={<Addscrims />}/>
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>
+    <Route path="/dailymatchslotlist" element={<Dailymatchslotlist />}/>
 
 
 
