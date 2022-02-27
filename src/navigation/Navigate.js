@@ -29,8 +29,11 @@ import Changepass from '../user/pages/username/changepass/Changepass';
 import Mybookings from '../user/pages/username/mybookings/Mybookings';
 import Tournament from '../user/pages/tournament/Tournament';
 import Scrims from "../user/pages/scrims/Scrims";
+import ScrimsReg from "../user/pages/scrims/ScrimsReg";
 import Dailymatch from "../user/pages/dailymatch/Dailymatch";
+import DailymatchReg from "../user/pages/dailymatch/DailymatchReg";
 import Openrooms from "../user/pages/openrooms/Openrooms";
+import OpenroomIDP from "../user/pages/openrooms/OpenroomIDP";
 
 
 
@@ -97,8 +100,11 @@ export default function Navigate() {
       <Route path="/mybookings" element={<Mybookings />}/>
       <Route path="/tournament" element={<Tournament />}/>
       <Route path="/scrims" element={<Scrims />}/>
+      <Route path="/scrims/scrimsreg" element={<ScrimsReg />}/>
       <Route path="/dailymatch" element={<Dailymatch />}/>
+      <Route path="/dailymatch/dailymatchreg" element={<DailymatchReg/>}/>
       <Route path="/openrooms" element={<Openrooms />}/>
+      <Route path="/openrooms/openroomidp" element={<OpenroomIDP/>}/>
 
 
 

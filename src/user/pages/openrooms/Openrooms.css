@@ -1,0 +1,1853 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.openroom-main-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+/* header clip */
+.openroom_headerclip {
+    height: 8rem;
+    width:99%;
+    /* width: calc(89% - -81px)!important; */
+    background-color: #6BDCFC;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+.openroom_headerclip h1{
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffff;
+    text-transform: uppercase;
+    left: -19px;
+    top: 8px;
+    
+    position: relative;
+}
+.openroom_headerclip h1:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: -19px;
+    top: 0px;
+    opacity: 0.5;
+
+}
+/* end */
+.openroom-card-list{
+    margin:20px 30px;
+    padding-right: 32px;
+}
+.main-card{
+   width:100%;
+    box-sizing: border-box;
+}
+.openroom-carditems{
+    width: calc(22% - 10px)!important;
+    height: auto;
+    left: 5%;
+    border: 1px solid #ADE0EE;
+    border-radius: 18px !important;
+    box-shadow: 5px 5px #ADE0EE;
+    position: relative;
+    padding-left: 0!important;
+    margin: 0 1.5% 55px 1.5%!important;
+ 
+}
+.openroom-card{
+    width: 100%;
+    height: 237px;
+    border-radius: 3px solid;
+    position: relative;
+}
+.openroom-main-titile{
+    width: 100%;
+    position: relative;
+}
+.openroom-main-titile h3{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    top: 10px;
+    left: 34%;
+   font-weight: 600;
+    position: absolute;
+}
+.openroom-team-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+   
+}
+.openroom-team-img img{
+    border-radius: 6px;
+    left: -31%;
+    position: relative;
+    width: 166px;
+    transform: scale(1.3);
+    bottom: 1;
+    top: 61px;
+    height: 120px;
+    }
+.openroom-reg-section{
+    width: 236px;
+    background-color: #6BDCFC;
+    height: 59px;
+    position: absolute;
+    bottom: -31px;
+    right:0;
+    border-radius: 4px;
+   
+}
+.openroom-reg-section h6{
+    color: white;
+    font-weight: 600;
+    left: -30%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+.openroom-reg-section p{
+    color: white;
+    font-weight: bolder;
+    left: 3%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+
+}
+
+.openroom-reg-section a{
+    color: white;
+    font-weight: 600;
+    right: -69px;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.openroom-reg-section a::after{
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: -31px;
+    left: 53px;
+
+}
+.openroom-reg-section a:hover{
+    text-decoration: none;
+    color: black;
+}
+.openroom-time-section{
+    width: 30%;
+    height: 75px;
+    position: absolute;
+    bottom: 118px;
+    right: 56px;
+    border-radius: 4px;
+}
+
+.openroom-time-section h6{
+    color: rgb(131, 128, 128);
+    font-weight: 600;
+    left: -37%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+
+}
+.openroom-time-section span{
+    color: rgb(131, 128, 128);
+    font-weight: 600;
+    right: -62px;
+    font-size: 15px;
+    position: relative;
+    top: -32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.openroom-time-section span::after{
+    content: '';
+    width: 2px;
+    height: 29px;
+    background-color: rgb(131, 128, 128);
+    display: block;
+    position: relative;
+    top: -23px;
+    left: 5px;
+}
+.openroom-time-section  .openroom-matchdate{
+    font-weight: bolder;
+    right: -31%;
+    font-size: 13px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    color: black;
+}
+.openroom-time-section .match-time{
+    
+    font-weight: bolder;
+    left: 12%;
+    font-size: 13px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    color: black;
+}
+.openroom-rule{
+    background-color: #e0f0f5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 6px;
+    cursor: pointer;
+}
+.openroom-icon{
+    position: relative;
+    top: 3px;
+    
+}
+.openroom-progress-bar{
+    width: 50%;
+    position: absolute;
+    right: 9px;
+    bottom: 26%;
+}
+
+progress {
+    display: block;
+    position: relative;
+     border-radius: 7px;
+    width: 100%;
+    height: 6px;
+
+    }
+
+    progress[value]::-webkit-progress-bar {
+        background-color: rgb(131, 128, 128);
+        border-radius: 10px;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: #6BDCFC;
+        border-radius: 10px;
+        
+    }
+    .progressbar-left-text{
+    position: relative;
+    top: 4px;
+    left: 0;
+    font-size: 12px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+    float: left;
+    margin: 0;
+        
+}
+.progressbar-right-text{
+    position: relative;
+    top: 2px;
+    right: 0;
+    font-size: 12px;
+    float: right;
+    color: rgb(102 98 98);
+    font-weight: 700;
+    margin: 0;
+}
+/* Modal css */
+.modal_close {
+    background-color: #6BDCFC;
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 18px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.modal_box {
+    border: none !important;
+    border-radius: 7px;
+}
+.rules_modal::-webkit-scrollbar {
+    width: 5px;
+}
+.rules_modal::-webkit-scrollbar-track {
+    box-shadow: inset 005px grey;
+}
+.rules_modal::-webkit-scrollbar-thumb {
+    background-color: #87CEEB;
+    border-radius: 15px;
+}
+.rules_modal::-webkit-scrollbar-thumb:hover {
+    background-color: #6BDCFC;
+}
+/* end */
+
+/* bg circle */
+
+  
+/* end */
+/* Responsive Start Here */
+/* Responsive Start Here */
+@media (min-width: 1837px) and (max-width: 1900px) {
+    .openroom_headerclip {
+    width: calc(90% - -72px)!important;
+    }
+    .openroom-card{
+    height: 221px;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(92% - -112px)!important;
+    }
+    .uk-grid{
+    margin-left: 0;
+    }
+    .openroom-main-titile h3{
+        top: 10px;
+        left: 35%;
+        }
+    .openroom-team-img img{
+        width: 145px;
+        transform: scale(1.3);
+        top: 61px;
+        height: 108px;
+        left: -34%;
+    
+    }
+    .openroom-time-section h6 {
+        left: -47%;
+        top: 11px;
+    }
+    .openroom-time-section {
+    bottom: 46%;
+    }
+    .openroom-time-section span {
+    right: -55px;
+    top: -32px;
+
+    }
+    .openroom-time-section span::after {
+    left: 2px;
+    }
+    .openroom-time-section .openroom-matchdate {
+    right: -26%;
+
+    }
+    .openroom-progress-bar {
+        width: 54%;
+        right: 7px;
+
+    }
+    .openroom-time-section .match-time {
+        left: 8%;
+          }
+}
+@media (min-width: 1781px) and (max-width: 1836px) {
+    .openroom_headerclip {
+    width: calc(90% - -72px)!important;
+    }
+    .openroom-card{
+    height: 221px;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(92% - -112px)!important;
+    }
+    .uk-grid{
+    margin-left: 0;
+    }
+    .openroom-main-titile h3{
+        top: 10px;
+        left: 35%;
+        }
+    .openroom-team-img img{
+        width: 145px;
+        transform: scale(1.3);
+        top: 61px;
+        height: 108px;
+        left: -34%;
+    
+    }
+    .openroom-time-section h6 {
+        left: -47%;
+        top: 11px;
+    }
+    .openroom-time-section {
+    bottom: 46%;
+    }
+    .openroom-time-section span {
+    right: -55px;
+    top: -32px;
+
+    }
+    .openroom-time-section span::after {
+    left: 2px;
+    }
+    .openroom-time-section .openroom-matchdate {
+    right: -36%;
+
+    }
+    .openroom-progress-bar {
+        width: 54%;
+        right: 7px;
+
+    }
+    .openroom-time-section .match-time {
+        left: 8%;
+          }
+}
+@media (min-width: 1629px) and (max-width: 1780px) {
+    .openroom_headerclip {
+    width: calc(90% - -72px)!important;
+    }
+    .openroom-card{
+    height: 221px;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(92% - -112px)!important;
+    }
+    .uk-grid{
+    margin-left: 0;
+    }
+    .openroom-main-titile h3{
+        top: 10px;
+        left: 34%;
+
+        }
+    .openroom-team-img img{
+        left: -108px;
+        width: 144px;
+        transform: scale(1.3);
+        top: 61px;
+        height: 105px;
+    
+    }
+    .openroom-reg-section{
+    position: absolute;
+    }
+ 
+    .openroom-time-section {
+        bottom: 50%;
+          }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -34%;
+        font-size: 12px;
+        top: 30%;
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 60%;
+        font-size: 12px;
+        top: -27%;
+    }
+    .openroom-time-section span::after {
+        height: 29%;
+    top: -25%;
+    left: 3%;
+
+    }
+    .openroom-time-section .match-time {
+    top: 29%;
+    }
+    .openroom-time-section .openroom-matchdate {
+        font-weight: bolder;
+        right: -43%;
+        font-size: 13px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 20px;
+        color: black;
+    }
+
+    .openroom-rule {
+    top: 7px;
+    right: 8px;
+    }
+    .openroom-progress-bar {
+        width: 51%;
+        right: 8px;
+        bottom: 27%;
+    }
+    .progressbar-left-text,.progressbar-right-text  {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+    }
+
+}
+/* 1500pixel */
+@media (min-width: 1551px) and (max-width: 1628px) {
+        .openroom_headerclip {
+        width: calc(90% - -72px)!important;
+        }
+        .openroom-main-wrapper {
+           overflow-x: hidden;
+        }
+        .openroom-card{
+        height: 221px;
+        }
+        .uk-grid{
+            margin-left: -55px;
+        }
+        .openroom-main-titile h3{
+            top: 10px;
+            left: 34%;
+    
+            }
+        .openroom-team-img img{
+            left: -100px;
+            width: 153px;
+            transform: scale(1.1);
+            top: 61px;
+            height: 114px;
+        }
+        .openroom-reg-section{
+        position: absolute;
+        }
+     
+        .openroom-time-section {
+            width: 30%;
+            height: 32%;
+            bottom: 47%;
+            right: 20%;
+            border-radius: 4px;
+        }
+        .openroom-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: -21%;
+            font-size: 12px;
+            top: 30%;
+        
+        }
+        .openroom-time-section span{
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 70%;
+            font-size: 12px;
+            top: -30%;
+        }
+        .openroom-time-section span::after {
+            height: 29%;
+            top: -27%;
+            left: 4%;
+        
+        }
+       .openroom-time-section .match-time {
+        top: 29%;
+        }
+        .openroom-time-section .openroom-matchdate {
+            right: -57%;
+            top: 20px;
+          
+        }
+        .openroom-rule {
+        top: 7px;
+        right: 8px;
+        }
+        .openroom-progress-bar {
+            width: 53%;
+            right: 3px;
+            bottom: 25%;
+        }
+        .progressbar-left-text,.progressbar-right-text  {
+        font-size: 10px;
+        color: rgb(102 98 98);
+        font-weight: 700;
+        }
+
+}
+/* end 1500pixel */
+
+/* 1400piexl */
+@media (min-width: 1430px) and (max-width: 1550px) {
+    .openroom_headerclip {
+        width: calc(86% - -155px)!important;
+    }
+    .openroom_headerclip h1:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: -19px;
+        top: -1px;
+        opacity: 0.5;
+    }
+    .openroom-carditems{
+        width: calc(22% - 1px)!important;
+   
+    }
+    .openroom-rule {
+        background-color: #e0f0f5;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: right;
+        top: 3%;
+        right: 1%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -27%;
+    }
+    .openroom-team-img img{
+        width: 146px;
+            transform: scale(1.1);
+            left: -5%;
+            height: 120px;
+        }
+    .openroom-time-section {
+        width: 30%;
+        height: 32%;
+        bottom: 53%;
+        right: 18%;
+        border-radius: 4px;
+        }
+        .openroom-time-section h6 {
+            font-weight: 900;
+            left: -23%;
+            font-size: 10px;
+            top: 30%;
+            color: rgb(102 98 98);
+        }
+        .openroom-time-section span{
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: 67%;
+            font-size: 10px;
+            top: -25%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 19px;
+            top: -24%;
+            left: 5%;
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            top: 25%;
+            font-size: 12px;
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -52%;
+                font-size: 11px;
+                top: 25%;
+              }
+          .openroom-progress-bar {
+            width: 51%;
+            right: 1%;
+            bottom: 27%;
+        }
+}
+@media (min-width: 1350px) and (max-width: 1429px) {
+    .openroom_headerclip {
+        width: calc(86% - -155px)!important;
+    }
+    .openroom-card {
+        width: 100%;
+        height: 215px;
+       
+    }
+
+    .openroom-carditems{
+        width: calc(22% - 1px)!important;
+   
+    }
+    .openroom-rule {
+        background-color: #e0f0f5;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: right;
+        top: 3%;
+        right: 1%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -29%;
+    }
+    .openroom-team-img img{
+        width: 138px;
+        transform: scale(1.1);
+        height: 109px;
+        left: -3%;
+        }
+    .openroom-time-section {
+     
+            bottom: 49%;
+            right: 18%;
+         
+        }
+        .openroom-time-section h6 {
+            font-weight: 900;
+            left: -23%;
+            font-size: 10px;
+            top: 30%;
+            color: rgb(102 98 98);
+        }
+        .openroom-time-section span{
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: 67%;
+            font-size: 10px;
+            top: -25%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 19px;
+            top: -24%;
+            left: 5%;
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            top: 25%;
+            font-size: 12px;
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -52%;
+                font-size: 11px;
+                top: 25%;
+            
+               }
+           .openroom-progress-bar {
+            width: 52%;
+            right: 1%;
+            bottom: 27%;
+        }
+}
+/* end */
+/* 1200 pixel */
+@media (min-width: 1280px) and (max-width: 1349px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .openroom_headerclip {
+        width: calc(85% - -112px)!important;
+    }
+  
+    .openroom-carditems{
+        width: calc(28% - -27px)!important;
+   
+    }
+    .openroom-rule {
+        right: 3%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -29%;
+    }
+    .openroom-team-img img {
+     width: 151px;
+    transform: scale(1.2);
+    left: -2%;
+    height: 120px;
+    }
+    .openroom-time-section {
+        bottom: 53%;
+        right: 22%;
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -20%;
+        font-size: 13px;
+        top: 30%;
+    }
+        .openroom-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 73%;
+            font-size: 13px;
+            top: -27%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 22px;
+            top: -27%;
+            left: 2%;
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            top: 28%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                font-weight: bolder;
+                right: -56%;
+                font-size: 13px;
+                position: absolute;
+                text-transform: uppercase;
+                top: 20px;
+                color: black;
+            }
+          .openroom-progress-bar {
+            width: 52%;
+            right: 2%;
+            bottom: 27%;
+        }
+
+}
+/* end */
+@media (min-width: 1134px) and (max-width: 1279px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -7px !important;
+    }
+    .openroom_headerclip {
+        width: calc(85% - -96px)!important;
+    }
+    .openroom_headerclip h1:before {
+        top: 5%;
+          }
+    .openroom-carditems {
+        width: calc(26% - -177px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 19px;
+        left: 38%;
+    }
+    .openroom-rule {
+        right: 3%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 180px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 120px;
+    }
+    .openroom-time-section {
+        bottom: 55%;
+        right: 23%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -17%;
+        font-size: 15px;
+        top: 30%;
+    }
+        .openroom-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 15px;
+            top: -27%;
+            left: 79%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: 1%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 36%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -54%;
+               font-size: 13px;
+               top: 34%;
+            
+               }
+        .openroom-progress-bar {
+            width: 50%;
+            right: 3%;
+            bottom: 21%;
+        }
+
+
+}
+
+
+/* end */
+@media (min-width: 1024px) and (max-width: 1133px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -7px !important;
+    }
+    .openroom_headerclip {
+        width: calc(85% - -96px)!important;
+    }
+    .openroom_headerclip h1:before {
+        top: 5%;
+          }
+    .openroom-carditems {
+        width: calc(24% - -177px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 19px;
+        left: 38%;
+    }
+    .openroom-rule {
+        right: 3%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 153px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 110px;
+    }
+    .openroom-time-section {
+        bottom: 55%;
+        right: 23%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -17%;
+        font-size: 15px;
+        top: 30%;
+    }
+        .openroom-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 15px;
+            top: -27%;
+            left: 78%;
+        }
+        .openroom-time-section span::after {
+                left: 3%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 36%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -54%;
+               font-size: 13px;
+               top: 34%;
+            
+               }
+        .openroom-progress-bar {
+            width: 53%;
+            right: 2%;
+            bottom: 21%;
+        }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -7px !important;
+    }
+    .openroom_headerclip {
+        width: calc(80% - -109px)!important;
+    }
+    .openroom_headerclip h1:before {
+        top: 5%;
+          }
+    .openroom-carditems {
+        width: calc(21% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 19px;
+        left: 38%;
+    }
+    .openroom-rule {
+        right: 3%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+     width: 129px;
+    transform: scale(1.4);
+    left: 4%;
+    top: 68px;
+    height: 108px;
+
+    }
+    .openroom-time-section {
+        bottom: 55%;
+        right: 23%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -19%;
+        font-size: 13px;
+        top: 30%;
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 13px;
+        top: -27%;
+        left: 74%;
+    
+    
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: 2%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 36%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -54%;
+               font-size: 13px;
+               top: 34%;
+            
+               }
+      .openroom-progress-bar {
+            width: 54%;
+            right: 2%;
+            bottom: 25%;
+        }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 768px) and (max-width: 899px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: 5px !important;
+    }
+    .openroom_headerclip {
+        width: calc(77% - -109px)!important;
+    }
+    .openroom_headerclip h1:before {
+        top: 5%;
+          }
+          .openroom-card-list {
+            margin: 20px 30px;
+            
+        }
+    .openroom-carditems {
+        width: calc(17% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 19px;
+        left: 30%;
+    }
+    .openroom-rule {
+        right: 3%;
+    }
+    .openroom-card {
+         height: 225px;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 132px;
+        transform: scale(1.2);
+        left: 3%;
+        top: 57px;
+
+    }
+    .dailymatch-time-section {
+     bottom: 49%;
+    right: 22%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -28%;
+        font-size: 11px;
+        top: 30%;
+
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 11px;
+        top: -24%;
+        left: 68%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 22px;
+            top: -27%;
+            left: 1%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 13%;
+            font-size: 13px;
+            top: 27%;
+        
+              }
+              .openroom-time-section .openroom-matchdate {
+                font-weight: bolder;
+                right: -58%;
+                font-size: 13px;
+                position: absolute;
+                text-transform: uppercase;
+                top: 19px;
+                color: black;
+            }
+    .openroom-progress-bar {
+            width: 54%;
+            right: 2%;
+            bottom: 25%;
+        }
+
+
+}
+
+
+/* end */
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: 40px !important;
+    }
+    .openroom_headerclip h1:before {
+        top: 2px;
+          }
+    .openroom-carditems {
+        width: calc(57% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 20px;
+        left: 38%;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 170px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 120px;
+
+    }
+    .openroom-time-section {
+        bottom: 55%;
+        right: 22%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -24%;
+        font-size: 17px;
+        top: 26%;
+    
+    
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        font-size: 15px;
+        top: -35%;
+        left: 81%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: -1%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 24%;
+            font-size: 14px;
+            top: 34%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                font-weight: bolder;
+                right: -53%;
+                font-size: 14px;
+                top: 31%;
+                
+            }
+           .openroom-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 531px) and (max-width: 599px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -8px !important;
+    }
+    .openroom_headerclip {
+        width: calc(70% - -110px)!important;
+    }
+    .openroom_headerclip h1:before {
+        top: 2px;
+          }
+    .openroom-card-list {
+    margin: 20px 30px;
+    padding: 0 !important;      
+    }
+    .openroom-carditems {
+        width: calc(57% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 20px;
+        left: 38%;
+    }
+    .openroom-card {
+        width: 100%;
+        height: 221px;
+     }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 170px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+    
+
+    }
+    .openroom-time-section {
+        bottom: 55%;
+        right: 22%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -24%;
+        font-size: 15px;
+        top: 26%;
+    
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 15px;
+        top: -32%;
+        left: 73%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: -1%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 24%;
+            font-size: 13px;
+            top: 34%;
+              }
+              .openroom-time-section .openroom-matchdate {
+               right: -54%;
+              font-size: 13px;
+              top: 34%;
+           
+              }
+        .openroom-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 400px) and (max-width: 532px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(59% - -110px)!important;
+    }
+    .openroom_headerclip h1 {
+        font-size: 49px;
+        left: -60px;
+          }
+    .openroom_headerclip h1:before {
+        top: 2px;
+          }
+    .openroom-card-list {
+    margin: 20px 30px;
+    padding: 0 !important;      
+    }
+    .openroom-carditems {
+        width: calc(57% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 20px;
+        left: 33%;
+    }
+    .openroom-card {
+        width: 100%;
+        height: 221px;
+     }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 130px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 100px;
+
+    }
+    .openroom-time-section {
+        bottom: 46%;
+        right: 24%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -9%;
+        font-size: 12px;
+        top: 26%;
+    
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 12px;
+        top: -32%;
+        left: 87%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 25px;
+            top: -29%;
+            left: 1%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 24%;
+            font-size: 13px;
+            top: 26%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                font-weight: bolder;
+                right: -71%;
+                font-size: 13px;
+                position: absolute;
+                text-transform: uppercase;
+                top: 20px;
+                color: black;
+            }
+    .openroom-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+}
+
+
+/* end */
+@media (min-width: 361px) and (max-width: 399px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(59% - -110px)!important;
+    }
+    .openroom_headerclip h1 {
+        font-size: 44px;
+        left: -55px;
+       
+    }
+    .openroom_headerclip h1:before {
+        top: 2px;
+          }
+    .openroom-card-list {
+    margin: 20px 30px;
+    padding: 0 !important;      
+    }
+    .openroom-carditems {
+        width: calc(57% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 20px;
+        left: 16%;
+    }
+    .openroom-card {
+        width: 100%;
+        height: 221px;
+     }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 106px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 94px;
+
+    }
+    .openroom-time-section {
+        bottom: 49%;
+        right: 24%;
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -16%;
+        font-size: 10px;
+        top: 28%;
+    
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 10px;
+        top: -27%;
+        left: 79%;
+        }
+        .openroom-time-section span::after {
+  
+            width: 2px;
+            height: 14px;
+            top: -20%;
+            left: 3%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            font-size: 10px;
+            top: 22%;
+        
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -62%;
+                font-size: 10px;
+                top: 22%;
+              
+            }
+  
+        .openroom-progress-bar {
+            width: 53%;
+            right: 3%;
+            bottom: 28%;
+        }
+
+}
+@media (min-width: 351px) and (max-width: 360px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden;
+        
+    }
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(59% - -110px)!important;
+    }
+    .openroom_headerclip h1 {
+        font-size: 35px;
+        left: -54px;
+        
+    }
+    .openroom_headerclip h1:before {
+        top: -1px;
+        height: 3rem;
+          }
+    .openroom-card-list {
+    margin: 20px 30px;
+    padding: 0 !important;      
+    }
+    .openroom-carditems {
+        width: calc(57% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 20px;
+        left: 16%;
+    }
+    .openroom-card {
+        width: 100%;
+        height: 191px;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 87px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 74px;
+    }
+    .openroom-time-section {
+        bottom: 41%;
+        right: 24%;  
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -25%;
+        font-size: 10px;
+        top: 28%;
+    
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 10px;
+        top: -27%;
+        left: 79%;
+        }
+        .openroom-time-section span::after {
+  
+            width: 2px;
+            height: 14px;
+            top: -20%;
+            left: -3%;
+        
+        }
+        .openroom-time-section .match-time {
+            left: 27%;
+            font-size: 10px;
+            top: 22%;
+        
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -62%;
+                font-size: 10px;
+                top: 22%;
+              
+            }
+  
+        .openroom-progress-bar {
+            width: 56%;
+            right: 3%;
+            bottom: 28%;
+        }
+        .progressbar-left-text {
+            font-size: 9px;
+                }
+        .progressbar-right-text {
+        top: 4px;
+        right: 0px;
+        font-size: 9px;
+        font-weight: 700;
+            
+        }
+        .openroom-reg-section {
+            width: 217px;
+                   }
+}
+
+
+/* end */
+
+/* end */
+@media (min-width: 300px) and (max-width: 350px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+    .openroom-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .openroom_headerclip {
+        width: calc(59% - -110px)!important;
+    }
+    .openroom_headerclip h1 {
+        font-size: 35px;
+        left: -54px;
+        
+    }
+    .openroom_headerclip h1:before {
+        top: -1px;
+        height: 3rem;
+          }
+    .openroom-card-list {
+    margin: 20px 30px;
+    padding: 0 !important;      
+    }
+    .openroom-carditems {
+        width: calc(57% - -175px)!important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+    .openroom-main-titile h3 {
+        font-size: 20px;
+        left: 16%;
+    }
+    .openroom-card {
+        width: 100%;
+        height: 191px;
+    }
+    .openroom-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+    
+    }
+    .openroom-team-img img {
+        width: 87px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 74px;
+    }
+    .openroom-time-section {
+        bottom: 41%;
+        right: 24%;  
+    
+    }
+    .openroom-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -10%;
+        font-size: 8px;
+        top: 28%;
+    
+    
+    }
+    .openroom-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 8px;
+        top: -27%;
+        left: 79%;
+        }
+        .openroom-time-section span::after {
+            width: 2px;
+            height: 14px;
+            top: -20%;
+            left: 5%;
+        }
+        .openroom-time-section .match-time {
+            left: 39%;
+            font-size: 8px;
+            top: 17%;
+              }
+              .openroom-time-section .openroom-matchdate {
+                right: -62%;
+                font-size: 8px;
+                top: 16%;
+              
+            }
+  
+        .openroom-progress-bar {
+            width: 52%;
+            right: 3%;
+            bottom: 28%;
+        }
+        .progressbar-left-text {
+            font-size: 9px;
+                }
+        .progressbar-right-text {
+        top: 4px;
+        right: 0px;
+        font-size: 9px;
+        font-weight: 700;
+            
+        }
+        .openroom-reg-section {
+            width: 217px;
+                   }
+}
+
+
+/* end */

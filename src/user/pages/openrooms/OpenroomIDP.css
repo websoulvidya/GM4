@@ -1,0 +1,406 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+.openidp-main-wrapper{
+    width: 100%;
+   
+    position: relative;
+    background-repeat:no-repeat;
+    background-image: url("../../assets/DailyMatch/BAB1.png");
+
+    background-size: cover;
+    height: 1000px;
+}
+/* header clip */
+.openidp_headerclip {
+    height: 8rem;
+    width: 100%!important;
+    box-sizing: border-box;
+    /* width: calc(89% - -81px)!important; */
+    background-color: #6BDCFC;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+.openidp_headerclip h1{
+  text-align: left;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffff;
+  text-transform: uppercase;
+  left: -19px;
+  top: 8px;
+  
+  position: relative;
+}
+.openidp_headerclip h1:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 4rem;
+  background-color: #ffff;
+  left: -19px;
+  top: 0px;
+  opacity: 0.5;
+
+
+}
+/* end */
+
+.idpcard-wrapper{
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.openidp-carditems{
+   width: 100%;
+    border: 1px solid #ADE0EE;
+    border-radius: 18px !important;
+    box-shadow: 5px 5px #ADE0EE;
+    position: relative;
+    padding-left: 0!important;
+    background-color: #ffff;
+   
+ 
+}
+.openidp-card{
+    width: 100%;
+    height: 237px;
+    border-radius: 3px solid;
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+}
+.openidp-main-titile{
+    width: 100%;
+    position: relative;
+}
+.openidp-main-titile h3{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    top:20px;
+   font-weight: 600;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.openroom-idpshare{
+    width: 100%;
+}
+.openroom-id,.openroom-pwd{
+    margin: 20px 0 0 0 ;
+    font-weight: 800;
+}
+.openroom-idpshare p {
+    margin-top: 0;
+}
+.idp-shareicon{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    top: 18px;
+    left: 6px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.idp-shareicon a{
+    text-decoration: none;
+    color: #979393;
+}
+.idp-shareicon a:hover{
+    text-decoration: none;
+    color: #979393;
+    font-weight: 600;
+}
+.hover-text{
+    display: none;
+}
+.idp-shareicon:hover +.hover-text{
+    display: block;
+    left: 10px;
+    width: 56%;
+    position: absolute;
+    bottom: -12%;
+
+   
+}
+/* social media icons */
+.svg-inline--fa {
+    vertical-align: -0.200em;
+  }
+  
+  .rounded-social-buttons {
+    text-align: center;
+    text-align: center;
+    top: 50px;
+    position: relative;
+    float: left;
+    left: 11%;
+  }
+  
+  .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+
+  
+  .rounded-social-buttons .fa-whatsapp, .fa-discord, .fa-google, .fa-instagram {
+    font-size: 25px;
+  }
+  
+  .rounded-social-buttons .social-button.whatsapp {
+    background: #25D366;
+  }
+  
+  /* .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+  }
+   */
+  .rounded-social-buttons .social-button.discord {
+    background: #738ADB;
+  }
+  
+  /* .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+  } */
+  
+  .rounded-social-buttons .social-button.google {
+    background:#bb0000;
+  }
+  
+  /* .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+  } */
+  
+  
+  .rounded-social-buttons .social-button.instagram {
+    background: #F09433;
+    background: -moz-linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+    background: -webkit-linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%);
+    background: linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F09433', endColorstr='#BC1888',GradientType=1 );
+}
+  
+  /* .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+  } */
+  /* end */
+
+  /* Responsive Section */
+  /* end */
+@media (min-width: 300px) and (max-width: 360px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .openidp_headerclip {
+        width: 100%!important;
+        box-sizing: border-box;
+    }
+    .openidp_headerclip h1 {
+        font-size: 35px;
+        left: -54px;
+        
+    }
+    .openidp_headerclip h1:before {
+        top: -1px;
+        height: 3rem;
+          }
+          .idpcard-wrapper{
+            width: 85%;
+               }
+
+
+.openidp-main-wrapper {
+   
+    background-image: url(http://localhost:3000/static/media/BAB1.3dda6bd….png);
+    height: 750px;
+}
+
+.idp-shareicon {
+    top: 9px;
+    left: 42%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.rounded-social-buttons {
+           position: relative;
+        float: left;
+        left: 19%;
+        width: 52%;
+    }
+
+  
+}
+@media (min-width: 361px) and (max-width: 400px) {
+  body{
+      margin: 0 !important;
+      padding: 0 !important;
+      
+  }
+  .openidp_headerclip {
+      width: 100%!important;
+      box-sizing: border-box;
+  }
+  .openidp_headerclip h1 {
+      font-size: 37px;
+      left: -54px;
+      
+  }
+  .openidp_headerclip h1:before {
+      top: -10px;
+        }
+        .idpcard-wrapper{
+          width: 85%;
+             }
+
+
+.openidp-main-wrapper {
+ 
+  background-image: url(http://localhost:3000/static/media/BAB1.3dda6bd….png);
+  height: 750px;
+}
+
+.idp-shareicon {
+  top: 9px;
+  left: 42%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.rounded-social-buttons {
+      left: 7%;
+     
+  }
+
+
+}
+@media (min-width: 401px) and (max-width: 532px) {
+  body{
+      margin: 0 !important;
+      padding: 0 !important;
+      
+  }
+.openidp_headerclip h1 {
+    font-size: 37px;
+    left: -54px;
+    
+}
+.openidp_headerclip h1:before {
+    top: 0px;
+    height: 3rem;
+      }
+    
+
+           .rounded-social-buttons {
+            left: 7%;
+           
+        }
+        .openidp-main-wrapper {
+ 
+          background-image: url(http://localhost:3000/static/media/BAB1.3dda6bd….png);
+          height: 750px;
+        }
+}
+@media (min-width: 533px) and (max-width: 660px) {
+  body{
+      margin: 0 !important;
+      padding: 0 !important;
+      
+  }
+.openidp_headerclip h1 {
+    font-size: 37px;
+    left: -54px;
+    
+}
+.openidp_headerclip h1:before {
+    top: 0px;
+    height: 3rem;
+      }
+     
+           .rounded-social-buttons {
+            left: 20%;
+           
+        }
+       
+}
+@media (min-width: 661px) and (max-width: 900px) {
+  body{
+      margin: 0 !important;
+      padding: 0 !important;
+      
+  }
+.openidp_headerclip h1 {
+    font-size: 44px;
+    left: -54px;
+    
+}
+.openidp_headerclip h1:before {
+    top: -4px;
+      }
+     
+           .rounded-social-buttons {
+            left: 20%;
+           
+        }
+       
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  body{
+      margin: 0 !important;
+      padding: 0 !important;
+      
+  }
+.openidp_headerclip h1 {
+    font-size: 44px;
+    left: -54px;
+    
+}
+.openidp_headerclip h1:before {
+    top: -3px;
+   height: 4rem;
+      }
+    
+           .rounded-social-buttons {
+            left: 20%;
+           
+        }
+       
+}
