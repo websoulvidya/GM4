@@ -69,34 +69,595 @@
     border-bottom-width: thick;   
 }
 
-
-/* @media(max-width:640px){
+@media (min-width: 1837px) and (max-width: 2000px) {
     .card_home_main{
-        padding-top: 830%;
-        margin-left: 30px;
-        margin-left:-185px ;
-       } 
+        margin-left:-160px;
+        margin-top:-720px;
+        padding-top:-200%;
+    }
     #card_first_main{
-        margin-top: 100%;
+        padding-top:-200px;
     }
     #card_second_main{
-        padding-top: 10%;
+        margin-top:10%;
     }
     #card_first{
-        margin-left: 20px;
+        width:400px;
+        height:220px;
     }
     #card_second{
-        margin-top: -100px;
-        margin-top: 120px;  
+        width:400px;
+        height:220px;
     }
     #card_third{
-        margin-left: 20px;
+        width:400px;
+        height:220px;  
     }
     #card_four{
-        margin-top: -100px;
-        margin-top: 120px;  
+        width:400px;
+        height:220px;
     }
-} */
+    #card_four:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        color:gray ;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #addtournament_first_heading:hover{
+        color:#6BDCFC ;
+    }
+    .button_main_card{
+        width:340px;
+        height: 220px;
+    }
+}    
+
+@media (min-width: 1781px) and (max-width: 1836px) {
+    .card_home_main{
+        margin-left:-160px;
+        margin-top:-720px;
+        padding-top:-200%;
+    }
+    #card_first_main{
+        padding-top:-200px;
+    }
+    #card_second_main{
+        margin-top:10%;
+    }
+    #card_first{
+        width:400px;
+        height:220px;
+    }
+    #card_second{
+        width:400px;
+        height:220px;
+    }
+    #card_third{
+        width:400px;
+        height:220px;  
+    }
+    #card_four{
+        width:400px;
+        height:220px;
+    }
+    #card_four:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        color:gray ;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #addtournament_first_heading:hover{
+        color:#6BDCFC ;
+    }
+    .button_main_card{
+        width:340px;
+        height: 220px;
+    }
+}    
+
+
+
+@media (min-width: 1629px) and (max-width: 1780px) {
+    .card_home_main{
+        margin-left:-160px;
+        margin-top:-710px;
+        padding-top:-200%;
+    }
+    #card_first_main{
+        padding-top:-200px;
+    }
+    #card_second_main{
+        margin-top:14%;
+    }
+    #card_first{
+        width:350px;
+        height:200px;
+    }
+    #card_second{
+        width:350px;
+        height:200px;
+    }
+    #card_third{
+        width:350px;
+        height:200px;  
+    }
+    #card_four{
+        width:350px;
+        height:200px;
+    }
+    #card_four:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        color:gray ;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #addtournament_first_heading:hover{
+        color:#6BDCFC ;
+    }
+    .button_main_card{
+        width:290px;
+        height: 220px;
+        background-color: white;
+        border-color: none;
+        border-color: #6BDCFC;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-bottom-width: thick;   
+    }
+}    
+
+
+
+@media (min-width: 1551px) and (max-width: 1628px) {
+    .card_home_main{
+        margin-left:-160px;
+        margin-top:-710px;
+        padding-top:-200%;
+    }
+    #card_first_main{
+        padding-top:-200px;
+    }
+    #card_second_main{
+        margin-top:14%;
+    }
+    #card_first{
+        width:350px;
+        height:200px;
+    }
+    #card_second{
+        width:350px;
+        height:200px;
+    }
+    #card_third{
+        width:350px;
+        height:200px;  
+    }
+    #card_four{
+        width:350px;
+        height:200px;
+    }
+    #card_four:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        color:gray ;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #addtournament_first_heading:hover{
+        color:#6BDCFC ;
+    }
+    .button_main_card{
+        width:290px;
+        height: 220px;
+        background-color: white;
+        border-color: none;
+        border-color: #6BDCFC;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-bottom-width: thick;   
+    }
+}    
+
+
+@media (min-width: 1430px) and (max-width: 1550px) {
+    .card_home_main{
+        margin-left:-160px;
+        margin-top:-710px;
+        padding-top:-200%;
+    }
+    #card_first_main{
+        padding-top:-200px;
+    }
+    #card_second_main{
+        margin-top:14%;
+    }
+    #card_first{
+        width:350px;
+        height:200px;
+    }
+    #card_second{
+        width:350px;
+        height:200px;
+    }
+    #card_third{
+        width:350px;
+        height:200px;  
+    }
+    #card_four{
+        width:350px;
+        height:200px;
+    }
+    #card_four:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        color:gray ;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #addtournament_first_heading:hover{
+        color:#6BDCFC ;
+    }
+    .button_main_card{
+        width:290px;
+        height: 220px;
+        background-color: white;
+        border-color: none;
+        border-color: #6BDCFC;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-bottom-width: thick;   
+    }
+}    
+
+
+@media (min-width: 1350px) and (max-width: 1429px) {
+    .card_home_main{
+        margin-left:-160px;
+        margin-top:-570px;
+        padding-top:-100%;
+    }
+    #card_first_main{
+        padding-top:-150px;
+    }
+    #card_second_main{
+        margin-top:80px;
+    }
+    #card_first{
+        width:300px;
+        height:200px;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_second{
+        width:300px;
+        height:200px;
+    }
+    #card_second:hover{
+        background-color: #6BDCFC;
+    }
+    #card_third{
+        width:300px;
+        height:200px;  
+    }
+    #card_third:hover{
+        background-color: #6BDCFC;
+    }
+    #card_four{
+        width:300px;
+        height:200px;
+    }
+    #card_four:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first:hover{
+        background-color: #6BDCFC;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        color:gray ;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #addtournament_first_heading:hover{
+        color:#6BDCFC ;
+    }
+    .button_main_card{
+        width:250px;
+        height: 200px;
+        background-color: white;
+        border-color: none;
+        border-color: #6BDCFC;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-bottom-width: thick;   
+    }
+}    
+
+
+@media (min-width: 1280px) and (max-width: 1349px) {
+    .card_home_main{
+        margin-left:-150px;
+        margin-top:-700px;
+        padding-top:-100%;
+    }
+    #card_first_main{
+        padding-top:-120px;
+    }
+    #card_second_main{
+        margin-top:15%;
+    }
+    #card_first{
+        width:300px;
+        height:200px;
+    }
+    #card_second{
+        width:300px;
+        height:200px;
+    }
+    #card_third{
+        width:300px;
+        height:200px;  
+    }
+    #card_four{
+        width:300px;
+        height:200px;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        font-weight: 500;
+        margin-top: 40px;
+        font-size:20px;
+    }
+    .button_main_card{
+        width:250px;
+        height: 200px;
+    }
+}
+
+
+
+@media (min-width: 1134px) and (max-width: 1279px) {
+    .card_home_main{
+        margin-left:-150px;
+        margin-top:-700px;
+        padding-top:-100%;
+    }
+    #card_first_main{
+        padding-top:-120px;
+    }
+    #card_second_main{
+        margin-top:15%;
+    }
+    #card_first{
+        width:300px;
+        height:200px;
+    }
+    #card_second{
+        width:300px;
+        height:200px;
+    }
+    #card_third{
+        width:300px;
+        height:200px;  
+    }
+    #card_four{
+        width:300px;
+        height:200px;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        font-weight: 500;
+        margin-top: 40px;
+        font-size:20px;
+    }
+    .button_main_card{
+        width:250px;
+        height: 200px;
+    }
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1133px) {
+    .card_home_main{
+        margin-left:-150px;
+        margin-top:-700px;
+        padding-top:-100%;
+    }
+    #card_first_main{
+        padding-top:-120px;
+    }
+    #card_second_main{
+        margin-top:15%;
+    }
+    #card_first{
+        width:300px;
+        height:200px;
+    }
+    #card_second{
+        width:300px;
+        height:200px;
+    }
+    #card_third{
+        width:300px;
+        height:200px;  
+    }
+    #card_four{
+        width:300px;
+        height:200px;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        font-weight: 500;
+        margin-top: 40px;
+        font-size:20px;
+    }
+    .button_main_card{
+        width:250px;
+        height: 200px;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    .card_home_main{
+        margin-left:-140px;
+        margin-top:-700px;
+        padding-top:-100%;
+    }
+    #card_first_main{
+        padding-top:-150px;
+    }
+    #card_second_main{
+        margin-top:80px;
+    }
+    #card_first{
+        width:250px;
+        height:200px;
+    }
+    #card_second{
+        width:250px;
+        height:200px;
+    }
+    #card_third{
+        width:250px;
+        height:200px;  
+    }
+    #card_four{
+        width:250px;
+        height:200px;
+    }
+    #card_first{
+        margin-bottom: 0rem !important;
+    }
+    #card_second{
+        margin-left:8% !important;
+    }
+    #card_four{
+        margin-left: 8% !important;
+    }
+    
+    #addtournament_first_heading{
+        font-weight: 500;
+        margin-top: 40px;
+        font-size:20px;
+    }
+    .button_main_card{
+        width:210px;
+        height: 200px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 899px) {
     .card_home_main{
         margin-left:-260px;

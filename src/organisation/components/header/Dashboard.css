@@ -36,6 +36,216 @@ body{
     width:50%;
     color: gray;
 }
+
+@media (min-width: 1837px) and (max-width: 2000px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        margin-left:94%;
+        width:30px;
+    }
+    #org-searchinput{
+        margin-left:-13%;
+    }
+}
+
+@media (min-width: 1781px) and (max-width: 1836px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        margin-left:93%;
+        width:30px;
+    }
+    #org-searchinput{
+        margin-left:-10%;
+    }
+}
+
+@media (min-width: 1629px) and (max-width: 1780px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        width:30px;
+    }
+}
+
+@media (min-width: 1551px) and (max-width: 1628px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        width:30px;
+    }
+}
+
+@media (min-width: 1430px) and (max-width: 1550px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        width:30px;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1429px) {
+    .headerlogo-org{
+        /* margin-top: 5%; */
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 80px;
+       } 
+       
+    #header-searchbarorg{
+       
+        margin-left: 18%;
+        width:50%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1349px) {
+
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        width:30px;
+    }
+    
+}    
+
+@media (min-width: 1134px) and (max-width: 1279px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 20%;
+       } 
+       
+    #header-searchbarorg{
+        margin-left:20%;
+        width:50%;
+    }
+    #org-searchicon{
+        width:30px;
+    }
+    
+}    
+
+
+@media (min-width: 1024px) and (max-width: 1133px) {
+        .headerlogo-org{
+            margin-bottom: 2px;
+            margin-top: 2px;
+            margin-left: 0px;
+            width: 50px;
+            height:50px;
+            margin-right: 10px;
+           } 
+           
+        #header-searchbarorg{
+            margin-left: 60px;
+            width:65%;
+        }
+        #org-searchicon{
+            margin-left: 90%;
+            width:30px;
+        }
+        #org-searchinput{
+            margin-left:0%;
+        }
+}    
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    .headerlogo-org{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 50px;
+        height:50px;
+        margin-right: 10px;
+       } 
+       
+    #header-searchbarorg{
+        margin-left: 60px;
+        width:65%;
+    }
+    #org-searchicon{
+        margin-left: 90%;
+        width:30px;
+    }
+    #org-searchinput{
+        margin-left:0%;
+    }
+}    
+
 @media (min-width: 768px) and (max-width: 899px) {
     .headerlogo-org{
         margin-bottom: 2px;

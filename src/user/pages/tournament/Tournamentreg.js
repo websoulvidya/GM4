@@ -20,7 +20,7 @@ function Tournamentreg() {
     <div class="tournament-reg" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
       <Userheader/>
       <div class="reg-circles">
-        <h1 class="tour-regheader">Registration</h1>
+        <h1 class="tour-regheader">REGISTRATION</h1>
         <div class="tour-smallcircles">
           <form class="tourregform" onSubmit={handleSubmit(submitData)}>
             <fieldset class="uk-fieldset uk-grid-small" uk-grid>

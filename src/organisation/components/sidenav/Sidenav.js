@@ -38,8 +38,7 @@ function sidenav() {
                     </Link><br />
                 </div>
                 <div className='button_nav'>
-                    {/* <a class="uk-button uk-button-default" id="buttons_nav" href="/Org_advertisement"><h4 className='navhead'>Advertisement</h4></a><br /> */}
-                    <Link class="uk-button uk-button-default" id="buttons_nav" to='/Org_advertisement'>
+                    <Link class="uk-button uk-button-default" id="buttons_nav" to='/advertisement'>
                         <h4 className='navhead'>Advertisement</h4>
                     </Link><br />
                 </div>

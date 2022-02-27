@@ -2,55 +2,55 @@ body{
     margin:auto;
     font-family:open sans;
     overflow-x: hidden;
-    
 }
-.circles{
+.circlz{
     background-repeat:no-repeat;
-    margin-top: -30px;
+    /* background-image: url("../../assets/BAB1.png"); */
     background-size: cover;
+    height: auto;
 }
-.regheader:before {
-     content: "";
-        position: absolute;
-        width: 6px;
-        height: 4rem;
-        background-color: #ffff;
-        left: 64px;
-        top: 52px;
-        opacity: 0.5;
-        margin-top: 40px;
+.tourheader:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 64px;
+    top: 100px !important;
+    opacity: 0.5;
 }
-.regheader{
+.tourheader{
     background-color: #6bdcfc;
     padding: 30px;
     color: white;
     text-align: left;
     padding-left: 7%;
+    font-weight: 700;
 }
-.joinhead{
+.joinheader{
     text-align: left;
 }
-.openbtn{
+.openbtnz{
     background-color: #6bdcfc;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 10.5%;
     padding-right: 10.5%;
     padding-top:10px;
     padding-bottom: 10px;
-    margin-left: -4.5px;
+    margin-left: -4px;
     margin-right: 5%;
     border: 1px solid #6bdcfc;
     color: white;
     border-radius: 5px;
 }
-.openbtn:hover{
+.openbtnz:hover{
     cursor: pointer;
 }
-.slotlistbtn {
+.teamlistbtnz {
     background-color: #6bdcfc;
-    font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+    font-size: 18px;
+    padding-left: 10.5% !important;
+    padding-right: 10.5% !important; 
     padding-top:10px;
     padding-bottom: 10px;
     margin-right: 5%;
@@ -58,21 +58,21 @@ body{
     color: white;
     border-radius: 5px;
 }
-.slotlistbtn:hover{
+.teamlistbtnz:hover{
     cursor: pointer;
 }
-.closebtn{
+.closebtnz{
     background-color: #6bdcfc;
-    font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+    font-size: 18px;
+    padding-left: 10.5% !important;
+    padding-right: 10.5% !important;
     padding-top:10px;
     padding-bottom: 10px;
     border: 1px solid #6bdcfc;
     color: white;
     border-radius: 5px;
 }
-.closebtn:hover{
+.closebtnz:hover{
     cursor: pointer;
 }
 .uk-input{
@@ -84,8 +84,10 @@ body{
 .uk-input:focus{
     border: 1px solid #6bdcfc !important;
 }
-.regform{
+.tourform{
+    margin-top: 3%;
     margin-left: 22%;
+    margin-bottom: 25px;
     border: 1px solid #6bdcfc;
     padding: 20px;
     width:50%;
@@ -93,259 +95,358 @@ body{
     z-index: 1;
     background-color: #ffff;
 }
-​
-/* #circle1 {
-    position: absolute;
-    width: 80%;
-    height: 180px;
-    margin-left: -40%;
-    top: 80%;
-    shape-outside: circle();
-    clip-path: circle();
-    background: red;
-}
-#circle2 {
-    position: absolute;
-    width: 80%;
-    height: 180px;
-    top: 70%;
-    left: 60%;
-    shape-outside: circle();
-    clip-path: circle();
-    background: orange;
-}
-#circle3 {
-    position: absolute;
-    width: 2%;
-    height: 90px;
-    top: 36%;
-    left: 200px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: green;
-}
-#circle4 {
-    position: absolute;
-    width: 2%;
-    height: 90px;
-    right: 80px;
-    bottom: 300px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: blue;
-}
-#circle5 {
-    position: absolute;
-    width: 10%;
-    height: 90px;
-    bottom: 200px;
-    left: 90px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: maroon;
-}
-#circle6 {
-    position: absolute;
-    width: 10%;
-    height: 90px;
-    bottom: 200px;
-    right: 130px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: mediumvioletred;
-}
-#circle7 {
-    position: absolute;
-    width: 10%;
-    height: 90px;
-    bottom: 50px;
-    right: 200px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: #ccff66;
-} */
-​
+.errormsg{
+    font-size: 13px;
+    color: red;
+    font-weight: 500;
+    float: left;
+    padding-bottom: 20px;
+    }
+    .errorm{
+        font-size: 13px;
+        color: red;
+        font-weight: 500;
+        float: left;
+        padding-bottom: 0px;
+        }
+
+    /* Match Type Select */
+    .css-739597-control{
+        box-shadow: none !important;
+      }
+      .css-1s2u09g-control:hover{
+        border: 1px solid #6BDCFC !important;
+    }
+    .css-1okebmr-indicatorSeparator{
+        display: none !important;
+    }
+    .css-b62m3t-container{
+        text-align: left;
+    }
+    .css-6j8wv5-Input{
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+
+    /* Modal css*/
+    #modal-modal-descriptionzz{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #modal-modal-descriptionzz h3{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+    }
+    #modal-modal-descriptionzz span{
+        text-align: center;
+        font-weight: bold;
+    }
+    #modal-modal-descriptionzz img{
+        height: 6rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .modal_box_orgzz{
+        border: none !important;
+        border-radius: 11px;
+    }
+    .modal_box_orgzz p{
+        overflow: hidden !important;
+    }
+    .button_areazz{
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        width: 80%;
+        margin-right: auto;
+    }
+    .button_areazz button{
+        width: 45%;
+        cursor: pointer;
+        background-color: #6bdcfc;
+        color: #ffff;
+        border: 1px solid #6bdcfc;
+        border-radius: 5px;
+        padding: 3%;
+    }
+    @media only screen and (max-device-width : 350px) {
+        .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{
+            margin:0 !important;
+        }
+    }
 @media only screen and (max-device-width : 640px) {
-    .openbtn{
+    .openbtnz{
         width:100%;
         margin-bottom: 5%;
-        margin-left: 1%;
     }
-    .slotlistbtn{
+    .teamlistbtnz{
         width:100%;
         margin-bottom: 5%;
-        margin-left: 1%;
+        margin-left: -1%;
     }
-    .closebtn{
+    .closebtnz{
         width:100%;
         margin-bottom: 5%;
-        margin-left: 1%;
+        margin-left: -1%;
     }
-    .regform{
+    .tourform{
         width: 60%;
-        margin-left: 15%;
-    } 
-    .regheader:before{
-        content: "";
-        position: absolute;
-        width: 6px;
-        height: 4rem;
-        background-color: #ffff;
-        left: 60px;
-        top: 70px;
-        opacity: 0.5;
-     
-        
-        
-    } 
-    .regheader{
-        padding-left: 20%;
+        margin-left: 15% !important;
     }
-    /* .circles{
-        background-image: none;
-    } */
-}
-​
-@media only screen and (min-device-width: 641px) and (max-device-width : 960px){
-    .regform{
-        width: 65%;
-        margin-left: 15%;
+    .tourheader:before{
+        height: 3.5rem;
+        left: 30px !important;
+        top: 92px !important;
     }
-    .openbtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .slotlistbtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .closebtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .regheader:before{
-        content: "";
-        position: absolute;
-        width: 6px;
-        height: 4rem;
-        background-color: #ffff;
-        left: 120px;
-        top: 50px;
-        opacity: 0.5;
-    } 
-    .regheader{
-        padding-left: 20%;
-    }
-    /* .circles{
-        background-image: none;
-    } */
-}
-​
-@media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
-    #circle2{
-        width: 30%;
-        margin-left: 10%;
-        max-width: 100%;
-    }
-    .openbtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .slotlistbtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .closebtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .regheader:before{
-        content: "";
-        position: absolute;
-        width: 6px;
-        height: 4rem;
-        background-color: #ffff;
-        left: 130px;
-        top: 50px;
-        opacity: 0.5;
-    } 
-    .regheader{
+    .tourheader{
         padding-left: 15%;
     }
-    .circles{
+    .circlz{
         background-image: none;
+        height: auto;
     }
-    .smallcircles{
-        background-repeat:no-repeat;
+}
+
+@media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .tourform{
+        width: 65% !important;
+        margin-left: 15% !important;
+        padding: 10px !important;
+    }
     
-        background-size: cover;
+    .openbtnz{
+        width:29% !important;
+        font-size: 18px !important;
+        padding: 10px !important;
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+    .teamlistbtnz{
+        width:30% !important;
+        font-size: 18px !important;
+        padding: 10px !important;
+        margin-right: 5%;
+    }
+    .closebtnz{
+        width:30% !important; 
+        font-size: 18px !important;
+    }
+    .tourheader:before{
+        height: 4rem;
+        left: 80px !important;
+        top: 50px;
+    }
+    .tourheader{
+        padding-left: 15%;
+    }
+    .circlz{
+        background-image: none;
+        height: auto;
     }
 }
-​
-@media only screen and (min-device-width: 1101px) and (max-device-width : 1300px){
-    .openbtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
+
+@media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    .openbtnz{
+        width:30% !important;
+        font-size: 17px !important;
+        padding: 9px !important;
+        margin-right: 5%;
     }
-    .slotlistbtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
+    .teamlistbtnz{
+        width:30% !important;
+        font-size: 17px !important;
+        padding: 9px !important;
+        margin-right: 5%;
     }
-    .closebtn{
-        width:30%;
-        font-size: 18px;
-        padding: 10px;
+    .closebtnz{
+        width:30% !important;
+        font-size: 17px !important;
+        padding: 9px !important; 
+    }
+    .tourheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 110px !important;
+        top: 100px !important;
+        opacity: 0.5;
+    }
+    .tourheader{
+        padding-left: 15%;
+    }
+    .circlz{
+        height: 730px;
+    }
+    .tourform{
+        margin-top: 58px !important;
     }
 }
-​
-@media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
-    .regform{
+
+@media only screen and (min-device-width: 1101px) and (max-device-width : 1250px){
+    .tourform{
+        margin-top: 5%;
+        margin-left: 22% !important;
+    }
+    .openbtnz{
+        width:29%;
+        font-size: 17px;
+        padding: 9px !important;
+    }
+    .teamlistbtnz{
+        width:31%;
+        font-size: 18px;
+        padding: 9px !important;
+    }
+    .closebtnz{
+        width:29%;
+        font-size: 18px;
+        padding: 9px !important;
+    }
+    .circlz{
+        height: 800px;
+    }
+}
+@media only screen and (min-device-width: 1251px) and (max-device-width : 1280px){
+    .tourform{
+        margin-top: 8%;
+    }
+    .openbtnz{
+        width:29%;
+        font-size: 18px;
+        padding: 8px !important;
+        margin-right: 5% ;
+    }
+    .teamlistbtnz{
+        width:32%;
+        font-size: 18px;
+        padding: 8px !important;
+        margin-right: 5%;
+    }
+    .closebtnz{
+        width:29%;
+        font-size: 18px;
+        padding: 9px !important;
+    }
+    .circlz{
+        height: 900px;
+    }
+}
+@media only screen and (min-device-width: 1281px) and (max-device-width : 1340px){
+    .openbtnz{
+        width:29%;
+        font-size: 18px;
+        padding: 8px !important;
+        margin-right: 5% ;
+    }
+    .teamlistbtnz{
+        width:32%;
+        font-size: 18px;
+        padding: 8px !important;
+        margin-right: 5%;
+    }
+    .closebtnz{
+        width:29%;
+        font-size: 18px;
+        padding: 9px !important;
+    }
+    .circlz{
+        height: auto;
+    }
+}
+
+@media only screen and (min-device-width: 1600px) and (max-device-width : 1800px){
+    .tourform{
+        margin-top: 5%;
         width: 40%;
         margin-left: 27%;
     }
+    .openbtnz{
+        margin-left: 0;
+        margin-right: 4.5%;
+    }
+    .teamlistbtnz{
+        margin-right: 4.5%;
+    }
+
+        .circlz{
+            background-repeat:no-repeat;
+            /* background-image: url("../../assets/babb3.png"); */
+            background-size: cover;
+            height: auto;
+    }
 }
-​
+
+@media only screen and (min-device-width: 1801px) and (max-device-width : 2100px){
+    .tourform{
+        margin-top: 5%;
+        width: 43% !important;
+        margin-left: 27% !important;
+    }
+        .circlz{
+            background-repeat:no-repeat;
+            /* background-image: url("../../assets/babb3.png"); */
+            background-size: cover;
+            height: 820px;
+    }
+    .openbtnz{
+        width:28.5%;
+        font-size: 18px;
+        padding: 8px;
+    }
+    .teamlistbtnz{
+        width:32%;
+        font-size: 18px;
+        padding: 8px;
+    }
+    .closebtnz{
+        width:28.5%;
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+ 
 @media only screen and (min-device-width : 2400px) and (max-width : 2800px){
-    .regform{
-        width: 35%;
-        margin-left: 30%;
+    .tourform{
+        margin-top: 5%;
+        width: 40% !important;
+        margin-left: 30% !important;
     }
-    .openbtn{
+    .openbtnz{
         width:30%;
         font-size: 18px;
         padding: 10px;
     }
-    .slotlistbtn{
+    .teamlistbtnz{
         width:30%;
         font-size: 18px;
         padding: 10px;
     }
-    .closebtn{
+    .closebtnz{
         width:30%;
         font-size: 18px;
         padding: 10px;
     }
-    .circles{
+    .circlz{
         background-repeat:no-repeat;
-        
-        background-size: 2560px 1200px;
+        /* background-image: url("../../assets/babb3.png"); */
+        background-size: 2560px 1400px;
+        height: auto;
     }
-    .regheader:before{
+    .tourheader:before{
         content: "";
         position: absolute;
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 130px;
+        left: 150px !important;
         top: 50px;
         opacity: 0.5;
-    } 
+    }
 }

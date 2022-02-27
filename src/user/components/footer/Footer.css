@@ -2,6 +2,8 @@
     width: 100%;
     margin: 0 auto;
     background-color: #ffff;
+    transition: box-shadow 300ms cubic-bezier(0.8, 0, 0.2, 1) 0ms;
+    box-shadow: 3px 2px 4px  rgb(0 0 0 / 30%);
 }
 .footer_row_1{
     width: 90%;

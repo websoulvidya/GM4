@@ -50,6 +50,9 @@ import Sendidp from '../organisation/pages/sendidp/Sendidp';
 import Slotlist from '../organisation/pages/slotlist/Slotlist';
 import Mymatches from '../organisation/pages/mymatches/Mymatches';
 import Cancellation  from "../organisation/pages/cancellation/Cancellation";
+import Advertisement from "../organisation/pages/advertisement/Advertisement";
+import Adspayment from "../organisation/pages/adspayment/Adspayment";
+
 
 import Addtournament from '../organisation/pages/addtournaments/Addtournament';
 import Addscrims from "../organisation/pages/addscrims/Addscrims";
@@ -127,6 +130,9 @@ export default function Navigate() {
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>
     <Route path="/Tournamentlist" element={<Tournamentlist />}/>
+    <Route path="/advertisement" element={<Advertisement />}/>
+    <Route path="/ads_payment" element={<Adspayment />}/>
+
 
 
 

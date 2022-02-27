@@ -27,6 +27,8 @@ body{
     color: white;
     text-align: left;
     padding-left: 8%;
+    font-size:52px;
+    font-weight: 700;
 }
 
 .tourregform{
@@ -149,6 +151,9 @@ a .scan-btn:hover{
         top: 50px;
         opacity: 0.5;
     } 
+    .tour-regheader{
+        padding-left: 6%;
+    }
 }
 @media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
     .reg-circles{
@@ -164,8 +169,7 @@ a .scan-btn:hover{
     }
     .tour-regheader:before{
         left: 76px;
-        top: 8%;
-       
+        top: 10%;
     } 
     .tournamentreg-footer{
         margin-top:15%;
@@ -186,8 +190,8 @@ a .scan-btn:hover{
         padding: 10px;
     }
     .tour-regheader:before{
-        left: 75px;
-        top:8%;
+        left: 6%;
+        top:9%;
     } 
     .tournamentreg-footer{
         margin-top:15%;
@@ -209,13 +213,13 @@ a .scan-btn:hover{
     }
     
     .tour-regheader:before {
-        left: 88px;
-        top: 13%;
+        left:7%;
+        top: 14%;
         opacity: 0.5;
     }
     .tour-regheader{
         padding: 30px;
-        padding-left: 8%;
+        padding-left: 10%;
     }
     
     .tourregform{
@@ -236,10 +240,13 @@ a .scan-btn:hover{
         padding: 10px;
     }
     .tour-regheader:before{
-        left: 60px;
-        top:8%;
+        left:7%;
+        top:9%;
        
     } 
+    .tour-regheader{
+        padding-left: 9%;
+    }
     .reg-circles{
         background-repeat:no-repeat;
         background-image: url("../../assets/homepage/regcircle.png");
@@ -277,12 +284,14 @@ a .scan-btn:hover{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 121px;
-        top:8%;
+        left:7%;
+        top:9%;
         opacity: 0.5;
     } 
     .tour-regheader{
-        padding-left: 15%;
+        padding-left: 10%;
+        font-size:50px;
+        font-weight: 700;
     }
     
     .tour-smallcircles{
@@ -308,12 +317,14 @@ a .scan-btn:hover{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 70px;
-        top:8%;
+        left: 11%;
+        top:9%;
         opacity: 0.5;
     } 
     .tour-regheader{
-        padding-left: 12%;
+        padding-left: 15%;
+        font-size: 45px;
+        font-weight:700;
     }
     .tournamentreg-footer{
         margin-top:50%;
@@ -323,23 +334,26 @@ a .scan-btn:hover{
 @media only screen and (min-device-width: 100px)and (max-device-width : 640px) {
     
     .tourregform{
-        width: 70%;
-        margin-left: 11%;
-        height: 1050px;
+        width: 80%;
+        margin-left: 7% !important;
+        margin-right: 5%!important;
+        height:auto !important;
         
     } 
     .tour-regheader:before{
         content: "";
         position: absolute;
         width: 6px;
-        height: 4rem;
+        height: 3rem;
         background-color: #ffff;
-        left: 70px;
-        top: 8%;
+        left: 15%;
+        top: 9%;
         opacity: 0.5;
     } 
     .tour-regheader{
-        padding-left: 15%;
+        padding-left: 22%;
+        font-size: 35px;
+        font-weight:700;
     }
     .tournamentreg-footer{
         margin-top:70%;

@@ -25,6 +25,290 @@
 .navhead:hover{
     color: white;
 }
+
+@media (min-width: 1837px) and (max-width: 2000px) {
+    .sidenav{
+        margin-top: 6%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left:20%;
+        
+    }
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+    }
+    #buttons_nav{
+        width:450px;
+     height: 60px;
+     border-color: #6BDCFC;
+     margin-left: 15%;
+     
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+    .navhead:hover{
+        color: white;
+    }
+}
+
+
+
+
+@media (min-width: 1781px) and (max-width: 1836px) {
+    .sidenav{
+        margin-top: 6%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left:20%;
+        
+    }
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+    }
+    #buttons_nav{
+        width:450px;
+     height: 60px;
+     border-color: #6BDCFC;
+     margin-left: 15%;
+     
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+    .navhead:hover{
+        color: white;
+    }
+}
+
+
+@media (min-width: 1629px) and (max-width: 1780px) {
+    .sidenav{
+        margin-top: 6%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left:15%;
+        
+    }
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+    }
+    #buttons_nav{
+        width:400px;
+     height: 60px;
+     border-color: #6BDCFC;
+     margin-left: 10%;
+     
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+    .navhead:hover{
+        color: white;
+    }
+}
+
+
+@media (min-width: 1551px) and (max-width: 1628px) {
+    .sidenav{
+        margin-top: 6%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left:15%;
+        
+    }
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+    }
+    #buttons_nav{
+        width:400px;
+     height: 60px;
+     border-color: #6BDCFC;
+     margin-left: 10%;
+     
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+    .navhead:hover{
+        color: white;
+    }
+}
+
+@media (min-width: 1430px) and (max-width: 1550px) {
+    .sidenav{
+        margin-top: 6%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left:15%;
+        
+    }
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+    }
+    #buttons_nav{
+        width:400px;
+     height: 60px;
+     border-color: #6BDCFC;
+     margin-left: 10%;
+     
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+    .navhead:hover{
+        color: white;
+    }
+}
+
+
+@media (min-width: 1350px) and (max-width: 1429px) {
+    .sidenav{
+        margin-top: 10px;
+        width: 400px;
+        height: 1200px;
+        
+    }
+    .button_nav{
+        margin: 25px;
+        margin-left: 60px;
+        
+    }
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+    }
+    #buttons_nav{
+        width:300px;
+     height: 60px;
+     border-color: #6BDCFC;
+     
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+    .navhead:hover{
+        color: white;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1349px) {
+    .sidenav{
+        margin-top:10%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left: 10%;
+    }
+    
+    #buttons_nav{
+        width:300px;
+        height: 60px;
+        margin-left: 10%;
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 1134px) and (max-width: 1279px) {
+    .sidenav{
+        margin-top:10%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left: 10%;
+    }
+    
+    #buttons_nav{
+        width:300px;
+        height: 60px;
+        margin-left: 10%;
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1133px) {
+    .sidenav{
+        margin-top:10%;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left: 10%;
+    }
+    
+    #buttons_nav{
+        width:300px;
+        height: 60px;
+        margin-left: 10%;
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    .sidenav{
+        margin-top: 20px;
+        width: 400px;
+        height: 1500px;
+        
+    }
+    .button_nav{
+        margin: 30px;
+        margin-left: 0%;
+    }
+    
+    #buttons_nav{
+        width:250px;
+        height: 60px;
+        margin-left: -15%;
+    }
+    .navhead{
+        margin-top:15px;
+        color:#6BDCFC;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 899px) {
     .sidenav{
         margin-top: 15px;
