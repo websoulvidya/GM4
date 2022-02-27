@@ -11,5 +11,4 @@ function Addtournament() {
     </div>
   )
 }
-
 export default Addtournament

@@ -1,0 +1,2364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cancel-main-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+/* header clip */
+.cancel_headerclip {
+    height: 8rem;
+    width: -webkit-fill-available;
+    /* width: calc(89% - -81px)!important; */
+    background-color: #6BDCFC;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.cancel_headerclip h1 {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffff;
+    text-transform: uppercase;
+    left: -19px;
+    top: 8px;
+
+    position: relative;
+}
+
+.cancel_headerclip h1:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: -19px;
+    top: -5px;
+    opacity: 0.5;
+
+}
+
+/* end */
+.cancel-card-list {
+    margin: 20px 30px;
+    padding-right: 32px;
+}
+
+.main-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cancel-carditems {
+    width: calc(22% - 10px) !important;
+    height: auto;
+    left: 5%;
+    border: 1px solid #ADE0EE;
+    border-radius: 18px !important;
+    box-shadow: 5px 5px #ADE0EE;
+    position: relative;
+    padding-left: 0 !important;
+    margin: 0 1.5% 55px 1.5% !important;
+
+}
+
+.cancel-card {
+    width: 100%;
+    height: 237px;
+    border-radius: 3px solid;
+    position: relative;
+}
+
+.cancel-main-titile {
+    width: 100%;
+    position: relative;
+}
+
+.cancel-main-titile h3 {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    top: 10px;
+    left: 23%;
+    font-weight: 600;
+    position: absolute;
+}
+
+.cancel-team-img {
+    width: 174px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    
+    top: 61px;
+
+}
+
+.cancel-team-img img {
+    border-radius: 6px;
+    left: -10px;
+    position: relative;
+    width: 174px;
+    transform: scale(1.3);
+    /* height: 138px; */
+    bottom: 1;
+}
+
+.cancel-reg-section {
+    width: 236px;
+    background-color: #6BDCFC;
+    height: 59px;
+    position: absolute;
+    bottom: -31px;
+    right: 0;
+    border-radius: 4px;
+
+}
+
+.cancel-reg-section h6 {
+    color: white;
+    font-weight: 600;
+    left: -30%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+
+.cancel-reg-section p {
+    color: white;
+    font-weight: bolder;
+    left: 3%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+
+}
+
+.cancel-reg-section a {
+    color: white;
+    font-weight: 600;
+    right: -69px;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cancel-reg-section a::after {
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: -31px;
+    left: 53px;
+
+}
+
+.cancel-reg-section a:hover {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.cancel-time-section {
+    width: 30%;
+    height: 75px;
+    position: absolute;
+    bottom: 118px;
+    right: 56px;
+    border-radius: 4px;
+}
+
+.cancel-date {
+    width: 40%;
+    position: relative;
+    width: 100%;
+    top: 45%;
+    left: 63px;
+}
+
+.cancel-date .cancel-matchtitle {
+    color: rgb(131, 128, 128);
+    font-weight: 800;
+    left: -1px;
+    font-size: 12px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+
+.cancel-date .cancel-matchtitle::after {
+    content: ":";
+    display: block;
+    position: relative;
+    top: -19px;
+    left: 50px;
+    font-size: 13px;
+}
+
+.cancel-date span {
+    font-weight: 800;
+    left: 77px;
+    font-size: 12px;
+    position: relative;
+    text-transform: uppercase;
+    top: -51px;
+    color: rgb(131, 128, 128);
+}
+
+.cancel-time-section h6 {
+    color: rgb(131, 128, 128);
+    font-weight: 600;
+    left: -24%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+
+}
+
+.cancel-time-section span {
+    color: rgb(131, 128, 128);
+    font-weight: 600;
+    right: -69px;
+    font-size: 15px;
+    position: relative;
+    top: -31px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cancel-time-section span::after {
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: rgb(131, 128, 128);
+    display: block;
+    position: relative;
+    top: -24px;
+    left: 16px;
+
+}
+
+.cancel-time-section .idp-time {
+    font-weight: bolder;
+    right: -16%;
+    font-size: 13px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    color: black;
+}
+
+.cancel-time-section .match-time {
+
+    font-weight: bolder;
+    left: 16%;
+    font-size: 13px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    color: black;
+}
+
+.cancel-rule {
+
+    background-color: #e0f0f5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 14px;
+}
+
+.cancel-icon {
+    position: relative;
+    top: 3px;
+
+}
+
+.cancel-progress-bar {
+    width: 45%;
+    position: absolute;
+    right: 12px;
+    bottom: 23%;
+}
+
+progress {
+    display: block;
+    position: relative;
+    border-radius: 7px;
+    width: 100%;
+    height: 6px;
+
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(131, 128, 128);
+    border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #6BDCFC;
+    border-radius: 10px;
+
+}
+
+.progressbar-left-text {
+    position: relative;
+    top: 4px;
+    left: 0;
+    font-size: 12px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+    float: left;
+    margin: 0;
+
+}
+
+.progressbar-right-text {
+    position: relative;
+    top: 2px;
+    right: 0;
+    font-size: 12px;
+    float: right;
+    color: rgb(102 98 98);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Modal css */
+.modal_close {
+    background-color: #6BDCFC;
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.modal_box {
+    border: none !important;
+    border-radius: 7px;
+}
+
+.rules_modal::-webkit-scrollbar {
+    width: 5px;
+}
+
+.rules_modal::-webkit-scrollbar-track {
+    box-shadow: inset 005px grey;
+}
+
+.rules_modal::-webkit-scrollbar-thumb {
+    background-color: #87CEEB;
+    border-radius: 15px;
+}
+
+.rules_modal::-webkit-scrollbar-thumb:hover {
+    background-color: #6BDCFC;
+}
+
+/* end */
+
+/* bg circle */
+
+
+/* end */
+/* Responsive Start Here */
+/* Responsive Start Here */
+@media (min-width: 1781px) and (max-width: 1836px) {
+    .cancel_headerclip {
+        width: calc(90% - -72px) !important;
+    }
+
+    .cancel-card {
+        height: 221px;
+    }
+
+    .cancel-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cancel_headerclip {
+        width: calc(92% - -112px) !important;
+    }
+
+    .uk-grid {
+        margin-left: 0;
+    }
+
+    .cancel-main-titile h3 {
+        top: 10px;
+        left: 35%;
+    }
+
+    .cancel-team-img img {
+        left: -16px;
+        width: 153px;
+        transform: scale(1.4);
+        top: 61px;
+
+
+    }
+
+    .cancel-time-section {
+        bottom: 49%;
+    }
+}
+
+@media (min-width: 1629px) and (max-width: 1780px) {
+    .cancel_headerclip {
+        width: calc(90% - -72px) !important;
+    }
+
+    .cancel-card {
+        height: 221px;
+    }
+
+    .cancel-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cancel_headerclip {
+        width: calc(92% - -112px) !important;
+    }
+
+    .uk-grid {
+        margin-left: 0;
+    }
+
+    .cancel-main-titile h3 {
+        top: 10px;
+        left: 28%;
+
+    }
+
+    .cancel-team-img img {
+        left: -21px;
+        width: 153px;
+        transform: scale(1.3);
+        top: 0px;
+
+    }
+
+    .cancel-reg-section {
+        position: absolute;
+    }
+
+    .cancel-time-section {
+        width: 30%;
+        height: 32%;
+        bottom: 52%;
+        right: 20%;
+        border-radius: 4px;
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -18%;
+        font-size: 12px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 75%;
+        font-size: 12px;
+        top: -31%;
+    }
+
+    .cancel-time-section span::after {
+        height: 29%;
+        top: -24%;
+        left: 7%;
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 50px;
+    }
+
+    .cancel-time-section .match-time {
+        top: 29%;
+    }
+
+    .cancel-time-section .idp-time {
+        top: 29%;
+        right: -33%;
+    }
+
+    .cancel-date .cancel-matchtitle {
+        left: -7px;
+        font-size: 11px;
+        top: 11px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        left: 15%;
+        font-size: 13px;
+    }
+
+    .cancel-date span {
+
+        font-weight: 800;
+        left: 22%;
+
+    }
+
+    .cancel-rule {
+        top: 7px;
+        right: 8px;
+    }
+
+    .cancel-progress-bar {
+        width: 49%;
+        position: absolute;
+        right: 10px;
+        bottom: 25%;
+    }
+
+    .progressbar-left-text, .progressbar-right-text {
+        font-size: 10px;
+        color: rgb(102 98 98);
+        font-weight: 700;
+    }
+
+}
+
+/* 1500pixel */
+@media (min-width: 1551px) and (max-width: 1628px) {
+    .cancel_headerclip {
+        width: calc(90% - -72px) !important;
+    }
+
+    .cancel-main-wrapper {
+        overflow-x: hidden;
+    }
+
+    .cancel-card {
+        height: 221px;
+    }
+
+    .uk-grid {
+        margin-left: -55px;
+    }
+
+    .cancel-main-titile h3 {
+        top: 10px;
+        left: 28%;
+
+    }
+
+    .cancel-team-img img {
+        left: -35px;
+        width: 153px;
+        transform: scale(1.1);
+        top: 0;
+    }
+
+    .cancel-reg-section {
+        position: absolute;
+    }
+
+    .cancel-time-section {
+        width: 30%;
+        height: 32%;
+        bottom: 52%;
+        right: 20%;
+        border-radius: 4px;
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -18%;
+        font-size: 12px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 75%;
+        font-size: 12px;
+        top: -31%;
+    }
+
+    .cancel-time-section span::after {
+        height: 29%;
+        top: -24%;
+        left: 7%;
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 50px;
+    }
+
+    .cancel-time-section .match-time {
+        top: 29%;
+    }
+
+    .cancel-time-section .idp-time {
+        top: 29%;
+        right: -33%;
+    }
+
+    .cancel-date .scrims-matchtitle {
+        left: -7px;
+        font-size: 11px;
+        top: 11px;
+    }
+
+    .cancel-date .scrims-matchtitle::after {
+        left: 15%;
+        font-size: 13px;
+    }
+
+    .cancel-date span {
+
+        font-weight: 800;
+        left: 22%;
+
+    }
+
+    .cancel-rule {
+        top: 7px;
+        right: 8px;
+    }
+
+    .cancel-progress-bar {
+        width: 50%;
+        position: absolute;
+        right: 5px;
+        bottom: 25%;
+    }
+
+    .progressbar-left-text, .progressbar-right-text {
+        font-size: 10px;
+        color: rgb(102 98 98);
+        font-weight: 700;
+    }
+
+}
+
+/* end 1500pixel */
+
+/* 1400piexl */
+@media (min-width: 1430px) and (max-width: 1550px) {
+    .cancel_headerclip {
+        width: calc(86% - -117px) !important;
+    }
+
+    .cancel_headerclip h1:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: -19px;
+        top: -1px;
+        opacity: 0.5;
+    }
+
+    .cancel-carditems {
+        width: calc(22% - 4px) !important;
+
+    }
+
+    .cancel-rule {
+        background-color: #e0f0f5;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: right;
+        top: 3%;
+        right: 1%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -27%;
+    }
+
+    .cancel-team-img img {
+        width: 132px;
+        transform: scale(1.1);
+        height: 6.8rem;
+        object-fit: cover;
+    }
+
+    .cancel-time-section {
+        width: 30%;
+        height: 32%;
+        bottom: 53%;
+        right: 18%;
+        border-radius: 4px;
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -18%;
+        font-size: 12px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 75%;
+        font-size: 12px;
+        top: -27%;
+    }
+
+    .cancel-time-section span::after {
+        left: 9%;
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        top: 28%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -38%;
+        top: 28%;
+
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 17%;
+        width: 89%;
+    }
+
+    .cancel-date span {
+        font-weight: 800;
+        right: 94%;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -19px;
+        left: 16%;
+
+    }
+
+    .cancel-progress-bar {
+        width: 51%;
+        right: 1%;
+        bottom: 27%;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1429px) {
+    .cancel_headerclip {
+        width: calc(86% - -155px) !important;
+    }
+
+    .cancel-card {
+        width: 100%;
+        height: 215px;
+
+    }
+
+    .cancel-carditems {
+        width: calc(22% - 1px) !important;
+
+    }
+
+    .cancel-rule {
+        background-color: #e0f0f5;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: right;
+        top: 3%;
+        right: 1%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -29%;
+    }
+
+    .cancel-team-img img {
+        width: 135px;
+        transform: scale(1.1);
+    }
+
+    .cancel-time-section {
+
+        bottom: 49%;
+        right: 18%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -20%;
+        font-size: 12px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 71%;
+        font-size: 12px;
+        top: -27%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 22px;
+        top: -27%;
+        left: 11%
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        top: 28%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -38%;
+        top: 28%;
+
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 17%;
+        width: 89%;
+    }
+
+    .cancel-date span {
+
+        left: 28%;
+        top: -52px;
+        font-size: 11px;
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 800;
+        left: -2%;
+        font-size: 11px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -19px;
+        left: 17%;
+
+    }
+
+    .cancel-progress-bar {
+        width: 52%;
+        right: 2%;
+        bottom: 27%;
+    }
+}
+
+/* end */
+/* 1200 pixel */
+@media (min-width: 1280px) and (max-width: 1349px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .cancel_headerclip {
+        width: calc(85% - -112px) !important;
+    }
+
+    .cancel-carditems {
+        width: calc(28% - -27px) !important;
+
+    }
+
+    .cancel-rule {
+        right: 3%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -29%;
+    }
+
+    .cancel-team-img img {
+        width: 150px;
+        transform: scale(1.2);
+        height: 7rem;
+        object-fit: cover;
+    }
+
+    .cancel-time-section {
+        bottom: 53%;
+        right: 22%;
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: -20%;
+        font-size: 13px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 800;
+        left: 85%;
+        font-size: 13px;
+        top: -27%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 22px;
+        top: -27%;
+        left: 2%;
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        top: 28%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -38%;
+        top: 28%;
+
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 13%;
+        width: 89%;
+    }
+
+    .cancel-date span {
+        left: 34%;
+        top: -52px;
+        font-size: 12px;
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 800;
+        left: -2%;
+        font-size: 11px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -19px;
+        left: 19%;
+    }
+
+    .cancel-progress-bar {
+        width: 52%;
+        right: 2%;
+        bottom: 27%;
+    }
+
+}
+
+/* end */
+@media (min-width: 1134px) and (max-width: 1279px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -7px !important;
+    }
+
+    .cancel_headerclip {
+        width: calc(85% - -96px) !important;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 5%;
+    }
+
+    .cancel-carditems {
+        width: calc(26% - -177px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 19px;
+        left: 38%;
+    }
+
+    .cancel-rule {
+        right: 3%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 161px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 7rem;
+    }
+
+    .cancel-time-section {
+        bottom: 55%;
+        right: 23%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -17%;
+        font-size: 15px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 15px;
+        top: -27%;
+        left: 92%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 27px;
+        top: -31%;
+        left: 1%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        font-size: 13px;
+        top: 36%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -53%;
+        top: 36%;
+
+    }
+
+    .cancel-date {
+        top: 45%;
+        left: 10%;
+        width: 92%;
+    }
+
+    .cancel-date span {
+
+        left: 36%;
+        top: -59px;
+        font-size: 13px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 0%;
+        font-size: 13px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -24px;
+        left: 20%;
+        font-size: 17px;
+    }
+
+    .cancel-progress-bar {
+        width: 50%;
+        right: 3%;
+        bottom: 21%;
+    }
+
+
+}
+
+
+/* end */
+@media (min-width: 1024px) and (max-width: 1133px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -7px !important;
+    }
+
+    .cancel_headerclip {
+        width: calc(85% - -96px) !important;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 5%;
+    }
+
+    .cancel-carditems {
+        width: calc(24% - -177px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 19px;
+        left: 38%;
+    }
+
+    .cancel-rule {
+        right: 3%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 153px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 7rem;
+        object-fit: cover;
+    }
+
+    .cancel-time-section {
+        bottom: 55%;
+        right: 23%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -17%;
+        font-size: 15px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 15px;
+        top: -27%;
+        left: 92%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 27px;
+        top: -31%;
+        left: 1%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        font-size: 13px;
+        top: 36%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -53%;
+        top: 36%;
+
+    }
+
+    .cancel-date {
+        top: 45%;
+        left: 10%;
+        width: 92%;
+    }
+
+    .cancel-date span {
+
+        left: 36%;
+        top: -59px;
+        font-size: 13px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 0%;
+        font-size: 13px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -24px;
+        left: 20%;
+        font-size: 17px;
+    }
+
+    .cancel-progress-bar {
+        width: 53%;
+        right: 2%;
+        bottom: 21%;
+    }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -7px !important;
+    }
+
+    .cancel_headerclip {
+        width: calc(80% - -109px) !important;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 5%;
+    }
+
+    .cancel-carditems {
+        width: calc(21% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 19px;
+        left: 38%;
+    }
+
+    .cancel-rule {
+        right: 3%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 129px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+        height: 6rem;
+        object-fit: cover;
+
+
+    }
+
+    .cancel-time-section {
+        bottom: 55%;
+        right: 23%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -15%;
+        font-size: 14px;
+        top: 30%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 14px;
+        top: -27%;
+        left: 85%;
+
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 27px;
+        top: -31%;
+        left: 7%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        font-size: 13px;
+        top: 36%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -53%;
+        top: 36%;
+
+    }
+
+    .cancel-date {
+        top: 44%;
+        left: 13%;
+        width: 86%;
+    }
+
+    .cancel-date span {
+
+        left: 36%;
+        top: -59px;
+        font-size: 13px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 0%;
+        font-size: 13px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -24px;
+        left: 20%;
+        font-size: 17px;
+    }
+
+    .cancel-progress-bar {
+        width: 54%;
+        right: 2%;
+        bottom: 25%;
+    }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 768px) and (max-width: 899px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: 5px !important;
+    }
+
+    .cancel_headerclip {
+        width: calc(77% - -109px) !important;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 5%;
+    }
+
+    .cancel-card-list {
+        margin: 20px 30px;
+
+    }
+
+    .cancel-carditems {
+        width: calc(17% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 19px;
+        left: 12%;
+    }
+
+    .cancel-rule {
+        right: 3%;
+    }
+
+    .cancel-card {
+        height: 225px;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 132px;
+        transform: scale(1.2);
+        left: 3%;
+        top: 68px;
+        height: 6rem;
+        object-fit: cover;
+
+    }
+
+    .cancel-time-section {
+        bottom: 49%;
+        right: 22%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -15%;
+        font-size: 12px;
+        top: 30%;
+
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 12px;
+        top: -27%;
+        left: 82%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 27px;
+        top: -31%;
+        left: 7%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 27%;
+        font-size: 13px;
+        top: 31%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -53%;
+        top: 31%;
+
+    }
+
+    .cancel-date {
+        top: 44%;
+        left: 13%;
+        width: 82%;
+    }
+
+    .cancel-date span {
+
+        left: 40%;
+        top: -52px;
+        font-size: 11px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 3%;
+        font-size: 11px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -19px;
+        left: 20%;
+        font-size: 13px;
+    }
+
+    .cancel-progress-bar {
+        width: 54%;
+        right: 2%;
+        bottom: 25%;
+    }
+
+
+}
+
+
+/* end */
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -5px !important;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 2px;
+    }
+
+    .cancel-carditems {
+        width: calc(57% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 20px;
+        left: 38%;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 170px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+
+
+    }
+
+    .cancel-time-section {
+        bottom: 55%;
+        right: 22%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -24%;
+        font-size: 15px;
+        top: 26%;
+
+
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 15px;
+        top: -32%;
+        left: 88%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 27px;
+        top: -31%;
+        left: -1%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 24%;
+        font-size: 13px;
+        top: 34%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -50%;
+        top: 34%;
+        font-size: 13px;
+
+
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 8%;
+        width: 87%;
+    }
+
+    .cancel-date span {
+        left: 42%;
+        top: -56px;
+        font-size: 14px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 4%;
+        font-size: 13px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -22px;
+        left: 20%;
+        font-size: 15px;
+    }
+
+    .cancel-progress-bar {
+        width: 51%;
+        right: 3%;
+        bottom: 23%;
+    }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 531px) and (max-width: 599px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -8px !important;
+    }
+
+    .cancel_headerclip {
+        width: calc(70% - -110px) !important;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 2px;
+    }
+
+    .cancel-card-list {
+        margin: 20px 30px;
+        padding: 0 !important;
+    }
+
+    .cancel-carditems {
+        width: calc(57% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 20px;
+        left: 38%;
+    }
+
+    .cancel-card {
+        width: 100%;
+        height: 221px;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 170px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+
+
+    }
+
+    .cancel-time-section {
+        bottom: 55%;
+        right: 22%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -24%;
+        font-size: 15px;
+        top: 26%;
+
+
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 15px;
+        top: -32%;
+        left: 88%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 27px;
+        top: -31%;
+        left: -1%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 24%;
+        font-size: 13px;
+        top: 34%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -50%;
+        top: 34%;
+        font-size: 13px;
+
+
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 8%;
+        width: 87%;
+    }
+
+    .cancel-date span {
+        left: 42%;
+        top: -56px;
+        font-size: 14px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 4%;
+        font-size: 13px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -22px;
+        left: 20%;
+        font-size: 15px;
+    }
+
+    .cancel-progress-bar {
+        width: 51%;
+        right: 3%;
+        bottom: 23%;
+    }
+
+
+}
+
+
+/* end */
+
+@media (min-width: 400px) and (max-width: 532px) {
+    .cancel_headerclip h1{
+        font-size: 44px;
+    }
+    .mymatches_headerclip h1{
+        font-size: 42px;
+    }
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+
+    .cancel-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cancel_headerclip {
+        width: -webkit-fill-available;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 2px;
+    }
+
+    .cancel-card-list {
+        margin: 20px 30px;
+        padding: 0 !important;
+    }
+
+    .cancel-carditems {
+        width: calc(57% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 20px;
+        left: 20%;
+    }
+
+    .cancel-card {
+        width: 100%;
+        height: 221px;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+        top: 0;
+
+    }
+
+    .cancel-team-img img {
+        width: 130px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 68px;
+
+
+    }
+
+    .cancel-time-section {
+        bottom: 49%;
+        right: 24%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -9%;
+        font-size: 12px;
+        top: 26%;
+
+
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 12px;
+        top: -32%;
+        left: 87%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 25px;
+        top: -26%;
+        left: 8%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 24%;
+        font-size: 13px;
+        top: 34%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -50%;
+        top: 34%;
+        font-size: 13px;
+
+
+    }
+
+    .cancel-date {
+        top: 45%;
+        left: 8%;
+        width: 86%;
+    }
+
+    .cancel-date span {
+        left: 42%;
+        top: -56px;
+        font-size: 11px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 7%;
+        font-size: 11px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -22px;
+        left: 20%;
+        font-size: 15px;
+    }
+
+    .cancel-progress-bar {
+        width: 51%;
+        right: 3%;
+        bottom: 23%;
+    }
+
+
+}
+
+
+/* end */
+@media (min-width: 361px) and (max-width: 399px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+
+    .cancel-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cancel_headerclip {
+        width: -webkit-fill-available;
+    }
+
+    .cancel_headerclip h1:before {
+        top: 2px;
+    }
+
+    .cancel-card-list {
+        margin: 20px 30px;
+        padding: 0 !important;
+    }
+
+    .cancel-carditems {
+        width: calc(57% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 20px;
+        left: 16%;
+    }
+
+    .cancel-card {
+        width: 100%;
+        height: 221px;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+
+    }
+
+    .cancel-team-img img {
+        width: 106px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 0;
+        height: 4.5rem;
+
+    }
+
+    .cancel-time-section {
+        bottom: 49%;
+        right: 24%;
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -9%;
+        font-size: 12px;
+        top: 26%;
+
+
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 12px;
+        top: -32%;
+        left: 87%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 25px;
+        top: -26%;
+        left: 8%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 24%;
+        font-size: 13px;
+        top: 34%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -50%;
+        top: 34%;
+        font-size: 13px;
+
+
+    }
+
+    .cancel-date {
+        top: 45%;
+        left: 8%;
+        width: 86%;
+    }
+
+    .cancel-date span {
+        left: 42%;
+        top: -56px;
+        font-size: 11px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 7%;
+        font-size: 11px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -22px;
+        left: 20%;
+        font-size: 15px;
+    }
+
+    .cancel-progress-bar {
+        width: 51%;
+        right: 3%;
+        bottom: 23%;
+    }
+
+
+}
+
+
+/* end */
+@media (min-width: 300px) and (max-width: 360px) {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .uk-grid {
+        margin-left: -19px !important;
+    }
+
+    .cancel-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cancel_headerclip {
+        width: -webkit-fill-available;
+        height: 6rem;
+    }
+
+    .cancel_headerclip h1:before {
+        top: -6px;
+        height: 3rem;
+    }
+    .cancel_headerclip h1{
+        left: -57px;
+    }
+
+    .cancel-card-list {
+        margin: 20px 30px;
+        padding: 0 !important;
+    }
+
+    .cancel-carditems {
+        width: calc(57% - -175px) !important;
+        margin: 0px 3.5% 57px 3.5% !important;
+    }
+
+    .cancel-main-titile h3 {
+        font-size: 18px;
+        left: 5%;
+    }
+    .cancel-reg-section{
+        width: 208px;
+    }
+
+    .cancel-card {
+        width: 100%;
+        height: 191px;
+    }
+
+    .cancel-team-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -38%;
+
+    }
+
+    .cancel-team-img img {
+        width: 87px;
+        transform: scale(1.4);
+        left: 4%;
+        top: 0;
+        
+    }
+
+    .cancel-time-section {
+        bottom: 41%;
+        right: 24%;
+
+
+    }
+
+    .cancel-time-section h6 {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        left: -8%;
+        font-size: 9px;
+        top: 28%;
+    }
+
+    .cancel-time-section span {
+        color: rgb(102 98 98);
+        font-weight: 900;
+        font-size: 9px;
+        top: -27%;
+        left: 84%;
+    }
+
+    .cancel-time-section span::after {
+        width: 2px;
+        height: 16px;
+        top: -22%;
+        left: 12%;
+
+    }
+
+    .cancel-time-section .match-time {
+        left: 39%;
+        font-size: 10px;
+        top: 17%;
+    }
+
+    .cancel-time-section .idp-time {
+        right: -50%;
+        top: 17%;
+        font-size: 10px;
+
+
+    }
+
+    .cancel-date {
+        top: 43%;
+        left: 8%;
+        width: 82%;
+    }
+
+    .cancel-date span {
+        left: 46%;
+        top: -49px;
+        font-size: 8px;
+        font-weight: 900;
+
+    }
+
+    .cancel-date .cancel-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 900;
+        left: 9%;
+        font-size: 8px;
+        position: relative;
+        text-transform: uppercase;
+        top: 10px;
+
+
+    }
+
+    .cancel-date .cancel-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -16px;
+        left: 21%;
+        font-size: 12px;
+    }
+
+    .cancel-progress-bar {
+        width: 52%;
+        right: 3%;
+        bottom: 28%;
+    }
+
+    .progressbar-left-text {
+        font-size: 9px;
+    }
+
+    .progressbar-right-text {
+        top: 6px;
+        right: 0px;
+        font-size: 9px;
+        font-weight: 700;
+
+    }
+
+    .cancel -reg-section {
+        width: 217px;
+    }
+}
+
+.cancellation_page{
+    overflow: hidden;
+}
+.a:hover{
+    color: white !important;
+}
+/* end */

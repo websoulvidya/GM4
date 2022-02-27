@@ -1,0 +1,1452 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,800&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    font-family: 'Open Sans';
+}
+
+.idp_tournament-main-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.idp_tournament-card-list {
+    margin: 20px 30px;
+}
+
+.idp_tournament-carditems {
+    width: 100%;
+    height: auto;
+    left: 5%;
+    border: 2px solid #ade0ee;
+    border-radius: 17px !important;
+    box-shadow: 5px 5px #ade0ee;
+    position: relative;
+
+
+}
+
+.idp_tour-card {
+    width: 263px;
+    height: 237px;
+    border-radius: 12px;
+    position: relative;
+
+    background-color: white;
+}
+
+.idp_tournament-main-titile {
+    width: 100%;
+    position: relative;
+}
+
+.idp_tournament-main-titile h3 {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    top: 10px;
+    left: 24%;
+    font-weight: 600;
+    position: absolute;
+}
+
+.idp_tournamnet-team-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.idp_tournamnet-team-img img {
+    border-radius: 6px;
+    left: -35%;
+    position: relative;
+    width: 92px;
+    transform: scale(1.3);
+    top: 61px;
+    height: 7.7rem;
+    object-fit: cover;
+}
+
+.idp_tour-reg-section {
+    width: 210px;
+    background-color: #6BDCFC;
+    height: 59px;
+    position: relative;
+    bottom: -211px;
+    left: 39%;
+    border-radius: 4px;
+
+}
+
+.idp_tour-reg-section h6 {
+    color: white;
+    font-weight: 600;
+    left: -30%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+
+.idp_tour-reg-section p {
+    color: white;
+    font-weight: bolder;
+    left: 3%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+
+}
+
+.idp_tour-reg-section a {
+    color: white;
+    font-weight: 600;
+    right: -69px;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.idp_tour-reg-section a::after {
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: -31px;
+    left: 53px;
+
+}
+
+.idp_tour-reg-section a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.idp_tour-pay-section {
+    width: 156px;
+    height: 75px;
+    position: absolute;
+    bottom: 104px;
+    left: 44%;
+    border-radius: 4px;
+}
+
+.idp_tour-pay-section h6 {
+    color: rgb(131, 128, 128);
+    font-weight: bold;
+    left: -30%;
+    font-size: 11px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+
+.idp_tour-pay-section span {
+    color: rgb(131, 128, 128);
+    font-weight: bold;
+    right: -53px;
+    font-size: 11px;
+    position: relative;
+    top: -31px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.idp_tour-pay-section span::after {
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: rgb(131, 128, 128);
+    display: block;
+    position: relative;
+    top: -24px;
+    left: 29px;
+}
+
+.idp_tour-pay-section .entry-fee {
+    font-weight: bolder;
+    right: 18%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+}
+
+.idp_tour-pay-section .prize-pool {
+
+    font-weight: bolder;
+    left: 16%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+
+}
+
+.idp_tournament-rule {
+
+    background-color: #e0f0f5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    top: 10px;
+    /* right: -24px; */
+    right: -40px;
+}
+
+.rule-icon {
+    position: relative;
+    top: 3px;
+
+}
+
+.idp_tour-progress-bar {
+    width: 100%;
+}
+
+.progressbar-active {
+    height: 24px;
+    width: 20%;
+}
+
+.idppage_progressbar {
+    display: block;
+    position: absolute;
+    top: 62%;
+    /* left: 59%; */
+    left: 56%;
+    border-radius: 7px;
+    width: 63%;
+    height: 6px;
+    margin-left: -11.5%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(172, 169, 169);
+    border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #6BDCFC;
+    border-radius: 10px;
+
+}
+
+progress[value]::-moz-progress-bar {
+    /* style rules */
+}
+
+.modal_close {
+    background-color: #6BDCFC;
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 18px;
+    margin-top: 1rem;
+
+
+}
+
+.modal_box {
+    border: none !important;
+    border-radius: 7px;
+}
+
+.rules_modal::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+.rules_modal::-webkit-scrollbar-track {
+    box-shadow: inset 005px grey;
+}
+
+.rules_modal::-webkit-scrollbar-thumb {
+    background-color: #87ceeb;
+    border-radius: 15px;
+}
+
+
+.rules_modal::-webkit-scrollbar-thumb:hover {
+    background-color: #6BDCFC;
+
+}
+
+
+@media (min-width:792px) and (max-width:866px) {
+    .idp_tour-reg-section {
+        width: 185px;
+        left: 50%;
+    }
+    .idpp_card{
+        width: 21.5rem !important;
+        margin-left: 2.5rem !important;
+    }
+
+    .idp_tour-reg-section a {
+        padding-left: 4rem;
+        right: -19px;
+    }
+
+    .idp_tour-reg-section a::after {
+        left: 78px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width:1300px) {
+    #idp_uk-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    #wrap {
+        width: 18.8rem !important;
+    }
+
+    .idp_tour-reg-section {
+        width: 181px;
+        left: 38%;
+    }
+
+    .idp_tour-reg-section h6 {
+        left: -26%;
+
+    }
+
+    .idp_tour-reg-section {
+        width: 181px;
+        left: 34%;
+    }
+
+    .idp_tour-card {
+        width: 262px;
+    }
+
+    .idp_tour-pay-section {
+        left: 41%;
+    }
+
+    .idppage_progressbar {
+        left: 51%;
+    }
+
+    .idp_slot_space {
+        left: 6rem;
+    }
+
+    .idp_tournament-main-titile h3 {
+        left: 20%;
+    }
+
+    .idp_tournament-rule {
+        right: -4px;
+    }
+}
+
+@media (min-width:1301px) and (max-width:1496px) {
+    .idp_price_section{
+        left: 41% !important;
+    }
+    .idp_page_progressbar{
+        left: 52% !important;
+    }
+    .idp_slot_space2{
+        width: 10rem !important;
+    }
+    .idp_match_date {
+        left: 45%;
+    }
+
+    #wrap {
+        width: 18.8rem !important;
+        margin-left: 1rem !important;
+    }
+
+    .idp_tournament-rule {
+        right: 4px;
+    }
+
+    .idp_tour-reg-section {
+        width: 181px;
+        left: 34%;
+    }
+
+    .idp_tour-reg-section h6 {
+        left: -26%;
+
+    }
+
+    .idp_tour-reg-section a {
+        right: -49px;
+    }
+
+    .idp_tour-pay-section {
+        left: 40%;
+    }
+
+    .idppage_progressbar {
+        left: 50% !important;
+    }
+
+    .idp_slot_space {
+        width: 10rem;
+        left: 99px !important;
+    }
+
+    .idp_tournament-main-titile h3 {
+        left: 15%;
+    }
+}
+
+/* @media (min-width: 1347px) and (max-width:1467px) {
+    .uk-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrap {
+        margin-right: 0rem !important;
+        width: 21rem !important;
+        margin-bottom: 4rem !important;
+    }
+} */
+
+
+/* @media screen and (max-width:1204px) {
+    
+    .wrap {
+        margin-right: 0rem !important;
+        width: 20rem !important;
+        margin-bottom: 4rem !important;
+    }
+    .tournament-carditems {
+        width: 90% !important;
+    }
+    .tour-card {
+        width: 264px;
+    }
+    .tour-reg-section {
+        width: 224px;
+        left: 22%;
+    }
+    .tour-pay-section{
+        left: 44%;
+    }
+} */
+@media (min-width:481px) and (max-width:767px) {
+    .idp_tour-reg-section2 {
+        left: 60% !important;
+    }
+
+    .uk-grid>* {
+        padding-left: 0 !important;
+    }
+
+    .idp_tour-reg-section {
+        /* left: 255px; */
+        width: 171px !important;
+        left: 58% !important;
+    }
+
+    .idp_tour-reg-section a {
+        padding-left: 1rem;
+        right: -40px !important;
+    }
+
+    .idp_tour-reg-section a::after {
+        left: 60px;
+    }
+
+    #wrap {
+        width: 28.8rem !important;
+    }
+
+    .idp_tournament-main-titile h3 {
+        left: 30%;
+    }
+
+    .idp_tournament-rule {
+        right: 5px;
+    }
+
+    .idp_tour-pay-section {
+        left: 42%;
+    }
+
+    .idppage_progressbar {
+        left: 46% !important;
+    }
+
+    .idp_slot_space {
+        left: 8.4rem !important;
+        width: 16.6rem !important;
+    }
+
+    .idp_tour-card {
+        width: 418px;
+    }
+
+    .idp_tournamnet-team-img img {
+        left: -40%;
+        width: 129px;
+        height: 8rem;
+    }
+}
+
+@media (max-width:768px) {
+    .edit_matches form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
+
+    #idp_uk-grid {
+        padding-right: 0px !important;
+        padding-left: 0 !important;
+    }
+
+    .idp_wrap {
+        width: 17.8rem !important;
+        margin-bottom: 4rem !important;
+        margin-left: 10px !important;
+    }
+
+    .idp_tour-reg-section {
+        width: 192px;
+        left: 43%;
+    }
+
+    .idp_tour-reg-section a {
+        right: -57px;
+    }
+
+
+
+}
+
+.idp_tour-reg-section h6 {
+    left: -26%;
+}
+
+.idppage_progressbar {
+    left: 147px;
+    width: 63%;
+
+}
+
+.idp_slot_space {
+    left: 97px;
+    width: 9rem;
+}
+
+
+@media (min-width:1024px) {
+    .uk-grid>* {
+        padding-left: 0px !important;
+    }
+
+    .idp_wrap {
+        margin-right: 0rem;
+        width: 20rem !important;
+        margin-bottom: 4rem !important;
+        margin-left: 0 !important;
+    }
+
+    .idp_tournament-carditems {
+        width: 90% !important;
+    }
+}
+
+
+
+@media (min-width:993px) and (max-width:1117px) {
+
+    #wrap {
+        width: 18.8rem !important;
+        margin-right: 6px !important;
+    }
+
+    .idp_tour-pay-section {
+        left: 41%;
+    }
+
+    .idppage_progressbar {
+        left: 51%;
+    }
+
+    .idp_slot_space {
+        width: 9.9rem;
+        left: 100px !important;
+    }
+
+    .idp_tour-reg-section {
+        left: 22%;
+    }
+
+    .idp_tournament-main-titile h3 {
+        left: 17%;
+    }
+
+    .idp_tournament-rule {
+        right: 0;
+    }
+
+}
+
+@media (min-width: 1130px) and (max-width: 1280px) {
+
+    .uk-grid>* {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 10px !important;
+
+    }
+
+    .idp_tournament-rule {
+        right: 6px;
+    }
+
+    .idppage_progressbar {
+        left: 47%;
+        width: 63%;
+    }
+
+    #idp_uk-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    #wrap {
+        width: 20.8rem !important;
+        margin-left: 6px !important;
+        margin-right: 18px !important;
+        margin-bottom: 4rem !important;
+    }
+
+    .idp_tour-card {
+        width: 285px !important;
+    }
+
+    .idp_tournamnet-team-img img {
+        left: -119px;
+        width: 98px;
+        height: 7.7rem;
+        object-fit: cover;
+    }
+
+    .idp_tour-reg-section a {
+        right: -58px;
+    }
+
+    .idp_tour-reg-section a::after {
+        left: 53px;
+    }
+
+    .idp_tour-pay-section {
+        width: 213px;
+        left: 27%;
+    }
+
+    .idp_tour-reg-section {
+        left: 33%;
+        width: 194px;
+    }
+
+    .idp_slot_space {
+        left: 88px;
+        width: 11rem;
+    }
+
+    .idp_tournament-main-titile h3 {
+        left: 17%;
+    }
+}
+
+@media (max-width:480px) {
+    .idp_page_progressbar{
+        left: 49% !important;
+    }
+    .idp_tour-reg-section2{
+        left: 46% !important;
+    }
+    .edit_matches form {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .uk-grid>* {
+        padding-left: 0px !important;
+    }
+
+    .idp_wrap {
+        width: 20.8rem !important;
+        margin-bottom: 4rem !important;
+        margin-left: 0 !important;
+    }
+
+    .idp_tour-card {
+        width: 287px;
+
+    }
+
+    .idp_tournament-main-titile h3 {
+        left: 16%;
+    }
+
+    .idp_tour-pay-section {
+        left: 42%;
+    }
+
+    .idp_tournamnet-team-img img {
+        left: -38%;
+        width: 34%;
+        height: 7rem;
+    }
+
+    .idp_tour-reg-section {
+        left: 38% !important;
+        width: 181px !important;
+    }
+
+    .idp_tour-reg-section h6 {
+        left: -28%;
+    }
+
+    .idp_slot_space {
+        left: 6rem !important;
+        width: 10.7rem !important;
+    }
+
+    .idp_tour-reg-section a {
+        right: -27px;
+        padding-left: 3rem;
+    }
+
+    #idp_uk-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .idppage_progressbar {
+        left: 47%;
+    }
+
+    .idp_header h1 {
+        font-size: 30px !important;
+        position: relative;
+        left: 21px;
+    }
+    .idp_header h1:before{
+        left: -15px !important;
+        top: 4px !important;
+        height: 3rem !important;
+    }
+    .idp_tour-reg-section a::after {
+        left: 71px;
+    }
+
+    .idp_header {
+        padding-left: 1rem !important;
+    }
+
+ 
+
+    .idp_tournament-carditems {
+        width: 101% !important;
+    }
+
+    .idp_tournament-rule {
+        right: 0 !important;
+    }
+}
+
+.idp_wrap {
+    margin-right: 0rem;
+    width: 21.8rem !important;
+    margin-bottom: 4rem !important;
+    margin-left: 4px !important;
+}
+
+.matches_list {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.idp_slot_space {
+    position: absolute;
+    top: 9.5rem;
+    left: 7rem;
+    font-size: 10px;
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-left: 6px;
+    font-weight: bold;
+    color: rgb(131, 128, 128);
+}
+
+.idp_header {
+    height: 8rem;
+    width: -webkit-fill-available;
+    background-color: #6BDCFC;
+
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.idp_header h1 {
+    padding-top: 6px;
+    text-align: left;
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.idp_header h1:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 3.5rem;
+    background-color: white;
+    left: -20px;
+    top: 14px;
+    opacity: 0.5;
+}
+
+#idp_uk-grid {
+    justify-content: center !important;
+}
+
+@media (min-width:1540px) and (max-width:1822px) {
+    .idp_wrap {
+        width: 21.8rem !important;
+        margin-right: 15px !important;
+    }
+}
+
+@media (min-width:1823px) and (max-width:2100px) {
+    .idp_wrap {
+        width: 27.8rem !important;
+        margin-left: 5px !important;
+    }
+
+    .idp_tour-card {
+        width: 328px !important;
+    }
+
+    .idppage_progressbar {
+        left: 59%;
+    }
+
+    .idp_tour-reg-section {
+        left: 52%;
+    }
+
+    .idp_tournament-rule {
+        right: -51px;
+    }
+
+    .idp_tournamnet-team-img img {
+        left: -35%;
+        height: 8.7rem;
+        width: 127px;
+    }
+
+    .idp_tour-pay-section {
+        left: 53%;
+    }
+
+    .idp_slot_space {
+        left: 9.3rem;
+        width: 13rem;
+    }
+}
+
+.idp_match_date {
+    position: absolute;
+    position: absolute;
+    top: 76px;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(131, 128, 128);
+    left: 45%;
+}
+
+.edit_matchess {
+    background-image: url('../../assets/myMatches/BAB\ SHYANJITH\ \(2\).png');
+    background-size: cover;
+}
+
+.edit_matches form {
+    background-color: #ffff;
+}
+
+
+/* table */
+
+
+
+
+
+
+.header {
+    background-color: #87ceeb;
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img {
+    height: 4rem;
+    object-fit: cover;
+    width: 60px;
+}
+
+
+.table-users {
+    border: 1px solid #327a81;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    max-width: calc(100% - 2em);
+    margin: 0em auto;
+    overflow: hidden;
+    width: 800px;
+}
+
+table {
+    width: 100%;
+}
+
+table td, table th {
+    color: black;
+    padding: 10px;
+}
+
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td:last-child {
+    font-size: 0.95em;
+    line-height: 1.4;
+    text-align: left;
+}
+
+table th {
+    background-color: #daeff1;
+    font-weight: 300;
+}
+
+table tr:nth-child(2n) {
+    background-color: white;
+}
+
+table tr:nth-child(2n+1) {
+    background-color: #edf7f8;
+}
+
+@media screen and (max-width: 700px) {
+    table, tr, td {
+        display: block;
+    }
+
+    td:first-child {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+    }
+
+    td:not(:first-child) {
+        clear: both;
+        margin-left: 100px;
+        padding: 4px 20px 4px 90px;
+        position: relative;
+        text-align: left;
+    }
+
+    td:not(:first-child):before {
+        color: #91ced4;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    td:nth-child(1):before {
+        content: "User Name:";
+        padding-right: 12px;
+    }
+
+    td:nth-child(2):before {
+        content: "team Details:";
+    }
+
+    td:nth-child(3):before {
+        content: "Status:";
+    }
+
+    td:nth-child(4):before {
+        content: "Comments:";
+    }
+
+    tr {
+        padding: 10px 0;
+        position: relative;
+    }
+
+    tr:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .view_page {
+        background-image: none !important;
+    }
+
+    .header {
+        background-color: #87ceeb;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+        padding: 0;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .img {
+        border: 3px solid;
+        border-color: #daeff1;
+        height: 100px;
+        margin: 0.5rem 0;
+        width: 100px;
+    }
+
+    td:first-child {
+        background-color: #c8e7ea;
+        border-bottom: 1px solid #91ced4;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        width: 95%;
+    }
+
+    td:not(:first-child) {
+        margin: 0;
+        padding: 5px 1em;
+        width: 96%;
+    }
+
+    td:not(:first-child):before {
+        font-size: 0.8em;
+        padding-top: 0.3em;
+        position: relative;
+    }
+
+    td:last-child {
+        padding-bottom: 1rem !important;
+    }
+
+    tr {
+        background-color: white !important;
+        border: 1px solid #6cbec6;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+        margin: 0.5rem 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .table-users {
+        border: none;
+        box-shadow: none;
+        overflow: visible;
+    }
+}
+
+.view_page_icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.view_page {
+    background-image: url('../../assets/myMatches/BAB\ SHYANJITH\ \(2\).png');
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: #FFA500;
+}
+
+/* IDP page */
+
+
+.idp_page {
+    width: 100%;
+    height: 30rem;
+    padding: 8% 0 0;
+    margin: auto;
+    background-image: url('../../assets/myMatches/BAB\ SHYANJITH\ \(2\).png');
+    background-size: cover;
+}
+
+.idp_form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.idp_form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.idp_form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #87ceeb;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+/* .idp_form button:hover,.form button:active,.form button:focus {
+    background: #87CEFE;
+  } */
+.idp_form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.idp_form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.idp_form .register-form {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container .info span .fa {
+    color: #EF3B3A;
+}
+
+input:hover {
+    border: 1px solid #87ceeb;
+}
+
+.idpp_card {
+    position: relative;
+    height: 15.1rem;
+    border: 1px solid #87ceeb;
+    border-radius: 18px;
+    border-right: 5px solid #87ceeb;
+    border-bottom: 8px solid #87ceeb;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* newww */
+.pro_img img {
+    width: 92px;
+    height: 7.7rem;
+    object-fit: cover;
+    transform: scale(1.3);
+    position: absolute;
+    left: 0;
+    top: 64px;
+    border-radius: 6px;
+}
+
+.pro_img {
+    position: relative;
+}
+
+.main_title h3 {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    top: 10px;
+    left: 24%;
+    font-weight: 600;
+    position: absolute;
+}
+
+.main_title {
+    position: relative;
+}
+
+.idp_rule {
+    background-color: #e0f0f5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    top: 10px;
+    /* right: -24px; */
+    right: 7px;
+
+}
+
+.idp_price_section {
+    width: 156px;
+    height: 75px;
+    position: absolute;
+    bottom: 104px;
+    left: 44%;
+    border-radius: 4px;
+}
+
+.idp_price_section h6 {
+    color: rgb(131, 128, 128);
+    font-weight: bold;
+    left: -30%;
+    font-size: 11px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+
+.idp_price_section p {
+    font-weight: bolder;
+    left: 16%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+}
+
+.idp_price_section span {
+    color: rgb(131, 128, 128);
+    font-weight: bold;
+    right: -53px;
+    font-size: 11px;
+    position: relative;
+    top: -31px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.idp_price_section span::after {
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: rgb(131, 128, 128);
+    display: block;
+    position: relative;
+    top: -24px;
+    left: 29px;
+}
+
+.idp_price_section .entry-fee {
+    font-weight: bolder;
+    right: -45%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+}
+
+.idp_page_progressbar {
+    left: 147px;
+    width: 63%;
+    display: block;
+    position: absolute;
+    top: 62%;
+    /* left: 59%; */
+    left: 46%;
+    border-radius: 7px;
+    width: 58%;
+    height: 6px;
+    margin-left: -11.5%;
+
+}
+
+.idp_slot_space2 {
+    position: absolute;
+    top: 9.5rem;
+    left: 7rem;
+    font-size: 10px;
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-left: 6px;
+    font-weight: bold;
+    color: rgb(131, 128, 128);
+}
+
+.idp_tour-reg-section2 {
+    width: 173px;
+    background-color: #6BDCFC;
+    height: 59px;
+    position: relative;
+    bottom: -211px;
+    left: 49%;
+    border-radius: 4px;
+}
+
+.idp_tour-reg-section2 h6 {
+    color: white;
+    font-weight: 600;
+    left: -26%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    top: 11px;
+}
+
+.idp_tour-reg-section2 p {
+    font-weight: bolder;
+    left: 3%;
+    font-size: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+    color: black;
+}
+
+.idp_tour-reg-section2 a {
+    color: white;
+    font-weight: 600;
+    right: -37px;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+
+.idp_tour-reg-section2 a::after {
+    content: '';
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: -31px;
+    left: 68px;
+}
+
+@media (min-width: 1536px) {
+
+    .css-19r6kue-MuiContainer-root {
+        max-width: 1496px;
+    }
+}
+.sendIdpPage{
+    overflow: hidden;
+}
+
+
+.mymatches-reg-section a:hover{
+    color: #ffff !important;
+}
+@media (min-width: 400px) and (max-width: 532px){
+    .idp_header h1:before{
+        top: 10px;
+        left: -24px;
+    }
+    .idp_header{
+        left: -36px !important;
+    }
+    
+}
+
+input:focus{
+    outline: none !important;
+} 

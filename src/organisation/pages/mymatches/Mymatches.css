@@ -1,0 +1,2656 @@
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,800&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+    * {
+        font-family: 'Open Sans';
+    }
+
+    /* 2 */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .mymatches-main-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+    }
+
+    /* header clip */
+    .mymatches_headerclip {
+        height: 8rem;
+        width: -webkit-fill-available;
+        /* width: calc(89% - -81px)!important; */
+        background-color: #6BDCFC;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        padding-left: 6rem;
+    }
+
+    .mymatches_headerclip h1 {
+        text-align: left;
+        font-size: 52px;
+        font-weight: 700;
+        color: #ffff;
+        text-transform: uppercase;
+        left: -19px;
+        top: 8px;
+
+        position: relative;
+    }
+
+    .mymatches_headerclip h1:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: -19px;
+        top: -5px;
+        opacity: 0.5;
+
+    }
+
+    /* end */
+    .mymatches-card-list {
+        margin: 20px 30px;
+        padding-right: 32px;
+    }
+
+    .main-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mymatches-carditems {
+        width: calc(22% - 10px) !important;
+        height: auto;
+        left: 5%;
+        border: 1px solid #ADE0EE;
+        border-radius: 18px !important;
+        box-shadow: 5px 5px #ADE0EE;
+        position: relative;
+        padding-left: 0 !important;
+        margin: 0 1.5% 55px 1.5% !important;
+
+    }
+
+    .mymatches-card {
+        width: 100%;
+        height: 237px;
+        border-radius: 3px solid;
+        position: relative;
+    }
+
+    .mymatches-main-titile {
+        width: 100%;
+        position: relative;
+    }
+
+    .mymatches-main-titile h3 {
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        top: 10px;
+        left: 23%;
+        font-weight: 600;
+        position: absolute;
+    }
+
+    .mymatches-team-img {
+        width: 174px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 61px;
+
+    }
+
+    .mymatches-team-img img {
+        border-radius: 6px;
+        left: -10px;
+        position: relative;
+        width: 174px;
+        transform: scale(1.3);
+        /* height: 138px; */
+        bottom: 1;
+
+    }
+
+    .mymatches-reg-section {
+        width: 236px;
+        background-color: #6BDCFC;
+        height: 59px;
+        position: absolute;
+        bottom: -31px;
+        right: 0;
+        border-radius: 4px;
+
+    }
+
+    .mymatches-reg-section h6 {
+        color: white;
+        font-weight: 600;
+        left: -30%;
+        font-size: 15px;
+        position: relative;
+        text-transform: uppercase;
+        top: 11px;
+    }
+
+    .mymatches-reg-section p {
+        color: white;
+        font-weight: bolder;
+        left: 3%;
+        font-size: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 18px;
+        color: black;
+
+    }
+
+    .mymatches-reg-section a {
+        color: white;
+        font-weight: 600;
+        right: -69px;
+        font-size: 15px;
+        position: relative;
+        bottom: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .mymatches-reg-section a::after {
+        content: '';
+        width: 2px;
+        height: 35px;
+        background-color: white;
+        display: block;
+        position: relative;
+        top: -31px;
+        left: 53px;
+
+    }
+
+    .mymatches-reg-section a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mymatches-time-section {
+        width: 30%;
+        height: 75px;
+        position: absolute;
+        bottom: 118px;
+        right: 56px;
+        border-radius: 4px;
+    }
+
+    .mymatches-date {
+        width: 40%;
+        position: relative;
+        width: 100%;
+        top: 45%;
+        left: 63px;
+    }
+
+    .mymatches-date .mymatches-matchtitle {
+        color: rgb(131, 128, 128);
+        font-weight: 800;
+        left: -1px;
+        font-size: 12px;
+        position: relative;
+        text-transform: uppercase;
+        top: 11px;
+    }
+
+    .mymatches-date .mymatches-matchtitle::after {
+        content: ":";
+        display: block;
+        position: relative;
+        top: -19px;
+        left: 50px;
+        font-size: 13px;
+    }
+
+    .mymatches-date span {
+        font-weight: 800;
+        left: 77px;
+        font-size: 12px;
+        position: relative;
+        text-transform: uppercase;
+        top: -51px;
+        color: rgb(131, 128, 128);
+    }
+
+    .mymatches-time-section h6 {
+        color: rgb(131, 128, 128);
+        font-weight: 600;
+        left: -24%;
+        font-size: 15px;
+        position: relative;
+        text-transform: uppercase;
+        top: 11px;
+
+    }
+
+    .mymatches-time-section span {
+        color: rgb(131, 128, 128);
+        font-weight: 600;
+        right: -69px;
+        font-size: 15px;
+        position: relative;
+        top: -31px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .mymatches-time-section span::after {
+        content: '';
+        width: 2px;
+        height: 35px;
+        background-color: rgb(131, 128, 128);
+        display: block;
+        position: relative;
+        top: -24px;
+        left: 16px;
+
+    }
+
+    .mymatches-time-section .idp-time {
+        font-weight: bolder;
+        right: -16%;
+        font-size: 13px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 20px;
+        color: black;
+    }
+
+    .mymatches-time-section .match-time {
+
+        font-weight: bolder;
+        left: 16%;
+        font-size: 13px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 20px;
+        color: black;
+    }
+
+    .mymatches-rule {
+
+        background-color: #e0f0f5;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: right;
+        top: 10px;
+        right: 14px;
+    }
+
+    .mymatches-icon {
+        position: relative;
+        top: 3px;
+
+    }
+
+    .mymatches-progress-bar {
+        width: 45%;
+        position: absolute;
+        right: 12px;
+        bottom: 23%;
+    }
+
+    progress {
+        display: block;
+        position: relative;
+        border-radius: 7px;
+        width: 100%;
+        height: 6px;
+
+    }
+
+    progress[value]::-webkit-progress-bar {
+        background-color: rgb(131, 128, 128);
+        border-radius: 10px;
+    }
+
+    progress[value]::-webkit-progress-value {
+        background-color: #6BDCFC;
+        border-radius: 10px;
+
+    }
+
+    .progressbar-left-text {
+        position: relative;
+        top: 4px;
+        left: 0;
+        font-size: 12px;
+        color: rgb(102 98 98);
+        font-weight: 700;
+        float: left;
+        margin: 0;
+
+    }
+
+    .progressbar-right-text {
+        position: relative;
+        top: 2px;
+        right: 0;
+        font-size: 12px;
+        float: right;
+        color: rgb(102 98 98);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    /* Modal css */
+    .modal_close {
+        background-color: #6BDCFC;
+        color: white;
+        width: 5rem;
+        height: 2.5rem;
+        border: none;
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+
+    .modal_box {
+        border: none !important;
+        border-radius: 7px;
+    }
+
+    .rules_modal::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .rules_modal::-webkit-scrollbar-track {
+        box-shadow: inset 005px grey;
+    }
+
+    .rules_modal::-webkit-scrollbar-thumb {
+        background-color: #87CEEB;
+        border-radius: 15px;
+    }
+
+    .rules_modal::-webkit-scrollbar-thumb:hover {
+        background-color: #6BDCFC;
+    }
+
+    /* end */
+
+    /* bg circle */
+
+
+    /* end */
+    /* Responsive Start Here */
+    /* Responsive Start Here */
+    @media (min-width: 1781px) and (max-width: 1836px) {
+        .mymatches_headerclip {
+            /* width: calc(90% - -72px) !important; */
+            width: -webkit-fill-available;
+        }
+
+        .mymatches-card {
+            height: 221px;
+        }
+
+        .mymatches-main-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .mymatches_headerclip {
+            width: calc(92% - -112px) !important;
+        }
+
+        .uk-grid {
+            margin-left: 0;
+        }
+
+        .mymatches-main-titile h3 {
+            top: 10px;
+            left: 35%;
+        }
+
+        .mymatches-team-img img {
+            left: -16px;
+            width: 153px;
+            transform: scale(1.4);
+            top: 61px;
+
+
+        }
+
+        .mymatches-time-section {
+            bottom: 49%;
+        }
+    }
+
+    @media (min-width: 1629px) and (max-width: 1780px) {
+        .mymatches_headerclip {
+            width: calc(90% - -72px) !important;
+        }
+
+        .mymatches-card {
+            height: 221px;
+        }
+
+        .mymatches-main-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .mymatches_headerclip {
+            width: calc(92% - -112px) !important;
+        }
+
+        .uk-grid {
+            margin-left: 0;
+        }
+
+        .mymatches-main-titile h3 {
+            top: 10px;
+            left: 28%;
+
+        }
+
+        .mymatches-team-img img {
+            left: -21px;
+            width: 153px;
+            transform: scale(1.3);
+            top: 61px;
+
+        }
+
+        .mymatches-reg-section {
+            position: absolute;
+        }
+
+        .mymatches-time-section {
+            width: 30%;
+            height: 32%;
+            bottom: 52%;
+            right: 20%;
+            border-radius: 4px;
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: -18%;
+            font-size: 12px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 75%;
+            font-size: 12px;
+            top: -31%;
+        }
+
+        .mymatches-time-section span::after {
+            height: 29%;
+            top: -24%;
+            left: 7%;
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 50px;
+        }
+
+        .mymatches-time-section .match-time {
+            top: 29%;
+        }
+
+        .mymatches-time-section .idp-time {
+            top: 29%;
+            right: -33%;
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            left: -7px;
+            font-size: 11px;
+            top: 11px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            left: 15%;
+            font-size: 13px;
+        }
+
+        .mymatches-date span {
+
+            font-weight: 800;
+            left: 22%;
+
+        }
+
+        .mymatches-rule {
+            top: 7px;
+            right: 8px;
+        }
+
+        .mymatches-progress-bar {
+            width: 49%;
+            position: absolute;
+            right: 10px;
+            bottom: 25%;
+        }
+
+        .progressbar-left-text, .progressbar-right-text {
+            font-size: 10px;
+            color: rgb(102 98 98);
+            font-weight: 700;
+        }
+
+    }
+
+    /* 1500pixel */
+    @media (min-width: 1551px) and (max-width: 1628px) {
+        .mymatches_headerclip {
+            width: calc(90% - -72px) !important;
+        }
+
+        .mymatches-main-wrapper {
+            overflow-x: hidden;
+        }
+
+        .mymatches-card {
+            height: 221px;
+        }
+
+        .uk-grid {
+            margin-left: -55px;
+        }
+
+        .mymatches-main-titile h3 {
+            top: 10px;
+            left: 28%;
+
+        }
+
+        .mymatches-team-img img {
+            left: -35px;
+            width: 153px;
+            transform: scale(1.1);
+            top: 61px;
+        }
+
+        .mymatches-reg-section {
+            position: absolute;
+        }
+
+        .mymatches-time-section {
+            width: 30%;
+            height: 32%;
+            bottom: 52%;
+            right: 20%;
+            border-radius: 4px;
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: -18%;
+            font-size: 12px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 75%;
+            font-size: 12px;
+            top: -31%;
+        }
+
+        .mymatches-time-section span::after {
+            height: 29%;
+            top: -24%;
+            left: 7%;
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 50px;
+        }
+
+        .mymatches-time-section .match-time {
+            top: 29%;
+        }
+
+        .mymatches-time-section .idp-time {
+            top: 29%;
+            right: -33%;
+        }
+
+        .mymatches-date .scrims-matchtitle {
+            left: -7px;
+            font-size: 11px;
+            top: 11px;
+        }
+
+        .mymatches-date .scrims-matchtitle::after {
+            left: 15%;
+            font-size: 13px;
+        }
+
+        .mymatches-date span {
+
+            font-weight: 800;
+            left: 22%;
+
+        }
+
+        .mymatches-rule {
+            top: 7px;
+            right: 8px;
+        }
+
+        .mymatches-progress-bar {
+            width: 50%;
+            position: absolute;
+            right: 5px;
+            bottom: 25%;
+        }
+
+        .progressbar-left-text, .progressbar-right-text {
+            font-size: 10px;
+            color: rgb(102 98 98);
+            font-weight: 700;
+        }
+
+    }
+
+    /* end 1500pixel */
+
+    /* 1400piexl */
+    @media (min-width: 1430px) and (max-width: 1550px) {
+        .mymatches_headerclip {
+            width: calc(86% - -117px) !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 4rem;
+            background-color: #ffff;
+            left: -19px;
+            top: -1px;
+            opacity: 0.5;
+        }
+
+        .mymatches-carditems {
+            width: calc(22% - 4px) !important;
+
+        }
+
+        .mymatches-rule {
+            background-color: #e0f0f5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            float: right;
+            top: 3%;
+            right: 1%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -27%;
+        }
+
+        .mymatches-team-img img {
+            width: 132px;
+            transform: scale(1.1);
+            height: 6.8rem;
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+            width: 30%;
+            height: 32%;
+            bottom: 53%;
+            right: 18%;
+            border-radius: 4px;
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: -18%;
+            font-size: 12px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 75%;
+            font-size: 12px;
+            top: -27%;
+        }
+
+        .mymatches-time-section span::after {
+            left: 9%;
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            top: 28%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -38%;
+            top: 28%;
+
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 17%;
+            width: 89%;
+        }
+
+        .mymatches-date span {
+            font-weight: 800;
+            right: 94%;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -19px;
+            left: 16%;
+
+        }
+
+        .mymatches-progress-bar {
+            width: 51%;
+            right: 1%;
+            bottom: 27%;
+        }
+    }
+
+    @media (min-width: 1350px) and (max-width: 1429px) {
+        .mymatches_headerclip {
+            width: calc(86% - -155px) !important;
+        }
+
+        .mymatches-card {
+            width: 100%;
+            height: 215px;
+
+        }
+
+        .mymatches-carditems {
+            width: calc(22% - 1px) !important;
+
+        }
+
+        .mymatches-rule {
+            background-color: #e0f0f5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            float: right;
+            top: 3%;
+            right: 1%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -29%;
+        }
+
+        .mymatches-team-img img {
+            width: 135px;
+            transform: scale(1.1);
+            height: 6rem;
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+
+            bottom: 49%;
+            right: 18%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: -20%;
+            font-size: 12px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 71%;
+            font-size: 12px;
+            top: -27%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 22px;
+            top: -27%;
+            left: 11%
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            top: 28%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -38%;
+            top: 28%;
+
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 17%;
+            width: 89%;
+        }
+
+        .mymatches-date span {
+
+            left: 28%;
+            top: -52px;
+            font-size: 11px;
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 800;
+            left: -2%;
+            font-size: 11px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -19px;
+            left: 17%;
+
+        }
+
+        .mymatches-progress-bar {
+            width: 52%;
+            right: 2%;
+            bottom: 27%;
+        }
+    }
+
+    /* end */
+    /* 1200 pixel */
+    @media (min-width: 1280px) and (max-width: 1349px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .mymatches_headerclip {
+            width: calc(85% - -112px) !important;
+        }
+
+        .mymatches-carditems {
+            width: calc(28% - -27px) !important;
+
+        }
+
+        .mymatches-rule {
+            right: 3%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -29%;
+        }
+
+        .mymatches-team-img img {
+            width: 150px;
+            height: 7.5rem;
+            transform: scale(1.2);
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+            bottom: 53%;
+            right: 22%;
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: -20%;
+            font-size: 13px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 800;
+            left: 85%;
+            font-size: 13px;
+            top: -27%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 22px;
+            top: -27%;
+            left: 2%;
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            top: 28%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -38%;
+            top: 28%;
+
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 13%;
+            width: 89%;
+        }
+
+        .mymatches-date span {
+            left: 34%;
+            top: -52px;
+            font-size: 12px;
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 800;
+            left: -2%;
+            font-size: 11px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -19px;
+            left: 19%;
+        }
+
+        .mymatches-progress-bar {
+            width: 52%;
+            right: 2%;
+            bottom: 27%;
+        }
+
+    }
+
+    /* end */
+    @media (min-width: 1134px) and (max-width: 1279px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: -7px !important;
+        }
+
+        .mymatches_headerclip {
+            width: calc(85% - -96px) !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: 5%;
+        }
+
+        .mymatches-carditems {
+            width: calc(26% - -177px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 19px;
+            left: 38%;
+        }
+
+        .mymatches-rule {
+            right: 3%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 150px;
+            transform: scale(1.4);
+            left: 4%;
+            height: 7rem;
+            top: 0px;
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+            bottom: 55%;
+            right: 23%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -17%;
+            font-size: 15px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 15px;
+            top: -27%;
+            left: 92%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: 1%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 36%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -53%;
+            top: 36%;
+
+        }
+
+        .mymatches-date {
+            top: 45%;
+            left: 10%;
+            width: 92%;
+        }
+
+        .mymatches-date span {
+
+            left: 36%;
+            top: -59px;
+            font-size: 13px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 0%;
+            font-size: 13px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -24px;
+            left: 20%;
+            font-size: 17px;
+        }
+
+        .mymatches-progress-bar {
+            width: 50%;
+            right: 3%;
+            bottom: 21%;
+        }
+
+
+    }
+
+
+    /* end */
+    @media (min-width: 1024px) and (max-width: 1133px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: -7px !important;
+        }
+
+        .mymatches_headerclip {
+            width: calc(85% - -96px) !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: 5%;
+        }
+
+        .mymatches-carditems {
+            width: calc(24% - -177px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 19px;
+            left: 38%;
+        }
+
+        .mymatches-rule {
+            right: 3%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 153px;
+            transform: scale(1.4);
+            left: 4%;
+            height: 7rem;
+            top: 0px;
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+            bottom: 55%;
+            right: 23%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -17%;
+            font-size: 15px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 15px;
+            top: -27%;
+            left: 92%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: 1%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 36%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -53%;
+            top: 36%;
+
+        }
+
+        .mymatches-date {
+            top: 45%;
+            left: 10%;
+            width: 92%;
+        }
+
+        .mymatches-date span {
+
+            left: 36%;
+            top: -59px;
+            font-size: 13px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 0%;
+            font-size: 13px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -24px;
+            left: 20%;
+            font-size: 17px;
+        }
+
+        .mymatches-progress-bar {
+            width: 53%;
+            right: 2%;
+            bottom: 21%;
+        }
+
+
+    }
+
+
+    /* end */
+
+    @media (min-width: 900px) and (max-width: 1023px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: -7px !important;
+        }
+
+        .mymatches_headerclip {
+            width: calc(80% - -109px) !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: 5%;
+        }
+
+        .mymatches-carditems {
+            width: calc(21% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 19px;
+            left: 30%;
+        }
+
+        .mymatches-rule {
+            right: 3%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 129px;
+            transform: scale(1.4);
+            left: 4%;
+            top: 0px;
+
+        }
+
+        .mymatches-time-section {
+            bottom: 55%;
+            right: 23%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -15%;
+            font-size: 14px;
+            top: 30%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 14px;
+            top: -27%;
+            left: 85%;
+
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: 7%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 36%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -53%;
+            top: 36%;
+
+        }
+
+        .mymatches-date {
+            top: 44%;
+            left: 13%;
+            width: 86%;
+        }
+
+        .mymatches-date span {
+
+            left: 36%;
+            top: -59px;
+            font-size: 13px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 0%;
+            font-size: 13px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -24px;
+            left: 20%;
+            font-size: 17px;
+        }
+
+        .mymatches-progress-bar {
+            width: 54%;
+            right: 2%;
+            bottom: 25%;
+        }
+
+
+    }
+
+
+    /* end */
+
+    @media (min-width: 768px) and (max-width: 899px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: 5px !important;
+        }
+
+        .mymatches_headerclip {
+            width: calc(77% - -109px) !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: 5%;
+        }
+
+        .mymatches-card-list {
+            margin: 20px 30px;
+
+        }
+
+        .mymatches-carditems {
+            width: calc(17% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 19px;
+            left: 17%;
+        }
+
+        .mymatches-rule {
+            right: 3%;
+        }
+
+        .mymatches-card {
+            height: 225px;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 132px;
+            transform: scale(1.2);
+            left: 3%;
+            height: 6rem;
+            top: 0px;
+            object-fit: cover;
+
+        }
+
+        .mymatches-time-section {
+            bottom: 49%;
+            right: 22%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -15%;
+            font-size: 12px;
+            top: 30%;
+
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 12px;
+            top: -27%;
+            left: 82%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: 7%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 27%;
+            font-size: 13px;
+            top: 31%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -53%;
+            top: 31%;
+
+        }
+
+        .mymatches-date {
+            top: 44%;
+            left: 13%;
+            width: 82%;
+        }
+
+        .mymatches-date span {
+
+            left: 40%;
+            top: -52px;
+            font-size: 11px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 3%;
+            font-size: 11px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -19px;
+            left: 20%;
+            font-size: 13px;
+        }
+
+        .mymatches-progress-bar {
+            width: 54%;
+            right: 2%;
+            bottom: 25%;
+        }
+
+
+    }
+
+
+    /* end */
+
+
+    @media (min-width: 600px) and (max-width: 767px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: 40px !important;
+        }
+
+        .mymatches h1:before {
+            top: 2px;
+        }
+
+        .mymatches-carditems {
+            width: calc(57% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 20px;
+            left: 38%;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 170px;
+            transform: scale(1.4);
+            left: 4%;
+            top: 0px;
+
+
+        }
+
+        .mymatches-time-section {
+            bottom: 55%;
+            right: 22%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -24%;
+            font-size: 15px;
+            top: 26%;
+
+
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 15px;
+            top: -32%;
+            left: 88%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: -1%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 24%;
+            font-size: 13px;
+            top: 34%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -50%;
+            top: 34%;
+            font-size: 13px;
+
+
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 8%;
+            width: 87%;
+        }
+
+        .mymatches-date span {
+            left: 42%;
+            top: -56px;
+            font-size: 14px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 4%;
+            font-size: 13px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -22px;
+            left: 20%;
+            font-size: 15px;
+        }
+
+        .mymatches-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+    }
+
+
+    /* end */
+
+    @media (min-width: 531px) and (max-width: 599px) {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: -8px !important;
+        }
+
+        .mymatches_headerclip {
+            width: calc(70% - -110px) !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: 2px;
+        }
+
+        .mymatches-card-list {
+            margin: 20px 30px;
+            padding: 0 !important;
+        }
+
+        .mymatches-carditems {
+            width: calc(51% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 20px;
+            left: 38%;
+        }
+
+        .mymatches-card {
+            width: 100%;
+            height: 221px;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 140px;
+            transform: scale(1.4);
+            left: 4%;
+            height: 6.5rem;
+            top: 0px;
+            object-fit: cover;
+
+
+        }
+
+        .mymatches-time-section {
+            bottom: 55%;
+            right: 22%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -24%;
+            font-size: 15px;
+            top: 26%;
+
+
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 15px;
+            top: -32%;
+            left: 88%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 27px;
+            top: -31%;
+            left: -1%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 24%;
+            font-size: 13px;
+            top: 34%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -50%;
+            top: 34%;
+            font-size: 13px;
+
+
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 8%;
+            width: 87%;
+        }
+
+        .mymatches-date span {
+            left: 42%;
+            top: -56px;
+            font-size: 14px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 4%;
+            font-size: 13px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -22px;
+            left: 20%;
+            font-size: 15px;
+        }
+
+        .mymatches-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+    }
+
+
+    /* end */
+
+    @media (min-width: 400px) and (max-width: 532px) {
+
+
+
+        /* modal style */
+        .modal_box {
+            width: 80% !important;
+        }
+
+        .css-ix1f03-MuiTypography-root {
+            font-size: 13px;
+        }
+
+        /* modal style end */
+
+
+
+        .mymatches_headerclip h1 {
+            left: -53px;
+            font-size: 35px;
+
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        /* #ukk-grid{
+            margin-left: auto !important;
+            margin-right: auto !important;
+        } */
+
+        .uk-grid {
+            margin-left: 29px !important;
+        }
+
+        .mymatches-main-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .mymatches {
+            width: calc(59% - -110px) !important;
+        }
+
+        .mymatches h1:before {
+            top: 2px;
+        }
+
+        .mymatches-card-list {
+            margin: 20px 30px;
+            padding: 0 !important;
+        }
+
+        .mymatches-carditems {
+            width: calc(57% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 20px;
+            left: 19%;
+        }
+
+        .mymatches-card {
+            width: 100%;
+            height: 221px;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+            top: 0;
+
+        }
+
+        .mymatches-team-img img {
+            width: 130px;
+            transform: scale(1.4);
+            left: 4%;
+            top: 68px;
+            height: 6rem;
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+            bottom: 49%;
+            right: 24%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -9%;
+            font-size: 12px;
+            top: 26%;
+
+
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 12px;
+            top: -32%;
+            left: 87%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 25px;
+            top: -26%;
+            left: 8%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 24%;
+            font-size: 13px;
+            top: 34%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -50%;
+            top: 34%;
+            font-size: 13px;
+
+
+        }
+
+        .mymatches-date {
+            top: 45%;
+            left: 8%;
+            width: 86%;
+        }
+
+        .mymatches-date span {
+            left: 42%;
+            top: -56px;
+            font-size: 11px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 7%;
+            font-size: 11px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -22px;
+            left: 20%;
+            font-size: 15px;
+        }
+
+        .mymatches-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+    }
+
+
+    /* end */
+    @media (min-width: 361px) and (max-width: 399px) {
+        .modal_box {
+            width: 80% !important;
+        }
+
+        .css-ix1f03-MuiTypography-root {
+            font-size: 12px !important;
+        }
+
+        #ukk-grid {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .uk-grid {
+            margin-left: -19px !important;
+        }
+
+        .mymatches-main-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .mymatches_headerclip {
+            width: -webkit-fill-available !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: -5px;
+        }
+
+        .mymatches_headerclip h1 {
+            font-size: 38px;
+            left: -42px;
+
+        }
+
+        .mymatches-card-list {
+            margin: 20px 30px;
+            padding: 0 !important;
+        }
+
+        .mymatches-carditems {
+            width: calc(57% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 20px;
+            left: 11%;
+        }
+
+        .mymatches-card {
+            width: 100%;
+            height: 221px;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+            top: 61px;
+
+
+
+        }
+
+        .mymatches-team-img img {
+            width: 106px;
+            transform: scale(1.4);
+            left: 4%;
+            top: 11px;
+            height: 5rem;
+
+        }
+
+        .mymatches-time-section {
+            bottom: 49%;
+            right: 24%;
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -9%;
+            font-size: 12px;
+            top: 26%;
+
+
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 12px;
+            top: -32%;
+            left: 87%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 25px;
+            top: -26%;
+            left: 8%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 24%;
+            font-size: 13px;
+            top: 34%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -50%;
+            top: 34%;
+            font-size: 13px;
+
+
+        }
+
+        .mymatches-date {
+            top: 45%;
+            left: 8%;
+            width: 86%;
+        }
+
+        .mymatches-date span {
+            left: 42%;
+            top: -56px;
+            font-size: 11px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 7%;
+            font-size: 11px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -22px;
+            left: 20%;
+            font-size: 15px;
+        }
+
+        .mymatches-progress-bar {
+            width: 51%;
+            right: 3%;
+            bottom: 23%;
+        }
+
+
+    }
+
+
+    /* end */
+    @media (min-width: 300px) and (max-width: 360px) {
+
+        /* modal style  */
+        .modal_box {
+            width: 80% !important;
+        }
+
+        .css-ix1f03-MuiTypography-root {
+            font-size: 12px !important;
+        }
+
+        /* end modal style */
+
+
+
+        td:first-child {
+            width: 93%;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .mymatches_headerclip h1 {
+            font-size: 31px;
+            left: -52px;
+        }
+
+        .uk-grid {
+            margin-left: -19px !important;
+        }
+
+        .mymatches-main-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .mymatches_headerclip {
+            width: -webkit-fill-available !important;
+        }
+
+        .mymatches_headerclip h1:before {
+            top: 8px;
+            height: 3rem;
+            top: -2px;
+        }
+
+        .cancel_headerclip h1 {
+            font-size: 26px !important;
+        }
+
+        .mymatches-card-list {
+            margin: 20px 30px;
+            padding: 0 !important;
+        }
+
+        .mymatches-carditems {
+            width: calc(57% - -175px) !important;
+            margin: 0px 3.5% 57px 3.5% !important;
+        }
+
+        .mymatches-main-titile h3 {
+            font-size: 17px;
+            left: 10%;
+        }
+
+        .mymatches-card {
+            width: 100%;
+            height: 191px;
+        }
+
+        .mymatches-team-img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: -38%;
+
+        }
+
+        .mymatches-team-img img {
+            width: 87px;
+            transform: scale(1.4);
+            left: 4%;
+            height: 4rem;
+            top: 0;
+            height: 3.9rem;
+            object-fit: cover;
+        }
+
+        .mymatches-time-section {
+            bottom: 41%;
+            right: 24%;
+
+
+        }
+
+        .mymatches-time-section h6 {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            left: -8%;
+            font-size: 9px;
+            top: 28%;
+        }
+
+        .mymatches-time-section span {
+            color: rgb(102 98 98);
+            font-weight: 900;
+            font-size: 9px;
+            top: -27%;
+            left: 84%;
+        }
+
+        .mymatches-time-section span::after {
+            width: 2px;
+            height: 16px;
+            top: -22%;
+            left: 12%;
+
+        }
+
+        .mymatches-time-section .match-time {
+            left: 39%;
+            font-size: 10px;
+            top: 17%;
+        }
+
+        .mymatches-time-section .idp-time {
+            right: -50%;
+            top: 17%;
+            font-size: 10px;
+
+
+        }
+
+        .mymatches-date {
+            top: 43%;
+            left: 8%;
+            width: 82%;
+        }
+
+        .mymatches-date span {
+            left: 46%;
+            top: -49px;
+            font-size: 8px;
+            font-weight: 900;
+
+        }
+
+        .mymatches-date .mymatches-matchtitle {
+            color: rgb(131, 128, 128);
+            font-weight: 900;
+            left: 9%;
+            font-size: 8px;
+            position: relative;
+            text-transform: uppercase;
+            top: 10px;
+
+
+        }
+
+        .mymatches-date .mymatches-matchtitle::after {
+            content: ":";
+            display: block;
+            position: relative;
+            top: -16px;
+            left: 21%;
+            font-size: 12px;
+        }
+
+        .mymatches-progress-bar {
+            width: 52%;
+            right: 3%;
+            bottom: 28%;
+        }
+
+        .progressbar-left-text {
+            font-size: 9px;
+        }
+
+        .progressbar-right-text {
+            top: 6px;
+            right: 0px;
+            font-size: 9px;
+            font-weight: 700;
+
+        }
+
+        .mymatches-reg-section {
+            width: 217px;
+        }
+    }
+
+
+    /* end */
+
+
+    .closebtn {
+        background-color: #6bdcfc;
+        font-size: 20px;
+        padding-left: 10.5%;
+        padding-right: 10.5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #6bdcfc;
+        color: white;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+    /* table  */
+
+    #circle {
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background: #87ceeb;
+    }
+
+    .error {
+        color: red;
+    }
+
+    label {
+        display: flex;
+        margin-bottom: 1px;
+        margin-top: 14px;
+    }
+
+    @media (min-width:400px) and (max-width:530px) {
+        .mymatches_tournament-main-wrapper {
+            overflow: hidden;
+        }
+
+        .mymatches_headerclip {
+            width: -webkit-fill-available;
+        }
+    }
+
+    .mymathes_page {
+        overflow: hidden;
+    }
+
+    @media (min-width:361px) and (max-width:464px) {
+        .cancel_headerclip h1 {
+            font-size: 33px !important;
+            left: -50px;
+        }
+
+        .cancel_headerclip h1:before {
+            height: 3rem !important;
+            top: 2px !important;
+        }
+
+        .cancel_headerclip h1 {
+            left: -50%;
+        }
+    }
+
+    .openbtn {
+        width: 100%;
+        height: 2.5rem;
+        background-color: #6bdcfc;
+        color: #ffff;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+
+
+    /* time and date style */
+    .react-datepicker {
+        font-family: open sans !important;
+        margin-top: -6px !important;
+        margin-bottom: -13px !important;
+        border: 1px solid #6BDCFC !important;
+    }
+
+    .react-datepicker__header {
+        background-color: #6BDCFC !important;
+        border: transparent !important;
+    }
+
+    .react-datepicker__navigation-icon::before {
+        border-color: white !important;
+    }
+
+    .react-datepicker__navigation-icon {
+        z-index: 9999 !important;
+    }
+
+    .react-datepicker__navigation {
+        top: 10px !important;
+    }
+
+    .react-datepicker__current-month {
+        color: white !important;
+    }
+
+    .react-datepicker__day:hover {
+        background-color: #6BDCFC !important;
+        color: #ffff !important;
+    }
+
+    .react-datepicker__day--selected {
+        background-color: #6BDCFC !important;
+        color: #ffff !important;
+    }
+
+    .react-datepicker__day--keyboard-selected {
+        border-radius: 2.3rem;
+        background-color: #6BDCFC !important;
+    }
+
+    .react-datepicker__day-name {
+        color: white !important;
+    }
+
+    .react-datepicker__triangle::before {
+        left: -120px !important;
+        border-bottom-color: #6BDCFC !important;
+    }
+
+    .react-datepicker__triangle::after {
+        left: -120px !important;
+        border-bottom-color: #6BDCFC !important;
+    }
+
+    .react-datepicker__time-container {
+        width: 150px !important;
+        border: none !important;
+    }
+
+    .react-datepicker__time-box {
+        overflow: hidden !important;
+        margin: 0 auto !important;
+        width: 150px !important;
+    }
+
+    .react-datepicker-time__header {
+        color: white !important;
+    }
+
+    .react-datepicker__time-list-item--selected {
+        background-color: #6BDCFC !important;
+    }
+
+    .react-datepicker__time-list-item {
+        overflow: hidden !important;
+    }
+
+    .react-datepicker__time-list-item:hover {
+        background-color: #6BDCFC !important;
+        color: #ffff !important;
+    }
+
+    .react-datepicker__input-container input {
+        border: none;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .react-datepicker__input-container input:focus {
+        border: none;
+        outline: none;
+    }
+
+    /* //dropdown */
+    .css-1s2u09g-control:hover {
+        border: 1px solid #6BDCFC !important;
+    }
+
+    .css-1okebmr-indicatorSeparator {
+        display: none !important;
+    }
+
+    .css-b62m3t-container {
+        text-align: left;
+    }
+
+    .css-6j8wv5-Input {
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+
+    .edit_matches {
+        height: 67rem;
+    }
+
+    .css-739597-control {
+        box-shadow: none !important;
+    }
+
+    .errormsgleft {
+        color: red;
+        font-size: 14px;
+    }
+    .edit_matchForm{
+        border: 1px solid #6bdcfc;
+        padding: 20px;
+        width:70%;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width:480px) {
+        .edit_matchForm {
+            border: 1px solid #6bdcfc;
+            padding: 20px;
+            width: 87% !important;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }

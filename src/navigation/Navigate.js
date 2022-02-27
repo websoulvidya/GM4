@@ -52,6 +52,11 @@ import Addscrims from "../organisation/pages/addscrims/Addscrims";
 import Adddailymatch from "../organisation/pages/adddailymatches/Adddailymatches";
 import Addopenrooms from "../organisation/pages/addopenrooms/Addopenrooms";
 
+import Edit_match from '../../src/organisation/pages/mymatches/Edit_match'
+import View_page from '../../src/organisation/pages/cancellation/view_page'
+import Idp_page from '../../src/organisation/pages/sendidp/Idp_page'
+
+
 
 
 //Authentication page links
@@ -118,6 +123,12 @@ export default function Navigate() {
     <Route path="/addscrims" element={<Addscrims />}/>
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>
+
+    <Route path="/edit_match" element={<Edit_match />} />
+    <Route path="/view_page" element={<View_page />}/>
+    <Route path="/idp_page" element={<Idp_page />} />
+
+
 
 
 
