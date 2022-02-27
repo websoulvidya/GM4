@@ -1,0 +1,199 @@
+
+.about-us__heading{
+    width: 100%;
+    margin: 0 auto;
+}
+.about-us__heading-div1{
+    position: relative;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+}
+.about-us__heading-img1 img{
+    width: 100% !important;
+    margin: 0 auto;
+    border-radius: 2px; 
+}
+.about-us__heading-content1{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    margin: 0 auto;
+}
+.about-p1{
+    color: #ffff !important;
+    font-family: sans-serif;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.5;
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.about-us__heading-content1 p{
+    color: #ffff;
+    text-align: justify;
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+.about-us__main-content1{
+    width: 100%;
+    margin: 0 auto;
+}
+.about-us__main-content1__row1{
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+}
+.about-us__main-content1__col1a{
+    width: 100%; 
+    align-items: center;
+}
+.about-us__main-content1__col1a img{
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.about-us__main-content1__col1b{
+    align-items: center !important;
+    width: 100%;
+}
+.about-us__main-content1__col1b p{
+    text-align: justify;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.about-us__main-content1__row2{
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+}
+.about-us__main-content1__col2b{
+    width: 100%;
+    align-items: center;
+}
+.about-us__main-content1__col2a{
+    align-items: center !important;
+    width: 100%;
+}
+.about-us__main-content1__col2a p{
+    text-align: justify;
+    font-size: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.about-us__main-content1__col2b img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-us__main-content1__row3{
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+}
+.about-us__main-content1__col3a{
+    width: 100%;
+    align-items: center;
+}
+.about-us__main-content1__col3a img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-us__main-content1__col3b{
+    align-items: center !important;
+    width: 100%;
+}
+.about-us__main-content1__col3b p{
+    text-align: justify;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.about-us__main-content1 h2{
+    text-align: left;
+    margin-left: 2rem;
+    font-weight: 600 !important;
+    font-family: sans-serif;
+    color: darkgray;
+}
+.about-us__main-content1__col2a h2{
+    margin-left: 2rem;
+}
+@media(max-width:600px){
+    .about-p1{
+        font-size: 1rem !important;
+        padding: 0 !important;
+        margin-bottom: 0.2rem !important;
+    }
+    .about-us__heading-content1 p{
+        font-size: 0.6rem;
+        line-height: 10px;
+        padding: 0;
+    }
+    .about-us__main-content1__row2{
+        flex-direction: column-reverse;
+    }
+    .about-us__main-content1__col1a{
+        width: 100% !important;
+    }
+    .about-us__main-content1__col2b{
+        width: 100%;
+    }
+    .about-us__main-content1__row1{
+        flex-direction: column;
+    }
+    .about-us__main-content1__row3{
+        flex-direction: column;
+    }
+    .about-us__main-content1__col3a{
+        width: 100%;
+    }
+    .about-us__main-content1__col1b p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .about-us__main-content1__col2a p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .about-us__main-content1__col3b p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .about-us__main-content1 h2{
+        margin-left: 1rem;
+        margin-top: 1rem !important;
+    }
+    
+}
+@media(min-width:1440px){
+    .about-us__main-content1 p{
+        font-size: 20px !important;
+    }
+    .about-p1{
+        font-size: 30px;
+    }
+}
+@media(min-width:2000px){
+    .about-us__main-content1 p{
+        font-size: 40px !important;
+    }
+    .about-us__main-content1 h2{
+        font-size: 60px !important;
+    }
+    .about-us__heading-content1 p{
+        font-size: 45px;
+    }
+    .about-p1{
+        font-size: 60px !important;
+    }
+}

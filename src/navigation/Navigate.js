@@ -31,6 +31,7 @@ import Tournament from '../user/pages/tournament/Tournament';
 import Scrims from "../user/pages/scrims/Scrims";
 import Dailymatch from "../user/pages/dailymatch/Dailymatch";
 import Openrooms from "../user/pages/openrooms/Openrooms";
+import MyBookingInfo from "../user/pages/username/mybookings/MyBookingInfo.js"
 
 
 
@@ -99,7 +100,7 @@ export default function Navigate() {
       <Route path="/scrims" element={<Scrims />}/>
       <Route path="/dailymatch" element={<Dailymatch />}/>
       <Route path="/openrooms" element={<Openrooms />}/>
-
+      <Route path="/MyBookingInfo" element={<MyBookingInfo />}/>  
 
 
 
