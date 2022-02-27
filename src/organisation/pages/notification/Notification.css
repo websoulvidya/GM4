@@ -1,0 +1,153 @@
+.org-not-header{
+    background-color: #7bcae9;
+    height: 8rem;
+    padding-left: 6rem;
+    display: flex;
+      
+}
+.org-not-header h1{
+  
+    text-align: left;
+    color:#ffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 35px;
+
+    
+}
+
+.org-not-header h1::before{
+  
+    content: "";
+    position: absolute;
+    width: 6px;
+    height:4rem;
+    background-color: #ffff;
+    left: 64px;
+    top:30px;
+    opacity: 0.5;
+    margin-top: 30px;
+}
+
+
+.org-not-cards{
+    width:700px;
+    margin: 25px;
+    height: 100px;
+    box-shadow:8px 2px  rgb(107,220,252) !important  ;
+    text-align: left;
+    
+}
+.org-not-cards:hover{
+   cursor: pointer;
+   transform: scale(1.02);
+   transition: all 0.2s;
+   
+   
+
+}
+
+
+.org-not-cards img{
+    width:30px;
+    height: 30px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.org-not-cards h5{
+ margin-left: 40px;
+ margin-top: 1rem;
+ color: rgb(107,220,252);
+
+
+}
+.org-not-cards h6{
+    margin-left: 40px;
+    margin-top: -0.75rem;
+   
+   }
+   .org-not-date{
+       color: rgba(59, 115, 129, 0.829);
+       font-size: smaller;
+       margin-top: -1rem;
+       margin-left: 40px;
+     
+   }
+   .icon{
+       float: right;
+       margin-top: -0.5rem;
+       margin-right: 5px;
+   }
+ .org-not-bg1{
+     width:40px ;
+     height: 40px;
+        
+ }
+
+ @media(max-width:640px)
+ {
+    .org-not-cards {
+       height: max-content;
+       
+    }
+    
+ }
+    
+     .org-not-img{
+         width: 700px;
+         height: 700px;
+         float: right;
+         margin-bottom: -50rem;
+         margin-left: -5rem;
+     }
+     .orgnot-container {
+        
+         background-image: url('/src/organisation/assets/Profile/NotificationCircle.jpeg');
+         background-size: cover;
+         overflow-x:hidden ;
+     }
+    
+     img{
+         margin-right: -25rem;   
+         z-index: -1;  
+         
+     }
+     @media(min-width:564px) and (max-width:990px){
+        .org-not-header h1{
+           font-size: 45px; 
+           font-weight: 700;
+           margin-top: 35px;
+           margin-left: -5px;
+        }
+     }
+     @media(min-width:564px) and (max-width:990px){
+        .org-not-header h1::before{
+          margin-left: -15px;
+          height: 3.5rem;
+        }
+     }
+    
+     @media(min-width:300px) and (max-width:563px){
+        .org-not-header h1{
+           font-size: 30px; 
+           font-weight: 700;
+           margin-top: 42px;
+           margin-left: -34px;
+        }
+     }
+     @media(min-width:300px) and (max-width:563px){
+        .org-not-header h1::before{
+          margin-left: -32px;
+          margin-top: 55px;
+          height: 3rem;
+        }
+     }
+     @media(min-width:1503px) and (max-width:2000px){
+        .org-not-grid{
+            columns: 1;
+           
+        }
+     }
+    
