@@ -51,9 +51,9 @@ import Addtournament from '../organisation/pages/addtournaments/Addtournament';
 import Addscrims from "../organisation/pages/addscrims/Addscrims";
 import Adddailymatch from "../organisation/pages/adddailymatches/Adddailymatches";
 import Addopenrooms from "../organisation/pages/addopenrooms/Addopenrooms";
-
-
-
+import TournamentList from "../organisation/pages/slotlist/tournamentlist";
+import ScrimsList from "../organisation/pages/slotlist/scrimslist";
+import DailyMatchList  from "../organisation/pages/slotlist/dailymatcheslist";
 //Authentication page links
 
 import Signup from '../authentication/signup/Signup';
@@ -118,7 +118,10 @@ export default function Navigate() {
     <Route path="/addscrims" element={<Addscrims />}/>
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>
-
+    <Route path="/tournamentlist" element={<TournamentList/>}/>
+    <Route path="/scrimslist" element={<ScrimsList/>}/>
+    <Route path="/dailymatcheslist" element={<DailyMatchList/>}/>
+    
 
 
     {/* authentication page links */}

@@ -1,0 +1,40 @@
+.sidenav{
+    margin-top: 80px;
+    width: 400px;
+    height: 700px;
+    
+}
+@media(max-width:640px){
+    .sidenav{
+        margin-left: -10px;
+    }
+}
+.navhead{
+    margin-top:15px;
+    color:#6BDCFC;
+}
+.navhead:hover{
+    color: white;
+}
+/*main div of each buttons*/
+.button_nav{
+    margin: 25px;
+    
+}
+#buttons_nav{
+    width:300px;
+ height: 60px;
+ border-color: #6BDCFC;
+ 
+}
+
+#buttons_nav:hover{
+    
+    background-color:#6BDCFC ;
+}
+@media(max-width:640px){
+    #buttons_nav:hover{
+        background-color:#6BDCFC ;
+        color: white;
+    }
+}

@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.tournament_slot_list_header {
+  height: 8rem;
+  width: -webkit-fill-available;
+  background-color: #87ceeb;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+}
+.tournament_slot_list_header h1 {
+  text-align: left;
+  font-size: 52px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.tournament_slot_list_header h1:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 4rem;
+  background-color: white;
+  left: 64px;
+  top: 50px;
+  opacity: 0.5;
+}
+
+.search_field_tournament {
+  margin-left: 3.5% !important;
+  width: 25% !important;
+}
+.search_btn_tournament {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+  border: 1px solid #6bdcfc;
+  background-color: #6bdcfc;
+  color: #ffff;
+  border-radius: 5px;
+  height: 42px;
+}
+.search_btn_tournament:hover {
+  cursor: pointer;
+}
+.uk-input {
+  border-radius: 5px !important;
+}
+.uk-input:hover {
+  border: 1px solid #6bdcfc;
+}
+.uk-input:focus {
+  border: 1px solid #6bdcfc !important;
+}
+.total_team {
+  margin-left: 25%;
+}
+.grid_section_slot_list_tournament {
+  margin-left: 25% !important;
+}
+#digital-accordian-main_tournament {
+  border: 1px solid #6bdcfc;
+  border-collapse: separate;
+  border-radius: 5px !important;
+}
+.uk-accordion-title::before {
+  display: none;
+}
+.tournament-slot-number {
+  float: left;
+}
+.tournament-slot-name {
+  float: right;
+}
+.accordion-list-tournamnet {
+  padding: 30px;
+  padding-bottom: 20px !important;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+.tournament-slot-accordion {
+  font-size: 18px;
+  color: rgb(69, 69, 69);
+  display: flex !important;
+  justify-content: space-between;
+  padding-left: 9rem;
+  padding-right: 8rem;
+  align-items: center;
+}
+.tournament-slot-accordion mark {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+}
+.uk-accordion-content ul {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+.uk-accordion-content li {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.uk-accordion-content h6 {
+  text-align: center;
+}
+.pagination_slot_tournamnet {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: #fff;
+  background-color: #6bdcfc !important;
+}
+
+@media (max-width: 480px) {
+  .grid_section_slot_list_tournament {
+    margin-left: 0 !important;
+  }
+  .tournament_slot_list_header {
+    padding-left: 2rem;
+    height: 6rem;
+  }
+  .tournament_slot_list_header h1 {
+    font-size: 22px;
+    margin-top: 13px;
+  }
+  .tournament_slot_list_header h1:before {
+    left: 18px;
+    top: 76px;
+    height: 2rem;
+  }
+  .accordion-list-tournamnet {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .tournament-slot-accordion {
+    padding-left: 4rem;
+    padding-right: 3rem;
+  }
+  .total_team {
+    margin-left: 7%;
+  }
+  .uk-flex {
+    display: inline-grid !important;
+  }
+  .search_field_tournament {
+    margin-left: 3.5% !important;
+    width: 100% !important;
+    margin-bottom: 2rem !important;
+  }
+  .search_btn_tournament {
+    width: min-content !important;
+    margin-left: 57px;
+  }
+  .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+    margin: 0 1px !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .grid_section_slot_list_tournament {
+    margin-left: 0 !important;
+  }
+  .tournament_search_bar {
+    display: flex !important;
+    justify-content: center;
+    margin-right: 104px;
+  }
+  .search_field_tournament {
+    margin-left: 3.5% !important;
+    width: 34% !important;
+  }
+  .total_team {
+    margin-left: 16%;
+  }
+  .tournament_slot_list_header h1{
+    font-size: 45px;
+  }
+  .tournament_slot_list_header h1::before{
+    height: 3rem;
+    top: 57px;
+  }
+}
+@media (min-width: 769px) and (max-width: 820px) {
+  .grid_section_slot_list_tournament {
+    margin-left: 0 !important;
+  }
+  .tournament_search_bar {
+    display: flex !important;
+    justify-content: center;
+    margin-right: 104px;
+  }
+  .search_field_tournament {
+    margin-left: 3.5% !important;
+    width: 34% !important;
+  }
+  .total_team {
+    margin-left: 16%;
+  }
+}
+@media (min-width: 821px) and (max-width: 899px) {
+  .grid_section_slot_list_tournament {
+    margin-right: 15%;
+    margin-left: 17% !important;
+  }
+  .tournament_search_bar {
+    display: flex !important;
+    justify-content: center;
+    margin-right: 104px;
+  }
+  .search_field_tournament {
+    margin-left: 3.5% !important;
+    width: 34% !important;
+  }
+  .total_team {
+    margin-left: 16%;
+  }
+}
+@media (min-width: 900px) and (max-width: 912px) {
+  .total_team {
+    margin-left: 19%;
+  }
+  .grid_section_slot_list_tournament {
+    margin-left: 19% !important;
+  }
+  #digital-accordian-main_tournament {
+    width: 105%;
+  }
+}
+@media (min-width: 1026px) and (max-width: 1281px) {
+  #digital-accordian-main_tournament {
+    width: 104%;
+  }
+}
+@media (min-width: 1282px) and (max-width: 1390px) {
+  #digital-accordian-main_tournament {
+    width: 100%;
+  }
+}
+@media (min-width: 1536px) and (max-width: 1920px){
+  .search_field_tournament{
+    width: 21% !important;
+  }
+  .search_btn_tournament{
+    margin-left: 41px;
+  } 
+}
+@media (min-width: 1921px) and (max-width: 2000px){
+  .search_field_tournament{
+    width: 22% !important;
+  }
+  .search_btn_tournament{
+    margin-left: 41px;
+  } 
+}

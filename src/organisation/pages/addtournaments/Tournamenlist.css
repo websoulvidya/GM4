@@ -1,0 +1,31 @@
+.dailybody{
+    max-width: 100%;
+}
+.slotlistheader{
+    background-color: #6bdcfc;
+    color: #ffff;
+    padding: 30px;
+}
+.tableheader{
+    padding:25px !important;
+    font-size: 20px !important;
+    color: #000 !important;
+}
+.slottable{
+    width:50% !important;
+    border:1px solid #6bdcfc;
+    text-align: left;
+    margin-left: 25%;
+    border-collapse: separate; 
+    border-radius: 5px !important;
+}
+.slottable:hover{
+    cursor: pointer;
+}
+
+td{
+    text-align: left;
+}
+th{
+    text-align: left;
+}

@@ -1,0 +1,700 @@
+#App{
+    /* color: rgba(0, 0, 0, 0.87); */
+    /* -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px  rgb(0 0 0 / 20%);
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    /* display: -ms-flexbox; */
+    /* display: flex; */
+    /* -webkit-flex-direction: column; */
+    /* -ms-flex-direction: column; */
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    /* -webkit-flex-shrink: 0; */
+    /* -ms-flex-negative: 0; */
+    flex-shrink: 0;
+    position: static;
+    background-color:#ffffff;
+    color: #ffff;
+}
+.userheader-logo{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 200px;
+    height:50px;
+    margin-right: 80px;
+   } 
+Link:hover{
+    text-decoration:none;
+}
+
+#userheader-searchbar{
+    margin-left: 70px;
+    width:60ch;
+    height:30px;
+}
+#userheader-searchicon{
+    margin-left:90%;
+}
+#usersearch-content{
+    align-items: center;
+    margin-top:-4px;
+    margin-right: 240px;
+    align-items: left;
+}
+#userhome-headermenu{
+    width: 180px;
+    font-size: 16px;
+    color:rgb(102 98 98);
+}
+
+.userheader-links{
+    font-size: 18px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    margin-top: 12px;
+    text-decoration: none;
+}
+.userheader-links:hover{
+    color:#6BDCFC;
+    text-decoration: none;
+}
+
+.userheader-sublink{
+    color:rgb(102 98 98);
+
+}
+@media (min-width: 1551px) and (max-width: 1628px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 200px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:85ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:93%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-left: -340px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 35px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1430px) and (max-width: 1550px) {
+
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 200px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:75ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 370px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 35px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1429px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 150px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:65ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 370px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1349px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 130px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:70ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 400px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 1134px) and (max-width: 1279px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 70px;
+        height:50px;
+        margin-right: 100px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:62ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:91%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 370px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+@media (min-width: 1024px) and (max-width: 1133px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 200px;
+        height:50px;
+        margin-right: 100px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:50ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:90%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 240px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 200px;
+        height:50px;
+       } 
+    Link:hover{
+        text-decoration:none;
+    }
+    
+    #userheader-searchbar{
+        margin-left: 20px;
+        width:46ch;
+        height:30px;
+    }
+    #userheader-searchicon{
+        margin-left:90%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-right: 240px;
+        align-items: left;
+    }
+    
+    .userheader-links{
+        font-size: 18px;
+        color:rgb(102 98 98);
+        font-weight: 700;
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        margin-top: 12px;
+        text-decoration: none;
+    }
+    .userheader-links:hover{
+        color:#6BDCFC;
+        text-decoration: none;
+    }
+    #userhome-headermenu{
+        width: 180px;
+        font-size: 16px;
+        color:rgb(102 98 98);
+    }
+    
+    .userheader-sublink{
+        color:rgb(102 98 98);
+    
+    }
+}
+
+
+/* @media(max-width: 1500px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 140px;
+        width:70ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-6px;
+        margin-right: 462px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 18px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 1400px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 120px;
+        width:66ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-4px;
+        margin-left: -12px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 18px;
+        margin-left: 22px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 18px;
+        color:rgb(102 98 98) !important;
+    }
+    
+
+} 
+@media(max-width: 1300px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 120px;
+        width:58ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 290px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 18px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 1200px) {
+    #userheader-searchbar{
+        margin-left: 90px;
+        width:54ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 290px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 1024px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    #userheader-searchbar{
+        margin-left: 50px;
+        width:44ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 35px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 290px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+} 
+@media(max-width: 960px) {
+    #App{
+        height: 60px;
+        width:100%;
+    }
+    .logo-heading{
+        font-family: 'Courgette', cursive;
+        color:black;
+           font-size: 26px;
+           font-weight:400;
+           margin-top: 5%;
+           margin-left: 0px;
+       } 
+    #userheader-searchbar{
+        margin-left: 40px;
+        width:44ch;
+        height:30px;
+        margin-top: 15px;
+    }
+    #userheader-searchicon{
+        width:130px;
+        height: 60px;
+        margin-top: -15px;
+        margin-right: 55px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:-5px;
+        margin-right: 270px;
+        font-size: 18px;
+    }
+    .header-links{
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    #userhome-headermenu{
+        width: 210px;
+        font-size: 22px;
+        color:rgb(102 98 98);
+    }
+
+}  */
+
+    
+

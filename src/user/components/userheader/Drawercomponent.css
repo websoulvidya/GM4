@@ -1,0 +1,406 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+#userheader-closeicon{
+    color:#6BDCFC
+}
+@media (min-width: 768px) and (max-width: 899px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 100px;
+        width: 70px;
+        height:50px;
+    } 
+    #userheader-closeicon{
+    width:30px;
+    height:80px;
+    margin-left:530px;
+    margin-top: -10px;
+    color:#6BDCFC;
+    }
+    #userheader-menuicon{
+        margin-left:600px;
+        width:50px;
+        height:150px;
+        display:flex;
+        /* margin-top: -55px; */
+        
+    }
+    .userheader-link{
+    font-size: 20px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 5px;
+    }
+    #basic-menu{
+        margin-top:300px;
+    }
+    #userhome-headermenu{
+        width: 280px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top:5px;
+        color:rgb(102 98 98);
+    }
+    #userheader-searchbar{
+        margin-left: 15px;
+        margin-right: 15px;
+        width:80ch;
+        height:40px;
+        margin-top:400px;
+        align-items:center;
+    }
+    #userheader-searchicon{
+        margin-left:92%;
+        margin-top: -10px;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:2px;
+        margin-left: -10px;
+        margin-right: 160px;
+        align-items: left;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 100px;
+        width: 70px;
+        height:50px;
+        
+    } 
+    #userheader-closeicon{
+    width:30px;
+    height:80px;
+    margin-left:360px;
+    margin-top: -10px;
+    color:#6BDCFC;
+    }
+    #userheader-menuicon{
+        margin-left:430px;
+        width:50px;
+        height:150px;
+        display:flex;
+        /* margin-top: -55px; */
+        
+    }
+    .userheader-link{
+    font-size: 20px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 5px;
+    }
+    #basic-menu{
+        margin-top:300px;
+    }
+    #userhome-headermenu{
+        width: 280px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top:5px;
+        color:rgb(102 98 98);
+    }
+    #userheader-searchbar{
+        margin-left: 15px;
+        margin-right: 15px;
+        width:60ch;
+        height:38px;
+        margin-top:420px;
+        align-items:center;
+    }
+    #userheader-searchicon{
+        margin-left:90%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:2px;
+        margin-left: -10px;
+        margin-right: 160px;
+        align-items: left;
+    }
+}
+
+@media (min-width: 531px) and (max-width: 599px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 100px;
+        width: 70px;
+        height:50px;
+    } 
+    #userheader-closeicon{
+    width:30px;
+    height:80px;
+    margin-left:280px;
+    margin-top: -10px;
+    color:#6BDCFC;
+    }
+    #userheader-menuicon{
+        margin-left:360px;
+        width:50px;
+        height:150px;
+        display:flex;
+        /* margin-top: -55px; */
+        
+    }
+    .userheader-link{
+    font-size: 20px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 5px;
+    }
+    #basic-menu{
+        margin-top:300px;
+    }
+    #userhome-headermenu{
+        width: 280px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top:5px;
+        color:rgb(102 98 98);
+    }
+    #userheader-searchbar{
+        margin-left: 15px;
+        margin-right: 15px;
+        width:55ch;
+        height:38px;
+        margin-top:400px;
+    }
+    #userheader-searchicon{
+        margin-left:90%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:2px;
+        margin-left: -10px;
+        margin-right: 160px;
+        align-items: left;
+    }
+}
+@media (min-width: 400px) and (max-width: 532px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 100px;
+        width: 70px;
+        height:50px;
+    } 
+    #userheader-closeicon{
+    width:30px;
+    height:80px;
+    margin-left:160px;
+    margin-top: -10px;
+    color:#6BDCFC;
+    }
+    #userheader-menuicon{
+        margin-left:240px;
+        width:50px;
+        height:150px;
+        display:flex;
+        /* margin-top: -55px; */
+
+        
+    }
+    .userheader-link{
+    font-size: 20px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 5px;
+    }
+    #basic-menu{
+        margin-top:300px;
+    }
+    #userhome-headermenu{
+        width: 280px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top:5px;
+        color:rgb(102 98 98);
+    }
+    #userheader-searchbar{
+        margin-left: 15px;
+        margin-right: 15px;
+        width:45ch;
+        height:38px;
+        margin-top:400px;
+    }
+    #userheader-searchicon{
+        margin-left:80%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:2px;
+        margin-left: -10px;
+        margin-right: 160px;
+        align-items: left;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 399px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .userheader-logo{
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 100px;
+        width: 70px;
+        height:50px;
+    } 
+    #userheader-closeicon{
+    width:30px;
+    height:80px;
+    margin-left:130px;
+    margin-top: -10px;
+    color:#6BDCFC;
+    }
+    #userheader-menuicon{
+        margin-left:205px;
+        width:50px;
+        height:150px;
+        display:flex;
+        /* margin-top: -55px; */
+        
+    }
+    .userheader-link{
+    font-size: 20px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 5px;
+    }
+    #basic-menu{
+        margin-top:300px;
+    }
+    #userhome-headermenu{
+        width: 280px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top:5px;
+        color:rgb(102 98 98);
+    }
+    #userheader-searchbar{
+        margin-left: 15px;
+        margin-right: 15px;
+        width:38ch;
+        height:38px;
+        margin-top:350px;
+    }
+    #userheader-searchicon{
+        margin-left:80%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:2px;
+        margin-left: -10px;
+        margin-right: 160px;
+        align-items: left;
+    }
+}
+@media (min-width: 300px) and (max-width: 360px) {
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .userheader-logo{
+           margin-top: 2%;
+           margin-left: 2px;
+           margin-right: 100px;
+        width: 70px;
+        height:50px;
+       } 
+    #userheader-closeicon{
+     width:30px;
+     height:80px;
+     margin-left:80px;
+     margin-top: -10px;
+     color:#6BDCFC;
+    }
+    #userheader-menuicon{
+        margin-left:140px;
+        width:50px;
+        height:160px;
+        display:flex;
+        color:#6BDCFC;
+        /* margin-top: -55px; */
+       
+    }
+ .userheader-link{
+    font-size: 20px;
+    color:rgb(102 98 98);
+    font-weight: 700;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 5px;
+    }
+    #basic-menu{
+        margin-top:300px;
+    }
+    #userhome-headermenu{
+        width: 280px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top:5px;
+        color:rgb(102 98 98);
+    }
+    #userheader-searchbar{
+        margin-left: 15px;
+        margin-right: 15px;
+        width:32ch;
+        height:38px;
+        margin-top:250px;
+    }
+    #userheader-searchicon{
+        margin-left:80%;
+    }
+    #usersearch-content{
+        align-items: center;
+        margin-top:1px;
+        margin-left: -10px;
+        margin-right: 160px;
+        align-items: left;
+    }
+}
