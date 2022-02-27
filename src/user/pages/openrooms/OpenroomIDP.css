@@ -241,7 +241,7 @@ body,html{
         
     }
     .openidp_headerclip h1:before {
-        top: -1px;
+        top: 0px;
         height: 3rem;
           }
           .idpcard-wrapper{
@@ -281,12 +281,13 @@ body,html{
       box-sizing: border-box;
   }
   .openidp_headerclip h1 {
-      font-size: 37px;
+      font-size: 35px;
       left: -54px;
       
   }
   .openidp_headerclip h1:before {
-      top: -10px;
+      top: 0px;
+      height: 3rem;
         }
         .idpcard-wrapper{
           width: 85%;
@@ -319,7 +320,7 @@ body,html{
       
   }
 .openidp_headerclip h1 {
-    font-size: 37px;
+    font-size: 35px;
     left: -54px;
     
 }
@@ -346,7 +347,7 @@ body,html{
       
   }
 .openidp_headerclip h1 {
-    font-size: 37px;
+    font-size: 35px;
     left: -54px;
     
 }
@@ -368,12 +369,13 @@ body,html{
       
   }
 .openidp_headerclip h1 {
-    font-size: 44px;
+    font-size: 35px;
     left: -54px;
     
 }
 .openidp_headerclip h1:before {
-    top: -4px;
+    top: 0px;
+    height: 3rem;
       }
      
            .rounded-social-buttons {
@@ -389,13 +391,13 @@ body,html{
       
   }
 .openidp_headerclip h1 {
-    font-size: 44px;
+    font-size: 45px;
     left: -54px;
     
 }
 .openidp_headerclip h1:before {
-    top: -3px;
-   height: 4rem;
+    top: 2px;
+   height: 3.5rem;
       }
     
            .rounded-social-buttons {

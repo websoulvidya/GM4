@@ -1017,9 +1017,17 @@ progress {
     .dailymatch_headerclip {
         width: calc(85% - -96px)!important;
     }
+
+    .dailymatch_headerclip h1{
+    
+        font-size: 45px;
+    }
     .dailymatch_headerclip h1:before {
-        top: 5%;
-          }
+        height: 3.5rem;
+       top: 0px;
+          
+    }
+ 
     .dailymatch-carditems {
         width: calc(24% - -177px)!important;
         margin: 0px 3.5% 57px 3.5% !important;
@@ -1135,9 +1143,15 @@ progress {
     .dailymatch_headerclip {
         width: calc(80% - -109px)!important;
     }
+    .dailymatch_headerclip h1{
+    
+        font-size: 45px;
+    }
     .dailymatch_headerclip h1:before {
-        top: 5%;
-          }
+        height: 3.5rem;
+       top: 0px;
+          
+    }
     .dailymatch-carditems {
         width: calc(21% - -175px)!important;
         margin: 0px 3.5% 57px 3.5% !important;
@@ -1255,9 +1269,15 @@ progress {
     .dailymatch_headerclip {
         width: calc(77% - -109px)!important;
     }
+    .dailymatch_headerclip h1{
+    
+        font-size: 35px;
+    }
     .dailymatch_headerclip h1:before {
-        top: 5%;
-          }
+        height: 3rem;
+       top: 0px;
+          
+    }
           .dailymatch-card-list {
             margin: 20px 30px;
             
@@ -1379,9 +1399,15 @@ progress {
     .uk-grid {
         margin-left: 40px !important;
     }
+    .dailymatch_headerclip h1{
+    
+        font-size: 35px;
+    }
     .dailymatch_headerclip h1:before {
-        top: 2px;
-          }
+        height: 3rem;
+       top: 0px;
+          
+    }
     .dailymatch-carditems {
         width: calc(57% - -175px)!important;
         margin: 0px 3.5% 57px 3.5% !important;
@@ -1498,9 +1524,15 @@ progress {
     .dailymatch_headerclip {
         width: calc(70% - -110px)!important;
     }
+    .dailymatch_headerclip h1{
+    
+        font-size: 35px;
+    }
     .dailymatch_headerclip h1:before {
-        top: 2px;
-          }
+        height: 3rem;
+       top: 0px;
+          
+    }
     .dailymatch-card-list {
     margin: 20px 30px;
     padding: 0 !important;      
@@ -1631,13 +1663,15 @@ progress {
     .dailymatch_headerclip {
         width: calc(59% - -110px)!important;
     }
-    .dailymatch_headerclip h1 {
-        font-size: 49px;
-        left: -60px;
-          }
+    .dailymatch_headerclip h1{
+    
+        font-size: 35px;
+    }
     .dailymatch_headerclip h1:before {
-        top: 2px;
-          }
+        height: 3rem;
+       top: 0px;
+          
+    }
     .dailymatch-card-list {
     margin: 20px 30px;
     padding: 0 !important;      
@@ -1768,14 +1802,15 @@ progress {
     .dailymatch_headerclip {
         width: calc(59% - -110px)!important;
     }
-    .dailymatch_headerclip h1 {
-        font-size: 44px;
-        left: -55px;
-       
+    .dailymatch_headerclip h1{
+    
+        font-size: 35px;
     }
     .dailymatch_headerclip h1:before {
-        top: 2px;
-          }
+        height: 3rem;
+       top: 0px;
+          
+    }
     .dailymatch-card-list {
     margin: 20px 30px;
     padding: 0 !important;      
@@ -1906,14 +1941,15 @@ progress {
     .dailymatch_headerclip {
         width: calc(59% - -110px)!important;
     }
-    .dailymatch_headerclip h1 {
-        font-size: 37px;
-        left: -54px;
-        
+    .dailymatch_headerclip h1{
+    
+        font-size: 35px;
     }
     .dailymatch_headerclip h1:before {
-        top: -10px;
-          }
+        height: 3rem;
+       top: 0px;
+          
+    }
     .dailymatch-card-list {
     margin: 20px 30px;
     padding: 0 !important;      

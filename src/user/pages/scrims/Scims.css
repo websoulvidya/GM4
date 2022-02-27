@@ -1008,8 +1008,13 @@ progress {
     .scrims_headerclip {
         width: calc(85% - -96px)!important;
     }
+    .scrims_headerclip h1 {
+       
+        font-size: 45px;
+          }
     .scrims_headerclip h1:before {
-        top: 5%;
+        height: 3.5rem;
+       top: 0px;
           }
     .scrims-carditems {
         width: calc(24% - -177px)!important;
@@ -1125,8 +1130,13 @@ progress {
     .scrims_headerclip {
         width: calc(80% - -109px)!important;
     }
+    .scrims_headerclip h1 {
+       
+        font-size: 45px;
+          }
     .scrims_headerclip h1:before {
-        top: 5%;
+        height: 3.5rem;
+       top: 0px;
           }
     .scrims-carditems {
         width: calc(21% - -175px)!important;
@@ -1244,8 +1254,13 @@ progress {
     .scrims_headerclip {
         width: calc(77% - -109px)!important;
     }
+    .scrims_headerclip h1 {
+       
+        font-size: 35px;
+          }
     .scrims_headerclip h1:before {
-        top: 5%;
+        height: 3rem;
+       top: 0px;
           }
           .scrims-card-list {
             margin: 20px 30px;
@@ -1368,8 +1383,13 @@ progress {
     .uk-grid {
         margin-left: 40px !important;
     }
+    .scrims_headerclip h1 {
+       
+        font-size: 35px;
+          }
     .scrims_headerclip h1:before {
-        top: 2px;
+        height: 3rem;
+       top: 0px;
           }
     .scrims-carditems {
         width: calc(57% - -175px)!important;
@@ -1488,11 +1508,12 @@ progress {
         width: calc(70% - -110px)!important;
     }
     .scrims_headerclip h1 {
-       font-size: 45px;
+       
+        font-size: 35px;
           }
     .scrims_headerclip h1:before {
         height: 3rem;
-        top: 8px;
+       top: 0px;
           }
     .scrims-card-list {
     margin: 20px 30px;
@@ -1625,12 +1646,13 @@ progress {
         width: calc(59% - -110px)!important;
     }
     .scrims_headerclip h1 {
-        font-size: 45px;
-           }
-     .scrims_headerclip h1:before {
-         height: 3rem;
-         top: 8px;
-           }
+       
+        font-size: 35px;
+          }
+    .scrims_headerclip h1:before {
+        height: 3rem;
+       top: 0px;
+          }
     .scrims-card-list {
     margin: 20px 30px;
     padding: 0 !important;      
@@ -1762,12 +1784,13 @@ progress {
         width: calc(59% - -110px)!important;
     }
     .scrims_headerclip h1 {
+       
         font-size: 35px;
-           }
-     .scrims_headerclip h1:before {
-         height: 3rem;
-         top: -1px;
-           }
+          }
+    .scrims_headerclip h1:before {
+        height: 3rem;
+       top: 0px;
+          }
     .scrims-card-list {
     margin: 20px 30px;
     padding: 0 !important;      
