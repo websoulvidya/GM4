@@ -3,6 +3,9 @@ body{
     font-family:open sans;
     overflow-x: hidden;
 }
+.tournament-reg{
+    margin-top: 4%;
+}
 /* .reg-circles{
     background-repeat:no-repeat;
     background-image: url("../../assets/homepage/regcircle.png");
@@ -122,14 +125,10 @@ a .scan-btn:hover{
 /* end */
 
 
-
-
-
-
-
-
-
 @media only screen and (min-device-width : 2400px) and (max-width : 2800px){
+    .tournament-reg{
+        margin-top: 2%;
+    }
     .tourregform{
         width: 45%;
         margin-left: 30%;
@@ -156,6 +155,9 @@ a .scan-btn:hover{
     }
 }
 @media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
+    .tournament-reg{
+        margin-top: 3%;
+    }
     .reg-circles{
         background-repeat:no-repeat;
         background-image: url("../../assets/homepage/regcircle.png");
@@ -169,7 +171,7 @@ a .scan-btn:hover{
     }
     .tour-regheader:before{
         left: 76px;
-        top: 10%;
+        top: 9%;
     } 
     .tournamentreg-footer{
         margin-top:15%;
@@ -177,6 +179,9 @@ a .scan-btn:hover{
 }
 
 @media only screen and (min-device-width: 1501px) and (max-device-width : 1599px){
+    .tournament-reg{
+        margin-top: 3%;
+    }
     .reg-circles{
         background-repeat:no-repeat;
         background-image: url("../../assets/homepage/regcircle.png");
@@ -198,6 +203,9 @@ a .scan-btn:hover{
     }
 }
 @media only screen and (min-device-width: 1301px) and (max-device-width : 1500px){
+    .tournament-reg{
+        margin-top: 4%;
+    }
   
     .reg-circles{
         background-repeat:no-repeat;
@@ -214,7 +222,7 @@ a .scan-btn:hover{
     
     .tour-regheader:before {
         left:7%;
-        top: 14%;
+        top: 11%;
         opacity: 0.5;
     }
     .tour-regheader{
@@ -233,6 +241,9 @@ a .scan-btn:hover{
     }
 }
 @media only screen and (min-device-width: 1101px) and (max-device-width : 1300px){
+    .tournament-reg{
+        margin-top: 4%;
+    }
   
     .tournamentregbtn{
         width:30%;
@@ -260,6 +271,9 @@ a .scan-btn:hover{
 }
 
 @media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    .tournament-reg{
+        margin-top: 5%;
+    }
     #circle2{
         width: 50%;
         margin-left: 10%;
@@ -306,6 +320,9 @@ a .scan-btn:hover{
 }
 
 @media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .tournament-reg{
+        margin-top: 6%;
+    }
     .tourregform{
         width: 84%;
         margin-left: 6%;
@@ -332,6 +349,9 @@ a .scan-btn:hover{
 }
 
 @media only screen and (min-device-width: 100px)and (max-device-width : 640px) {
+    .tournament-reg{
+        margin-top: 8%;
+    }
     
     .tourregform{
         width: 80%;

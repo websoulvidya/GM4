@@ -19,7 +19,7 @@ function Orghome() {
         <div>
           <Dashboard/>
         </div>
-        <div class="uk-column-1-2">
+        <div class="uk-column-1-2 org-home">
           <Sidenav/>
           <Cardhome/>
         </div>

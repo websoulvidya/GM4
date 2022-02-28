@@ -107,7 +107,7 @@ export default function Homeheader() {
 
   return (
       <>
-    <AppBar  position="static" id="App">
+    <AppBar  position="fixed"  sx={{backgroundColor:"white",top:0}}  id="App" >
         <Toolbar>
             <Box sx={{ display:"flex",justifyContent:"space-between",width:"40%",alignItems:"center" }} component="div">
 

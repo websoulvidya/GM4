@@ -17,7 +17,7 @@ function Tournamentreg() {
 
 
   return (
-    <div class="tournament-reg" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
+    <div class="tournament-reg" style={{width:"100%",marginLeft:"0px",marginRight:"0px",padding:"0px",overflowX:"hidden"}}>
       <Userheader/>
       <div class="reg-circles">
         <h1 class="tour-regheader">REGISTRATION</h1>

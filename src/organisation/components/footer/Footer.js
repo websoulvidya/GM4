@@ -1,7 +1,6 @@
 import React from 'react'
 import './Footer.css'
 import fimg from '../../assets/homeimages/logo.png'
-
 import {BrowserRouter,Link,Route,Routes} from 'react-router-dom'
 function Footer() {
   return (

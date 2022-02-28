@@ -9,7 +9,7 @@
     padding-left: 6rem;
 }
 .tourpayment_header h1{
-    padding-top: 6px;
+    padding-top: 1%;
     text-align: left;
     font-size: 52px;
     font-weight: 700;
@@ -22,8 +22,8 @@
     width: 6px;
     height: 4rem;
     background-color: white;
-    left: 64px;
-    top: 92px;
+    left:5%;
+    top: 14%;
     opacity: 0.5;
 }
 
@@ -98,16 +98,70 @@
     }
 }
 @media only screen and (min-device-width: 900px)and (max-device-width : 1023px) {
+    .tourpayment_header{
+        padding-left: 13%;
+        height: 7rem;
+    }
+    .tourpayment_header h1{
+        padding-top: 2%;
+        text-align: left;
+        font-size: 45px;
+        font-weight: 700;
+        
+    }
+    .tourpayment_header h1:before{
+        content: "";
+        height: 3rem;
+        left:10%;
+        top: 13%;
+        opacity: 0.5;
+    }
     .tour-payment-footer{
         margin-top:50%;
     }
 }
 @media only screen and (min-device-width: 641px)and (max-device-width : 899px) {
+    .tourpayment_header{
+        padding-left: 13%;
+        height: 7rem;
+    }
+    .tourpayment_header h1{
+        padding-top: 2%;
+        text-align: left;
+        font-size: 45px;
+        font-weight: 700;
+        
+    }
+    .tourpayment_header h1:before{
+        content: "";
+        height: 3rem;
+        left:10%;
+        top: 13%;
+        opacity: 0.5;
+    }
     .tour-payment-footer{
         margin-top:60%;
     }
 }
 @media only screen and (min-device-width: 481px)and (max-device-width : 640px) {
+    .tourpayment_header{
+        padding-left: 18%;
+        height: 7rem;
+    }
+    .tourpayment_header h1{
+        padding-top: 2%;
+        text-align: left;
+        font-size: 35px;
+        font-weight: 700;
+        
+    }
+    .tourpayment_header h1:before{
+        content: "";
+        height: 3rem;
+        left:13%;
+        top: 13%;
+        opacity: 0.5;
+    }
     .tour-payment-footer{
         margin-top:60%;
     }
@@ -120,17 +174,24 @@
         width: 22rem;
         height: auto;
     }
-    .tourpayment_header h1:before{
-        display: none;
-    }
+    
     .tourpayment_header{
-        padding-left: 2rem;
+        padding-left: 20%;
+        height: 7rem;
     }
     .tourpayment_header h1{
-        font-size: 38px;
+        padding-top: 2%;
+        text-align: left;
+        font-size: 35px;
+        font-weight: 700;
+        
     }
-    .tourpayment_header{
-        height: 7rem;
+    .tourpayment_header h1:before{
+        content: "";
+        height: 3rem;
+        left:14%;
+        top: 14%;
+        opacity: 0.5;
     }
     .tour-payment-footer{
         margin-top:80%;

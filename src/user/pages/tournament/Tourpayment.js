@@ -24,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Tourpayment() {
   return (
-    <div>
+    <div  style={{overflowX:"hidden"}}>
 
             <div>
                 <Userheader />

@@ -1,13 +1,22 @@
 .org-footer{
     margin-top:30%;
 }
+.org-home{
+    margin-top:5%;
+}
 @media (min-width: 1837px) and (max-width: 2000px) {
+    .org-home{
+        margin-top:4%;
+    }
     .org-footer{
         margin-top:30%;
     }
 }
 
 @media (min-width: 1781px) and (max-width: 1836px) {
+    .org-home{
+        margin-top:4%;
+    }
     .org-footer{
         margin-top:30%;
     }
@@ -15,84 +24,126 @@
 
 
 @media (min-width: 1629px) and (max-width: 1780px) {
+    .org-home{
+        margin-top:4%;
+    }
     .org-footer{
         margin-top:30%;
     }
 }
 
 @media (min-width: 1551px) and (max-width: 1628px) {
+    .org-home{
+        margin-top:4%;
+    }
     .org-footer{
         margin-top:30%;
     }
 }
 
 @media (min-width: 1430px) and (max-width: 1550px) {
+    .org-home{
+        margin-top:5%;
+    }
     .org-footer{
         margin-top:30%;
     }
 }
 
 @media (min-width: 1350px) and (max-width: 1429px) {
+    .org-home{
+        margin-top:5%;
+    }
     .org-footer{
         margin-top:30%;
     }
 }
 
 @media (min-width: 1280px) and (max-width: 1349px) {
+    .org-home{
+        margin-top:5%;
+    }
     .org-footer{
         margin-top:40%;
     }
 }
 
 @media (min-width: 1134px) and (max-width: 1279px) {
+    .org-home{
+        margin-top:5%;
+    }
     .org-footer{
         margin-top:40%;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1133px) {
+    .org-home{
+        margin-top:5%;
+    }
     .org-footer{
         margin-top:50%;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1023px) {
+    .org-home{
+        margin-top:5%;
+    }
     .org-footer{
         margin-top:50%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
+    .org-home{
+        margin-top:8%;
+    }
     .org-footer{
         margin-top:60%;
     }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
+    .org-home{
+        margin-top:10%;
+    }
     .org-footer{
         margin-top:70%;
     }
 }
 
 @media (min-width: 531px) and (max-width: 599px) {
+    .org-home{
+        margin-top:12%;
+    }
     .org-footer{
         margin-top:80%;
     }
 }
 
 @media (min-width: 400px) and (max-width: 532px) {
+    .org-home{
+        margin-top:14%;
+    }
     .org-footer{
         margin-top:110%;
     }
 }
 
 @media (min-width: 361px) and (max-width: 399px) {
+    .org-home{
+        margin-top:17%;
+    }
     .org-footer{
         margin-top:110%;
     }
 }
 
 @media (min-width: 300px) and (max-width: 360px) {
+    .org-home{
+        margin-top:20%;
+    }
     .org-footer{
         margin-top:110%;
     }

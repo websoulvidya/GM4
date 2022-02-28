@@ -97,7 +97,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
     <div>
         
 
-        <Drawer anchor="left" open={openDrawer}> 
+        <Drawer anchor="left" open={openDrawer} > 
 
             <List style={{backgroundColor:"#fffff",width:"900px"}}>
             <ListItem divider style={{backgroundColor:"white",marginTop:"-10px"}} onClick={()=>setOpenDrawer(false)}>
