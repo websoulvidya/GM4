@@ -1,0 +1,332 @@
+.career-heading {
+    background-color: #6bdcfc;
+    max-height:1140px;
+    display: flex;
+    justify-content: center; 
+    min-height: 300px;  
+
+}
+.career-heading1{
+    max-width: 300px;
+    margin: auto;
+    
+   }
+.career-heading h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px #494848;
+    font-weight: 700;
+    text-align: left;
+}
+.career-heading p{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+    text-align: left;
+}
+.career-card{
+    border-bottom:5px solid #6bdcfc;
+    border-left:1px solid #6bdcfc;
+    border-right:1px solid #6bdcfc;
+    border-top:1px solid #6bdcfc;
+}
+
+.career-cardicon i{
+    padding-top: 70px;
+    font-size: 40px;
+    color: #6bdcfc;
+}
+
+
+
+.circles{
+    /*background-repeat:no-repeat;
+    background-image: url("../../assets/BAB1.png");
+    background-size: cover;*/
+}
+
+.regheader:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 64px;
+    top: 52px;
+    opacity: 0.5;
+}
+.regheader{
+    background-color: #6bdcfc;
+    padding: 30px;
+    color: white;
+    text-align: left;
+    padding-left: 7%;
+}
+.joinhead{
+    text-align: left;
+}
+
+.closebtn{
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.closebtn:hover{
+    cursor: pointer;
+}
+.uk-input{
+    border-radius: 5px !important;
+}
+.uk-input:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-input:focus{
+    border: 1px solid #6bdcfc !important;
+}
+.uk-select{
+    border-radius: 5px !important;
+}
+.uk-select:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-select:focus{
+    border: 1px solid #6bdcfc !important;
+}
+select:focus > option:hover { 
+ background: #6bdcfc !important;
+}
+
+.smallcircles{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.career-form{
+    margin-left: /*22%*/auto;
+    margin-right: auto;
+    box-shadow: 0 0.4rem 0.7rem 0.1rem rgb(0 0 0 / 7%);;
+    border: 2px solid #6bdcfc;
+    padding: 20px;
+    max-width:1200px;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #ffff;
+}
+
+
+
+@media only screen and (max-device-width : 640px) {
+    .openbtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .slotlistbtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .closebtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .regform{
+        width: 60%;
+        margin-left: 15%;
+    } 
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 60px;
+        top: 70px;
+        opacity: 0.5;
+    } 
+    .regheader{
+        padding-left: 20%;
+    }
+    /* .circles{
+        background-image: none;
+    } */
+}
+​
+@media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .regform{
+        width: 65%;
+        margin-left: 15%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 120px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+    .regheader{
+        padding-left: 20%;
+    }
+    /* .circles{
+        background-image: none;
+    } */
+}
+​
+@media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    #circle2{
+        width: 30%;
+        margin-left: 10%;
+        max-width: 100%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 130px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+    .regheader{
+        padding-left: 15%;
+    }
+    /* .circles{
+        background-image: none;
+    } */
+    .smallcircles{
+       /* background-repeat:no-repeat;
+        background-image: url("../../assets/BAB1.png");
+        background-size: cover;*/
+    }
+}
+​
+@media only screen and (min-device-width: 1101px) and (max-device-width : 1300px){
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+​
+@media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
+    .regform{
+        width: 40%;
+        margin-left: 27%;
+    }
+}
+​
+@media only screen and (min-device-width : 2400px) and (max-width : 2800px){
+    .regform{
+        width: 35%;
+        margin-left: 30%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .circles{
+       /* background-repeat:no-repeat;
+        background-image: url("../../assets/BAB1.png");
+        background-size: 2560px 1200px;*/
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 130px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+}
+
+@media (min-width:1100px) {
+
+.career-card-all{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.career-heading h1{
+    font-size: 50px;
+}
+
+.career-heading p{
+    font-size: 20px;
+}
+.career-heading1{
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+
+}

@@ -1,0 +1,107 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+html body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+    overflow: auto;
+}
+
+.ourteam-head {
+     width: 100%;
+     height: 8rem;
+     background-color: #6bdcfc;
+}
+
+
+.ourteam-head2 h1{
+    position: absolute;
+    font-size: 52px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 50px;
+    top: 60px;
+    color:white;
+    max-width: fit-content;
+    text-transform: uppercase ;
+    
+}
+
+.ourteam-head2 h1::before{
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 30px;
+    width: 10px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.ourteam-cardimg img{
+    width: 30%;
+    /*border:4px solid #6bdcfc;*/
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    transition: width 1s;
+
+}
+.ourteam-cardimg img:hover{
+    width: 35%;
+    transition: width 1s;
+}
+.team-name h5{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.team-social{
+    padding-bottom: 10px;
+}
+.team-social a{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    color: #878888;
+    
+}
+
+.team-social i{
+    font-size: 20px;
+}
+.team-social a:hover{
+    color: #32c8f1;
+}
+
+
+
+
+
+
+
+
+/*media querry for 798 px width*/
+
+
+
+@media screen and (max-width: 798px) {
+    body {
+        /*overflow: auto;*/
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ourteam-head2 h1{
+        font-size: 37px;
+    }
+    .ourteam-head2 h1::before{
+        height: 33px;
+    }
+
+
+}
