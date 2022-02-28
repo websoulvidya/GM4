@@ -425,7 +425,7 @@
             left: -16px;
             width: 153px;
             transform: scale(1.4);
-            top: 61px;
+            top: 4px;
 
 
         }
@@ -469,7 +469,7 @@
             left: -21px;
             width: 153px;
             transform: scale(1.3);
-            top: 61px;
+            top: 0px;
 
         }
 
@@ -587,7 +587,7 @@
             left: -35px;
             width: 153px;
             transform: scale(1.1);
-            top: 61px;
+            top: 0px;
         }
 
         .mymatches-reg-section {
@@ -729,7 +729,7 @@
             width: 30%;
             height: 32%;
             bottom: 53%;
-            right: 18%;
+            right: 20%;
             border-radius: 4px;
         }
 
@@ -1346,7 +1346,8 @@
             width: 129px;
             transform: scale(1.4);
             left: 4%;
-            top: 0px;
+            top: 10px;
+            height: 5rem;
 
         }
 
@@ -2086,6 +2087,7 @@
 
         .mymatches_headerclip {
             width: -webkit-fill-available !important;
+            height: 6rem;
         }
 
         .mymatches_headerclip h1:before {
@@ -2272,6 +2274,7 @@
 
         .mymatches_headerclip {
             width: -webkit-fill-available !important;
+            height: 5rem;
         }
 
         .mymatches_headerclip h1:before {
@@ -2493,7 +2496,7 @@
         }
 
         .cancel_headerclip h1 {
-            left: -50%;
+            left: -19% !important;
         }
     }
 

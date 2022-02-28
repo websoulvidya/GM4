@@ -759,6 +759,7 @@ progress[value]::-moz-progress-bar {
 
     .idp_header {
         padding-left: 1rem !important;
+        height: 6rem !important;
     }
 
  
@@ -1023,7 +1024,7 @@ table tr:nth-child(2n+1) {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .view_page {
         background-image: none !important;
     }
@@ -1052,7 +1053,7 @@ table tr:nth-child(2n+1) {
         position: relative;
         top: 0;
         transform: translateY(0);
-        width: 95%;
+        width: auto;
     }
 
     td:not(:first-child) {
@@ -1450,3 +1451,7 @@ input:hover {
 input:focus{
     outline: none !important;
 } 
+
+.idp_page_main{
+    overflow: hidden;
+}

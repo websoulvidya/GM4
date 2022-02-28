@@ -53,7 +53,7 @@ function Idp_page() {
 
 
   return (
-    <div >
+    <div className='idp_page_main' >
       <div>
         <Dashboard />
       </div>

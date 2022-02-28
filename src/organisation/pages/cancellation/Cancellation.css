@@ -1893,6 +1893,7 @@ progress[value]::-webkit-progress-value {
 
     .cancel_headerclip {
         width: -webkit-fill-available;
+        height: 7rem;
     }
 
     .cancel_headerclip h1:before {
@@ -2048,6 +2049,7 @@ progress[value]::-webkit-progress-value {
 
     .cancel_headerclip {
         width: -webkit-fill-available;
+        height: 6rem;
     }
 
     .cancel_headerclip h1:before {
@@ -2055,7 +2057,7 @@ progress[value]::-webkit-progress-value {
     }
 
     .cancel-card-list {
-        margin: 20px 30px;
+        margin: 20px 20px;
         padding: 0 !important;
     }
 
@@ -2214,7 +2216,7 @@ progress[value]::-webkit-progress-value {
     }
 
     .cancel-card-list {
-        margin: 20px 30px;
+        margin: 20px 20px;
         padding: 0 !important;
     }
 
