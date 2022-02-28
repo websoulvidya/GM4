@@ -1,0 +1,620 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+.slotlistheader{
+    text-align: left;
+    background-color: #6bdcfc;
+    color: #ffff;
+    padding: 30px;
+    font-weight: 700;
+    padding-left: 7%;
+}
+.slotlistheader:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 64px;
+    top: 100px;
+    opacity: 0.5;
+}
+.searchfield{
+    margin-left: 3% !important;
+    width:25% !important;
+}
+.searchbtn{
+    height:10% !important;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-left: 20px ;
+    border: 1px solid #6bdcfc;
+    background-color: #6bdcfc;
+    color: #ffff;
+    border-radius: 5px;
+}
+.searchbtn:hover{
+    cursor: pointer;
+}
+.uk-input{
+    border-radius: 5px !important;
+}
+.uk-input:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-input:focus{
+    border: 1px solid #6bdcfc !important;
+}
+.grid-sections{
+    margin-left: 25% !important;
+    background-color: #ffff;
+}
+#digital-accordians{
+    border:1px solid #6BDCFC;
+    border-collapse: separate;
+    border-radius: 5px !important;
+ }
+.lt{
+    float: left;
+}
+.ltt{
+    float: right;
+}
+.plist{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.lis{
+    padding:30px;
+    padding-bottom: 10px !important;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+}
+.liscon{
+    font-size: 18px;
+    color: rgb(69, 69, 69);
+    display: flex !important;
+    justify-content: space-between;
+    padding-left: 9rem;
+    padding-right: 7rem;
+    align-items: center;
+}
+.uk-accordion-title:before{
+    display: none;
+}
+.ulist{
+    margin-left: 0px !important;
+    padding-left: 25px !important;
+    padding-right: 15px !important;
+}
+.tag{
+    text-align: center;
+}
+#pagin{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    color: #fff;
+    background-color: #6BDCFC !important;
+  }
+  @media (Max-width:350px){
+    .slotlistheader{
+        font-size: 22px !important;
+        padding-left: 10%;
+    }
+    .slotlistheader:before{
+        left: 15px;
+        top: 85px;
+        height: 3rem !important;
+    }
+  }
+@media (Max-width:380px){
+    .slotlistheader{
+        font-size: 23px;
+        padding-left: 10%;
+    }
+    .slotlistheader:before{
+        left: 15px;
+        top: 85px;
+        height: 3.5rem;
+    }
+    .uk-flex{
+        display: inline-grid !important;
+    }
+    .searchfield{
+        width: 250px !important;
+        margin-bottom: 15px !important;
+    }
+    .searchbtn{
+        padding-bottom: 25px;
+        margin-left: 10px;
+        width:250px
+    }
+    .grid-sections{
+        margin-left: 0 !important;
+    }
+    .lis{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .liscon{
+        padding-left: 4rem !important;
+        padding-right: 2rem !important;
+    }
+    .ulist{
+        padding-left: 25px !important;
+        padding-right: 10px !important;
+    }
+
+}
+
+@media (Min-width:381px) and (max-width:465px){
+    .slotlistheader{
+        font-size: 30px;
+        padding-left: 10%;
+    }
+    .slotlistheader:before{
+        left: 15px;
+        top: 90px;
+        height: 3.5rem;
+    }
+    .uk-flex{
+        display: inline-grid !important;
+    }
+    .searchfield{
+        width: 280px !important;
+        margin-bottom: 15px !important;
+    }
+    .searchbtn{
+        padding-bottom: 25px;
+        margin-left: 10px;
+        width:280px
+    }
+    .grid-sections{
+        margin-left: 0 !important;
+    }
+    .lis{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .liscon{
+        padding-left: 5rem !important;
+        padding-right: 3rem !important;
+    }
+    .ulist{
+        padding-left: 13px !important;
+        padding-right: 0px !important;
+    }
+}
+@media (Min-width:466px) and (max-width:510px){
+    .slotlistheader{
+        font-size: 30px;
+        padding-left: 10%;
+    }
+    .slotlistheader:before{
+        left: 15px;
+        top: 90px;
+        height: 3.5rem;
+    }
+    .uk-flex{
+        display: inline-grid !important;
+    }
+    .searchfield{
+        width: 300px !important;
+        margin-bottom: 15px !important;
+    }
+    .searchbtn{
+        padding-bottom: 25px;
+        margin-left: 10px;
+        width:300px
+    }
+    .grid-sections{
+        margin-left: 0 !important;
+    }
+    .lis{
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+    }
+    .liscon{
+        padding-left: 5.5rem !important;
+        padding-right: 3.5rem !important;
+    }
+    .ulist{
+        padding-left: 8px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media (Min-width:511px) and (max-width:575px){
+    .slotlistheader{
+        font-size: 30px;
+        padding-left: 10%;
+    }
+    .slotlistheader:before{
+        left: 30px;
+        top: 90px;
+        height: 3.5rem;
+    }
+    .uk-flex{
+        display: inline-grid !important;
+    }
+    .searchfield{
+        width: 350px !important;
+        margin-bottom: 15px !important;
+    }
+    .searchbtn{
+        padding-bottom: 25px;
+        margin-left: 10px;
+        width:350px
+    }
+    .grid-sections{
+        margin-left: 0 !important;
+    }
+    .lis{
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .liscon{
+        padding-left: 6rem !important;
+        padding-right: 4.5rem !important;
+    }
+    .ulist{
+        padding-left: 5px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media (Min-width:576px) and (max-width:640px){
+    .slotlistheader{
+        padding-left: 8%;
+    }
+    .slotlistheader:before{
+        left: 30px;
+        top: 90px;
+        height: 3.5rem;
+    }
+    .grid-sections{
+        margin-left: 0 !important;
+    }
+    .ulist{
+        padding-left: 50px !important;
+        padding-right: 40px !important;
+    }
+    .searchfield{
+        width:40% !important;
+    }
+}
+@media (Min-width:641px) and (max-width:720px){
+    .slotlistheader{
+        padding-left: 10% !important;
+    }
+    .slotlistheader:before{
+        left: 45px;
+        top: 50px;
+    }
+    .searchfield{
+        width:45% !important;
+    }
+    .grid-sections{
+        margin-left: 0 !important;
+    }
+    .ulist{
+        padding-left: 15px !important;
+        padding-right: 10px !important;
+    }
+}
+@media (Min-width:721px) and (max-width:820px){
+    .slotlistheader{
+        padding-left: 10% !important;
+    }
+    .slotlistheader:before{
+        left: 45px;
+        top: 100px;
+    }
+    .searchfield{
+        width:45% !important;
+    }
+    .grid-sections{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    .ulist{
+        padding-left: 15px !important;
+        padding-right: 10px !important;
+    }
+}
+@media (Min-width:821px) and (max-width:920px){
+    .slotlistheader{
+        padding-left: 9% !important;
+    }
+    .slotlistheader:before{
+        left: 50px;
+        top: 90px;
+    }
+    .searchfield{
+        width:45% !important;
+    }
+    .grid-sections{
+        margin-left: 75px !important;
+        margin-right: 75px !important;
+    }
+    .ulist{
+        padding-left: 8px !important;
+        padding-right: 0px !important;
+    }
+}
+@media (Min-width:921px) and (max-width:1020px){
+    .slotlistheader{
+        padding-left: 9% !important;
+    }
+    .slotlistheader:before{
+        left: 50px;
+        top: 100px;
+    }
+    .searchfield{
+        width:39% !important;
+    }
+    .grid-sections{
+        margin-left: 14% !important;
+    }
+    #digital-accordians{
+        width:700px;
+    }
+    .ulist{
+        padding-left: 8px !important;
+        padding-right: 0px !important;
+    }
+}
+@media (Min-width:1021px) and (max-width:1120px){
+    .slotlistheader{
+        padding-left: 9% !important;
+    }
+    .grid-sections{
+        margin-left: 20% !important;
+    }
+    .searchfield{
+        width:26% !important;
+    }
+    .ulist{
+        padding-left: 60px !important;
+        padding-right: 40px !important;
+    }
+}
+@media (Min-width:1121px) and (max-width:1220px){
+    .grid-sections{
+        margin-left: 20% !important;
+    }
+    .totalteam{
+        margin-left: -2%;
+    }
+    .searchfield{
+        width:27.5% !important;
+    }
+    .searchbtn{
+        width: 12.5%;
+    }
+}
+@media (Min-width:1400px) and (max-width:1500px){
+    .lis{
+        padding-left: 15% !important;
+        padding-right:15% !important;
+    }
+    .liscon{
+        padding-left: 23%;
+        padding-right:18%;
+    }
+    .ulist{
+        padding-left: 30px !important;
+        padding-right: 20px !important;
+    }
+    .searchfield{
+        width:24.5% !important;
+    }
+    .searchbtn{
+        width: 10%;
+    }
+}
+@media (Min-width:1501px) and (max-width:1600px){
+    .slotlistheader:before{
+        left:75px;
+    }
+    .grid-sections{
+        margin-left: 27% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .searchfield{
+        width:22.5% !important;
+    }
+    .searchbtn{
+        width: 8%;
+    }
+}
+@media (Min-width:1601px) and (max-width:1700px){
+    .slotlistheader:before{
+        left:75px;
+    }
+    .grid-sections{
+        margin-left: 27% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -3%;
+    }
+    .searchfield{
+        width:20% !important;
+    }
+    .searchbtn{
+        width: 8%;
+    }
+}
+@media (Min-width:1701px) and (max-width:1800px){
+    .slotlistheader:before{
+        left:90px;
+    }
+    .grid-sections{
+        margin-left: 27% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -6%;
+    }
+    .searchfield{
+        width:18.5% !important;
+    }
+    .searchbtn{
+        width: 8%;
+    }
+}
+@media (Min-width:1801px) and (max-width:1900px){
+    .slotlistheader:before{
+        left:90px;
+    }
+    .grid-sections{
+        margin-left: 27% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -8%;
+    }
+    .searchfield{
+        width:16.5% !important;
+    }
+    .searchbtn{
+        width: 8%;
+    }
+}
+@media (Min-width:1901px) and (max-width:2000px){
+    .slotlistheader:before{
+        left:90px;
+    }
+    .grid-sections{
+        margin-left: 27% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -10%;
+    }
+    .searchfield{
+        width:17% !important;
+    }
+    .searchbtn{
+        width: 7%;
+    }
+}
+@media (Min-width:2001px) and (max-width:2100px){
+    .slotlistheader:before{
+        left:120px;
+    }
+    .grid-sections{
+        margin-left: 32% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -2.5%;
+    }
+    .searchfield{
+        width:15% !important;
+    }
+    .searchbtn{
+        width: 7%;
+    }
+}
+@media (Min-width:2101px) and (max-width:2200px){
+    .slotlistheader:before{
+        left:120px;
+    }
+    .grid-sections{
+        margin-left: 32% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -3%;
+    }
+    .searchfield{
+        width:13.5% !important;
+    }
+    .searchbtn{
+        width: 7.5%;
+    }
+}
+@media (Min-width:2500px) and (max-width:2600px){
+    .slotlistheader:before{
+        left:120px;
+    }
+    .grid-sections{
+        margin-left: 32% !important;
+    }
+    #digital-accordians{
+        width: 700px;
+    }
+    .ulist{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .totalteam{
+        margin-left: -9%;
+    }
+    .searchfield{
+        width:12% !important;
+    }
+    .searchbtn{
+        width: 5%;
+    }
+    #pgn{
+        margin-left: -45% !important;
+    }
+}
