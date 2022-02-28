@@ -350,7 +350,7 @@ a .scan-btn:hover{
 
 @media only screen and (min-device-width: 100px)and (max-device-width : 640px) {
     .tournament-reg{
-        margin-top: 8%;
+        margin-top: 10%;
     }
     
     .tourregform{
@@ -377,5 +377,10 @@ a .scan-btn:hover{
     }
     .tournamentreg-footer{
         margin-top:70%;
+    }
+}
+@media only screen and (min-device-width: 100px)and (max-device-width : 400px) {
+    .tournament-reg{
+        margin-top: 14%;
     }
 }
