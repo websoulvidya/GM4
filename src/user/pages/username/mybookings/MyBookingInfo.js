@@ -38,32 +38,32 @@ function MyBookingInfo() {
                 <div></div>
                 <h1>My Bookings Info</h1>
             </div>
-            <div className="mainWrapper">
+            <div className="mainWrapper-abh">
                 <div className="myBoolingInfo_wrapper1">
                     {/* from this div onwardss card bedins */}
                     <div className="myBoolingInfo_container">
                         <div className="myBoolingInfo_card">
                             <h2>Organisation1</h2>
-                            <div className="Image_flex">
-                                <div className="Image_box">
+                            <div className="Image_flex-abh">
+                                <div className="Image_box-abh">
                                     <img src={myI_img} alt="fleximage" />
                                 </div>
-                                <div className="text-box">
-                                    <div className="text-box_flex_box1">
-                                        <div className="p_pool">
+                                <div className="text-box-abh">
+                                    <div className="text-box_flex_box1-abh">
+                                        <div className="p_pool-abh">
                                             <h4>PRIZE POOL</h4>
                                             <p>300</p>
                                         </div>
-                                        <div className="hori-div">
+                                        <div className="hori-div-abh">
 
                                         </div>
-                                        <div className="entry">
+                                        <div className="entry-abh">
                                             <h4>SLOT NUMBER</h4>
                                             <p>300</p>
                                         </div>
                                     </div>
                                     <progress value="3333" max="10000"></progress>
-                                    <div className="progresstextflex">
+                                    <div className="progresstextflex-abh">
                                         <div>
                                             <p>100 joined</p>
                                         </div>
@@ -71,13 +71,13 @@ function MyBookingInfo() {
                                             <p>400 spot left</p>
                                         </div>
                                     </div>
-                                    <div className="timeFlexbox_match">
-                                        <div className="my_Date">
+                                    <div className="timeFlexbox_match-abh">
+                                        <div className="my_Date-abh">
                                             <h4>MATCH DATE</h4>
                                             <p>06/05/2022</p>
                                         </div>
-                                        <div className="horidiv3"></div>
-                                        <div className="my_Time">
+                                        <div className="horidiv3-abh"></div>
+                                        <div className="my_Time-abh">
                                             <h4>MATCH TIME</h4>
                                             <p>2:30pm</p>
                                         </div>
@@ -85,18 +85,18 @@ function MyBookingInfo() {
                                 </div>
                             </div>
                         </div>
-                        <div className="blue_box">
+                        <div className="blue_box-abh">
                             <div>
                                 <h4>IDP TIME</h4>
                                 <p>9:00am</p>
                             </div>
-                            <div className="horidiv2"></div>
+                            <div className="horidiv2-abh"></div>
                             <div>
                                 <h4>MATCH TYPE</h4>
                                 <p>Scrim</p>
                             </div>
                         </div>
-                        <div className='myi_tournament-rule'>
+                        <div className='myi_tournament-rule-abh'>
                             <i className="fa fa-gavel rule-icon" aria-hidden="true" onClick={handleOpen}></i>
                         </div>
                     </div>
