@@ -5,7 +5,7 @@ body{
 }
 .circlz{
     background-repeat:no-repeat;
-    background-image: url("../../assets/homeimages/BAB1.png");
+    background-image: url("../../assets/BAB1.png");
     background-size: cover;
     height: auto;
 }
@@ -376,7 +376,7 @@ body{
 
         .circlz{
             background-repeat:no-repeat;
-            background-image: url("../../assets/homeimages/babb3.png");
+            background-image: url("../../assets/babb3.png");
             background-size: cover;
             height: auto;
     }
@@ -390,7 +390,7 @@ body{
     }
         .circlz{
             background-repeat:no-repeat;
-            background-image: url("../../assets/homeimages/babb3.png");
+            background-image: url("../../assets/babb3.png");
             background-size: cover;
             height: 820px;
     }
@@ -435,7 +435,7 @@ body{
     }
     .circlz{
         background-repeat:no-repeat;
-        background-image: url("../../assets/homeimages/babb3.png");
+        background-image: url("../../assets/babb3.png");
         background-size: 2560px 1400px;
         height: auto;
     }

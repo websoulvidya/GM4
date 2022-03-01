@@ -154,4 +154,4 @@ const style = {
      </div>
   )
 }
-export default Addtournament
+export default Addtournament;

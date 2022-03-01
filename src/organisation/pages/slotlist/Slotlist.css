@@ -1,0 +1,760 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+.slot_header {
+  height: 8rem;
+  width: -webkit-fill-available;
+  background-color: #87ceeb;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+}
+.slot_header h1 {
+  text-align: left;
+  font-size: 52px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.slot_header h1:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 4rem;
+  background-color: white;
+  left: 64px;
+  top: 52px;
+  opacity: 0.5;
+}
+.sub_slot_header {
+  height: 3rem;
+  width: -webkit-fill-available;
+  background-color: #87ceeb;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  margin-top: 92px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.sub_slot_header h1 {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.soltlist-main-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.slotlist-card-list {
+  margin: 20px 30px;
+  padding-right: 32px;
+}
+.slot-main-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+.slot-list-carditems {
+  width: calc(22% - 10px) !important;
+  height: auto;
+  left: 5%;
+  border: 1px solid #ade0ee;
+  border-radius: 18px !important;
+  box-shadow: 5px 5px #ade0ee;
+  position: relative;
+  padding-left: 0 !important;
+  margin: 0 1.5% 55px 1.9% !important;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 6px) !important;
+  height: auto;
+  left: 4%;
+  border: 1px solid #ade0ee;
+  border-radius: 18px !important;
+  box-shadow: 5px 5px #ade0ee;
+  position: relative;
+  padding-left: 0 !important;
+  margin: 0 1.5% 55px 1.9% !important;
+}
+.slot-list-card {
+  width: 100%;
+  height: 237px;
+  border-radius: 3px solid;
+  position: relative;
+}
+.slotlist-main-titile {
+  width: 100%;
+  position: relative;
+}
+.slotlist-main-titile h3 {
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  top: 10px;
+  left: 24%;
+  font-weight: 600;
+  position: absolute;
+}
+.slotlist-team-img {
+  width: 174px;
+  height: auto;
+  position: absolute;
+  left: 0;
+}
+.slotlist-team-img img {
+  border-radius: 6px;
+  left: -10px;
+  position: relative;
+  width: 174px;
+  transform: scale(1.3);
+  /* height: 138px; */
+  bottom: 1;
+  top: 61px;
+}
+.slot-list-reg-section {
+  width: 236px;
+  background-color: #6bdcfc;
+  height: 59px;
+  position: absolute;
+  bottom: -31px;
+  right: 0;
+  border-radius: 4px;
+}
+.slot-list-reg-section h6 {
+  color: white;
+  font-weight: 600;
+  left: -30%;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+  top: 11px;
+}
+.slot-list-reg-section p {
+  color: white;
+  font-weight: bolder;
+  left: 3%;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 18px;
+  color: black;
+}
+
+.slot-list-reg-section a {
+  color: white;
+  font-weight: 600;
+  right: -67px;
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.slot-list-reg-section a::after {
+  content: "";
+  width: 2px;
+  height: 35px;
+  background-color: white;
+  display: block;
+  position: relative;
+  top: -31px;
+  left: 53px;
+}
+.slot-list-reg-section a:hover {
+  text-decoration: none;
+  color: white;
+}
+.slot-list-pay-section {
+  width: 30%;
+  height: 75px;
+  position: absolute;
+  bottom: 104px;
+  right: 58px;
+  border-radius: 4px;
+}
+.slot-list-pay-section-sd {
+  width: 30%;
+  height: 75px;
+  position: absolute;
+  bottom: 104px;
+  right: 58px;
+  border-radius: 4px;
+}
+.slot-list-pay-section h6 {
+  color: rgb(131, 128, 128);
+  font-weight: 600;
+  left: -30%;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+  top: 11px;
+}
+.slot-list-pay-section-sd h6 {
+  color: rgb(131, 128, 128);
+  font-weight: 600;
+  left: -30%;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+  top: 11px;
+}
+.slot-list-pay-section span {
+  color: rgb(131, 128, 128);
+  font-weight: 600;
+  right: -69px;
+  font-size: 15px;
+  position: relative;
+  top: -31px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.slot-list-pay-section-sd span {
+  color: rgb(131, 128, 128);
+  font-weight: 600;
+  right: -69px;
+  font-size: 15px;
+  position: relative;
+  top: -31px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.slot-list-pay-section span::after {
+  content: "";
+  width: 2px;
+  height: 35px;
+  background-color: rgb(131, 128, 128);
+  display: block;
+  position: relative;
+  top: -24px;
+  left: 7px;
+}
+.slot-list-pay-section-sd span::after {
+  content: "";
+  width: 2px;
+  height: 35px;
+  background-color: rgb(131, 128, 128);
+  display: block;
+  position: relative;
+  top: -24px;
+  left: 7px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  font-weight: bolder;
+  right: -16%;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 18px;
+  color: black;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  font-weight: bolder;
+  right: -16%;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 18px;
+  color: black;
+}
+.slot-list-pay-section .slot-list-prize-pool {
+  font-weight: bolder;
+  left: 16%;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 18px;
+  color: black;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  font-weight: bolder;
+  left: 16%;
+  font-size: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 18px;
+  color: black;
+}
+.slotlist-rule {
+  background-color: #e0f0f5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  float: right;
+  top: 10px;
+  right: 14px;
+}
+.slot-rule-icon {
+  position: relative;
+  top: 3px;
+}
+.slot-list-progress-bar {
+  width: 46%;
+  position: absolute;
+  right: 10px;
+  bottom: 34%;
+}
+.slot-list-progress-bar-sd {
+  width: 46%;
+  position: absolute;
+  right: 10px;
+  bottom: 34%;
+}
+.progressbar-active {
+  height: 24px;
+  width: 20%;
+}
+progress {
+  display: block;
+  position: relative;
+  /* top: 143px; */
+  /* right: 0; */
+  border-radius: 7px;
+  width: 100%;
+  height: 6px;
+}
+.slot_match_date {
+  position: absolute;
+  position: absolute;
+  top: 68px;
+  font-weight: bold;
+  font-size: 11px;
+  color: rgb(131, 128, 128);
+  left: 21%;
+  width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgb(131, 128, 128);
+  border-radius: 10px;
+}
+progress[value]::-webkit-progress-value {
+  background-color: #6bdcfc;
+  border-radius: 10px;
+}
+.slot-progressbar-left-text {
+  position: relative;
+  top: 4px;
+  left: 0;
+  font-size: 12px;
+  color: rgb(102 98 98);
+  font-weight: 700;
+  float: left;
+  margin: 0;
+}
+.slot-progressbar-right-text {
+  position: relative;
+  top: 2px;
+  right: 0;
+  font-size: 12px;
+  float: right;
+  color: rgb(102 98 98);
+  font-weight: 700;
+  margin: 0;
+}
+@media only screen and (max-width: 1500px) {
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 153px;
+    transform: scale(1);
+    top: 61px;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 17%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: -19%;
+    font-size: 12px;
+    top: 20px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: -19%;
+    font-size: 12px;
+    top: 20px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 64px;
+    font-size: 12px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 64px;
+    font-size: 12px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 23px;
+    top: -20px;
+    left: 5px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 23px;
+    top: -20px;
+    left: 7px;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -29%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -36%;
+    top: 18px;
+  }
+}
+.slotlist_modal_close {
+  background-color: #6bdcfc;
+  color: white;
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+.slot-list-modal_box {
+  border: none !important;
+  border-radius: 7px;
+}
+.slot-list-rules_modal::-webkit-scrollbar {
+  width: 5px;
+}
+.slot-list-rules_modal::-webkit-scrollbar-track {
+  box-shadow: inset 005px grey;
+}
+.slot-list-rules_modal::-webkit-scrollbar-thumb {
+  background-color: #87ceeb;
+  border-radius: 15px;
+}
+.slot-list-rules_modal::-webkit-scrollbar-thumb:hover {
+  background-color: #6bdcfc;
+}
+@media (min-width: 300px) and (max-width: 320px){
+  .slot_header {
+    height: 6rem;
+  }
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 76px;
+    margin-left: -7px;
+  }
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -10%;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -10%;
+    font-size: 10px;
+  }
+  .slot-list-prize-pool{
+    left: 28% !important;
+  }
+  .slot-list-prize-pool-sd{
+    left: 28% !important;
+  }
+  .slot-list-pay-section span::after{
+    left: 7px;
+  }
+  .slot-list-pay-section span {
+    left: 60px;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd span::after{
+    left: 7px;
+    height: 19px;
+    top: -18px;
+    left: 10px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 22%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 49%;
+    right: 6px;
+  }
+  .slot-list-pay-section-sd span {
+    left: 60px;
+    font-size: 11px;
+  }
+  .slot-list-entry-fee {
+    right: -37%;
+  }
+  .slot-list-entry-fee-sd {
+    right: -37%;
+  }
+  progress {
+    width: 96%;
+  }
+  .slot-list-carditems {
+    width: calc(126% - 10px) !important;
+    left: 4%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(126% - 7px) !important;
+    left: 1%;
+  }
+  .slot-list-reg-section a {
+    right: -23%;
+  }
+  .slotlist-card-list {
+    padding-right: 42px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -20px;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .slot_header {
+    height: 6rem;
+  }
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 76px;
+    margin-left: 15px;
+  }
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -23%;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -23%;
+  }
+  .slot-list-carditems {
+    width: calc(126% - 10px) !important;
+    left: 4%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(126% - 10px) !important;
+    left: 4%;
+  }
+  .slot-list-reg-section a {
+    right: -14%;
+  }
+  .slotlist-card-list {
+    padding-right: 67px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .slot-list-carditems {
+    width: calc(110% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-list-carditems-sd {
+    width: calc(110% - 10px) !important;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .slot-list-carditems {
+    width: calc(42% - 10px) !important;
+    margin: 0 1.5% 55px 6.9% !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(42% - 10px) !important;
+    margin: 0 1.5% 55px 6.9% !important;
+  }
+  .slot-main-card {
+    margin-left: -23px !important;
+  }
+  .slot-list-pay-section {
+    right: 59px;
+  }
+  .slot-list-pay-section h6 {
+    left: -18%;
+  }
+  .slot-list-pay-section-sd {
+    right: 55px;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -18%;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd span {
+    font-size: 11px;
+    margin-left: -11px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 17px;
+    top: -18px;
+    left: 4px;
+
+  }
+  .slot-list-progress-bar-sd {
+    width: 49%;
+    position: absolute;
+    right: 11px;
+    bottom: 30%;
+}
+  .slot_match_date {
+    font-size: 10px;
+    
+  }
+  .slot_header {
+    height: 7rem;
+  }
+  .slot_header h1{
+    font-size: 45px;
+    margin-top: 15px;
+  }
+  .slot_header h1::before{
+    height: 3rem;
+    top: 57px;
+  }
+}
+@media (min-width: 901px) and (max-width: 912px) {
+  .slot-list-carditems {
+    width: calc(37% - 10px) !important;
+    margin: 0 1.5% 55px 10.9% !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(37% - 10px) !important;
+    margin: 0 1.5% 55px 10.9% !important;
+  }
+  .slot-list-pay-section {
+    right: 55px;
+  }
+  .slot-list-pay-section h6 {
+    left: -24%;
+  }
+  .slot-list-pay-section-sd {
+    right: 55px;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -24%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .slot-list-carditems {
+    width: calc(31% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 2.5rem !important;
+    left: 7%;
+  }
+  .slot-main-card {
+    margin-left: -21px !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(31% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 2.5rem !important;
+    left: 7%;
+  }
+  .slotlist-team-img img {
+    left: -38px;
+    width: 140px;
+    transform: scale(1);
+    top: 61px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1300px) {
+  .slot-list-carditems {
+    width: calc(25% - 12px) !important;
+    margin: 0 1.5% 55px 4.9% !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(25% - 12px) !important;
+    margin: 0 1.5% 55px 4.9% !important;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1347px) {
+  .slotlist-main-titile h3 {
+    left: 11%;
+  }
+  .slotlist-card-list {
+    margin: 20px -15px;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1347px) {
+
+}
+@media (min-width: 2020px) and (max-width: 2040px) {
+  .slot_match_date {
+    left: 56%;
+    top: 33%;
+  }
+  .slot-list-progress-bar {
+    bottom: 28%;
+  }
+  .slot-list-progress-bar-sd {
+    bottom: 28%;
+  }
+}
