@@ -1,0 +1,394 @@
+.idp-head-bg{
+    height: 87px;
+    background-color: #6BDCFC;
+    color: white;
+    text-align: left;
+}
+.idp-head-bg h1{
+  
+    margin-left: 4rem;
+    text-align: left;
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffff;
+    text-transform: uppercase;
+    left: -19px;
+    top: 8px;
+    
+    position: relative;
+}
+.idp-head-bg h1::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 3rem;
+    background-color: #ffff;
+    left: -19px;
+    top: 10px;
+    opacity: 0.5;
+}
+
+
+
+.myBoolingInfo_wrapper11{
+    width: 100%;
+    margin: 0;
+    /* background-image: url('../../../assets/bab 7.png');  */
+    background-size: cover;
+    /* padding-top: 1rem; */
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.myBoolingInfo_container1{
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 5rem;
+    position: relative;
+}
+.myBoolingInfo_card1{
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 5px #87CEEB;
+    border: 1px solid #87CEEB;
+    border-radius: 10px;
+    height: 400px;
+}
+.myBoolingInfo_card1 h2{
+    margin-top: 1rem;
+    font-weight: 600 !important;
+    color: #4D4D4D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+}
+.Image_flex{
+    display: flex;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 85%;
+    justify-content: space-between;
+}
+.Image_box{
+    width: 44% !important;
+}
+.Image_box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+}
+.text-box{
+    width: 55% !important;
+}
+.text-box_flex_box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    align-items: center !important;
+    margin-bottom: 1rem;
+}
+.p_pool{
+    justify-content: center !important;
+    text-align: center;
+}
+.p_pool h4{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    /* padding-right: 25px !important; */
+}
+.p_pool p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.hori-div{
+    width: 3px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: gray;
+}
+.entry h4{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.entry p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+progress{
+    width: 85%;
+    margin: 0 auto;
+}
+.progresstextflex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.progresstextflex p{
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    margin-top: 5px;
+}
+.timeFlexbox_match{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.my_Date1 h4{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.my_Date1 p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.my_Time1 h4{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.my_Time1 p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.horidiv3{
+    width: 3px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: gray;
+}
+.blue_box{
+    display: flex;
+    background-color: #6BDCFC;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 40%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+.blue_box h4{
+    color: white;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.blue_box p{
+    font-size: 12px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.horidiv2{
+    background-color: white;
+    height: 40px;
+    width: 3px;
+    border-radius: 3px;
+    align-items: center;
+}
+.myi_tournament-rule1{
+    position: absolute;
+    top: 3%;
+    right: 11%;
+    background-color: #87CEEB;
+    border-radius: 50%;
+    color: #035E77;
+    width: 28px;
+    height: 28px;
+}
+
+progress {
+    display: flex;
+    border-radius: 7px;
+    width: 94%;
+    height: 6px;
+    }
+progress[value]::-webkit-progress-bar {
+        background-color: rgb(131, 128, 128);
+        border-radius: 10px;
+    }
+progress[value]::-webkit-progress-value {
+    background-color: #6BDCFC;
+    border-radius: 10px;    
+    }
+
+.idp-link{
+    color: white;
+    text-decoration: none;
+}
+.idp-link:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+
+    @media(max-width:650px){
+        .matches_header_info h1{
+            font-size: 1.3rem;
+        }
+        .myInfo_cancel h1{
+            font-size: 1.4rem;
+            padding-top: 20px;
+        }
+        .myBoolingInfo_container1{
+            width: 98%;
+        }
+        .blue_box h4{
+            font-size: 13px;
+        }
+        .blue_box p{
+            font-size: 10px;
+        }
+        .my_Date1 h4{
+            font-size: 16px;
+        }
+        .my_Date1 p{
+            font-size: 10px;
+        }
+        .my_Time1 h4{
+            font-size: 16px;
+        }
+        .my_Time1 p{
+            font-size: 10px;
+        }
+        .p_pool h4{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .p_pool p{
+            font-size: 10px;
+        }
+        .entry h4{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .entry p{
+            font-size: 10px;
+        }
+        .myBoolingInfo_card1 h2{
+            font-size: 19px;
+        }
+        .p_pool h4{
+            padding-right: 0 !important;
+        }
+        .myBoolingInfo_card1{
+            background-color: white;
+        }
+    }
+
+
+    @media (min-width: 300px) and (max-width: 450px) {
+              
+        .my_Date1 h4 {
+            font-size: 8px;
+            font-weight: 900;
+        }
+        .my_Time1 h4 {
+            font-size: 8px;
+            font-weight: 900;
+        }
+
+        .myBoolingInfo_card1{
+            height: 350px;
+        }
+
+        .myBoolingInfo_container1{
+            height: 450px;
+        }
+    }
+
+
+    @media(max-width:430px){
+        .Image_box img{
+            height: 180px;
+        }
+        .myBoolingInfo_card1{
+            height: 300px !important;
+        }
+        .myBoolingInfo_card1 h2{
+            font-size: 12px;
+            font-weight: 900 !important;
+        }
+        .Image_flex{
+            top: 16%;
+            height: 180px;
+        }
+        .blue_box{
+            bottom: 25%;
+            width: 40% !important;
+        }
+        .hori-div{
+            height: 30px !important;
+        }
+        .horidiv3{
+            height: 30px;
+        }
+        .Image_box{
+            width: 50% !important;
+        }
+        .text-box{
+            width: 50% !important;
+        }
+        .timeFlexbox_match h4{
+            font-weight: 700 !important;
+            font-size: 10px !important;
+        }
+        .text-box_flex_box1 h4{
+            font-weight: 700 !important;
+            font-size: 10px !important;
+        }
+        .progresstextflex p{
+            font-size: 10px;
+        }
+        .text-box_flex_box1{
+            margin-top: 1.8rem;
+        }
+        .matches_header_info h1{
+            font-size: 26px;
+        }
+    }
+   
+    @media (min-width: 1530px) and (max-width: 2004px){
+        .my_Date1 h4 {
+            font-size: 12px;
+            font-weight: 900;
+        }
+        .my_Time1 h4 {
+            font-size: 12px;
+            font-weight: 900;
+        }
+    }
+    @media (min-width: 1000px) and (max-width: 1200px){
+        .my_Date1 h4 {
+            font-size: 12px;
+            font-weight: 900;
+        }
+        .my_Time1 h4 {
+            font-size: 12px;
+            font-weight: 900;
+        }
+    }
+
+    
