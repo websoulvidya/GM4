@@ -202,7 +202,7 @@ export default function Edit_match() {
 
                             </div>
 
-                            <button class="openbtn" type='submit'>Update</button>
+                            <button class="Edit_matches_UpdateBtn" type='submit'>Update</button>
 
                         </fieldset>
                     </form>

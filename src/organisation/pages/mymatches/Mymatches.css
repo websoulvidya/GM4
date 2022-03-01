@@ -28,6 +28,7 @@
         display: flex;
         align-items: center;
         padding-left: 6rem;
+        margin-top: 65px;
     }
 
     .mymatches_headerclip h1 {
@@ -794,6 +795,7 @@
     @media (min-width: 1350px) and (max-width: 1429px) {
         .mymatches_headerclip {
             width: calc(86% - -155px) !important;
+            margin-top: 57px !important;
         }
 
         .mymatches-card {
@@ -1736,6 +1738,7 @@
 
         .mymatches_headerclip {
             width: calc(70% - -110px) !important;
+            margin-top: 55px;
         }
 
         .mymatches_headerclip h1:before {
@@ -2088,6 +2091,7 @@
         .mymatches_headerclip {
             width: -webkit-fill-available !important;
             height: 6rem;
+            margin-top: 55px;
         }
 
         .mymatches_headerclip h1:before {
@@ -2275,6 +2279,7 @@
         .mymatches_headerclip {
             width: -webkit-fill-available !important;
             height: 5rem;
+            margin-top: 57px;
         }
 
         .mymatches_headerclip h1:before {
@@ -2500,7 +2505,7 @@
         }
     }
 
-    .openbtn {
+    .Edit_matches_UpdateBtn {
         width: 100%;
         height: 2.5rem;
         background-color: #6bdcfc;
@@ -2508,6 +2513,7 @@
         border: none;
         border-radius: 6px;
         font-size: 18px;
+        margin-top: 1rem;
     }
 
 
@@ -2655,5 +2661,10 @@
             border-radius: 5px;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    @media (min-width: 400px) and (max-width: 530px) {
+        .mymatches_headerclip{
+            margin-top: 55px;
         }
     }

@@ -15,11 +15,11 @@ body {
 .cancel_headerclip {
     height: 8rem;
     width: -webkit-fill-available;
-    /* width: calc(89% - -81px)!important; */
     background-color: #6BDCFC;
     color: #ffff;
     display: flex;
     align-items: center;
+    margin-top: 64px;
     padding-left: 6rem;
 }
 
@@ -1318,7 +1318,7 @@ progress[value]::-webkit-progress-value {
 
     .cancel-main-titile h3 {
         font-size: 19px;
-        left: 38%;
+        left: 23%;
     }
 
     .cancel-rule {
@@ -1732,6 +1732,7 @@ progress[value]::-webkit-progress-value {
 
     .cancel_headerclip {
         width: calc(70% - -110px) !important;
+        margin-top: 57px;
     }
 
     .cancel_headerclip h1:before {
@@ -1894,6 +1895,7 @@ progress[value]::-webkit-progress-value {
     .cancel_headerclip {
         width: -webkit-fill-available;
         height: 7rem;
+        margin-top: 57px;
     }
 
     .cancel_headerclip h1:before {
@@ -2050,6 +2052,7 @@ progress[value]::-webkit-progress-value {
     .cancel_headerclip {
         width: -webkit-fill-available;
         height: 6rem;
+        margin-top: 57px;
     }
 
     .cancel_headerclip h1:before {
@@ -2205,6 +2208,7 @@ progress[value]::-webkit-progress-value {
     .cancel_headerclip {
         width: -webkit-fill-available;
         height: 6rem;
+        margin-top: 57px;
     }
 
     .cancel_headerclip h1:before {

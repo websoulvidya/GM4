@@ -800,6 +800,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .idp_header {
+    margin-top: 65px;
     height: 8rem;
     width: -webkit-fill-available;
     background-color: #6BDCFC;
@@ -1444,6 +1445,7 @@ input:hover {
     }
     .idp_header{
         left: -36px !important;
+        margin-top: 57px;
     }
     
 }
@@ -1454,4 +1456,48 @@ input:focus{
 
 .idp_page_main{
     overflow: hidden;
+}
+
+/* media query */
+@media (min-width: 531px) and (max-width: 599px) {
+    .idp_header{
+        margin-top: 57px;
+    }
+    
+}
+
+@media (min-width: 361px) and (max-width: 399px) {
+    .idp_header{
+        margin-top: 57px;
+    }
+    
+}
+@media (min-width: 300px) and (max-width: 360px) {
+    .idp_header{
+        margin-top: 57px;
+    }
+    
+}
+@media (min-width: 1350px) and (max-width: 1429px) {
+    .mymatches-time-section{
+        right: 19%;
+    }
+    .mymatches-time-section span::after{
+        left: 6% !important;
+    }
+    .mymatches-time-section h6{
+        font-size: 10px !important;
+    }
+    .mymatches-time-section span{
+        font-size: 10px !important;
+    }
+    .mymatches-time-section .match-time{
+        font-size: 12px !important;
+    }
+    .mymatches-time-section .idp-time{
+        font-size: 12px !important;
+    }
+    .mymatches-main-titile h3{
+        left: 13%;
+    }
 }
