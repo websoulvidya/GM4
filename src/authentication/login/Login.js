@@ -8,7 +8,9 @@
 // import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 // import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 // import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
+
 // import { useForm } from 'react-hook-form';
+
 // const blue = {
 //   50: '##6BDCFC',
 //   100: '#C2E0FF',
@@ -21,6 +23,7 @@
 //   800: '#004C99',
 //   900: '#003A75',
 // };
+
 // const Tab = styled(TabUnstyled)`
 //   font-family: IBM Plex Sans, sans-serif;
 //   color: black;
@@ -38,30 +41,36 @@
 //   border: 1px solid #6BDCFC;
 //   height:55px;
   
+
 //   // &:hover {
 //   //   background-color: ${blue[500]};
 //   // }
+
 //   &:focus {
 //     color: #fff;
 //     border-radius: 1px;
 //     outline: 2px solid ${blue[200]};
 //     outline-offset: 2px;
 //   }
+
 //   &.${tabUnstyledClasses.selected} {
 //     background-color: #6BDCFC;
 //     color: white;
 //   }
+
 //   &.${buttonUnstyledClasses.disabled} {
 //     opacity: 0.5;
 //     cursor: not-allowed;
     
 //   }
 // `;
+
 // const TabPanel = styled(TabPanelUnstyled)`
 //   width: 100%;
 //   font-family: IBM Plex Sans, sans-serif;
 //   font-size: 0.875rem;
 // `;
+
 // const TabsList = styled(TabsListUnstyled)`
 //   min-width: 200px;
 //   background-color: ${blue[500]};
@@ -72,6 +81,10 @@
 //   justify-content: center;
 //   align-content: space-between;
 // `;
+
+
+
+
 // function Login() {
 //   const { register, handleSubmit, watch, formState: { errors }, reset} = useForm();
 //   const onSubmit = (data) =>{
@@ -84,49 +97,52 @@
 //         <Homeheader/>
 //         {/* tab section organiser */}
 //         <TabsUnstyled className='log' defaultValue={0}>
-//       <TabsList className='container-log'>
+//       <TabsList className='container-login'>
 //         <Tab>Organiser</Tab>
 //         <Tab>User</Tab>
        
 //       </TabsList>
-//       <TabPanel value={0}> <div class="container-log">
+//       <TabPanel value={0}> <div className="container-login">
+
 //         {/* organiser form   */}
 //   <form id="contact" onSubmit={handleSubmit(onSubmit)} >
     
-//     <fieldset>
+//     <fieldset id='field-style'>
 //       <input placeholder="Your Email Address" type="email" tabindex="1" name='email' {...register("email", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.email && (<span className='errormsgleft1'>{errors.email.message}</span>)}
 //     </fieldset>
 //     {/* <p className='errormsgleft'>{errors.email?.message}</p> */}
-//     <fieldset>
+//     <fieldset id='field-style'>
 //       <input placeholder="Password" type="password" tabindex="2" name='password'  {...register("password", { required: "** Password is Required" })}  autoComplete='off'/>  {errors.password && (<span className='errormsgleft2'>{errors.password.message}</span>)}
       
 //     </fieldset>
-//     <fieldset>
+//     <fieldset id='field-style'>
 //       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">LOGIN</button>
 //     </fieldset>
     
-//   <p  class="copyright">    <a href="/forgotpassword" > Forgot Password</a> <a href="/signup" title="Colorlib"> <span className='user-signup'>New user? Sign Up</span> </a></p>
+//   <p  className="copyright">    <a href="/forgotpassword" > Forgot Password</a> <a href="/signup" title="Colorlib"> <span className='user-signup'>New user? Sign Up</span> </a></p>
 //   </form>
 // </div></TabPanel>
+
+
 //       <TabPanel value={1}>
-//       <div class="container">  
+//       <div className="container-login">  
 //       {/* user form section */}
 //   <form id="contact" onSubmit={handleSubmit(onSubmit)}>
    
     
-//     <fieldset>
+//     <fieldset id='field-style'>
     
 //       <input  placeholder="Your Email Address" type="email" tabindex="1" r name='email' {...register("email", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.email && (<span className='errormsgleft1'>{errors.email.message}</span>)}
 //     </fieldset>
-//     <fieldset >
+//     <fieldset id='field-style' >
 //       <input placeholder="Password" type="password" tabindex="2" name='password'  {...register("password", { required: "** Password is Required" })}  autoComplete='off'/>  {errors.password && (<span className='errormsgleft2'>{errors.password.message}</span>)}
 //     </fieldset>
-//     <fieldset>
+//     <fieldset id='field-style'>
 //       <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending">LOGIN</button>
 //     </fieldset  >
     
     
-//     <p  class="copyright">    <a href="/forgotpassword" > Forgot Password</a> <a href="/signup"  > <span className='user-signup'>New user? Sign Up</span> </a></p>
+//     <p  className="copyright">    <a href="/forgotpassword" > Forgot Password</a> <a href="/signup"  > <span className='user-signup'>New user? Sign Up</span> </a></p>
     
     
   
@@ -139,4 +155,5 @@
 //     </div>
 //   )
 // }
+
 // export default Login

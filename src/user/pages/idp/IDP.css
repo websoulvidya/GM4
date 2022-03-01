@@ -3,6 +3,7 @@
     background-color: #6BDCFC;
     color: white;
     text-align: left;
+    margin-top: 3rem;
 }
 .idp-head-bg h1{
   
@@ -79,10 +80,10 @@
     width: 100% !important;
     border-radius: 10px;
 }
-.text-box{
+.text-box1{
     width: 55% !important;
 }
-.text-box_flex_box1{
+.text-box_flex_box111{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -90,18 +91,18 @@
     align-items: center !important;
     margin-bottom: 1rem;
 }
-.p_pool{
+.p_pool1{
     justify-content: center !important;
     text-align: center;
 }
-.p_pool h4{
+.p_pool1 h4{
     margin: 0 !important;
     padding: 0 !important;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     /* padding-right: 25px !important; */
 }
-.p_pool p{
+.p_pool1 p{
     margin: 0 !important;
     padding: 0 !important;
     font-weight: 600;
@@ -129,18 +130,18 @@ progress{
     width: 85%;
     margin: 0 auto;
 }
-.progresstextflex{
+.progresstextflex1{
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
-.progresstextflex p{
+.progresstextflex1 p{
     font-size: 14px;
     font-weight: 500;
     color: gray;
     margin-top: 5px;
 }
-.timeFlexbox_match{
+.timeFlexbox_match11{
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -170,13 +171,13 @@ progress{
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
 }
-.horidiv3{
+.horidiv3k{
     width: 3px;
     height: 50px;
     border-radius: 3px;
     background-color: gray;
 }
-.blue_box{
+.blue_box11{
     display: flex;
     background-color: #6BDCFC;
     color: white;
@@ -190,25 +191,25 @@ progress{
     align-items: center;
     height: 5rem;
 }
-.blue_box h4{
+.blue_box11 h4{
     color: white;
     text-align: center;
     margin: 0 !important;
     padding: 0 !important;
 }
-.blue_box p{
+.blue_box11 p{
     font-size: 12px;
     padding: 0 !important;
     margin: 0 !important;
 }
-.horidiv2{
+.horidiv2k{
     background-color: white;
     height: 40px;
     width: 3px;
     border-radius: 3px;
     align-items: center;
 }
-.myi_tournament-rule1{
+.myi_tournament-rule11{
     position: absolute;
     top: 3%;
     right: 11%;
@@ -255,10 +256,10 @@ progress[value]::-webkit-progress-value {
         .myBoolingInfo_container1{
             width: 98%;
         }
-        .blue_box h4{
+        .blue_box11 h4{
             font-size: 13px;
         }
-        .blue_box p{
+        .blue_box11 p{
             font-size: 10px;
         }
         .my_Date1 h4{
@@ -273,11 +274,11 @@ progress[value]::-webkit-progress-value {
         .my_Time1 p{
             font-size: 10px;
         }
-        .p_pool h4{
+        .p_pool1 h4{
             font-size: 16px;
             font-weight: 600;
         }
-        .p_pool p{
+        .p_pool1 p{
             font-size: 10px;
         }
         .entry h4{
@@ -290,7 +291,7 @@ progress[value]::-webkit-progress-value {
         .myBoolingInfo_card1 h2{
             font-size: 19px;
         }
-        .p_pool h4{
+        .p_pool1 h4{
             padding-right: 0 !important;
         }
         .myBoolingInfo_card1{
@@ -335,34 +336,34 @@ progress[value]::-webkit-progress-value {
             top: 16%;
             height: 180px;
         }
-        .blue_box{
+        .blue_box11{
             bottom: 25%;
             width: 40% !important;
         }
         .hori-div{
             height: 30px !important;
         }
-        .horidiv3{
+        .horidiv3k{
             height: 30px;
         }
         .Image_box{
             width: 50% !important;
         }
-        .text-box{
+        .text-box1{
             width: 50% !important;
         }
-        .timeFlexbox_match h4{
+        .timeFlexbox_match11 h4{
             font-weight: 700 !important;
             font-size: 10px !important;
         }
-        .text-box_flex_box1 h4{
+        .text-box_flex_box111 h4{
             font-weight: 700 !important;
             font-size: 10px !important;
         }
-        .progresstextflex p{
+        .progresstextflex1 p{
             font-size: 10px;
         }
-        .text-box_flex_box1{
+        .text-box_flex_box111{
             margin-top: 1.8rem;
         }
         .matches_header_info h1{

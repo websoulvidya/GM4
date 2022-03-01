@@ -22,9 +22,9 @@ function IDP() {
                             <div className="Image_box">
                                 <img src={img1} alt="fleximage" />
                             </div>
-                            <div className="text-box">
-                                <div className="text-box_flex_box1">
-                                    <div className="p_pool">
+                            <div className="text-box1">
+                                <div className="text-box_flex_box111">
+                                    <div className="p_pool1">
                                         <h4>ORGANISER NAME</h4>
                                         {/* <p>300</p> */}
                                     </div>
@@ -36,7 +36,7 @@ function IDP() {
                                     </div> */}
                                 </div>
                                 <progress value="3333" max="10000"></progress>
-                                <div className="progresstextflex">
+                                <div className="progresstextflex1">
                                     <div>
                                         <p>100 joined</p>
                                     </div>
@@ -44,12 +44,12 @@ function IDP() {
                                         <p>400 spot left</p>
                                     </div>
                                 </div>
-                                <div className="timeFlexbox_match">
+                                <div className="timeFlexbox_match11">
                                     <div className="my_Date1">
                                         <h4>MATCH DATE</h4>
                                         <p>06/05/2022</p>
                                     </div>
-                                    <div className="horidiv3"></div>
+                                    <div className="horidiv3k"></div>
                                     <div className="my_Time1">
                                         <h4>MATCH TIME</h4>
                                         <p>2:30pm</p>
@@ -58,18 +58,18 @@ function IDP() {
                             </div>
                         </div>
                     </div>
-                    <div className="blue_box">
+                    <div className="blue_box11">
                         <div>
                             <h4>IDP TIME</h4>
                             <p>9:00am</p>
                         </div>
-                        <div className="horidiv2"></div>
+                        <div className="horidiv2k"></div>
                         <div>
                         <h4>  <a className='idp-link' href="/viewidp" > VIEW IDP</a></h4>
                          
                         </div>
                     </div>
-                    <div className='myi_tournament-rule1'>
+                    <div className='myi_tournament-rule11'>
                         <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -82,9 +82,9 @@ function IDP() {
                             <div className="Image_box">
                             <img src={img1} alt="fleximage" />
                             </div>
-                            <div className="text-box">
-                                <div className="text-box_flex_box1">
-                                    <div className="p_pool">
+                            <div className="text-box1">
+                                <div className="text-box_flex_box111">
+                                    <div className="p_pool1">
                                         <h4>ORGANISER NAME</h4>
                                         {/* <p>300</p> */}
                                     </div>
@@ -96,7 +96,7 @@ function IDP() {
                                     </div> */}
                                 </div>
                                 <progress value="3333" max="10000"></progress>
-                                <div className="progresstextflex">
+                                <div className="progresstextflex1">
                                     <div>
                                         <p>100 joined</p>
                                     </div>
@@ -104,12 +104,12 @@ function IDP() {
                                         <p>400 spot left</p>
                                     </div>
                                 </div>
-                                <div className="timeFlexbox_match">
+                                <div className="timeFlexbox_match11">
                                     <div className="my_Date1">
                                         <h4>MATCH DATE</h4>
                                         <p>06/05/2022</p>
                                     </div>
-                                    <div className="horidiv3"></div>
+                                    <div className="horidiv3k"></div>
                                     <div className="my_Time1">
                                         <h4>MATCH TIME</h4>
                                         <p>2:30pm</p>
@@ -118,18 +118,18 @@ function IDP() {
                             </div>
                         </div>
                     </div>
-                    <div className="blue_box">
+                    <div className="blue_box11">
                         <div>
                             <h4>IDP TIME</h4>
                             <p>9:00am</p>
                         </div>
-                        <div className="horidiv2"></div>
+                        <div className="horidiv2k"></div>
                         <div>
                             <h4>  <a className='idp-link' href="/viewidp" > VIEW IDP</a></h4>
                             {/* <p>Scrim</p> */}
                         </div>
                     </div>
-                    <div className='myi_tournament-rule1'>
+                    <div className='myi_tournament-rule11'>
                         <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -142,9 +142,9 @@ function IDP() {
                             <div className="Image_box">
                             <img src={img1} alt="fleximage" />
                             </div>
-                            <div className="text-box">
-                                <div className="text-box_flex_box1">
-                                    <div className="p_pool">
+                            <div className="text-box1">
+                                <div className="text-box_flex_box111">
+                                    <div className="p_pool1">
                                         <h4>ORGANISER NAME</h4>
                                     </div>
                                     {/* <div className="hori-div">
@@ -155,7 +155,7 @@ function IDP() {
                                     </div> */}
                                 </div>
                                 <progress value="3333" max="10000"></progress>
-                                <div className="progresstextflex">
+                                <div className="progresstextflex1">
                                     <div>
                                         <p>100 joined</p>
                                     </div>
@@ -163,12 +163,12 @@ function IDP() {
                                         <p>400 spot left</p>
                                     </div>
                                 </div>
-                                <div className="timeFlexbox_match">
+                                <div className="timeFlexbox_match11">
                                     <div className="my_Date1">
                                         <h4>MATCH DATE</h4>
                                         <p>06/05/2022</p>
                                     </div>
-                                    <div className="horidiv3"></div>
+                                    <div className="horidiv3k"></div>
                                     <div className="my_Time1">
                                         <h4>MATCH TIME</h4>
                                         <p>2:30pm</p>
@@ -177,18 +177,18 @@ function IDP() {
                             </div>
                         </div>
                     </div>
-                    <div className="blue_box">
+                    <div className="blue_box11">
                         <div>
                             <h4>IDP TIME</h4>
                             <p>9:00am</p>
                         </div>
-                        <div className="horidiv2"></div>
+                        <div className="horidiv2k"></div>
                         <div>
                         <h4>  <a className='idp-link' href="/viewidp" > VIEW IDP</a></h4>
                             {/* <p>Scrim</p> */}
                         </div>
                     </div>
-                    <div className='myi_tournament-rule1'>
+                    <div className='myi_tournament-rule11'>
                         <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
                     </div>
                 </div>

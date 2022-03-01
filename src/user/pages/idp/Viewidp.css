@@ -1,161 +1,165 @@
 .view-idp{
-    background-image: url("../../../user/assets/bgtt.png");
+  background-image: url("../../../user/assets/bgtt.png");
 }
 
 
 .view-idp-container{
-    
-    width: 35%;
-    /* margin: 0 auto; */
-    margin-top: 8rem;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px #87ceeb;
-    border: 1px solid #87CEEB;
-    border-radius: 10px;
-    height: 200px;
+  
+  width: 35%;
+  /* margin: 0 auto; */
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px #87ceeb;
+  border: 1px solid #87CEEB;
+  border-radius: 10px;
+  height: 200px;
 }
 
 .id h5{
-    color: gray;
-    margin: 0 !important;
+  color: gray;
+  margin: 0 !important;
 }
-
+/* .idp-pass h3{
+ 
+} */
 .idp-id{
-    font-weight: 600;
-    color: black !important;
-    padding-top: 1rem !important;
+  font-weight: 600;
+  color: black !important;
+  padding-top: 1rem !important;
 }
 .idp-pass{
-    font-weight: 600;
-    color: black !important;
-    padding-top: 3rem !important;
+  font-weight: 600;
+  color: black !important;
+  padding-top: 3rem !important;
 }
 .social-text{
-  width: 35%;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
+width: 35%;
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1rem;
 }
 .social-icons{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    margin-top: 1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 1rem;
 }
 
 .social-icons h4{
-  margin-left: 6rem;
+margin-left: 6rem;
 }
 .icon-section{
-    font-size: 2rem;
-    
-    
+  font-size: 2rem;
+  
+  
 }
 
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  white-space: nowrap;
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+white-space: nowrap;
 }
 
 
 
 .svg-inline--fa {
-  vertical-align: -0.200em;
+vertical-align: -0.200em;
 }
 
- .rounded-social-buttons {
-  text-align: center;
+.rounded-social-buttons {
+text-align: center;
+display:flex;
+margin-left:30%;
 } 
-   
+ 
 .rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 1.25rem;
-  margin-bottom: 0.25rem;
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 3.125rem;
+height: 3.125rem;
+
+padding: 0;
+text-decoration: none;
+text-align: center;
+color: #fefefe;
+font-size: 1.5625rem;
+font-weight: normal;
+line-height: 2em;
+border-radius: 1.6875rem;
+transition: all 0.5s ease;
+margin-right: 1.25rem;
+margin-bottom: 0.25rem;
 }
 
 
 
 .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
+font-size: 25px;
 }
 
 .rounded-social-buttons .social-button.facebook {
-  background: #25D366;
+background: #25D366;
 }
 
 
 
 .rounded-social-buttons .social-button.twitter {
-  background: #7289DA;
+background: #7289DA;
 }
 
 
 
 .rounded-social-buttons .social-button.linkedin {
-  background:#bb0000;
+background:#bb0000;
 }
 
 
 
 .rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
+background: #bb0000;
 }
 
 
 
 .rounded-social-buttons .social-button.instagram {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 
 @media(max-width:1240px){
-   
-  .view-idp-container{
-      width: 45%;
-  }
-  .social-text{
+ 
+.view-idp-container{
     width: 45%;
-  }
-  .icon-section{
-      font-size: 1.5rem;
-  }
-  .social-icons{
-      width: 85%;
-     
-  }
-  
+}
+.social-text{
+  width: 45%;
+}
+.icon-section{
+    font-size: 1.5rem;
+}
+.social-icons{
+    width: 85%;
+   
+}
+
 }
 
 
@@ -166,24 +170,24 @@ textarea {
 
 
 @media(max-width:600px){
-   
-    .view-idp-container{
-        width: 85%;
-    }
-    .social-text{
+ 
+  .view-idp-container{
       width: 85%;
-      text-align: center;
-    }
-    .icon-section{
-        font-size: 1.5rem;
-    }
-    .social-icons{
-        width: 85%;
-      
-    }
-    .view-idp{
-      background-image: none;
-    }
+  }
+  .social-text{
+    width: 85%;
+    text-align: center;
+  }
+  .icon-section{
+      font-size: 1.5rem;
+  }
+  .social-icons{
+      width: 85%;
     
-   
+  }
+  .view-idp{
+    background-image: none;
+  }
+  
+ 
 }

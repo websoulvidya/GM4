@@ -38,13 +38,15 @@ function Viewidp() {
              <i class="fab fa-linkedin"></i>
              </div>  */}
 
-<div class="rounded-social-buttons">
+              <div class="rounded-social-buttons">
                     <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-discord"></i></a>
                     <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-google"></i></a>
                     <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
              </div>
+
+             <Footer/>
 
     </div>
   )
