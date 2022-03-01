@@ -1,0 +1,461 @@
+body{
+    margin:auto;
+    font-family:open sans;
+    overflow-x: hidden;
+    
+  
+}
+
+.circles{
+    background-repeat:no-repeat;
+    background-image: url("../../assets/Scrims/bgcirclenew.png");
+    
+ 
+}
+/* .regheader:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 88px;
+    top: 26px;
+    opacity: 0.5;
+}
+.regheader{
+    background-color: #6bdcfc;
+    padding: 30px;
+    color: white;
+    text-align: left;
+    padding-left: 7%;
+} */
+
+.scrims_regheaderclip {
+    height: 8rem;
+    width:99%;
+    /* width: calc(89% - -81px)!important; */
+    background-color: #6BDCFC;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width : 360px){
+    .scrims_regheaderclip {
+        width: calc(51% - -79px)!important;
+    
+    }
+}
+@media only screen and (min-device-width: 361px) and (max-device-width : 399px){
+    .scrims_regheaderclip {
+        width: calc(56% - -80px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 400px) and (max-device-width : 532px){
+    .scrims_regheaderclip {
+        width: calc(69% - -68px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 533px) and (max-device-width : 599px){
+    .scrims_regheaderclip {
+        width: calc(71% - -78px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width : 767px){
+    .scrims_regheaderclip {
+        width: calc(71% - -126px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width : 899px){
+    .scrims_regheaderclip {
+        width: calc(78% - -110px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 900px) and (max-device-width : 1023px){
+    .scrims_regheaderclip {
+        width: calc(79% - -126px)!important;
+
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width : 1133px){
+    .scrims_regheaderclip {
+        width: calc(81% - -124px)!important;
+    }
+}
+@media only screen and (min-device-width: 1134px) and (max-device-width : 1279px){
+    .scrims_regheaderclip {
+        width: calc(81% - -158px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 1280px) and (max-device-width : 1349px){
+    .scrims_regheaderclip {
+        width: calc(81% - -158px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 1350px) and (max-device-width : 1429px){
+    .scrims_regheaderclip {
+        width: calc(82% - -170px)!important;
+    }
+}
+@media only screen and (min-device-width: 1430px) and (max-device-width : 1550px){
+    .scrims_regheaderclip {
+        width: calc(84% - -158px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 1551px) and (max-device-width : 1628px){
+    .scrims_regheaderclip {
+          width: calc(84% - -173px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 1629px) and (max-device-width : 1780px){
+    .scrims_regheaderclip {
+        width: calc(85% - -163px)!important;
+
+    }
+}
+@media only screen and (min-device-width: 1781px) and (max-device-width : 1836px){
+    .scrims_regheaderclip {
+        width: 100%
+
+    }
+}
+.scrims_regheaderclip h1{
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffff;
+    text-transform: uppercase;
+    left: -19px;
+    top: 8px;
+    
+    position: relative;
+}
+.scrims_regheaderclip h1:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: -19px;
+    top: 0%;
+    opacity: 0.5;
+
+}
+.joinhead{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.scrimregbtn {
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+    bottom: -59px;
+    position: relative;
+}
+.scrimregbtn:hover{
+    cursor: pointer;
+}
+.reginput{
+    display:inline-block;
+}
+.uk-input,.uk-select{
+    border-radius: 5px !important;
+}
+.uk-input:hover, .uk-select:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-input:focus , .uk-select:focus{
+    border: 1px solid #6bdcfc !important;
+}
+.uk-margin {
+    margin-bottom: 4px !important;
+}
+.regform{
+    margin-left: 22%;
+    border: 1px solid #6bdcfc;
+    padding: 20px;
+    width:50%;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #ffff;
+    height: 670px;
+    position: relative;
+    top:20px;
+}
+
+
+/* slotlist */
+.slot_dropdown{
+    position: relative;
+    border: 1px solid;
+    width:calc(50% - 30px);
+    border-radius: 5px;
+    border: solid 1px #e9e3e3;
+    left: 15px;
+    height: 39px;
+    margin-top: 20px!important;
+    user-select: none;
+    cursor: pointer;
+  }
+  .slot_btn{
+    margin: 0;
+    position: relative;
+    top: 7px;
+    left: -40%;
+    color: #979393;
+    cursor: pointer;
+  }
+  .slotlist_content{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+    left: 0px;
+    color: #979393;
+    margin-top: 20px!important;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .slotlist_item{
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    transition: all 0.2s;
+    left: 44%;
+  }
+
+  .slotlist_item:hover{
+   
+    background-color: #ffff
+  }
+  .selectdownicon{
+    position: absolute;
+    right: -35%;
+    top: 4px;
+  }
+  @media (min-width: 100px) {
+    .slot_dropdown {
+        width:calc(100% - 30px);
+    }
+  }
+  @media (min-width: 640px) {
+    .slot_dropdown {
+        width:calc(50% - 30px);
+    }
+
+  }
+  @media (min-width: 992px) {
+    .slot_dropdown {
+        width:calc(50% - 30px);
+    }
+  }
+  @media (min-width: 1200px) {
+    .slot_dropdown{
+      width:calc(50% - 30px);
+    }
+  }
+
+/*  */
+
+@media only screen and (min-device-width: 100px)and (max-device-width : 640px) {
+    .openbtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .slotlistbtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .closebtn{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .regform{
+        width: 60%;
+        margin-left: 15%;
+        height: 1007px;
+        
+    } 
+
+    .scrims_regheaderclip h1{
+   
+        font-size: 35px;
+    }
+    .scrims_regheaderclip h1:before {
+        height: 3rem;
+        
+    }
+}
+
+@media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .regform{
+        width: 65%;
+        margin-left: 15%;
+    }
+    .openbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .slot_btn {
+        left: -32%;
+     
+    }
+    .selectdownicon {
+        right: -26%;
+       
+    }
+
+    .scrims_regheaderclip h1{
+   
+        font-size: 35px;
+    }
+    .scrims_regheaderclip h1:before {
+        height: 3rem;
+        
+    }
+}
+
+@media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    #circle2{
+        width: 30%;
+        margin-left: 10%;
+        max-width: 100%;
+    }
+ 
+    .scrimregbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+ 
+    .scrims_regheaderclip h1{
+   
+        font-size: 45px;
+    }
+    .scrims_regheaderclip h1::before{
+    height: 3.5rem;
+    top: 2px;
+    }
+    /* .circles{
+        background-image: none;
+    } */
+    .smallcircles{
+        background-repeat:no-repeat;
+        background-image: url("../../assets/Scrims/bgcirclenew.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-device-width: 1101px) and (max-device-width : 1300px){
+  
+    .scrimregbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        left: 55px;
+        top: 28px;
+       
+    } 
+}
+@media only screen and (min-device-width: 1301px) and (max-device-width : 1500px){
+  
+    .scrimregbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        left: 55px;
+        top: 28px;
+       
+    } 
+}
+@media only screen and (min-device-width: 1501px) and (max-device-width : 1599px){
+  
+    .scrimregbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .regheader:before{
+        left: 55px;
+        top: 28px;
+       
+    } 
+}
+@media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
+    .regform{
+        width: 40%;
+        margin-left: 27%;
+    }
+    .regheader:before{
+        left: 66px;
+        top: 28px;
+       
+    } 
+}
+
+@media only screen and (min-device-width : 2400px) and (max-width : 2800px){
+    .regform{
+        width: 35%;
+        margin-left: 30%;
+    }
+
+
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .circles{
+        background-repeat:no-repeat;
+        background-image: url("../../assets/Scrims/bgcirclenew.png");
+        background-size: 2560px 1200px;
+    }
+    .regheader:before{
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 4rem;
+        background-color: #ffff;
+        left: 130px;
+        top: 50px;
+        opacity: 0.5;
+    } 
+}
