@@ -36,6 +36,9 @@ import Openrooms from "../user/pages/openrooms/Openrooms";
 import Tournamentreg from '../user/pages/tournament/Tournamentreg';
 import Tourpayment from '../user/pages/tournament/Tourpayment';
 
+import Viewidp from '../user/pages/idp/Viewidp';
+
+
 
 
 
@@ -55,14 +58,19 @@ import Adspayment from "../organisation/pages/adspayment/Adspayment";
 
 
 import Addtournament from '../organisation/pages/addtournaments/Addtournament';
+import Tournamentlist  from '../organisation/pages/addtournaments/Tournamentlist';
 import Addscrims from "../organisation/pages/addscrims/Addscrims";
+import Addslotlist from "../organisation/pages/addscrims/Slotlistadd";
+
 import Adddailymatch from "../organisation/pages/adddailymatches/Adddailymatches";
 import Addopenrooms from "../organisation/pages/addopenrooms/Addopenrooms";
 import Dailymatchslotlist from "../organisation/pages/adddailymatches/Dailymatchslotlist";
 
 import Edit_match from '../../src/organisation/pages/mymatches/Edit_match'
 import View_page from '../../src/organisation/pages/cancellation/view_page'
-import Idp_page from '../../src/organisation/pages/sendidp/Idp_page'
+import Idp_page from '../../src/organisation/pages/sendidp/Idp_page';
+
+import Orgpayment from '../../src/organisation/pages/orgpayment/Orgpayment';
 
 
 
@@ -117,6 +125,9 @@ export default function Navigate() {
       <Route path="/dailymatch" element={<Dailymatch />}/>
       <Route path="/openrooms" element={<Openrooms />}/>
 
+      <Route path="/viewidp" element={<Viewidp/>}/>
+
+
 
 
 
@@ -132,14 +143,21 @@ export default function Navigate() {
     <Route path="/mymatches" element={<Mymatches />}/>
     <Route path="/cancellation" element={<Cancellation />}/>
     <Route path="/addtournament" element={<Addtournament />}/>
+    <Route path="/Tournamentlist" element={<Tournamentlist />}/>
     <Route path="/addscrims" element={<Addscrims />}/>
+    <Route path="/Slotlistadd" element={<Addslotlist />}/>
+
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>
     <Route path="/dailymatchslotlist" element={<Dailymatchslotlist />}/>
+    <Route path="/advertisement" element={<Advertisement />} />
+    <Route path="/ads_payment" element={<Adspayment />} />
 
     <Route path="/edit_match" element={<Edit_match />} />
     <Route path="/view_page" element={<View_page />}/>
     <Route path="/idp_page" element={<Idp_page />} />
+
+    <Route path="/Org_payment" element={<Orgpayment />}/>
 
 
 
