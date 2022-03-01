@@ -43,7 +43,7 @@ function Openrooms() {
 
   return(
     <div>
-      {/* <Userheader/> */}
+      <Userheader/>
       <div className='openroom-main-wrapper'>
       <div className='openroom_headerclip'>
         <h1>Open Rooms </h1>
@@ -268,7 +268,7 @@ function Openrooms() {
         </div>
 
       </div>
-      {/* <Footer /> */}
+      <Footer />
   </div>
   );
 

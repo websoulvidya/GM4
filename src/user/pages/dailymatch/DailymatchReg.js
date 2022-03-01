@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useForm } from 'react-hook-form';
 import "../../pages/dailymatch/DailymatchReg.css"
-import Selectarrowimg from "../../assets/DailyMatch/select-option.svg"
+import Userheader from '../../components/userheader/Userheader';
+import Footer from '../../components/footer/Footer';
 
-import AnimatedPage from "../AnimatedPage"
 
 function DailymatchReg() {
 
@@ -21,9 +21,9 @@ function DailymatchReg() {
   const [setected, setSelected] = useState("Select Slot");
   const options = ["Slot 1", "Slot 2", "Slot 3"];
   return (
-    <AnimatedPage>
+  
       <div>
-        {/* <Userheader/> */}
+        <Userheader/>
         <div className="circles" style={{overflowX:"hidden"}}>
         <div className='dailymatch_regheaderclip'>
         <h1>Registration</h1>
@@ -138,9 +138,9 @@ function DailymatchReg() {
 
           </div>
         </div>   <br />
-        {/* <Footer /> */}
+        <Footer />
       </div>
-    </AnimatedPage>
+  
   )
 }
 

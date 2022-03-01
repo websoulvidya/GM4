@@ -3,8 +3,7 @@ import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import "../../pages/dailymatch/Dailymatch.css"
 import DailyImg from "../../assets/DailyMatch/dailymatch.jpeg"
-import { AnimatePresence} from "framer-motion"
-import AnimatedPage from "../AnimatedPage";
+
 
 import DailymatchReg from '../dailymatch/DailymatchReg';
 import {BrowserRouter as Router,  Routes,Link,  Route, useLocation} from "react-router-dom";
@@ -31,20 +30,20 @@ function Dailymatch() {
   const handleClose = () => setOpen(false);
 
   const location = useLocation();
-  <AnimatePresence exitBeforeEnter>
+ 
   <Router >
     <Link to="/Dailymatch/DailymatchReg" ></Link>
-      <Routes location={location} key={location.pathname}>
+      <Routes>
             <Route exact path="/dailymatch" component={Dailymatch}></Route>
             <Route  path="/dailymatch/dailymatchreg" component={DailymatchReg}></Route>
       </Routes>
   </Router>
-  </AnimatePresence>
+  
 
   return(
-   <AnimatedPage>
+  
     <div>
-      {/* <Userheader/> */}
+      <Userheader/>
       <div className='dailymatch-main-wrapper'>
       <div className='dailymatch_headerclip'>
         <h1>Daily Match </h1>
@@ -289,9 +288,9 @@ function Dailymatch() {
         </div>
 
       </div>
-      {/* <Footer /> */}
+      <Footer />
   </div>
-  </AnimatedPage>
+  
   );
 
 }

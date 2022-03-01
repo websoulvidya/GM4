@@ -1,8 +1,11 @@
 import React from 'react'
 import "../../pages/openrooms/OpenroomIDP.css"
+import Userheader from '../../components/userheader/Userheader';
+import Footer from '../../components/footer/Footer';
 function OpenroomIDP() {
     return (
-        <div> {/* <Userheader/> */}
+        <div> 
+            <Userheader/>
             <div className='openidp-main-wrapper'>
                 <div className='openidp_headerclip'>
                     <h1>IDP page</h1>
@@ -35,7 +38,7 @@ function OpenroomIDP() {
             </div>
 
 
-            {/* <Footer /> */}</div>
+            <Footer /></div>
     )
 }
 

@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import "../../pages/scrims/ScrimsReg.css"
-import AnimatedPage from "../AnimatedPage"
+
 
 function ScrimsReg() {
   const { register, handleSubmit, formState: { errors }, reset} = useForm();
@@ -19,9 +19,9 @@ function ScrimsReg() {
   const [setected, setSelected] = useState("Select Slot");
   const options = ["Slot 1", "Slot 2", "Slot 3"];
   return (
-  <AnimatedPage>
+ 
     <div>
-    {/* <Userheader/> */}
+    <Userheader/>
     <div className="circles" style={{overflowX:"hidden"}}>
     <div className='scrims_regheaderclip'>
         <h1>Registration</h1>
@@ -136,9 +136,9 @@ function ScrimsReg() {
 
       </div>
     </div>   <br />
-    {/* <Footer /> */}
+    <Footer />
   </div>
-  </AnimatedPage>
+
     );
 }
 export default ScrimsReg;

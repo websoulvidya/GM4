@@ -3,8 +3,7 @@ import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import ScrimImg from "../../assets/Scrims/scrims.jpeg";
 import "../../pages/scrims/Scims.css"
-import { AnimatePresence} from "framer-motion"
-import AnimatedPage from "../AnimatedPage";
+
 import {BrowserRouter as Router,  Routes,Link,  Route, useLocation} from "react-router-dom";
 import ScrimsReg from './ScrimsReg';
 
@@ -30,20 +29,20 @@ function Scrims() {
   const handleClose = () => setOpen(false);
 
 
- const location = useLocation();
-  <AnimatePresence exitBeforeEnter>
+
+ 
   <Router >
     <Link to="/scrims/scrimsreg" ></Link>
-      <Routes location={location} key={location.pathname}>
+      <Routes>
             <Route exact path="/scrims" component={Scrims}></Route>
             <Route  path="/scrims/scrimsreg" component={ScrimsReg}></Route>
       </Routes>
   </Router>
-  </AnimatePresence>
+ 
   return(
-<AnimatedPage>
+
     <div>
-      {/* <Userheader/> */}
+      <Userheader/>
       <div className='scrims-main-wrapper'>
       <div className='scrims_headerclip'>
         <h1>Scrims</h1>
@@ -413,9 +412,9 @@ function Scrims() {
 
       </div>
       
-      {/* <Footer /> */}
+      <Footer />
   </div>
-  </AnimatedPage>
+  
   );
 
 }
