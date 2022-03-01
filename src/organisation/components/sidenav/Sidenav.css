@@ -189,13 +189,13 @@
 
 @media (min-width: 1350px) and (max-width: 1429px) {
     .sidenav{
-        margin-top: 10px;
+        margin-top: 25px;
         width: 400px;
         height: 1200px;
         
     }
     .button_nav{
-        margin: 25px;
+        margin: 0px;
         margin-left: 60px;
         
     }

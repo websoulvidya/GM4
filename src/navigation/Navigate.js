@@ -32,6 +32,7 @@ import Tournament from '../user/pages/tournament/Tournament';
 import Scrims from "../user/pages/scrims/Scrims";
 import Dailymatch from "../user/pages/dailymatch/Dailymatch";
 import Openrooms from "../user/pages/openrooms/Openrooms";
+import MyBookingInfo from "../user/pages/username/mybookings/MyBookingInfo.js"
 
 import Tournamentreg from '../user/pages/tournament/Tournamentreg';
 import Tourpayment from '../user/pages/tournament/Tourpayment';
@@ -128,6 +129,7 @@ export default function Navigate() {
       <Route path="/viewidp" element={<Viewidp/>}/>
 
 
+      <Route path="/MyBookingInfo" element={<MyBookingInfo />}/>  
 
 
 
