@@ -1,0 +1,271 @@
+.ad-head {
+    width: 100%;
+    height: 180px;
+    background-color: #6bdcfc;
+}
+
+
+.ad-head2 h1{
+   position: absolute;
+   font-size: 52px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+   width: 90%;
+   text-align: left;
+   padding-left: 50px;
+   top: 100px;
+   color:white;
+   max-width: fit-content;
+   text-transform: uppercase ;
+   
+}
+
+.ad-head2 h1::before{
+   position: absolute;
+   content: "";
+   top: 8px;
+   left: 30px;
+   width: 10px;
+   height: 50px;
+   background-color: rgb(255, 255, 255);
+
+}
+.ads-head-img {
+    background-image: url('../../../assets/images/img7.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    max-width: 1500px;
+    border-radius: 15px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 100px;
+    background-clip: padding-box;
+
+}
+.ads-plan {
+    text-transform: uppercase;
+    color: #6bdcfc;
+    font-weight: 700;
+}
+.ads h1{
+    text-transform: uppercase;
+    color: #6bdcfc;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/* media querry max width :400px*/
+
+@media (max-width:400px) {
+    .ad-head2 h1{
+        font-size:30px !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 29px;
+    }
+    .ad-head2 h1::before{
+        left: 10px !important;
+
+    }
+    
+}
+
+
+@media (max-width:500px) {
+
+    .ad-head2 h1{
+        font-size:37px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .ad-head2 h1::before{
+        position: absolute;
+        content: '';
+        top: 4px;
+        left: 30px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+    }
+    .ads-head-img {
+        height: 150px;
+
+    }
+    .ads h1{
+        font-size: 30px;
+     }
+ 
+}
+
+
+
+
+
+.ads_card{
+    height: 23.5rem;
+    border: 1px solid #87ceeb;
+    border-bottom: 7px solid #87ceeb;
+    border-radius: 12px;
+    border-right: 4px solid #87ceeb;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.ads{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.ads_card_header{
+    margin-top: 4rem;
+}
+.ads_card_header h4{
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #87ceeb;
+}
+.ads_card a{
+    background-color: #87ceeb;
+    border: none;
+    padding: 9px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ffff;
+    font-weight: 500;
+    letter-spacing: .5px;       
+}
+
+.plan_price h6{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 19px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-top: 4px;
+}
+.plan_price h4{
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    padding-left: 18px;
+    margin-top: 3px;
+    font-weight: 700;
+    color: #87ceeb;
+    font-size: 31px;
+}
+.plan_price span{
+    font-weight: normal;
+    color: #888888;
+    font-size: 16px;
+}
+
+
+.ads_details{
+    text-align: start;
+    padding-left: 20px;
+    margin-top: 1rem;
+    color: black;
+    padding-right: 10px;
+}
+.plan_price{
+    margin-top: 1rem;
+}
+.ads_details ul{
+    margin-bottom: 5rem;
+    color: #6E6D7A;
+}
+
+.ads_details span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
+
+/*screen maax width 500px*/
+
+
+
+
+@media (max-width:500px) {
+
+    .ads_header h1{
+        padding-top: 19px;
+    }
+    .ads_header h1{
+        font-size: 30px;
+    }
+    .ad-head2 h1::before{
+        position: absolute;
+        content: "";
+        top: 4px;
+        left: 30px;
+        width: 10px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+     
+     }
+  
+    .ads_header{
+        height: 6rem;
+    }
+}
+@media (max-width:350px) {
+    .ads_card{
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1355px) {
+    .ads_card{
+        padding-bottom: 4.9rem;
+    }
+}
+@media (min-width:900px) and (max-width:1024px) {
+    .ads_card{
+        padding-bottom: 4rem;
+    }
+    
+}
+@media (min-width:600px) and (max-width:694px) {
+    .ads_card{
+        padding-bottom: 4rem;
+    }
+  
+}
+
+@media (min-width:900px) and (max-width:1300px) {
+    .ads-head-img {
+        height: 300px;
+
+    }
+}
+@media (min-width:500px) and (max-width:600px) {
+    .ads-head-img {
+        height: 200px;
+
+    }
+}
+@media (min-width:600px) and (max-width:900px) {
+    .ads-head-img {
+        height: 250px;
+
+    }
+}
