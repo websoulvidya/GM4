@@ -28,6 +28,7 @@ import Userhome from '../user/pages/userhome/Userhome';
 import Useridp from '../user/pages/idp/IDP';
 import Usernotif from '../user/pages/notification/Notification';
 import Profile from '../user/pages/username/profile/Profile';
+import EditProfile from '../user/pages/username/profile/EditProfile';
 import Changepass from '../user/pages/username/changepass/Changepass';
 import Mybookings from '../user/pages/username/mybookings/Mybookings';
 import Tournament from '../user/pages/tournament/Tournament';
@@ -121,6 +122,7 @@ export default function Navigate() {
       <Route path="/useridp" element={<Useridp />}/>
       <Route path="/notification" element={<Usernotif />}/>
       <Route path="/profile" element={<Profile />}/>
+      <Route path="/editprofile" element={<EditProfile/>}/>
       <Route path="/changepass" element={<Changepass />}/>
       <Route path="/mybookings" element={<Mybookings />}/>
       <Route path="/tournament" element={<Tournament />}/>

@@ -1,0 +1,254 @@
+.user-changepass-header{
+    background-color: #7bcae9;
+    height: 8rem;
+    padding-left: 6rem;
+    display: flex;
+    
+   
+}
+.user-changepass-header h1{
+  
+    text-align: left;
+    color:#ffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 35px;
+    
+}
+.user-changepass-header h1::before{
+  
+    content: "";
+    position: absolute;
+    width: 6px;
+    height:4rem;
+    background-color: #ffff;
+    left: 64px;
+    top:52px;
+    opacity: 0.5;
+    margin-top: 30px;
+    
+}
+body{
+    margin:auto;
+    font-family:open sans;
+    max-width: 100%;
+  
+}
+
+
+.ChangepassButton{
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: -4.5px;
+    margin-right: 5%;
+    margin-top: 8px;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.uk-input{
+    border-radius: 5px !important;
+}
+.uk-input:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-input:focus{
+    border: 1px solid #6bdcfc !important;
+}
+.ChangepassForm{
+    margin-left: 22%;
+    border: 1px solid #6bdcfc;
+    padding: 20px;
+    width:50%;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 200px;
+    background-color: #ffff;
+  
+    
+}
+.Changepass{
+    background-image: url('/src/user/assets/ChangepassCircle2.png');
+    background-size: cover;
+    overflow-x: hidden;
+}
+.invalid-feedback{
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+    float: left;
+    
+}
+
+.user-changepass-button_area{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 80%;
+    margin-right: auto;
+}
+.user-changepass-button_area button{
+    width: 30%;
+    cursor: pointer;
+    position: absolute;
+    height: 40px;
+    margin-left: 200px;
+   
+    cursor: pointer;
+    background-color: #6bdcfc;
+    color: #ffff;
+    border: 1px solid #6bdcfc;
+    border-radius: 5px;
+}
+   
+#modal-modal-description{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.modal_box_org{
+    border: none !important;
+    
+}
+
+@media (max-width:640px) {
+    .modal_box_org{
+        width: 17rem !important;
+        
+      
+    }
+   
+    .modal_box_org p{
+        height: 23rem !important;
+        
+    }
+    .user-changepass-button_area{
+        width: 100% !important;
+        
+
+    }
+    .user-changepass-button_area button{
+        margin-left: 130px;
+        margin-top: -15rem;
+    }
+}
+
+@media (max-width:480px) {
+    .modal_box_org{
+        width: 12rem !important;
+    }
+    .modal_box_org p{
+        height: 20rem !important;
+        margin-top: -2rem;
+    }
+    .button_area{
+        width: 100% !important;
+        
+    }
+    .modal_close{
+        margin-right: 20px;
+    }
+    .user-changepass-button_area button{
+        margin-left: 130px;
+        margin-top: -10rem;
+    }
+    
+}
+@media (max-width:269px)  {
+    .modal_box_org{
+        width: 8rem !important;
+        
+    }
+    .modal_box_org p{
+        height: 14rem !important;
+    }
+    .button_area{
+        width: 100% !important;
+        
+    }
+   
+    .user-changepass-button_area button{
+        margin-left: 130px;
+        margin-top: -5rem;
+    }
+    
+}
+@media(min-width:435px) and (max-width:640px){
+    .user-changepass-header h1{
+       font-size: 35px; 
+       font-weight: 700;
+       margin-top: 45px;
+       margin-left: -30px;
+    }
+ }
+ @media(min-width:435px) and (max-width:640px){
+    .user-changepass-header h1::before{
+      margin-left: -30px;
+    }
+ }
+ 
+ @media(min-width:331px) and (max-width:434px){
+    .user-changepass-header h1{
+       font-size: 25px; 
+       font-weight: 700;
+       margin-top: 45px;
+       margin-left: -30px;
+    }
+ }
+ @media(min-width:331px) and (max-width:434px){
+    .user-changepass-header h1::before{
+      margin-left: -30px;
+      height: 3rem;
+    }
+ }
+ @media(min-width:300px) and (max-width:331px){
+    .user-changepass-header h1{
+       font-size: 22px; 
+       font-weight: 700;
+       margin-top: 45px;
+       margin-left: -45px;
+    }
+ }
+ @media(min-width:300px) and (max-width:331px){
+    .user-changepass-header h1::before{
+      margin-left: -30px;
+      height: 3rem;
+    }
+ }
+ @media(min-width:501px) and (max-width:640px){
+    .ChangepassForm{
+      width:350px;
+      margin-left: 70pxpx;
+     
+    }
+ }
+ @media(min-width:401px) and (max-width:500px){
+    .ChangepassForm{
+      width:300px;
+      margin-left: 45px;
+     
+    }
+ }
+ @media(min-width:331px) and (max-width:400px){
+    .ChangepassForm{
+       width: 250px;
+       margin-left: 50px;
+    }
+ }
+
+ 
+ @media(min-width:300px) and (max-width:331px){
+    .ChangepassForm{
+       width: 230px;
+       margin-left: 18px;
+    }
+ }
+

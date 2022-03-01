@@ -1,0 +1,165 @@
+
+.user-not-header{
+    background-color: #7bcae9;
+    height: 8rem;
+    width: 100%;
+    color: #ffff;
+    padding-left: 6rem;
+    display: flex;
+   
+   
+}
+.user-not-header h1{
+    text-align: left;
+    color:#ffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 35px;
+   
+    
+}
+.user-not-header h1::before{
+  
+  content: "";
+  position: absolute;
+  width: 6px;
+  height:4rem;
+  background-color: #ffff;
+  left: 64px;
+  top:52px;
+  opacity: 0.5;
+  margin-top: 30px;
+ 
+    
+}
+.user-not-cards{
+    width:700px;
+    margin: 25px;
+    height: 100px;
+    box-shadow:8px 2px  rgb(107,220,252) !important  ;
+    text-align: left;
+    
+}
+.user-not-cards:hover{
+   cursor: pointer;
+   transform: scale(1.02);
+   transition: all 0.2s;
+   
+   
+
+}
+
+
+.user-not-cards img{
+    width:30px;
+    height: 30px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.user-not-cards h5{
+ margin-left: 40px;
+ margin-top: 1rem;
+ color: rgb(107,220,252);
+
+
+}
+.user-not-cards h6{
+    margin-left: 40px;
+    margin-top: -0.75rem;
+   
+   }
+   .user-not-date{
+       color: rgba(59, 115, 129, 0.829);
+       font-size: smaller;
+       margin-top: -1rem;
+       margin-left: 40px;
+     
+   }
+   .icon{
+       float: right;
+       margin-top: -0.5rem;
+       margin-right: 5px;
+   }
+ .user-not-bg1{
+     width:40px ;
+     height: 40px;
+        
+ }
+
+ @media(max-width:640px)
+ {
+    .user-not-cards {
+       height: max-content;
+       
+    }
+    
+ }
+
+
+ @media(max-width:640px)
+ {
+    .user-not-header h2::before{
+      
+        left: 25px;  
+      }
+        
+    }
+    @media(max-width:640px)
+    {
+       .user-not-header h2{
+           margin-left: -3rem;
+         }
+           
+       }
+    
+     .user-not-img{
+         width: 700px;
+         height: 700px;
+         float: right;
+         margin-bottom: -50rem;
+         margin-left: -5rem;
+     }
+     .usernot-container {
+        
+         background-image: url('/src/user/assets/NotificationCircle.jpeg');
+         overflow-x:hidden ;
+         background-size: cover;
+     }
+    
+     img{
+         margin-right: -25rem;   
+         z-index: -1;  
+         
+     }
+     @media(min-width:641px) and (max-width:990px){
+        .user-not-header h1{
+           font-size: 45px; 
+           font-weight: 700;
+           margin-top: 35px;
+           margin-left: -5px;
+        }
+     }
+     @media(min-width:640px) and (max-width:990px){
+        .user-not-header h1::before{
+          margin-left: -15px;
+          height: 3.5rem;
+        }
+     }
+    
+     @media(min-width:300px) and (max-width:640px){
+        .user-not-header h1{
+           font-size: 35px; 
+           font-weight: 700;
+           margin-top: 38px;
+           margin-left: -30px;
+        }
+     }
+     @media(min-width:300px) and (max-width:640px){
+        .user-not-header h1::before{
+          margin-left: -30px;
+          height: 3rem;
+        }
+     }
+    

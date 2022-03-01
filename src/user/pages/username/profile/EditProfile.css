@@ -1,0 +1,181 @@
+.editprofile-head{
+    text-align: left;
+}
+.user-editprofile{
+    background-image: url('/src/user/assets/ChangepassCircle2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    margin:auto;
+    font-family:open sans;
+    max-width: 100%;
+  
+}
+.Editprofile-Form{
+    margin-left: 22%;
+    border: 1px solid #6bdcfc;
+    padding: 20px;
+    width:50%;
+    border-radius: 5px;
+    margin-top: 10%;
+    background-color: #ffff;
+}
+
+.uk-input{
+    border-radius: 5px !important;
+}
+.uk-input:hover{
+    border: 1px solid #6bdcfc;
+}
+.uk-input:focus{
+    border: 1px solid #6bdcfc !important;
+}
+.Editprofile-Form button{
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: -4.5px;
+    margin-right: 5%;
+    margin-top: 8px;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+.editptofile-avatar{
+    width: 80px;
+    height: 80px;
+}
+.editproficon{
+    width: 20px;
+    height: 20px;
+}
+Badge{
+    margin-left: -10rem;
+    margin-top: -10rem;
+    
+}
+.modal_box_user{
+    object-fit: cover;
+}
+.Editprofile-Form button:hover{
+    background-color: #6bdcfc;
+
+}
+
+.button_area{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 80%;
+    margin-right: auto;
+}
+.button_area button{
+    width: 30%;
+    cursor: pointer;
+    position: absolute;
+    height: 40px;
+    margin-left: 200px;
+   
+    cursor: pointer;
+    background-color: #6bdcfc;
+    color: #ffff;
+    border: 1px solid #6bdcfc;
+    border-radius: 5px;
+}
+
+#modal-modal-description{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.modal_box_user{
+    border: none !important;
+    
+}
+
+@media (max-width:640px) {
+    .modal_box_user{
+        width: 17rem !important;
+    }
+    .modal_box_user p{
+        height: 23rem !important;
+    }
+    .button_area{
+        width: 100% !important;
+        
+    }
+}
+
+@media (max-width:480px) {
+    .modal_box_user{
+        width: 12rem !important;
+    }
+    .modal_box_user p{
+        height: 18rem !important;
+    }
+    .button_area{
+        width: 100% !important;
+        
+    }
+    .modal_close{
+        margin-right: 20px;
+    }
+    .button_area button{
+        margin-left: 130px;
+        margin-top: -1rem;
+    }
+    
+}
+@media (max-width:269px) {
+    .modal_box_user{
+        width: 8rem !important;
+    }
+    .modal_box_user p{
+        height: 14rem !important;
+    }
+    .button_area{
+        width: 100% !important;
+        
+    }
+   
+    .button_area button{
+        margin-left: 130px;
+        margin-top: -1rem;
+        margin-bottom: 5px;
+    }
+    
+}
+@media(min-width:501px) and (max-width:640px){
+    .Editprofile-Form{
+      width:350px;
+      margin-left: 70pxpx;
+     
+    }
+ }
+ @media(min-width:401px) and (max-width:500px){
+    .Editprofile-Form{
+      width:300px;
+      margin-left: 45px;
+     
+    }
+ }
+ @media(min-width:331px) and (max-width:400px){
+    .Editprofile-Form{
+       width: 250px;
+       margin-left: 50px;
+    }
+ }
+
+ 
+ @media(min-width:300px) and (max-width:331px){
+    .Editprofile-Form{
+       width: 235px;
+       margin-left: 18px;
+    }
+ }
