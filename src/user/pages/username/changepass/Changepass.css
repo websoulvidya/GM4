@@ -1,8 +1,9 @@
 .user-changepass-header{
-    background-color: #7bcae9;
+    background-color: #6BDCFC;
     height: 8rem;
     padding-left: 6rem;
     display: flex;
+    margin-top: 60px;
     
    
 }
@@ -26,7 +27,7 @@
     left: 64px;
     top:52px;
     opacity: 0.5;
-    margin-top: 30px;
+    margin-top: 45px;
     
 }
 body{

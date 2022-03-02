@@ -2,10 +2,9 @@ import React from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import Grid from '@mui/material/Grid';
-import { Card, List, listItemTextClasses } from '@mui/material';
+import { Card } from '@mui/material';
 import './Notification.css';
 import moment from 'moment';
-import { Route, Router} from 'react-router-dom';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import { Link } from 'react-router-dom';
 
@@ -20,7 +19,7 @@ function Notification() {
 
        {/*organisation notification header*/}
 
-        <div className='user-not-header'>
+        <div className=' user-not-header'>
             <h1>NOTIFICATIONS</h1>
         </div>
         
@@ -36,7 +35,7 @@ function Notification() {
         <Link to={'/useridp'} style={{textDecoration:'none'}}>
             
               <div className='user-not-cardtext'>
-                <div className='icon'>
+                <div className='user-not-icon'>
                <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -61,7 +60,7 @@ function Notification() {
          <Link to={'/useridp'}  style={{textDecoration:'none'}}>
               
               <div className='user-not-cardtext'>
-              <div className='icon'>
+              <div className='user-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -81,7 +80,7 @@ function Notification() {
          <Link to={'/useridp'}  style={{textDecoration:'none'}}>
               
               <div className='user-not-cardtext'>
-              <div className='icon'>
+              <div className='user-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -101,7 +100,7 @@ function Notification() {
          <Link to={'/useridp'}  style={{textDecoration:'none'}}>
               
               <div className='user-not-cardtext'>
-              <div className='icon'>
+              <div className='user-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -120,7 +119,7 @@ function Notification() {
          <Link to={'/useridp'}  style={{textDecoration:'none'}}>
               
               <div className='user-not-cardtext'>
-              <div className='icon'>
+              <div className='user-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 

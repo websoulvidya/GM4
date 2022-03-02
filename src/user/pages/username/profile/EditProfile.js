@@ -154,8 +154,11 @@ function EditProfile() {
       <div className="uk-margin">
         
          {/*Edit Profile Photo upload*/}
-          <p> 
-            <center>   
+      
+          <p className='user-editprofile-upload'> 
+
+          <center>  
+
               <input type="file" onChange={handleChange} id="upload" accept="image/*" name="Photoupload"
                     style={{display: "none"}} {...formik.getFieldProps("Photoupload")} required="" />
                     
@@ -185,7 +188,7 @@ function EditProfile() {
             </label>
             <label htmlFor="avatar"/>
 
-            </center>
+           
 
             {/*Photo upload validation */}
 
@@ -198,9 +201,9 @@ function EditProfile() {
                        fontWeight:'700' ,
                        }}>
                      {formik.errors.Photoupload}</span> : null}
-
+                     </center>
             </p>
-
+            
 
              {/*Edit Profile input field */}
 

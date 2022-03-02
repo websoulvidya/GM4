@@ -2,10 +2,9 @@ import React from 'react'
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
 import Grid from '@mui/material/Grid';
-import { Card, List, listItemTextClasses } from '@mui/material';
+import { Card} from '@mui/material';
 import './Notification.css';
 import moment from 'moment';
-import { Route, Router} from 'react-router-dom';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 
 function Notification() {
@@ -13,7 +12,7 @@ function Notification() {
     <div>
       <Dashboard/>
 
-      <div className='container org-not-header'>
+      <div className='org-not-header'>
             <h1>NOTIFICATIONS</h1>
         </div>
         
@@ -29,7 +28,7 @@ function Notification() {
         
             
               <div className='org-not-cardtext'>
-                <div className='icon'>
+                <div className='org-not-icon'>
                <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -53,7 +52,7 @@ function Notification() {
          <Card variant='outlined' className='org-not-cards' >
         
               <div className='org-not-cardtext'>
-              <div className='icon'>
+              <div className='org-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -72,7 +71,7 @@ function Notification() {
          <Card variant='outlined' className='org-not-cards' >
         
               <div className='org-not-cardtext'>
-              <div className='icon'>
+              <div className='org-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -92,7 +91,7 @@ function Notification() {
         
               
               <div className='org-not-cardtext'>
-              <div className='icon'>
+              <div className='org-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 
@@ -111,7 +110,7 @@ function Notification() {
         
               
               <div className='org-not-cardtext'>
-              <div className='icon'>
+              <div className='org-not-icon'>
               <NotificationsActiveOutlinedIcon fontSize='large' color='action'/>
               </div>
                    <h5><b>Organisation name</b></h5> 

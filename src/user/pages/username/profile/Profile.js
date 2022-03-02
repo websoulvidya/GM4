@@ -1,18 +1,14 @@
 import React from 'react';
 import Userheader from '../../../components/userheader/Userheader';
 import Footer from '../../../components/footer/Footer';
-import { Card, List, listItemTextClasses } from '@mui/material';
+import { Card } from '@mui/material';
 import './Profile.css';
-import { Button } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EditProfile from './EditProfile';
-
 import { Grid } from '@mui/material';
-import { Link, Route, Router} from 'react-router-dom';
-
-import Profilepic1 from './../../../assets/Profilepic1.jpeg';
-import Userprofilebanner from './../../../assets/Userprofilebanner.jpg';
+import { Link} from 'react-router-dom';
+import Profilepic1 from './../../../assets/user-profile/Profilepic1.jpeg';
+import Userprofilebanner from './../../../assets/user-profile/Userprofilebanner.jpg';
 
 
 
@@ -24,6 +20,7 @@ function Profile() {
     <div>
       <Userheader/>
       
+      <div className='user-profile-container'>
 
         {/* Profile page header */}
        
@@ -39,16 +36,16 @@ function Profile() {
              <Card variant='outlined' className=' user-profile-card  ' >
             
               <div >
-                <div className='banner'>
-                <img alt='' src={Userprofilebanner}></img>
+                <div >
+                <img alt='' src={Userprofilebanner} className='userprofile-banner'></img>
                 
                 </div>
                 <img alt='' className='user-profile-card-img'
                 src={Profilepic1}>
-  </img>
+                </img>
 
                     
-                <div className='profile-card-text'>
+                <div className='userprofile-card-text'>
 
                      <h3><b>AngelChris</b></h3> 
                      <p><EmailIcon fontSize='small'/>
@@ -67,6 +64,7 @@ function Profile() {
          
 
 
+      </div>
       </div>
      
       <Footer />
