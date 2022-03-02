@@ -64,7 +64,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization1</h4>
-                  <Link to='/MyBookingInfo'>
+                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -121,7 +121,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization2</h4>
-                  <Link to='/MyBookingInfo'>
+                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -180,7 +180,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization3</h4>
-                  <Link to='/MyBookingInfo'>
+                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -237,7 +237,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization4</h4>
-                  <Link to='/MyBookingInfo'>
+                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />

@@ -62,7 +62,7 @@ function MyBookingInfo() {
                                             <p>300</p>
                                         </div>
                                     </div>
-                                    <progress value="3333" max="10000"></progress>
+                                    <progress value="3333" max="10000" className="myInfoProgress"></progress>
                                     <div className="progresstextflex-abh">
                                         <div>
                                             <p>100 joined</p>
@@ -112,7 +112,7 @@ function MyBookingInfo() {
                 {/* Code for form */}
 
                 <div className="myInfo_cancel_form">
-                    <form onSubmit={handleSubmit(submitData)}>
+                    <form onSubmit={handleSubmit(submitData)} className="myInfo_form">
                         <fieldset className="uk-fieldset">
                             <div className="uk-margin">
                                 <input className="uk-input" type="text" id="teamname" name="teamname" placeholder="Team Name" {...register('teamname', { required: "**Team Name is Required" })} />

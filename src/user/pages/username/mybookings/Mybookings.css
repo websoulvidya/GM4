@@ -31,13 +31,16 @@ body{
     display: block;
 }
 
-a{
-    text-decoration: none !important;
-    display: block !important;
+/* class name changes to the links */
+.myBookingsInfoLink{
+    text-decoration: none ;
+    display: block ;
 }
-a:hover{
+.myBookingsInfoLink:hover{
     text-decoration: none !important;
 }
+
+
 .myBookings_wrapper1{
     width: 100%;
     margin: 0 auto;
@@ -218,17 +221,17 @@ a:hover{
     font-weight: 700;
 }
 
-progress {
+.myBookings_progress {
     display: flex;
     border-radius: 7px;
     width: 100%;
     height: 6px;
     } 
-progress[value]::-webkit-progress-bar {
+.myBookings_progress[value]::-webkit-progress-bar {
         background-color: rgb(131, 128, 128);
         border-radius: 10px;
     }
-progress[value]::-webkit-progress-value {
+.myBookings_progress[value]::-webkit-progress-value {
     background-color: #6BDCFC;
     border-radius: 10px;    
     }
@@ -311,7 +314,7 @@ progress[value]::-webkit-progress-value {
         word-spacing: 1px !important;
         letter-spacing: 1px !important;
     }
-    progress{
+    .myBookings_progress{
         width: 85% !important;
         margin: 1rem auto !important;
     }
@@ -356,7 +359,7 @@ progress[value]::-webkit-progress-value {
         width: fit-content;
         margin-left: 8px;
     }
-    progress{
+    .myBookings_progress{
         width: 95% !important;
         margin-left: 8px !important;
     }
