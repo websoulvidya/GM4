@@ -20,9 +20,7 @@
   color: gray;
   margin: 0 !important;
 }
-/* .idp-pass h3{
- 
-} */
+
 .idp-id{
   font-weight: 600;
   color: black !important;
@@ -81,8 +79,6 @@ vertical-align: -0.200em;
 
 .rounded-social-buttons {
 text-align: center;
-display:flex;
-margin-left:30%;
 } 
  
 .rounded-social-buttons .social-button {
@@ -111,19 +107,19 @@ margin-bottom: 0.25rem;
 font-size: 25px;
 }
 
-.rounded-social-buttons .social-button.facebook {
+.rounded-social-buttons .social-button.whatsapp {
 background: #25D366;
 }
 
 
 
-.rounded-social-buttons .social-button.twitter {
+.rounded-social-buttons .social-button.discord {
 background: #7289DA;
 }
 
 
 
-.rounded-social-buttons .social-button.linkedin {
+.rounded-social-buttons .social-button.gmail {
 background:#bb0000;
 }
 

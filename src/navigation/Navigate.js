@@ -90,7 +90,7 @@ import DailyMatchList  from "../organisation/pages/slotlist/dailymatcheslist";
 import Signup from '../authentication/signup/Signup';
 import Login from '../authentication/login/Login';
 import Forgotpassword from '../authentication/forgotpassword/Forgotpassword';
-
+import Resetpage from "../authentication/forgotpassword/Resetpage";
 
 
 
@@ -187,7 +187,7 @@ export default function Navigate() {
     <Route path="/signup" element={<Signup />}/>
     <Route path="/forgotpassword" element={<Forgotpassword />}/>
     <Route path="/login" element={<Login />}/>
-
+    <Route path="/resetpage" element={<Resetpage/>}/>
 
 
     </Routes>

@@ -1,84 +1,83 @@
-/* .signup-data{
-    font-family: 'Open Sans', sans-serif !important;
-  cursor: pointer;
-  width: 45% !important;
-  border: none;
-  background: #6BDCFC;
-  color: black;
-  margin: 10px 15px 23px 5px !important;
-  padding: 10px;
-  font-size: 15px !important;
+.signup-data{
+  font-family: 'Open Sans', sans-serif !important;
+cursor: pointer;
+width: 45% !important;
+border: none;
+background: #6BDCFC;
+color: black;
+margin: 10px 15px 23px 5px !important;
+padding: 10px;
+font-size: 15px !important;
 
 }
 
 .container-signup{
-    margin-left: auto;
-    margin-right: auto;
-     max-width: 800px;
-     margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+   max-width: 900px;
 
 }
 .signup-head{
-    width: 50%;
-    font-size: 15px;
+  width: 50%;
+  font-size: 15px;
 }
 .signup-button{
- 
-    width: 50% !important;
+
+  width: 50% !important;
 }
 .signup-head:hover{
-    background: #6BDCFC;
-    color: white;
+  background: #6BDCFC;
+  color: white;
 }
 
 
 .errormsgleft1-1{
-  font-size: 13px;
-  position: absolute;
-  margin-left: -25rem !important;
-  margin-top: 3rem;
-  color: red;
-  font-weight: 500;
- 
-  text-align: left;
+font-size: 13px;
+position: absolute;
+margin-left: -25rem !important;
+margin-top: 3rem;
+color: red;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
 }
 .errormsgleft1-2{
-  font-size: 13px;
-  position: absolute;
-  margin-left: -25rem !important;
-  margin-top: 3rem;
-  color: red;
-  font-weight: 500;
-  text-align: left;
+font-size: 13px;
+position: absolute;
+margin-left: -25rem !important;
+margin-top: 3rem;
+color: red;
+font-weight: 500;
+text-align: left;
+line-height: 30px;
 }
 
 
-@media only screen and (max-width: 3000px){
- 
-    .container-signup{
-      max-width: 900px;
-    } }
+/* @media only screen and (max-width: 3000px){
 
-    @media only screen and (max-width: 900px){
-        .container-signup{
-            max-width: 600px;
-          } 
-        .errormsgleft1-1{
-          margin-left: -17rem !important;
-        }
-        .errormsgleft1-2{
-          margin-left: -17rem !important;
+  .container-signup{
+    max-width: 900px;
+  } } */
 
-        }}
+  @media only screen and (max-width: 900px){
+      .container-signup{
+          max-width: 600px;
+        } 
+      .errormsgleft1-1{
+        margin-left: -17rem !important;
+      }
+      .errormsgleft1-2{
+        margin-left: -17rem !important;
+
+      }}
 
 @media only screen and (max-width: 700px){
-  
-    .container-signup{
-      max-width: 330px;
-    }
-    .signup-data{
-        width: 85% !important;
-    }
+
+  .container-signup{
+    max-width: 330px;
   }
-    
-   */
+  .signup-data{
+      width: 85% !important;
+  }
+}
+  

@@ -1,30 +1,23 @@
-/* @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
  
 }
-.log{
+.login-field{
   margin-top: 6rem;
 }
 
 body {
-
   font-family: 'Open Sans', sans-serif !important;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  color: #777;
-
 }
 
 .container-login {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
-  
+  position: relative;  
 }
 
 #contact input[type="text"],
@@ -33,11 +26,11 @@ body {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
+  
   font-family: 'Open Sans', sans-serif !important;
 }
 
 #contact {
-  
   background: white;
   padding: 15px;
  border: 1px solid #6BDCFC;
@@ -71,17 +64,9 @@ body {
 #contact input[type="password"]:hover,
 #contact input[type="url"]:hover,
 #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
   border: 1px solid #6BDCFC;
 }
 
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
 
 #contact button[type="submit"] {
     font-family: 'Open Sans', sans-serif !important;
@@ -95,10 +80,7 @@ body {
   font-size: 15px;
   height: 42px;
 }
-.js-click:hover{
-  background: #6BDCFC;
-  color: white;
-}
+
 
 
 
@@ -129,8 +111,9 @@ body {
   font-weight: 500;
   text-align: left;
   top: 22%;
-      }
-      .errormsgleft2{
+  line-height: 30px;
+ }
+.errormsgleft2{
         font-size: 13px;
         position: absolute;
         left: 8%;
@@ -138,12 +121,13 @@ body {
         font-weight: 500;
         text-align: left;
         top: 47%;
+        line-height: 30px;
             }
 
     
 
 
-@media only screen and (max-width: 3000px){
+/* @media only screen and (max-width: 3000px){
  
  .container-login{
    max-width: 800px;
@@ -151,19 +135,9 @@ body {
  .user-signup{
    margin-left: 29rem;
  }
-}   
+}    */
 
-@media only screen and (max-width: 1400px){
-  .container-login{
-    max-width: 500px;
-  }
-  .copyright{
-    font-size: 15px;
-  }
-  .user-signup{
-    margin-left: 11rem;
-  }
-}
+
 
 @media only screen and (max-width: 900px){
 
@@ -197,4 +171,4 @@ body {
   .copyright{
     font-size: 8px;
   }
-} */
+}
