@@ -39,6 +39,9 @@ body{
     align-items: center;
     margin-top: 12px;
 }
+.header-link:hover{
+    color:#6BDCFC;
+}
 .header-logo{
     /* margin-top: 5%; */
     margin-bottom: 2px;

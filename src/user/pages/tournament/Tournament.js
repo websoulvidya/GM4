@@ -48,19 +48,19 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon" onClick={handleOpen} aria-hidden="true"></i>
                   <Modal
                     open={open}
                     onClose={handleClose}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
+                    aria-labelledby="tourmodal-modal-title"
+                    aria-describedby="tourmodal-modal-description"
                   
                   >
-                    <Box sx={style} className='modal_box' >
-                      <Typography id="modal-modal-title" variant="h6" component="h2">
+                    <Box sx={style} className='tourmodal_box' >
+                      <Typography id="tourmodal-modal-title" variant="h6" component="h2">
                         Rules
                       </Typography>
-                      <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{height:'30rem',overflow:'scroll'}} >
+                      <Typography id="tourmodal-modal-description" className='tourrules_modal' sx={{ mt: 2 }} style={{height:'30rem',overflow:'scroll'}} >
                         
                         <ul>
                           <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
@@ -74,24 +74,24 @@ function Tournament() {
                         </ul>
                         <br />
                       </Typography>
-                      <button onClick={handleClose} className='modal_close'>ok</button>
+                      <button onClick={handleClose} className='tourmodal_close'>ok</button>
                     </Box>
                   </Modal>
                 </div>
                
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -113,21 +113,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon" aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon" aria-hidden="true"></i>
                                  </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -148,21 +148,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                   </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -183,21 +183,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                  </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -218,21 +218,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                   </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -253,21 +253,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                 </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -289,21 +289,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                 </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -323,21 +323,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                 </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -357,21 +357,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                 </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
@@ -391,21 +391,21 @@ function Tournament() {
                   <img src={TeamImg} />
                 </div>
                 <div className='tournament-rule'>
-                  <i class="fa fa-gavel rule-icon"  aria-hidden="true"></i>
+                  <i class="fa fa-gavel tour-rule-icon"  aria-hidden="true"></i>
                                 </div>
                 <div className='tour-pay-section'>
                   <h6>Prize Pool</h6>
-                  <p className='prize-pool'>300</p>
+                  <p className='tourprize-pool'>300</p>
                   <span>Entry Fee</span>
-                  <p className='entry-fee'>100</p>
+                  <p className='tourentry-fee'>100</p>
                 </div>
                 <div className='tour-progress-bar'>
                   <progress value="3333" max="10000">
 
                   </progress>
 
-                  <p className='progressbar-left-text'>100 Joined</p>
-                  <p className='progressbar-right-text'>400 Spot left</p>
+                  <p className='tourprogressbar-left-text'>100 Joined</p>
+                  <p className='tourprogressbar-right-text'>400 Spot left</p>
                 </div>
                 <div className='tour-reg-section'>
                   <h6>Hosted By</h6>
