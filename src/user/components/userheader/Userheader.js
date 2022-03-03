@@ -32,6 +32,9 @@ function Userheader() {
           border:"1px solid  rgb(0,0,0)",
         // backgroundColor:"#6BDCFC"
       },
+      '&:focus':{
+        border:"1px solid #6BDCFC",
+      },
       marginLeft: 20,
       width: '100%',
       [theme.breakpoints.up('sm')]: {
