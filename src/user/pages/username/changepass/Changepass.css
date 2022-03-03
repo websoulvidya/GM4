@@ -64,7 +64,7 @@ body{
     border: 1px solid #6bdcfc !important;
 }
 .ChangepassForm{
-    margin-left: 22%;
+    margin-left: 24%;
     border: 1px solid #6bdcfc;
     padding: 20px;
     width:50%;
@@ -109,26 +109,27 @@ body{
     border-radius: 5px;
 }
    
-#modal-modal-description{
+#usercp-modal-description{
     display: flex;
     flex-direction: column;
    
 }
 
-.modal_box_org{
+.usercp-modal_box{
     border: none !important;
-    
+    height: 230px!important;
+    width: 450px!important;
 }
 
 @media (max-width:640px) {
-    .modal_box_org{
-        width: 17rem !important;
-        
-      
+    .usercp-modal_box{
+        width: 17rem !important;   
     }
    
-    .modal_box_org p{
+    .usercp-modal_box p{
         height: 23rem !important;
+        margin-top: -1.5rem;
+        font-size: 14px;
         
     }
     .user-changepass-button_area{
@@ -138,40 +139,40 @@ body{
     }
     .user-changepass-button_area button{
         margin-left: 130px;
-        margin-top: -15rem;
+        margin-top: -13rem;
     }
 }
 
 @media (max-width:480px) {
-    .modal_box_org{
+    .usercp-modal_box{
         width: 12rem !important;
     }
-    .modal_box_org p{
+    .usercp-modal_box p{
         height: 20rem !important;
         margin-top: -2rem;
     }
-    .button_area{
+    .user-changepass-button_area{
         width: 100% !important;
         
     }
-    .modal_close{
+    .usercp-modal_close{
         margin-right: 20px;
     }
     .user-changepass-button_area button{
-        margin-left: 130px;
-        margin-top: -10rem;
+        margin-left: 80px;
+        margin-top: -9rem;
     }
     
 }
 @media (max-width:269px)  {
-    .modal_box_org{
+    .usercp-modal_box{
         width: 8rem !important;
         
     }
-    .modal_box_org p{
+    .usercp-modal_box p{
         height: 14rem !important;
     }
-    .button_area{
+    .user-changepass-button_area{
         width: 100% !important;
         
     }
@@ -233,14 +234,14 @@ body{
  }
  @media(min-width:401px) and (max-width:500px){
     .ChangepassForm{
-      width:300px;
+      width:320px;
       margin-left: 45px;
      
     }
  }
  @media(min-width:331px) and (max-width:400px){
     .ChangepassForm{
-       width: 250px;
+       width: 290px;
        margin-left: 50px;
     }
  }
@@ -248,7 +249,7 @@ body{
  
  @media(min-width:300px) and (max-width:331px){
     .ChangepassForm{
-       width: 230px;
+       width: 270px;
        margin-left: 18px;
     }
  }
