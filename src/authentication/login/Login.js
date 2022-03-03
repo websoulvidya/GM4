@@ -10,6 +10,8 @@ import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 
 import { useForm } from 'react-hook-form';
+  
+// material ui tab styling 
 
 const blue = {
   50: '##6BDCFC',
@@ -89,13 +91,15 @@ function Login() {
   return (
     <div  style={{ backgroundImage: `url(${require("../../user/assets/bgtt.png")})` }}>
         <Homeheader/>
-        {/* tab section organiser */}
+        {/* tab section */}
         <TabsUnstyled className='login-field' defaultValue={0}>
       <TabsList className='container-login'>
         <Tab>Organiser</Tab>
         <Tab>User</Tab>
        
       </TabsList>
+
+      {/* organiser tab */}
       <TabPanel value={0}> <div className="container-login">
 
         {/* organiser form   */}
@@ -117,7 +121,7 @@ function Login() {
   </form>
 </div></TabPanel>
 
-
+        {/* user tab */}
       <TabPanel value={1}>
       <div className="container-login">  
       {/* user form section */}
@@ -137,9 +141,7 @@ function Login() {
     
     
     <p  className="copyright">    <a href="/forgotpassword" > Forgot Password</a> <a href="/signup"  > <span className='user-signup'>New user? Sign Up</span> </a></p>
-    
-    
-  
+
   </form>
 </div>
       </TabPanel>

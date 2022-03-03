@@ -12,7 +12,7 @@ body{
 /* header clip */
 .dailymatch_headerclip {
     height: 8rem;
-    width:99%;
+    width:100%;
     /* width: calc(89% - -81px)!important; */
     background-color: #6BDCFC;
     color: #ffff;
@@ -26,8 +26,8 @@ body{
     font-weight: 700;
     color: #ffff;
     text-transform: uppercase;
-    left: -19px;
-    top: 8px;
+    left: -12px;
+    top: 38px;
     
     position: relative;
 }
@@ -37,7 +37,7 @@ body{
     width: 6px;
     height: 4rem;
     background-color: #ffff;
-    left: -19px;
+    left: -22px;
     top: 0px;
     opacity: 0.5;
 
@@ -47,9 +47,10 @@ body{
     margin:20px 30px;
     padding-right: 32px;
 }
-.main-card{
+.dailymatch-card-list .main-card{
    width:100%;
     box-sizing: border-box;
+    margin-left: -60px !important;
 }
 .dailymatch-carditems{
     width: calc(22% - 10px)!important;
@@ -272,7 +273,7 @@ body{
     bottom: 23%;
 }
 
-progress {
+.dailyprogress {
     display: block;
     position: relative;
      border-radius: 7px;
@@ -281,16 +282,16 @@ progress {
 
     }
 
-    progress[value]::-webkit-progress-bar {
+    .dailyprogress[value]::-webkit-progress-bar {
         background-color: rgb(131, 128, 128);
         border-radius: 10px;
     }
-    progress[value]::-webkit-progress-value {
+    .dailyprogress[value]::-webkit-progress-value {
         background-color: #6BDCFC;
         border-radius: 10px;
         
     }
-    .progressbar-left-text{
+    .dailymatch-progress-bar .progressbar-left-text{
     position: relative;
     top: 4px;
     left: 0;
@@ -301,7 +302,7 @@ progress {
     margin: 0;
         
 }
-.progressbar-right-text{
+.dailymatch-progress-bar .progressbar-right-text{
     position: relative;
     top: 2px;
     right: 0;
@@ -348,11 +349,15 @@ progress {
 /* Responsive Start Here */
 /* Responsive Start Here */
 @media (min-width: 1781px) and (max-width: 1836px) {
-    .dailymatch_headerclip {
+    /* .dailymatch_headerclip {
     width: calc(90% - -72px)!important;
-    }
+    } */
     .dailymatch-card{
     height: 221px;
+    }
+    .dailymatch-carditems{
+        width: calc(22% - 1px)!important;
+        margin: 0px 1.5% 57px 1.5% !important;
     }
     .dailymatch-main-wrapper {
         width: 100%;
@@ -360,12 +365,10 @@ progress {
         position: relative;
         overflow-x: hidden;
     }
-    .dailymatch_headerclip {
-        width: calc(92% - -112px)!important;
-    }
-    .uk-grid{
-    margin-left: 0;
-    }
+
+    .dailymatch-card-list .main-card{
+             margin-left: -60px !important;
+     }
     .dailymatch-main-titile h3{
         top: 10px;
         left: 35%;
@@ -383,11 +386,13 @@ progress {
          }
 }
 @media (min-width: 1629px) and (max-width: 1780px) {
-    .dailymatch_headerclip {
-    width: calc(90% - -72px)!important;
-    }
+
     .dailymatch-card{
     height: 221px;
+    }
+    .dailymatch-carditems{
+        width: calc(22% - 1px)!important;
+        margin: 0px 1.5% 57px 1.5% !important;
     }
     .dailymatch-main-wrapper {
         width: 100%;
@@ -395,12 +400,9 @@ progress {
         position: relative;
         overflow-x: hidden;
     }
-    .dailymatch_headerclip {
-        width: calc(92% - -112px)!important;
-    }
-    .uk-grid{
-    margin-left: 0;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: -40px !important;
+}
     .dailymatch-main-titile h3{
         top: 10px;
         left: 28%;
@@ -480,7 +482,7 @@ progress {
         right: 10px;
         bottom: 25%;
     }
-    .progressbar-left-text,.progressbar-right-text  {
+    .dailymatch-progress-bar .progressbar-left-text,.dailymatch-progress-bar .progressbar-right-text  {
     font-size: 10px;
     color: rgb(102 98 98);
     font-weight: 700;
@@ -489,18 +491,20 @@ progress {
 }
 /* 1500pixel */
 @media (min-width: 1551px) and (max-width: 1628px) {
-        .dailymatch_headerclip {
-        width: calc(90% - -72px)!important;
-        }
+ 
         .dailymatch-main-wrapper {
            overflow-x: hidden;
+        }
+        .dailymatch-carditems{
+            width: calc(22% - 1px)!important;
+            margin: 0px 1.5% 57px 1.5% !important;
         }
         .dailymatch-card{
         height: 221px;
         }
-        .uk-grid{
-            margin-left: -55px;
-        }
+        .dailymatch-card-list .main-card{
+            margin-left: -60px !important;
+    }
         .dailymatch-main-titile h3{
             top: 10px;
             left: 28%;
@@ -579,7 +583,7 @@ progress {
         right: 5px;
         bottom: 25%;
         }
-        .progressbar-left-text,.progressbar-right-text  {
+        .dailymatch-progress-bar .progressbar-left-text,.dailymatch-progress-bar .progressbar-right-text  {
         font-size: 10px;
         color: rgb(102 98 98);
         font-weight: 700;
@@ -590,9 +594,7 @@ progress {
 
 /* 1400piexl */
 @media (min-width: 1430px) and (max-width: 1550px) {
-    .dailymatch_headerclip {
-        width: calc(86% - -155px)!important;
-    }
+
     .dailymatch_headerclip h1:before {
         content: "";
         position: absolute;
@@ -605,7 +607,7 @@ progress {
     }
     .dailymatch-carditems{
         width: calc(22% - 1px)!important;
-   
+        margin: 0px 1.5% 57px 1.5% !important;
     }
     .dailymatch-rule {
         background-color: #e0f0f5;
@@ -686,18 +688,18 @@ progress {
         }
 }
 @media (min-width: 1350px) and (max-width: 1429px) {
-    .dailymatch_headerclip {
-        width: calc(86% - -155px)!important;
-    }
+
     .dailymatch-card {
         width: 100%;
         height: 215px;
        
     }
-
+    .dailymatch-card-list .main-card{
+        margin-left: -43px !important;
+}
     .dailymatch-carditems{
         width: calc(22% - 1px)!important;
-   
+        margin: 0px 1.5% 57px 1.5% !important;
     }
     .dailymatch-rule {
         background-color: #e0f0f5;
@@ -798,13 +800,12 @@ progress {
         padding: 0 !important;
         
     }
-    .dailymatch_headerclip {
-        width: calc(85% - -112px)!important;
-    }
-  
+    .dailymatch-card-list .main-card{
+        margin-left: -19px !important;
+}
     .dailymatch-carditems{
         width: calc(28% - -27px)!important;
-   
+        margin: 0px 2.5% 57px 2.5% !important;
     }
     .dailymatch-rule {
         right: 3%;
@@ -815,12 +816,12 @@ progress {
         position: absolute;
         left: -29%;
     }
-    .dailymatch-team-img img {
-     width: 151px;
+    .dailymatch-team-img  img{
+    width: 142px;
     transform: scale(1.2);
     left: -2%;
-    height: 120px;
-    }
+    height: 114px;
+}
     .dailymatch-time-section {
         bottom: 53%;
         right: 22%;
@@ -894,18 +895,15 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -7px !important;
-    }
-    .dailymatch_headerclip {
-        width: calc(85% - -96px)!important;
-    }
+   .dailymatch-card-list .main-card{
+        margin-left: 34px !important;
+}
     .dailymatch_headerclip h1:before {
         top: 5%;
           }
     .dailymatch-carditems {
         width: calc(26% - -177px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
+        margin: 0px 6.5% 57px 6.5% !important;
     }
     .dailymatch-main-titile h3 {
         font-size: 19px;
@@ -1011,15 +1009,10 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -7px !important;
-    }
-    .dailymatch_headerclip {
-        width: calc(85% - -96px)!important;
-    }
-
+    .dailymatch-card-list .main-card{
+        margin-left: -6px !important;
+}
     .dailymatch_headerclip h1{
-    
         font-size: 45px;
     }
     .dailymatch_headerclip h1:before {
@@ -1137,12 +1130,10 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -7px !important;
-    }
-    .dailymatch_headerclip {
-        width: calc(80% - -109px)!important;
-    }
+    .dailymatch-card-list .main-card{
+
+        margin-left: 2px !important;
+}
     .dailymatch_headerclip h1{
     
         font-size: 45px;
@@ -1263,14 +1254,10 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: 5px !important;
-    }
-    .dailymatch_headerclip {
-        width: calc(77% - -109px)!important;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: 11px !important;
+}
     .dailymatch_headerclip h1{
-    
         font-size: 35px;
     }
     .dailymatch_headerclip h1:before {
@@ -1307,8 +1294,7 @@ progress {
         width: 132px;
         transform: scale(1.2);
         left: 3%;
-        top: 68px;
-
+        top: 59px;
     }
     .dailymatch-time-section {
      bottom: 49%;
@@ -1396,9 +1382,9 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: 40px !important;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: 16px !important;
+}
     .dailymatch_headerclip h1{
     
         font-size: 35px;
@@ -1518,12 +1504,9 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -8px !important;
-    }
-    .dailymatch_headerclip {
-        width: calc(70% - -110px)!important;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: -6px !important;
+}
     .dailymatch_headerclip h1{
     
         font-size: 35px;
@@ -1651,17 +1634,14 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -19px !important;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: -12px !important;
+}
     .dailymatch-main-wrapper {
         width: 100%;
         height: auto;
         position: relative;
         overflow-x: hidden;
-    }
-    .dailymatch_headerclip {
-        width: calc(59% - -110px)!important;
     }
     .dailymatch_headerclip h1{
     
@@ -1711,7 +1691,7 @@ progress {
     .dailymatch-time-section h6 {
         color: rgb(102 98 98);
         font-weight: 900;
-        left: -9%;
+        left: -16%;
         font-size: 12px;
         top: 26%;
     
@@ -1790,17 +1770,14 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -19px !important;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: -7px !important;
+}
     .dailymatch-main-wrapper {
         width: 100%;
         height: auto;
         position: relative;
         overflow-x: hidden;
-    }
-    .dailymatch_headerclip {
-        width: calc(59% - -110px)!important;
     }
     .dailymatch_headerclip h1{
     
@@ -1929,17 +1906,14 @@ progress {
         padding: 0 !important;
         
     }
-    .uk-grid {
-        margin-left: -19px !important;
-    }
+    .dailymatch-card-list .main-card{
+        margin-left: -9px !important;
+}
     .dailymatch-main-wrapper {
         width: 100%;
         height: auto;
         position: relative;
         overflow-x: hidden;
-    }
-    .dailymatch_headerclip {
-        width: calc(59% - -110px)!important;
     }
     .dailymatch_headerclip h1{
     
@@ -1989,13 +1963,13 @@ progress {
         color: rgb(102 98 98);
         font-weight: 900;
         left: -8%;
-        font-size: 9px;
+        font-size: 10px;
         top: 28%;
     }
     .dailymatch-time-section span {
         color: rgb(102 98 98);
         font-weight: 900;
-        font-size: 9px;
+        font-size: 10px;
         top: -27%;
         left: 84%;
         }
@@ -2026,7 +2000,7 @@ progress {
     .dailymatch-date span {
         left: 46%;
         top: -49px;
-        font-size: 8px;
+        font-size: 9px;
         font-weight: 900;
     
     }
@@ -2034,7 +2008,7 @@ progress {
             color: rgb(131, 128, 128);
             font-weight: 900;
             left: 9%;
-            font-size: 8px;
+            font-size: 9px;
             position: relative;
             text-transform: uppercase;
             top: 10px;

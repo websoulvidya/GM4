@@ -44,7 +44,7 @@ function Dailymatch() {
   
     <div>
       <Userheader/>
-      <div className='dailymatch-main-wrapper'>
+      <div className='dailymatch-main-wrapper' style={{overflowX:"hidden"}}>
       <div className='dailymatch_headerclip'>
         <h1>Daily Match </h1>
       </div>
@@ -104,7 +104,7 @@ function Dailymatch() {
                   <span classname="dailymatch-matchdate">16-01-2022</span>
                 </div>
                 <div className='dailymatch-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='dailyprogress'>
 
                   </progress>
 
@@ -115,7 +115,7 @@ function Dailymatch() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/dailymatch/dailymatchreg' target="_blank">Reg Now </a>
+                  <a href='/dailymatch/dailymatchreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ function Dailymatch() {
                   <span classname="dailymatch-matchdate">16-01-2022</span>
                 </div>
                 <div className='dailymatch-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='dailyprogress'>
 
                   </progress>
 
@@ -158,7 +158,7 @@ function Dailymatch() {
                   <p>E-Sports Team</p>
 
                  
-                  <a href='/dailymatch/dailymatchreg' target="_blank">Reg Now </a>
+                  <a href='/dailymatch/dailymatchreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ function Dailymatch() {
                   <span classname="dailymatch-matchdate">16-01-2022</span>
                 </div>
                 <div className='dailymatch-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='dailyprogress'>
 
                   </progress>
 
@@ -198,7 +198,7 @@ function Dailymatch() {
                 <div className='dailymatch-reg-section'>
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
-                  <a href='/dailymatch/dailymatchreg' target="_blank">Reg Now </a>
+                  <a href='/dailymatch/dailymatchreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@ function Dailymatch() {
                   <span classname="dailymatch-matchdate">16-01-2022</span>
                 </div>
                 <div className='dailymatch-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='dailyprogress'>
 
                   </progress>
 
@@ -238,7 +238,7 @@ function Dailymatch() {
                 <div className='dailymatch-reg-section'>
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
-               <a href='/dailymatch/dailymatchreg' target="_blank">Reg Now </a>
+                  <a href='/dailymatch/dailymatchreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@ function Dailymatch() {
                   <span classname="dailymatch-matchdate">16-01-2022</span>
                 </div>
                 <div className='dailymatch-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='dailyprogress'>
 
                   </progress>
 
@@ -279,7 +279,7 @@ function Dailymatch() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/dailymatch/dailymatchreg' target="_blank">Reg Now </a>
+                  <a href='/dailymatch/dailymatchreg'>Reg Now </a>
                 </div>
               </div>
             </div>

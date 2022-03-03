@@ -17,7 +17,9 @@ function Resetpage() {
   return <div className='reset-page'>
 
 <Homeheader/>
-<div class="container-reset">  
+<div class="container-reset"> 
+
+ {/* form section  */}
   <form id="contact"onSubmit={handleSubmit(onSubmit)}>
     
     <fieldset id='field-style'>

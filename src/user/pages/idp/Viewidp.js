@@ -9,43 +9,31 @@ function Viewidp() {
         <div className='idp-head-bg'>
               <h1>IDP</h1>
               </div>
+
+              {/* id password section */}
          <div className='view-idp-container'>
              <div className='id'>
                  <h5 className='idp-id'>ID</h5>
                  <h5>Team12</h5>
-
-        
                  <h5 className='idp-pass'>Password</h5>
                  <h5>1234567</h5>
-
              </div>
-          
-             
-             
-             </div>
+            </div>
 
              <div className='social-text'>
              <h4>share</h4>
              </div>
+
+             {/* social media icons */}
              <div className='social-icons'>
-
-           
-              {/* <div className='icon-section'>
-
-             <i  class="fab fa-facebook"></i>
-             <i class="fab fa-instagram"></i>
-             <i class="fab fa-twitter"></i>
-             <i class="fab fa-linkedin"></i>
-             </div>  */}
-
-<div class="rounded-social-buttons">
+                <div class="round-social-buttons">
                     <a class="social-button whatsapp" href="https://www.facebook.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a class="social-button discord" href="https://www.twitter.com/" target="_blank"><i class="fab fa-discord"></i></a>
                     <a class="social-button gmail" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-google"></i></a>
                     <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
              </div>
-
+        <Footer/>
     </div>
   )
 }
