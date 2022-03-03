@@ -99,15 +99,15 @@ export default function Edit_match() {
                             <h2 class="joinhead">Edit Tournament</h2>
                             <hr />
                             <div class="uk-margin">
-                                <label for="tournamentname">tournament Name</label>
+                                <label for="tournamentname" className='editMatches_label'>tournament Name</label>
                                 
                                 <input className="uk-input" type="text" placeholder="Team Name" id='tournamentname'
                                     {...register("tournamentname", { required: "**Tournament name is Required" })} onChange={(event) => setEditMatch({ ...editMatch, name: event.target.value })} value={editMatch.name} autoComplete='off' />
-                                {errors.tournamentname && (<span className='errormsgleft'>{errors.tournamentname.message}</span>)}
+                                {errors.tournamentname && (<span className='editMatches-error'>{errors.tournamentname.message}</span>)}
                             </div>
 
                             <div class="uk-margin">
-                                <label for="matchdate">Match Date</label>
+                                <label for="matchdate" className='editMatches_label'>Match Date</label>
                                 {/* <input class="uk-input" type="date" id='matchdate' name='matchDate' {...register('matchDate')} onChange={(event) => setEditMatch({ ...editMatch, matchDate: event.target.date })} placeholder="Match Date" value={editMatch.matchDate}  /> */}
                                 <div class="uk-input">
                                     <DatePicker
@@ -122,23 +122,23 @@ export default function Edit_match() {
                                 </div>
                             </div>
                             <div class="uk-margin">
-                                <label for="pricepool">Price Pool</label>
+                                <label for="pricepool" className='editMatches_label'>Price Pool</label>
                                 
                                 <input className="uk-input" type="number" placeholder="Team Name" id='pricepool'
                                     {...register("pricepool", { required: "**Price pool is Required" })} onChange={(event) => setEditMatch({ ...editMatch, pricePool: event.target.value })} value={editMatch.pricePool} autoComplete='off' />
-                                {errors.pricepool && (<span className='errormsgleft'>{errors.pricepool.message}</span>)}
+                                {errors.pricepool && (<span className='editMatches-error'>{errors.pricepool.message}</span>)}
                             </div>
                             <div class="uk-margin">
-                                <label for="entryFee">Entry Fee</label>
+                                <label for="entryFee" className='editMatches_label'>Entry Fee</label>
                                 
                                 <input className="uk-input" type="number" placeholder="Team Name" id='entryFeee'
                                     {...register("entryFeee", { required: "**Entry fee is Required" })} onChange={(event) => setEditMatch({ ...editMatch, entryFeee: event.target.value })} value={editMatch.entryFeee} autoComplete='off' />
-                                {errors.entryFeee && (<span className='errormsgleft'>{errors.entryFeee.message}</span>)}
+                                {errors.entryFeee && (<span className='editMatches-error'>{errors.entryFeee.message}</span>)}
                             </div>
                             <div class="uk-margin">
-                                <label for="time">Match time</label>
+                                <label for="time" className='editMatches_label'>Match time</label>
                                 <input class="uk-input" id='time' type="time" name='time'{...register("matchtime", { required: "**Match time is Required" })} onChange={(event) => setEditMatch({ ...editMatch, time: event.target.value })} placeholder="Match Time" value={editMatch.time} />
-                                {errors.matchtime && (<span className='errormsgleft'>{errors.matchtime.message}</span>)}
+                                {errors.matchtime && (<span className='editMatches-error'>{errors.matchtime.message}</span>)}
                                 {/* <div class="uk-input">
                                     <DatePicker
                                         selected={matchTime}
@@ -157,9 +157,9 @@ export default function Edit_match() {
                                 </div> */}
                             </div>
                             <div class="uk-margin">
-                                <label for="idpTime">Idp Time</label>
+                                <label for="idpTime" className='editMatches_label'>Idp Time</label>
                                 <input class="uk-input" id='idpTime' type="time" name='idpTime' {...register("idpTime", { required: "**Idp time is Required" })} onChange={(event) => setEditMatch({ ...editMatch, idpTime: event.target.value })} placeholder="IDP Time" value={editMatch.idpTime} />
-                                {errors.idpTime && (<span className='errormsgleft'>{errors.idpTime.message}</span>)}
+                                {errors.idpTime && (<span className='editMatches-error'>{errors.idpTime.message}</span>)}
                                 {/* <div class="uk-input">
                                     <DatePicker
                                         selected={Time}
@@ -178,7 +178,7 @@ export default function Edit_match() {
                                 </div> */}
                             </div>
                             <div class="uk-margin">
-                                <label for="matchType">Match Type</label>
+                                <label for="matchType" className='editMatches_label'>Match Type</label>
                                 
                                 <div class="uk-margin">
 
@@ -196,7 +196,7 @@ export default function Edit_match() {
                                             },
                                         })} />
                                     
-                                    {errors.matchType && (<span className='errormsgleft'>{errors.matchType.message}</span>)}
+                                    {errors.matchType && (<span className='editMatches-error'>{errors.matchType.message}</span>)}
 
                                 </div>
 

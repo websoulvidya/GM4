@@ -28,6 +28,7 @@ function MyBookingInfo() {
         console.log(data);
         reset();
     }
+    //useState for modal
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -116,20 +117,20 @@ function MyBookingInfo() {
                         <fieldset className="uk-fieldset">
                             <div className="uk-margin">
                                 <input className="uk-input" type="text" id="teamname" name="teamname" placeholder="Team Name" {...register('teamname', { required: "**Team Name is Required" })} />
-                                {errors.teamname && (<p className='errormsgleft'>{errors.teamname.message}</p>)}
+                                {errors.teamname && (<p className='MyBookingerrormsgleft'>{errors.teamname.message}</p>)}
                             </div>
                             <div className="uk-margin">
                                 <input className="uk-input" type="text" placeholder="Slot Number" id="slotnumber" name="slotnumber" {...register('slotnumber', { required: "** Slot number is Required" })} />
-                                {errors.slotnumber && (<p className='errormsgleft'>{errors.slotnumber.message}</p>)}
+                                {errors.slotnumber && (<p className='MyBookingerrormsgleft'>{errors.slotnumber.message}</p>)}
                             </div>
                             <div className="uk-margin">
                                 <textarea className="uk-textarea" type="textarea" id="Reason_For_Cancellation" name="Reason_For_Cancellation" placeholder="Reason For Cancellation" {...register('Reason_For_Cancellation', { required: "**Reason For Cancellation is Required" })} />
-                                {errors.Reason_For_Cancellation && (<p className='errormsgleft'>{errors.Reason_For_Cancellation.message}</p>)}
+                                {errors.Reason_For_Cancellation && (<p className='MyBookingerrormsgleft'>{errors.Reason_For_Cancellation.message}</p>)}
                             </div>
                             <div className="uk-margin"></div>
                             <div className="uk-margin"></div>
                             <div>
-                                <button type="submit" className="openbtn">Send</button>
+                                <button type="submit" className="MyBookings_openbtn">Send</button>
                             </div>
                         </fieldset>
                     </form>
@@ -145,11 +146,11 @@ function MyBookingInfo() {
                 aria-describedby="modal-modal-description"
 
             >
-                <Box sx={style} className='modal_box' >
+                <Box sx={style} className='modal_box_myBookings' >
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         Rules
                     </Typography>
-                    <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
+                    <Typography id="modal-modal-description_myBookings" className='rules_modal_myBookings' sx={{ mt: 2 }} style={{ height: '20rem', overflow: 'scroll' }} >
 
                         <ul>
                             <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>

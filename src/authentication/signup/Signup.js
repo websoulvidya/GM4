@@ -9,6 +9,11 @@ import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import { useForm } from 'react-hook-form';
+
+
+
+// material ui tab styling
+
 const blue = {
   50: '#F0F7FF',
   100: '#C2E0FF',
@@ -90,12 +95,15 @@ function Signup() {
   return (
     <div style={{ backgroundImage: `url(${require("../../user/assets/bgtt.png")})` }} >
         <Homeheader/>
+
+         {/* material ui tab */}
         <TabsUnstyled  className='login-field' defaultValue={0} >
       <TabsList className='container-signup'>
         <Tab>Organiser</Tab>
         <Tab>User</Tab>
-       
       </TabsList>
+
+      {/* organiser tab */}
       <TabPanel value={0}> <div className="container-signup"> 
       {/* organiser form  */}
       <form id="contact" onSubmit={handleSubmit(onSubmit)}>
@@ -126,6 +134,8 @@ function Signup() {
     </fieldset>
   </form>
 </div></TabPanel>
+      
+      {/* user tab */}
       <TabPanel value={1}>
       <div className="container-signup"> 
       {/* user form  */}
