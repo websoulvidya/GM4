@@ -128,6 +128,21 @@
 .about-us__main-content1__col2a h2{
     margin-left: 2rem;
 }
+
+@media (min-width: 601px) and (max-width: 1018px){
+    .about-p1{
+        font-size: 1.4rem !important;
+        padding: 0 !important;
+        margin-bottom: 0.1rem !important;
+    }
+    .about-us__heading-content1 p{
+        font-size: 0.8rem;
+        padding: 0;
+    }
+    .about-us__heading{
+        margin-top: 3.9rem;
+    }
+}
 @media(max-width:600px){
     .about-p1{
         font-size: 1rem !important;
@@ -175,6 +190,25 @@
     }
     
 }
+@media (min-width: 536px) and (max-width: 546px)
+{
+    .about-us__heading{
+        margin-top: 3.8rem !important;
+    }
+}
+@media(max-width:535px){
+    .about-us__heading{
+        margin-top: 3.9rem;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1439px){
+    .about-us__heading{
+        margin-top: 3.9rem;
+    }
+}
+
+/* media queries for large screens */
+
 @media(min-width:1440px){
     .about-us__main-content1 p{
         font-size: 20px !important;

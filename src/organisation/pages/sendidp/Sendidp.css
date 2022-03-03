@@ -507,8 +507,8 @@ progress[value]::-moz-progress-bar {
 
 @media (max-width:768px) {
     .edit_matches form {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
         width: 65%;
     }
 
@@ -802,7 +802,7 @@ progress[value]::-moz-progress-bar {
 .idp_header {
     margin-top: 65px;
     height: 8rem;
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important; 
     background-color: #6BDCFC;
 
     color: #ffff;
@@ -932,54 +932,56 @@ progress[value]::-moz-progress-bar {
     margin: 0em auto;
     overflow: hidden;
     width: 800px;
+    margin-bottom:  2rem;
 }
 
-table {
+
+.canclled_users {
     width: 100%;
 }
 
-table td, table th {
+.canclled_users td,.canclled_users   th {
     color: black;
     padding: 10px;
 }
 
-table td {
+.canclled_users td {
     text-align: center;
     vertical-align: middle;
 }
 
-table td:last-child {
+.canclled_users td:last-child {
     font-size: 0.95em;
     line-height: 1.4;
     text-align: left;
 }
 
-table th {
+.canclled_users th {
     background-color: #daeff1;
     font-weight: 300;
 }
 
-table tr:nth-child(2n) {
+.canclled_users tr:nth-child(2n) {
     background-color: white;
 }
 
-table tr:nth-child(2n+1) {
+.canclled_users tr:nth-child(2n+1) {
     background-color: #edf7f8;
 }
 
 @media screen and (max-width: 700px) {
-    table, tr, td {
+    .canclled_users,.canclled_users tr,.canclled_users td {
         display: block;
     }
 
-    td:first-child {
+    .canclled_users td:first-child {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         width: 100px;
     }
 
-    td:not(:first-child) {
+    .canclled_users td:not(:first-child) {
         clear: both;
         margin-left: 100px;
         padding: 4px 20px 4px 90px;
@@ -987,7 +989,7 @@ table tr:nth-child(2n+1) {
         text-align: left;
     }
 
-    td:not(:first-child):before {
+    .canclled_users td:not(:first-child):before {
         color: #91ced4;
         content: "";
         display: block;
@@ -998,29 +1000,29 @@ table tr:nth-child(2n+1) {
         padding-bottom: 1rem;
     }
 
-    td:nth-child(1):before {
+    .canclled_users td:nth-child(1):before {
         content: "User Name:";
         padding-right: 12px;
     }
 
-    td:nth-child(2):before {
+    .canclled_users td:nth-child(2):before {
         content: "team Details:";
     }
 
-    td:nth-child(3):before {
+    .canclled_users td:nth-child(3):before {
         content: "Status:";
     }
 
-    td:nth-child(4):before {
+    .canclled_users td:nth-child(4):before {
         content: "Comments:";
     }
 
-    tr {
+    .canclled_users tr {
         padding: 10px 0;
         position: relative;
     }
 
-    tr:first-child {
+    .canclled_users tr:first-child {
         display: none;
     }
 }
@@ -1030,50 +1032,35 @@ table tr:nth-child(2n+1) {
         background-image: none !important;
     }
 
-    .header {
-        background-color: #87ceeb;
-        color: white;
-        font-size: 2em;
-        font-weight: 700;
-        padding: 0;
-        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    }
 
-    .img {
-        border: 3px solid;
-        border-color: #daeff1;
-        height: 100px;
-        margin: 0.5rem 0;
-        width: 100px;
-    }
 
-    td:first-child {
+    .canclled_users td:first-child {
         background-color: #c8e7ea;
         border-bottom: 1px solid #91ced4;
         border-radius: 10px 10px 0 0;
         position: relative;
         top: 0;
         transform: translateY(0);
-        width: auto;
+        width: auto !important;
     }
 
-    td:not(:first-child) {
+    .canclled_users td:not(:first-child) {
         margin: 0;
         padding: 5px 1em;
         width: 96%;
     }
 
-    td:not(:first-child):before {
+    .canclled_users td:not(:first-child):before {
         font-size: 0.8em;
         padding-top: 0.3em;
         position: relative;
     }
 
-    td:last-child {
+    .canclled_users td:last-child {
         padding-bottom: 1rem !important;
     }
 
-    tr {
+    .canclled_users tr {
         background-color: white !important;
         border: 1px solid #6cbec6;
         border-radius: 10px;
@@ -1120,7 +1107,7 @@ table tr:nth-child(2n+1) {
 
 .idp_page {
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     padding: 8% 0 0;
     margin: auto;
     background-image: url('../../assets/myMatches/BAB\ SHYANJITH\ \(2\).png');
@@ -1131,7 +1118,7 @@ table tr:nth-child(2n+1) {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
-    max-width: 360px;
+    max-width: 450px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
