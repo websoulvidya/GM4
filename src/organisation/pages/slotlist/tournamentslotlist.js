@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack";
 import Dashboard from "../../components/header/Dashboard";
 import Footer from "../../components/footer/Footer";
 
-function Tournamentlist() {
+function Tournamentslotlist() {
   return (
     <div>
       <Dashboard />
@@ -352,10 +352,12 @@ function Tournamentlist() {
           </Grid>
         </Grid>
       </div>
+     <br/>
+     <br/>
 
       <Footer />
     </div>
   );
 }
 
-export default Tournamentlist;
+export default Tournamentslotlist;

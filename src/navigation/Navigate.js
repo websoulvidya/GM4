@@ -82,7 +82,7 @@ import Orgpayment from '../../src/organisation/pages/orgpayment/Orgpayment';
 
 
 
-import TournamentList from "../organisation/pages/slotlist/tournamentlist";
+import TournamentslotList from "../organisation/pages/slotlist/tournamentslotlist";
 import ScrimsList from "../organisation/pages/slotlist/scrimslist";
 import DailyMatchList  from "../organisation/pages/slotlist/dailymatcheslist";
 //Authentication page links
@@ -176,7 +176,7 @@ export default function Navigate() {
 
 
 
-    <Route path="/tournamentlist" element={<TournamentList/>}/>
+    <Route path="/tournamentslotlist" element={<TournamentslotList/>}/>
     <Route path="/scrimslist" element={<ScrimsList/>}/>
     <Route path="/dailymatcheslist" element={<DailyMatchList/>}/>
     

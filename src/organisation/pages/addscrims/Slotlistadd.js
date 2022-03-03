@@ -353,6 +353,8 @@ function Slotlistadd() {
             </Stack>
           </Grid>
         </Grid>
+        <br/>
+        <br/>
       </div>
 
       <Footer />

@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     padding-left: 6rem;
+    margin-top: 64px;
   }
   .scrims_slot_list_add_header h1 {
     text-align: left;
@@ -26,7 +27,7 @@ body {
     height: 4rem;
     background-color: white;
     left: 64px;
-    top: 103px;
+    top: 87px;
     opacity: 0.5;
   }
   
@@ -129,6 +130,7 @@ body {
     .scrims_slot_list_add_header {
       padding-left: 2rem;
       height: 4rem;
+      margin-top: 55px;
     }
     .scrims_slot_list_add_header h1 {
       font-size: 22px;
@@ -137,7 +139,7 @@ body {
     }
     .scrims_slot_list_add_header h1:before {
       left: 23px;
-      top: 82px;
+      top: 72px;
       height: 2rem;
     }
     .accordion-list-add-scrims {
@@ -174,7 +176,7 @@ body {
     }
     .scrims_slot_list_add_header h1::before{
       height: 3rem;
-      top: 115px;
+      top: 100px;
     }
     .scrims_add_search_bar {
       display: flex !important;

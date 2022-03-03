@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 6rem;
+  margin-top: 65px;
 }
 .slot_header h1 {
   text-align: left;
@@ -27,7 +28,7 @@ body {
   height: 4rem;
   background-color: white;
   left: 64px;
-  top: 52px;
+  top: 87px;
   opacity: 0.5;
 }
 .sub_slot_header {
@@ -77,7 +78,7 @@ body {
   margin: 0 1.5% 55px 1.9% !important;
 }
 .slot-list-carditems-sd {
-  width: calc(22% - 6px) !important;
+  width: calc(22% - 10px) !important;
   height: auto;
   left: 4%;
   border: 1px solid #ade0ee;
@@ -458,7 +459,7 @@ progress[value]::-webkit-progress-value {
   font-size: 18px;
   margin-top: 1rem;
 }
-.slot-list-modal_box {
+.slot-list-modal_box-all{
   border: none !important;
   border-radius: 7px;
 }
@@ -478,6 +479,14 @@ progress[value]::-webkit-progress-value {
 @media (min-width: 300px) and (max-width: 320px){
   .slot_header {
     height: 6rem;
+    margin-top: 54px;
+  }
+  .slot-list-modal_box-all{
+   width: 80% !important;
+   padding: 26px !important;
+  }
+  #modal-modal-description-all{
+    height: 14rem !important;
   }
   .slot_header h1 {
     font-size: 34px;
@@ -485,9 +494,15 @@ progress[value]::-webkit-progress-value {
   }
   .slot_header h1:before {
     height: 2rem;
-    top: 76px;
+    top: 85px;
     margin-left: -7px;
   }
+  .slotlist-team-img img {
+    left: -37px;
+    width: 144px;
+    transform: scale(1);
+    top: 61px;
+}
   .slot_header {
     padding-left: 5rem !important;
   }
@@ -567,6 +582,7 @@ progress[value]::-webkit-progress-value {
 @media (min-width: 321px) and (max-width: 480px) {
   .slot_header {
     height: 6rem;
+    margin-top: 54px;
   }
   .slot_header h1 {
     font-size: 34px;
@@ -575,7 +591,7 @@ progress[value]::-webkit-progress-value {
   }
   .slot_header h1:before {
     height: 2rem;
-    top: 76px;
+    top: 84px;
     margin-left: 15px;
   }
   .slot_header {
@@ -611,6 +627,13 @@ progress[value]::-webkit-progress-value {
   .sub_slot_header h1 {
     margin-left: -20px;
   }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .slot-list-carditems {
@@ -621,6 +644,13 @@ progress[value]::-webkit-progress-value {
     width: calc(110% - 10px) !important;
     flex-wrap: wrap;
   }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
 }
 @media (min-width: 768px) and (max-width: 900px) {
   .slot-list-carditems {
@@ -631,8 +661,8 @@ progress[value]::-webkit-progress-value {
     width: calc(42% - 10px) !important;
     margin: 0 1.5% 55px 6.9% !important;
   }
-  .slot-main-card {
-    margin-left: -23px !important;
+  .slot-main-card.uk-grid{
+    margin-left: -30px !important;
   }
   .slot-list-pay-section {
     right: 59px;
@@ -676,8 +706,15 @@ progress[value]::-webkit-progress-value {
   }
   .slot_header h1::before{
     height: 3rem;
-    top: 57px;
+    top: 96px;
   }
+  .slot-list-modal_box-all{
+    width: 49% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
 }
 @media (min-width: 901px) and (max-width: 912px) {
   .slot-list-carditems {
@@ -709,8 +746,8 @@ progress[value]::-webkit-progress-value {
     margin-right: 2.5rem !important;
     left: 7%;
   }
-  .slot-main-card {
-    margin-left: -21px !important;
+  .slot-main-card.uk-grid{
+    margin-left: -30px !important;
   }
   .slot-list-carditems-sd {
     width: calc(31% - 10px) !important;
@@ -743,18 +780,129 @@ progress[value]::-webkit-progress-value {
     margin: 20px -15px;
   }
 }
-@media (min-width: 1301px) and (max-width: 1347px) {
+@media (min-width: 1501px) and (max-width: 1598px) {
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 3px;
+}
+.slot-list-carditems {
+  width: calc(22% - 6px) !important;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 10px;
 
 }
-@media (min-width: 2020px) and (max-width: 2040px) {
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 49%;
+}
+.slot_match_date {
+top: 92px;
+}
+}
+@media (min-width: 1599px) and (max-width: 1886px){
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 3px;
+}
+.slot-list-carditems {
+  width: calc(22% -10px) !important;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 10px;
+
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 49%;
+}
+.slot_match_date {
+top: 92px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 11px) !important;
+}
+}
+@media (min-width: 2000px) and (max-width: 2040px) {
   .slot_match_date {
-    left: 56%;
-    top: 33%;
-  }
-  .slot-list-progress-bar {
-    bottom: 28%;
-  }
-  .slot-list-progress-bar-sd {
-    bottom: 28%;
-  }
+    top: 99px;
+    font-size: 13px;
+    left: 23%;
+}
+.slot-list-progress-bar-sd {
+  
+  bottom: 19%;
+}
 }

@@ -111,6 +111,7 @@ function Adddscrims() {
                   <span className="errormsg">{errors.scrimname.message}</span>
                 )}
               </div>
+              <div div class="uk-margin">
               <div class="uk-input">
                 <DatePicker
                   selected={selectedDate}
@@ -126,6 +127,7 @@ function Adddscrims() {
                 
 
                
+              </div>
               </div>
               <div class="uk-margin">
                 <div class="uk-input">
@@ -178,11 +180,11 @@ function Adddscrims() {
                   Open
                 </button>
                 <Link to="/Slotlistadd">
-                  {" "}
+                  
                   <button class="addscrims_slotlist_btn">Slotlist</button>
                 </Link>
 
-                <button class="addscrims_close_btn">Close</button>
+                <Link to="/orghome"><button class="addscrims_close_btn">Close</button></Link>
               </div>
               <Modal
                 open={open}
@@ -209,10 +211,11 @@ function Adddscrims() {
                     </span>
                     <br />
                   </Typography>
-                  <div className="button_area">
-                    <button onClick={handleClose} className="modal_close">
+                  <div className="button_area-s">
+                  <button onClick={handleClose} className="modal_close">
                       Cancel
                     </button>
+                    
                     <button
                       className="modal_close"
                       onClick={() => {
@@ -227,6 +230,8 @@ function Adddscrims() {
             </fieldset>
           </form>
         </div>
+        <br/>
+<br/>
       </div>
 
       <Footer />
