@@ -22,14 +22,14 @@ function ScrimsReg() {
  
     <div>
     <Userheader/>
-    <div className="circles" style={{overflowX:"hidden"}}>
+    <div className="scrimscircles" style={{overflowX:"hidden"}}>
     <div className='scrims_regheaderclip'>
         <h1>Registration</h1>
       </div>
-      <div className="smallcircles">
-        <form className="regform" onSubmit={handleSubmit(submitData)}>
+      <div className="scrims_smallcircles">
+        <form className="scrims_regform" onSubmit={handleSubmit(submitData)}>
           <fieldset className="uk-fieldset uk-grid-small" uk-grid>
-            <h2 className="joinhead">Register Now</h2>
+            <h2 className="scrims_joinhead">Register Now</h2>
             <hr />
             <div className="uk-margin uk-width-1-2@s reginput">
               <input className="uk-input" type="text" placeholder="Team Name" id='teamname'  
@@ -105,9 +105,9 @@ function ScrimsReg() {
 
 
             {/* select */}
-            <div className="slot_dropdown" onClick={(e) => setIsActive(!isActive)}>
-                  <div className="slot_btn" >{setected}
-                    <span className="fas fa-caret-down selectdownicon"></span>
+            <div className="scrimsslot_dropdown" onClick={(e) => setIsActive(!isActive)}>
+                  <div className="scrimsslot_btn" >{setected}
+                    <span className="fas fa-caret-down scrims_selectdownicon"></span>
                   </div>
                   {isActive && (
                     <div className="slotlist_content">

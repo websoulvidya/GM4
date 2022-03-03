@@ -11,6 +11,7 @@ body{
     align-items: left;
     display: flex;
     align-items: center;
+    margin-top: 3.8rem;
 }
 .matches_header_info h1{
     text-align: left;
@@ -23,14 +24,13 @@ body{
 }
 .matches_header_info div{
     width: 6px;
-    height: 3.2rem;
+    height: 3.4rem;
     background-color: white;
     opacity: 0.5;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 0;
+    margin-right: 0.5rem;
+    margin-left: 1.7rem;
+    margin-top: 6px;
     margin-bottom: 0; 
-    
 }
 
 .mainWrapper-abh{
@@ -255,8 +255,8 @@ body{
     height: 3rem;
     background-color: white;
     opacity: 0.5;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 1.7rem;
     margin-top: 0;
     margin-bottom: 0; 
 }
@@ -287,7 +287,7 @@ body{
 }
 
 
-.openbtn{
+.MyBookings_openbtn{
     background-color: #6bdcfc;
     font-size: 20px;
     padding-left: 10.5%;
@@ -331,7 +331,7 @@ body{
     border-radius: 5px;
     background-color: #ffff;
 }
-.errormsgleft{
+.MyBookingerrormsgleft{
     color: red;
     text-align: left;
     font-size: 12px;
@@ -408,6 +408,13 @@ body{
     .blue_box-abh h4{
         font-size: 10px;
         font-weight: 600;
+    }
+    .MyBookingerrormsgleft{
+        color: red;
+        text-align: left;
+        font-size: 10px;
+        margin: 2px;
+        padding: 0;
     }
 }
 @media(max-width:470px){

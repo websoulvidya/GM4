@@ -39,7 +39,7 @@ import DailymatchReg from "../user/pages/dailymatch/DailymatchReg";
 import Openrooms from "../user/pages/openrooms/Openrooms";
 import MyBookingInfo from "../user/pages/username/mybookings/MyBookingInfo.js"
 
-import Tournamentreg from '../user/pages/tournament/Tournamentreg';
+// import Tournamentreg from '../user/pages/tournament/Tournamentreg';
 import Tourpayment from '../user/pages/tournament/Tourpayment';
 
 import Viewidp from '../user/pages/idp/Viewidp';
@@ -82,7 +82,7 @@ import Orgpayment from '../../src/organisation/pages/orgpayment/Orgpayment';
 
 
 
-import TournamentList from "../organisation/pages/slotlist/tournamentlist";
+import TournamentslotList from "../organisation/pages/slotlist/tournamentslotlist";
 import ScrimsList from "../organisation/pages/slotlist/scrimslist";
 import DailyMatchList  from "../organisation/pages/slotlist/dailymatcheslist";
 //Authentication page links
@@ -129,7 +129,7 @@ export default function Navigate() {
       <Route path="/changepass" element={<Changepass />}/>
       <Route path="/mybookings" element={<Mybookings />}/>
       <Route path="/tournament" element={<Tournament />}/>
-      <Route path="/tournament/registration" element={<Tournamentreg />}/>
+      {/* <Route path="/tournament/registration" element={<Tournamentreg />}/> */}
       <Route path="/tournament/payment" element={<Tourpayment />}/>
 
       <Route path="/scrims" element={<Scrims />}/>
@@ -176,7 +176,7 @@ export default function Navigate() {
 
 
 
-    <Route path="/tournamentlist" element={<TournamentList/>}/>
+    <Route path="/tournamentslotlist" element={<TournamentslotList/>}/>
     <Route path="/scrimslist" element={<ScrimsList/>}/>
     <Route path="/dailymatcheslist" element={<DailyMatchList/>}/>
     

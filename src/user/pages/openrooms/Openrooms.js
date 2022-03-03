@@ -99,7 +99,7 @@ function Openrooms() {
                 </div>
           
                 <div className='openroom-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='opneroomprogress'>
 
                   </progress>
 
@@ -110,7 +110,7 @@ function Openrooms() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/openrooms/openroomidp' target="_blank">View IDP</a>
+                  <a href='/openrooms/openroomidp' >View IDP</a>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ function Openrooms() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/openrooms/openroomidp' target="_blank">View IDP</a>
+                  <a href='/openrooms/openroomidp' >View IDP</a>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@ function Openrooms() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/openrooms/openroomidp' target="_blank">View IDP</a>
+                  <a href='/openrooms/openroomidp' >View IDP</a>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@ function Openrooms() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/openrooms/openroomidp' target="_blank">View IDP</a>
+                  <a href='/openrooms/openroomidp' >View IDP</a>
                 </div>
               </div>
             </div>
@@ -259,7 +259,7 @@ function Openrooms() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/openrooms/openroomidp' target="_blank">View IDP</a>
+                  <a href='/openrooms/openroomidp' >View IDP</a>
                 </div>
               </div>
             </div>

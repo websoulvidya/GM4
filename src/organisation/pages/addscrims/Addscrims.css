@@ -25,6 +25,7 @@ body {
     margin-bottom: 30px;
     align-items: center !important;
     display: flex;
+    margin-top: 64px;
   }
   .addscrims_header h1 {
     text-align: left;
@@ -40,7 +41,7 @@ body {
     height: 3rem;
     background-color: white;
     left: 64px;
-    top: 104px;
+    top: 86px;
     opacity: 0.5;
   }
   
@@ -235,14 +236,14 @@ body {
     border-radius: 11px;
   }
   
-  .button_area{
+  .button_area-s{
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     width: 80%;
     margin-right: auto;
   }
-  .button_area button{
+  .button_area-s button{
     width: 45%;
     cursor: pointer;
   }
@@ -266,6 +267,9 @@ body {
   }
   
   @media only screen and (max-device-width: 425px) {
+    .addscrims_header{
+      margin-top: 55px;
+    }
     .addscrims_header h1 {
       font-size: 32px;
       margin-left: -51px;
@@ -273,7 +277,7 @@ body {
     }
     .addscrims_header h1:before {
       left: 27px;
-      top: 105px;
+      top: 90px;
       height: 2rem;
     }
     .addscrims_main {
@@ -282,6 +286,9 @@ body {
   }
   
   @media only screen and (max-device-width: 640px) {
+    .addscrims_header{
+      margin-top: 55px;
+    }
     .addscrims_open_btn {
       width: 100%;
       margin-bottom: 5%;
@@ -333,6 +340,9 @@ body {
   }
   
   @media only screen and (min-device-width: 641px) and (max-device-width: 960px) {
+    .addscrims_header{
+      margin-top: 55px;
+    }
     .addscrims_regform {
       width: 65%;
       margin-left: 15%;
@@ -344,7 +354,7 @@ body {
     }
     .addscrims_header h1::before{
       height: 3rem;
-      top: 109px;
+      top: 84px;
     }
     .match-fixing {
       width: 500px !important;

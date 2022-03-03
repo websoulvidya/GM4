@@ -111,10 +111,10 @@ function Sendidp() {
 
                     >
                       <Box sx={style} className='modal_box' >
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                        <Typography id="sendIdp-modal-modal-title" variant="h6" component="h2">
                           Rules
                         </Typography>
-                        <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
+                        <Typography id="sendIdp-modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
 
                           <ul>
                             <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
@@ -136,9 +136,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>Price Pool</h6>
-                    <p className='match-time'>5500</p>
+                    <p className='Mymatches-match-time'>5500</p>
                     <span>Entry Fee</span>
-                    <p className='idp-time'>400</p>
+                    <p className='Mymatches-idp-time'>400</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -149,8 +149,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -176,9 +176,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>Price Pool</h6>
-                    <p className='match-time'>5500</p>
+                    <p className='Mymatches-match-time'>5500</p>
                     <span>Entry Fee</span>
-                    <p className='idp-time'>400</p>
+                    <p className='Mymatches-idp-time'>400</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -189,8 +189,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -216,9 +216,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>Price Pool</h6>
-                    <p className='match-time'>5500</p>
+                    <p className='Mymatches-match-time'>5500</p>
                     <span>Entry Fee</span>
-                    <p className='idp-time'>400</p>
+                    <p className='Mymatches-idp-time'>400</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -229,8 +229,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -256,9 +256,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -269,8 +269,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -296,9 +296,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -309,8 +309,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -336,9 +336,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -349,8 +349,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -376,9 +376,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -389,8 +389,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -416,9 +416,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -429,8 +429,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -455,9 +455,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -468,8 +468,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
@@ -494,9 +494,9 @@ function Sendidp() {
 
                   <div className='mymatches-time-section'>
                     <h6>match time</h6>
-                    <p className='match-time'>3:00</p>
+                    <p className='Mymatches-match-time'>3:00</p>
                     <span>idp time</span>
-                    <p className='idp-time'>2:45</p>
+                    <p className='Mymatches-idp-time'>2:45</p>
                   </div>
                   <div className='mymatches-date'>
                     <p className='mymatches-matchtitle'>Match date</p>
@@ -507,8 +507,8 @@ function Sendidp() {
 
                     </progress>
 
-                    <p className='progressbar-left-text'>100 Joined</p>
-                    <p className='progressbar-right-text'>400 Spot left</p>
+                    <p className='Mymatches-progressbar-left-text'>100 Joined</p>
+                    <p className='Mymatches-progressbar-right-text'>400 Spot left</p>
                   </div>
                   <div className='mymatches-reg-section'>
                     <h6>Hosted By</h6>
