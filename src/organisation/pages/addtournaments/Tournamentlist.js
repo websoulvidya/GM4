@@ -196,7 +196,7 @@ function Addtournamentslist(){
 
 
 </div>
-      <br/>
+      <br/> <br/>
       <Footer />
       </div>
     )
