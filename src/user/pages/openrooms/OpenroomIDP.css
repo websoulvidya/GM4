@@ -2,11 +2,10 @@ body,html{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
+   
 }
 .openidp-main-wrapper{
     width: 100%;
-   
     position: relative;
     background-repeat:no-repeat;
     background-image: url("../../assets/DailyMatch/BAB1.png");
@@ -19,8 +18,7 @@ body,html{
     height: 8rem;
     width: 100%!important;
     box-sizing: border-box;
-    /* width: calc(89% - -81px)!important; */
-    background-color: #6BDCFC;
+     background-color: #6BDCFC;
     color: #ffff;
     display: flex;
     align-items: center;
@@ -32,8 +30,8 @@ body,html{
   font-weight: 700;
   color: #ffff;
   text-transform: uppercase;
-  left: -19px;
-  top: 8px;
+  left: -12px;
+  top: 38px;
   
   position: relative;
 }
@@ -43,7 +41,7 @@ body,html{
   width: 6px;
   height: 4rem;
   background-color: #ffff;
-  left: -19px;
+  left: -22px;
   top: 0px;
   opacity: 0.5;
 
@@ -142,7 +140,7 @@ body,html{
     vertical-align: -0.200em;
   }
   
-  .rounded-social-buttons {
+  .openroom_rounded-social-buttons {
     text-align: center;
     text-align: center;
     top: 50px;
@@ -151,7 +149,7 @@ body,html{
     left: 11%;
   }
   
-  .rounded-social-buttons .social-button {
+  .openroom_rounded-social-buttons .social-button {
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -173,56 +171,35 @@ body,html{
   
 
   
-  .rounded-social-buttons .fa-whatsapp, .fa-discord, .fa-google, .fa-instagram {
+  .openroom_rounded-social-buttons .fa-whatsapp, .fa-discord, .fa-google, .fa-instagram {
     font-size: 25px;
   }
   
-  .rounded-social-buttons .social-button.whatsapp {
+  .openroom_rounded-social-buttons .social-button.whatsapp {
     background: #25D366;
   }
   
-  /* .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-    color: #3b5998;
-    background: #fefefe;
-    border-color: #3b5998;
-  }
-   */
-  .rounded-social-buttons .social-button.discord {
+  .openroom_rounded-social-buttons .social-button.discord {
     background: #738ADB;
   }
   
-  /* .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-    color: #55acee;
-    background: #fefefe;
-    border-color: #55acee;
-  } */
-  
-  .rounded-social-buttons .social-button.google {
+
+  .openroom_rounded-social-buttons .social-button.google {
     background:#bb0000;
   }
   
-  /* .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-    color: #007bb5;
-    background: #fefefe;
-    border-color: #007bb5;
-  } */
+
   
-  
-  .rounded-social-buttons .social-button.instagram {
+  .openroom_rounded-social-buttons .social-button.instagram {
     background: #F09433;
     background: -moz-linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
     background: -webkit-linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%);
     background: linear-gradient(45deg, #F09433 0%,#E6683C 25%,#DC2743 50%,#CC2366 75%,#BC1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F09433', endColorstr='#BC1888',GradientType=1 );
 }
-  
-  /* .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-    color: #125688;
-    background: #fefefe;
-    border-color: #125688;
-  } */
-  /* end */
-
+  .openidppage .footer_wrapper1{
+    position: relative;
+  }
   /* Responsive Section */
   /* end */
 @media (min-width: 300px) and (max-width: 360px) {
@@ -236,13 +213,15 @@ body,html{
         box-sizing: border-box;
     }
     .openidp_headerclip h1 {
-        font-size: 35px;
-        left: -54px;
+        font-size: 30px;
+        left: -24px;
         
     }
     .openidp_headerclip h1:before {
-        top: 0px;
-        height: 3rem;
+       
+      height: 3rem;
+      left: -16%;
+      top: -4px;
           }
           .idpcard-wrapper{
             width: 85%;
@@ -261,7 +240,7 @@ body,html{
     font-size: 16px;
     font-weight: 600;
 }
-.rounded-social-buttons {
+.openroom_rounded-social-buttons {
            position: relative;
         float: left;
         left: 19%;
@@ -281,14 +260,16 @@ body,html{
       box-sizing: border-box;
   }
   .openidp_headerclip h1 {
-      font-size: 35px;
-      left: -54px;
-      
-  }
-  .openidp_headerclip h1:before {
-      top: 0px;
-      height: 3rem;
-        }
+    font-size: 30px;
+    left: -24px;
+    
+}
+.openidp_headerclip h1:before {
+   
+  height: 3rem;
+  left: -16%;
+  top: -4px;
+      }
         .idpcard-wrapper{
           width: 85%;
              }
@@ -306,7 +287,7 @@ body,html{
   font-size: 16px;
   font-weight: 600;
 }
-.rounded-social-buttons {
+.openroom_rounded-social-buttons {
       left: 7%;
      
   }
@@ -319,18 +300,20 @@ body,html{
       padding: 0 !important;
       
   }
-.openidp_headerclip h1 {
+  .openidp_headerclip h1 {
     font-size: 35px;
-    left: -54px;
+    left: -24px;
     
 }
 .openidp_headerclip h1:before {
-    top: 0px;
-    height: 3rem;
+   
+  height: 3rem;
+  left: -12%;
+  top: 0px;
       }
     
 
-           .rounded-social-buttons {
+           .openroom_rounded-social-buttons {
             left: 7%;
            
         }
@@ -346,17 +329,20 @@ body,html{
       padding: 0 !important;
       
   }
-.openidp_headerclip h1 {
+  .openidp_headerclip h1 {
     font-size: 35px;
-    left: -54px;
+    left: -24px;
     
 }
 .openidp_headerclip h1:before {
-    top: 0px;
-    height: 3rem;
+   
+  height: 3rem;
+  left: -12%;
+  top: 0px;
       }
+    
      
-           .rounded-social-buttons {
+           .openroom_rounded-social-buttons {
             left: 20%;
            
         }
@@ -368,17 +354,20 @@ body,html{
       padding: 0 !important;
       
   }
-.openidp_headerclip h1 {
+  .openidp_headerclip h1 {
     font-size: 35px;
-    left: -54px;
+    left: -16px;
     
 }
 .openidp_headerclip h1:before {
-    top: 0px;
-    height: 3rem;
+   
+  height: 3rem;
+  left: -13%;
+  top: 0px;
       }
+    
      
-           .rounded-social-buttons {
+           .openroom_rounded-social-buttons{
             left: 20%;
            
         }
@@ -390,17 +379,19 @@ body,html{
       padding: 0 !important;
       
   }
-.openidp_headerclip h1 {
+  .openidp_headerclip h1 {
     font-size: 45px;
-    left: -54px;
+    left: -16px;
     
 }
 .openidp_headerclip h1:before {
-    top: 2px;
-   height: 3.5rem;
+   
+  height: 3rem;
+  left: -13%;
+  top: 4px;
       }
     
-           .rounded-social-buttons {
+           .openroom_rounded-social-buttons {
             left: 20%;
            
         }

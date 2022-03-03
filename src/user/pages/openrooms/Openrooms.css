@@ -12,7 +12,7 @@ body{
 /* header clip */
 .openroom_headerclip {
     height: 8rem;
-    width:99%;
+    width:100%;
     /* width: calc(89% - -81px)!important; */
     background-color: #6BDCFC;
     color: #ffff;
@@ -26,8 +26,8 @@ body{
     font-weight: 700;
     color: #ffff;
     text-transform: uppercase;
-    left: -19px;
-    top: 8px;
+    left: -12px;
+    top: 38px;
     
     position: relative;
 }
@@ -37,7 +37,7 @@ body{
     width: 6px;
     height: 4rem;
     background-color: #ffff;
-    left: -19px;
+    left: -22px;
     top: 0px;
     opacity: 0.5;
 
@@ -47,7 +47,7 @@ body{
     margin:20px 30px;
     padding-right: 32px;
 }
-.main-card{
+.openroom-card-list .main-card{
    width:100%;
     box-sizing: border-box;
 }
@@ -236,7 +236,7 @@ body{
     bottom: 26%;
 }
 
-progress {
+.opneroomprogress {
     display: block;
     position: relative;
      border-radius: 7px;
@@ -245,16 +245,16 @@ progress {
 
     }
 
-    progress[value]::-webkit-progress-bar {
+   .opneroomprogress[value]::-webkit-progress-bar {
         background-color: rgb(131, 128, 128);
         border-radius: 10px;
     }
-    progress[value]::-webkit-progress-value {
+    .opneroomprogress[value]::-webkit-progress-value {
         background-color: #6BDCFC;
         border-radius: 10px;
         
     }
-    .progressbar-left-text{
+    .openroom-progress-bar .progressbar-left-text{
     position: relative;
     top: 4px;
     left: 0;
@@ -265,7 +265,7 @@ progress {
     margin: 0;
         
 }
-.progressbar-right-text{
+.openroom-progress-bar .progressbar-right-text{
     position: relative;
     top: 2px;
     right: 0;
@@ -312,9 +312,6 @@ progress {
 /* Responsive Start Here */
 /* Responsive Start Here */
 @media (min-width: 1837px) and (max-width: 1900px) {
-    .openroom_headerclip {
-    width: calc(90% - -72px)!important;
-    }
     .openroom-card{
     height: 221px;
     }
@@ -323,9 +320,6 @@ progress {
         height: auto;
         position: relative;
         overflow-x: hidden;
-    }
-    .openroom_headerclip {
-        width: calc(92% - -112px)!important;
     }
     .uk-grid{
     margin-left: 0;
@@ -371,9 +365,6 @@ progress {
           }
 }
 @media (min-width: 1781px) and (max-width: 1836px) {
-    .openroom_headerclip {
-    width: calc(90% - -72px)!important;
-    }
     .openroom-card{
     height: 221px;
     }
@@ -382,9 +373,6 @@ progress {
         height: auto;
         position: relative;
         overflow-x: hidden;
-    }
-    .openroom_headerclip {
-        width: calc(92% - -112px)!important;
     }
     .uk-grid{
     margin-left: 0;
@@ -430,9 +418,6 @@ progress {
           }
 }
 @media (min-width: 1629px) and (max-width: 1780px) {
-    .openroom_headerclip {
-    width: calc(90% - -72px)!important;
-    }
     .openroom-card{
     height: 221px;
     }
@@ -442,9 +427,7 @@ progress {
         position: relative;
         overflow-x: hidden;
     }
-    .openroom_headerclip {
-        width: calc(92% - -112px)!important;
-    }
+
     .uk-grid{
     margin-left: 0;
     }
@@ -510,7 +493,7 @@ progress {
         right: 8px;
         bottom: 27%;
     }
-    .progressbar-left-text,.progressbar-right-text  {
+    .openroom-progress-bar .progressbar-left-text,.openroom-progress-bar .progressbar-right-text  {
     font-size: 10px;
     color: rgb(102 98 98);
     font-weight: 700;
@@ -519,10 +502,7 @@ progress {
 }
 /* 1500pixel */
 @media (min-width: 1551px) and (max-width: 1628px) {
-        .openroom_headerclip {
-        width: calc(90% - -72px)!important;
-        }
-        .openroom-main-wrapper {
+         .openroom-main-wrapper {
            overflow-x: hidden;
         }
         .openroom-card{
@@ -592,7 +572,7 @@ progress {
             right: 3px;
             bottom: 25%;
         }
-        .progressbar-left-text,.progressbar-right-text  {
+        .openroom-progress-bar .progressbar-left-text,.openroom-progress-bar .progressbar-right-text  {
         font-size: 10px;
         color: rgb(102 98 98);
         font-weight: 700;
@@ -603,10 +583,7 @@ progress {
 
 /* 1400piexl */
 @media (min-width: 1430px) and (max-width: 1550px) {
-    .openroom_headerclip {
-        width: calc(86% - -155px)!important;
-    }
-    .openroom_headerclip h1:before {
+     .openroom_headerclip h1:before {
         content: "";
         position: absolute;
         width: 6px;
@@ -686,9 +663,6 @@ progress {
         }
 }
 @media (min-width: 1350px) and (max-width: 1429px) {
-    .openroom_headerclip {
-        width: calc(86% - -155px)!important;
-    }
     .openroom-card {
         width: 100%;
         height: 215px;
@@ -772,10 +746,6 @@ progress {
         padding: 0 !important;
         
     }
-    .openroom_headerclip {
-        width: calc(85% - -112px)!important;
-    }
-  
     .openroom-carditems{
         width: calc(28% - -27px)!important;
    
@@ -849,16 +819,16 @@ progress {
     .uk-grid {
         margin-left: -7px !important;
     }
-    .openroom_headerclip {
-        width: calc(85% - -96px)!important;
-    }
     .openroom_headerclip h1:before {
         top: 5%;
           }
     .openroom-carditems {
         width: calc(26% - -177px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
+        margin: 0px 6.5% 57px 6.5% !important;
     }
+    .openroom-card-list .main-card{
+        margin-left: 34px !important;
+}
     .openroom-main-titile h3 {
         font-size: 19px;
         left: 38%;
@@ -936,9 +906,6 @@ progress {
     }
     .uk-grid {
         margin-left: -7px !important;
-    }
-    .openroom_headerclip {
-        width: calc(85% - -96px)!important;
     }
     .openroom_headerclip h1{
         font-size: 45px;
@@ -1026,9 +993,6 @@ progress {
     }
     .uk-grid {
         margin-left: -7px !important;
-    }
-    .openroom_headerclip {
-        width: calc(80% - -109px)!important;
     }
     .openroom_headerclip h1{
         font-size: 45px;
@@ -1123,9 +1087,6 @@ progress {
     }
     .uk-grid {
         margin-left: 5px !important;
-    }
-    .openroom_headerclip {
-        width: calc(77% - -109px)!important;
     }
     .openroom_headerclip h1{
         font-size: 35px;
@@ -1322,9 +1283,6 @@ progress {
     .uk-grid {
         margin-left: -8px !important;
     }
-    .openroom_headerclip {
-        width: calc(70% - -110px)!important;
-    }
     .openroom_headerclip h1{
         font-size: 35px;
      }
@@ -1428,9 +1386,6 @@ progress {
         height: auto;
         position: relative;
         overflow-x: hidden;
-    }
-    .openroom_headerclip {
-        width: calc(59% - -110px)!important;
     }
     .openroom_headerclip h1{
         font-size: 35px;
@@ -1538,9 +1493,6 @@ progress {
         position: relative;
         overflow-x: hidden;
     }
-    .openroom_headerclip {
-        width: calc(59% - -110px)!important;
-    }
     .openroom_headerclip h1{
         font-size: 35px;
      }
@@ -1644,9 +1596,6 @@ progress {
         position: relative;
         overflow-x: hidden;
     }
-    .openroom_headerclip {
-        width: calc(59% - -110px)!important;
-    }
     .openroom_headerclip h1 {
         font-size: 35px;
         left: -54px;
@@ -1733,10 +1682,10 @@ progress {
             right: 3%;
             bottom: 28%;
         }
-        .progressbar-left-text {
+        .openroom-progress-bar .progressbar-left-text {
             font-size: 9px;
                 }
-        .progressbar-right-text {
+                .openroom-progress-bar .progressbar-right-text {
         top: 4px;
         right: 0px;
         font-size: 9px;
@@ -1767,18 +1716,17 @@ progress {
         position: relative;
         overflow-x: hidden;
     }
-    .openroom_headerclip {
-        width: calc(59% - -110px)!important;
-    }
-    .openroom_headerclip h1 {
-        font-size: 35px;
-        left: -54px;
+     .openroom_headerclip h1 {
+        font-size: 30px;
+        left: -26px;
         
     }
     .openroom_headerclip h1:before {
-        top: -1px;
+       
         height: 3rem;
-          }
+        left: -9%;
+        top: -4px;
+    }
     .openroom-card-list {
     margin: 20px 30px;
     padding: 0 !important;      
@@ -1853,10 +1801,10 @@ progress {
             right: 3%;
             bottom: 28%;
         }
-        .progressbar-left-text {
+        .openroom-progress-bar.progressbar-left-text {
             font-size: 9px;
                 }
-        .progressbar-right-text {
+                .openroom-progress-bar .progressbar-right-text {
         top: 4px;
         right: 0px;
         font-size: 9px;

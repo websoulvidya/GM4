@@ -11,9 +11,13 @@ html body{
     padding:0;
     overflow: auto;
 }
+.ourteam-all{
+    margin-top:50px;
+}
 
 .ourteam-head {
      width: 100%;
+     margin-top: 60px;
      height: 8rem;
      background-color: #6bdcfc;
 }
@@ -26,7 +30,7 @@ html body{
     font-weight: 700;
     text-align: left;
     padding-left: 50px;
-    top: 60px;
+    top: 75px;
     color:white;
     max-width: fit-content;
     text-transform: uppercase ;

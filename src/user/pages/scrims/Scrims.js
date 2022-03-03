@@ -66,11 +66,11 @@ function Scrims() {
                     aria-describedby="modal-modal-description"
                   
                   >
-                    <Box sx={style} className='modal_box' >
+                    <Box sx={style} className='scrimsmodal_box' >
                       <Typography id="modal-modal-title" variant="h6" component="h2">
                         Rules
                       </Typography>
-                      <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{height:'30rem',overflow:'scroll'}} >
+                      <Typography id="modal-modal-description" className='scrimsrules_modal' sx={{ mt: 2 }} style={{height:'30rem',overflow:'scroll'}} >
                         
                         <ul>
                           <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
@@ -84,7 +84,7 @@ function Scrims() {
                         </ul>
                         <br />
                       </Typography>
-                      <button onClick={handleClose} className='modal_close'>ok</button>
+                      <button onClick={handleClose} className='scrimsmodal_close'>ok</button>
                     </Box>
                   </Modal>
     
@@ -101,7 +101,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -112,7 +112,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -153,7 +153,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -194,7 +194,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -223,7 +223,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -234,7 +234,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -276,7 +276,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a >reg now</a>
+                  <a href='/scrims/scrimsreg'>Reg Now </a>
                 </div>
               </div>
             </div>
@@ -306,7 +306,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -317,7 +317,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg' >Reg Now </a>
                 </div>
               </div>
             </div>
@@ -348,7 +348,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -359,7 +359,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg' >Reg Now </a>
                 </div>
               </div>
             </div>
@@ -390,7 +390,7 @@ function Scrims() {
                   <span classname="scrims-matchdate">16-01-2022</span>
                 </div>
                 <div className='scrims-progress-bar'>
-                  <progress value="3333" max="10000">
+                  <progress value="3333" max="10000" className='scrimsprogress'>
 
                   </progress>
 
@@ -401,7 +401,7 @@ function Scrims() {
                   <h6>Hosted By</h6>
                   <p>E-Sports Team</p>
 
-                  <a href='/scrims/scrimsreg' target="_blank">Reg Now </a>
+                  <a href='/scrims/scrimsreg' >Reg Now </a>
                 </div>
               </div>
             </div>

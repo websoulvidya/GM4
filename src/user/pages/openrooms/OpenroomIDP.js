@@ -4,7 +4,7 @@ import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 function OpenroomIDP() {
     return (
-        <div> 
+        <div className='openidppage'> 
             <Userheader/>
             <div className='openidp-main-wrapper'>
                 <div className='openidp_headerclip'>
@@ -28,7 +28,7 @@ function OpenroomIDP() {
                        <a>Share</a>
                        
                     </div>
-                    <div class="rounded-social-buttons">
+                    <div class="openroom_rounded-social-buttons">
                     <a class="social-button whatsapp" href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
                     <a class="social-button discord" href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
                     <a class="social-button google" href="https://www.gmail.com/" target="_blank"><i class="fa fa-google"></i></a>

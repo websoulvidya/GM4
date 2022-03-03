@@ -17,7 +17,9 @@ function Forgotpassword() {
     <div className='forgot-pass'>
         <Homeheader/>
         
-        <div class="container-frgt">  
+        <div class="container-frgt"> 
+
+        {/* form section  */}
   <form id="contact" onSubmit={handleSubmit(onSubmit)}>
     
     <fieldset id='field-style'>

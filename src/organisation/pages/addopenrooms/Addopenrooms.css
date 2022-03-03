@@ -15,7 +15,7 @@ body{
     height: 4rem;
     background-color: #ffff;
     left: 64px;
-    top: 100px;
+    top: 87px;
     opacity: 0.5;
 }
 .reghead{
@@ -25,6 +25,7 @@ body{
     text-align: left;
     padding-left: 7%;
     font-weight: 700;
+    margin-top: 65px;
 }
 .joinheader{
     text-align: left;
@@ -238,7 +239,18 @@ body{
 
 @media (Max-width:350px){
     .reghead{
-        padding-left: 22% !important;
+        padding-left: 65px;
+        margin-top: 55px;
+        font-size: 25px !important;
+    }
+    .reghead:before{
+        top: 75px !important;
+        left: 50px !important;
+        height: 3rem;
+    }
+    .regforms{
+        margin-left: 15%;
+        width: 70%;
     }
     .react-datepicker{
         margin-left:18% !important
@@ -251,8 +263,30 @@ body{
             margin-left: -40px !important;
         border-bottom-color: #6bdcfc !important;
         }
+        .circless{
+            background-image: none;
+        }
+        .modal_box_orgz{
+        width: 17rem !important;
+    }
+    .modal_box_orgz p{
+        height: 23rem !important;
+    }
+    .button_areaz{
+        width: 100% !important;
+    }
+    .openbtns{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    .closebtns{
+        width:100%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
 }
-@media only screen and (max-device-width : 640px) {
+@media only screen and (min-device-width: 351px) and (max-device-width : 640px) {
 
     .openbtns{
         width:100%;
@@ -265,7 +299,7 @@ body{
         margin-left: 1%;
     }
     .regforms{
-        width: 60%;
+        width: 70%;
         margin-left: 15%;
     } 
     .reghead:before{
@@ -275,11 +309,12 @@ body{
         height: 3.5rem;
         background-color: #ffff;
         left: 50px;
-        top: 90px;
+        top: 80px;
         opacity: 0.5;
     } 
     .reghead{
-        padding-left: 20%;
+        margin-top: 58px;
+        padding-left: 19%;
         font-size: 30px;
     }
     .circless{
@@ -326,12 +361,12 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 120px;
-        top: 100px;
+        left: 68px;
+        top: 85px;
         opacity: 0.5;
     } 
     .reghead{
-        padding-left: 20%;
+        padding-left: 12%;
     }
     .circless{
         background-image: none;
@@ -354,15 +389,15 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 130px;
-        top: 100px;
+        left: 68px;
+        top: 90px;
         opacity: 0.5;
     } 
     .regforms{
         margin-top:58px;
     }
     .reghead{
-        padding-left: 15%;
+        padding-left: 10%;
     }
     .circless{
         height: 735px;
@@ -424,6 +459,9 @@ body{
         background-size: cover;
         height: 820px;
     }
+    .reghead{
+        padding-left: 5%;
+    }
 }
 
 @media only screen and (min-device-width : 2400px) and (max-width : 2800px){
@@ -446,14 +484,17 @@ body{
         background-size: 2560px 1400px;
         height: 850px;
     }
+    .reghead{
+        padding-left: 4% !important;
+    }
     .reghead:before{
         content: "";
         position: absolute;
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 150px !important;
-        top: 50px;
+        left: 70px !important;
+        top: 90px;
         opacity: 0.5;
     } 
     #modal-modal-descriptionz{

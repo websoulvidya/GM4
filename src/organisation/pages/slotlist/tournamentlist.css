@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 6rem;
+  margin-top: 64px;
 }
 .tournament_slot_list_header h1 {
   text-align: left;
@@ -26,7 +27,7 @@ body {
   height: 4rem;
   background-color: white;
   left: 64px;
-  top: 50px;
+  top: 87px;
   opacity: 0.5;
 }
 
@@ -130,6 +131,7 @@ body {
   .tournament_slot_list_header {
     padding-left: 2rem;
     height: 6rem;
+    margin-top: 55px;
   }
   .tournament_slot_list_header h1 {
     font-size: 22px;
@@ -137,7 +139,7 @@ body {
   }
   .tournament_slot_list_header h1:before {
     left: 18px;
-    top: 76px;
+    top: 85px;
     height: 2rem;
   }
   .accordion-list-tournamnet {
@@ -188,7 +190,7 @@ body {
   }
   .tournament_slot_list_header h1::before{
     height: 3rem;
-    top: 57px;
+    top: 96px;
   }
 }
 @media (min-width: 769px) and (max-width: 820px) {
