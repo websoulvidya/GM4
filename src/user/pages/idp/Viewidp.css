@@ -44,6 +44,7 @@ margin-top: 1rem;
   margin-right: auto;
   text-align: left;
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .social-icons h4{
@@ -77,11 +78,11 @@ white-space: nowrap;
 vertical-align: -0.200em;
 }
 
-.rounded-social-buttons {
+.round-social-buttons {
 text-align: center;
 } 
  
-.rounded-social-buttons .social-button {
+.round-social-buttons .social-button {
 display: inline-block;
 position: relative;
 cursor: pointer;
@@ -103,35 +104,35 @@ margin-bottom: 0.25rem;
 
 
 
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+.round-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
 font-size: 25px;
 }
 
-.rounded-social-buttons .social-button.whatsapp {
+.round-social-buttons .social-button.whatsapp {
 background: #25D366;
 }
 
 
 
-.rounded-social-buttons .social-button.discord {
+.round-social-buttons .social-button.discord {
 background: #7289DA;
 }
 
 
 
-.rounded-social-buttons .social-button.gmail {
+.round-social-buttons .social-button.gmail {
 background:#bb0000;
 }
 
 
 
-.rounded-social-buttons .social-button.youtube {
+.round-social-buttons .social-button.youtube {
 background: #bb0000;
 }
 
 
 
-.rounded-social-buttons .social-button.instagram {
+.round-social-buttons .social-button.instagram {
   background: #f09433; 
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
