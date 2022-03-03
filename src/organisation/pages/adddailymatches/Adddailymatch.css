@@ -87,6 +87,7 @@ body{
     margin-left: 22%;
     border: 1px solid #6bdcfc;
     padding: 20px;
+    padding-bottom: 10px !important;
     width:50%;
     border-radius: 5px;
     z-index: 1;
