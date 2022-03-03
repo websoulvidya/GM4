@@ -140,11 +140,11 @@ function Changepass() {
       <Modal
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description">
-                <Box sx={style} className='modal_box_org'>
+                aria-labelledby="usercp-modal-title"
+                aria-describedby="usercp-modal-description">
+                <Box sx={style} className='usercp-modal_box'>
                  
-                  <Typography id="modal-modal-description" className='rules_modal'  >
+                  <Typography id="usercp-modal-description" className='rules_modal'  >
 ​
                     <h3>Password changed</h3>
                    
@@ -153,7 +153,7 @@ function Changepass() {
                     
                   </Typography>
                   <div className='user-changepass-button_area'>
-                  <button onClick={handleClose} className='modal_close'>Ok</button>
+                  <button onClick={handleClose} className='usercp-modal_close'>Ok</button>
                   
                   </div>
                   

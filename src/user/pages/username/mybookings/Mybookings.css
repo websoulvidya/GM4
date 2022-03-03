@@ -10,6 +10,7 @@ body{
     align-items: left;
     display: flex;
     align-items: center;
+    margin-top: 3.8rem;
 }
 .matches_header h1{
     text-align: left;
@@ -23,12 +24,12 @@ body{
 }
 .matches_header div{
     width: 6px;
-    height: 3.2rem;
+    height: 3.4rem;
     background-color: white;
     opacity: 0.5;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    display: block;
+    margin-right: 0.5rem;
+    margin-left: 1.7rem;
+    margin-top: 5px;
 }
 
 /* class name changes to the links */
@@ -246,8 +247,10 @@ body{
     height: 28px;
     cursor: pointer;
 }
-
-.modal_close {
+#modal-modal-description_myBookings{
+    border: none;
+}
+.modal_close_myBookings {
     background-color: #6BDCFC;
     color: white;
     width: 5rem;
@@ -257,25 +260,25 @@ body{
     margin-top: 1rem;
 }
 
-.modal_box {
+.modal_box_myBookings {
     border: none !important;
     border-radius: 7px;
 }
 
-.rules_modal::-webkit-scrollbar {
+.rules_modal_myBookings::-webkit-scrollbar {
     width: 5px;
 }
 
-.rules_modal::-webkit-scrollbar-track {
+.rules_modal_myBookings::-webkit-scrollbar-track {
     box-shadow: inset 005px grey;
 }
 
-.rules_modal::-webkit-scrollbar-thumb {
+.rules_modal_myBookings::-webkit-scrollbar-thumb {
     background-color: #87CEEB;
     border-radius: 15px;
 }
 
-.rules_modal::-webkit-scrollbar-thumb:hover {
+.rules_modal_myBookings::-webkit-scrollbar-thumb:hover {
     background-color: #6BDCFC;
 }
 
@@ -322,7 +325,11 @@ body{
         width: 85% !important;
         margin: 0 auto !important;
     }
+    .myBookings_blue-box h5{
+       font-weight: 700;
+    }
 }
+
 
 @media (max-width:600px) {
     .myBookings_outerflex{
@@ -338,6 +345,27 @@ body{
     .matches_header h1{
         font-size: 32px !important;
     }
+    .modal_box_myBookings {
+        width: 80% !important;
+    }
+    .css-ix1f03-MuiTypography-root {
+        font-size: 10px !important;
+    }
+    .modal_close {
+        background-color: #6BDCFC;
+        color: white;
+        width: 5rem;
+        height: 2.5rem;
+        border: none;
+        font-size: 10px;
+        margin-top: 0rem;
+    }
+    #modal-modal-description_myBookings{
+        height: 500px;
+    }
+    .myBookings_blue-box h5{
+        font-weight: 700;
+     }
 }
 @media (max-width:400px){
     .modal_box {

@@ -21,7 +21,7 @@
     /* header clip */
     .mymatches_headerclip {
         height: 8rem;
-        width: -webkit-fill-available;
+        width: -webkit-fill-available !important;
         /* width: calc(89% - -81px)!important; */
         background-color: #6BDCFC;
         color: #ffff;
@@ -262,7 +262,7 @@
 
     }
 
-    .mymatches-time-section .idp-time {
+    .mymatches-time-section .Mymatches-idp-time {
         font-weight: bolder;
         right: -16%;
         font-size: 13px;
@@ -272,7 +272,7 @@
         color: black;
     }
 
-    .mymatches-time-section .match-time {
+    .mymatches-time-section .Mymatches-match-time {
 
         font-weight: bolder;
         left: 16%;
@@ -308,7 +308,7 @@
         bottom: 23%;
     }
 
-    progress {
+    .mymatches-progress-bar progress {
         display: block;
         position: relative;
         border-radius: 7px;
@@ -317,7 +317,7 @@
 
     }
 
-    progress[value]::-webkit-progress-bar {
+    .mymatches-progress-bar progress[value]::-webkit-progress-bar {
         background-color: rgb(131, 128, 128);
         border-radius: 10px;
     }
@@ -328,7 +328,7 @@
 
     }
 
-    .progressbar-left-text {
+    .Mymatches-progressbar-left-text {
         position: relative;
         top: 4px;
         left: 0;
@@ -340,7 +340,7 @@
 
     }
 
-    .progressbar-right-text {
+    .Mymatches-progressbar-right-text {
         position: relative;
         top: 2px;
         right: 0;
@@ -362,25 +362,25 @@
         margin-top: 1rem;
     }
 
-    .modal_box {
+    .Mymatches-modal_box {
         border: none !important;
         border-radius: 7px;
     }
 
-    .rules_modal::-webkit-scrollbar {
+    .Mymatches-rules_modal::-webkit-scrollbar {
         width: 5px;
     }
 
-    .rules_modal::-webkit-scrollbar-track {
+    .Mymatches-rules_modal::-webkit-scrollbar-track {
         box-shadow: inset 005px grey;
     }
 
-    .rules_modal::-webkit-scrollbar-thumb {
+    .Mymatches-rules_modal::-webkit-scrollbar-thumb {
         background-color: #87CEEB;
         border-radius: 15px;
     }
 
-    .rules_modal::-webkit-scrollbar-thumb:hover {
+    .Mymatches-rules_modal::-webkit-scrollbar-thumb:hover {
         background-color: #6BDCFC;
     }
 
@@ -409,9 +409,7 @@
             overflow-x: hidden;
         }
 
-        .mymatches_headerclip {
-            width: calc(92% - -112px) !important;
-        }
+
 
         .uk-grid {
             margin-left: 0;
@@ -437,9 +435,7 @@
     }
 
     @media (min-width: 1629px) and (max-width: 1780px) {
-        .mymatches_headerclip {
-            width: calc(90% - -72px) !important;
-        }
+
 
         .mymatches-card {
             height: 221px;
@@ -452,9 +448,7 @@
             overflow-x: hidden;
         }
 
-        .mymatches_headerclip {
-            width: calc(92% - -112px) !important;
-        }
+
 
         .uk-grid {
             margin-left: 0;
@@ -468,7 +462,8 @@
 
         .mymatches-team-img img {
             left: -21px;
-            width: 153px;
+            width: 130px;
+            height: 5.3rem;
             transform: scale(1.3);
             top: 0px;
 
@@ -513,11 +508,11 @@
             left: 50px;
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             top: 29%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             top: 29%;
             right: -33%;
         }
@@ -552,7 +547,7 @@
             bottom: 25%;
         }
 
-        .progressbar-left-text, .progressbar-right-text {
+        .Mymatches-progressbar-left-text, .Mymatches-progressbar-right-text {
             font-size: 10px;
             color: rgb(102 98 98);
             font-weight: 700;
@@ -562,9 +557,7 @@
 
     /* 1500pixel */
     @media (min-width: 1551px) and (max-width: 1628px) {
-        .mymatches_headerclip {
-            width: calc(90% - -72px) !important;
-        }
+
 
         .mymatches-main-wrapper {
             overflow-x: hidden;
@@ -630,11 +623,11 @@
             left: 50px;
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             top: 29%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             top: 29%;
             right: -33%;
         }
@@ -669,7 +662,7 @@
             bottom: 25%;
         }
 
-        .progressbar-left-text, .progressbar-right-text {
+        .Mymatches-progressbar-left-text, .Mymatches-progressbar-right-text {
             font-size: 10px;
             color: rgb(102 98 98);
             font-weight: 700;
@@ -681,9 +674,7 @@
 
     /* 1400piexl */
     @media (min-width: 1430px) and (max-width: 1550px) {
-        .mymatches_headerclip {
-            width: calc(86% - -117px) !important;
-        }
+
 
         .mymatches_headerclip h1:before {
             content: "";
@@ -754,12 +745,12 @@
             left: 9%;
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             top: 28%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -38%;
             top: 28%;
 
@@ -794,7 +785,7 @@
 
     @media (min-width: 1350px) and (max-width: 1429px) {
         .mymatches_headerclip {
-            width: calc(86% - -155px) !important;
+
             margin-top: 57px !important;
         }
 
@@ -864,12 +855,12 @@
             left: 11%
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             top: 28%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -38%;
             top: 28%;
 
@@ -923,9 +914,6 @@
 
         }
 
-        .mymatches_headerclip {
-            width: calc(85% - -112px) !important;
-        }
 
         .mymatches-carditems {
             width: calc(28% - -27px) !important;
@@ -978,12 +966,12 @@
             left: 2%;
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             top: 28%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -38%;
             top: 28%;
 
@@ -1039,9 +1027,7 @@
             margin-left: -7px !important;
         }
 
-        .mymatches_headerclip {
-            width: calc(85% - -96px) !important;
-        }
+
 
         .mymatches_headerclip h1:before {
             top: 5%;
@@ -1108,13 +1094,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             font-size: 13px;
             top: 36%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -53%;
             top: 36%;
 
@@ -1176,9 +1162,7 @@
             margin-left: -7px !important;
         }
 
-        .mymatches_headerclip {
-            width: calc(85% - -96px) !important;
-        }
+
 
         .mymatches_headerclip h1:before {
             top: 5%;
@@ -1245,13 +1229,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             font-size: 13px;
             top: 36%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -53%;
             top: 36%;
 
@@ -1314,9 +1298,7 @@
             margin-left: -7px !important;
         }
 
-        .mymatches_headerclip {
-            width: calc(80% - -109px) !important;
-        }
+
 
         .mymatches_headerclip h1:before {
             top: 5%;
@@ -1384,13 +1366,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             font-size: 13px;
             top: 36%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -53%;
             top: 36%;
 
@@ -1453,9 +1435,7 @@
             margin-left: 5px !important;
         }
 
-        .mymatches_headerclip {
-            width: calc(77% - -109px) !important;
-        }
+
 
         .mymatches_headerclip h1:before {
             top: 5%;
@@ -1533,13 +1513,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 27%;
             font-size: 13px;
             top: 31%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -53%;
             top: 31%;
 
@@ -1666,13 +1646,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 24%;
             font-size: 13px;
             top: 34%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -50%;
             top: 34%;
             font-size: 13px;
@@ -1737,7 +1717,7 @@
         }
 
         .mymatches_headerclip {
-            width: calc(70% - -110px) !important;
+
             margin-top: 55px;
         }
 
@@ -1816,13 +1796,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 24%;
             font-size: 13px;
             top: 34%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -50%;
             top: 34%;
             font-size: 13px;
@@ -1880,7 +1860,7 @@
 
 
         /* modal style */
-        .modal_box {
+        .Mymatches-modal_box {
             width: 80% !important;
         }
 
@@ -1998,13 +1978,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 24%;
             font-size: 13px;
             top: 34%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -50%;
             top: 34%;
             font-size: 13px;
@@ -2058,7 +2038,7 @@
 
     /* end */
     @media (min-width: 361px) and (max-width: 399px) {
-        .modal_box {
+        .Mymatches-modal_box {
             width: 80% !important;
         }
 
@@ -2176,13 +2156,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 24%;
             font-size: 13px;
             top: 34%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -50%;
             top: 34%;
             font-size: 13px;
@@ -2238,7 +2218,7 @@
     @media (min-width: 300px) and (max-width: 360px) {
 
         /* modal style  */
-        .modal_box {
+        .Mymatches-modal_box {
             width: 80% !important;
         }
 
@@ -2250,7 +2230,7 @@
 
 
 
-        td:first-child {
+        .canclled_users td:first-child {
             width: 93%;
         }
 
@@ -2361,13 +2341,13 @@
 
         }
 
-        .mymatches-time-section .match-time {
+        .mymatches-time-section .Mymatches-match-time {
             left: 39%;
             font-size: 10px;
             top: 17%;
         }
 
-        .mymatches-time-section .idp-time {
+        .mymatches-time-section .Mymatches-idp-time {
             right: -50%;
             top: 17%;
             font-size: 10px;
@@ -2416,11 +2396,11 @@
             bottom: 28%;
         }
 
-        .progressbar-left-text {
+        .Mymatches-progressbar-left-text {
             font-size: 9px;
         }
 
-        .progressbar-right-text {
+        .mymatches-progressbar-right-text {
             top: 6px;
             right: 0px;
             font-size: 9px;
@@ -2469,7 +2449,7 @@
         color: red;
     }
 
-    label {
+    .editMatches_label {
         display: flex;
         margin-bottom: 1px;
         margin-top: 14px;
@@ -2644,10 +2624,11 @@
         color: red;
         font-size: 14px;
     }
-    .edit_matchForm{
+
+    .edit_matchForm {
         border: 1px solid #6bdcfc;
         padding: 20px;
-        width:70%;
+        width: 70%;
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
@@ -2663,8 +2644,14 @@
             margin-right: auto;
         }
     }
+
     @media (min-width: 400px) and (max-width: 530px) {
-        .mymatches_headerclip{
+        .mymatches_headerclip {
             margin-top: 55px;
         }
+    }
+
+
+    .editMatches-error {
+        color: red;
     }

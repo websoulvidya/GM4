@@ -299,11 +299,11 @@ function Mybookings() {
         aria-describedby="modal-modal-description"
 
       >
-        <Box sx={style} className='modal_box' >
+        <Box sx={style} className='modal_box_myBookings' >
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Rules
           </Typography>
-          <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
+          <Typography id="modal-modal-description_myBookings" className='rules_modal_myBookings' sx={{ mt: 2 }} style={{ height: '20rem', overflow: 'scroll' }} >
 
             <ul>
               <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
@@ -317,7 +317,7 @@ function Mybookings() {
             </ul>
             <br />
           </Typography>
-          <button onClick={handleClose} className='modal_close'>ok</button>
+          <button onClick={handleClose} className='modal_close_myBookings'>ok</button>
         </Box>
       </Modal>
       <Footer />

@@ -163,7 +163,7 @@ function EditProfile() {
                     style={{display: "none"}} {...formik.getFieldProps("Photoupload")} required="" />
                     
       
-              <label htmlFor="upload">
+              <label htmlFor="upload" className='user-profilephoto'>
 
                 <IconButton color="primary" aria-label="upload picture" component="span" >
 
@@ -199,6 +199,7 @@ function EditProfile() {
                        color:'red', 
                        fontSize:'12px',
                        fontWeight:'700' ,
+                      
                        }}>
                      {formik.errors.Photoupload}</span> : null}
                      </center>
@@ -245,21 +246,22 @@ function EditProfile() {
         <Modal   
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description" >
-                <Box sx={style} className='modal_box_user' >
+                aria-labelledby="userep-modal-title"
+                aria-describedby="userep-modal-description" >
+                <Box sx={style} className='userep-modal_box' >
                  
-                <Typography id="modal-modal-description" className='rules_modal'   >
+                <Typography id="userep-modal-description" className='rules_modal'   >
 ​
                     <h3>Profile updated</h3>
                    
-                    <span>Your profile is updates Successfully!</span>
+                    <span>Your profile is updated Successfully!</span>
                     <br/>
-                  <div className='button_area'>
-                  <button onClick={handleClose} className='modal_close'>Ok</button>
+
+                  <div className='userep-button_area'>
+                  <button onClick={handleClose} className='userep-modal_close'>Ok</button>
                   
                   </div>
-                  </Typography>
+                </Typography>
                  
                   
                 </Box>
