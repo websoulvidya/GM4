@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 6rem;
+  margin-top: 64px;
 }
 .daily_matches_slot_list_header h1 {
   text-align: left;
@@ -27,7 +28,7 @@ body {
   height: 4rem;
   background-color: white;
   left: 64px;
-  top: 50px;
+  top: 88px;
   opacity: 0.5;
 }
 
@@ -131,6 +132,7 @@ body {
   .daily_matches_slot_list_header {
     padding-left: 2rem;
     height: 4rem;
+    margin-top: 55px;
   }
   .daily_matches_slot_list_header h1 {
     font-size: 22px;
@@ -138,7 +140,7 @@ body {
   }
   .daily_matches_slot_list_header h1:before {
     left: 17px;
-    top: 65px;
+    top: 71px;
     height: 2rem;
   }
   .accordion-list-daily-match {
@@ -175,7 +177,7 @@ body {
   }
   .daily_matches_slot_list_header h1::before{
     height: 3rem;
-    top: 61px;
+    top: 100px;
   }
   .daily_match_search_bar {
     display: flex !important;

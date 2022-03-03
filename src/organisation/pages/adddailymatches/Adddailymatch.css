@@ -15,7 +15,7 @@ body{
     height: 4rem;
     background-color: #ffff;
     left: 64px;
-    top: 100px;
+    top: 87px;
     opacity: 0.5;
 }
 .regheader{
@@ -25,31 +25,31 @@ body{
     text-align: left;
     padding-left: 7%;
     font-weight: 700;
+    margin-top: 65px;
 }
 .joinhead{
     text-align: left;
 }
-.openbtn{
+.openbtnns{
     background-color: #6bdcfc;
     font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top:10px;
-    padding-bottom: 10px;
-    margin-left: -4.5px;
+    padding-bottom: 10px; 
     margin-right: 5%;
     border: 1px solid #6bdcfc;
     color: white;
     border-radius: 5px;
 }
-.openbtn:hover{
+.openbtnns:hover{
     cursor: pointer;
 }
 .slotlistbtn {
     background-color: #6bdcfc;
     font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top:10px;
     padding-bottom: 10px;
     margin-right: 5%;
@@ -63,8 +63,8 @@ body{
 .closebtn{
     background-color: #6bdcfc;
     font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top:10px;
     padding-bottom: 10px;
     border: 1px solid #6bdcfc;
@@ -83,10 +83,11 @@ body{
 .uk-input:focus{
     border: 1px solid #6bdcfc !important;
 }
-.regform{
+.regformz{
     margin-left: 22%;
     border: 1px solid #6bdcfc;
     padding: 20px;
+    padding-bottom: 10px !important;
     width:50%;
     border-radius: 5px;
     z-index: 1;
@@ -204,6 +205,7 @@ body{
     .react-datepicker__time-container{
         width: 150px !important;
         border: none !important;
+        font-size: open sans !important;
     }
     .react-datepicker__time-box{
         overflow: hidden !important;
@@ -213,6 +215,9 @@ body{
     .react-datepicker-time__header{
         color: white !important;
       }
+      .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+        padding: 0px 0px !important;
+    }
       .react-datepicker__time-list-item--selected{
         background-color: #6bdcfc !important;
       }
@@ -242,14 +247,6 @@ body{
       }
 
 @media (Max-width:350px){
-        .regheader{
-            font-size: 25px !important;
-            padding-left: 10%;
-        }
-        .regheader:before{
-            height: 3rem !important;
-            top:85px !important;
-        }
         .react-datepicker{
             margin-left:18% !important
         }
@@ -261,27 +258,69 @@ body{
                 margin-left: -40px !important;
             border-bottom-color: #6bdcfc !important;
             }
+            .regformz{
+                margin-left: 10%;
+                width:80% !important;
+            }
+            .circles{
+                background-image: none;
+                height: auto;
+            }
+            .regheader{
+                padding-left: 65px;
+                margin-top: 55px;
+                font-size: 25px !important;
+            }
+            .regheader:before{
+                top: 75px !important;
+                left: 50px !important;
+                height: 3rem;
+            }
+            .openbtnns{
+                width:100%;
+                margin-bottom: 7% !important;
+                margin-left: 1%;
+                margin-top:10% !important;
+            }
+            .slotlistbtn{
+                width:100%;
+                margin-left: 1%;
+            }
+            .closebtn{
+                width:100%;
+                margin-top: 2%;
+                margin-left: 1%;
+            }
+            .modal_box_orgzz{
+                width: 17rem !important;
+            }
+            .modal_box_orgzz p{
+                height: 23rem !important;
+            }
+            .button_areazz{
+                width: 100% !important;
+            }
     }
 
-@media only screen and (max-device-width : 640px) {
-    .openbtn{
+@media only screen and (min-device-width: 351px) and (max-device-width : 640px) {
+    .openbtnns{
         width:100%;
-        margin-bottom: 5%;
+        margin-bottom: 7%;
         margin-left: 1%;
+        margin-top:10% !important;
     }
     .slotlistbtn{
         width:100%;
-        margin-bottom: 5%;
         margin-left: 1%;
     }
     .closebtn{
         width:100%;
-        margin-bottom: 5%;
+        margin-top: 3%;
         margin-left: 1%;
     }
-    .regform{
-        width: 60%;
-        margin-left: 15%;
+    .regformz{
+        width: 75%;
+        margin-left: 12%;
     }
     .regheader:before{
         content: "";
@@ -289,12 +328,13 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 30px !important;
-        top: 90px;
+        left: 50px !important;
+        top: 80px;
         opacity: 0.5;
     }
     .regheader{
-        padding-left: 15% !important;
+        margin-top: 58px;
+        padding-left: 19% !important;
     }
     .circles{
         background-image: none;
@@ -322,11 +362,11 @@ body{
 }
 
 @media only screen and (min-device-width: 641px) and (max-device-width : 960px){
-    .regform{
+    .regformz{
         width: 65%;
         margin-left: 15% !important;
     }
-    .openbtn{
+    .openbtnns{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -347,20 +387,23 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 120px;
-        top: 100px;
+        left: 68px;
+        top: 85px;
         opacity: 0.5;
     }
     .regheader{
-        padding-left: 20%;
+        padding-left: 12%;
     }
     .circles{
         background-image: none;
     }
+    .css-1wnsr1i{
+        top:40% !important;
+    }
 }
 
 @media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
-    .openbtn{
+    .openbtnns{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -381,16 +424,16 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 130px;
-        top: 100px;
+        left: 68px;
+        top: 90px;
         opacity: 0.5;
     }
     .regheader{
-        padding-left: 15%;
+        padding-left: 10%;
     }
-    .regform{
+    .regformz{
         margin-left: 22% !important;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .circles{
         height: 735px;
@@ -398,7 +441,7 @@ body{
 }
 
 @media only screen and (min-device-width: 1101px) and (max-device-width : 1200px){
-    .openbtn{
+    .openbtnns{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -412,13 +455,10 @@ body{
         width:30%;
         font-size: 18px;
         padding: 10px;
-    }
-    .circles{
-        height: 607px;
     }
 }
 @media only screen and (min-device-width: 1201px) and (max-device-width : 1300px){
-    .openbtn{
+    .openbtnns{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -433,7 +473,7 @@ body{
         font-size: 18px;
         padding: 10px;
     }
-    .circles{
+    .circlesz{
         height: 685px;
     }
     .regform{
@@ -443,7 +483,7 @@ body{
 
 
 @media only screen and (min-device-width: 1600px) and (max-device-width : 1800px){
-    .regform{
+    .regformz{
         margin-top: 5%;
         width: 40%;
         margin-left: 27%;
@@ -457,7 +497,7 @@ body{
 }
 
 @media only screen and (min-device-width: 1801px) and (max-device-width : 2100px){
-    .regform{
+    .regformz{
         margin-top: 5%;
         width: 40%;
         margin-left: 27%;
@@ -468,7 +508,7 @@ body{
             background-size: cover;
             height: 820px;
     }
-    .openbtn{
+    .openbtnns{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -483,16 +523,19 @@ body{
         font-size: 18px;
         padding: 10px;
     }
+    .regheader{
+        padding-left: 5%;
+    }
 }
 
 
 @media only screen and (min-device-width : 2400px) and (max-width : 2800px){
-    .regform{
+    .regformz{
         margin-top: 5%;
         width: 40% !important;
         margin-left: 30% !important;
     }
-    .openbtn{
+    .openbtnns{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -513,14 +556,17 @@ body{
         background-size: 2560px 1450px !important;
         height: 850px;
     }
+    .regheader{
+        padding-left: 4% !important;
+    }
     .regheader:before{
         content: "";
         position: absolute;
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 150px !important;
-        top: 100px;
+        left: 70px !important;
+        top: 90px;
         opacity: 0.5;
     }
     #modal-modal-descriptionzz{

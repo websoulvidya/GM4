@@ -3,16 +3,17 @@
     background-color: #6BDCFC;
     color: white;
     text-align: left;
+    margin-top: 3rem;
 }
 .idp-head-bg h1{
   
-    margin-left: 4rem;
+    margin-left: 6rem;
     text-align: left;
     font-size: 52px;
     font-weight: 700;
     color: #ffff;
     text-transform: uppercase;
-    left: -19px;
+    left: -22px;
     top: 8px;
     
     position: relative;
@@ -220,6 +221,7 @@
 }
 
 .progress-th {
+    left: 6px;
     display: flex;
     border-radius: 7px;
     width: 94%;
@@ -242,7 +244,15 @@
     color: white !important;
     text-decoration: none !important;
 }
-
+.modal_close_useridp{
+    background-color: #6BDCFC;
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 18px;
+    margin-top: 1rem;
+}
 
     @media(max-width:650px){
         .matches_header_info h1{
@@ -316,6 +326,10 @@
 
         .myBoolingInfo_container1{
             height: 450px;
+        }
+
+        .modal_box_useridp{
+            width: 80% !important;
         }
     }
 

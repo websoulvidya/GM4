@@ -109,7 +109,7 @@ const style = {
               timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" id="dat" autoComplete='off'/>
               </div>
             </div>
-
+            <div class="uk-margin">
           <Select options={options} placeholder={'Match Type'} styles={colourStyles} theme={(theme) => ({
       ...theme,
       colors: {
@@ -117,6 +117,7 @@ const style = {
         primary: '#6BDCFC',
       },
     })}/>
+    </div>
         <br/>
         <div>
           {/* Buttons */}
@@ -152,9 +153,8 @@ const style = {
       </form>
       <br/>
       </div>
+      <br/><br/>
       </div>
-
-    <br/>
       <Footer />
     </div>
   )

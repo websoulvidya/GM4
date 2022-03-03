@@ -14,6 +14,7 @@
     border-radius: 5px;
     margin-top: 10%;
     background-color: #ffff;
+    margin-bottom: 50px;
 }
 
 .uk-input{
@@ -40,37 +41,33 @@
     border-radius: 5px;
     width: 100%;
 }
-.editptofile-avatar{
-    width: 80px;
-    height: 80px;
-}
-.editproficon{
-    width: 20px;
-    height: 20px;
-}
 
-.modal_box_user{
-    object-fit: cover;
-}
 .Editprofile-Form button:hover{
     background-color: #6bdcfc;
 
 }
 
-.button_area{
+
+.userep-modal_box{
+    object-fit: cover;
+    height: 230px!important;
+    width: 450px!important;
+    border: none !important;
+}
+
+.userep-button_area{
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     width: 80%;
     margin-right: auto;
 }
-.button_area button{
+.userep-button_area button{
     width: 30%;
     cursor: pointer;
     position: absolute;
     height: 40px;
-    margin-left: 200px;
-   
+    margin-left: 200px;  
     cursor: pointer;
     background-color: #6bdcfc;
     color: #ffff;
@@ -78,64 +75,65 @@
     border-radius: 5px;
 }
 
-#modal-modal-description{
+#userep-modal-description{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 25px;
    
 }
 
-.modal_box_user{
-    border: none !important;
-    
-}
 
 @media (max-width:640px) {
-    .modal_box_user{
-        width: 17rem !important;
+    .userep-modal_box{
+        width: 22rem !important;
     }
-    .modal_box_user p{
-        height: 23rem !important;
+    .userep-modal_box p{
+        height: 20rem !important;
     }
-    .button_area{
+    .userep-button_area{
         width: 100% !important;
+        margin-left: -1rem;
         
     }
 }
 
 @media (max-width:480px) {
-    .modal_box_user{
-        width: 12rem !important;
+    .userep-modal_box{
+        width: 17rem !important;
     }
-    .modal_box_user p{
+    .userep-modal_box p{
         height: 18rem !important;
     }
-    .button_area{
+    .userep-button_area{
         width: 100% !important;
         
     }
-    .modal_close{
+    .userep-modal_close{
         margin-right: 20px;
     }
-    .button_area button{
-        margin-left: 130px;
+    .userep-button_area button{
+        margin-left: 160px;
         margin-top: -1rem;
     }
     
 }
-@media (max-width:269px) {
-    .modal_box_user{
-        width: 8rem !important;
+@media (max-width:400px) {
+    .userep-modal_box{
+        width: 15rem !important;
+        height: 13rem !important;
     }
-    .modal_box_user p{
-        height: 14rem !important;
+    .userep-modal_box p{
+        height: 10rem !important;
+        font-size: 14px;
     }
-    .button_area{
+    .userep-button_area{
         width: 100% !important;
         
     }
    
-    .button_area button{
-        margin-left: 130px;
+    .userep-button_area button{
+        margin-left: 140px;
         margin-top: -1rem;
         margin-bottom: 5px;
     }
@@ -157,7 +155,7 @@
  }
  @media(min-width:331px) and (max-width:400px){
     .Editprofile-Form{
-       width: 250px;
+       width: 300px;
        margin-left: 50px;
     }
  }
@@ -165,10 +163,10 @@
  
  @media(min-width:300px) and (max-width:331px){
     .Editprofile-Form{
-       width: 235px;
-       margin-left: 18px;
+       width: 280px;
+       margin-left: 16px;
     }
  }
- .user-editprofile-upload{
-    align-items: center;
- }
+.user-profilephoto{
+    justify-content: center;
+}

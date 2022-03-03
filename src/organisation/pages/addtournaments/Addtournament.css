@@ -7,7 +7,6 @@ body{
     background-repeat:no-repeat;
     background-image: url("../../assets/BAB1.png");
     background-size: cover;
-    height: auto;
 }
 .tourheader:before {
     content: "";
@@ -16,7 +15,7 @@ body{
     height: 4rem;
     background-color: #ffff;
     left: 64px;
-    top: 100px !important;
+    top: 87px !important;
     opacity: 0.5;
 }
 .tourheader{
@@ -26,6 +25,7 @@ body{
     text-align: left;
     padding-left: 7%;
     font-weight: 700;
+    margin-top: 65px;
 }
 .joinheader{
     text-align: left;
@@ -33,11 +33,11 @@ body{
 .openbtnz{
     background-color: #6bdcfc;
     font-size: 18px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top:10px;
     padding-bottom: 10px;
-    margin-left: -4px;
+    margin-left: -1px;
     margin-right: 5%;
     border: 1px solid #6bdcfc;
     color: white;
@@ -85,7 +85,6 @@ body{
     border: 1px solid #6bdcfc !important;
 }
 .tourform{
-    margin-top: 3%;
     margin-left: 22%;
     margin-bottom: 25px;
     border: 1px solid #6bdcfc;
@@ -177,8 +176,39 @@ body{
         .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{
             margin:0 !important;
         }
+        .tourform{
+            margin-left: 10%;
+            width:80% !important;
+        }
+        .tourheader{
+            padding-left: 65px;
+            margin-top: 55px;
+            font-size: 25px !important;
+        }
+        .tourheader:before{
+            top: 75px !important;
+            left: 50px !important;
+            height: 3rem;
+        }
+        .circlz{
+            background-image: none;
+        }
+        .openbtnz{
+            width:100%;
+            margin-bottom: 5%;
+        }
+        .teamlistbtnz{
+            width:100%;
+            margin-bottom: 5%;
+            margin-left: -1%;
+        }
+        .closebtnz{
+            width:100%;
+            margin-bottom: 5%;
+            margin-left: -1%;
+        }
     }
-@media only screen and (max-device-width : 640px) {
+@media only screen and (min-device-width: 351px) and (max-device-width : 640px) {
     .openbtnz{
         width:100%;
         margin-bottom: 5%;
@@ -199,15 +229,15 @@ body{
     }
     .tourheader:before{
         height: 3.5rem;
-        left: 30px !important;
-        top: 92px !important;
+        left: 50px !important;
+        top: 80px !important;
     }
     .tourheader{
-        padding-left: 15%;
+        margin-top: 58px;
+        padding-left: 19% !important;
     }
     .circlz{
         background-image: none;
-        height: auto;
     }
 }
 
@@ -237,11 +267,11 @@ body{
     }
     .tourheader:before{
         height: 4rem;
-        left: 80px !important;
-        top: 50px;
+        left: 68px !important;
+        top: 85px;
     }
     .tourheader{
-        padding-left: 15%;
+        padding-left: 12%;
     }
     .circlz{
         background-image: none;
@@ -273,25 +303,25 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 110px !important;
-        top: 100px !important;
+        left: 68px !important;
+        top: 90px !important;
         opacity: 0.5;
     }
     .tourheader{
-        padding-left: 15%;
+        padding-left: 10%;
     }
     .circlz{
         height: 730px;
     }
     .tourform{
-        margin-top: 58px !important;
+        margin-top: 20px !important;
     }
 }
 
 @media only screen and (min-device-width: 1101px) and (max-device-width : 1250px){
     .tourform{
         margin-top: 5%;
-        margin-left: 22% !important;
+        margin-left: 23% !important;
     }
     .openbtnz{
         width:29%;
@@ -368,10 +398,10 @@ body{
     }
     .openbtnz{
         margin-left: 0;
-        margin-right: 4.5%;
+        margin-right: 4%;
     }
     .teamlistbtnz{
-        margin-right: 4.5%;
+        margin-right: 4%;
     }
 
         .circlz{
@@ -445,8 +475,11 @@ body{
         width: 6px;
         height: 4rem;
         background-color: #ffff;
-        left: 150px !important;
-        top: 50px;
+        left: 70px !important;
+        top: 90px;
         opacity: 0.5;
+    }
+    .tourheader{
+        padding-left: 4%;
     }
 }

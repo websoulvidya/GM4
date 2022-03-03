@@ -143,9 +143,9 @@ const style = {
       </fieldset>
       </form>
       </div>
+      <br/>
       </div>
 
-    <br/>
     <div>
       <Footer />
       </div>

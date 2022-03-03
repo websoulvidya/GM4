@@ -11,6 +11,7 @@ body{
     padding: 30px;
     font-weight: 700;
     padding-left: 7%;
+    margin-top: 65px;
 }
 .teamlistheader:before {
     content: "";
@@ -19,7 +20,7 @@ body{
     height: 4rem;
     background-color: #ffff;
     left: 64px;
-    top: 100px !important;
+    top: 87px !important;
     opacity: 0.5;
 }
 .searchfieldz{
@@ -113,16 +114,54 @@ body{
     #paginz{
         margin-top: 0;
     }
-  }
-@media (Max-width:380px){
     .teamlistheader{
         font-size: 27px;
         padding-left: 10%;
+        margin-top: 55px;
     }
     .teamlistheader:before{
         left: 15px;
-        top: 85px !important;
-        height: 3.5rem;
+        top: 75px !important;
+        height: 3rem;
+    }
+    .uk-flex{
+        display: inline-grid !important;
+    }
+    .searchfieldz{
+        width: 250px !important;
+        margin-bottom: 15px !important;
+    }
+    .searchbtnz{
+        padding-bottom: 25px;
+        margin-left: 10px;
+        width:250px
+    }
+    .grid-sectionz{
+        margin-left: 0 !important;
+    }
+    .liz{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .lizcon{
+        padding-left: 4rem !important;
+        padding-right: 2rem !important;
+    }
+    .ulistz{
+        padding-left: 25px !important;
+        padding-right: 10px !important;
+    }
+  }
+@media (Min-width:351px) and (Max-width:380px){
+    .teamlistheader{
+        font-size: 27px;
+        padding-left: 18%;
+        margin-top: 55px;
+    }
+    .teamlistheader:before{
+        left: 50px;
+        top: 75px !important;
+        height: 3rem;
     }
     .uk-flex{
         display: inline-grid !important;
@@ -157,12 +196,13 @@ body{
 @media (Min-width:381px) and (max-width:465px){
     .teamlistheader{
         font-size: 30px;
-        padding-left: 10%;
+        padding-left: 18%;
+        margin-top: 57px;
     }
     .teamlistheader:before{
-        left: 15px;
-        top: 90px !important;
-        height: 3.5rem;
+        left: 50px !important;
+        top: 75px !important;
+        height: 3.5rem !important;
     }
     .uk-flex{
         display: inline-grid !important;
@@ -195,11 +235,12 @@ body{
 @media (Min-width:466px) and (max-width:510px){
     .teamlistheader{
         font-size: 30px;
-        padding-left: 10%;
+        padding-left: 15%;
+        margin-top: 57px;
     }
     .teamlistheader:before{
-        left: 15px;
-        top: 70px;
+        left: 50px;
+        top: 80px;
         height: 3.5rem;
     }
     .uk-flex{
@@ -234,11 +275,12 @@ body{
 @media (Min-width:511px) and (max-width:575px){
     .teamlistheader{
         font-size: 30px;
-        padding-left: 10%;
+        padding-left: 15%;
+        margin-top: 58px;
     }
     .teamlistheader:before{
-        left: 30px;
-        top: 70px;
+        left: 50px;
+        top: 80px;
         height: 3.5rem;
     }
     .uk-flex{
@@ -272,12 +314,12 @@ body{
 
 @media (Min-width:576px) and (max-width:640px){
     .teamlistheader{
-        padding-left: 8%;
+        padding-left: 13%;
     }
     .teamlistheader:before{
-        left: 30px;
-        top: 45px;
-        height: 4rem;
+        left: 60px;
+        top: 90px;
+        height: 3.5rem;
     }
     .grid-sectionz{
         margin-left: 0 !important;
@@ -292,11 +334,11 @@ body{
 }
 @media (Min-width:641px) and (max-width:720px){
     .teamlistheader{
-        padding-left: 10% !important;
+        padding-left: 13% !important;
     }
     .teamlistheader:before{
-        left: 45px;
-        top: 50px;
+        left: 60px;
+        top: 85px;
     }
     .searchfieldz{
         width:45% !important;
@@ -311,11 +353,11 @@ body{
 }
 @media (Min-width:721px) and (max-width:820px){
     .teamlistheader{
-        padding-left: 10% !important;
+        padding-left: 12% !important;
     }
     .teamlistheader:before{
-        left: 45px;
-        top: 50px;
+        left: 60px;
+        top: 90px;
     }
     .searchfieldz{
         width:45% !important;
@@ -331,11 +373,11 @@ body{
 }
 @media (Min-width:821px) and (max-width:890px){
     .teamlistheader{
-        padding-left: 9% !important;
+        padding-left: 11% !important;
     }
     .teamlistheader:before{
-        left: 50px;
-        top: 50px;
+        left: 60px;
+        top: 90px;
     }
     .searchfieldz{
         width:45% !important;
@@ -351,11 +393,11 @@ body{
 }
 @media (Min-width:891px) and (max-width:1020px){
     .teamlistheader{
-        padding-left: 9% !important;
+        padding-left: 10% !important;
     }
     .teamlistheader:before{
-        left: 50px;
-        top: 50px;
+        left: 60px;
+        top: 90px;
     }
     .totalteamz{
         margin-left: 10px;
@@ -390,6 +432,10 @@ body{
     .ulistz{
         padding-left: 60px !important;
         padding-right: 40px !important;
+    }
+    .teamlistheader:before{
+        top: 90px;
+        left: 55px;
     }
 }
 @media (Min-width:1121px) and (max-width:1190px){
@@ -429,7 +475,10 @@ body{
 }
 @media (Min-width:1501px) and (max-width:1600px){
     .teamlistheader:before{
-        left:75px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 6%;
     }
     .grid-sectionz{
         margin-left: 27% !important;
@@ -456,7 +505,10 @@ body{
 }
 @media (Min-width:1601px) and (max-width:1700px){
     .teamlistheader:before{
-        left:75px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 6%;
     }
     .grid-sectionz{
         margin-left: 27% !important;
@@ -480,7 +532,10 @@ body{
 }
 @media (Min-width:1701px) and (max-width:1800px){
     .teamlistheader:before{
-        left:90px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 5%;
     }
     .grid-sectionz{
         margin-left: 27% !important;
@@ -504,7 +559,10 @@ body{
 }
 @media (Min-width:1801px) and (max-width:1900px){
     .teamlistheader:before{
-        left:90px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 5%;
     }
     .grid-sectionz{
         margin-left: 27% !important;
@@ -528,7 +586,10 @@ body{
 }
 @media (Min-width:1901px) and (max-width:2000px){
     .teamlistheader:before{
-        left:90px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 5%;
     }
     .grid-sectionz{
         margin-left: 27% !important;
@@ -552,7 +613,10 @@ body{
 }
 @media (Min-width:2001px) and (max-width:2100px){
     .teamlistheader:before{
-        left:120px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 5%;
     }
     .grid-sectionz{
         margin-left: 32% !important;
@@ -576,7 +640,10 @@ body{
 }
 @media (Min-width:2101px) and (max-width:2200px){
     .teamlistheader:before{
-        left:120px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 4%;
     }
     .grid-sectionz{
         margin-left: 32% !important;
@@ -600,7 +667,10 @@ body{
 }
 @media (Min-width:2500px) and (max-width:2600px){
     .teamlistheader:before{
-        left:120px;
+        left:60px;
+    }
+    .teamlistheader{
+        padding-left: 4%;
     }
     .grid-sectionz{
         margin-left: 32% !important;

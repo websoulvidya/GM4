@@ -77,8 +77,8 @@ const submit= (event)=>{
       <div class="circles">
     {/* Header */}
     <h1 class="regheader">REGISTRATION</h1>
-    <div class="smallcircles">
-    <form class="regform" onSubmit={handleSubmit(submitData)}>
+    <div>
+    <form class="regformz" onSubmit={handleSubmit(submitData)}>
       <fieldset class="uk-fieldset">
         <h2 class="joinhead">Join Now</h2>
         <hr/>
@@ -106,6 +106,7 @@ const submit= (event)=>{
               timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" id="dat" autoComplete='off'/>
             </div>
             </div>
+            <div class="uk-margin">
             <Select options={options} placeholder={'Match Type'} styles={colourStyles} theme={(theme) => ({
       ...theme,
       colors: {
@@ -113,12 +114,10 @@ const submit= (event)=>{
         primary: '#6BDCFC',
       },
     })}/>
-
-        <div>
-
-          <br/>
+    </div>
+        <div>      
           {/* Buttons */}
-          <button class="openbtn" onClick={handleOpen}  >Open</button>
+          <button class="openbtnns" onClick={handleOpen}  >Open</button>
           <Link to="/dailymatchslotlist"><button class="slotlistbtn">Slot List</button></Link>
           <Link to="/orghome"><button class="closebtn">Close</button></Link>
         </div>
@@ -148,8 +147,9 @@ const submit= (event)=>{
       </fieldset>
       </form>
       </div>
+      <br/><br/>
       </div>
-      <br/>
+      
     <div>
       <Footer />
       </div>

@@ -199,9 +199,8 @@ function Dailymatchslotlist(){
      </Grid>
 
 
-
+     <br/><br/>
 </div>
-      <br/>
       <Footer />
       </div>
     )

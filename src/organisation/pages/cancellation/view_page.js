@@ -26,7 +26,7 @@ function view_page() {
 
                 <div class="table-users">
                     {/* start cancelled users  table */}
-                    <table cellspacing="0">
+                    <table cellspacing="0" className='canclled_users'>
                         <tr>
                             <th>Username</th>
                             <th>team Details</th>

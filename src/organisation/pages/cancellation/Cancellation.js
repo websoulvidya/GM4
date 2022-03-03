@@ -78,11 +78,11 @@ function Cancellation() {
                   aria-describedby="modal-modal-description"
 
                 >
-                  <Box sx={style} className='modal_box' >
+                  <Box sx={style} className='cancellPage-modal_box' >
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                       Rules
                     </Typography>
-                    <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
+                    <Typography id="CancellPage-modal-modal-description" className='cancellPage-rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
 
                       <ul>
                         <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
@@ -103,9 +103,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -116,8 +116,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -145,9 +145,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -158,8 +158,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -178,15 +178,15 @@ function Cancellation() {
                 <img src={matchImg3} />
               </div>
               <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon"  onClick={handleOpen} aria-hidden="true"></i>
+                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
 
               </div>
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -197,8 +197,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -224,9 +224,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -237,8 +237,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -264,9 +264,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -277,8 +277,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -304,9 +304,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -317,8 +317,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -344,9 +344,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -357,48 +357,8 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img'>
-                <img src={matchImg6} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon"  onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
@@ -424,9 +384,9 @@ function Cancellation() {
 
               <div className='cancel-time-section'>
                 <h6>match time</h6>
-                <p className='match-time'>3:00</p>
+                <p className='cancellPage-match-time'>3:00</p>
                 <span>idp time</span>
-                <p className='idp-time'>2:45</p>
+                <p className='cancellPage-idp-time'>2:45</p>
               </div>
               <div className='cancel-date'>
                 <p className='cancel-matchtitle'>Match date</p>
@@ -437,8 +397,48 @@ function Cancellation() {
 
                 </progress>
 
-                <p className='progressbar-left-text'>100 Joined</p>
-                <p className='progressbar-right-text'>400 Spot left</p>
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
+              </div>
+              <div className='cancel-reg-section'>
+                <h6>Hosted By</h6>
+                <p>E-Sports Team</p>
+
+                {/* <a >reg now</a> */}
+                <Link to={'/view_page'} >VIEW</Link>
+              </div>
+            </div>
+          </div>
+          <div className='cancel-carditems'>
+            <div class="cancel-card">
+              <div className='cancel-main-titile'>
+                <h3>Tournament name</h3>
+              </div>
+              <div className='cancel-team-img'>
+                <img src={matchImg6} />
+              </div>
+              <div className='cancel-rule'>
+                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
+
+              </div>
+
+              <div className='cancel-time-section'>
+                <h6>match time</h6>
+                <p className='cancellPage-match-time'>3:00</p>
+                <span>idp time</span>
+                <p className='cancellPage-idp-time'>2:45</p>
+              </div>
+              <div className='cancel-date'>
+                <p className='cancel-matchtitle'>Match date</p>
+                <span classname="cancel-matchdate">16-01-2022</span>
+              </div>
+              <div className='cancel-progress-bar'>
+                <progress value="3333" max="10000">
+
+                </progress>
+
+                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
+                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
               </div>
               <div className='cancel-reg-section'>
                 <h6>Hosted By</h6>
