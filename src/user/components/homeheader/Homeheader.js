@@ -148,8 +148,8 @@ export default function Homeheader() {
 
                     {/* searchbar portion ends */}
 
-                        <Typography class="header-link" >LOGIN</Typography>
-
+                    <Link to="/login" style={{textDecoration:"none"}} ><Typography class="header-link" >LOGIN</Typography>
+                    </Link>
                         <Typography class="header-link"
                         aria-controls="basic-menu"
                         aria-haspopup="true"
