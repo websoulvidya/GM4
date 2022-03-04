@@ -22,10 +22,14 @@ function Footer() {
               </div>
               <div className='footer_innerdiv-important-links_links'>
                 <ul>
-                  <li><Link to="k">Tournament</Link></li>
+                  {/* <li><Link to="k">Tournament</Link></li>
                   <li><Link to="k">Scrims</Link></li>
                   <li><Link to="k">Daily Matches</Link></li>
-                  <li><Link to="k">Open Matches</Link></li>
+                  <li><Link to="k">Open Matches</Link></li> */}
+                  <li><Link to={'/tournament'}>Tournament</Link></li>
+                  <li><Link to={'/scrims'}>Scrims</Link></li>
+                  <li><Link to={'/dailymatch'}>Daily Matches</Link></li>
+                  <li><Link to={'/openrooms'}>Open Matches</Link></li>
                 </ul>
               </div>
             </div>
@@ -37,10 +41,14 @@ function Footer() {
               </div>
               <div className='footer_innerdiv-useful-links_links'>
               <ul>
-                  <li><Link to="k">Home</Link></li>
+                  {/* <li><Link to="k">Home</Link></li>
                   <li><Link to="k">About Us</Link></li>
                   <li><Link to="k">Careers</Link></li>
-                  <li><Link to="k">Blogs</Link></li>
+                  <li><Link to="k">Blogs</Link></li> */}
+                  <li><Link to={'/'}>Home</Link></li>
+                  <li><Link to={'/about'}>About Us</Link></li>
+                  <li><Link to={'/careers'}>Careers</Link></li>
+                  <li><Link to={'/blog'}>Blogs</Link></li>
                 </ul>
               </div>
             </div>
@@ -52,11 +60,16 @@ function Footer() {
                 <p>Ph:79472</p>
                 <p>Email:ugbvw@gmail.com</p>
                 <div  className='footer_icons'>
-                    <Link to="kkk" uk-icon="icon: facebook"></Link>
+                    {/* <Link to="kkk" uk-icon="icon: facebook"></Link>
                     <Link to="kkk" uk-icon="icon: twitter"></Link>
                     <Link to="kkk" uk-icon="icon: instagram"></Link>
                     <Link to="kkk" uk-icon="icon: linkedin"></Link>
-                    <Link to="kkk" uk-icon="icon: youtube"></Link>
+                    <Link to="kkk" uk-icon="icon: youtube"></Link> */}
+                    <a href="#"><div uk-icon="icon: facebook"></div></a>
+                    <a href="#"><div uk-icon="icon: twitter"></div></a> 
+                    <a href="#"><div uk-icon="icon: instagram"></div></a>  
+                    <a href="#"><div uk-icon="icon: linkedin"></div></a> 
+                    <a href="#"><div uk-icon="icon: youtube"></div></a> 
                 </div>
               </div>
             </div>

@@ -37,7 +37,7 @@ function Footer() {
               </div>
               <div className='footer_innerdiv-useful-links_links'>
               <ul>
-                  <li><Link to={'/logout'}>Home</Link></li>
+                  <li><Link to={'/'}>Home</Link></li>
                   <li><Link to={'/about'}>About Us</Link></li>
                   <li><Link to={'/careers'}>Careers</Link></li>
                   <li><Link to={'/blog'}>Blogs</Link></li>
