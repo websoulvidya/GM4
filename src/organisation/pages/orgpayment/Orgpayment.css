@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     padding-left: 6rem;
+    margin-top:4%;
 }
 .payment_header h1{
     padding-top: 6px;
@@ -23,7 +24,7 @@
     height: 4rem;
     background-color: white;
     left: 64px;
-    top: 52px;
+    top: 92px;
     opacity: 0.5;
 }
 
@@ -136,7 +137,88 @@
     justify-content: start;
     
 }
-@media (max-width:480px) {
+@media only screen and (min-device-width: 1601px)and (max-device-width : 2000px) {
+    .payment_header h1:before{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .payment_header{
+        padding-left: 5rem;
+        height: 7rem;
+        width:100%;
+        margin-top:3%;
+    }
+    .payment_header h1{
+        font-size: 52px;
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 1101px)and (max-device-width : 1600px) {
+    .payment_header h1:before{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .payment_header{
+        padding-left: 5rem;
+        height: 7rem;
+        width:100%;
+        margin-top:4%;
+    }
+    .payment_header h1{
+        font-size: 52px;
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 961px)and (max-device-width : 1100px) {
+    .payment_header h1:before{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .payment_header{
+        padding-left: 5rem;
+        height: 7rem;
+        width:100%;
+        margin-top:4%;
+    }
+    .payment_header h1{
+        font-size: 44px;
+        padding-top: 3rem;
+    }
+}
+@media only screen and (min-device-width: 641px)and (max-device-width : 960px) {
+    .payment_header h1:before{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .payment_header{
+        padding-left: 5rem;
+        height: 7rem;
+        width:100%;
+        margin-top:6%;
+    }
+    .payment_header h1{
+        font-size: 44px;
+    }
+}
+@media only screen and (min-device-width: 481px)and (max-device-width : 640px) {
+    .payment_header h1:before{
+        margin-top: -15px;
+        margin-left: -10px;
+    }
+    .payment_header{
+        padding-left: 5rem;
+        height: 7rem;
+        width:100%;
+        margin-top: 9%;
+    }
+    .payment_header h1{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-device-width: 361px)and (max-device-width : 480px) {
     #tour_pay_card{
         height: auto;
     }
@@ -148,16 +230,46 @@
         height: auto;
     }
     .payment_header h1:before{
-        display: none;
+        margin-top: -15px;
+        margin-left: -10px;
     }
     .payment_header{
-        padding-left: 2rem;
+        padding-left: 5rem;
+        height: 7rem;
+        width:100%;
+        margin-top: 12%;
     }
     .payment_header h1{
         font-size: 38px;
     }
+    #tour_pay_card h3{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:360px) {
+    #tour_pay_card{
+        height: auto;
+    }
+    #tour_pay_card img{
+        width: 8rem;
+    }
+    .QR_code_section{
+        width: 22rem;
+        height: auto;
+    }
+    .payment_header h1:before{
+        margin-top: -15px;
+        margin-left: -10px;
+    }
     .payment_header{
+        padding-left: 5rem;
         height: 7rem;
+        width:100%;
+        margin-top: 16%;
+    }
+    .payment_header h1{
+        font-size: 38px;
     }
     #tour_pay_card h3{
         font-size: 25px;

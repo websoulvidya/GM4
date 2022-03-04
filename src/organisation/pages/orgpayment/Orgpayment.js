@@ -10,7 +10,6 @@ import { loremIpsum, LoremIpsum } from 'react-lorem-ipsum';
 import payment_img1 from '../../assets/payment/payment_banner2.jpg'
 import img5 from '../../assets/payment/img5.jpg'
 
-import card_img from '../../assets/payment/imgg.png'
 import QR_code from '../../assets/homeimages/QR_code.png';
 import gpay from '../../assets/homeimages/Gpay.jpg';
 import paytm from '../../assets/homeimages/paytm.png'

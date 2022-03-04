@@ -1,25 +1,31 @@
 import React, { useState } from 'react'
 
-import '../advertisement/Advertisement.css'
-import * as yup from 'yup';
+import './Adspayment.css';
 
-import { yupResolver } from '@hookform/resolvers/yup';
 
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
 import { FilledInput } from '@mui/material';
 
 import QR_code from '../../assets/homeimages/QR_code.png'
-import gpay from '../../assets/homeimages/Gpay.jpg'
-// import paytm from '../../assets/Org_payment/paytm.png'
-import phonepe from '../../assets/homeimages/phonepe.png'
+import gpay from '../../assets/homeimages/Gpay.jpg';
+import paytm from '../../assets/homeimages/paytm.png'
+import phonepe from '../../assets/homeimages/phonepe.png';
 import wpay from '../../assets/homeimages/whatsappPay.png'
-import paytm from '../../assets/homeimages/Paytm-Logo.wine.png'
+
 import { Grid, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { useForm } from 'react-hook-form';
-import { YoutubeSearchedForOutlined } from '@mui/icons-material';
 
+
+//validation
+import { useForm } from "react-hook-form";
+
+
+import { yupResolver } from '@hookform/resolvers/yup';
+import { date, string } from 'yup/lib/locale';
+import * as yup from 'yup';
+import { Formik } from 'formik';
+import { useFormik } from 'formik';
 
 
 //modal style 
@@ -30,54 +36,27 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-
-//yup
-let schema = yup.object().shape({
-    OrganizationName: yup.string().required(),
-    paymentScreenshot: yup.mixed().required()
-});
-
-// check validity
-schema
-    .isValid({
-        name: 'jimmy',
-        age: 24,
-    })
-    .then(function (valid) {
-        valid = true; // => true
-    });
-
-
-
-
 function Ads_payment() {
 
+    //form submit
+    const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
+    const submitData = (data) => {
+        reset();
+    };
 
-    //form validation
-    const { register, handleSubmit, formState: { errors } } = useForm({
-        resolver: yupResolver(schema)
 
-    });
-
-    const onSubmit = (data) => {
-        console.log(data);
-    }
-    const media = (e) => {
-        console.log(e.target.value);
-    }
-    console.log(errors);
     return (
-        <div>
+        <div style={{overflowX:"hidden"}}>
             <div>
                 <Dashboard />
             </div >
 
             {/* start Header */}
-            <div className='payment_header'>
+            <div className='adspayment_header'>
                 <h1>payment</h1>
             </div>
             {/* end Header */}
-            <div className='ads_body'>
+            <div className='adspayment_body'>
 
                 <div className='ads_payment_card_heading'>
                     <h3>Your Plan</h3>
@@ -117,7 +96,7 @@ function Ads_payment() {
                     <div className='payment_method_img'>
                         <ul>
                             <li><img src={gpay} alt="" /></li>
-                            <li><img src={paytm} alt="" /></li>
+                            <li><img src={paytm} alt=""  style={{ width: '4.9rem' }} /></li>
                             <li><img src={phonepe} alt="" style={{ width: '4.9rem' }} /></li>
                             <li><img src={wpay} alt="" /></li>
                         </ul>
@@ -127,52 +106,73 @@ function Ads_payment() {
                 </div>
                 {/* start payment form */}
                 <div className='pay_form'>
-                    <form className='edit_matchForm' onSubmit={handleSubmit(onSubmit)}  >
+                    <form className='ads_paymentForm' onSubmit={handleSubmit(submitData)} >
+                        <h3 className='ads_form_heading'>Ads Image Selection</h3>
                         <fieldset class="uk-fieldset">
                             <h2 class="joinhead"></h2>
                             <div class="uk-margin">
-                                <input class="uk-input" type="text" placeholder="Organization Name" name='orgName' {...register('OrganizationName')} required /> <br />
-                                {/* {userErr?<span className='error'>Organization name  is required</span>:null} */}
-                                <p className='error'>{errors['OrganizationName']?.message}</p>
+                                <input className="uk-input" type="text" placeholder="Organizer name" id='orgsname' style={{backgroundColor:"#F8F8F8"}}
+                                    {...register("orgsname", { required: "**Organizer Name is Required" })} autoComplete='off' />
+                                {errors.orgsname && (<span className="adspayment-errormsg">{errors.orgsname.message}</span>)}
                             </div>
 
-                            <div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <label >Screenshot of Your Payment</label>
-                                        <input type="file" name="paymentScreenshot" required />
+                                        <input className="uk-input" type="file" placeholder="Upload Screenshot of Payment"
+                                            autoComplete='off' {...register('scrnshot', {
+                                                required: "**Payment screenShot is required ",
+                                                validate: {
+                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
 
-                                        <input class="uk-input uk-form-width-extra-large" type="text" placeholder="Select file" name='paymentScreenshot' onChange={media} style={{ marginTop: '.5rem' }} disabled />
+                                                    acceptedFormats: files =>
+                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                            files[0]?.type
+                                                        ) || 'Only PNG, JPEG e GIF',
+                                                },
+                                            })} />
+                                        <input class="uk-input uk-form-width-extra-large" type="text" placeholder="Upload Screenshot of Payment" name='paymentScreenshot' style={{ marginTop: '.5rem' }} disabled />
+                                        {errors.scrnshot && (<span className='adspayment-errormsg'>{errors.scrnshot.message}</span>)}
 
                                     </div>
                                 </div>
-                            </div>
                             <div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
                                         <label >Advertising Imges</label>
-                                        <input type="file" required />
+                                        <input className="uk-input" type="file" placeholder=""
+                                            autoComplete='off' {...register('ads1', {
+                                                required: "**Advertisement image is required ",
+                                                validate: {
+                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+
+                                                    acceptedFormats: files =>
+                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                            files[0]?.type
+                                                        ) || 'Only PNG, JPEG e GIF',
+                                                },
+                                            })} />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg1' placeholder="Image 1" style={{ marginTop: '.5rem' }} disabled />
+                                        {errors.ads1 && (<span className='adspayment-errormsg'>{errors.ads1.message}</span>)}
                                     </div>
                                 </div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input type="file" required />
+                                        <input type="file" />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg2' placeholder="Image 2" style={{ marginTop: '.5rem' }} disabled />
                                     </div>
                                 </div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input type="file" required />
+                                        <input type="file" />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg3' placeholder="Image 3" style={{ marginTop: '.5rem' }} disabled />
                                     </div>
                                 </div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input type="file" required />
+                                        <input type="file" />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg4' placeholder="Image 4" style={{ marginTop: '.5rem' }} disabled />
                                     </div>
@@ -180,21 +180,32 @@ function Ads_payment() {
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
                                         <label >Banner Image</label>
-                                        <input type="file" required />
+                                        <input className="uk-input" type="file" placeholder=""
+                                            autoComplete='off' {...register('bannerImg', {
+                                                required: "**Banner image is required ",
+                                                validate: {
+                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+
+                                                    acceptedFormats: files =>
+                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                            files[0]?.type
+                                                        ) || 'Only PNG, JPEG e GIF',
+                                                },
+                                            })} />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='bannerImage' placeholder="Select file" style={{ marginTop: '.5rem' }} disabled />
+                                        {errors.bannerImg && (<span className='adspayment-errormsg'>{errors.bannerImg.message}</span>)}
                                     </div>
                                 </div>
                             </div>
-                            <button class="openbtn" type='submit'>Submit</button>
+                            <button class="ads-paymentbtn" type='submit'>Submit</button>
 
 
                         </fieldset>
                     </form>
-                </div>
                 {/* end payment form */}
                 <div>
-
+                </div>
                 </div>
             </div>
             <div>

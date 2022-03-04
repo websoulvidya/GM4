@@ -761,7 +761,7 @@
         margin-top:100%;
     }
     #card_first_main{
-        margin-top: 400%;
+        margin-top: 40%;
     }
     #card_second_main{
         margin-top: 25%;
@@ -805,11 +805,11 @@
 
 @media (min-width: 400px) and (max-width: 532px) {
     .card_home_main{
-        margin-left:-210px;
+        margin-left:-230px;
         margin-top:100%;
     }
     #card_first_main{
-        margin-top: 200%;
+        margin-top: 20%;
     }
     #card_second_main{
         padding-top: 10%;
@@ -858,7 +858,7 @@
         margin-top:70%;
     }
     #card_first_main{
-        margin-top: 200%;
+        margin-top: 20%;
     }
     #card_second_main{
         padding-top: 10%;
@@ -901,7 +901,7 @@
         margin-top:70%;
     }
     #card_first_main{
-        margin-top: 200%;
+        margin-top: 20%;
     }
     #card_second_main{
         padding-top: 10%;

@@ -5,6 +5,7 @@ import Footer from '../../components/footer/Footer';
 
 import './Advertisement.css'
 
+
 import img7 from '../../assets/homeimages/img7.jpg'
 
 import {
@@ -26,11 +27,11 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Advertisement() {
     return (
-        <div>
+        <div style={{overflowX:"hidden"}}>
             <div>
                 <Dashboard />
             </div>
-            <div className='ads_header'>
+            <div class="advs_header">
                 <h1>Advertisement</h1>
             </div>
             {/* start  advertisement banner image */}
@@ -132,7 +133,7 @@ function Advertisement() {
                 </Container>
             </div>
             {/* end advertisement card portion */}
-
+            
             <div>
                 <Footer />
             </div>

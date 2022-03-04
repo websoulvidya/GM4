@@ -1,0 +1,401 @@
+/* ads Payment */
+
+.adspayment_header {
+    height: 8rem;
+    width: -webkit-fill-available;
+    background-color: #87ceeb;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    margin-top: 4%;
+}
+
+.adspayment_header h1 {
+    padding-top: 6px;
+    text-align: left;
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.adspayment_header h1:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: white;
+    left: 64px;
+    top: 92px;
+    opacity: 0.5;
+}
+.adspayment_body{
+    margin-bottom: 10%;
+}
+
+.ads_payment_card_heading {
+    margin-top: 3rem;
+}
+
+.ads_payment_card_heading h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #87ceeb;
+}
+
+#ads_tour_pay_card {
+    margin-top: 1.8rem;
+    height: auto;
+    margin-bottom: 3rem;
+    border: 2px solid #87ceeb;
+    border-radius: 12px;
+    border-bottom: 7px solid #87ceeb;
+    position: relative;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#ads_tour_pay_card h3 {
+    display: flex;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0;
+}
+
+.ads_payment_card {
+    margin-bottom: 3rem;
+}
+
+#ads_tour_pay_card h6 {
+    text-align: start;
+    width: 65%;
+}
+
+#ads_tour_pay_card img {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 12.4rem;
+    z-index: -1;
+}
+
+.ads_price_details h5 {
+    text-align: start;
+    font-size: 30px;
+    font-weight: bold;
+    color: #87ceeb;
+}
+
+.ads_price_details span {
+    color: #555555;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.QR_code_section {
+    width: 32rem;
+    height: 36rem;
+    margin-bottom: 4rem;
+    border: 2px solid #87ceeb;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+}
+
+.QR_code img {
+    width: 70%;
+    margin-top: 3rem;
+    margin-bottom: 1.9rem;
+}
+
+.QR_code_section h5 {
+    margin-bottom: -2rem;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: #87ceeb;
+}
+
+.QR_code_section h4 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.QR_code_section hr {
+    margin-top: 0;
+    color: #D7D3CE;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.payment_method_img ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment_method_img img {
+    width: 4rem;
+}
+
+.ads-paymentbtn {
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: 28%;
+    margin-bottom:30px;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+    bottom: -23px;
+    position: relative;
+}
+
+.ads-paymentbtn {
+    display: flex;
+    justify-content:center;
+
+}
+
+#ads_tour_pay_card ul {
+    text-align: start;
+    width: 65%;
+}
+.adspayment-errormsg{
+    color:red;
+    font-size: 14px;
+}
+
+.plan_header {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+
+}
+
+.ads_card a:hover {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.ads_card {
+    text-decoration: none;
+}
+
+.ads_paymentForm{
+    border: 1px solid #6bdcfc;
+    padding: 20px;
+    width:70%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+} 
+
+.ads_form_heading{
+    font-size: 22px;
+    font-weight: 700;
+}
+@media only screen and (min-device-width: 1601px)and (max-device-width : 2000px) {
+    .adspayment_header h1:before {
+        margin-top: 0px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 45px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:3%;
+    }
+}
+@media only screen and (min-device-width: 1101px)and (max-device-width : 1600px) {
+    .adspayment_header h1:before {
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 45px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:4%;
+    }
+}
+@media only screen and (min-device-width: 961px)and (max-device-width : 1100px) {
+    .adspayment_header h1:before {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 45px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:5%;
+    }
+}
+@media only screen and (min-device-width: 641px)and (max-device-width : 960px) {
+    .adspayment_header h1:before {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 38px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:7%;
+    }
+}
+@media only screen and (min-device-width: 481px)and (max-device-width : 640px) {
+    .adspayment_header h1:before {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 38px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:9%;
+    }
+}
+
+@media only screen and (min-device-width: 361px)and (max-device-width : 480px) {
+    .ads_paymentForm {
+        border: 1px solid #6bdcfc;
+        padding: 20px;
+        width: 87% !important;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ads_tour_pay_card {
+        height: auto;
+    }
+
+    #ads_tour_pay_card img {
+        width: 8rem;
+    }
+
+    .QR_code_section {
+        width: 22rem;
+        height: auto;
+    }
+
+    .adspayment_header h1:before {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 38px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:12%;
+    }
+
+    #ads_tour_pay_card h3 {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width:360px) {
+    .ads_paymentForm {
+        border: 1px solid #6bdcfc;
+        padding: 20px;
+        width: 87% !important;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ads_tour_pay_card {
+        height: auto;
+    }
+
+    #ads_tour_pay_card img {
+        width: 8rem;
+    }
+
+    .QR_code_section {
+        width: 22rem;
+        height: auto;
+    }
+
+    .adspayment_header h1:before {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .adspayment_header {
+        padding-left: 4rem;
+    }
+
+    .adspayment_header h1 {
+        font-size: 38px;
+    }
+
+    .adspayment_header {
+        height: 7rem;
+        margin-top:14%;
+    }
+
+    #ads_tour_pay_card h3 {
+        font-size: 25px;
+    }
+}

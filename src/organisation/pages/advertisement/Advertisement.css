@@ -8,19 +8,18 @@
 .payment_banner {
     margin-top: 1rem;
 }
-
-.ads_header {
+.advs_header {
     height: 8rem;
     width: -webkit-fill-available;
     background-color: #87ceeb;
     color: #ffff;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 6rem;
     position: relative;
+    margin-top: 4%;
 }
-
-.ads_header h1 {
+.advs_header h1 {
     padding-top: 6px;
     text-align: left;
     font-size: 52px;
@@ -29,7 +28,7 @@
     text-transform: uppercase;
 }
 
-.ads_header h1:before {
+.advs_header h1:before {
     /* content: "";
     position: absolute;
     width: 6px;
@@ -42,13 +41,13 @@
     width: 7px;
     height: 4rem;
     background-color: white;
-    left: 23px;
+    left: 63px;
     top: 29px;
     opacity: 0.5;
 }
 
 .ads_card {
-    height: 23.5rem;
+    height: 27.5rem;
     border: 1px solid #87ceeb;
     border-bottom: 7px solid #87ceeb;
     border-radius: 12px;
@@ -59,7 +58,7 @@
 
 .ads {
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 }
 
 .ads_card_header {
@@ -137,34 +136,23 @@
     font-size: 17px;
     font-weight: 500;
 }
-
-
-@media (max-width:500px) {
-
-    .ads_header h1 {
-        padding-top: 19px;
-    }
-
-    .ads_header h1 {
-        font-size: 30px;
-    }
-
-    .ads_header h1:before {
-        height: 3rem;
-        width: 6px;
-    }
-
-    .ads_header {
-        height: 6rem;
+@media(min-width:1801px) and (max-width:2000px){
+    .advs_header {
+        margin-top: 3%;
     }
 }
 
-@media (max-width:350px) {
-    .ads_card {
-        padding-bottom: 3rem;
+@media(min-width:1601px) and (max-width:1800px){
+    .advs_header {
+        margin-top:3%;
     }
 }
 
+@media(min-width:1356px) and (max-width:1600px){
+    .advs_header {
+        margin-top: 4%;
+    }
+}
 @media (min-width:1200px) and (max-width:1355px) {
     .ads_card {
         padding-bottom: 4.9rem;
@@ -175,254 +163,81 @@
     .ads_card {
         padding-bottom: 4rem;
     }
+    .advs_header {
+        margin-top: 6%;
+    }}
+@media (min-width:700px) and (max-width:899px) {
+    .advs_header {
+        margin-top: 6%;
+    }
 }
 
-@media (min-width:600px) and (max-width:694px) {
+@media (min-width:600px) and (max-width:699px) {
     .ads_card {
         padding-bottom: 4rem;
     }
-}
-
-
-/* ads Payment */
-
-.payment_header {
-    height: 8rem;
-    width: -webkit-fill-available;
-    background-color: #87ceeb;
-    color: #ffff;
-    display: flex;
-    align-items: center;
-    padding-left: 6rem;
-    position: relative;
-}
-
-.payment_header h1 {
-    padding-top: 6px;
-    text-align: left;
-    font-size: 52px;
-    font-weight: 700;
-    color: white;
-    text-transform: uppercase;
-}
-
-.payment_header h1:before {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 4rem;
-    background-color: white;
-    left: 64px;
-    top: 33px;
-    opacity: 0.5;
-}
-
-.ads_payment_card_heading {
-    margin-top: 3rem;
-}
-
-.ads_payment_card_heading h3 {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #87ceeb;
-}
-
-#ads_tour_pay_card {
-    margin-top: 1.8rem;
-    height: auto;
-    margin-bottom: 3rem;
-    border: 2px solid #87ceeb;
-    border-radius: 12px;
-    border-bottom: 7px solid #87ceeb;
-    position: relative;
-    text-align: start;
-
-}
-
-#ads_tour_pay_card h3 {
-    display: flex;
-    align-items: flex-start;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 0;
-}
-
-.ads_payment_card {
-    margin-bottom: 3rem;
-}
-
-#ads_tour_pay_card h6 {
-    text-align: start;
-    width: 65%;
-}
-
-#ads_tour_pay_card img {
-    position: absolute;
-    top: 21px;
-    right: 0;
-    width: 12.4rem;
-    z-index: -1;
-}
-
-.ads_price_details h5 {
-    text-align: start;
-    font-size: 30px;
-    font-weight: bold;
-    color: #87ceeb;
-}
-
-.ads_price_details span {
-    color: #555555;
-    font-weight: normal;
-    font-size: 19px;
-}
-
-.QR_code_section {
-    width: 32rem;
-    height: 36rem;
-    margin-bottom: 4rem;
-    border: 2px solid #87ceeb;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 13px;
-}
-
-.QR_code img {
-    width: 70%;
-    margin-top: 3rem;
-    margin-bottom: 1.9rem;
-}
-
-.QR_code_section h5 {
-    margin-bottom: -2rem;
-    font-size: 32px;
-    font-weight: bold;
-    padding-top: 1rem;
-    color: #87ceeb;
-}
-
-.QR_code_section h4 {
-    margin-top: 0;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.QR_code_section hr {
-    margin-top: 0;
-    color: #D7D3CE;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-.payment_method_img ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.payment_method_img img {
-    width: 4rem;
-}
-
-.back_button a {
-    background-color: #87ceeb;
-    padding: 12px;
-    color: #ffff;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-left: 5rem;
-}
-
-.back_button {
-    display: flex;
-    justify-content: start;
-
-}
-
-#ads_tour_pay_card ul {
-    text-align: start;
-    width: 65%;
-}
-
-.plan_header {
-    font-size: 17px;
-    font-weight: 500;
-    color: #000000;
-
-}
-
-.ads_card a:hover {
-    color: #ffff;
-    text-decoration: none;
-}
-
-.ads_card {
-    text-decoration: none;
-}
-
-@media (max-width:480px) {
-    .edit_matchForm {
-        border: 1px solid #6bdcfc;
-        padding: 20px;
-        width: 88%;
-        border-radius: 5px;
-        margin-left: auto;
-        margin-right: auto;
+    .advs_header h1 {
+        padding-top: 19px;
+        font-size: 35px;
     }
-
-    #ads_tour_pay_card {
-        height: auto;
-    }
-
-    #ads_tour_pay_card img {
-        width: 8rem;
-    }
-
-    .QR_code_section {
-        width: 22rem;
-        height: auto;
-    }
-
-    .payment_header h1:before {
-        display: none;
-    }
-
-    .payment_header {
-        padding-left: 2rem;
-    }
-
-    .payment_header h1 {
-        font-size: 38px;
-    }
-
-    .payment_header {
-        height: 7rem;
-    }
-
-    #ads_tour_pay_card h3 {
-        font-size: 25px;
+    .advs_header {
+        margin-top: 8%;
     }
 }
-.edit_matchForm{
-    border: 1px solid #6bdcfc;
-    padding: 20px;
-    width:50%;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-} 
+@media (min-width:421px) and (max-width:599px) {
 
-.error{
+    .advs_header h1 {
+        padding-top: 29px;
+        font-size: 28px;
+    }
+    .advs_header h1:before {
+        height: 3rem;
+        width: 6px;
+        margin-left: -37px;
+    }
+    .advs_header {
+        height: 6rem;
+        margin-top: 10%;
+    }
+}
 
-    margin-top: 10px;
-    color: red;
+@media (min-width:361px) and (max-width:420px) {
 
+    .advs_header h1 {
+        padding-top: 29px;
+        font-size: 35px;
+    }
+    .advs_header h1:before {
+        height: 3rem;
+        width: 6px;
+        margin-top: 15px;
+        margin-left: -17px;
+    }
+    .advs_header {
+        height: 8rem;
+        padding-left: 4rem;
+        position: relative;
+        margin-top: 14%;
+    }
+}
+
+@media (min-width:250px) and (max-width:360px) {
+    .ads_card {
+        padding-bottom: 3rem;
+    }
+    .ads_card_header h4{
+        font-size: 28px;
+    }
+    .advs_header {
+        margin-top: 14%;
+    }
+    .advs_header h1 {
+        margin-left: -34px;
+        font-size: 33px;
+    }
+    .advs_header h1:before {
+        height: 3rem;
+        width: 6px;
+        margin-left: -27px;
+    }
 }

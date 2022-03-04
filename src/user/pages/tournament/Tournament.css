@@ -1813,18 +1813,18 @@
         text-align: left;
         font-size: 52px;
         font-weight: 700;
-        left:8%;
+        left:90px;
         top: 8px;
         
         position: relative;
     }
     .tournament_headerclip h1:before {
         content: "";
-        position: absolute;
+        position:absolute;
         width: 6px;
         height: 4rem;
-        left: -19px;
-        top: -5px;
+        left: -30px;
+        top: 5px;
         opacity: 0.5;
 
     }
