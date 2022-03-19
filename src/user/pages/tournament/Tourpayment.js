@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useLayoutEffect} from 'react'
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import "./Tourpayment.css";
@@ -23,6 +23,13 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 function Tourpayment() {
+
+    //code to scroll to the top of window
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+    });
+
+
   return (
     <div  style={{overflowX:"hidden"}}>
 

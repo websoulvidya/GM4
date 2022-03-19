@@ -142,6 +142,9 @@ body{
     /* #org-searchicon{
         width:30px;
     } */
+    #org-searchinput{
+        margin-left:-10%;
+    }
 }
 
 @media (min-width: 1350px) and (max-width: 1429px) {
@@ -157,9 +160,29 @@ body{
        
     #header-searchbarorg{
        
-        margin-left: 18%;
+        margin-left: 14%;
         width:50%;
     }
+    #org-notification-icon{
+        margin-right: 20px;
+    }
+    #org-profile-icon{
+        margin-right: 50px;
+    }
+    /* .org-profile-menu{
+        width:100px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom:10px;
+    } */
+    .profile-menuId{
+        margin-top: 45px;
+        margin-left:40px;
+        width:300px;
+    }
+    /* #org-searchinput{
+        margin-left:-100%;
+    } */
 }
 
 @media (min-width: 1280px) and (max-width: 1349px) {
@@ -222,9 +245,9 @@ body{
             margin-right: 10%;
             width:30px;
         } */
-        /* #org-searchinput{
-            margin-left:0%;
-        } */
+        #org-searchinput{
+            margin-left:-10%;
+        }
 }    
 
 @media (min-width: 900px) and (max-width: 1023px) {
@@ -251,6 +274,12 @@ body{
 }    
 
 @media (min-width: 768px) and (max-width: 899px) {
+    #org-headermenu{
+        width:100%;
+        height:auto !important;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
     .headerlogo-org{
         margin-bottom: 2px;
         margin-top: 2px;
@@ -274,6 +303,12 @@ body{
 }    
 
 @media (min-width: 600px) and (max-width: 767px) {
+    #org-headermenu{
+        width:100%;
+        height:auto !important;
+        margin-top: 6%;
+        margin-left: 2%;
+    }
     .headerlogo-org{
         margin-bottom: 2px;
         margin-top: 2px;
@@ -297,6 +332,12 @@ body{
 }    
 
 @media (min-width: 531px) and (max-width: 599px) {
+    #org-headermenu{
+        width:100%;
+        height:auto !important;
+        margin-top: 7%;
+        margin-left: 2%;
+    }
     .headerlogo-org{
         margin-bottom: 2px;
         margin-top: 2px;
@@ -320,6 +361,12 @@ body{
 }    
 
 @media (min-width: 400px) and (max-width: 532px) {
+    #org-headermenu{
+        width:100%;
+        height:auto !important;
+        margin-top: 8%;
+        margin-left: 3%;
+    }
     .headerlogo-org{
         margin-bottom: 2px;
         margin-top: 2px;
@@ -344,6 +391,12 @@ body{
 
 
 @media (min-width: 361px) and (max-width: 399px) {
+    #org-headermenu{
+        width:100%;
+        height:auto !important;
+        margin-top: 11%;
+        margin-left: 4%;
+    }
     .headerlogo-org{
         margin-bottom: 2px;
         margin-top: 2px;
@@ -367,6 +420,12 @@ body{
 }    
 
 @media (min-width: 300px) and (max-width: 360px) {
+    #org-headermenu{
+        width:100%;
+        height:auto !important;
+        margin-top: 11%;
+        margin-left: 4%;
+    }
     .headerlogo-org{
         margin-bottom: 2px;
         margin-top: 2px;

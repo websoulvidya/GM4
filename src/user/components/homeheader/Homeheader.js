@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './Homeheader.css';
+import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import {AppBar,Toolbar,Typography,useMediaQuery,useTheme} from '@mui/material';
 import Box from '@mui/material/Box';
@@ -23,7 +24,9 @@ import DrawerComponent  from './DrawerComponent';
 
 export default function Homeheader() {
 
-            // code for search bar
+    const navigate = useNavigate();
+
+    // code for search bar
 
             const Search = styled('div')(({ theme }) => ({
         position: 'relative',
@@ -33,8 +36,11 @@ export default function Homeheader() {
 
         // backgroundColor: "rgb(102 98 98)",
         '&:hover': {
-            border:"1px solid #6BDCFC",
+            border:"none",
             // backgroundColor:"rgb(102 98 98)",
+        },
+        '&:focus':{
+            border:"1px solid black",
         },
         marginLeft: 20,
         width: '100%',
@@ -73,9 +79,14 @@ export default function Homeheader() {
             color:"#fffff",
             [theme.breakpoints.up('md')]: {
             // width: '64ch',
-            //   '&:focus': {
-            //     width: '20ch',
-            //   },
+              '&:focus': {
+                width: '80ch',
+                border:'none'
+              },
+              '&:hover': {
+                border:"none",
+                // backgroundColor:"rgb(102 98 98)",
+            },
             },
         },
         }));
@@ -113,7 +124,7 @@ export default function Homeheader() {
 
                 <Box sx={{display:"flex"}}>
                         {/* <h1 class="logo-heading">GM4</h1> */}
-                        <img src={logo}  alt="" class="header-logo" />
+                        <img onClick={() => navigate('/')} src={logo}  alt="" class="header-logo" />
                 </Box>
 
                 <Link to="/" ></Link>
@@ -150,6 +161,8 @@ export default function Homeheader() {
 
                     <Link to="/login" style={{textDecoration:"none"}} ><Typography class="header-link" >LOGIN</Typography>
                     </Link>
+
+                    
                         <Typography class="header-link"
                         aria-controls="basic-menu"
                         aria-haspopup="true"
@@ -157,7 +170,18 @@ export default function Homeheader() {
                         onClick={handleClick}
                         >MORE
                         </Typography>
-                        <Menu id="basic-menu" class="MuiMenu-root" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose}>
+                        <Menu  id="home-dropdownmenu"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={openMenu}   onClose={handleClose} class="MuiMenu-root" >
                                     <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/about" class="header-sublink" style={{textDecoration:"none"}}>About US</Link></MenuItem>
                                     <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/ourteam" class="header-sublink" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
                                     <MenuItem id="home-headermenu" onClick={handleClose}><Link to="/careers" class="header-sublink" style={{textDecoration:"none"}}>Careers</Link></MenuItem>

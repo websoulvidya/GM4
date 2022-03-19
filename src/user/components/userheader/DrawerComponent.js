@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './Drawercomponent.css';
-import {Drawer,Typography,List,ListItem,ListItemIcon,ListItemText,Menu,MenuItem,Box} from '@mui/material'
+import {Drawer,Typography,List,ListItem,ListItemIcon,ListItemText,Menu,MenuItem,Box} from '@mui/material';
+import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,7 +13,14 @@ import logo from '../../assets/logo.png';
 
 
 
-const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
+const DrawerComponent=() =>{
+
+    const navigate = useNavigate();
+
+
+    const [openDrawer, setOpenDrawer]= useState(false);
+    const [showdrop, setshowdrop]=useState(false);
+    const [showlang, setshowlang]= useState(false);
 
     // code for search bar
 
@@ -68,6 +76,14 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             //   '&:focus': {
             //     width: '20ch',
             //   },
+            '&:focus': {
+                width: '20ch',
+                border:"none"
+              },
+              '&:hover': {
+                border:"none",
+                // backgroundColor:"rgb(102 98 98)",
+            },
             },
         },
         }));
@@ -88,13 +104,13 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
   return (
     <div>
-        <Drawer anchor="left" open={openDrawer}>
+        <Drawer anchor="left" open={openDrawer} onClose={()=> setOpenDrawer(false)} >
             <List style={{backgroundColor:"#fffff",width:"900px"}}>
                 <ListItem divider style={{backgroundColor:"white",marginTop:"-10px"}} onClick={()=>setOpenDrawer(false)}>
                     <ListItemIcon>
                         <ListItemText>
                             <Box sx={{display:"flex",marginTop:"5px",marginLeft:"15px",backgroundColor:"#ffff"}}>
-                            <img src={logo}  class="userheader-logo" alt="logo" />
+                            <img onClick={() => navigate('/')} src={logo}  class="userheader-logo" alt="logo" />
                             <CloseIcon id="userheader-closeicon"/>
                             </Box>
                         </ListItemText>
@@ -121,7 +137,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                     </ListItemIcon>
                 </ListItem>
                 
-                <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(false)}>
+                <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(true)}>
                     <ListItemIcon>
                         <ListItemText style={{margin:"10px 0 10px 10px"}} aria-controls="basic-menu"
                             aria-haspopup="true"
@@ -129,7 +145,18 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                             onClick={handleClick}><Typography class="userheader-link">
                                 USERNAME</Typography>
                         </ListItemText>
-                        <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} style={{width:"80%",marginTop:"450px"}}>
+                        <Menu  id="userhome-dropdownmenu"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={openMenu}   onClose={handleClose}>
                             <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/profile" class="header-sublink" style={{textDecoration:"none",color:"rgb(102 98 98)"}}>Profile</Link></MenuItem>
                             <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/changepass" class="header-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
                             <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/mybookings" class="header-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
@@ -159,7 +186,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             {openDrawer ?"x":<MenuIcon />}
         </IconButton> */}
 
-        <IconButton  onClick={()=> setOpenDrawer(true)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
+        <IconButton  onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
             {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
             :<MenuIcon id="userheader-menuicon" style={{color:"#6BDCFC"}} />}
         </IconButton>

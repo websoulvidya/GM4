@@ -664,7 +664,7 @@
         margin-top:100%;
     }
     #card_first_main{
-        margin-top: 400%;
+        margin-top: 160%;
     }
     #card_second_main{
         margin-top: 25%;
@@ -712,7 +712,7 @@
         margin-top:100%;
     }
     #card_first_main{
-        margin-top: 400%;
+        margin-top: 170%;
     }
     #card_second_main{
         margin-top: 25%;
@@ -757,14 +757,16 @@
 
 @media (min-width: 531px) and (max-width: 599px) {
     .card_home_main{
-        margin-left:-260px;
-        margin-top:100%;
+        margin-left:10px;
+        margin-top:10%;
     }
     #card_first_main{
-        margin-top: 40%;
+        margin-top: -300%;
+        margin-left:10%;
     }
     #card_second_main{
-        margin-top: 25%;
+        margin-top: 425%;
+        margin-left:-120%;
     }
     #card_first{
         margin-left: 20px;
@@ -805,14 +807,18 @@
 
 @media (min-width: 400px) and (max-width: 532px) {
     .card_home_main{
-        margin-left:-230px;
-        margin-top:100%;
+        margin-left:10px;
+        margin-top:10%;
     }
     #card_first_main{
-        margin-top: 20%;
+        margin-top: -330%;
+        margin-left:25%;
+        bottom: 50%;
     }
     #card_second_main{
-        padding-top: 10%;
+        padding-top: 40%;
+        margin-top: 340%;
+        margin-left:-120%;
     }
     #card_first{
         margin-left: 20px;
@@ -821,7 +827,7 @@
         height:250px;
     }
     #card_second{
-        margin-top: 100px;
+        margin-top: 110px;
         width:350px;
         height:250px;
         margin-left: 20px;
@@ -834,7 +840,7 @@
         height:250px;
     }
     #card_four{
-        margin-top: 100px;
+        margin-top: 120px;
         margin-left: 20px;
         width:350px;
         height:250px;
@@ -854,14 +860,16 @@
 
 @media (min-width: 361px) and (max-width: 399px) {
     .card_home_main{
-        margin-left:-185px;
-        margin-top:70%;
+        margin-left:10px;
+        margin-top:10%;
     }
     #card_first_main{
-        margin-top: 20%;
+        margin-top: -330%;
+        margin-left:25%;
     }
     #card_second_main{
-        padding-top: 10%;
+        margin-top: 340%;
+        margin-left:-120%;
     }
     #card_first{
         margin-left: 20px;

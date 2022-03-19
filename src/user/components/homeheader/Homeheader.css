@@ -30,6 +30,8 @@ body{
     background-color:#ffff;
     color: #ffff;
 }
+
+
 .header-link{
     font-size: 18px;
     color:rgb(102 98 98);
@@ -58,6 +60,9 @@ Link:hover{
     margin-left: 70px;
     width:60ch;
     height:30px;
+}
+#header-searchbar:hover{
+    border: 1px solid #6BDCFC;
 }
 #header-searchicon{
     margin-left:90%;
@@ -134,6 +139,10 @@ Link:hover{
         margin-left: 55px;
         margin-top: 15px;
     }
+    #home-dropdownmenu{
+        margin-top:2%;
+        margin-left:6%;
+    }
     #home-headermenu{
         width: 180px;
         font-size: 22px;
@@ -183,6 +192,10 @@ Link:hover{
         font-size: 20px;
         margin-left: 50px;
         margin-top: 15px;
+    }
+    #home-dropdownmenu{
+        margin-top:2%;
+        margin-left:7%;
     }
     #home-headermenu{
         width: 180px;
@@ -234,6 +247,10 @@ Link:hover{
         font-size: 20px;
         margin-left: 50px;
         margin-top: 15px;
+    }
+    #home-dropdownmenu{
+        margin-top:2%;
+        margin-left:7%;
     }
     #home-headermenu{
         width: 180px;
@@ -287,6 +304,10 @@ Link:hover{
         margin-left: 45px;
         margin-top: 15px;
     }
+    #home-dropdownmenu{
+        margin-top:3%;
+        margin-left:7%;
+    }
     #home-headermenu{
         width: 180px;
         font-size: 22px;
@@ -336,6 +357,10 @@ Link:hover{
         font-size: 20px;
         margin-left: 45px;
         margin-top: 15px;
+    }
+    #home-dropdownmenu{
+        margin-top:3%;
+        margin-left:8%;
     }
     #home-headermenu{
         width: 180px;
@@ -387,6 +412,10 @@ Link:hover{
         margin-left: 40px;
         margin-top: 15px;
     }
+    #home-dropdownmenu{
+        margin-top:3%;
+        margin-left:8%;
+    }
     #home-headermenu{
         width: 180px;
         font-size: 22px;
@@ -436,6 +465,10 @@ Link:hover{
         margin-left: 40px;
         margin-top: 15px;
     }
+    #home-dropdownmenu{
+        margin-top:3%;
+        margin-left:8%;
+    }
     #home-headermenu{
         width: 180px;
         font-size: 22px;
@@ -484,6 +517,10 @@ Link:hover{
         margin-left: 40px;
         margin-top: 15px;
     }
+    #home-dropdownmenu{
+        margin-top:3%;
+        margin-left:8%;
+    }
     #home-headermenu{
         width: 180px;
         font-size: 22px;
@@ -530,6 +567,10 @@ Link:hover{
         font-size: 20px;
         margin-left: 30px;
         margin-top: 15px;
+    }
+    #home-dropdownmenu{
+        margin-top:4%;
+        margin-left:8%;
     }
     #home-headermenu{
         width: 180px;
@@ -580,6 +621,10 @@ Link:hover{
         font-size: 20px;
         margin-left: 25px;
         margin-top: 15px;
+    }
+    #home-dropdownmenu{
+        margin-top:4%;
+        margin-left:8%;
     }
     #home-headermenu{
         width: 180px;
