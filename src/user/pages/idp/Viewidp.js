@@ -1,8 +1,12 @@
-import React from 'react'
+import React ,{useLayoutEffect} from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import './Viewidp.css';
 function Viewidp() {
+//page view
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <div className='view-idp'>
           <Userheader/>
@@ -27,9 +31,9 @@ function Viewidp() {
              {/* social media icons */}
              <div className='social-icons'>
                 <div class="round-social-buttons">
-                    <a class="social-button whatsapp" href="https://www.facebook.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a class="social-button discord" href="https://www.twitter.com/" target="_blank"><i class="fab fa-discord"></i></a>
-                    <a class="social-button gmail" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-google"></i></a>
+                    <a class="social-button whatsapp" href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a class="social-button discord" href="https://www.discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a class="social-button gmail" href="https://www.gmail.com/" target="_blank"><i class="fab fa-google"></i></a>
                     <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
              </div>
