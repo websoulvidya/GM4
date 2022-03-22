@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import expire from "../../assets/scrims/expired.png";
 import { useNavigate } from "react-router-dom";
 import Select from 'react-select'
-
+import {useLayoutEffect} from "react";
 // modal style
 const style = {
   position: "absolute",
@@ -40,6 +40,14 @@ function Adddscrims() {
     console.log(data);
     reset();
   };
+const [orgName, setorgName] = useState("");
+const handleKeyDown = (e) => {
+  if (e.key === " " && orgName.length===0) {
+    e.preventDefault();
+  }
+};
+
+
 
   // match date and time  section
   const [selectedDate, setSelectedDate] = useState(null);
@@ -57,8 +65,6 @@ function Adddscrims() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-
 
 
 // dropdown section 
@@ -80,7 +86,9 @@ function Adddscrims() {
     { value: 'Daily Match', label: 'Daily Match' },
     { value: 'Open Rooms', label: 'Open Rooms' }
   ]
-
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   return (
     <div>
@@ -103,9 +111,14 @@ function Adddscrims() {
                   placeholder="Organization Name"
                   id="scrimname"
                   {...register("scrimname", {
-                    required: "**organization Name is Required",
+                    required: "**organization Name is Required", 
                   })}
                   autoComplete="off"
+                  maxLength={30}
+                onChange= {(e)=>setorgName(e.target.value.replace(/[^\w\s]/gi,"").replace(/[0-9]/g,"") )}
+                value={orgName}
+                onKeyDown={handleKeyDown}
+                
                 />
                 {errors.scrimname && (
                   <span className="errormsg">{errors.scrimname.message}</span>
@@ -122,6 +135,7 @@ function Adddscrims() {
                   autoComplete="off"
                   minDate={new Date()}
       showDisabledMonthNavigation
+      onChangeRaw={(e) => e.preventDefault()}
                   
                 />
                 
@@ -142,7 +156,7 @@ function Adddscrims() {
                     id="addscrims_dat"
                     placeholderText="Match Time"
                     autoComplete="off"
-                    
+                    onChangeRaw={(e) => e.preventDefault()}
                   />
                 </div>
               </div>
@@ -159,12 +173,12 @@ function Adddscrims() {
                     id="addscrims_dat"
                     placeholderText="IDP Time"
                     autoComplete="off"
-                    
+                    onChangeRaw={(e) => e.preventDefault()}
                   />
                 </div>
               </div>
               <div class="uk-margin">
-              <Select options={options} placeholder={'Match Type'} styles={colourStyles}theme={(theme) => ({
+              <Select  maxLength={20} options={options} placeholder={'Match Type'} styles={colourStyles}theme={(theme) => ({
       ...theme,
       colors: {
         ...theme.colors,
@@ -174,8 +188,9 @@ function Adddscrims() {
     })}  />
               </div>
 
-              <br />
+              
               <div>
+              <br />
                 <button class="addscrims_open_btn" onClick={handleOpen}>
                   Open
                 </button>
@@ -186,6 +201,7 @@ function Adddscrims() {
 
                 <Link to="/orghome"><button class="addscrims_close_btn">Close</button></Link>
               </div>
+             
               <Modal
                 open={open}
                 onClose={handleClose}
@@ -231,6 +247,9 @@ function Adddscrims() {
           </form>
         </div>
         <br/>
+<br/>
+<br/>
+<br/>
 <br/>
       </div>
 
