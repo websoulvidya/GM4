@@ -26,10 +26,11 @@
    position: absolute;
    content: "";
    top: 8px;
-   left: 30px;
-   width: 10px;
+   left: 32px;
+   width: 8px;
    height: 50px;
-   background-color: rgb(255, 255, 255);
+   background-color: #fff;
+   opacity:0.5;
 
 }
 .ads-head-img {
@@ -97,6 +98,7 @@
         top: 4px;
         left: 30px;
         height: 30px;
+        width: 6px;
         background-color: rgb(255, 255, 255);
     }
     .ads-head-img {
@@ -114,6 +116,7 @@
 
 
 .ads_card{
+    font-family: 'Open Sans', sans-serif;
     height: 23.5rem;
     border: 1px solid #87ceeb;
     border-bottom: 7px solid #87ceeb;
@@ -131,12 +134,14 @@
     margin-top: 4rem;
 }
 .ads_card_header h4{
+    font-family: 'Open Sans', sans-serif;
     font-size: 33px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #87ceeb;
 }
 .ads_card a{
+    font-family: 'Open Sans', sans-serif;
     background-color: #87ceeb;
     border: none;
     padding: 9px;
@@ -147,10 +152,13 @@
     right: 10px;
     color: #ffff;
     font-weight: 500;
-    letter-spacing: .5px;       
+    letter-spacing: .5px; 
+    font-family: 'Open Sans', sans-serif;
+      
 }
 
 .plan_price h6{
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     text-align: start;
@@ -161,6 +169,7 @@
     margin-top: 4px;
 }
 .plan_price h4{
+    font-family: 'Open Sans', sans-serif;
     text-align: start;
     padding: 0;
     margin: 0;
@@ -171,6 +180,7 @@
     font-size: 31px;
 }
 .plan_price span{
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     color: #888888;
     font-size: 16px;
@@ -178,6 +188,7 @@
 
 
 .ads_details{
+    font-family: 'Open Sans', sans-serif;
     text-align: start;
     padding-left: 20px;
     margin-top: 1rem;
@@ -188,8 +199,10 @@
     margin-top: 1rem;
 }
 .ads_details ul{
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 5rem;
     color: #6E6D7A;
+    padding-left:16px!important;
 }
 
 .ads_details span{

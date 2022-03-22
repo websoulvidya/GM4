@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useLayoutEffect} from 'react'
 import Homeheader from '../../../components/homeheader/Homeheader';
 import Footer from '../../../components/footer/Footer';
 
@@ -15,7 +15,12 @@ import { Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 
+
+
 function Advertise() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
   return (
     <div>
       <Homeheader/>
@@ -28,7 +33,7 @@ function Advertise() {
         <Box sx={{ flexGrow: 1 }} ml='auto' mr='auto'>
            <Grid container spacing={3} sx={{maxWidth:'1500px'}} style={{width:'90%',paddingRight:'25px'}} ml='auto' mr='auto' mt='-60px' mb='100px'>
              <div className='ad-head2'>
-               <h1>Advertisemnet</h1>
+               <h1>Advertisement</h1>
              </div>
              </Grid>
                  </Box>

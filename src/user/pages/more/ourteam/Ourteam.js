@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useLayoutEffect} from 'react'
 import Homeheader from '../../../components/homeheader/Homeheader';
 import Footer from '../../../components/footer/Footer';
 
@@ -37,6 +37,10 @@ import Ashfaq from '../../../assets/images/ashfaq1.jpg'
 
 
 function Ourteam() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
 
 
  
@@ -111,8 +115,8 @@ function Ourteam() {
                  <div className='team-social'>
                 
                    <a><i class="fab fa-twitter"></i></a>
-                   <a><i class="fab fa-facebook"></i></a>
-                   <a><i class="fab fa-linkedin"></i></a>
+                   <a target='_blank' href='https://www.facebook.com/profile.php?id=100010590844028'><i class="fab fa-facebook"></i></a>
+                   <a target='_blank' href='https://www.linkedin.com/in/nadisha-e-k-0150b622b/'><i class="fab fa-linkedin"></i></a>
 
                   </div>
                </Card>
@@ -306,10 +310,9 @@ function Ourteam() {
 
                  <div className='team-social'>
                 
-                   <a><i class="fab fa-twitter"></i></a>
-                   <a><i class="fab fa-facebook"></i></a>
-                   <a><i class="fab fa-linkedin"></i></a>
-
+                   <a ><i class="fab fa-twitter"></i></a>
+                   <a target='_blank' href='https://www.facebook.com/vidya.surendran'><i class="fab fa-facebook"></i></a>
+                   <a target='_blank' href='https://www.linkedin.com/in/vidya-surendran-14936225/'><i class="fab fa-linkedin"></i></a>
                  </div>
                </Card>
              </Grid>
