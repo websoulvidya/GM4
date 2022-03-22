@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
 import "./Adddailymatch.css";
+import {useLayoutEffect} from 'react';
 import {Link} from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import {useNavigate} from 'react-router-dom';
@@ -18,6 +19,9 @@ import Select from 'react-select';
 
 
 function Adddailymatch() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
 
   const { register, handleSubmit, formState: { errors }, reset} = useForm();
   const submitData = (data) =>{
@@ -38,9 +42,14 @@ const style = {
   p: 4,
 };
 
-const submit= (event)=>{
-  event.preventDefault();
-}
+const [orgNames, setorgNames] = useState("")
+
+const handleKeyDown = (e) => {
+  if (e.key === " " && orgNames.length===0) {
+    e.preventDefault();
+  }
+};
+
  //navigation
  let navigate = useNavigate();
 
@@ -71,6 +80,8 @@ const submit= (event)=>{
     }
   };
 
+  
+
   return (
     <div>
       <Dashboard/>
@@ -83,31 +94,34 @@ const submit= (event)=>{
         <h2 class="joinhead">Join Now</h2>
         <hr/>
         {/* Registration Form */}
+
+        {/* To block numbers use .replace(/[0-9]/g, "") */}
       <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Organization Name" id='orgname'  
-                {...register("orgname", { required: "**Organization Name is Required" })}  autoComplete='off'/>
+            <input class="uk-input" type="text" placeholder="Organization Name" id='orgname' maxLength={30} 
+                {...register("orgname", { required: "**Organization Name is Required" })}  autoComplete='off' onChange= {(e)=>setorgNames(e.target.value.replace(/[^\w\s]/gi, "").replace(/[0-9]/g,""))}
+                value={orgNames} onKeyDown={handleKeyDown}/>
                 {errors.orgname && (<span className='errormsgz'>{errors.orgname.message}</span>)}
             </div>
             <div class="uk-margin">
             <div class="uk-input" >
             <DatePicker  selected={selectedDate} onChange={date => setSelectedDate(date)} dateFormat="dd/MM/yyyy" minDate={new Date()} id="dat" 
-                 placeholderText="Match Date" autoComplete='off' /> 
+                 placeholderText="Match Date" onChangeRaw={(e) => e.preventDefault()} autoComplete='off' /> 
                  </div>
             </div>
             <div class="uk-margin">
             <div class="uk-input">
             <DatePicker  selected={selectedTime} onChange={(date) => setSelectedTime(date)} placeholderText="Match Time" showTimeSelect showTimeSelectOnly
-              timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" id="dat" autoComplete='off' />
+              timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" id="dat" onChangeRaw={(e) => e.preventDefault()} autoComplete='off' />
             </div>
             </div>
             <div class="uk-margin">
             <div class="uk-input">
             <DatePicker  selected={selectedTimes} onChange={(date) => setSelectedTimes(date)} placeholderText="IDP Time" showTimeSelect showTimeSelectOnly
-              timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" id="dat" autoComplete='off'/>
+              timeIntervals={15} timeCaption="Time" dateFormat="h:mm aa" id="dat" onChangeRaw={(e) => e.preventDefault()} autoComplete='off'/>
             </div>
             </div>
             <div class="uk-margin">
-            <Select options={options} placeholder={'Match Type'} styles={colourStyles} theme={(theme) => ({
+            <Select options={options} placeholder={'Match Type'} isSearchable={false} styles={colourStyles} theme={(theme) => ({
       ...theme,
       colors: {
         ...theme.colors,
@@ -133,7 +147,7 @@ const submit= (event)=>{
                   </Typography>
                   <Typography id="modal-modal-descriptionz" className='rules_modalz' sx={{ mt: 2 }} style={{ height: '19rem', overflow: 'scroll' }} >
                     <h3>oh no! Unfortunately your Free Trail has  expired</h3>
-                    <img src={expire} /> 
+                    <img src={expire} alt=""/> 
                     <span>If you want to continue , you need to take a Membership</span>
                     <br />
                   </Typography>

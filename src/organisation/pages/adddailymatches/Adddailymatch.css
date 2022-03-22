@@ -222,11 +222,11 @@ body{
         background-color: #6bdcfc !important;
       }
       .react-datepicker__time-list-item{
-          overflow: hidden !important;
+          overflow: hidden !important;     
       }
       .react-datepicker__time-list-item:hover{
         background-color: #6bdcfc !important;
-        color: #ffff !important;     
+        color: #ffff !important;    
     }
      /* Match Type Select */
      .css-1s2u09g-control:hover{
