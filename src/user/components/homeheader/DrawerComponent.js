@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {Drawer,Typography,List,ListItem,ListItemIcon,ListItemText,Menu,MenuItem,Box,useMediaQuery,useTheme} from '@mui/material'
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
@@ -11,10 +12,18 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logo from '../../assets/logo.png';
 
 
+
 import "./DrawerComponent.css";
 
 
-const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
+const DrawerComponent=() =>{
+
+    const navigate = useNavigate();
+
+
+    const [openDrawer, setOpenDrawer]= useState(false);
+    const [showdrop, setshowdrop]=useState(false);
+    const [showlang, setshowlang]= useState(false);
 
     // code for search bar
 
@@ -29,6 +38,10 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             border:"1px solid #6BDCFC",
             // backgroundColor:"rgb(102 98 98)",
         },
+        '&:focus': {
+            // width: '20ch',
+            border:"none"
+          },
         marginLeft: 20,
         width: '100%',
         [theme.breakpoints.up('md')]: {
@@ -66,9 +79,25 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
             height:"20%",
             color:"#fffff",
             [theme.breakpoints.up('md')]: {
-            //   '&:focus': {
-            //     width: '20ch',
-            //   },
+              '&:focus': {
+                // width: '20ch',
+                border:"none"
+              },
+              '&:hover': {
+                border:"none",
+                // backgroundColor:"rgb(102 98 98)",
+            },
+            
+            },
+            [theme.breakpoints.down('md')]: {
+                '&:focus': {
+                  // width: '20ch',
+                  border:"none"
+                },
+                '&:hover': {
+                  border:"none",
+                  // backgroundColor:"rgb(102 98 98)",
+              },
             },
         },
         }));
@@ -92,19 +121,26 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
     // const theme=useTheme()
     // const ismatches=useMediaQuery(theme.breakpoints.down("sm"));
 
+//     const [age, setAge] = React.useState('');
+
+//   const handleChange = (event) => {
+//     setAge(event.target.value);
+//   };
+
 
   return (
     <div>
         
 
-        <Drawer anchor="left" open={openDrawer} > 
+        <Drawer anchor="left"  open={openDrawer} onClose={()=> setOpenDrawer(false)}> 
 
             <List style={{backgroundColor:"#fffff",width:"900px"}}>
-            <ListItem divider style={{backgroundColor:"white",marginTop:"-10px"}} onClick={()=>setOpenDrawer(false)}>
+            <ListItem divider style={{backgroundColor:"white",marginTop:"-10px"}} 
+                        onClick={()=>setOpenDrawer(false)}>
                 <ListItemIcon>
                     <ListItemText>
                         <Box sx={{display:"flex",marginTop:"5px",marginLeft:"15px",backgroundColor:"#ffff"}}>
-                        <img src={logo}  class="header-logo" alt="logo" />
+                        <img onClick={() => navigate('/')} src={logo}  class="header-logo" alt="logo" />
                         {/* <h1 class="logo-heading">GM4</h1> */}
                         <CloseIcon id="header-closeicon"/>
                         </Box>
@@ -114,19 +150,38 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
 
             <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px"}}><Typography class="header-link">LOGIN</Typography></ListItemText>
+                    <ListItemText style={{margin:"10px 0 10px 10px"}}>
+                        <Link to="/login" style={{textDecoration:"none"}} >
+                            <Typography class="header-link">LOGIN</Typography>
+                        </Link>
+                    </ListItemText>
                 </ListItemIcon>
             </ListItem>
 
-            <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(false)}>
+            <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(true)}>
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px"}} aria-controls="basic-menu"
+                    <ListItemText style={{margin:"10px 0 10px 10px"}} 
+                        aria-controls="basic-menu"
                         aria-haspopup="true"
                         aria-expanded={openMenu ? 'true':undefined}
-                        onClick={handleClick} ><Typography class="header-link">
+                        onClick={handleClick}
+                        ><Typography class="header-link">
                             MORE</Typography>
                     </ListItemText>
-                    <Menu id="basic-menu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose}>
+
+                   
+                    <Menu id="home-dropdownmenu"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={openMenu}   onClose={handleClose} >
                         <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/about" class="header-sublink" style={{textDecoration:"none"}}>About US</Link></MenuItem>
                         <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/ourteam" class="header-sublink" style={{textDecoration:"none"}}>Our Team</Link></MenuItem>
                         <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/careers" class="header-sublink" style={{textDecoration:"none"}}>Careers</Link></MenuItem>
@@ -136,7 +191,7 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
                         <MenuItem onClick={handleClose} id="home-headermenu"><Link to="/userhome" class="header-sublink" style={{textDecoration:"none"}}>Users</Link></MenuItem>
 
                     </Menu>
-                                    
+          
                 </ListItemIcon>
             </ListItem>
 
@@ -154,19 +209,21 @@ const DrawerComponent=({openDrawer,setOpenDrawer}) =>{
         </List>
         </Drawer>
              
-                   
+        
+        <img src={logo}  alt="" class="header-logo" />
 
-        {/* <IconButton  onClick={()=> setOpenDrawer(!openDrawer)} style={{marginLeft:"-42%", backgroundColor:"grey" ,color:"red",borderRadius:"0rem" ,padding:"1rem"}}>
-            {openDrawer ?"x":<MenuIcon />}
-        </IconButton> */}
+            {/* <Search  id="header-searchbar">
+                <SearchIconWrapper id="header-searchicon">
+                <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
+                </SearchIconWrapper>
+                <StyledInputBase id="search-content"
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+                endIcon={<KeyboardArrowDownIcon sx={{width:"30px",color:"red",marginLeft:"-30px"}}/>}
+                />
+            </Search> */}
 
-{/* (<IconButton  onClick={()=>setOpenDrawer(true)} style={{width:"100px",height:"50px",color:"#6BDCFC"}} > 
-{openDrawer ?"x":
-                    <MenuIcon style={{width:"40px",height:"150px",display:"flex",marginLeft:"650px"}}/>
-    }</IconButton>)  */}
-                                    <img src={logo}  alt="" class="header-logo" />
-
-        <IconButton  onClick={()=> setOpenDrawer(true)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
+        <IconButton  onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
             {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
             :<MenuIcon id="header-menuicon" style={{color:"#6BDCFC"}} />}
         </IconButton>

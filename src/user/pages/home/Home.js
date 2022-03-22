@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useLayoutEffect} from 'react';
 import './Home.css';
 
 import {Link} from 'react-router-dom';
@@ -27,6 +27,11 @@ function Home() {
     useEffect(() => {
       Aos.init({duration:1000});
   },[]);
+
+  //code to scroll to the top of window
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+    });
 
   return(
     <div className="homepage" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
