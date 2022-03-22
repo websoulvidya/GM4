@@ -37,23 +37,23 @@ const Search = styled('div')(({ theme }) => ({
   
   },
   '&:focus': {
-    // width: '40ch',
+    width: '40ch',
     border:"none",
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
   width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
+//   [theme.breakpoints.up('sm')]: {
+//     marginLeft: theme.spacing(3),
+//     width: 'auto',
 
-    marginLeft:"15%",
-    marginBottom:"5px",
-    marginTop:"5px",
-color:"rgb(102 98 98)",
+//     marginLeft:"15%",
+//     marginBottom:"5px",
+//     marginTop:"5px",
+// color:"rgb(102 98 98)",
 
    
-  },
+//   },
   
 }));
 
@@ -79,10 +79,8 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
       height:"10%",
       color:"#fffff",
       [theme.breakpoints.up('md')]: {
-      // width: '78ch',
-      //   '&:focus': {
-      //     width: '20ch',
-      //   },
+      width: '78ch',
+      
       '&:focus': {
         // width: '40ch',
         border:"none",

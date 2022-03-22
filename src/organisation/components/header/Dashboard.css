@@ -51,12 +51,11 @@ body{
         margin-left:20%;
         width:50%;
     }
-    /* #org-searchicon{
-        margin-left:84%;
-        width:40px;
-    } */
+    #org-searchicon{
+        margin-right:0%;
+    }
     #org-searchinput{
-        margin-left:-13%;
+        margin-left:-8%;
     }
     #org-notification-icon{
         margin-right: 20px;
@@ -92,12 +91,11 @@ body{
         margin-left:20%;
         width:50%;
     }
-    /* #org-searchicon{
+    #org-searchicon{
         margin-left:93%;
-        width:30px;
-    } */
+    }
     #org-searchinput{
-        margin-left:-10%;
+        margin-left:-6%;
     }
     #org-notification-icon{
         margin-right: 20px;
@@ -126,12 +124,11 @@ body{
         margin-left:20%;
         width:50%;
     }
-    /* #org-searchicon{
-        margin-left:-10%;
-        width:30px;
-    } */
+    #org-searchicon{
+        margin-right:0px;
+    }
     #org-searchinput{
-        margin-left:-5%;
+        margin-left:-4%;
     }
     #org-notification-icon{
         margin-right: 20px;
@@ -159,6 +156,9 @@ body{
     #header-searchbarorg{
         margin-left:20%;
         width:50%;
+    }
+    #org-searchinput{
+        margin-left:0%;
     }
     /* #org-searchicon{
         width:30px;
@@ -195,7 +195,7 @@ body{
         width:30px;
     } */
     #org-searchinput{
-        margin-left:-10%;
+        margin-left:0%;
     }
     #org-notification-icon{
         margin-right: 20px;
@@ -246,9 +246,9 @@ body{
         margin-left:40px;
         width:300px;
     }
-    /* #org-searchinput{
-        margin-left:-20%;
-    } */
+    #org-searchinput{
+        margin-left:0%;
+    }
 }
 
 @media (min-width: 1280px) and (max-width: 1349px) {
@@ -265,6 +265,9 @@ body{
     #header-searchbarorg{
         margin-left:20%;
         width:50%;
+    }
+    #org-searchinput{
+        margin-left:0%;
     }
     /* #org-searchicon{
         width:30px;
@@ -298,7 +301,7 @@ body{
         width:50%;
     }
     #org-searchinput{
-        margin-left:-70px;
+        margin-left:0%;
     }
     /* #org-searchicon{
         width:30px;
@@ -337,7 +340,7 @@ body{
             width:30px;
         } */
         #org-searchinput{
-            margin-left:-10%;
+            margin-left:0%;
         }
         #org-notification-icon{
             margin-right: 20px;
