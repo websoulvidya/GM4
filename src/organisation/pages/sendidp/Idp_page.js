@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
@@ -15,29 +15,30 @@ import { date, string } from 'yup/lib/locale';
 
 //yup
 let schema = yup.object().shape({
-  RoomId:yup.string().required("Room Id is requried"),
-  password:yup.string().required("password is required")
+  RoomId: yup.string().required("Room Id is requried"),
+  password: yup.string().required("password is required")
 })
 
 
 
 // check validity
 schema
-    .isValid({
-        name: 'jimmy',
-        age: 24,
-    })
-    .then(function (valid) {
-        valid = true; // => true
-    });
+  .isValid({
+    name: 'jimmy',
+    age: 24,
+  })
+  .then(function (valid) {
+    valid = true; // => true
+  });
 
 
 
 
 
 function Idp_page() {
-
-
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
 
 
   //form validation
@@ -63,7 +64,7 @@ function Idp_page() {
       </div>
       {/* end header  */}
 
-      
+
       <div class="idp_page">
         <div class="idp_form">
           {/* send idp  form */}

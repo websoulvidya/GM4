@@ -172,6 +172,11 @@ body{
         border-radius: 5px;
         padding: 3%;
     }
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
     @media only screen and (max-device-width : 350px) {
         .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{
             margin:0 !important;

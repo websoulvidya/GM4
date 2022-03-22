@@ -47,16 +47,26 @@ function Footer() {
             <div className='footer_innerdiv-contact-us footer_innerdiv'>
               <div className='footer_innerdiv-contact-us-heading'>
                 <h4>CONTACT US</h4>
-                <p>Banglore,</p>
+                <p>Bangalore,</p>
                 <p>India,</p>
                 <p>Ph:79472</p>
                 <p>Email:ugbvw@gmail.com</p>
                 <div  className='footer_icons'>
-                    <a href="#"><div uk-icon="icon: facebook"></div></a>
-                    <a href="#"><div uk-icon="icon: twitter"></div></a> 
-                    <a href="#"><div uk-icon="icon: instagram"></div></a>  
-                    <a href="#"><div uk-icon="icon: linkedin"></div></a> 
-                    <a href="#"><div uk-icon="icon: youtube"></div></a> 
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                      <div uk-icon="icon: facebook"></div>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                      <div uk-icon="icon: twitter"></div>
+                    </a> 
+                    <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer">
+                      <div uk-icon="icon: instagram"></div>
+                    </a>  
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                      <div uk-icon="icon: linkedin"></div>
+                    </a> 
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                      <div uk-icon="icon: youtube"></div>
+                    </a> 
                 </div>
               </div>
             </div>

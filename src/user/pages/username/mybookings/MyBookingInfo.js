@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './My_Booking_Info.css';
 import myI_img from '../../../assets/myBookings_Info_Assets/262886-pubg-game-wallpaper (1).jpg';
 import { useForm } from "react-hook-form";
@@ -32,6 +32,12 @@ function MyBookingInfo() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+    const [validate, setValidate]=useState({
+        team_name:'',
+        slot_number:'',
+        Reason:''
+    });
     return (
         <div>
             <Userheader />
@@ -116,15 +122,33 @@ function MyBookingInfo() {
                     <form onSubmit={handleSubmit(submitData)} className="myInfo_form">
                         <fieldset className="uk-fieldset">
                             <div className="uk-margin">
-                                <input className="uk-input" type="text" id="teamname" name="teamname" placeholder="Team Name" {...register('teamname', { required: "**Team Name is Required" })} />
+                                <input className="uk-input" type="text" id="teamname" name="teamname" placeholder="Team Name" {...register('teamname', { required: "**Team Name is Required",pattern:{value:/^[a-zA-Z0-9_.-]*$/,message:"**Only Alphabets and numbers allowed"}})} maxLength={30} onChange={(event)=>{
+                                    if (event.target.value === " " && validate.team_name.length === 0) {
+                                        event.preventDefault();
+                                    } else {
+                                        setValidate({
+                                            ...validate,
+                                            team_name: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[0-9]/g, "")
+                                        })
+                                    }
+                                }} value={validate.team_name}/>
                                 {errors.teamname && (<p className='MyBookingerrormsgleft'>{errors.teamname.message}</p>)}
                             </div>
                             <div className="uk-margin">
-                                <input className="uk-input" type="text" placeholder="Slot Number" id="slotnumber" name="slotnumber" {...register('slotnumber', { required: "** Slot number is Required" })} />
+                                <input className="uk-input" type="text" placeholder="Slot Number" id="slotnumber" name="slotnumber" {...register('slotnumber', { required: "** Slot number is Required",pattern:{value:/^[0-9]*$/,message:"**Only Numbers are allowed"} })} maxLength={30} onChange={(event)=>{
+                                    if (event.target.value === " " && validate.slot_number.length === 0) {
+                                        event.preventDefault();
+                                    } else {
+                                        setValidate({
+                                            ...validate,
+                                            slot_number: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[a-zA-z#!@$&]/g, "")
+                                        })
+                                    }
+                                }} value={validate.slot_number}/>
                                 {errors.slotnumber && (<p className='MyBookingerrormsgleft'>{errors.slotnumber.message}</p>)}
                             </div>
                             <div className="uk-margin">
-                                <textarea className="uk-textarea" type="textarea" id="Reason_For_Cancellation" name="Reason_For_Cancellation" placeholder="Reason For Cancellation" {...register('Reason_For_Cancellation', { required: "**Reason For Cancellation is Required" })} />
+                                <textarea className="uk-textarea" type="textarea" id="Reason_For_Cancellation" name="Reason_For_Cancellation" placeholder="Reason For Cancellation" {...register('Reason_For_Cancellation', { required: "**Reason For Cancellation is Required",pattern:{value:/^[a-zA-Z0-9\s'".?]*$/,message:"**Only Alphabets and Numbers are allowed"} })} maxLength={30}/>
                                 {errors.Reason_For_Cancellation && (<p className='MyBookingerrormsgleft'>{errors.Reason_For_Cancellation.message}</p>)}
                             </div>
                             <div className="uk-margin"></div>
