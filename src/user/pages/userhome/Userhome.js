@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useLayoutEffect} from 'react';
 import './Userhome.css';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
@@ -28,6 +28,11 @@ function Userhome() {
     useEffect(() => {
       Aos.init({duration:1000});
   },[]);
+
+  //code to scroll to the top of window
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+    });
 
   return(
     <div className="userhome" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
