@@ -346,7 +346,7 @@ progress[value]::-webkit-progress-value {
 }
 .slot-progressbar-left-text {
   position: relative;
-  top: 4px;
+  top: 2px;
   left: 0;
   font-size: 12px;
   color: rgb(102 98 98);
@@ -364,92 +364,7 @@ progress[value]::-webkit-progress-value {
   font-weight: 700;
   margin: 0;
 }
-@media only screen and (max-width: 1500px) {
-  .slot-list-card {
-    height: 221px;
-  }
 
-  .slotlist-team-img img {
-    left: -42px;
-    width: 153px;
-    transform: scale(1);
-    top: 61px;
-  }
-  .slot-list-reg-section {
-    position: absolute;
-  }
-  .slotlist-main-titile h3 {
-    left: 17%;
-  }
-  .slot-list-pay-section h6 {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: -19%;
-    font-size: 12px;
-    top: 20px;
-  }
-  .slot-list-pay-section-sd h6 {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: -19%;
-    font-size: 12px;
-    top: 20px;
-  }
-  .slot-list-pay-section span {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: 64px;
-    font-size: 12px;
-    top: -22px;
-  }
-  .slot-list-pay-section-sd span {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: 64px;
-    font-size: 12px;
-    top: -22px;
-  }
-  .slot-list-pay-section span::after {
-    height: 23px;
-    top: -20px;
-    left: 5px;
-  }
-  .slot-list-pay-section-sd span::after {
-    height: 23px;
-    top: -20px;
-    left: 7px;
-  }
-  .slotlist-rule {
-    top: 7px;
-    right: 8px;
-  }
-  .slot-list-progress-bar {
-    width: 50%;
-    position: absolute;
-    right: 5px;
-    bottom: 30%;
-  }
-  .slot-list-progress-bar-sd {
-    width: 51%;
-    position: absolute;
-    right: 8px;
-    bottom: 30%;
-  }
-  .slot-progressbar-left-text,
-  .slot-progressbar-right-text {
-    font-size: 10px;
-    color: rgb(102 98 98);
-    font-weight: 700;
-  }
-  .slot-list-pay-section .slot-list-entry-fee {
-    right: -29%;
-    top: 18px;
-  }
-  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -36%;
-    top: 18px;
-  }
-}
 .slotlist_modal_close {
   background-color: #6bdcfc;
   color: white;
@@ -476,11 +391,122 @@ progress[value]::-webkit-progress-value {
 .slot-list-rules_modal::-webkit-scrollbar-thumb:hover {
   background-color: #6bdcfc;
 }
-@media (min-width: 300px) and (max-width: 320px){
+@media (min-width: 279px) and (max-width: 300px){
   .slot_header {
     height: 6rem;
     margin-top: 54px;
   }
+  .slotlist-main-titile h3 {
+    left: 14%;
+}
+
+  .slot-list-modal_box-all{
+   width: 80% !important;
+   padding: 26px !important;
+  }
+  #modal-modal-description-all{
+    height: 14rem !important;
+  }
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 85px;
+    margin-left: -7px;
+  }
+  .slotlist-team-img img {
+    left: -37px;
+    width: 144px;
+    transform: scale(1);
+    top: 61px;
+}
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -10%;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -10%;
+    font-size: 10px;
+  }
+  .slot-list-prize-pool{
+    left: 28% !important;
+  }
+  .slot-list-prize-pool-sd{
+    left: 28% !important;
+  }
+  .slot-list-pay-section span::after{
+    left: 7px;
+  }
+  .slot-list-pay-section span {
+    left: 60px;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd span::after{
+    left: 7px;
+    height: 19px;
+    top: -18px;
+    left: 10px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 22%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 49%;
+    right: 6px;
+  }
+  .slot-list-pay-section-sd span {
+    left: 60px;
+    font-size: 11px;
+  }
+  .slot-list-entry-fee {
+    right: -37%;
+  }
+  .slot-list-entry-fee-sd {
+    right: -37%;
+  }
+  progress {
+    width: 96%;
+  }
+  .slot-list-carditems {
+    width: calc(145% - -5px) !important;
+    left: -14%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(145% - -5px) !important;
+    left: -14%;
+  }
+  .slot-list-reg-section a {
+    right: -23%;
+  }
+  .slotlist-card-list {
+    padding-right: 42px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -61px;
+  }
+}
+@media (min-width: 301px) and (max-width: 320px){
+  .slot_header {
+    height: 6rem;
+    margin-top: 54px;
+  }
+  .slotlist-main-titile h3 {
+    left: 14%;
+}
+
   .slot-list-modal_box-all{
    width: 80% !important;
    padding: 26px !important;
@@ -579,7 +605,347 @@ progress[value]::-webkit-progress-value {
     margin-left: -20px;
   }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 361px){
+  .slot_header {
+    height: 6rem !important;
+    margin-top: 54px;
+  }
+  .slotlist-main-titile h3 {
+    left: 14%;
+}
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 84px;
+    margin-left: 15px;
+  }
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -11%;
+    font-size: 11px;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 29%;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -43%;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -8%;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd span {
+    left: 69px;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 30%;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -49%;
+  }
+  .slot_match_date {
+    font-size: 10px;
+  }
+  progress {
+    width: 97%;
+    right: -3px;
+  }
+  .slot-list-pay-section span {
+        font-size: 11px;
+  }
+  .slot-list-carditems {
+    width: calc(119% - 10px) !important;
+    left: 12%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(119% - 10px) !important;
+    left: 12%;
+  }
+  .slot-list-reg-section a {
+    right: -14%;
+  }
+  .slotlist-card-list {
+    padding-right: 67px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -20px;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+}
+@media (min-width: 362px) and (max-width: 376px){
+  .slot_header {
+    height: 6rem !important;
+    margin-top: 54px;
+  }
+  .slotlist-main-titile h3 {
+    left: 14%;
+}
+progress {
+  right: 7px;
+  width: 103%;
+}
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 84px;
+    margin-left: 15px;
+  }
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -23%;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -23%;
+  }
+  .slot-list-carditems {
+    width: calc(119% - 10px) !important;
+    left: 12%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(119% - 10px) !important;
+    left: 12%;
+  }
+  .slot-list-reg-section a {
+    right: -14%;
+  }
+  .slotlist-card-list {
+    padding-right: 67px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -20px;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+
+}
+ @media (min-width: 377px) and (max-width: 394px){
+ 
+.slot-list-pay-section .slot-list-prize-pool {
+  left: 19%;
+}
+.slot_header {
+  height: 6rem !important;
+  margin-top: 54px;
+}
+.slot-list-pay-section span {
+  left: 59px;
+}
+progress {
+  right: 4%;
+}
+.slot_header h1 {
+  font-size: 34px;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+.slot_header h1:before {
+  height: 2rem;
+  top: 84px;
+  margin-left: 15px;
+}
+.slot_header {
+  padding-left: 5rem !important;
+}
+.slot-main-card {
+  flex-direction: column;
+  margin: 0 !important;
+}
+.slot-list-pay-section h6 {
+  left: -22%;
+}
+.slot-list-pay-section-sd h6 {
+  left: -23%;
+}
+.slot-list-carditems {
+  width: calc(105% - -10px) !important;
+  left: 15%;
+}
+.slot-list-carditems-sd {
+  width: calc(105% - -10px) !important;
+  left: 15%;
+}
+.slot-list-reg-section a {
+  right: -14%;
+}
+.slotlist-card-list {
+  padding-right: 67px;
+}
+.slot-list-reg-section a::after {
+  left: 71px;
+}
+.sub_slot_header h1 {
+  margin-left: -20px;
+}
+.slot-list-modal_box-all{
+  width: 80% !important;
+  padding: 26px !important;
+ }
+ #modal-modal-description-all{
+   height: 14rem !important;
+ }
+ .slot-list-pay-section .slot-list-entry-fee {
+  right: -44%;
+}
+} 
+@media (min-width: 395px) and (max-width: 413px){
+  .slot_header {
+    height: 6rem !important;
+    margin-top: 54px;
+  }
+  progress {
+    width: 103%;
+    right: 4%;
+  }
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 84px;
+    margin-left: 15px;
+  }
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -23%;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -23%;
+  }
+  .slot-list-carditems {
+    width: calc(105% - 10px) !important;
+    left: 15%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(105% - 10px) !important;
+    left: 15%;
+  }
+  .slot-list-reg-section a {
+    right: -14%;
+  }
+  .slotlist-card-list {
+    padding-right: 67px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -20px;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+
+}
+@media (min-width: 414px) and (max-width: 426px){
+  .slot_header {
+    height: 6rem !important;
+    margin-top: 54px;
+  }
+  
+  .slot_header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-left: 24px;
+  }
+  .slot_header h1:before {
+    height: 2rem;
+    top: 84px;
+    margin-left: 15px;
+  }
+  .slot_header {
+    padding-left: 5rem !important;
+  }
+  .slot-main-card {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -23%;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -23%;
+  }
+  .slot-list-carditems {
+    width: calc(105% - 10px) !important;
+    left: 15%;
+  }
+  .slot-list-carditems-sd {
+    width: calc(105% - 10px) !important;
+    left: 15%;
+  }
+  .slot-list-reg-section a {
+    right: -14%;
+  }
+  .slotlist-card-list {
+    padding-right: 67px;
+  }
+  .slot-list-reg-section a::after {
+    left: 71px;
+  }
+  .sub_slot_header h1 {
+    margin-left: -20px;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+
+}
+
+@media (min-width: 427px) and (max-width: 480px) {
   .slot_header {
     height: 6rem;
     margin-top: 54px;
@@ -635,13 +1001,13 @@ progress[value]::-webkit-progress-value {
      height: 14rem !important;
    }
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 500px) {
   .slot-list-carditems {
-    width: calc(110% - 10px) !important;
+    width: calc(74% - 10px) !important;
     flex-wrap: wrap;
   }
   .slot-list-carditems-sd {
-    width: calc(110% - 10px) !important;
+    width: calc(74% - 10px) !important;
     flex-wrap: wrap;
   }
   .slot-list-modal_box-all{
@@ -651,8 +1017,126 @@ progress[value]::-webkit-progress-value {
    #modal-modal-description-all{
      height: 14rem !important;
    }
+   .slot_header {
+    margin-top: 55px;
+   }
+   .slot-main-card uk-grid{
+     margin-left: 31px !important;
+   }
 }
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 501px) and (max-width:541px) {
+  .slot-list-carditems {
+    width: calc(66% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-list-carditems-sd {
+    width: calc(66% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-main-card {
+    justify-content: center ;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+   .slot_header {
+    margin-top: 55px;
+   }
+   .slot-main-card uk-grid{
+     margin-left: 31px !important;
+   }
+}
+@media (min-width: 542px) and (max-width: 600px) {
+  .slot-list-carditems {
+    width: calc(57% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-list-carditems-sd {
+    width: calc(58% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-main-card {
+    justify-content: center ;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+   .slot_header {
+    margin-top: 55px;
+   }
+   .slot-main-card uk-grid{
+     margin-left: 31px !important;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 640px) {
+  .slot-list-carditems {
+    width: calc(57% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-list-carditems-sd {
+    width: calc(58% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-main-card {
+    justify-content: center ;
+  }
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+   .slot_header {
+    margin-top: 55px;
+   }
+   .slot-main-card uk-grid{
+     margin-left: 31px !important;
+   }
+}
+@media (min-width: 641px) and (max-width: 700px){
+  .slot-list-carditems {
+    width: calc(49% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  .slot-list-carditems-sd {
+    width: calc(50% - 10px) !important;
+    flex-wrap: wrap;
+  }
+  
+  .slot-list-modal_box-all{
+    width: 80% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
+   .slot_header {
+    margin-top: 55px;
+   }
+   .slot-main-card{
+     margin-left: 31px !important;
+     display: inline-flex;
+     justify-content: center ;
+   }
+   .slot-list-pay-section-sd h6 {
+    left: -28%;
+   }
+   .slot-list-pay-section h6 {
+    left: -22%;
+   }
+  
+}
+@media (min-width: 701px) and (max-width: 767px) {
   .slot-list-carditems {
     width: calc(42% - 10px) !important;
     margin: 0 1.5% 55px 6.9% !important;
@@ -715,15 +1199,143 @@ progress[value]::-webkit-progress-value {
    #modal-modal-description-all{
      height: 14rem !important;
    }
+  }
+  @media (min-width: 768px) and (max-width: 821px){
+    .slot-list-carditems {
+      width: calc(42% - 10px) !important;
+      margin: 0 1.5% 55px 6.9% !important;
+    }
+    .slot-list-carditems-sd {
+      width: calc(42% - 10px) !important;
+      margin: 0 1.5% 55px 6.9% !important;
+    }
+    .slot-main-card.uk-grid{
+      margin-left: -30px !important;
+    }
+    .slot-list-pay-section {
+      right: 59px;
+    }
+    .slot-list-pay-section h6 {
+      left: -18%;
+    }
+    .slot-list-pay-section-sd {
+      right: 55px;
+    }
+    .slot-list-pay-section-sd h6 {
+      left: -18%;
+      font-size: 11px;
+    }
+    .slot-list-pay-section-sd span {
+      font-size: 11px;
+      margin-left: -11px;
+    }
+    .slot-list-pay-section-sd span::after {
+      height: 17px;
+      top: -18px;
+      left: 4px;
+  
+    }
+    .slot-list-progress-bar-sd {
+      width: 49%;
+      position: absolute;
+      right: 11px;
+      bottom: 30%;
+  }
+    .slot_match_date {
+      font-size: 10px;
+      
+    }
+    .slot_header {
+      height: 7rem;
+    }
+    .slot_header h1{
+      font-size: 45px;
+      margin-top: 15px;
+    }
+    .slot_header h1::before{
+      height: 3rem;
+      top: 96px;
+    }
+    .slot-list-modal_box-all{
+      width: 49% !important;
+      padding: 26px !important;
+     }
+     #modal-modal-description-all{
+       height: 14rem !important;
+     }
+  }
+@media (min-width: 822px) and (max-width: 900px) {
+  .slot-list-carditems {
+    width: calc(38% - 10px) !important;
+    margin: 0px 1.5% 55px 8.9% !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(38% - 10px) !important;
+    margin: 0px 1.5% 55px 8.9% !important;
+  }
+  .slot-main-card.uk-grid{
+    margin-left: -30px !important;
+  }
+  .slot-list-pay-section {
+    right: 59px;
+  }
+  .slot-list-pay-section h6 {
+    left: -18%;
+  }
+  .slot-list-pay-section-sd {
+    right: 55px;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -18%;
+    font-size: 11px;
+  }
+  .slot-list-pay-section-sd span {
+    font-size: 11px;
+    margin-left: -11px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 17px;
+    top: -18px;
+    left: 4px;
+
+  }
+  .slot-list-progress-bar-sd {
+    width: 49%;
+    position: absolute;
+    right: 11px;
+    bottom: 30%;
+}
+  .slot_match_date {
+    font-size: 10px;
+    
+  }
+  .slot_header {
+    height: 7rem;
+  }
+  .slot_header h1{
+    font-size: 45px;
+    margin-top: 15px;
+  }
+  .slot_header h1::before{
+    height: 3rem;
+    top: 96px;
+  }
+  .slot-list-modal_box-all{
+    width: 49% !important;
+    padding: 26px !important;
+   }
+   #modal-modal-description-all{
+     height: 14rem !important;
+   }
 }
 @media (min-width: 901px) and (max-width: 912px) {
   .slot-list-carditems {
     width: calc(37% - 10px) !important;
-    margin: 0 1.5% 55px 10.9% !important;
+    margin: 0 0.5% 55px 7.9% !important;
   }
   .slot-list-carditems-sd {
     width: calc(37% - 10px) !important;
-    margin: 0 1.5% 55px 10.9% !important;
+    margin: 0 0.5% 55px 7.9% !important;
   }
   .slot-list-pay-section {
     right: 55px;
@@ -731,6 +1343,11 @@ progress[value]::-webkit-progress-value {
   .slot-list-pay-section h6 {
     left: -24%;
   }
+  .slot-main-card {
+    display: flex !important;
+    justify-content: start !important;
+}
+
   .slot-list-pay-section-sd {
     right: 55px;
   }
@@ -738,8 +1355,57 @@ progress[value]::-webkit-progress-value {
     left: -24%;
   }
 }
+@media (min-width: 913px) and (max-width: 952px){
+  .slot-list-carditems {
+    width: calc(37% - 10px) !important;
+    margin: 0 0.5% 55px 7.9% !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(37% - 10px) !important;
+    margin: 0 0.5% 55px 7.9% !important;
+  }
+  .slot-list-pay-section {
+    right: 55px;
+  }
+  .slot-list-pay-section h6 {
+    left: -24%;
+  }
+  .slot-main-card {
+    display: flex !important;
+    justify-content: start !important;
+}
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+  .slot-list-pay-section-sd {
+    right: 55px;
+  }
+  .slot-list-pay-section-sd h6 {
+    left: -24%;
+  }
+}
+@media (min-width: 953px) and (max-width: 1024px){
+  .slot-list-carditems {
+    width: calc(31% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 2.5rem !important;
+    left: 7%;
+  }
+  .slot-main-card.uk-grid{
+    margin-left: -30px !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(31% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 2.5rem !important;
+    left: 7%;
+  }
+  .slotlist-team-img img {
+    left: -38px;
+    width: 140px;
+    transform: scale(1);
+    top: 61px;
+  }
+} 
+@media (min-width: 1025px) and (max-width: 1080px){
   .slot-list-carditems {
     width: calc(31% - 10px) !important;
     margin: 0 1.5% 55px -1.1% !important;
@@ -762,25 +1428,1093 @@ progress[value]::-webkit-progress-value {
     top: 61px;
   }
 }
-@media (min-width: 1281px) and (max-width: 1300px) {
+@media (min-width: 1081px) and (max-width: 1100px){
   .slot-list-carditems {
-    width: calc(25% - 12px) !important;
-    margin: 0 1.5% 55px 4.9% !important;
+    width: calc(31% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 2.5rem !important;
+    left: 7%;
+  }
+  .slot-main-card.uk-grid{
+    margin-left: -30px !important;
   }
   .slot-list-carditems-sd {
-    width: calc(25% - 12px) !important;
-    margin: 0 1.5% 55px 4.9% !important;
+    width: calc(31% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 2.5rem !important;
+    left: 7%;
+  }
+  .slotlist-team-img img {
+    left: -38px;
+    width: 140px;
+    transform: scale(1);
+    top: 61px;
+  }
+  .slot-list-pay-section {
+    right: 69px;
+  }
+  .slot-list-pay-section-sd {
+    right: 69px;
+  }
+  .slot-list-pay-section-sd span::after {
+    left: 10px;
+
   }
 }
-@media (min-width: 1301px) and (max-width: 1347px) {
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .slot-list-carditems {
+    width: calc(27% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 5.5rem !important;
+    left: 7%;
+  }
+  .slot-main-card.uk-grid{
+    margin-left: -30px !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(27% - 10px) !important;
+    margin: 0 1.5% 55px -1.1% !important;
+    margin-right: 5.5rem !important;
+    left: 7%;
+  }
+  .slotlist-team-img img {
+    left: -38px;
+    width: 140px;
+    transform: scale(1);
+    top: 61px;
+  }
+  .slot-list-pay-section {
+    right: 60px;
+  }
+  .slot-list-pay-section-sd {
+    right: 55px;
+  }
+  .slot-list-pay-section-sd span::after {
+    left: 10px;
+
+  }
+}
+@media (min-width:1201px) and (max-width:1236px){
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 141px;
+    transform: scale(1.0);
+    top: 61px;
+    height: 97px;
+    object-fit: cover;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
   .slotlist-main-titile h3 {
-    left: 11%;
+    left: 9%;
   }
-  .slotlist-card-list {
-    margin: 20px -15px;
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 6%;
+    font-size: 10px;
+    top: 19px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 12%;
+    font-size: 10px;
+    top: 20px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 71px;
+    font-size: 10px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 72px;
+    font-size: 10px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 20px;
+    top: -19px;
+    left: 5px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 20px;
+    top: -19px;
+    left: 8px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 42%;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: -3px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: -1px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right: -1px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 46%;
+  }
+  progress {
+    right: -2px;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -62%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -60%;
+    top: 18px;
+  }
+  .slot_match_date {
+    font-size: 9px;
+    left: 25%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(22% - 5px) !important;
   }
 }
-@media (min-width: 1501px) and (max-width: 1598px) {
+@media (min-width: 1237px) and (max-width: 1280px) {
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 141px;
+    transform: scale(1.0);
+    top: 61px;
+    height: 97px;
+    object-fit: cover;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 9%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 6%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 5%;
+    font-size: 11px;
+    top: 20px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 71px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 72px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 20px;
+    top: -20px;
+    left: 4px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 20px;
+    top: -19px;
+    left: 8px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 42%;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: -3px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right: 2px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 46%;
+  }
+  .slot-list-pay-section{
+    right: 60px;
+  }
+  progress {
+    right: -2px;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -62%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -60%;
+    top: 18px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 24%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-main-card{
+    margin-left: -42px !important;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1300px) {
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 141px;
+    transform: scale(1.0);
+    top: 61px;
+    height: 97px;
+    object-fit: cover;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 9%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 71px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 72px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 20px;
+    top: -20px;
+    left: 5px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 20px;
+    top: -19px;
+    left: 9px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 42%;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right:7px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 46%;
+  }
+  progress {
+    right: -2px;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -62%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -60%;
+    top: 18px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 23%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-list-pay-section {
+    right: 66px;
+  }
+  .slot-list-pay-section-sd {
+    right: 63px;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1348px) {
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 141px;
+    transform: scale(1.0);
+    top: 61px;
+    height: 97px;
+    object-fit: cover;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 9%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 71px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 72px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 20px;
+    top: -20px;
+    left: 5px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 20px;
+    top: -19px;
+    left: 9px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 42%;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right:7px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 46%;
+  }
+  progress {
+    right: -2px;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -62%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -60%;
+    top: 18px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 23%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(22% - 5px) !important;
+  }
+  .slot-list-pay-section {
+    right: 66px;
+  }
+  .slot-list-pay-section-sd {
+    right: 63px;
+  }
+}
+@media (min-width: 1349px) and (max-width: 1366px) {
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 141px;
+    transform: scale(1.0);
+    top: 61px;
+    height: 97px;
+    object-fit: cover;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 9%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 71px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 72px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 20px;
+    top: -20px;
+    left: 7px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 20px;
+    top: -19px;
+    left:11px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 42%;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right:12px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 46%;
+  }
+  progress {
+    right: -2px;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -48%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -50%;
+    top: 18px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 23%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 6px) !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(22% - 6px) !important;
+  }
+  .slot-list-pay-section {
+    right: 70px;
+  }
+  .slot-list-pay-section-sd {
+    right: 70px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1400px){
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 141px;
+    transform: scale(1.0);
+    top: 61px;
+    height: 97px;
+    object-fit: cover;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 9%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 2%;
+    font-size: 11px;
+    top: 19px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 71px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 72px;
+    font-size: 11px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 20px;
+    top: -20px;
+    left: 7px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 20px;
+    top: -19px;
+    left:11px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 42%;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right:12px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 46%;
+  }
+  progress {
+    right: -2px;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -48%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -50%;
+    top: 18px;
+  }
+  .slot_match_date {
+    font-size: 10px;
+    left: 23%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 6px) !important;
+  }
+  .slot-list-carditems-sd {
+    width: calc(22% - 6px) !important;
+  }
+  .slot-list-pay-section {
+    right: 70px;
+  }
+  .slot-list-pay-section-sd {
+    right: 70px;
+  }
+}
+@media (min-width: 1401px) and (max-width: 1443px){
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 153px;
+    transform: scale(1);
+    top: 61px;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 17%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: -19%;
+    font-size: 12px;
+    top: 20px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: -19%;
+    font-size: 12px;
+    top: 20px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 64px;
+    font-size: 12px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 64px;
+    font-size: 12px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 23px;
+    top: -20px;
+    left: 5px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 23px;
+    top: -20px;
+    left: 7px;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 11px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section {
+    right: 60px;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -29%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -36%;
+    top: 18px;
+  }
+  progress {
+    width: 102%;
+  }
+  .slot-list-progress-bar-sd {
+    right: 11px;
+  }
+}
+@media (min-width: 1444px) and (max-width: 1480px){
+  .slot-list-card {
+    height: 221px;
+  }
+
+  .slotlist-team-img img {
+    left: -42px;
+    width: 153px;
+    transform: scale(1);
+    top: 61px;
+  }
+  .slot-list-reg-section {
+    position: absolute;
+  }
+  .slotlist-main-titile h3 {
+    left: 17%;
+  }
+  .slot-list-pay-section h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: -19%;
+    font-size: 12px;
+    top: 20px;
+  }
+  .slot-list-pay-section-sd h6 {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: -19%;
+    font-size: 12px;
+    top: 20px;
+  }
+  .slot-list-pay-section span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 64px;
+    font-size: 12px;
+    top: -22px;
+  }
+  .slot-list-pay-section-sd span {
+    color: rgb(102 98 98);
+    font-weight: 800;
+    left: 64px;
+    font-size: 12px;
+    top: -22px;
+  }
+  .slot-list-pay-section span::after {
+    height: 23px;
+    top: -20px;
+    left: 5px;
+  }
+  .slot-list-pay-section-sd span::after {
+    height: 23px;
+    top: -20px;
+    left: 7px;
+  }
+  .slotlist-rule {
+    top: 7px;
+    right: 8px;
+  }
+  .slot-list-progress-bar {
+    width: 50%;
+    position: absolute;
+    right: 11px;
+    bottom: 30%;
+  }
+  .slot-list-pay-section {
+    right: 60px;
+  }
+  .slot-list-progress-bar-sd {
+    width: 51%;
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+  }
+  .slot-progressbar-left-text,
+  .slot-progressbar-right-text {
+    font-size: 10px;
+    color: rgb(102 98 98);
+    font-weight: 700;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -29%;
+    top: 18px;
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -36%;
+    top: 18px;
+  }
+  progress {
+    width: 102%;
+  }
+  .slot-list-progress-bar-sd {
+    right: 11px;
+  }
+}
+@media (min-width: 1481px) and (max-width: 1500px){
+ 
+    .slot-list-card {
+      height: 221px;
+    }
+  
+    .slotlist-team-img img {
+      left: -42px;
+      width: 153px;
+      transform: scale(1);
+      top: 61px;
+    }
+    .slot-list-reg-section {
+      position: absolute;
+    }
+    .slotlist-main-titile h3 {
+      left: 17%;
+    }
+    .slot-list-pay-section h6 {
+      color: rgb(102 98 98);
+      font-weight: 800;
+      left: -19%;
+      font-size: 12px;
+      top: 20px;
+    }
+    .slot-list-pay-section-sd h6 {
+      color: rgb(102 98 98);
+      font-weight: 800;
+      left: -19%;
+      font-size: 12px;
+      top: 20px;
+    }
+    .slot-list-pay-section span {
+      color: rgb(102 98 98);
+      font-weight: 800;
+      left: 64px;
+      font-size: 12px;
+      top: -22px;
+    }
+    .slot-list-pay-section-sd span {
+      color: rgb(102 98 98);
+      font-weight: 800;
+      left: 64px;
+      font-size: 12px;
+      top: -22px;
+    }
+    .slot-list-pay-section span::after {
+      height: 23px;
+      top: -20px;
+      left: 5px;
+    }
+    .slot-list-pay-section-sd span::after {
+      height: 23px;
+      top: -20px;
+      left: 7px;
+    }
+    .slotlist-rule {
+      top: 7px;
+      right: 8px;
+    }
+    .slot-list-progress-bar {
+      width: 50%;
+      position: absolute;
+      right: 16px;
+      bottom: 30%;
+    }
+    .slot-list-progress-bar-sd {
+      width: 51%;
+      position: absolute;
+      right: 8px;
+      bottom: 30%;
+    }
+    .slot-progressbar-left-text,
+    .slot-progressbar-right-text {
+      font-size: 10px;
+      color: rgb(102 98 98);
+      font-weight: 700;
+    }
+    .slot-list-pay-section .slot-list-entry-fee {
+      right: -29%;
+      top: 18px;
+    }
+    .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+      right: -36%;
+      top: 18px;
+    }
+    .slot-list-pay-section {
+      right: 66px;
+    }
+  }
+  @media (min-width: 1501px) and (max-width: 1550px) {
+    .slotlist-team-img img {
+      transform: scale(1);
+      height: auto;
+      left: -37px;
+    }
+    .slot-list-pay-section span {
+     
+      right: -67px;
+      font-size: 14px;
+      left: 63px;
+  }
+  .slot-list-pay-section h6 {
+    
+    left: -23%;
+    font-size: 14px;
+   
+  }
+  .slot-list-pay-section span::after {
+    left: 6px;
+    height: 30px;
+  }
+  .slot-list-progress-bar {
+    width: 49%;
+  }
+  .slot-list-carditems {
+    width: calc(22% - 6px) !important;
+  }
+  .slot-list-pay-section-sd span {
+   
+    right: -68px;
+    font-size: 14px;
+    top: -31px;
+    
+  }
+  .slot-list-pay-section-sd h6{
+    left: -15%;
+    font-size: 14px;
+   
+  }
+  .slot-list-pay-section-sd span::after {
+    left: 12px;
+    height: 30px;
+  
+  }
+  .slot-list-pay-section-sd .slot-list-entry-fee-sd {
+    right: -30%;
+    top: 14px;
+  }
+  .slot-list-pay-section-sd .slot-list-prize-pool-sd {
+    left: 16%;
+    top: 14px;
+  }
+  .slot-list-progress-bar-sd {
+    bottom: 24%;
+    width: 49%;
+  }
+  .slot_match_date {
+  top: 92px;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -29%;
+  }
+  .slot-list-pay-section-sd {
+    right: 61px;
+  }
+  }
+@media (min-width: 1551px) and (max-width: 1598px) {
   .slotlist-team-img img {
     transform: scale(1);
     height: auto;
@@ -799,7 +2533,11 @@ progress[value]::-webkit-progress-value {
  
 }
 .slot-list-pay-section span::after {
-  left: 3px;
+  left: 6px;
+  height: 30px;
+}
+.slot-list-progress-bar {
+  width: 49%;
 }
 .slot-list-carditems {
   width: calc(22% - 6px) !important;
@@ -817,7 +2555,8 @@ progress[value]::-webkit-progress-value {
  
 }
 .slot-list-pay-section-sd span::after {
-  left: 10px;
+  left: 12px;
+  height: 30px;
 
 }
 .slot-list-pay-section-sd .slot-list-entry-fee-sd {
@@ -836,7 +2575,7 @@ progress[value]::-webkit-progress-value {
 top: 92px;
 }
 }
-@media (min-width: 1599px) and (max-width: 1886px){
+@media (min-width: 1599px) and (max-width: 1666px){
   .slotlist-team-img img {
     transform: scale(1);
     height: auto;
@@ -855,7 +2594,17 @@ top: 92px;
  
 }
 .slot-list-pay-section span::after {
-  left: 3px;
+  left: 6px;
+  height: 30px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 49%;
+}
+.slot-list-pay-section-sd {
+  right: 62px;
 }
 .slot-list-carditems {
   width: calc(22% -10px) !important;
@@ -873,8 +2622,8 @@ top: 92px;
  
 }
 .slot-list-pay-section-sd span::after {
-  left: 10px;
-
+  left: 12px;
+ height: 30px;
 }
 .slot-list-pay-section-sd .slot-list-entry-fee-sd {
   right: -30%;
@@ -894,15 +2643,782 @@ top: 92px;
 .slot-list-carditems-sd {
   width: calc(22% - 11px) !important;
 }
+.slot-list-pay-section {
+  right: 61px;
 }
-@media (min-width: 2000px) and (max-width: 2040px) {
-  .slot_match_date {
-    top: 99px;
-    font-size: 13px;
-    left: 23%;
+}
+@media (min-width: 1667px) and (max-width: 1720px){
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 9px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 62px;
+}
+.slot-list-carditems {
+  width: calc(22% -10px) !important;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 16px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
 }
 .slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 11px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+@media (min-width: 1721px) and (max-width: 1780px){
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
   
-  bottom: 19%;
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 9px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 62px;
+}
+.slot-list-carditems {
+  width: calc(22% -10px) !important;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 16px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 11px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+
+@media (min-width: 1782px) and (max-width: 1800px){
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 62px;
+}
+.slot-list-carditems {
+  width: calc(22% - 44px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 13px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 44px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+@media (min-width: 1801px) and (max-width: 1836px){
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 62px;
+}
+.slot-list-carditems {
+  width: calc(22% - 44px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 13px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 44px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+@media (min-width: 1837px) and (max-width: 1886px){
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 63px;
+}
+.slot-list-carditems {
+  width: calc(22% - 44px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 15px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+font-size: 12px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 44px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+
+}
+@media (min-width: 1887px) and (max-width: 1900px) {
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 68px;
+}
+.slot-list-carditems {
+  width: calc(22% - 44px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 16px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+font-size: 12px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 44px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+
+}
+@media (min-width: 1901px) and (max-width: 1926px) {
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 68px;
+}
+.slot-list-carditems {
+  width: calc(22% - 72px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 13px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+font-size: 12px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 72px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+@media (min-width: 1927px) and (max-width: 1980px) {
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 68px;
+}
+.slot-list-carditems {
+  width: calc(22% - 72px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 15px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+font-size: 12px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 72px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+@media (min-width: 1981px) and (max-width: 2000px) {
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 68px;
+}
+.slot-list-carditems {
+  width: calc(22% - 72px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+  margin-left: -48px !important;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 15px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+font-size: 13px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 72px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
+}
+}
+@media (min-width: 2001px) and (max-width: 2040px) {
+  .slotlist-team-img img {
+    transform: scale(1);
+    height: auto;
+    left: -37px;
+  }
+  .slot-list-pay-section span {
+   
+    right: -67px;
+    font-size: 14px;
+    left: 63px;
+}
+.slot-list-pay-section h6 {
+  
+  left: -23%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section span::after {
+  left: 8px;
+  height: 27px;
+}
+.slot-list-pay-section .slot-list-entry-fee {
+  right: -24%;
+}
+.slot-list-progress-bar {
+  width: 47%;
+  right: 14px;
+}
+.slot-list-pay-section-sd {
+  right: 68px;
+}
+.slot-list-carditems {
+  width: calc(22% - 72px) !important;
+}
+.slot-main-card{
+  justify-content: space-evenly;
+  margin-left: -71px !important;
+}
+.slot-list-pay-section-sd span {
+ 
+  right: -68px;
+  font-size: 14px;
+  top: -31px;
+  
+}
+.slot-list-pay-section-sd h6{
+  left: -15%;
+  font-size: 14px;
+ 
+}
+.slot-list-pay-section-sd span::after {
+  left: 15px;
+ height: 27px;
+}
+.slot-list-pay-section-sd .slot-list-entry-fee-sd {
+  right: -30%;
+  top: 14px;
+}
+.slot-list-pay-section-sd .slot-list-prize-pool-sd {
+  left: 16%;
+  top: 14px;
+}
+.slot-list-progress-bar-sd {
+  bottom: 24%;
+  width: 47%;
+  right: 17px;
+}
+.slot_match_date {
+top: 92px;
+font-size: 13px;
+}
+.slot-list-carditems-sd {
+  width: calc(22% - 72px) !important;
+}
+.slot-list-pay-section {
+  right: 61px;
 }
 }

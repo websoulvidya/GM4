@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useLayoutEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Userheader from '../../components/userheader/Userheader';
@@ -26,6 +26,13 @@ function Tournament() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  //code to scroll to the top of window
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+    });
+
+    
   return (
 
     <div className="tournament" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}} id='tournament'> 

@@ -46,7 +46,7 @@ function Ads_payment() {
 
 
     return (
-        <div style={{overflowX:"hidden"}}>
+        <div style={{ overflowX: "hidden" }}>
             <div>
                 <Dashboard />
             </div >
@@ -96,7 +96,7 @@ function Ads_payment() {
                     <div className='payment_method_img'>
                         <ul>
                             <li><img src={gpay} alt="" /></li>
-                            <li><img src={paytm} alt=""  style={{ width: '4.9rem' }} /></li>
+                            <li><img src={paytm} alt="" style={{ width: '4.9rem' }} /></li>
                             <li><img src={phonepe} alt="" style={{ width: '4.9rem' }} /></li>
                             <li><img src={wpay} alt="" /></li>
                         </ul>
@@ -111,30 +111,30 @@ function Ads_payment() {
                         <fieldset class="uk-fieldset">
                             <h2 class="joinhead"></h2>
                             <div class="uk-margin">
-                                <input className="uk-input" type="text" placeholder="Organizer name" id='orgsname' style={{backgroundColor:"#F8F8F8"}}
+                                <input className="uk-input" type="text" placeholder="Organizer name" id='orgsname' style={{ backgroundColor: "#F8F8F8" }}
                                     {...register("orgsname", { required: "**Organizer Name is Required" })} autoComplete='off' />
                                 {errors.orgsname && (<span className="adspayment-errormsg">{errors.orgsname.message}</span>)}
                             </div>
 
-                                <div class="uk-margin" uk-margin>
-                                    <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input className="uk-input" type="file" placeholder="Upload Screenshot of Payment"
-                                            autoComplete='off' {...register('scrnshot', {
-                                                required: "**Payment screenShot is required ",
-                                                validate: {
-                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+                            <div class="uk-margin" uk-margin>
+                                <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
+                                    <input className="uk-input" type="file" placeholder="Upload Screenshot of Payment"
+                                        autoComplete='off' {...register('scrnshot', {
+                                            required: "**Payment screenShot is required ",
+                                            validate: {
+                                                // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
 
-                                                    acceptedFormats: files =>
-                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
-                                                            files[0]?.type
-                                                        ) || 'Only PNG, JPEG e GIF',
-                                                },
-                                            })} />
-                                        <input class="uk-input uk-form-width-extra-large" type="text" placeholder="Upload Screenshot of Payment" name='paymentScreenshot' style={{ marginTop: '.5rem' }} disabled />
-                                        {errors.scrnshot && (<span className='adspayment-errormsg'>{errors.scrnshot.message}</span>)}
+                                                acceptedFormats: files =>
+                                                    ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                        files[0]?.type
+                                                    ) || 'Only PNG, JPEG e GIF',
+                                            },
+                                        })} />
+                                    <input class="uk-input uk-form-width-extra-large" type="text" placeholder="Upload Screenshot of Payment" name='paymentScreenshot' style={{ marginTop: '.5rem' }} disabled />
+                                    {errors.scrnshot && (<span className='adspayment-errormsg'>{errors.scrnshot.message}</span>)}
 
-                                    </div>
                                 </div>
+                            </div>
                             <div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
@@ -203,9 +203,9 @@ function Ads_payment() {
 
                         </fieldset>
                     </form>
-                {/* end payment form */}
-                <div>
-                </div>
+                    {/* end payment form */}
+                    <div>
+                    </div>
                 </div>
             </div>
             <div>
