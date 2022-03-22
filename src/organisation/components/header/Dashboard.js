@@ -266,7 +266,7 @@ export default function PrimarySearchAppBar() {
          
          
           <Box sx={{display:"flex"}}>
-              <img src={logo}  alt="" class="headerlogo-org" />
+              <img onClick={() => navigate('/')} src={logo}  alt="" class="headerlogo-org" />
           </Box>
           <Search id="header-searchbarorg">
             <SearchIconWrapper id="org-searchicon">
