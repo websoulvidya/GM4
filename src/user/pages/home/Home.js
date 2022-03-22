@@ -109,7 +109,7 @@ function Home() {
                           <div className='home-carditems'  data-aos="slide-right" data-aos-duration="800" style={{backgroundColor: '#E7658E'}}>
                             <div class="home-card ">
                               <div className='home-main-title'>
-                              <Link to="/tournament" style={{textDecoration:"none"}}><h3>Tournaments</h3></Link>
+                              <Link to="#tournament" style={{textDecoration:"none"}}><h3>Tournaments</h3></Link>
                               </div>
                             </div>
                           </div>
