@@ -34,7 +34,7 @@
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left:20%;
         
     }
@@ -62,13 +62,13 @@
 
 @media (min-width: 1781px) and (max-width: 1836px) {
     .sidenav{
-        margin-top: 6%;
+        margin-top: 7%;
         width: 400px;
         height: 1500px;
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left:20%;
         
     }
@@ -94,13 +94,13 @@
 
 @media (min-width: 1629px) and (max-width: 1780px) {
     .sidenav{
-        margin-top: 6%;
+        margin-top: 7%;
         width: 400px;
         height: 1500px;
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left:15%;
         
     }
@@ -126,13 +126,13 @@
 
 @media (min-width: 1551px) and (max-width: 1628px) {
     .sidenav{
-        margin-top: 6%;
+        margin-top: 7%;
         width: 400px;
         height: 1500px;
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left:15%;
         
     }
@@ -163,7 +163,7 @@
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left:15%;
         
     }
@@ -189,13 +189,13 @@
 
 @media (min-width: 1350px) and (max-width: 1429px) {
     .sidenav{
-        margin-top: 25px;
+        margin-top: 40px;
         width: 400px;
         height: 1200px;
         
     }
     .button_nav{
-        margin: 25px;
+        margin: 30px;
         margin-left: 60px;
         
     }
@@ -225,7 +225,7 @@
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left: 10%;
     }
     
@@ -248,7 +248,7 @@
         
     }
     .button_nav{
-        margin: 30px;
+        margin: 40px;
         margin-left: 10%;
     }
     
@@ -271,8 +271,8 @@
         
     }
     .button_nav{
-        margin: 30px;
-        margin-left: 10%;
+        margin: 40px;
+        margin-left: 5%;
     }
     
     #buttons_nav{
@@ -288,14 +288,14 @@
 
 @media (min-width: 900px) and (max-width: 1023px) {
     .sidenav{
-        margin-top: 20px;
+        margin-top:12%;
         width: 400px;
         height: 1500px;
         
     }
     .button_nav{
-        margin: 30px;
-        margin-left: 0%;
+        margin: 40px;
+        margin-left: 10%;
     }
     
     #buttons_nav{
@@ -309,7 +309,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 899px) {
+@media (min-width: 768px) and (max-width: 960px) {
     .sidenav{
         margin-top: 15px;
         width: 400px;
@@ -323,7 +323,7 @@
     #buttons_nav{
         width:500px;
         height: 60px;  
-        margin-left:25%;   
+        margin-left:0%;   
     }
     .navhead{
         margin-top:15px;
@@ -345,7 +345,7 @@
     #buttons_nav{
         width:420px;
         height: 60px;  
-        margin-left:10%;   
+        margin-left:0%;   
     }
     .navhead{
         margin-top:15px;
@@ -367,7 +367,7 @@
     #buttons_nav{
         width:380px;
         height: 60px;  
-        margin-left:5%;   
+        margin-left:0%;   
     }
     .navhead{
         margin-top:15px;
@@ -384,12 +384,14 @@
     }
     .button_nav{
         margin-top: 40px;
-        margin-left: 25px;
+        margin-left: 5px;
+
     }
     #buttons_nav{
         width:380px;
         height: 60px;  
-        margin-left:15px;   
+        margin-left:5px;   
+
     }
     .navhead{
         margin-top:15px;
@@ -421,20 +423,20 @@
 
 @media (min-width: 300px) and (max-width: 360px) {
     .sidenav{
-        margin-top: 15px;
+        margin-top: 20%;
         width: 400px;
         height: 1200px;
         
     }
     .button_nav{
-        margin-top: 25px;
-        margin-left: 0px;
+        margin-top: 25%;
+        margin-left: 30px;
         
     }
     #buttons_nav{
-        width:300px;
+        width:250px;
         height: 60px;  
-        margin-left:-35px;   
+        margin-left:-5px;   
     }
     .navhead{
         margin-top:15px;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useLayoutEffect} from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import "../../pages/dailymatch/Dailymatch.css"
@@ -6,7 +6,7 @@ import DailyImg from "../../assets/DailyMatch/dailymatch.jpeg"
 
 
 import DailymatchReg from '../dailymatch/DailymatchReg';
-import {BrowserRouter as Router,  Routes,Link,  Route, useLocation} from "react-router-dom";
+import {BrowserRouter as Router,  Routes,Link,  Route} from "react-router-dom";
 
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -29,8 +29,12 @@ function Dailymatch() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const location = useLocation();
- 
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+ // const location = useLocation();
+
   <Router >
     <Link to="/Dailymatch/DailymatchReg" ></Link>
       <Routes>

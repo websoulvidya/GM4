@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useLayoutEffect} from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import './IDP.css';
@@ -26,6 +26,11 @@ const style = {
 
 
 function IDP() {
+
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     //Use State for rendering modal on click the rules icon
 
@@ -233,9 +238,9 @@ function IDP() {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Rules
           </Typography>
-          <Typography id="modal-modal-description_useridp" className='rules_modal' sx={{ mt: 2 }} style={{ height: '20rem', overflow: 'scroll' }} >
+          <Typography id="modal-modal-description_useridp" className='rules_modal' sx={{ mt: 2 }} style={{ height: '20rem', overflow: 'scroll'}} >
 
-            <ul>
+            <ul className='modal-idp-style'>
               <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
               <li>If you are unable to join the custom tournament created on the Call of Duty platform by the start time, the joining fee will not be refunded</li>
               <li>If you join the tournament on the Call of Duty platform without joining the contest on Gamerji, you will be kicked out of the tournament by our moderator and your account will be banned from Gamerji</li>

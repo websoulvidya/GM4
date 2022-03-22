@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
@@ -12,6 +12,9 @@ import { Link } from 'react-router-dom';
 
 
 function view_page() {
+    // useLayoutEffect(() => {
+    //     window.scrollTo(0, 0)
+    // });
     return (
         <div >
             <div>

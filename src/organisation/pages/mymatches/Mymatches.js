@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
 import './Mymatches.css'
@@ -42,6 +42,9 @@ const style = {
 
 
 function Mymatches() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
   //start modal functions
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -224,7 +227,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -264,7 +267,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" aria-hidden="true" onClick={handleOpen}></i>
-                   
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -304,7 +307,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -344,7 +347,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -384,7 +387,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -424,7 +427,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                   
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -464,7 +467,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -503,7 +506,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
@@ -542,7 +545,7 @@ function Mymatches() {
                   </div>
                   <div className='mymatches-rule'>
                     <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-                    
+
                   </div>
 
                   <div className='mymatches-time-section'>
