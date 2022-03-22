@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
 
@@ -41,6 +41,9 @@ const style = {
 
 
 function Cancellation() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
