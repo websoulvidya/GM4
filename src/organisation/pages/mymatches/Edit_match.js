@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useLayoutEffect, useState } from 'react';
 import Mymatches from './Mymatches';
 import './Mymatches.css'
 
@@ -42,6 +42,9 @@ const colourStyles = {
 
 
 export default function Edit_match() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
 
     var curr = new Date()
@@ -61,7 +64,7 @@ export default function Edit_match() {
 
     //validation
     const submitData = (data) => {
-        reset()
+        console.log("form submited")
         console.log(data);
     }
     //date picker
@@ -100,9 +103,23 @@ export default function Edit_match() {
                             <hr />
                             <div class="uk-margin">
                                 <label for="tournamentname" className='editMatches_label'>tournament Name</label>
-                                
-                                <input className="uk-input" type="text" placeholder="Team Name" id='tournamentname'
-                                    {...register("tournamentname", { required: "**Tournament name is Required" })} onChange={(event) => setEditMatch({ ...editMatch, name: event.target.value })} value={editMatch.name} autoComplete='off' />
+
+                                {/* <input className="uk-input" type="text" placeholder="Tournament name" id='tournamentname'
+                                    {...register("tournamentname", { required: "**Tournament name is Required", minLength: 5, maxLength: 25 })} onChange={(event) => setEditMatch({
+                                        ...editMatch,
+                                        name: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[0-9]/g, "").replace(/\s/g, "")
+                                    })} value={editMatch.name} autoComplete='off' /> */}
+                                <input className="uk-input" type="text" placeholder="Tournament name" id='tournamentname'
+                                    {...register("tournamentname", { required: "**Tournament name is Required", minLength: 5, maxLength: 25 })} onChange={(event) => {
+                                        if (event.target.value == " " && editMatch.name.length === 0) {
+                                            event.preventDefault();
+                                        } else {
+                                            setEditMatch({
+                                                ...editMatch,
+                                                name: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[0-9]/g, "")
+                                            })
+                                        }
+                                    }} value={editMatch.name} autoComplete='off' />
                                 {errors.tournamentname && (<span className='editMatches-error'>{errors.tournamentname.message}</span>)}
                             </div>
 
@@ -118,20 +135,21 @@ export default function Edit_match() {
                                         id="dat"
                                         required="true"
                                         autoComplete="off"
+                                        onChangeRaw={(e) => e.preventDefault()}
                                     />
                                 </div>
                             </div>
                             <div class="uk-margin">
                                 <label for="pricepool" className='editMatches_label'>Price Pool</label>
-                                
-                                <input className="uk-input" type="number" placeholder="Team Name" id='pricepool'
+
+                                <input className="uk-input" type="number" placeholder="Price pool" id='pricepool'
                                     {...register("pricepool", { required: "**Price pool is Required" })} onChange={(event) => setEditMatch({ ...editMatch, pricePool: event.target.value })} value={editMatch.pricePool} autoComplete='off' />
                                 {errors.pricepool && (<span className='editMatches-error'>{errors.pricepool.message}</span>)}
                             </div>
                             <div class="uk-margin">
                                 <label for="entryFee" className='editMatches_label'>Entry Fee</label>
-                                
-                                <input className="uk-input" type="number" placeholder="Team Name" id='entryFeee'
+
+                                <input className="uk-input" type="number" placeholder="Entry Fee" id='entryFeee'
                                     {...register("entryFeee", { required: "**Entry fee is Required" })} onChange={(event) => setEditMatch({ ...editMatch, entryFeee: event.target.value })} value={editMatch.entryFeee} autoComplete='off' />
                                 {errors.entryFeee && (<span className='editMatches-error'>{errors.entryFeee.message}</span>)}
                             </div>
@@ -179,13 +197,13 @@ export default function Edit_match() {
                             </div>
                             <div class="uk-margin">
                                 <label for="matchType" className='editMatches_label'>Match Type</label>
-                                
+
                                 <div class="uk-margin">
 
                                     <Select options={options}
                                         placeholder={'Match Type'}
                                         required
-                                        
+
                                         defaultValue={options}
                                         styles={colourStyles}
                                         theme={(theme) => ({
@@ -195,7 +213,7 @@ export default function Edit_match() {
                                                 primary: '#6BDCFC',
                                             },
                                         })} />
-                                    
+
                                     {errors.matchType && (<span className='editMatches-error'>{errors.matchType.message}</span>)}
 
                                 </div>

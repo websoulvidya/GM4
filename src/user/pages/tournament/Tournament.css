@@ -169,7 +169,7 @@
         border-radius: 4px;
     }
     .tour-pay-section h6{
-        color: rgb(131, 128, 128);
+        color: rgb(102 98 98);
         position: relative;
         text-transform: uppercase;
         font-weight: 800;
@@ -360,7 +360,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:5%;
             top: 8px;
             
             position: relative;
@@ -370,7 +370,7 @@
             position: absolute;
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -493,8 +493,8 @@
         }
         .tour-pay-section h6{
             font-weight: 800;
-            left: -30%;
-            font-size: 12px;
+            left: -50%;
+            font-size: 13px;
             top: 22px;
         
         }
@@ -512,7 +512,7 @@
             position: relative;
             height: 23px;
             top: -20px;
-            left: 2px;
+            left: -2px;
         
         }
         .tour-pay-section  .tourentry-fee{
@@ -522,12 +522,12 @@
             text-transform: uppercase;
             top: 18px;
             color: black;
-            right: -29%;
+            right: -20%;
         }
         .tour-pay-section .tourprize-pool{
             
             font-weight: bolder;
-            left: 16%;
+            left: 1%;
             font-size: 10px;
             position: absolute;
             text-transform: uppercase;
@@ -649,7 +649,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:5%;
             top: 8px;
             
             position: relative;
@@ -659,7 +659,7 @@
             position: absolute;
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -782,8 +782,8 @@
         }
         .tour-pay-section h6{
             font-weight: 800;
-            left: -30%;
-            font-size: 12px;
+            left: -45%;
+            font-size: 13px;
             top: 22px;
         
         }
@@ -801,7 +801,7 @@
             position: relative;
             height: 23px;
             top: -20px;
-            left: 2px;
+            left: 3px;
         
         }
         .tour-pay-section  .tourentry-fee{
@@ -811,12 +811,12 @@
             text-transform: uppercase;
             top: 18px;
             color: black;
-            right: -29%;
+            right: -20%;
         }
         .tour-pay-section .tourprize-pool{
             
             font-weight: bolder;
-            left: 16%;
+            left: 5%;
             font-size: 10px;
             position: absolute;
             text-transform: uppercase;
@@ -940,7 +940,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:6%;
             top: 8px;
             
             position: relative;
@@ -950,7 +950,7 @@
             position: absolute;
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -1073,8 +1073,8 @@
         }
         .tour-pay-section h6{
             font-weight: 800;
-            left: -30%;
-            font-size: 12px;
+            left: -38%;
+            font-size: 13px;
             top: 22px;
         
         }
@@ -1107,7 +1107,7 @@
         .tour-pay-section .tourprize-pool{
             
             font-weight: bolder;
-            left: 16%;
+            left: 13%;
             font-size: 10px;
             position: absolute;
             text-transform: uppercase;
@@ -1230,7 +1230,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:6%;
             top: 8px;
             
             position: relative;
@@ -1240,7 +1240,7 @@
             position: absolute;
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -1363,8 +1363,8 @@
         }
         .tour-pay-section h6{
             font-weight: 800;
-            left: -30%;
-            font-size: 12px;
+            left: -32%;
+            font-size: 13px;
             top: 22px;
         
         }
@@ -1494,9 +1494,6 @@
         }
     }
     
-
-
-
     @media (min-width: 1430px) and (max-width: 1550px) {
 
         body{
@@ -1522,7 +1519,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:6%;
             top: 8px;
             
             position: relative;
@@ -1532,7 +1529,7 @@
             position: absolute;
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -2101,7 +2098,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:7%;
             top: 8px;
             
             position: relative;
@@ -2110,7 +2107,7 @@
             content: "";
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -1px;
             opacity: 0.5;
     
@@ -2216,7 +2213,6 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
@@ -2229,7 +2225,6 @@
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
             font-size: 15px;
@@ -2398,7 +2393,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:7%;
             top: 8px;
             
             position: relative;
@@ -2407,7 +2402,7 @@
             content: "";
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -2415,7 +2410,7 @@
         /* end */
     
         .tournament-card-list{
-            margin:5% 0% 3% 0%;
+            margin:5% 0% 3% 3%;
             /* padding-right: 32px; */
         }
         .tournament-main-card{
@@ -2428,7 +2423,7 @@
             width: calc(28% - 10px)!important;
             height: auto;
             left: 3.5%;
-            margin: 0 2.5% 8% 2.5%!important;
+            margin: 0 6% 8% 3.5%!important;
          
         }
         .tour-card{
@@ -2518,7 +2513,6 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
@@ -2531,7 +2525,6 @@
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
             font-size: 13px;
@@ -2540,7 +2533,6 @@
         .tour-pay-section span::after{
             content: '';
             width: 2px;
-            background-color: rgb(131, 128, 128);
             display: block;
             position: relative;
             height: 23px;
@@ -2714,7 +2706,7 @@
             content: "";
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -3006,7 +2998,7 @@
         /* end */
     
         .tournament-card-list{
-            margin:5% 0% 3% 0%;
+            margin:5% 0% 2% 0%;
             /* padding-right: 32px; */
         }
         .tournament-main-card{
@@ -3019,7 +3011,7 @@
             width: calc(40% - 10px)!important;
             height: auto;
             left: 10%;
-            margin: 0 4% 8% 2.5%!important;
+            margin: 0 12% 8% -2%!important;
          
         }
         .tour-card{
@@ -3104,15 +3096,15 @@
         }
         .tour-pay-section h6{
             font-weight: 800;
-            left: -46%;
-            font-size: 18px;
+            left: -38%;
+            font-size: 15px;
             top: 2px;
         
         }
         .tour-pay-section span{
             font-weight: 800;
-            left: 63px;
-            font-size: 17px;
+            left: 66px;
+            font-size: 15px;
             top: -43px;
         }
         .tour-pay-section span::after{
@@ -3175,14 +3167,14 @@
             left: -3px;
             float: left;
             margin: 0;
-            font-size: 16px;
+            font-size: 15px;
                 
         }
         .tour-progress-bar .tourprogressbar-right-text{
             position: relative;
             top: 3px;
             right: 4px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
             margin: 0;
         }
@@ -3271,7 +3263,7 @@
             text-align: left;
             font-size: 52px;
             font-weight: 700;
-            left:8%;
+            left:11%;
             top: 8px;
             
             position: relative;
@@ -3280,7 +3272,7 @@
             content: "";
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -5px;
             opacity: 0.5;
     
@@ -3389,12 +3381,11 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
-            left: -38%;
-            font-size: 16px;
+            left: -33%;
+            font-size: 13px;
             top: 22px;
         
         }
@@ -3402,10 +3393,9 @@
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
-            font-size: 14px;
+            font-size: 12px;
             top: -22px;
         }
         .tour-pay-section span::after{
@@ -3470,14 +3460,14 @@
             left: -3px;
             float: left;
             margin: 0;
-            font-size: 14px;
+            font-size: 13px;
                 
         }
         .tour-progress-bar .tourprogressbar-right-text{
             position: relative;
             top: 3px;
             right: 4px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             margin: 0;
         }
@@ -3569,14 +3559,14 @@
         .tournament_headerclip h1{
             text-align: left;
             font-size: 35px;
-            left:14%;
+            left:13%;
             top: 8px;
         }
         .tournament_headerclip h1:before {
             content: "";
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -8px;
             opacity: 0.5;
     
@@ -3808,7 +3798,7 @@
             content: "";
             width: 6px;
             height: 4rem;
-            left: -19px;
+            left: -29px;
             top: -13px;
             opacity: 0.5;
     
@@ -4031,7 +4021,7 @@
         .tournament_headerclip h1{
             text-align: left;
             font-size: 35px;
-            left:14%;
+            left:17%;
             top: 8px;
         }
         .tournament_headerclip h1:before {
@@ -4134,12 +4124,11 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
             left: -32%;
-            font-size: 16px;
+            font-size: 14px;
             top: 5px;
         
         }
@@ -4147,10 +4136,9 @@
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
-            font-size: 15px;
+            font-size: 13px;
             top: -39px;
         }
         .tour-pay-section span::after{
@@ -4203,13 +4191,13 @@
             left: 1px;
             float: left;
             margin: 0;
-            font-size: 16px;
+            font-size: 14px;
                 
         }
         .tour-progress-bar .tourprogressbar-right-text{
             top: 3px;
             right: 4px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             margin: 0;
         }
@@ -4280,7 +4268,7 @@
     .tournament_headerclip h1{
         text-align: left;
         font-size: 35px;
-        left:14%;
+        left:20%;
         top: 8px;
     }
     .tournament_headerclip h1:before {
@@ -4384,12 +4372,11 @@
         border-radius: 4px;
     }
     .tour-pay-section h6{
-        color: rgb(131, 128, 128);
         position: relative;
         text-transform: uppercase;
         font-weight: 800;
-        left: -32%;
-        font-size: 14px;
+        left: -30%;
+        font-size: 12px;
         top: 22px;
     
     }
@@ -4397,7 +4384,6 @@
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
-        color: rgb(102 98 98);
         font-weight: 800;
         left: 63px;
         font-size: 13px;
@@ -4456,14 +4442,14 @@
         font-weight: 700;
         float: left;
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
             
     }
     .tour-progress-bar .tourprogressbar-right-text{
         position: relative;
         top: 3px;
         right: 4px;
-        font-size: 14px;
+        font-size: 12px;
         float: right;
         font-weight: 700;
         margin: 0;
@@ -4509,7 +4495,7 @@
     
     }
     .tournament-footer{
-        margin-top:90%;
+        margin-top:70%;
     }
 }
 
@@ -4538,7 +4524,7 @@
         .tournament_headerclip h1{
             text-align: left;
             font-size: 35px;
-            left:14%;
+            left:20%;
             top: 8px;
         }
         .tournament_headerclip h1:before {
@@ -4670,23 +4656,21 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
-            left: -25%;
-            font-size: 14px;
-            top: 22px;
+            left: -15%;
+            font-size: 11px;
+            top: 20px;
         
         }
         .tour-pay-section span{
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
-            font-size: 13px;
+            font-size: 12px;
             top: -21px;
         }
         .tour-pay-section span::after{
@@ -4726,7 +4710,7 @@
             position: absolute;
             width: 50%;
             position: absolute;
-            right: 15px;
+            right: 10px;
             bottom: 30%;
         }
         .progressbar-active{
@@ -4759,14 +4743,14 @@
             font-weight: 700;
             float: left;
             margin: 0;
-            font-size: 12px;
+            font-size: 11px;
                 
         }
         .tour-progress-bar .tourprogressbar-right-text{
             position: relative;
             top: 3px;
             right: 4px;
-            font-size: 12px;
+            font-size: 11px;
             float: right;
             color: rgb(102 98 98);
             font-weight: 700;

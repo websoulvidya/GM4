@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -14,6 +17,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import LogoutIcon from '@mui/icons-material/Logout';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import './Dashboard.css';
 import { HeightTwoTone } from '@mui/icons-material';
@@ -32,13 +36,24 @@ const Search = styled('div')(({ theme }) => ({
     border:"1px solid #6BDCFC",
   
   },
+  '&:focus': {
+    width: '40ch',
+    border:"none",
+  },
   marginRight: theme.spacing(2),
   marginLeft: 0,
   width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
-  },
+//   [theme.breakpoints.up('sm')]: {
+//     marginLeft: theme.spacing(3),
+//     width: 'auto',
+
+//     marginLeft:"15%",
+//     marginBottom:"5px",
+//     marginTop:"5px",
+// color:"rgb(102 98 98)",
+
+   
+//   },
   
 }));
 
@@ -65,14 +80,34 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
       color:"#fffff",
       [theme.breakpoints.up('md')]: {
       width: '78ch',
-      //   '&:focus': {
-      //     width: '20ch',
-      //   },
+      
+      '&:focus': {
+        // width: '40ch',
+        border:"none",
       },
+      '&:hover': {
+        border:"none",
+        // backgroundColor:"rgb(102 98 98)",
+    },
+      },
+      [theme.breakpoints.down('md')]: {
+        '&:focus': {
+          // width: '20ch',
+          border:"none"
+        },
+        '&:hover': {
+          border:"none",
+          // backgroundColor:"rgb(102 98 98)",
+      },
+    },
   },
   }));
 
 export default function PrimarySearchAppBar() {
+
+  const navigate = useNavigate();
+
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -100,7 +135,7 @@ export default function PrimarySearchAppBar() {
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
-    
+      className="profile-menuId"
       anchorEl={anchorEl}
       anchorOrigin={{
         vertical: 'top',
@@ -116,39 +151,70 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
       >
      
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={() => navigate('/organisation/profile')}>Profile</MenuItem>
+      <MenuItem onClick={() => navigate('/')}>Logout</MenuItem>        
+
+
     </Menu>
   );
+
+
+  // header in responsive case
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
     
-    <Menu
+    <Menu id="org-headermenu"
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
         vertical: 'top',
         horizontal: 'right',
+        
       }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
+      
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-    
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="primary">
-            <MailIcon color="action"/>
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
+          <Link class="uk-button uk-button-default" id="buttons_nav" to='/orghome'>
+                        <h4 className='navhead'>DashBoard</h4>
+                    </Link>
+      </MenuItem>
+      <MenuItem >
+          <Link class="uk-button uk-button-default" id="buttons_nav" to='/sendidp'>
+              <h4 className='navhead'>Send Idp</h4>
+          </Link>
       </MenuItem>
       <MenuItem>
+          <Link class="uk-button uk-button-default" id="buttons_nav" to='/slotlist'>
+                        <h4 className='navhead'>Slot List</h4>
+                    </Link>
+      </MenuItem>
+      <MenuItem>
+          <Link class="uk-button uk-button-default" id="buttons_nav" to='/mymatches'>
+                        <h4 className='navhead'>My matches</h4>
+                    </Link>
+      </MenuItem>
+      <MenuItem>
+      <Link class="uk-button uk-button-default" id="buttons_nav" to='/cancellation'>
+                        <h4 className='navhead'>Cancellation</h4>
+                    </Link>
+      </MenuItem>
+      <MenuItem>
+          <Link class="uk-button uk-button-default" id="buttons_nav" to='/advertisement'>
+                        <h4 className='navhead'>Advertisement</h4>
+          </Link>
+      </MenuItem>
+      {/* <MenuItem>
+      <a class="uk-button uk-button-default" id="buttons_nav" href="/Logout">
+                        <h4 className='navhead'>Logout</h4>
+                    </a>
+      </MenuItem> */}
+    
+     
+
+      {/* Notification parts */}
+      <MenuItem onClick={() => navigate('/notifications')}>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"
@@ -160,7 +226,9 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
+
+      {/* profile icons */}
+      <MenuItem onClick={() => navigate('/organisation/profile')}>
         <IconButton
           size="large"
           aria-label="account of current user"
@@ -172,6 +240,22 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Profile</p>
       </MenuItem>
+
+      {/* logout icons */}
+
+      <MenuItem onClick={() => navigate('/')}>
+        <IconButton
+          size="large"
+          color="inherit"
+        >
+        <LogoutIcon color="action"/>
+
+        </IconButton>
+        <p>Logout</p>
+      </MenuItem>
+
+      
+
     </Menu>
   );
 
@@ -180,18 +264,9 @@ export default function PrimarySearchAppBar() {
       <AppBar position="fixed"  id='apporg' sx={{backgroundColor:"white",top:0}}>
         <Toolbar>
          
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { sm: 'block' } }}
-          >
-           <h1 className='headerlogoorg'>GM4</h1>
-           <img src={logo}  alt="" class="header-logo" />
-
-          </Typography> */}
+         
           <Box sx={{display:"flex"}}>
-              <img src={logo}  alt="" class="headerlogo-org" />
+              <img onClick={() => navigate('/')} src={logo}  alt="" class="headerlogo-org" />
           </Box>
           <Search id="header-searchbarorg">
             <SearchIconWrapper id="org-searchicon">
@@ -200,25 +275,26 @@ export default function PrimarySearchAppBar() {
             <StyledInputBase id="org-searchinput"
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
+              
             />
           </Search>
+
+          {/* icon portion  starts*/}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="primary">
-                <MailIcon sx={{ display:"right",color:"rgb(102 98 98)"}} color="action" />
-              </Badge>
-            </IconButton>
-            <IconButton
+           
+            <IconButton  id="org-notification-icon"
               size="large"
               aria-label="show 17 new notifications"
-              color="inherit"
-            >
+              color="inherit">
               <Badge badgeContent={17} color="primary">
-                <NotificationsIcon sx={{ display:"right",color:"rgb(102 98 98)"}} color="action" />
+                  <NotificationsIcon  sx={{ color:"rgb(102 98 98)"}} color="action" 
+                  onClick={() => navigate('/notifications')}/>
+
               </Badge>
             </IconButton>
-            <IconButton
+
+            <IconButton id="org-profile-icon"
               size="large"
               edge="end"
               aria-label="account of current user"

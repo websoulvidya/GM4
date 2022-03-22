@@ -8,13 +8,13 @@ body{
     width: 100%;
     height: auto;
     position: relative;
+    overflow-x: hidden !important;
 
 }
 /* header clip */
 .scrims_headerclip {
     height: 8rem;
-    width:100% !important;
-    /* width: calc(89% - -81px)!important; */
+    width:100%;
     background-color: #6BDCFC;
     color: #ffff;
     display: flex;
@@ -876,6 +876,9 @@ body{
         padding: 0 !important;
         
     }
+    .scrims-card-list .main-card{
+        margin-left: 34px !important;
+}
     .uk-grid {
         margin-left: -7px !important;
     }
@@ -887,7 +890,7 @@ body{
           }
     .scrims-carditems {
         width: calc(26% - -177px)!important;
-        margin: 0px 3.5% 57px 3.5% !important;
+        margin: 0px 6.5% 57px 6.5% !important;
     }
     .scrims-main-titile h3 {
         font-size: 19px;
@@ -908,6 +911,7 @@ body{
         transform: scale(1.4);
         left: 4%;
         top: 68px;
+        height: 120px;
     }
     .scrims-time-section {
         bottom: 55%;
@@ -995,9 +999,7 @@ body{
     .uk-grid {
         margin-left: -7px !important;
     }
-    /* .scrims_headerclip {
-        width: calc(85% - -96px)!important;
-    } */
+
     .scrims_headerclip h1 {
        
         font-size: 45px;
@@ -1117,9 +1119,7 @@ body{
     .uk-grid {
         margin-left: -7px !important;
     }
-    /* .scrims_headerclip {
-        width: calc(80% - -109px)!important;
-    } */
+
     .scrims_headerclip h1 {
        
         font-size: 45px;
@@ -1492,9 +1492,6 @@ body{
     .uk-grid {
         margin-left: -8px !important;
     }
-    /* .scrims_headerclip {
-        width: calc(70% - -110px)!important;
-    } */
     .scrims_headerclip h1 {
        
         font-size: 35px;
@@ -1766,7 +1763,7 @@ body{
         width: 100%;
         height: auto;
         position: relative;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     /* .scrims_headerclip {
         width: calc(59% - -110px)!important;
@@ -1899,15 +1896,6 @@ body{
     .uk-grid {
         margin-left: -19px !important;
     }
-    .scrims-main-wrapper {
-        width: 100%;
-        height: auto;
-        position: relative;
-        overflow-x: hidden;
-    }
-    /* .scrims_headerclip {
-        width: calc(59% - -110px)!important;
-    } */
     .scrims_headerclip h1 {
         font-size: 35px;
            }

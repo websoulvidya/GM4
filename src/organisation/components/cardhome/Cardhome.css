@@ -72,7 +72,7 @@
 @media (min-width: 1837px) and (max-width: 2000px) {
     .card_home_main{
         margin-left:-160px;
-        margin-top:-720px;
+        margin-top:-740px;
         padding-top:-200%;
     }
     #card_first_main{
@@ -130,7 +130,7 @@
 @media (min-width: 1781px) and (max-width: 1836px) {
     .card_home_main{
         margin-left:-160px;
-        margin-top:-720px;
+        margin-top:-730px;
         padding-top:-200%;
     }
     #card_first_main{
@@ -190,7 +190,7 @@
 @media (min-width: 1629px) and (max-width: 1780px) {
     .card_home_main{
         margin-left:-160px;
-        margin-top:-710px;
+        margin-top:-720px;
         padding-top:-200%;
     }
     #card_first_main{
@@ -256,7 +256,7 @@
 @media (min-width: 1551px) and (max-width: 1628px) {
     .card_home_main{
         margin-left:-160px;
-        margin-top:-710px;
+        margin-top:-730px;
         padding-top:-200%;
     }
     #card_first_main{
@@ -321,7 +321,7 @@
 @media (min-width: 1430px) and (max-width: 1550px) {
     .card_home_main{
         margin-left:-160px;
-        margin-top:-710px;
+        margin-top:-720px;
         padding-top:-200%;
     }
     #card_first_main{
@@ -460,7 +460,7 @@
 @media (min-width: 1280px) and (max-width: 1349px) {
     .card_home_main{
         margin-left:-150px;
-        margin-top:-700px;
+        margin-top:-720px;
         padding-top:-100%;
     }
     #card_first_main{
@@ -511,7 +511,7 @@
 @media (min-width: 1134px) and (max-width: 1279px) {
     .card_home_main{
         margin-left:-150px;
-        margin-top:-700px;
+        margin-top:-730px;
         padding-top:-100%;
     }
     #card_first_main{
@@ -562,7 +562,7 @@
 @media (min-width: 1024px) and (max-width: 1133px) {
     .card_home_main{
         margin-left:-150px;
-        margin-top:-700px;
+        margin-top:-720px;
         padding-top:-100%;
     }
     #card_first_main{
@@ -664,7 +664,7 @@
         margin-top:100%;
     }
     #card_first_main{
-        margin-top: 400%;
+        margin-top: 160%;
     }
     #card_second_main{
         margin-top: 25%;
@@ -712,7 +712,7 @@
         margin-top:100%;
     }
     #card_first_main{
-        margin-top: 400%;
+        margin-top: 180%;
     }
     #card_second_main{
         margin-top: 25%;
@@ -757,18 +757,21 @@
 
 @media (min-width: 531px) and (max-width: 599px) {
     .card_home_main{
-        margin-left:-260px;
-        margin-top:100%;
+        margin-left:10%;
+        margin-top:10%;
+        margin-bottom:5%;
     }
     #card_first_main{
-        margin-top: 40%;
+        margin-top: 0%;
+        margin-left:6%;
     }
     #card_second_main{
-        margin-top: 25%;
+        margin-top: 420%;
+        margin-left:-138%;
     }
     #card_first{
         margin-left: 20px;
-        margin-top: 820px;
+        margin-top: 20px;
         width:450px;
         height:300px;
     }
@@ -801,18 +804,22 @@
         height: 300px;
         margin:7% 3% 0 8%;
     }
+    
 }
 
-@media (min-width: 400px) and (max-width: 532px) {
+@media (min-width: 490px) and (max-width: 532px) {
     .card_home_main{
-        margin-left:-230px;
-        margin-top:100%;
+        margin-left:10px;
+        margin-top:5%;
     }
     #card_first_main{
-        margin-top: 20%;
+        margin-top: -330%;
+        margin-left:18%;
+        margin-bottom: 5%;
     }
     #card_second_main{
-        padding-top: 10%;
+        margin-top: 350%;
+        margin-left:-120%;
     }
     #card_first{
         margin-left: 20px;
@@ -821,10 +828,62 @@
         height:250px;
     }
     #card_second{
-        margin-top: 100px;
+        margin-top: 110px;
         width:350px;
         height:250px;
         margin-left: 20px;
+
+    
+    }
+    #card_third{
+        margin-left: 20px;
+        margin-top:15%;
+        width:350px;
+        height:250px;
+    }
+    #card_four{
+        margin-top: 120px;
+        margin-left: 20px;
+        width:350px;
+        height:250px;
+
+    }
+    #addtournament_first_heading{
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 35px;
+    }
+    .button_main_card{
+        width:300px;
+        height: 250px;
+        margin:3% 3% 0 3%;
+    }
+}
+@media (min-width: 400px) and (max-width: 489px) {
+    .card_home_main{
+        margin-left:0px;
+        margin-top:0%;
+    }
+    #card_first_main{
+        margin-top: -380%;
+        margin-left:4%;
+        bottom: 50%;
+    }
+    #card_second_main{
+        margin-top: 120px;
+        margin-left:8%;
+    }
+    #card_first{
+        margin-left: 20px;
+        margin-top: 820px;
+        width:350px;
+        height:250px;
+    }
+    #card_second{
+        margin-top: 110px;
+        width:350px;
+        height:250px;
+        margin-left: 17px;
 
     
     }
@@ -834,7 +893,7 @@
         height:250px;
     }
     #card_four{
-        margin-top: 100px;
+        margin-top: 110px;
         margin-left: 20px;
         width:350px;
         height:250px;
@@ -852,16 +911,19 @@
     }
 }
 
+
 @media (min-width: 361px) and (max-width: 399px) {
     .card_home_main{
-        margin-left:-185px;
-        margin-top:70%;
+        margin-left:10px;
+        margin-top:4%;
     }
     #card_first_main{
-        margin-top: 20%;
+        margin-top: -390%;
+        margin-left:3%;
     }
     #card_second_main{
-        padding-top: 10%;
+        margin-top: 420%;
+        margin-left:-135%;
     }
     #card_first{
         margin-left: 20px;
@@ -869,6 +931,7 @@
     }
     #card_second{
         margin-top: 100px;
+        margin-left:-2%;
     
     }
     #card_third{
@@ -897,21 +960,24 @@
 
 @media (min-width: 300px) and (max-width: 360px) {
     .card_home_main{
-        margin-left:-185px;
-        margin-top:70%;
+        /* margin-left:-185px; */
+        margin-top:2%;
     }
     #card_first_main{
-        margin-top: 20%;
+        margin-top: 3%;
+        margin-left: 49%;
     }
     #card_second_main{
-        padding-top: 10%;
+        margin-top: 200%;
+        margin-left:-8%;
     }
     #card_first{
         margin-left: 20px;
-        margin-top: 680px;
+        margin-top:1%;
     }
     #card_second{
         margin-top: 100px;
+        margin-left:40%
     
     }
     #card_third{
@@ -919,6 +985,7 @@
     }
     #card_four{
         margin-top: 100px;
+        margin-left: -10%;
     }
     #addtournament_first_heading{
         font-weight: 500;

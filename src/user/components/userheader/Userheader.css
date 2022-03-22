@@ -44,6 +44,9 @@ Link:hover{
     width:60ch;
     height:30px;
 }
+#userheader-searchbar:hover{
+    border: 1px solid #6BDCFC;
+}
 #userheader-searchicon{
     margin-left:90%;
 }
@@ -126,6 +129,10 @@ Link:hover{
         color:#6BDCFC;
         text-decoration: none;
     }
+    #userhome-dropdownmenu{
+        margin-top:2%;
+        margin-left:4%;
+    }
     #userhome-headermenu{
         width: 180px;
         font-size: 16px;
@@ -183,6 +190,10 @@ Link:hover{
     .userheader-links:hover{
         color:#6BDCFC;
         text-decoration: none;
+    }
+    #userhome-dropdownmenu{
+        margin-top:2%;
+        margin-left:4%;
     }
     #userhome-headermenu{
         width: 180px;
@@ -242,6 +253,10 @@ Link:hover{
         color:#6BDCFC;
         text-decoration: none;
     }
+    #userhome-dropdownmenu{
+        margin-top:2%;
+        margin-left:5%;
+    }
     #userhome-headermenu{
         width: 180px;
         font-size: 16px;
@@ -299,6 +314,10 @@ Link:hover{
     .userheader-links:hover{
         color:#6BDCFC;
         text-decoration: none;
+    }
+    #userhome-dropdownmenu{
+        margin-top:2%;
+        margin-left:5%;
     }
     #userhome-headermenu{
         width: 180px;
@@ -359,6 +378,10 @@ Link:hover{
         color:#6BDCFC;
         text-decoration: none;
     }
+    #userhome-dropdownmenu{
+        margin-top:3%;
+        margin-left:6%;
+    }
     #userhome-headermenu{
         width: 180px;
         font-size: 16px;
@@ -416,6 +439,10 @@ Link:hover{
     .userheader-links:hover{
         color:#6BDCFC;
         text-decoration: none;
+    }
+    #userhome-dropdownmenu{
+        margin-top:3%;
+        margin-left:6%;
     }
     #userhome-headermenu{
         width: 180px;
@@ -475,6 +502,10 @@ Link:hover{
         color:#6BDCFC;
         text-decoration: none;
     }
+    #userhome-dropdownmenu{
+        margin-top:3%;
+        margin-left:6%;
+    }
     #userhome-headermenu{
         width: 180px;
         font-size: 16px;
@@ -533,6 +564,10 @@ Link:hover{
         color:#6BDCFC;
         text-decoration: none;
     }
+    #userhome-dropdownmenu{
+        margin-top:3%;
+        margin-left:7%;
+    }
     #userhome-headermenu{
         width: 180px;
         font-size: 16px;
@@ -589,6 +624,10 @@ Link:hover{
     .userheader-links:hover{
         color:#6BDCFC;
         text-decoration: none;
+    }
+    #userhome-dropdownmenu{
+        margin-top:3%;
+        margin-left:7%;
     }
     #userhome-headermenu{
         width: 180px;
@@ -647,6 +686,10 @@ Link:hover{
     .userheader-links:hover{
         color:#6BDCFC;
         text-decoration: none;
+    }
+    #userhome-dropdownmenu{
+        margin-top:4%;
+        margin-left:8%;
     }
     #userhome-headermenu{
         width: 180px;

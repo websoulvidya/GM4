@@ -5,9 +5,12 @@ import './Tournamenlist.css';
 import Grid from '@mui/material/Grid';
 import Pagination from '@mui/material/Pagination'
 import Stack from "@mui/material/Stack";
-
+import {useLayoutEffect} from 'react';
 
 function Addtournamentslist(){
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return(
         <div >

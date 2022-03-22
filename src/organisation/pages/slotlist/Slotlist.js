@@ -7,7 +7,8 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import "./Slotlist.css";
 import { Link } from "react-router-dom";
-import { Hidden } from "@mui/material";
+import {useLayoutEffect} from "react";
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -23,6 +24,9 @@ function Slotlist() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <div style={{overflowX:'hidden'}}>
       <Dashboard />

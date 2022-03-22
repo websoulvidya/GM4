@@ -56,6 +56,8 @@ import Dashboard from '../organisation/components/header/Dashboard';
 import Orgfooter from '../organisation/components/footer/Footer';
 import Chat from '../organisation/pages/chat/Chat';
 import Orgnotification from '../organisation/pages/notification/Notification';
+import OrgProfile from '../organisation/pages/profile/OrgProfile';
+import OrgEditProfile from "../organisation/pages/profile/OrgEditProfile";
 import Sendidp from '../organisation/pages/sendidp/Sendidp';
 import Slotlist from '../organisation/pages/slotlist/Slotlist';
 import Mymatches from '../organisation/pages/mymatches/Mymatches';
@@ -86,6 +88,8 @@ import Orgpayment from '../../src/organisation/pages/orgpayment/Orgpayment';
 import TournamentslotList from "../organisation/pages/slotlist/tournamentslotlist";
 import ScrimsList from "../organisation/pages/slotlist/scrimslist";
 import DailyMatchList  from "../organisation/pages/slotlist/dailymatcheslist";
+
+
 //Authentication page links
 
 import Signup from '../authentication/signup/Signup';
@@ -154,6 +158,9 @@ export default function Navigate() {
     <Route path="/orgfooter" element={<Orgfooter />}/>
     <Route path="/chat" element={<Chat />}/>
     <Route path="/notifications" element={<Orgnotification />}/>
+    <Route path="/organisation/profile" element={<OrgProfile/>}/>
+    <Route path="/orgeditprofile" element={<OrgEditProfile />}/>
+
     <Route path="/sendidp" element={<Sendidp />}/>
     <Route path="/slotlist" element={<Slotlist />}/>
     <Route path="/mymatches" element={<Mymatches />}/>
