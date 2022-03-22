@@ -85,6 +85,16 @@ const DrawerComponent=() =>{
                 // backgroundColor:"rgb(102 98 98)",
             },
             },
+            [theme.breakpoints.down('md')]: {
+                '&:focus': {
+                  // width: '20ch',
+                  border:"none"
+                },
+                '&:hover': {
+                  border:"none",
+                  // backgroundColor:"rgb(102 98 98)",
+              },
+            },
         },
         }));
 

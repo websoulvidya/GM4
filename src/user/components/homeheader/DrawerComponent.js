@@ -38,6 +38,10 @@ const DrawerComponent=() =>{
             border:"1px solid #6BDCFC",
             // backgroundColor:"rgb(102 98 98)",
         },
+        '&:focus': {
+            // width: '20ch',
+            border:"none"
+          },
         marginLeft: 20,
         width: '100%',
         [theme.breakpoints.up('md')]: {
@@ -76,13 +80,24 @@ const DrawerComponent=() =>{
             color:"#fffff",
             [theme.breakpoints.up('md')]: {
               '&:focus': {
-                width: '20ch',
+                // width: '20ch',
                 border:"none"
               },
               '&:hover': {
                 border:"none",
                 // backgroundColor:"rgb(102 98 98)",
             },
+            
+            },
+            [theme.breakpoints.down('md')]: {
+                '&:focus': {
+                  // width: '20ch',
+                  border:"none"
+                },
+                '&:hover': {
+                  border:"none",
+                  // backgroundColor:"rgb(102 98 98)",
+              },
             },
         },
         }));
@@ -196,6 +211,17 @@ const DrawerComponent=() =>{
              
         
         <img src={logo}  alt="" class="header-logo" />
+
+            {/* <Search  id="header-searchbar">
+                <SearchIconWrapper id="header-searchicon">
+                <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
+                </SearchIconWrapper>
+                <StyledInputBase id="search-content"
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+                endIcon={<KeyboardArrowDownIcon sx={{width:"30px",color:"red",marginLeft:"-30px"}}/>}
+                />
+            </Search> */}
 
         <IconButton  onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
             {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>

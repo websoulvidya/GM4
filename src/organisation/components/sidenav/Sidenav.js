@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function sidenav() {
     return (
-        <div class="uk-visible@l">
+        <div class="uk-visible@m">
             <div className='sidenav'>
                 <div className='button_nav'>
                     {/* <a class="uk-button uk-button-default" id="buttons_nav" href="/orghome"><h4 className='navhead'>DashBoard</h4></a><br /> */}

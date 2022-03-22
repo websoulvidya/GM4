@@ -169,7 +169,7 @@
         border-radius: 4px;
     }
     .tour-pay-section h6{
-        color: rgb(131, 128, 128);
+        color: rgb(102 98 98);
         position: relative;
         text-transform: uppercase;
         font-weight: 800;
@@ -2213,7 +2213,6 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
@@ -2226,7 +2225,6 @@
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
             font-size: 15px;
@@ -2412,7 +2410,7 @@
         /* end */
     
         .tournament-card-list{
-            margin:5% 0% 3% 0%;
+            margin:5% 0% 3% 3%;
             /* padding-right: 32px; */
         }
         .tournament-main-card{
@@ -2425,7 +2423,7 @@
             width: calc(28% - 10px)!important;
             height: auto;
             left: 3.5%;
-            margin: 0 2.5% 8% 2.5%!important;
+            margin: 0 6% 8% 3.5%!important;
          
         }
         .tour-card{
@@ -2515,7 +2513,6 @@
             border-radius: 4px;
         }
         .tour-pay-section h6{
-            color: rgb(131, 128, 128);
             position: relative;
             text-transform: uppercase;
             font-weight: 800;
@@ -2528,7 +2525,6 @@
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(102 98 98);
             font-weight: 800;
             left: 63px;
             font-size: 13px;
@@ -2537,7 +2533,6 @@
         .tour-pay-section span::after{
             content: '';
             width: 2px;
-            background-color: rgb(131, 128, 128);
             display: block;
             position: relative;
             height: 23px;
@@ -3003,7 +2998,7 @@
         /* end */
     
         .tournament-card-list{
-            margin:5% 0% 3% 0%;
+            margin:5% 0% 2% 0%;
             /* padding-right: 32px; */
         }
         .tournament-main-card{
@@ -3016,7 +3011,7 @@
             width: calc(40% - 10px)!important;
             height: auto;
             left: 10%;
-            margin: 0 4% 8% 2.5%!important;
+            margin: 0 12% 8% -2%!important;
          
         }
         .tour-card{
@@ -3101,15 +3096,15 @@
         }
         .tour-pay-section h6{
             font-weight: 800;
-            left: -46%;
-            font-size: 18px;
+            left: -38%;
+            font-size: 15px;
             top: 2px;
         
         }
         .tour-pay-section span{
             font-weight: 800;
-            left: 63px;
-            font-size: 17px;
+            left: 66px;
+            font-size: 15px;
             top: -43px;
         }
         .tour-pay-section span::after{

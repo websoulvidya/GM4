@@ -199,19 +199,7 @@ export default function Homeheader() {
             
 
 
-                            {/* <Typography
-                aria-controls="basicmenu"
-                            aria-haspopup="true"
-                            aria-expanded={openMenu ? 'true':undefined}
-                            onClick={handleClick}
-                            >Login
-                            </Typography>
-
-                            <Menu id="basicmenu" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} sx={{Height:"400px",marginLeft:"500"}}  >
-                                <MenuItem onClick={handleClose}><Link to="/orghome">Organiser</Link></MenuItem>
-                                <MenuItem onClick={handleClose}><Link to="/userhome">Users</Link></MenuItem>
-                            </Menu> */}
-                            
+                          
 
              </Box>               
         </Toolbar>

@@ -36,6 +36,10 @@ const Search = styled('div')(({ theme }) => ({
     border:"1px solid #6BDCFC",
   
   },
+  '&:focus': {
+    // width: '40ch',
+    border:"none",
+  },
   marginRight: theme.spacing(2),
   marginLeft: 0,
   width: '100%',
@@ -80,7 +84,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
       //     width: '20ch',
       //   },
       '&:focus': {
-        width: '40ch',
+        // width: '40ch',
         border:"none",
       },
       '&:hover': {
@@ -88,6 +92,16 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
         // backgroundColor:"rgb(102 98 98)",
     },
       },
+      [theme.breakpoints.down('md')]: {
+        '&:focus': {
+          // width: '20ch',
+          border:"none"
+        },
+        '&:hover': {
+          border:"none",
+          // backgroundColor:"rgb(102 98 98)",
+      },
+    },
   },
   }));
 
@@ -263,6 +277,7 @@ export default function PrimarySearchAppBar() {
             <StyledInputBase id="org-searchinput"
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
+              
             />
           </Search>
 
