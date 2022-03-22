@@ -119,11 +119,14 @@ body {
   align-items: center;
   margin-top: 30px;
 }
-.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-  color: #fff;
+ .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: #fff !important;
   background-color: #6bdcfc !important;
+} 
+.Mui-selected {
+  background-color: "transparent" !important;
+  color: "#19D5C6" !important;
 }
-
 @media (max-width: 480px) {
   .grid_section_slot_list_tournament {
     margin-left: 0 !important;

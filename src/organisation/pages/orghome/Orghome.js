@@ -13,7 +13,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Orghome.css';
+import {useLayoutEffect} from "react";
 function Orghome() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return(
       <div  style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}>
         <div>
