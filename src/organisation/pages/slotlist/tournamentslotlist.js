@@ -5,13 +5,19 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import Dashboard from "../../components/header/Dashboard";
 import Footer from "../../components/footer/Footer";
+import {useLayoutEffect} from "react";
+
 
 function Tournamentslotlist() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <div>
       <Dashboard />
       <div>
-        <div className="tournament_slot_list_header">
+       
+        <div className="tournament_slot_list_header" >
           <h1>TOURNAMENT SLOT LIST</h1>
         </div>
         <div className="uk-margin uk-flex tournament_search_bar">

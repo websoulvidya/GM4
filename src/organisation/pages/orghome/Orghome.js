@@ -5,7 +5,6 @@ import Cardhome from '../../components/cardhome/Cardhome';
 import Footer from '../../components/footer/Footer';
 import {useLayoutEffect} from 'react';
 import './Orghome.css';
-
 function Orghome() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
