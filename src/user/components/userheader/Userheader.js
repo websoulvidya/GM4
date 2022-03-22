@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import "./Userheader.css";
-
+import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import {AppBar,Toolbar,Typography,useMediaQuery,useTheme} from '@mui/material';
 import Box from '@mui/material/Box';
@@ -21,6 +21,10 @@ import logo from '../../assets/logo.png';
 
 
 function Userheader() {
+
+
+  const navigate = useNavigate();
+
     // code for search bar
 
     const Search = styled('div')(({ theme }) => ({
@@ -75,6 +79,14 @@ function Userheader() {
         //   '&:focus': {
         //     width: '20ch',
         //   },
+        '&:focus': {
+          width: '80ch',
+          border:"none"
+        },
+        '&:hover': {
+          border:"none",
+          // backgroundColor:"rgb(102 98 98)",
+      },
         },
       },
     }));
@@ -110,7 +122,7 @@ function Userheader() {
       <Toolbar>
         <Box sx={{ display:"flex" ,justifyContent:"space-between",width:"40%",alignItems:"center"}} component="div">
           <Box sx={{display:"flex"}}>
-          <img src={logo}  alt="" class="userheader-logo" />
+          <img onClick={() => navigate('/')}  src={logo}  alt="" class="userheader-logo" />
           </Box>
 
            
@@ -157,7 +169,18 @@ function Userheader() {
                   onClick={handleClick}
                   >USERNAME
               </Typography>
-              <Menu  id="basic-menu" class="MuiMenu-root" anchorEl={anchorEl}  open={openMenu}  onClose={handleClose} >
+              <Menu  id="userhome-dropdownmenu"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={openMenu}   onClose={handleClose} class="MuiMenu-root"  >
                                     <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/profile" class="userheader-sublink" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
                                     <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/changepass" class="userheader-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
                                     <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/mybookings" class="userheader-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>

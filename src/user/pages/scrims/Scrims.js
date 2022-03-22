@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useLayoutEffect} from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import ScrimImg from "../../assets/Scrims/scrims.jpeg";
@@ -29,7 +29,9 @@ function Scrims() {
   const handleClose = () => setOpen(false);
 
 
-
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
  
   <Router >
     <Link to="/scrims/scrimsreg" ></Link>

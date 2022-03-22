@@ -5,7 +5,12 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import Dashboard from "../../components/header/Dashboard";
 import Footer from "../../components/footer/Footer";
+import {useLayoutEffect} from "react";
+
 function Dailymatcheslist() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <div>
       {" "}
