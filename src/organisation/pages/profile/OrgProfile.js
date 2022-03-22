@@ -1,19 +1,19 @@
 import React from 'react';
-import Userheader from '../../../components/userheader/Userheader';
-import Footer from '../../../components/footer/Footer';
+import Dashboard from '../../components/header/Dashboard';
+import Footer from '../../components/footer/Footer'
 import { Card } from '@mui/material';
-import './Profile.css';
+import './OrgProfile.css';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import { Grid } from '@mui/material';
 import { Link} from 'react-router-dom';
-import Profilepic1 from './../../../assets/user-profile/Profilepic1.jpeg';
-import Userprofilebanner from './../../../assets/user-profile/Userprofilebanner.jpg';
+import Profilepic1 from './../../assets/Profile/Profilepic1.jpeg';
+import Orgprofilebanner from './../../assets/Profile/Orgprofilebanner.jpg';
 
 import {useLayoutEffect} from 'react';
 
 
-function Profile() {
+function OrgProfile() {
  
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
@@ -25,34 +25,34 @@ function Profile() {
  
 
     <div>
-      <Userheader/>
+      <Dashboard/>
       
-      <div className='user-profile-container'>
+      <div className='org-profile-container'>
 
         {/* Profile page header */}
        
-        <div className='user-profile-header'>
+        <div className='org-profile-header'>
         <h1>Profile</h1>
         </div>
 
          {/* Profile page grid section */}
       
-        <div className='user-profile'>
+        <div className='org-profile'>
           <Grid container>
            
-             <Card variant='outlined' className=' user-profile-card  ' >
+             <Card variant='outlined' className=' org-profile-card  ' >
             
               <div >
                 <div >
-                <img alt='' src={Userprofilebanner} className='userprofile-banner'></img>
+                <img alt='' src={Orgprofilebanner} className='orgprofile-banner'></img>
                 
                 </div>
-                <img alt='' className='user-profile-card-img'
+                <img alt='' className='org-profile-card-img'
                 src={Profilepic1}>
                 </img>
 
                     
-                <div className='userprofile-card-text'>
+                <div className='orgprofile-card-text'>
 
                      <h3><b>AngelChris</b></h3> 
                      <p><EmailIcon fontSize='small'/>
@@ -60,7 +60,7 @@ function Profile() {
                      <p><LocalPhoneIcon fontSize='small'/>
                      {''} {''}9876543210 </p>
                      </div>
-                     <Link to={'/editprofile'}>
+                     <Link to={'/orgeditprofile'}>
                      <button class="EditprofileButton" >Edit</button>
                      </Link>
                        
@@ -79,4 +79,4 @@ function Profile() {
   )
 }
 
-export default Profile
+export default OrgProfile

@@ -64,6 +64,7 @@ import Advertisement from "../organisation/pages/advertisement/Advertisement";
 import Adspayment from "../organisation/pages/adspayment/Adspayment";
 
 
+
 import Addtournament from '../organisation/pages/addtournaments/Addtournament';
 import Tournamentlist  from '../organisation/pages/addtournaments/Tournamentlist';
 import Addscrims from "../organisation/pages/addscrims/Addscrims";
@@ -161,6 +162,8 @@ export default function Navigate() {
     <Route path="/Tournamentlist" element={<Tournamentlist />}/>
     <Route path="/addscrims" element={<Addscrims />}/>
     <Route path="/Slotlistadd" element={<Addslotlist />}/>
+   
+
 
     <Route path="/adddailymatch" element={<Adddailymatch />}/>
     <Route path="/addopenrooms" element={<Addopenrooms />}/>

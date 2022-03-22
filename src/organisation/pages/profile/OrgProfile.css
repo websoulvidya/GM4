@@ -1,0 +1,319 @@
+.org-profile-header{
+    background-color: #6BDCFC;
+    height: 8rem;
+    padding-left: 6rem;
+    display: flex;
+    margin-top: 60px;
+   
+}
+.org-profile-header h1{
+  
+    color:#ffff;
+    text-align: left;
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+    
+}
+.org-profile-header h1::before{
+  
+  content: "";
+  position: absolute;
+  width: 6px;
+  height:4rem;
+  background-color: #ffff;
+  left: 64px;
+  top:52px;
+  opacity: 0.5;
+  margin-top: 40px;
+    
+}
+.org-profile-card{
+    width: 500px;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 30%px;
+    box-shadow: 5px;
+    margin-bottom: 50px;
+}
+
+.org-profile-card-img{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin-top: -6rem;
+    object-fit: cover;
+   
+  
+
+}
+
+
+
+
+
+.org-profile-card button{
+    background-color: #6bdcfc;
+    font-size: 20px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+    border: 1px solid #6bdcfc;
+    color: white;
+    border-radius: 5px;
+    width: 90%;
+}
+.org-profile-card button:hover{
+   
+    background-color: rgb(107,220,252);
+    transform: scale(1.02);
+    cursor: pointer;
+
+    
+ 
+ }
+
+.org-profile-card h3{
+    color: rgb(107,220,252);
+   
+ 
+ }
+ .orgprofile-card-text{
+     text-align: justify;
+     margin-left:180px ;
+     margin-top: 50px;
+     
+ }
+
+ @media only screen and (min-width:300px) and (max-device-width : 340px){
+    .orgprofile-card-text{
+        text-align: justify;
+        margin-left:20%;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+ @media only screen and (min-width:300px) and (max-device-width : 320px) {
+    .org-profile-card{
+        width: 250px;
+        margin-left: 25px;
+        overflow-y: hidden;
+        
+    }
+
+ }
+ @media only screen and (min-width:321px) and (max-device-width : 340px) {
+    .org-profile-card{
+        width: 285px;
+        margin-left: 25px;
+        overflow-y: hidden;
+        
+    }
+
+ }
+ @media only screen and (min-width:341px) and (max-device-width : 400px){
+    .orgprofile-card-text{
+        text-align: justify;
+        margin-left:25%;
+        margin-top: 50px;
+        font-size: smaller;
+    }
+
+ }
+ @media only screen and (min-width:341px) and (max-device-width : 400px) {
+    .org-profile-card{
+        width: 300px;
+        margin-left: 40px;
+        overflow-y: hidden;
+        
+    }
+
+ }
+
+ @media only screen and (min-width:401px) and (max-device-width : 640px){
+    .orgprofile-card-text{
+        text-align: justify;
+        margin-left:25%;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+ @media only screen and (min-width:401px) and (max-device-width : 440px) {
+    .org-profile-card{
+        width: 300px;
+        margin-left: 65px;
+        overflow-y: hidden;
+        
+    }
+
+ }
+ @media only screen and (min-width:441px) and (max-device-width : 540px) {
+    .org-profile-card{
+        width: 340px;
+        margin-left: 90px;
+        overflow-y: hidden;
+        
+    }
+
+ }
+ @media only screen and (min-width:541px) and (max-device-width : 640px) {
+    .org-profile-card{
+        width: 350px;
+        margin-left: 110px;
+        overflow-y: hidden;
+        
+    }
+
+ }
+
+ @media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .orgprofile-card-text{
+        text-align: justify;
+        margin-left:35%;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+ @media only screen and (min-device-width: 641px) and (max-device-width : 960px){
+    .org-profile-card{
+        width: 400px;
+        margin-left: 180px;
+        overflow-y: hidden;
+        background-image: hidden;
+        
+    }
+
+ }
+ @media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    .org-profile-card{
+        width: 400px;
+        margin-left: 30%;
+        overflow-y: hidden;
+        
+    }
+
+ }
+
+ @media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
+    .orgrprofile-card-text{
+        text-align: justify;
+        margin-left:7rem;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+
+ @media only screen and (min-device-width: 1101px) and (max-device-width : 1600px){
+    .org-profile-card{
+        width: 400px;
+        margin-left: 35%;
+        overflow-y: hidden;
+        
+    }
+
+ }
+
+ @media only screen and (min-device-width: 1101px) and (max-device-width : 1600px){
+    .orgprofile-card-text{
+        text-align: justify;
+        margin-left:7rem;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+
+ @media only screen and (min-device-width: 1601px) and (max-device-width : 2000px){
+    .org-profile-card{
+        width: 400px;
+        margin-left: 40%;
+        overflow-y: hidden;
+        
+    }
+
+ }
+
+ @media only screen and (min-device-width: 1601px) and (max-device-width : 2000px){
+    .orgerprofile-card-text{
+        text-align: justify;
+        margin-left:7rem;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+
+
+ @media only screen and (min-device-width: 2000px) and (max-device-width : 2800px){
+    .org-profile-card{
+        width: 400px;
+        margin-left: 40%;
+        overflow-y: hidden;
+        
+    }
+
+ }
+
+ @media only screen and (min-device-width: 2000px) and (max-device-width : 2800px){
+    .orgprofile-card-text{
+        text-align: justify;
+        margin-left:7rem;
+        margin-top: 50px;
+        font-size: small;
+    }
+
+ }
+
+ @media(max-width:1200px){
+ .org-profile-card-img{
+    visibility: visible;
+
+  
+ }
+}
+
+.org-profile{
+    background-image: url('/src/organisation/assets/Profile/ProfileCircle2.jpeg');
+    background-size: cover;
+    
+}
+@media(min-width:641px) and (max-width:990px){
+    .org-profile-header h1{
+       font-size: 45px; 
+       font-weight: 700;
+       margin-top: 30px;
+       margin-left: -5px;
+    }
+ }
+ @media(min-width:641px) and (max-width:990px){
+    .org-profile-header h1::before{
+      margin-left: -15px;
+      height: 3.5rem;
+    }
+ }
+
+@media(min-width:300px) and (max-width:640px){
+    .org-profile-header h1{
+       font-size: 35px; 
+       font-weight: 700;
+       margin-top: 45px;
+       margin-left: -20px;
+    }
+ }
+ @media(min-width:300px) and (max-width:640px){
+    .org-profile-header h1::before{
+      margin-left: -20px;
+      height: 3rem;
+      margin-top: 50px;
+    }
+ }
+
+
+

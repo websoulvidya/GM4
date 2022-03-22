@@ -1,7 +1,7 @@
 import React from 'react';
-import Userheader from '../../../components/userheader/Userheader';
-import Footer from '../../../components/footer/Footer';
-import './EditProfile.css';
+import Dashboard from '../../components/header/Dashboard';
+import Footer from '../../components/footer/Footer'
+import './OrgEditProfile.css';
 import {  Badge, Button} from '@mui/material';
 import { Avatar } from '@mui/material';
 import { IconButton } from '@mui/material';
@@ -20,13 +20,19 @@ import {useLayoutEffect} from 'react';
 
 
 
+
+
 import * as yup from 'yup';
 
 
 
 
 
-function EditProfile() {
+function OrgEditProfile() {
+
+
+
+  const re=/^(?=.{4})[a-z][a-z\d]*_?[a-z\d]+$/i
 
    {/*Modal functions */}
 
@@ -92,8 +98,6 @@ function EditProfile() {
           .required(' **User Name required')
 
           .matches('^[A-Za-z_-]*$' ,'**Invalid Username')
-
-         
          ,
   
        
@@ -131,29 +135,29 @@ function EditProfile() {
     
   return (
   
-  <div className='user-editprofile'>
-    <Userheader/>
+  <div className='org-editprofile'>
+    <Dashboard/>
     
 
       {/* Edit Profile page header */}
      
-      <div className='user-profile-header'>
+      <div className='org-profile-header'>
       <h1>Profile</h1>
       </div>
 
        {/*Edit Profile page form  */}
     
       <div>
-      <form className='Editprofile-Form' onSubmit={formik.handleSubmit} >
+      <form className='OrgEditprofile-Form' onSubmit={formik.handleSubmit} >
      
-     <h2 class="editprofile-head">Edit profile</h2>
+     <h2 class="orgeditprofile-head">Edit profile</h2>
      <fieldset className="uk-fieldset">
       <hr/>
       <div className="uk-margin">
         
          {/*Edit Profile Photo upload*/}
       
-          <p className='user-editprofile-upload'> 
+          <p className='org-editprofile-upload'> 
 
           <center>  
 
@@ -161,7 +165,7 @@ function EditProfile() {
                     style={{display: "none"}} {...formik.getFieldProps("Photoupload")} required="" />
                     
       
-              <label htmlFor="upload" className='user-profilephoto'>
+              <label htmlFor="upload" className='org-profilephoto'>
 
                 <IconButton color="primary" aria-label="upload picture" component="span" >
 
@@ -245,19 +249,19 @@ function EditProfile() {
         <Modal   
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="userep-modal-title"
-                aria-describedby="userep-modal-description" >
-                <Box sx={style} className='userep-modal_box' >
+                aria-labelledby="orgep-modal-title"
+                aria-describedby="orgep-modal-description" >
+                <Box sx={style} className='orgep-modal_box' >
                  
-                <Typography id="userep-modal-description" className='rules_modal'   >
+                <Typography id="orgep-modal-description" className='rules_modal'   >
 ​
                     <h3>Profile updated</h3>
                    
                     <span>Your profile is updated Successfully!</span>
                     <br/>
 
-                  <div className='userep-button_area'>
-                  <button onClick={handleClose} className='userep-modal_close'>Ok</button>
+                  <div className='orgep-button_area'>
+                  <button onClick={handleClose} className='orgep-modal_close'>Ok</button>
                   
                   </div>
                 </Typography>
@@ -293,5 +297,5 @@ function EditProfile() {
 )
 }
 
-export default EditProfile
+export default OrgEditProfile
   
