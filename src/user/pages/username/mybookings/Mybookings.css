@@ -68,7 +68,7 @@ body{
     width: 90%;
     border: 1px solid #87CEEB;
     box-shadow: 3px 3px #87CEEB;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 0 auto;
     margin-right: 0px;
     height: 250px;
@@ -111,7 +111,7 @@ body{
 }
 .myBookings_textbox_poolflex{
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-around !important;
 }
 .myBookings_textbox_poolflex__prize h6{
     padding: 0 !important;
@@ -148,15 +148,17 @@ body{
     background-color: darkgray;
     border-radius: 3px;
 }
+.myBookings_progress-div{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+}
 .myBookings_textbox_progresstextflex{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
-.myBookings_progress{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
 }
 .myBookings_textbox_progresstextflex p{
     font-size: 11px;
@@ -168,27 +170,18 @@ body{
 
 
 .myBookings_match{
-    font-weight: 400;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     color: #6d6d6d;
     margin-top: 1rem;
-    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
     letter-spacing: 0.3px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    text-align: left;
     
 }
-.myBookings_match p{
-    width: max-content;
-    width: 100% !important;
-    display: inline-block;
-    width: max-content;
-}
-
-
 
 
 .myBookings_blue-box{
@@ -197,7 +190,7 @@ body{
     color: white;
     justify-content: space-around;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     right: 0;
     border-radius: 5px;
     width: 65%;
@@ -223,7 +216,6 @@ body{
 }
 
 .myBookings_progress {
-    display: flex;
     border-radius: 7px;
     width: 100%;
     height: 6px;
@@ -250,6 +242,11 @@ body{
 #modal-modal-description_myBookings{
     border: none;
 }
+#modal-modal-description_myBookings li{
+    margin: 1rem;
+    margin-left: 0rem;
+    text-align: justify;
+}
 .modal_close_myBookings {
     background-color: #6BDCFC;
     color: white;
@@ -258,6 +255,7 @@ body{
     border: none;
     font-size: 18px;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 .modal_box_myBookings {
@@ -307,27 +305,26 @@ body{
         justify-content: space-around !important;
     }
     .myBookings_match{
-        width: 100% !important;
-    }
-    .myBookings_match p{
-        width: fit-content !important;
-        font-size: 11.5px;
-        padding: 0 !important;
-        margin: 0 !important;
-        word-spacing: 1px !important;
-        letter-spacing: 1px !important;
+        width: 100%;
     }
     .myBookings_progress{
-        width: 85% !important;
-        margin: 1rem auto !important;
+        width: 100% !important;
+        margin: 0 auto !important; 
     }
     .myBookings_textbox_progresstextflex{
-        width: 85% !important;
+        width: 95% !important;
         margin: 0 auto !important;
     }
     .myBookings_blue-box h5{
        font-weight: 700;
     }
+    .myBookings_progress-div{
+        width: 85%;
+    }
+    .myBookings_textbox_progresstextflex{
+        width: 85% !important;
+    }
+    
 }
 
 
@@ -380,19 +377,31 @@ body{
     .myBookings_textbox_poolflex{
         justify-content: space-around !important;
     }
-    .myBookings_match p{
-        font-size: 12px;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-        width: fit-content;
-        margin-left: 8px;
-    }
-    .myBookings_progress{
+    .myBookings_textbox_progresstextflex{
         width: 95% !important;
-        margin-left: 8px !important;
+    }
+}
+@media (min-width:1500px){
+    .myBookings_progress-div{
+        width: 85%;
+    }
+    .myBookings_textbox_progresstextflex{
+        width: 85% !important;
+    }
+}
+@media (min-width:1950px){
+    .myBookings_progress-div{
+        width: 85%;
+    }
+    .myBookings_textbox_progresstextflex{
+        width: 85% !important;
+    }
+}
+@media (min-width: 601px) and (max-width: 850px){
+    .myBookings_progress-div{
+        width: 95%;
     }
     .myBookings_textbox_progresstextflex{
         width: 95% !important;
-        margin-left: 8px !important;
     }
 }

@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{useLayoutEffect,useState} from 'react'
+import { useForm } from 'react-hook-form';
+
 
 import Homeheader from '../../../components/homeheader/Homeheader';
 import Footer from '../../../components/footer/Footer';
@@ -24,12 +26,26 @@ import CareerHead from '../../../assets/images/career.webp';
 
 
 
-
 const Input = styled('input')({
   display: 'none',
 });
 
 function Careers() {
+
+  const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
+
+  const submitData = (data) => {
+
+    reset();
+
+  };
+
+  const [isActive, setIsActive] = useState(false);
+  const [setected, setSelected] = useState("Select Position");
+  const options = ["Mobile App Developer", "Web Developer", "Graphic Designer","Business Development Executive"];
+ 
+
+ 
   return (
 
     
@@ -191,38 +207,75 @@ function Careers() {
   <div class="smallcircles">
     {/* <div id='circle1' /><div id='circle2' /><div id='circle3' /><div id='circle4' /><div id='circle5' /><div id='circle6' /><div id='circle7' /> */}
 
-      <form class="career-form"  ml='auto' mr='auto'>
+      <form class="career-form"  ml='auto' mr='auto' onSubmit={handleSubmit(submitData)}>
       <h1 style={{color:'#6bdcfc',fontWeight:600}}>APPLY NOW</h1>
 
       <fieldset class="uk-fieldset">
         <h2 class="joinhead"></h2>
-      <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Name" />
-            </div>
-            <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Email id" />
-            </div>
-            <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Phone Number" />
-            </div>
 
-            <div class="uk-margin" >
-               <select class="uk-select"  >
-                   <option disabled selected>Select Position</option>
-                   <option>Mobile App Developer</option>
-                   <option>Web Developer</option>
-                   <option>Graphic Designer</option>
-                   <option>Business Development Executive</option>
-
-               </select>
-            </div>
-
-            <div class="uk-margin" uk-margin>
-               <div uk-form-custom="target: true" style={{width:'100%'}}>
-                  <input  type="file"/>
-                  <input backgrounColor='white' class="uk-input" type="text" placeholder="Upload Resume" disabled/>
+             <div class="uk-margin">
+               <input class="uk-input" placeholder="Name" type="name"  tabindex="1" name='name' {...register("name", { required: "**Name is Required" })}  autoComplete='off'/>   {errors.name && (<span className='errormsgcareer'>{errors.name.message}</span>)}
              </div>
-             </div>
+            
+            <div class="uk-margin">
+              <input class="uk-input" placeholder="Email id" type="email" tabindex="1" name='email' {...register("email", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.email && (<span className='errormsgcareer'>{errors.email.message}</span>)}
+            </div>
+
+            <div class="uk-margin">
+              <input class="uk-input" placeholder="Phone Number" type="phone" tabindex="1" name='phone' {...register("phone", { required: "**Phone Number is Required" })}  autoComplete='off'/>   {errors.phone && (<span className='errormsgcareer'>{errors.phone.message}</span>)}
+            </div>
+
+             {/* select */}
+
+             <div className="uk-input" style={{marginTop:'10px'}} onClick={(e) => setIsActive(!isActive)}>
+                  <div className="careerposition" >{setected}
+                    <span className="fas fa-caret-down dailyreg_selectdownicon"></span>
+                  </div>
+                  {isActive && (
+                    <div className="position_content">
+                      {options.map((option) => (
+                        <div className="position_item" onClick={(e) => {
+                          setSelected(option);
+                          setIsActive(false);
+                        }
+                        }>{option}</div>
+                      ))}
+
+                    </div>
+                  )}
+                </div>
+
+                {/* end */}
+
+
+
+
+                <div class="uk-margin" uk-margin>
+                                    <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
+                                        <input className="uk-input" type="file" placeholder="Upload Resume"
+                                            autoComplete='off' {...register('scrnshot', {
+                                                required: "**Resume is required ",
+                                                validate: {
+                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+
+                                                    acceptedFormats: files =>
+                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                            files[0]?.type
+                                                        ) || 'Only PNG, JPEG e GIF',
+                                                },
+                                            })} />
+                                        <input class="uk-input uk-form-width-extra-large" type="text" placeholder="Upload Screenshot of Payment" name='paymentScreenshot' style={{ marginTop: '.5rem' }} disabled />
+                                        {errors.scrnshot && (<span className='adspayment-errormsg'>{errors.scrnshot.message}</span>)}
+
+                                    </div>
+                                </div>
+
+
+            
+
+
+
+
             
         <div>
           <button class="closebtn">APPLY</button>

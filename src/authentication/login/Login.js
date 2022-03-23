@@ -106,11 +106,11 @@ function Login() {
   <form id="contact" onSubmit={handleSubmit(onSubmit)} >
     
     <fieldset id='field-style'>
-      <input placeholder="Your Email Address" type="email" tabindex="1" name='email' {...register("email", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.email && (<span className='errormsgleft1'>{errors.email.message}</span>)}
+      <input placeholder="Your Email Address" type="email" tabindex="1" name='emailorg' {...register("emailorg", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.emailorg && (<span className='errormsgleft1'>{errors.emailorg.message}</span>)}
     </fieldset>
     
     <fieldset id='field-style'>
-      <input placeholder="Password" type="password" tabindex="2" name='password'  {...register("password", { required: "** Password is Required" })}  autoComplete='off'/>  {errors.password && (<span className='errormsgleft2'>{errors.password.message}</span>)}
+      <input placeholder="Password" type="password" tabindex="2" name='passwordorg'  {...register("passwordorg", { required: "** Password is Required" })}  autoComplete='off'/>  {errors.passwordorg && (<span className='errormsgleft2'>{errors.passwordorg.message}</span>)}
       
     </fieldset>
     <fieldset id='field-style'>
@@ -130,10 +130,10 @@ function Login() {
     
     <fieldset id='field-style'>
     
-      <input  placeholder="Your Email Address" type="email" tabindex="1" r name='email' {...register("email", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.email && (<span className='errormsgleft1'>{errors.email.message}</span>)}
+      <input  placeholder="Your Email Address" type="email" tabindex="1"  name='emailuser' {...register("emailuser", { required: "** Email is Required" })}  autoComplete='off'/>   {errors.emailuser && (<span className='errormsgleft1'>{errors.emailuser.message}</span>)}
     </fieldset>
     <fieldset id='field-style' >
-      <input placeholder="Password" type="password" tabindex="2" name='password'  {...register("password", { required: "** Password is Required" })}  autoComplete='off'/>  {errors.password && (<span className='errormsgleft2'>{errors.password.message}</span>)}
+      <input placeholder="Password" type="password" tabindex="2" name='passworduser'  {...register("passworduser", { required: "** Password is Required" })}  autoComplete='off'/>  {errors.passworduser && (<span className='errormsgleft2'>{errors.passworduser.message}</span>)}
     </fieldset>
     <fieldset id='field-style'>
       <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending">LOGIN</button>

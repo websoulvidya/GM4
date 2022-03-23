@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useLayoutEffect} from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import "../../pages/openrooms/Openrooms.css";
@@ -41,6 +41,11 @@ function Openrooms() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+ 
   return(
     <div>
       <Userheader/>

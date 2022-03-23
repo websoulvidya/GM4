@@ -64,7 +64,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization1</h4>
-                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
+                  
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -84,9 +84,13 @@ function Mybookings() {
                         </div>
                       </div>
                       <div className='myBookings_match'>
-                        <p>MATCH DATE : 05-08-2022</p>
+                        <div>MATCH DATE</div>
+                        <div>:</div>
+                        <div>05-08-2022</div>
                       </div>
-                      <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      <div className='myBookings_progress-div'>
+                        <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      </div>
                       <div className="myBookings_textbox_progresstextflex">
                         <div>
                           <p>100 joined</p>
@@ -97,17 +101,17 @@ function Mybookings() {
                       </div>
                     </div>
                   </div>
-                  </Link>
+                  
                   <div className='myBookings_blue-box'>
                     <div>
                       <h5>HOSTED BY</h5>
-                      <a href="#"><p>E-SPORTS TEAM</p></a>
+                      <p>E-SPORTS TEAM</p>
                     </div>
                     <div className='myBookings_verticaldiv2'>
 
                     </div>
                     <div>
-                      <a href="#"><h5>REG NOW</h5></a>
+                      <Link to='/MyBookingInfo' className='myBookingsInfoLink'><h5>VIEW INFO</h5></Link> 
                     </div>
                   </div>
                   <div className='my_tournament-rule'>
@@ -121,7 +125,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization2</h4>
-                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
+                  
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -141,9 +145,13 @@ function Mybookings() {
                         </div>
                       </div>
                       <div className='myBookings_match'>
-                        <p>MATCH DATE : 05-08-2022</p>
+                        <div>MATCH DATE</div>
+                        <div>:</div>
+                        <div>05-08-2022</div>
                       </div>
-                      <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      <div className='myBookings_progress-div'>
+                        <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      </div>
                       <div className="myBookings_textbox_progresstextflex">
                         <div>
                           <p>100 joined</p>
@@ -154,17 +162,17 @@ function Mybookings() {
                       </div>
                     </div>
                   </div>
-                  </Link>
+                  
                   <div className='myBookings_blue-box'>
                     <div>
-                      <a href=""><h5>HOSTED BY</h5></a>
+                      <h5>HOSTED BY</h5>
                       <p>E-SPORTS TEAM</p>
                     </div>
                     <div className='myBookings_verticaldiv2'>
 
                     </div>
                     <div>
-                      <a href=""><h5>REG NOW</h5></a>
+                      <Link to='/MyBookingInfo' className='myBookingsInfoLink'><h5>VIEW INFO</h5></Link> 
                     </div>
                   </div>
                   <div className='my_tournament-rule'>
@@ -180,7 +188,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization3</h4>
-                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
+                  
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -200,9 +208,13 @@ function Mybookings() {
                         </div>
                       </div>
                       <div className='myBookings_match'>
-                        <p>MATCH DATE : 05-08-2022</p>
+                        <div>MATCH DATE</div>
+                        <div>:</div>
+                        <div>05-08-2022</div>
                       </div>
-                      <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      <div className='myBookings_progress-div'>
+                        <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      </div>
                       <div className="myBookings_textbox_progresstextflex">
                         <div>
                           <p>100 joined</p>
@@ -213,17 +225,17 @@ function Mybookings() {
                       </div>
                     </div>
                   </div>
-                  </Link>
+                  
                   <div className='myBookings_blue-box'>
                     <div>
-                      <a href="#"><h5>HOSTED BY</h5></a>
+                      <h5>HOSTED BY</h5>
                       <p>E-SPORTS TEAM</p>
                     </div>
                     <div className='myBookings_verticaldiv2'>
 
                     </div>
                     <div>
-                      <a href="#"><h5>REG NOW</h5></a>
+                      <Link to='/MyBookingInfo' className='myBookingsInfoLink'><h5>VIEW INFO</h5></Link> 
                     </div>
                   </div>
                   <div className='my_tournament-rule'>
@@ -237,7 +249,7 @@ function Mybookings() {
               
                 <div className='myBookings_innerpositiondiv'>
                   <h4>Organization4</h4>
-                  <Link to='/MyBookingInfo' className='myBookingsInfoLink'>
+                  
                   <div className='myBookings_innerimagetextflex'>
                     <div className='myBookings_imagebox'>
                       <img src={my_img} alt='fleximg' />
@@ -257,9 +269,13 @@ function Mybookings() {
                         </div>
                       </div>
                       <div className='myBookings_match'>
-                        <p>MATCH DATE : 05-08-2022</p>
+                        <div>MATCH DATE</div>
+                        <div>:</div>
+                        <div>05-08-2022</div>
                       </div>
-                      <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      <div className='myBookings_progress-div'>
+                        <progress value="3333" max="10000" className='myBookings_progress'></progress>
+                      </div>
                       <div className="myBookings_textbox_progresstextflex">
                         <div>
                           <p>100 joined</p>
@@ -270,17 +286,17 @@ function Mybookings() {
                       </div>
                     </div>
                   </div>
-                  </Link>
+                  
                   <div className='myBookings_blue-box'>
                     <div>
-                      <a href="#"><h5>HOSTED BY</h5></a>
+                      <h5>HOSTED BY</h5>
                       <p>E-SPORTS TEAM</p>
                     </div>
                     <div className='myBookings_verticaldiv2'>
 
                     </div>
                     <div>
-                      <a href=""><h5>REG NOW</h5></a>
+                      <Link to='/MyBookingInfo' className='myBookingsInfoLink'><h5>VIEW INFO</h5></Link>  
                     </div>
                   </div>
                   <div className='my_tournament-rule'>

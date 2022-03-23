@@ -2,40 +2,31 @@ import React from 'react';
 import Userheader from '../../../components/userheader/Userheader';
 import Footer from '../../../components/footer/Footer';
 import './EditProfile.css';
-import { autocompleteClasses, Badge, Button} from '@mui/material';
-import { Link, Route, Router} from 'react-router-dom';
+import {  Badge, Button} from '@mui/material';
 import { Avatar } from '@mui/material';
 import { IconButton } from '@mui/material';
 import { useState } from 'react';
-import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import CameraAltTwoToneIcon from '@mui/icons-material/CameraAltTwoTone';
-import { fontSize, margin, style } from '@mui/system';
-import ReactDOM from 'react-dom';
-import { Formik } from 'formik';
+
+
 import {useFormik} from 'formik';
 import { Modal } from '@mui/material';
 
-import Backdrop from '@mui/material/Backdrop';
+
 import Box from '@mui/material/Box';
-import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 
-
-
-
+import {useLayoutEffect} from 'react';
 
 
 
 import * as yup from 'yup';
-import { Schema } from '@mui/icons-material';
-import modal from 'react-uikit-modal';
+
 
 
 
 
 function EditProfile() {
-
-  const RegExp=('^(?=[A-Za-z0-9._]{4,20}$)[^_.].*[^_.]');
 
    {/*Modal functions */}
 
@@ -43,11 +34,10 @@ function EditProfile() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   {/*Modal style */}
-
- 
-
 
   const style = {
     position: 'absolute',
@@ -97,11 +87,14 @@ function EditProfile() {
           
         Username: yup.string()
   
-          .max(20, 'Name should not exceed 20 Characters')
+          .max(20, '**Username should not exceed 20 Characters')
           
           .required(' **User Name required')
 
-          .matches(RegExp,'invalid user name'),
+          .matches('^[A-Za-z_-]*$' ,'**Invalid Username')
+
+         
+         ,
   
        
         EmailId: yup.string()
@@ -112,9 +105,14 @@ function EditProfile() {
 
         Phonenumber: yup.string()
           
-        .min(10, '')
+        .max(10, '**Phone number must not exceed 10 numbers')
         
         .required('**Phone number required')
+
+        .matches('[789]' , '**Invalid phone number')
+        
+        .min(10,'**Phone number should contain 10 numbers')
+        ,
        
     
   
@@ -223,11 +221,12 @@ function EditProfile() {
           </div>
 
           <div class="uk-margin">
-          <input class="uk-input"  type="text" name= 'Phonenumber' placeholder='Enter phone number'   minLength={10}
+          <input class="uk-input"  type="text" name= 'Phonenumber' placeholder='Enter phone number'   
                  {...formik.getFieldProps("Phonenumber")} 
-          required="" pattern="[789][0-9]{9}"/>
+          required=""/>
           {formik.errors.Phonenumber? 
-          <span style={{color:'red' , fontSize:'12px' ,fontWeight:'700',float:'left'}}>{formik.errors.Phonenumber}</span> : null}
+          <span style={{color:'red' , fontSize:'12px' ,fontWeight:'700',float:'left'}}>
+          {formik.errors.Phonenumber} </span> : null}
 
           </div>
          

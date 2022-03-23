@@ -35,7 +35,7 @@ function Tournament() {
     
   return (
 
-    <div className="tournament" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}}> 
+    <div className="tournament" style={{width:"100%",margin:"0px",padding:"0px",overflowX:"hidden"}} id='tournament'> 
       <Userheader />
       <div className='tournament-main-wrapper'>
       <div className='tournament_headerclip'>

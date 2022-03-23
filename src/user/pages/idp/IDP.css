@@ -253,7 +253,9 @@
     font-size: 18px;
     margin-top: 1rem;
 }
-
+.modal-idp-style li{
+    padding: 10px;
+}
     @media(max-width:650px){
         .matches_header_info h1{
             font-size: 1.3rem;

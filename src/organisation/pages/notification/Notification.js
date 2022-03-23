@@ -6,8 +6,15 @@ import { Card} from '@mui/material';
 import './Notification.css';
 import moment from 'moment';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+import {useLayoutEffect} from 'react';
+
 
 function Notification() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+
   return (
     <div>
       <Dashboard/>
