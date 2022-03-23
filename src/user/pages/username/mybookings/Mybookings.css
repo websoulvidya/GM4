@@ -318,6 +318,13 @@ body{
     .myBookings_blue-box h5{
        font-weight: 700;
     }
+    .myBookings_progress-div{
+        width: 85%;
+    }
+    .myBookings_textbox_progresstextflex{
+        width: 85% !important;
+    }
+    
 }
 
 
@@ -388,5 +395,13 @@ body{
     }
     .myBookings_textbox_progresstextflex{
         width: 85% !important;
+    }
+}
+@media (min-width: 601px) and (max-width: 850px){
+    .myBookings_progress-div{
+        width: 95%;
+    }
+    .myBookings_textbox_progresstextflex{
+        width: 95% !important;
     }
 }
