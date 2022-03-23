@@ -500,13 +500,28 @@ progress[value]::-webkit-progress-value {
 }
 @media (min-width: 301px) and (max-width: 320px){
   .slot_header {
-    height: 6rem;
-    margin-top: 54px;
+    height: 6rem !important;
+    margin-top: 54px !important;
   }
   .slotlist-main-titile h3 {
-    left: 14%;
+    left: 14% !important;
 }
-
+.slotlist-team-img img {
+  left: -36px !important;
+  width: 133px !important;
+  transform: scale(1.0) !important;
+  top: 61px !important;
+ 
+}
+.slot-list-pay-section {
+  right: 61px !important;
+}
+.slot-list-pay-section span::after {
+  left: 1px !important;
+}
+.slot-progressbar-left-text .slot-progressbar-right-text {
+  font-size: 8px !important;
+}
   .slot-list-modal_box-all{
    width: 80% !important;
    padding: 26px !important;
@@ -515,34 +530,31 @@ progress[value]::-webkit-progress-value {
     height: 14rem !important;
   }
   .slot_header h1 {
-    font-size: 34px;
-    margin-top: 10px;
+    font-size: 34px !important;
+    margin-top: 10px !important;
   }
   .slot_header h1:before {
-    height: 2rem;
-    top: 85px;
-    margin-left: -7px;
+    height: 2rem !important;
+    top: 85px !important;
+    margin-left: -7px !important;
+   
   }
-  .slotlist-team-img img {
-    left: -37px;
-    width: 144px;
-    transform: scale(1);
-    top: 61px;
-}
+
+  
   .slot_header {
     padding-left: 5rem !important;
   }
   .slot-main-card {
-    flex-direction: column;
+    flex-direction: column !important;
     margin: 0 !important;
   }
   .slot-list-pay-section h6 {
-    left: -10%;
-    font-size: 11px;
+    left: -10% !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -10%;
-    font-size: 10px;
+    left: -10% !important;
+    font-size: 10px !important;
   }
   .slot-list-prize-pool{
     left: 28% !important;
@@ -551,138 +563,140 @@ progress[value]::-webkit-progress-value {
     left: 28% !important;
   }
   .slot-list-pay-section span::after{
-    left: 7px;
+    left: 7px !important;
   }
   .slot-list-pay-section span {
-    left: 60px;
-    font-size: 11px;
+    left: 60px !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section-sd span::after{
-    left: 7px;
-    height: 19px;
-    top: -18px;
-    left: 10px;
+    left: 7px !important;
+    height: 19px !important;
+    top: -18px !important;
+    left: 10px !important;
   }
   .slot_match_date {
-    font-size: 10px;
-    left: 22%;
+    font-size: 10px !important;
+    left: 23% !important;
   }
   .slot-list-progress-bar-sd {
-    width: 49%;
-    right: 6px;
+    width: 49% !important;
+    right: 6px !important;
   }
   .slot-list-pay-section-sd span {
-    left: 60px;
-    font-size: 11px;
+    left: 60px !important;
+    font-size: 11px !important;
   }
   .slot-list-entry-fee {
-    right: -37%;
+    right: -45% !important;
   }
   .slot-list-entry-fee-sd {
-    right: -37%;
+    right: -37% !important;
   }
-  progress {
-    width: 96%;
-  }
+  
   .slot-list-carditems {
     width: calc(126% - 10px) !important;
-    left: 4%;
+    left: 4% !important;
   }
   .slot-list-carditems-sd {
     width: calc(126% - 7px) !important;
-    left: 1%;
+    left: 1% !important;
   }
   .slot-list-reg-section a {
-    right: -23%;
+    right: -23% !important;
   }
   .slotlist-card-list {
-    padding-right: 42px;
+    padding-right: 42px !important;
   }
   .slot-list-reg-section a::after {
-    left: 71px;
+    left: 71px !important;
   }
   .sub_slot_header h1 {
-    margin-left: -20px;
+    margin-left: -20px !important;
+  }
+  .slot-list-progress-bar {
+    width: 50% !important;
+    right: 10px !important;
+  }
+  .slot-list-pay-section-sd {
+    right: 53px;
   }
 }
 @media (min-width: 321px) and (max-width: 361px){
   .slot_header {
     height: 6rem !important;
-    margin-top: 54px;
+    margin-top: 54px !important;
   }
   .slotlist-main-titile h3 {
-    left: 14%;
+    left: 14% !important;
 }
   .slot_header h1 {
-    font-size: 34px;
-    margin-top: 10px;
-    margin-left: 24px;
+    font-size: 34px !important;
+    margin-top: 10px !important;
+    margin-left: 24px !important;
   }
   .slot_header h1:before {
-    height: 2rem;
-    top: 84px;
-    margin-left: 15px;
+    height: 2rem !important;
+    top: 84px !important;
+    margin-left: 15px !important;
   }
   .slot_header {
     padding-left: 5rem !important;
   }
   .slot-main-card {
-    flex-direction: column;
+    flex-direction: column !important;
     margin: 0 !important;
   }
   .slot-list-pay-section h6 {
-    left: -11%;
-    font-size: 11px;
+    left: -11% !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 29%;
+    left: 29% !important;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -43%;
+    right: -43% !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -8%;
-    font-size: 11px;
+    left: -8% !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section-sd span {
-    left: 69px;
-    font-size: 11px;
+    left: 69px !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 30%;
+    left: 30% !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -49%;
+    right: -49% !important;
   }
   .slot_match_date {
-    font-size: 10px;
+    font-size: 10px !important;
   }
-  progress {
-    width: 97%;
-    right: -3px;
-  }
+ 
   .slot-list-pay-section span {
-        font-size: 11px;
+        font-size: 11px !important;
   }
   .slot-list-carditems {
     width: calc(119% - 10px) !important;
-    left: 12%;
+    left: 12% !important;
   }
   .slot-list-carditems-sd {
     width: calc(119% - 10px) !important;
-    left: 12%;
+    left: 12% !important;
   }
   .slot-list-reg-section a {
-    right: -14%;
+    right: -14% !important;
   }
   .slotlist-card-list {
-    padding-right: 67px;
+    padding-right: 67px !important;
   }
   .slot-list-reg-section a::after {
-    left: 71px;
+    left: 71px !important;
   }
   .sub_slot_header h1 {
-    margin-left: -20px;
+    margin-left: -20px !important;
   }
   .slot-list-modal_box-all{
     width: 80% !important;
@@ -690,6 +704,10 @@ progress[value]::-webkit-progress-value {
    }
    #modal-modal-description-all{
      height: 14rem !important;
+   }
+   .slotlist-team-img img {
+    left: -46px !important;
+    width: 138px !important;
    }
 }
 @media (min-width: 362px) and (max-width: 376px){
@@ -700,9 +718,8 @@ progress[value]::-webkit-progress-value {
   .slotlist-main-titile h3 {
     left: 14%;
 }
-progress {
-  right: 7px;
-  width: 103%;
+.slot-list-progress-bar-sd {
+  right: 11px !important;
 }
   .slot_header h1 {
     font-size: 34px;
@@ -722,10 +739,20 @@ progress {
     margin: 0 !important;
   }
   .slot-list-pay-section h6 {
-    left: -23%;
+    left: -18% !important;
+    font-size: 12px !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -23%;
+    left: -23% !important;
+    font-size: 12px !important;
+  }
+  .slot-list-pay-section-sd span {
+    font-size: 12px !important;
+    right: -74% !important;
+  }
+  .slotlist-team-img img {
+    left: -38px;
+    transform: scale(1);
   }
   .slot-list-carditems {
     width: calc(119% - 10px) !important;
@@ -754,7 +781,13 @@ progress {
    #modal-modal-description-all{
      height: 14rem !important;
    }
-
+   .slot-list-progress-bar {
+    width: 51% !important;
+    right: 14px !important;
+   }
+   .slot-list-pay-section-sd {
+    right: 56px !important;
+   }
 }
  @media (min-width: 377px) and (max-width: 394px){
  
@@ -767,9 +800,6 @@ progress {
 }
 .slot-list-pay-section span {
   left: 59px;
-}
-progress {
-  right: 4%;
 }
 .slot_header h1 {
   font-size: 34px;
@@ -825,15 +855,12 @@ progress {
   right: -44%;
 }
 } 
-@media (min-width: 395px) and (max-width: 413px){
+@media (min-width: 395px) and (max-width: 414px){
   .slot_header {
     height: 6rem !important;
     margin-top: 54px;
   }
-  progress {
-    width: 103%;
-    right: 4%;
-  }
+ 
   .slot_header h1 {
     font-size: 34px;
     margin-top: 10px;
@@ -849,33 +876,33 @@ progress {
   }
   .slot-main-card {
     flex-direction: column;
-    margin: 0 !important;
+    margin-left: -8px !important;
   }
   .slot-list-pay-section h6 {
-    left: -23%;
+    left: -23% !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -23%;
+    left: -23% !important;
   }
   .slot-list-carditems {
     width: calc(105% - 10px) !important;
-    left: 15%;
+    left: 15% !important;
   }
   .slot-list-carditems-sd {
     width: calc(105% - 10px) !important;
-    left: 15%;
+    left: 15% !important;
   }
   .slot-list-reg-section a {
-    right: -14%;
+    right: -14% !important;
   }
   .slotlist-card-list {
-    padding-right: 67px;
+    padding-right: 67px !important;
   }
   .slot-list-reg-section a::after {
-    left: 71px;
+    left: 71px !important;
   }
   .sub_slot_header h1 {
-    margin-left: -20px;
+    margin-left: -20px !important;
   }
   .slot-list-modal_box-all{
     width: 80% !important;
@@ -884,9 +911,11 @@ progress {
    #modal-modal-description-all{
      height: 14rem !important;
    }
-
+   .slot-list-progress-bar-sd {
+     right: 12px !important;
+   }
 }
-@media (min-width: 414px) and (max-width: 426px){
+@media (min-width: 415px) and (max-width: 426px){
   .slot_header {
     height: 6rem !important;
     margin-top: 54px;
@@ -942,7 +971,9 @@ progress {
    #modal-modal-description-all{
      height: 14rem !important;
    }
-
+   .slot-list-pay-section-sd span::after {
+     left: 11px !important;
+   }
 }
 
 @media (min-width: 427px) and (max-width: 480px) {
@@ -974,12 +1005,12 @@ progress {
     left: -23%;
   }
   .slot-list-carditems {
-    width: calc(126% - 10px) !important;
-    left: 4%;
+    width: calc(89% - 10px) !important;
+    left: 21%;
   }
   .slot-list-carditems-sd {
-    width: calc(126% - 10px) !important;
-    left: 4%;
+    width: calc(89% - 10px) !important;
+    left: 21%;
   }
   .slot-list-reg-section a {
     right: -14%;
@@ -999,6 +1030,16 @@ progress {
    }
    #modal-modal-description-all{
      height: 14rem !important;
+   }
+   .slot-list-pay-section-sd span::after {
+     left: 11px !important;
+   }
+   .slot-list-progress-bar-sd {
+    width: 50% !important;
+    right: 11px !important;
+   }
+   .slot-list-progress-bar {
+    right: 14px !important;
    }
 }
 @media (min-width: 481px) and (max-width: 500px) {
@@ -1023,6 +1064,9 @@ progress {
    .slot-main-card uk-grid{
      margin-left: 31px !important;
    }
+   .slot-main-card{
+     margin-left: 34px !important;
+   }
 }
 @media (min-width: 501px) and (max-width:541px) {
   .slot-list-carditems {
@@ -1034,7 +1078,7 @@ progress {
     flex-wrap: wrap;
   }
   .slot-main-card {
-    justify-content: center ;
+    justify-content: center !important ;
   }
   .slot-list-modal_box-all{
     width: 80% !important;
@@ -1048,6 +1092,17 @@ progress {
    }
    .slot-main-card uk-grid{
      margin-left: 31px !important;
+   }
+   .slot-list-progress-bar-sd {
+    right: 11px !important;
+   }
+   .slot-list-progress-bar {
+     width: 52% !important;
+     right: 11px !important;
+   }
+   .slotlist-team-img img {
+    left: -42px;
+    width: 147px !important;
    }
 }
 @media (min-width: 542px) and (max-width: 600px) {
@@ -1136,7 +1191,7 @@ progress {
    }
   
 }
-@media (min-width: 701px) and (max-width: 767px) {
+@media (min-width: 701px) and (max-width: 768px) {
   .slot-list-carditems {
     width: calc(42% - 10px) !important;
     margin: 0 1.5% 55px 6.9% !important;
@@ -1149,48 +1204,48 @@ progress {
     margin-left: -30px !important;
   }
   .slot-list-pay-section {
-    right: 59px;
+    right: 64px !important;
   }
   .slot-list-pay-section h6 {
-    left: -18%;
+    left: -18% !important;
   }
   .slot-list-pay-section-sd {
-    right: 55px;
+    right: 55px !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -18%;
-    font-size: 11px;
+    left: -18% !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section-sd span {
-    font-size: 11px;
-    margin-left: -11px;
+    font-size: 11px !important;
+    margin-left: -11px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 17px;
-    top: -18px;
-    left: 4px;
+    height: 17px !important;
+    top: -18px !important;
+    left: 4px !important;
 
   }
   .slot-list-progress-bar-sd {
-    width: 49%;
-    position: absolute;
-    right: 11px;
-    bottom: 30%;
+    width: 49% !important;
+    position: absolute !important;
+    right: 11px !important;
+    bottom: 30% !important;
 }
   .slot_match_date {
-    font-size: 10px;
+    font-size: 10px !important;
     
   }
   .slot_header {
-    height: 7rem;
+    height: 7rem !important;
   }
   .slot_header h1{
-    font-size: 45px;
-    margin-top: 15px;
+    font-size: 45px !important;
+    margin-top: 15px !important;
   }
   .slot_header h1::before{
-    height: 3rem;
-    top: 96px;
+    height: 3rem !important;
+    top: 96px !important;
   }
   .slot-list-modal_box-all{
     width: 49% !important;
@@ -1199,8 +1254,19 @@ progress {
    #modal-modal-description-all{
      height: 14rem !important;
    }
+   .slotlist-team-img img {
+    left: -47px !important;
+    width: 136px !important;
   }
-  @media (min-width: 768px) and (max-width: 821px){
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -39% !important;
+  }
+  .slot-list-progress-bar {
+    width: 53% !important;
+    right: 10px !important;
+  }
+  }
+  @media (min-width: 769px) and (max-width: 821px){
     .slot-list-carditems {
       width: calc(42% - 10px) !important;
       margin: 0 1.5% 55px 6.9% !important;
@@ -1213,48 +1279,48 @@ progress {
       margin-left: -30px !important;
     }
     .slot-list-pay-section {
-      right: 59px;
+      right: 59px !important;
     }
     .slot-list-pay-section h6 {
-      left: -18%;
+      left: -18% !important;
     }
     .slot-list-pay-section-sd {
-      right: 55px;
+      right: 55px !important;
     }
     .slot-list-pay-section-sd h6 {
-      left: -18%;
-      font-size: 11px;
+      left: -18% !important;
+      font-size: 11px !important;
     }
     .slot-list-pay-section-sd span {
-      font-size: 11px;
-      margin-left: -11px;
+      font-size: 11px !important;
+      margin-left: -11px !important;
     }
     .slot-list-pay-section-sd span::after {
-      height: 17px;
-      top: -18px;
-      left: 4px;
+      height: 17px !important;
+      top: -18px !important;
+      left: 4px !important;
   
     }
     .slot-list-progress-bar-sd {
-      width: 49%;
-      position: absolute;
-      right: 11px;
-      bottom: 30%;
+      width: 49% !important;
+      position: absolute !important;
+      right: 11px !important;
+      bottom: 30% !important;
   }
     .slot_match_date {
-      font-size: 10px;
+      font-size: 10px !important;
       
     }
     .slot_header {
-      height: 7rem;
+      height: 7rem !important;
     }
     .slot_header h1{
-      font-size: 45px;
-      margin-top: 15px;
+      font-size: 45px !important;
+      margin-top: 15px !important;
     }
     .slot_header h1::before{
-      height: 3rem;
-      top: 96px;
+      height: 3rem !important;
+      top: 96px !important;
     }
     .slot-list-modal_box-all{
       width: 49% !important;
@@ -1277,48 +1343,48 @@ progress {
     margin-left: -30px !important;
   }
   .slot-list-pay-section {
-    right: 59px;
+    right: 59px !important;
   }
   .slot-list-pay-section h6 {
-    left: -18%;
+    left: -18% !important;
   }
   .slot-list-pay-section-sd {
-    right: 55px;
+    right: 55px !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -18%;
-    font-size: 11px;
+    left: -18% !important;
+    font-size: 11px !important;
   }
   .slot-list-pay-section-sd span {
-    font-size: 11px;
-    margin-left: -11px;
+    font-size: 11px !important;
+    margin-left: -11px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 17px;
-    top: -18px;
-    left: 4px;
+    height: 17px !important;
+    top: -18px !important;
+    left: 4px !important;
 
   }
   .slot-list-progress-bar-sd {
-    width: 49%;
-    position: absolute;
-    right: 11px;
-    bottom: 30%;
+    width: 49% !important;
+    position: absolute !important;
+    right: 11px !important;
+    bottom: 30% !important;
 }
   .slot_match_date {
-    font-size: 10px;
+    font-size: 10px !important;
     
   }
   .slot_header {
-    height: 7rem;
+    height: 7rem !important;
   }
   .slot_header h1{
-    font-size: 45px;
-    margin-top: 15px;
+    font-size: 45px !important;
+    margin-top: 15px !important;
   }
   .slot_header h1::before{
-    height: 3rem;
-    top: 96px;
+    height: 3rem !important;
+    top: 96px !important;
   }
   .slot-list-modal_box-all{
     width: 49% !important;
@@ -1338,21 +1404,21 @@ progress {
     margin: 0 0.5% 55px 7.9% !important;
   }
   .slot-list-pay-section {
-    right: 55px;
+    right: 64px !important;
   }
   .slot-list-pay-section h6 {
-    left: -24%;
+    left: -24% !important;
   }
-  .slot-main-card {
+  .slot-main-card.uk-grid {
     display: flex !important;
-    justify-content: start !important;
-}
+    justify-content: center !important;
+  }
 
   .slot-list-pay-section-sd {
-    right: 55px;
+    right: 55px !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -24%;
+    left: -24% !important;
   }
 }
 @media (min-width: 913px) and (max-width: 952px){
@@ -1365,21 +1431,21 @@ progress {
     margin: 0 0.5% 55px 7.9% !important;
   }
   .slot-list-pay-section {
-    right: 55px;
+    right: 55px !important;
   }
   .slot-list-pay-section h6 {
-    left: -24%;
+    left: -24% !important;
   }
-  .slot-main-card {
+  .slot-main-card .uk-grid {
     display: flex !important;
     justify-content: start !important;
 }
 
   .slot-list-pay-section-sd {
-    right: 55px;
+    right: 55px !important;
   }
   .slot-list-pay-section-sd h6 {
-    left: -24%;
+    left: -24% !important;
   }
 }
 @media (min-width: 953px) and (max-width: 1024px){
@@ -1387,7 +1453,7 @@ progress {
     width: calc(31% - 10px) !important;
     margin: 0 1.5% 55px -1.1% !important;
     margin-right: 2.5rem !important;
-    left: 7%;
+    left: 7% !important;
   }
   .slot-main-card.uk-grid{
     margin-left: -30px !important;
@@ -1396,21 +1462,57 @@ progress {
     width: calc(31% - 10px) !important;
     margin: 0 1.5% 55px -1.1% !important;
     margin-right: 2.5rem !important;
-    left: 7%;
+    left: 7% !important;
+  }
+  .slot-list-pay-section h6 {
+    left: -16% !important;
+    font-size: 12px !important;
+  }
+  .slot-list-pay-section .slot-list-prize-pool {
+    left: 23% !important;
+    top: 14px !important;
+  }
+  .slot-list-pay-section .slot-list-entry-fee {
+    right: -42% !important;
+    top: 14px !important;
+  }
+  .slotlist-main-titile h3 {
+    left: 16% !important;
+  }
+  .slot-progressbar-left-text {
+    font-size: 10px !important;
+  }
+  .slot-progressbar-right-text {
+    font-size: 10px !important;
+  }
+  .slot-list-progress-bar {
+    width: 51% !important;
+    right: 13px !important;
+  }
+  .slot-list-pay-section span::after {
+    height: 22px !important;
+    left: 4px !important;
+  }
+  .slot-list-pay-section span {
+    right: -62px !important;
+    font-size: 12px !important;
   }
   .slotlist-team-img img {
-    left: -38px;
-    width: 140px;
-    transform: scale(1);
-    top: 61px;
+    left: -39px !important;
+    width: 135px !important;
+    transform: scale(1) !important;
+    top: 61px !important;
+  }
+  .slot-list-progress-bar-sd {
+    width: 52% !important;
   }
 } 
 @media (min-width: 1025px) and (max-width: 1080px){
   .slot-list-carditems {
     width: calc(31% - 10px) !important;
     margin: 0 1.5% 55px -1.1% !important;
-    margin-right: 2.5rem !important;
-    left: 7%;
+    margin-right: 2.7rem !important;
+    left: 8%;
   }
   .slot-main-card.uk-grid{
     margin-left: -30px !important;
@@ -1418,22 +1520,22 @@ progress {
   .slot-list-carditems-sd {
     width: calc(31% - 10px) !important;
     margin: 0 1.5% 55px -1.1% !important;
-    margin-right: 2.5rem !important;
-    left: 7%;
+    margin-right: 2.7rem !important;
+    left: 8% !important;
   }
   .slotlist-team-img img {
-    left: -38px;
-    width: 140px;
-    transform: scale(1);
-    top: 61px;
+    left: -38px !important;
+    width: 140px !important;
+    transform: scale(1) !important;
+    top: 61px !important;
   }
 }
 @media (min-width: 1081px) and (max-width: 1100px){
   .slot-list-carditems {
     width: calc(31% - 10px) !important;
-    margin: 0 1.5% 55px -1.1% !important;
-    margin-right: 2.5rem !important;
-    left: 7%;
+    margin: 0 1.5% 55px -1% !important;
+    margin-right: 2.7rem !important;
+    left: 7% !important;
   }
   .slot-main-card.uk-grid{
     margin-left: -30px !important;
@@ -1442,23 +1544,30 @@ progress {
     width: calc(31% - 10px) !important;
     margin: 0 1.5% 55px -1.1% !important;
     margin-right: 2.5rem !important;
-    left: 7%;
+    left: 7% !important;
   }
   .slotlist-team-img img {
-    left: -38px;
-    width: 140px;
-    transform: scale(1);
-    top: 61px;
+    left: -38px !important;
+    width: 140px !important;
+    transform: scale(1) !important;
+    top: 61px !important;
   }
   .slot-list-pay-section {
-    right: 69px;
+    right: 69px !important;
   }
   .slot-list-pay-section-sd {
-    right: 69px;
+    right: 69px !important;
   }
   .slot-list-pay-section-sd span::after {
-    left: 10px;
+    left: 10px !important;
 
+  }
+  .slot-list-progress-bar-sd {
+    width: 50% !important;
+    right: 19px !important;
+  }
+  .slot_match_date {
+    left: 18% !important;
   }
 }
 @media (min-width: 1101px) and (max-width: 1200px) {
@@ -1478,121 +1587,125 @@ progress {
     left: 7%;
   }
   .slotlist-team-img img {
-    left: -38px;
-    width: 140px;
-    transform: scale(1);
-    top: 61px;
+    left: -38px !important;
+    width: 140px !important;
+    transform: scale(1) !important;
+    top: 61px !important;
   }
   .slot-list-pay-section {
-    right: 60px;
+    right: 60px !important;
   }
   .slot-list-pay-section-sd {
-    right: 55px;
+    right: 55px !important;
   }
   .slot-list-pay-section-sd span::after {
-    left: 10px;
+    left: 10px !important;
 
+  }
+  .slot-list-progress-bar {
+    right: 11px !important;
+  }
+  .slot-list-pay-section span::after {
+    left: 4px !important;
   }
 }
 @media (min-width:1201px) and (max-width:1236px){
   .slot-list-card {
-    height: 221px;
+    height: 221px !important;
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 141px;
-    transform: scale(1.0);
-    top: 61px;
-    height: 97px;
-    object-fit: cover;
+    left: -42px !important;
+    width: 133px !important;
+    transform: scale(1.0) !important;
+    top: 61px !important;
+    height: 97px !important;
+    object-fit: cover !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 9%;
+    left: 9% !important;
   }
   .slot-list-pay-section h6 {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: 6%;
-    font-size: 10px;
-    top: 19px;
+    color: rgb(102 98 98) !important;
+    font-weight: 800 !important;
+    left: 6% !important;
+    font-size: 10px !important;
+    top: 19px !important;
   }
   .slot-list-pay-section-sd h6 {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: 12%;
-    font-size: 10px;
-    top: 20px;
+    color: rgb(102 98 98) !important;
+    font-weight: 800 !important;
+    left: 12% !important;
+    font-size: 10px !important;
+    top: 20px !important;
   }
   .slot-list-pay-section span {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: 71px;
-    font-size: 10px;
-    top: -22px;
+    color: rgb(102 98 98) !important;
+    font-weight: 800 !important;
+    left: 68px !important;
+    font-size: 10px !important;
+    top: -22px !important;
   }
   .slot-list-pay-section-sd span {
-    color: rgb(102 98 98);
-    font-weight: 800;
-    left: 72px;
-    font-size: 10px;
-    top: -22px;
+    color: rgb(102 98 98) !important;
+    font-weight: 800 !important;
+    left: 72px !important;
+    font-size: 10px !important;
+    top: -22px !important;
   }
   .slot-list-pay-section span::after {
-    height: 20px;
-    top: -19px;
-    left: 5px;
+    height: 20px !important;
+    top: -19px !important;
+    left: 4px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 20px;
-    top: -19px;
-    left: 8px;
+    height: 20px !important;
+    top: -19px !important;
+    left: 8px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 42%;
+    left: 42% !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: -3px;
+    top: 7px !important;
+    right: -3px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
-    position: absolute;
-    right: -1px;
-    bottom: 30%;
+    width: 50% !important;
+    position: absolute !important;
+    right: -1px !important;
+    bottom: 30% !important;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
-    position: absolute;
-    right: -1px;
-    bottom: 30%;
+    width: 51% !important;
+    position: absolute !important;
+    right: -1px !important;
+    bottom: 30% !important;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 46%;
+    left: 46% !important;
   }
-  progress {
-    right: -2px;
-  }
+ 
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
-    font-size: 10px;
-    color: rgb(102 98 98);
-    font-weight: 700;
+    font-size: 10px !important;
+    color: rgb(102 98 98) !important;
+    font-weight: 700 !important;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -62%;
-    top: 18px;
+    right: -62% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -60%;
-    top: 18px;
+    right: -60% !important;
+    top: 18px !important;
   }
   .slot_match_date {
-    font-size: 9px;
-    left: 25%;
+    font-size: 9px !important;
+    left: 25% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 5px) !important;
@@ -1600,91 +1713,92 @@ progress {
   .slot-list-carditems-sd {
     width: calc(22% - 5px) !important;
   }
+  .slot-list-pay-section {
+    right: 57px !important;
+}
+
 }
 @media (min-width: 1237px) and (max-width: 1280px) {
   .slot-list-card {
-    height: 221px;
+    height: 221px !important;
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 141px;
-    transform: scale(1.0);
-    top: 61px;
-    height: 97px;
-    object-fit: cover;
+    left: -42px !important;
+    width: 141px !important;
+    transform: scale(1.0) !important;
+    top: 61px !important;
+    height: 97px !important;
+    object-fit: cover !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 9%;
+    left: 9% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 6%;
-    font-size: 11px;
-    top: 19px;
+    left: 6% !important;
+    font-size: 11px !important;
+    top: 19px !important;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 5%;
-    font-size: 11px;
-    top: 20px;
+    left: 5% !important;
+    font-size: 11px !important;
+    top: 20px !important;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 71px;
-    font-size: 11px;
-    top: -22px;
+    left: 71px !important;
+    font-size: 11px !important;
+    top: -22px !important;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 72px;
-    font-size: 11px;
-    top: -22px;
+    left: 72px !important;
+    font-size: 11px !important;
+    top: -22px !important;
   }
   .slot-list-pay-section span::after {
-    height: 20px;
-    top: -20px;
-    left: 4px;
+    height: 20px !important;
+    top: -20px !important;
+    left: 4px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 20px;
-    top: -19px;
-    left: 8px;
+    height: 20px !important;
+    top: -19px !important;
+    left: 8px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 42%;
+    left: 42% !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: -3px;
+    top: 7px !important;
+    right: -3px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
+    width: 50% !important;
     position: absolute;
-    right: 2px;
-    bottom: 30%;
+    right: 2px !important;
+    bottom: 30% !important;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
+    width: 51% !important;
     position: absolute;
-    right: 2px;
-    bottom: 30%;
+    right: 2px !important;
+    bottom: 30% !important;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 46%;
+    left: 46% !important;
   }
   .slot-list-pay-section{
-    right: 60px;
-  }
-  progress {
-    right: -2px;
+    right: 60px !important;
   }
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
@@ -1693,16 +1807,16 @@ progress {
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -62%;
-    top: 18px;
+    right: -62% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -60%;
-    top: 18px;
+    right: -60% !important;
+    top: 18px !important;
   }
   .slot_match_date {
-    font-size: 10px;
-    left: 24%;
+    font-size: 10px !important;
+    left: 24% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 5px) !important;
@@ -1721,99 +1835,97 @@ progress {
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 141px;
-    transform: scale(1.0);
-    top: 61px;
-    height: 97px;
-    object-fit: cover;
+    left: -42px !important;
+    width: 141px !important;
+    transform: scale(1.0) !important;
+    top: 61px !important;
+    height: 97px !important;
+    object-fit: cover !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 9%;
+    left: 9% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
-    top: 19px;
+    left: 2% !important;
+    font-size: 11px !important;
+    top: 19px !important;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
+    left: 2% !important;
+    font-size: 11px !important;
     top: 19px;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 71px;
-    font-size: 11px;
+    left: 71px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 72px;
-    font-size: 11px;
+    left: 72px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section span::after {
-    height: 20px;
-    top: -20px;
-    left: 5px;
+    height: 20px !important;
+    top: -20px !important;
+    left: 5px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 20px;
-    top: -19px;
-    left: 9px;
+    height: 20px !important;
+    top: -19px !important;
+    left: 9px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 42%;
+    left: 42% !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: 8px;
+    top: 7px !important;
+    right: 8px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
+    width: 50% !important;
     position: absolute;
-    right: 8px;
-    bottom: 30%;
+    right: 8px !important;
+    bottom: 30% !important;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
+    width: 51% !important;
     position: absolute;
-    right:7px;
-    bottom: 30%;
+    right:7px !important;
+    bottom: 30% !important;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 46%;
+    left: 46% !important;
   }
-  progress {
-    right: -2px;
-  }
+ 
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
-    font-size: 10px;
+    font-size: 10px !important;
     color: rgb(102 98 98);
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -62%;
-    top: 18px;
+    right: -62% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -60%;
-    top: 18px;
+    right: -60% !important;
+    top: 18px !important;
   }
   .slot_match_date {
-    font-size: 10px;
-    left: 23%;
+    font-size: 10px !important;
+    left: 22% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 5px) !important;
@@ -1822,111 +1934,109 @@ progress {
     width: calc(22% - 5px) !important;
   }
   .slot-list-pay-section {
-    right: 66px;
+    right: 68px !important;
   }
   .slot-list-pay-section-sd {
-    right: 63px;
+    right: 63px !important;
   }
 }
 @media (min-width: 1301px) and (max-width: 1348px) {
   .slot-list-card {
-    height: 221px;
+    height: 221px !important;
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 141px;
-    transform: scale(1.0);
-    top: 61px;
-    height: 97px;
-    object-fit: cover;
+    left: -42px !important;
+    width: 141px !important;
+    transform: scale(1.0) !important;
+    top: 61px !important;
+    height: 97px !important;
+    object-fit: cover !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 9%;
+    left: 9% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
-    top: 19px;
+    left: 2% !important;
+    font-size: 11px !important;
+    top: 19px !important;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
-    top: 19px;
+    left: 2% !important;
+    font-size: 11px !important;
+    top: 19px !important;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 71px;
-    font-size: 11px;
+    left: 71px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 72px;
-    font-size: 11px;
+    left: 72px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section span::after {
-    height: 20px;
-    top: -20px;
-    left: 5px;
+    height: 20px !important;
+    top: -20px !important;
+    left: 5px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 20px;
-    top: -19px;
-    left: 9px;
+    height: 20px !important;
+    top: -19px !important;
+    left: 9px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 42%;
+    left: 42% !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: 8px;
+    top: 7px !important;
+    right: 8px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
+    width: 50% !important;
     position: absolute;
-    right: 8px;
+    right: 8px !important;
     bottom: 30%;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
+    width: 51% !important;
     position: absolute;
-    right:7px;
+    right:7px !important;
     bottom: 30%;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 46%;
+    left: 46% !important;
   }
-  progress {
-    right: -2px;
-  }
+ 
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
-    font-size: 10px;
+    font-size: 10px ;
     color: rgb(102 98 98);
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -62%;
-    top: 18px;
+    right: -54% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -60%;
-    top: 18px;
+    right: -54% !important;
+    top: 18px !important;
   }
   .slot_match_date {
-    font-size: 10px;
-    left: 23%;
+    font-size: 10px !important;
+    left: 23% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 5px) !important;
@@ -1935,10 +2045,10 @@ progress {
     width: calc(22% - 5px) !important;
   }
   .slot-list-pay-section {
-    right: 66px;
+    right: 68px !important;
   }
   .slot-list-pay-section-sd {
-    right: 63px;
+    right: 64px !important;
   }
 }
 @media (min-width: 1349px) and (max-width: 1366px) {
@@ -1947,99 +2057,97 @@ progress {
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 141px;
-    transform: scale(1.0);
-    top: 61px;
-    height: 97px;
-    object-fit: cover;
+    left: -42px !important;
+    width: 141px !important;
+    transform: scale(1.0) !important;
+    top: 61px !important;
+    height: 97px !important;
+    object-fit: cover !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 9%;
+    left: 9% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
+    left: 2% !important;
+    font-size: 11px !important;
     top: 19px;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
+    left: 2% !important;
+    font-size: 11px !important;
     top: 19px;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 71px;
-    font-size: 11px;
+    left: 71px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 72px;
-    font-size: 11px;
+    left: 72px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section span::after {
-    height: 20px;
-    top: -20px;
-    left: 7px;
+    height: 20px !important;
+    top: -20px !important;
+    left: 7px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 20px;
-    top: -19px;
-    left:11px;
+    height: 20px !important;
+    top: -19px !important;
+    left:11px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 42%;
+    left: 42% !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: 8px;
+    top: 7px !important;
+    right: 8px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
+    width: 50% !important;
     position: absolute;
-    right: 8px;
+    right: 8px !important;
     bottom: 30%;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
+    width: 51% !important;
     position: absolute;
-    right:12px;
+    right:12px !important;
     bottom: 30%;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 46%;
+    left: 46% !important;
   }
-  progress {
-    right: -2px;
-  }
+ 
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
-    font-size: 10px;
+    font-size: 10px !important;
     color: rgb(102 98 98);
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -48%;
-    top: 18px;
+    right: -48% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -50%;
-    top: 18px;
+    right: -50% !important;
+    top: 18px !important;
   }
   .slot_match_date {
-    font-size: 10px;
-    left: 23%;
+    font-size: 10px !important;
+    left: 23% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 6px) !important;
@@ -2048,10 +2156,10 @@ progress {
     width: calc(22% - 6px) !important;
   }
   .slot-list-pay-section {
-    right: 70px;
+    right: 70px !important;
   }
   .slot-list-pay-section-sd {
-    right: 70px;
+    right: 70px !important;
   }
 }
 @media (min-width: 1367px) and (max-width: 1400px){
@@ -2060,99 +2168,97 @@ progress {
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 141px;
-    transform: scale(1.0);
-    top: 61px;
-    height: 97px;
-    object-fit: cover;
+    left: -42px !important;
+    width: 141px !important;
+    transform: scale(1.0) !important;
+    top: 61px !important;
+    height: 97px !important;
+    object-fit: cover !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 9%;
+    left: 9% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
+    left: 1% !important;
+    font-size: 11px !important;
     top: 19px;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 2%;
-    font-size: 11px;
+    left: 2% !important;
+    font-size: 11px !important;
     top: 19px;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 71px;
-    font-size: 11px;
+    left: 71px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 72px;
-    font-size: 11px;
+    left: 72px !important;
+    font-size: 11px !important;
     top: -22px;
   }
   .slot-list-pay-section span::after {
-    height: 20px;
-    top: -20px;
-    left: 7px;
+    height: 20px !important;
+    top: -20px !important;
+    left: 7px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 20px;
-    top: -19px;
-    left:11px;
+    height: 20px !important;
+    top: -19px !important;
+    left:11px !important;
   }
   .slot-list-pay-section-sd .slot-list-prize-pool-sd {
-    left: 42%;
+    left: 42% !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: 8px;
+    top: 7px !important;
+    right: 8px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
-    position: absolute;
-    right: 8px;
-    bottom: 30%;
+    width: 50% !important;
+    position: absolute !important;
+    right: 8px !important;
+    bottom: 30% !important;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
-    position: absolute;
-    right:12px;
+    width: 51% !important;
+    position: absolute !important;
+    right:12px !important;
     bottom: 30%;
   }
   .slot-list-pay-section .slot-list-prize-pool {
-    left: 46%;
+    left: 46% !important;
   }
-  progress {
-    right: -2px;
-  }
+  
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
-    font-size: 10px;
+    font-size: 10px !important;
     color: rgb(102 98 98);
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -48%;
-    top: 18px;
+    right: -48% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -50%;
-    top: 18px;
+    right: -50% !important;
+    top: 18px !important;
   }
   .slot_match_date {
-    font-size: 10px;
-    left: 23%;
+    font-size: 10px !important;
+    left: 23% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 6px) !important;
@@ -2161,85 +2267,85 @@ progress {
     width: calc(22% - 6px) !important;
   }
   .slot-list-pay-section {
-    right: 70px;
+    right: 73px !important;
   }
   .slot-list-pay-section-sd {
-    right: 70px;
+    right: 70px !important;
   }
 }
 @media (min-width: 1401px) and (max-width: 1443px){
   .slot-list-card {
-    height: 221px;
+    height: 221px !important;
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 153px;
-    transform: scale(1);
-    top: 61px;
+    left: -42px !important;
+    width: 153px !important;
+    transform: scale(1) !important;
+    top: 61px !important;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 17%;
+    left: 17% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: -19%;
-    font-size: 12px;
-    top: 20px;
+    left: -19% !important;
+    font-size: 12px !important;
+    top: 20px !important;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: -19%;
-    font-size: 12px;
+    left: -19% !important;
+    font-size: 12px !important;
     top: 20px;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 64px;
-    font-size: 12px;
-    top: -22px;
+    left: 64px !important;
+    font-size: 12px !important;
+    top: -22px !important;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 64px;
-    font-size: 12px;
+    left: 64px !important;
+    font-size: 12px !important;
     top: -22px;
   }
   .slot-list-pay-section span::after {
-    height: 23px;
-    top: -20px;
-    left: 5px;
+    height: 23px !important;
+    top: -20px !important;
+    left: 5px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 23px;
-    top: -20px;
-    left: 7px;
+    height: 23px !important;
+    top: -20px !important;
+    left: 7px !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: 8px;
+    top: 7px !important;
+    right: 8px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
-    position: absolute;
-    right: 11px;
-    bottom: 30%;
+    width: 50% !important;
+    position: absolute !important;
+    right: 11px !important;
+    bottom: 30% !important;
   }
   .slot-list-pay-section {
-    right: 60px;
+    right: 60px !important;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
-    position: absolute;
-    right: 8px;
-    bottom: 30%;
+    width: 51% !important;
+    position: absolute !important;
+    right: 8px !important;
+    bottom: 30% !important;
   }
   .slot-progressbar-left-text,
   .slot-progressbar-right-text {
@@ -2248,92 +2354,90 @@ progress {
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -29%;
-    top: 18px;
+    right: -29% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -36%;
-    top: 18px;
+    right: -36% !important;
+    top: 18px !important;
   }
-  progress {
-    width: 102%;
-  }
+  
   .slot-list-progress-bar-sd {
-    right: 11px;
+    right: 11px !important;
   }
 }
 @media (min-width: 1444px) and (max-width: 1480px){
   .slot-list-card {
-    height: 221px;
+    height: 221px !important;
   }
 
   .slotlist-team-img img {
-    left: -42px;
-    width: 153px;
-    transform: scale(1);
+    left: -42px !important;
+    width: 153px !important;
+    transform: scale(1) !important;
     top: 61px;
   }
   .slot-list-reg-section {
-    position: absolute;
+    position: absolute !important;
   }
   .slotlist-main-titile h3 {
-    left: 17%;
+    left: 17% !important;
   }
   .slot-list-pay-section h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: -19%;
-    font-size: 12px;
+    left: -19% !important;
+    font-size: 12px !important;
     top: 20px;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: -19%;
-    font-size: 12px;
+    left: -19% !important;
+    font-size: 12px !important;
     top: 20px;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 64px;
-    font-size: 12px;
+    left: 64px !important;
+    font-size: 12px !important;
     top: -22px;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
-    left: 64px;
-    font-size: 12px;
+    left: 64px !important;
+    font-size: 12px !important;
     top: -22px;
   }
   .slot-list-pay-section span::after {
-    height: 23px;
-    top: -20px;
-    left: 5px;
+    height: 23px !important;
+    top: -20px !important;
+    left: 5px !important;
   }
   .slot-list-pay-section-sd span::after {
-    height: 23px;
-    top: -20px;
-    left: 7px;
+    height: 23px !important;
+    top: -20px !important;
+    left: 7px !important;
   }
   .slotlist-rule {
-    top: 7px;
-    right: 8px;
+    top: 7px !important;
+    right: 8px !important;
   }
   .slot-list-progress-bar {
-    width: 50%;
-    position: absolute;
-    right: 11px;
+    width: 50% !important;
+    position: absolute !important;
+    right: 11px !important;
     bottom: 30%;
   }
   .slot-list-pay-section {
-    right: 60px;
+    right: 60px !important;
   }
   .slot-list-progress-bar-sd {
-    width: 51%;
-    position: absolute;
-    right: 8px;
+    width: 51% !important;
+    position: absolute !important;
+    right: 8px !important;
     bottom: 30%;
   }
   .slot-progressbar-left-text,
@@ -2343,22 +2447,19 @@ progress {
     font-weight: 700;
   }
   .slot-list-pay-section .slot-list-entry-fee {
-    right: -29%;
-    top: 18px;
+    right: -29% !important;
+    top: 18px !important;
   }
   .slot-list-pay-section-sd .slot-list-entry-fee-sd {
-    right: -36%;
-    top: 18px;
+    right: -36% !important;
+    top: 18px !important;
   }
-  progress {
-    width: 102%;
-  }
+  
   .slot-list-progress-bar-sd {
-    right: 11px;
+    right: 11px !important;
   }
 }
-@media (min-width: 1481px) and (max-width: 1500px){
- 
+  @media only screen  and (max-width:1500px){
     .slot-list-card {
       height: 221px;
     }
