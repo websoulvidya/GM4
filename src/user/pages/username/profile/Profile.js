@@ -10,13 +10,20 @@ import { Link} from 'react-router-dom';
 import Profilepic1 from './../../../assets/user-profile/Profilepic1.jpeg';
 import Userprofilebanner from './../../../assets/user-profile/Userprofilebanner.jpg';
 
-
-
+import {useLayoutEffect} from 'react';
 
 
 function Profile() {
  
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+
   return (
+
+
+ 
+
     <div>
       <Userheader/>
       

@@ -20,6 +20,8 @@ import {useLayoutEffect} from 'react';
 
 
 
+
+
 import * as yup from 'yup';
 
 
@@ -95,9 +97,7 @@ function OrgEditProfile() {
           
           .required(' **User Name required')
 
-          .matches({re},'**Invalid Username')
-
-         // .matches('/^[^.\s]/' ,'**Invalid Username')
+          .matches('^[A-Za-z_-]*$' ,'**Invalid Username')
          ,
   
        
