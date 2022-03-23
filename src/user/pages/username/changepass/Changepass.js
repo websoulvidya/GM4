@@ -17,9 +17,15 @@ import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 
+import {useLayoutEffect} from 'react';
+
 {/*Change password form validation function */}
 
 function Changepass() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
 
 
   const [open, setOpen] = React.useState(false);

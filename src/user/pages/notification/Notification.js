@@ -7,12 +7,20 @@ import './Notification.css';
 import moment from 'moment';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import { Link } from 'react-router-dom';
+import {useLayoutEffect} from 'react';
 
 
 
 
 
 function Notification() {
+  
+    useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+
+
+  
   return(
     <div>
        <Userheader/>
