@@ -5,7 +5,9 @@ body{
     
   
 }
-
+.invalideBorder{
+    border: 1px solid red !important;
+}
 .scrimscircles{
     background-repeat:no-repeat;
     background-image: url("../../assets/Scrims/bgcirclenew.png");
@@ -65,7 +67,7 @@ body{
     border: 1px solid #6bdcfc;
     color: white;
     border-radius: 5px;
-    bottom: -59px;
+    bottom: -37px;
     position: relative;
 }
 .scrimregbtn:hover{
@@ -84,7 +86,7 @@ body{
     border: 1px solid #6bdcfc !important;
 }
 .uk-margin {
-    margin-bottom: 4px !important;
+    margin-bottom: 4px;
 }
 .scrims_regform{
     margin-left: 22%;
@@ -121,26 +123,30 @@ body{
     color: #979393;
     cursor: pointer;
   }
-  .slotlist_content{
+  .scrims_slotlist_content{
     position: absolute;
     width: 100%;
     padding: 0;
-    z-index: 1;
+    z-index: 0;
     left: 0px;
     color: #979393;
     margin-top: 20px!important;
-    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 30px -10px rgb(0 0 0 / 10%);
     cursor: pointer;
   }
-  .slotlist_item{
+  .scrims_slotlist_item{
     display: block;
-    padding: 15px;
+    padding: 10px;
     background-color: #fff;
     transition: all 0.2s;
-    left: 44%;
+   
   }
+  .scrims_slotlist_item p{
+ position: relative;
+ left:-31%;
+  } 
 
-  .slotlist_item:hover{
+  .scrims_slotlist_item:hover{
    
     background-color: #ffff
   }
@@ -149,6 +155,28 @@ body{
     right: -35%;
     top: 4px;
   }
+
+    /* ERROR MESSAGE */
+    .scrimerrormsgleft{
+
+        font-size: 13px;
+        position: absolute;
+        left: 5%;
+        bottom: -50%;
+        color: red;
+        font-weight: 500;
+        text-align: left;
+        }
+        .scrimerrormsgright{
+        font-size: 13px;
+        position: absolute;
+        left: 15px;
+        bottom: -50%;
+        color: red;
+        font-weight: 500;
+      
+        text-align: left;
+        }
   @media (min-width: 200px) {
     .scrimsslot_dropdown {
         width:calc(100% - 17px);
@@ -156,8 +184,7 @@ body{
     .scrims_joinhead{
         font-size: 19px;
           }
-          
-  }
+        }
   @media (min-width: 400px) {
     .scrimsslot_dropdown {
         width:calc(100% - 17px);
@@ -165,7 +192,7 @@ body{
     .scrims_joinhead{
         font-size: 25px;
           }
-          
+      
   }
   @media (min-width: 640px) {
     .scrimsslot_dropdown {
@@ -187,18 +214,38 @@ body{
   }
 
 /*  */
-
+@media only screen and (min-device-width: 100px)and (max-device-width : 519px) {
+    .reginput.uk-margin{
+        margin-top: 35px !important;
+    }
+    .scrimerrormsgleft{
+        left: 11%;
+        bottom: -96%;
+         }
+        .scrimerrormsgright{
+            left: 23px;
+            top: 100%;
+           width: 94%;
+        }
+        .scrims_slotlist_content{
+            z-index: 1;
+          }
+}
 @media only screen and (min-device-width: 100px)and (max-device-width : 640px) {
+ 
        .scrimsslot_btn {
           left: -32%;
         }
-
     .scrims_regform{
         width: 60%;
         margin-left: 15%;
-        height: 1081px;
+        height: 1199px;
         
     } 
+    .scrimscircles {
+           height: 953px!important;
+        }
+        
     .scrims_selectdownicon {
         right: -25%;
         
@@ -214,7 +261,7 @@ body{
     .scrims_smallcircles{
         height: 1123px !important;
     }
-
+  
 }
 
 @media only screen and (min-device-width: 641px) and (max-device-width : 960px){
@@ -240,6 +287,7 @@ body{
         height: 3rem;
         
     }
+   
 }
 
 @media only screen and (min-device-width: 961px) and (max-device-width : 1100px){
@@ -299,6 +347,13 @@ body{
         top: 28px;
        
     } 
+    .dailymatchcircles{
+        background-repeat:no-repeat;
+        background-image: url("../../assets/Scrims/bgcirclenew.png");
+        background-size: cover;
+        margin-top: 0%;
+        height: 1060px;
+    }
 }
 @media only screen and (min-device-width: 1501px) and (max-device-width : 1599px){
   
@@ -312,6 +367,13 @@ body{
         top: 28px;
        
     } 
+    .dailymatchcircles{
+        background-repeat:no-repeat;
+        background-image: url("../../assets/Scrims/bgcirclenew.png");
+        margin-top: 0%;
+        height: 1170px;
+       
+    }
 }
 @media only screen and (min-device-width: 1600px) and (max-device-width : 2000px){
     .scrims_regform{
@@ -323,6 +385,13 @@ body{
         top: 28px;
        
     } 
+    .dailymatchcircles{
+        background-repeat:no-repeat;
+        background-image: url("../../assets/Scrims/bgcirclenew.png");
+        margin-top: 0%;
+        height: 1170px;
+       
+    }
 }
 
 @media only screen and (min-device-width : 2400px) and (max-width : 2800px){
@@ -340,6 +409,7 @@ body{
     .dailymatchcircles{
         background-repeat:no-repeat;
         background-image: url("../../assets/Scrims/bgcirclenew.png");
+ 
        
     }
     .regheader:before{
