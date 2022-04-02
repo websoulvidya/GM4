@@ -340,6 +340,11 @@ body{
 .rules_modal::-webkit-scrollbar-thumb:hover {
     background-color: #6BDCFC;
 }
+.dailymatch_rules_modal li{
+    margin: 1rem;
+    margin-left: 0rem;
+    text-align: justify;
+}
 /* end */
 
 /* bg circle */

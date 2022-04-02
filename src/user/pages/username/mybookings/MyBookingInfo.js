@@ -23,10 +23,12 @@ const style = {
 };
 //Use form is an npm package which is used to validate forms in react
 function MyBookingInfo() {
-    const { register, watch, handleSubmit, formState: { errors }, reset } = useForm()
-    const submitData = (data) => {
+    const { register, watch, handleSubmit, formState: { errors }, reset,trigger} = useForm()
+    const submitData = (data,validate) => {
+        validate.team_name="";
         console.log(data);
         reset();
+        
     }
     //useState for modal
     const [open, setOpen] = React.useState(false);
@@ -122,33 +124,39 @@ function MyBookingInfo() {
                     <form onSubmit={handleSubmit(submitData)} className="myInfo_form">
                         <fieldset className="uk-fieldset">
                             <div className="uk-margin">
-                                <input className="uk-input" type="text" id="teamname" name="teamname" placeholder="Team Name" {...register('teamname', { required: "**Team Name is Required",pattern:{value:/^[a-zA-Z0-9_.-]*$/,message:"**Only Alphabets and numbers allowed"}})} maxLength={30} onChange={(event)=>{
-                                    if (event.target.value === " " && validate.team_name.length === 0) {
-                                        event.preventDefault();
-                                    } else {
-                                        setValidate({
-                                            ...validate,
-                                            team_name: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[0-9]/g, "")
-                                        })
-                                    }
-                                }} value={validate.team_name}/>
+                                <input className="uk-input" type="text" id="teamname" name="teamname" placeholder="Team Name" {...register('teamname', { required: "**Team Name is Required",pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"**Only Alphabets and numbers allowed and no first space"}})} maxLength={30} 
+                                // onChange={(event)=>{
+                                //     if (event.target.value === " " && validate.team_name.length === 0) {
+                                //         event.preventDefault();
+                                //     } else {
+                                //         setValidate({
+                                //             ...validate,
+                                //             team_name: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[0-9]/g, "")
+                                            
+                                //         })
+                                //     }
+                                // }}
+                                // value={validate.team_name}  
+                                autoComplete='off' onKeyUp={()=>{trigger("teamname")}}/>
                                 {errors.teamname && (<p className='MyBookingerrormsgleft'>{errors.teamname.message}</p>)}
                             </div>
                             <div className="uk-margin">
-                                <input className="uk-input" type="text" placeholder="Slot Number" id="slotnumber" name="slotnumber" {...register('slotnumber', { required: "** Slot number is Required",pattern:{value:/^[0-9]*$/,message:"**Only Numbers are allowed"} })} maxLength={30} onChange={(event)=>{
-                                    if (event.target.value === " " && validate.slot_number.length === 0) {
-                                        event.preventDefault();
-                                    } else {
-                                        setValidate({
-                                            ...validate,
-                                            slot_number: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[a-zA-z#!@$&]/g, "")
-                                        })
-                                    }
-                                }} value={validate.slot_number}/>
+                                <input className="uk-input" type="text" placeholder="Slot Number" id="slotnumber" name="slotnumber" {...register('slotnumber', { required: "** Slot number is Required",pattern:{value:/^[0-9]*$/,message:"**Only Numbers are allowed"} })} maxLength={30} 
+                                // onChange={(event)=>{
+                                //     if (event.target.value === " " && validate.slot_number.length === 0) {
+                                //         event.preventDefault();
+                                //     } else {
+                                //         setValidate({
+                                //             ...validate,
+                                //             slot_number: event.currentTarget.value.replace(/[^\w\s]/gi, "").replace(/[a-zA-z#!@$&]/g, "")
+                                //         })
+                                //     }
+                                // }} value={validate.slot_number}
+                                autoComplete='off' onKeyUp={()=>{trigger("slotnumber")}}/>
                                 {errors.slotnumber && (<p className='MyBookingerrormsgleft'>{errors.slotnumber.message}</p>)}
                             </div>
                             <div className="uk-margin">
-                                <textarea className="uk-textarea" type="textarea" id="Reason_For_Cancellation" name="Reason_For_Cancellation" placeholder="Reason For Cancellation" {...register('Reason_For_Cancellation', { required: "**Reason For Cancellation is Required",pattern:{value:/^[a-zA-Z0-9\s'".?]*$/,message:"**Only Alphabets and Numbers are allowed"} })} maxLength={30}/>
+                                <textarea className="uk-textarea" type="textarea" id="Reason_For_Cancellation" name="Reason_For_Cancellation" placeholder="Reason For Cancellation" {...register('Reason_For_Cancellation', { required: "**Reason For Cancellation is Required",pattern:{value:/^[^@\s#$!][a-zA-Z0-9\s.-_?]*$/,message:"**Only Alphabets and Numbers are allowed and no first space"} })} maxLength={30} onKeyUp={()=>{trigger("Reason_For_Cancellation")}}/>
                                 {errors.Reason_For_Cancellation && (<p className='MyBookingerrormsgleft'>{errors.Reason_For_Cancellation.message}</p>)}
                             </div>
                             <div className="uk-margin"></div>

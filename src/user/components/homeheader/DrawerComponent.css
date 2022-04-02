@@ -49,13 +49,20 @@ body{
     margin-left:600px;
     margin-top: -10px;
     }
-    #header-menuicon{
+    /* #header-menuicon{
         margin-left:600px;
         width:50px;
         height:150px;
         display:flex;
         margin-top: -55px;
         
+    } */
+    #header-moreicon{
+        /* bottom:-200px; */
+        margin-left:620px;
+        width: 300px;
+        margin-top: -1030px;
+
     }
     .header-link{
     font-size: 20px;
@@ -83,22 +90,29 @@ body{
         margin-top:5px;
         color:rgb(102 98 98);
     }
-    #header-searchbar{
+    /* #header-searchbar{
         margin-left: 15px;
         margin-right: 15px;
         width:80ch;
         height:40px;
         margin-top:400px;
+    } */
+    #header-searchbar{
+        margin-left: 10px;
+        margin-right: 10px;
+        width:60ch;
+        height:38px;
+        margin-bottom:480px;
     }
     #header-searchicon{
-        margin-left:92%;
+        margin-left:90%;
         margin-top: 0px;
     }
     #search-content{
         align-items: center;
         margin-top:2px;
-        margin-left: -10px;
-        margin-right: 160px;
+        margin-left: -90px;
+        margin-right: 250px;
         align-items: left;
     }
 }
@@ -121,13 +135,19 @@ body{
     margin-left:430px;
     margin-top: -10px;
     }
-    #header-menuicon{
+    /* #header-menuicon{
         margin-left:430px;
         width:50px;
         height:150px;
         display:flex;
         margin-top: -55px;
         
+    } */
+    #header-moreicon{
+        /* bottom:-200px; */
+        margin-left:450px;
+        width: 300px;
+        margin-top: -800px;
     }
     .header-link{
     font-size: 20px;
@@ -155,20 +175,27 @@ body{
         margin-top:5px;
         color:rgb(102 98 98);
     }
-    #header-searchbar{
+    /* #header-searchbar{
         margin-left: 15px;
         margin-right: 15px;
         width:60ch;
         height:38px;
         margin-top:420px;
+    } */
+    #header-searchbar{
+        margin-left: -38px;
+        margin-right: 10px;
+        width:50ch;
+        height:38px;
+        margin-bottom:363px;
     }
     #header-searchicon{
-        margin-left:90%;
+        margin-left:85%;
     }
     #search-content{
         align-items: center;
         margin-top:2px;
-        margin-left: -10px;
+        margin-left: -70px;
         margin-right: 160px;
         align-items: left;
     }
@@ -193,13 +220,18 @@ body{
     margin-left:300px;
     margin-top: -10px;
     }
-    #header-menuicon{
+    /* #header-menuicon{
         margin-left:370px;
         width:50px;
         height:150px;
         display:flex;
-        margin-top: -55px;
-        
+        margin-top: -55px;  
+    } */
+    #header-moreicon{
+        /* bottom:-200px; */
+        margin-left:390px;
+        width: 300px;
+        margin-top: -710px;
     }
     .header-link{
     font-size: 20px;
@@ -227,20 +259,27 @@ body{
         margin-top:5px;
         color:rgb(102 98 98);
     }
-    #header-searchbar{
+    /* #header-searchbar{
         margin-left: 15px;
         margin-right: 15px;
         width:55ch;
         height:38px;
         margin-top:400px;
+    } */
+    #header-searchbar{
+        margin-left: -38px;
+        margin-right: 10px;
+        width:45ch;
+        height:38px;
+        margin-bottom:320px;
     }
     #header-searchicon{
-        margin-left:90%;
+        margin-left:85%;
     }
     #search-content{
         align-items: center;
         margin-top:2px;
-        margin-left: -10px;
+        margin-left: -30px;
         margin-right: 160px;
         align-items: left;
     }
@@ -265,14 +304,19 @@ body{
     margin-left:200px;
     margin-top: -10px;
     }
-    #header-menuicon{
+    /* #header-menuicon{
         margin-left:240px;
         width:50px;
         height:150px;
         display:flex;
-        margin-top: -55px;
+        margin-top: -55px; 
+    } */
+    #header-moreicon{
+        /* bottom:-200px; */
+        margin-left:250px;
+        width: 300px;
+        margin-top: -510px;
 
-        
     }
     .header-link{
     font-size: 20px;
@@ -297,12 +341,19 @@ body{
         margin-top:5px;
         color:rgb(102 98 98);
     }
-    #header-searchbar{
+    /* #header-searchbar{
         margin-left: 15px;
         margin-right: 15px;
         width:45ch;
         height:38px;
         margin-top:400px;
+    } */
+    #header-searchbar{
+        margin-left: -38px;
+        margin-right: 10px;
+        width:31ch;
+        height:38px;
+        margin-bottom:220px;
     }
     #header-searchicon{
         margin-left:80%;
@@ -336,7 +387,7 @@ body{
     margin-left:150px;
     margin-top: -10px;
     }
-    #header-menuicon{
+    /* #header-menuicon{
         margin-left:205px;
         width:50px;
         height:150px;
@@ -344,6 +395,12 @@ body{
         margin-top: -55px;
 
         
+    } */
+    #header-moreicon{
+        /* bottom:-200px; */
+        margin-left:215px;
+        width: 300px;
+        margin-top: -455px;
     }
     .header-link{
     font-size: 20px;
@@ -370,12 +427,19 @@ body{
         margin-top:5px;
         color:rgb(102 98 98);
     }
-    #header-searchbar{
+    /* #header-searchbar{
         margin-left: 15px;
         margin-right: 15px;
         width:38ch;
         height:38px;
         margin-top:350px;
+    } */
+    #header-searchbar{
+        margin-left: -38px;
+        margin-right: 10px;
+        width:27ch;
+        height:38px;
+        margin-bottom:193px;
     }
     #header-searchicon{
         margin-left:80%;
@@ -383,7 +447,7 @@ body{
     #search-content{
         align-items: center;
         margin-top:2px;
-        margin-left: -10px;
+        margin-left: -12px;
         margin-right: 160px;
         align-items: left;
     }
@@ -408,15 +472,21 @@ body{
      margin-top: -10px;
      color:#6BDCFC;
     }
-    #header-menuicon{
+    /* #header-menuicon{
         margin-left:150px;
         width:50px;
         height:160px;
         display:flex;
-        color:#6BDCFC;
         margin-top: -55px;
 
        
+    } */
+    #header-moreicon{
+        /* bottom:-200px; */
+        margin-left:180px;
+        width: 200px;
+        margin-top: -415px;
+
     }
  .header-link{
     font-size: 20px;
@@ -444,20 +514,20 @@ body{
         color:rgb(102 98 98);
     }
     #header-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:32ch;
+        margin-left: -35px;
+        margin-right: 10px;
+        width:24ch;
         height:38px;
-        margin-top:350px;
+        margin-bottom:170px;
     }
     #header-searchicon{
-        margin-left:80%;
+        margin-left:70%;
     }
     #search-content{
         align-items: center;
         margin-top:2px;
-        margin-left: -10px;
-        margin-right: 160px;
+        /* margin-left: -10px; */
+        margin-right: 120px;
         align-items: left;
     }
 }
