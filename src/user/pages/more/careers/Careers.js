@@ -254,7 +254,7 @@ function Careers() {
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
                                         <input className="uk-input" type="file" placeholder="Upload Resume"
                                             autoComplete='off' {...register('scrnshot', {
-                                                required: "**Resume is required ",
+                                                required: "**Upload Resume ",
                                                 validate: {
                                                     // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
 
