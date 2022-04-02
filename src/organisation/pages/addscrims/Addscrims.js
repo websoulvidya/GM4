@@ -30,22 +30,26 @@ const style = {
 
 function Adddscrims() {
   // for validation
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
-  const submitData = (data) => {
-    console.log(data);
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  //   reset,
+  // } = useForm();
+  // const submitData = (data) => {
+  //   console.log(data);
+  //   reset();
+  // };
+  const { register, watch, handleSubmit, formState: { errors }, reset,trigger} = useForm()
+  const submitData = (data) =>{
     reset();
-  };
-const [orgName, setorgName] = useState("");
-const handleKeyDown = (e) => {
-  if (e.key === " " && orgName.length===0) {
-    e.preventDefault();
-  }
-};
+    };
+// const [orgName, setorgName] = useState("");
+// const handleKeyDown = (e) => {
+//   if (e.key === " " && orgName.length===0) {
+//     e.preventDefault();
+//   }
+// };
 
 
 
@@ -97,7 +101,7 @@ const handleKeyDown = (e) => {
       </div>
       <div class="addscrims_main">
         <div className="addscrims_header">
-          <h1>Registeration</h1>
+          <h1>Registration</h1>
         </div>
         <div>
           <form class="addscrims_regform" onSubmit={handleSubmit(submitData)}>
@@ -112,12 +116,13 @@ const handleKeyDown = (e) => {
                   id="scrimname"
                   {...register("scrimname", {
                     required: "**organization Name is Required", 
-                  })}
+                    pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"**Only Alphabets and numbers allowed and no first space"}})}
                   autoComplete="off"
+                  onKeyUp={()=>{trigger("scrimname")}}
                   maxLength={30}
-                onChange= {(e)=>setorgName(e.target.value.replace(/[^\w\s]/gi,"").replace(/[0-9]/g,"") )}
-                value={orgName}
-                onKeyDown={handleKeyDown}
+                // onChange= {(e)=>setorgName(e.target.value.replace(/[^\w\s]/gi,"").replace(/[0-9]/g,"") )}
+                // value={orgName}
+                // onKeyDown={handleKeyDown}
                 
                 />
                 {errors.scrimname && (
@@ -136,7 +141,8 @@ const handleKeyDown = (e) => {
                   minDate={new Date()}
       showDisabledMonthNavigation
       onChangeRaw={(e) => e.preventDefault()}
-                  
+    
+      isClearable={true}
                 />
                 
 

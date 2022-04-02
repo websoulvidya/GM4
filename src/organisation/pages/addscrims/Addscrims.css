@@ -1,489 +1,491 @@
 body {
-    margin: auto;
-    font-family: open sans;
-    overflow-x: hidden;
-  }
-  /* background section */
-  .addscrims_main {
-    background-repeat: no-repeat;
-    background-image: url("../../assets/scrims/BAB1.png");
-    background-size: cover;
-    overflow-x: hidden;
-  }
-  
-  
-  /* header section */
-  .addscrims_header {
-    height: 7rem;
-    width: -webkit-fill-available;
-    background-color: #87ceeb;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding-left: 6rem;
-    /* margin-top: 30px; */
-    margin-bottom: 30px;
-    align-items: center !important;
-    display: flex;
-    margin-top: 64px;
+  margin: auto;
+  font-family: open sans;
+  overflow-x: hidden;
+}
+/* background section */
+.addscrims_main {
+  background-repeat: no-repeat;
+  background-image: url("../../assets/scrims/BAB1.png");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+
+/* header section */
+.addscrims_header {
+  height: 7rem;
+  width: -webkit-fill-available;
+  background-color: #6bdcfc;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  /* margin-top: 30px; */
+  margin-bottom: 30px;
+  align-items: center !important;
+  display: flex;
+  margin-top: 64px;
+}
+.addscrims_header h1 {
+  text-align: left;
+  font-size: 46px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.addscrims_header h1:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 3rem;
+  background-color: white;
+  left: 64px;
+  top: 86px;
+  opacity: 0.5;
+}
+
+
+/* Form section  */
+.reg_join_head {
+  text-align: left;
+}
+.addscrims_open_btn {
+  background-color: #6bdcfc;
+  font-size: 20px;
+  padding-left: 10.5%;
+  padding-right: 10.5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -4.5px;
+  margin-right: 5%;
+  border: 1px solid #6bdcfc;
+  color: white;
+  border-radius: 5px;
+}
+.addscrims_open_btn:hover {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none !important;
+
+}
+.addscrims_slotlist_btn {
+  background-color: #6bdcfc;
+  font-size: 20px;
+  padding-left: 10.5%;
+  padding-right: 10.5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 5%;
+  border: 1px solid #6bdcfc;
+  color: white;
+  border-radius: 5px;
+}
+.addscrims_slotlist_btn:hover {
+  cursor: pointer;
+}
+.addscrims_close_btn {
+  background-color: #6bdcfc;
+  font-size: 20px;
+  padding-left: 10.5%;
+  padding-right: 10.5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #6bdcfc;
+  color: white;
+  border-radius: 5px;
+}
+.addscrims_close_btn:hover {
+  cursor: pointer;
+}
+.uk-input {
+  border-radius: 5px !important;
+}
+.uk-input:hover {
+  border: 1px solid #6bdcfc;
+}
+.uk-input:focus {
+  border: 1px solid #6bdcfc !important;
+}
+.addscrims_regform {
+  margin-left: 22%;
+  border: 1px solid #6bdcfc;
+  padding: 20px;
+  width: 50%;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: #ffff;
+}
+/* validation error section  */
+.errormsg {
+  font-size: 13px;
+  color: red;
+  font-weight: 500;
+  float: left;
+  padding-bottom: 20px;
+}
+
+/* dropdown section  */
+.opt {
+  color: rgb(118, 118, 118) !important;
+  width: auto;
+}
+/* form date and time section  */
+#addscrims_dat {
+  border: none;
+  color: #666;
+  font-size: 15px;
+  margin-top: 10px;
+  outline: none;
+  width: 100%;
+}
+.react-datepicker {
+  font-family: open sans !important;
+  margin-top: -6px !important;
+  margin-bottom: -13px !important;
+  border: 1px solid #6bdcfc !important;
+}
+.react-datepicker__header {
+  background-color: #6bdcfc !important;
+  border: transparent !important;
+}
+.react-datepicker__navigation-icon::before {
+  border-color: white !important;
+}
+.react-datepicker__navigation-icon {
+  z-index: 9999 !important;
+}
+.react-datepicker__navigation {
+  top: 10px !important;
+}
+.react-datepicker__current-month {
+  color: white !important;
+}
+.react-datepicker__day:hover {
+  background-color: #6bdcfc !important;
+  color: #ffff !important;
+}
+.react-datepicker__day--selected {
+  background-color: #6bdcfc !important;
+  color: #ffff !important;
+}
+.react-datepicker__day--keyboard-selected {
+  border-radius: 2.3rem;
+  background-color: #6bdcfc !important;
+}
+.react-datepicker__day-name {
+  color: white !important;
+}
+.react-datepicker__triangle::before {
+  left: -120px !important;
+  border-bottom-color: #6bdcfc !important;
+}
+.react-datepicker__triangle::after {
+  left: -120px !important;
+  border-bottom-color: #6bdcfc !important;
+}
+.react-datepicker__time-container {
+  width: 150px !important;
+  border: none !important;
+}
+.react-datepicker__time-box {
+  overflow: hidden !important;
+  margin: 0 auto !important;
+  width: 150px !important;
+}
+.react-datepicker-time__header {
+  color: white !important;
+}
+.react-datepicker__time-list-item--selected {
+  background-color: #6bdcfc !important;
+}
+.react-datepicker__time-list-item {
+  overflow: hidden !important;
+}
+.react-datepicker__time-list-item:hover {
+  background-color: #6bdcfc !important;
+  color: #ffff !important;
+}
+
+
+/* modal section  */
+#modal-modal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#modal-modal-description h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+#modal-modal-description span {
+  text-align: center;
+  font-weight: bold;
+}
+#modal-modal-description img {
+  height: 6rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.modal_box_org {
+  border: none !important;
+  border-radius: 11px;
+}
+
+.button_area-s{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 80%;
+  margin-right: auto;
+}
+.button_area-s button{
+  width: 45%;
+  cursor: pointer;
+}
+
+/* drodown section  */
+.css-1s2u09g-control:hover{
+  border: 1px solid #6BDCFC !important;
+}
+.css-1okebmr-indicatorSeparator{
+  display: none !important;
+}
+.css-b62m3t-container{
+  text-align: left;
+}
+.css-6j8wv5-Input{
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+.css-739597-control{
+  box-shadow: none !important;
+}
+
+@media only screen and (max-device-width: 425px) {
+  .addscrims_header{
+    margin-top: 55px;
   }
   .addscrims_header h1 {
-    text-align: left;
-    font-size: 46px;
-    font-weight: 700;
-    color: white;
-    text-transform: uppercase;
+    font-size: 32px;
+    margin-left: -51px;
+    margin-top: 10px;
   }
   .addscrims_header h1:before {
+    left: 27px;
+    top: 90px;
+    height: 2rem;
+  }
+  .addscrims_main {
+    background-image: none;
+  }
+}
+
+@media only screen and (max-device-width: 640px) {
+  .addscrims_header{
+    margin-top: 55px;
+  }
+  .addscrims_open_btn {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
+  .match-fixing {
+    width: 200px !important;
+  }
+  .addscrims_main {
+    background-image: none;
+  }
+  .addscrims_slotlist_btn {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
+  .addscrims_close_btn {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
+  .addscrims_regform {
+    width: 60%;
+    margin-left: 15%;
+  }
+  .regheader:before {
     content: "";
     position: absolute;
     width: 6px;
-    height: 3rem;
-    background-color: white;
-    left: 64px;
-    top: 86px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 60px;
+    top: 70px;
     opacity: 0.5;
   }
-  
-  
-  /* Form section  */
-  .reg_join_head {
-    text-align: left;
+  .regheader {
+    padding-left: 20%;
   }
-  .addscrims_open_btn {
-    background-color: #6bdcfc;
-    font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: -4.5px;
-    margin-right: 5%;
-    border: 1px solid #6bdcfc;
-    color: white;
-    border-radius: 5px;
-  }
-  .addscrims_open_btn:hover {
-    cursor: pointer;
-  }
-  a:hover {
-    text-decoration: none !important;
-  
-  }
-  .addscrims_slotlist_btn {
-    background-color: #6bdcfc;
-    font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 5%;
-    border: 1px solid #6bdcfc;
-    color: white;
-    border-radius: 5px;
-  }
-  .addscrims_slotlist_btn:hover {
-    cursor: pointer;
-  }
-  .addscrims_close_btn {
-    background-color: #6bdcfc;
-    font-size: 20px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #6bdcfc;
-    color: white;
-    border-radius: 5px;
-  }
-  .addscrims_close_btn:hover {
-    cursor: pointer;
-  }
-  .uk-input {
-    border-radius: 5px !important;
-  }
-  .uk-input:hover {
-    border: 1px solid #6bdcfc;
-  }
-  .uk-input:focus {
-    border: 1px solid #6bdcfc !important;
-  }
-  .addscrims_regform {
-    margin-left: 22%;
-    border: 1px solid #6bdcfc;
-    padding: 20px;
-    width: 50%;
-    border-radius: 5px;
-    z-index: 1;
-    background-color: #ffff;
-  }
-  /* validation error section  */
-  .errormsg {
-    font-size: 13px;
-    color: red;
-    font-weight: 500;
-    float: left;
-    padding-bottom: 20px;
+  .addscrims_select-box__list {
+    width: 100% !important;
   }
   
-  /* dropdown section  */
-  .opt {
-    color: rgb(118, 118, 118) !important;
-    width: auto;
-  }
-  /* form date and time section  */
-  #addscrims_dat {
-    border: none;
-    color: #666;
-    font-size: 15px;
-    margin-top: 10px;
-    outline: none;
-    width: 100%;
-  }
-  .react-datepicker {
-    font-family: open sans !important;
-    margin-top: -6px !important;
-    margin-bottom: -13px !important;
-    border: 1px solid #6bdcfc !important;
-  }
-  .react-datepicker__header {
-    background-color: #6bdcfc !important;
-    border: transparent !important;
-  }
-  .react-datepicker__navigation-icon::before {
-    border-color: white !important;
-  }
-  .react-datepicker__navigation-icon {
-    z-index: 9999 !important;
-  }
-  .react-datepicker__navigation {
-    top: 10px !important;
-  }
-  .react-datepicker__current-month {
-    color: white !important;
-  }
-  .react-datepicker__day:hover {
-    background-color: #6bdcfc !important;
-    color: #ffff !important;
-  }
-  .react-datepicker__day--selected {
-    background-color: #6bdcfc !important;
-    color: #ffff !important;
-  }
-  .react-datepicker__day--keyboard-selected {
-    border-radius: 2.3rem;
-    background-color: #6bdcfc !important;
-  }
-  .react-datepicker__day-name {
-    color: white !important;
-  }
   .react-datepicker__triangle::before {
-    left: -120px !important;
-    border-bottom-color: #6bdcfc !important;
+    display: none;
   }
   .react-datepicker__triangle::after {
-    left: -120px !important;
-    border-bottom-color: #6bdcfc !important;
+    display: none;
   }
-  .react-datepicker__time-container {
-    width: 150px !important;
-    border: none !important;
+}
+
+@media only screen and (min-device-width: 641px) and (max-device-width: 960px) {
+  .addscrims_header{
+    margin-top: 55px;
   }
-  .react-datepicker__time-box {
-    overflow: hidden !important;
-    margin: 0 auto !important;
-    width: 150px !important;
+  .addscrims_regform {
+    width: 65%;
+    margin-left: 15%;
   }
-  .react-datepicker-time__header {
-    color: white !important;
+  .addscrims_header h1 {
+
+    font-size: 45px;
+    margin-top: 10px;
   }
-  .react-datepicker__time-list-item--selected {
-    background-color: #6bdcfc !important;
+  .addscrims_header h1::before{
+    height: 3rem;
+    top: 84px;
   }
-  .react-datepicker__time-list-item {
-    overflow: hidden !important;
+  .match-fixing {
+    width: 500px !important;
   }
-  .react-datepicker__time-list-item:hover {
-    background-color: #6bdcfc !important;
-    color: #ffff !important;
+  .addscrims_open_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  
-  
-  /* modal section  */
-  #modal-modal-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .addscrims_slotlist_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  #modal-modal-description h3 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: red;
+  .addscrims_close_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  #modal-modal-description span {
-    text-align: center;
-    font-weight: bold;
+  .regheader:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 120px;
+    top: 50px;
+    opacity: 0.5;
   }
-  #modal-modal-description img {
-    height: 6rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  .modal_box_org {
-    border: none !important;
-    border-radius: 11px;
-  }
-  
-  .button_area-s{
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    width: 80%;
-    margin-right: auto;
-  }
-  .button_area-s button{
-    width: 45%;
-    cursor: pointer;
+  .regheader {
+    padding-left: 20%;
   }
   
-  /* drodown section  */
-  .css-1s2u09g-control:hover{
-    border: 1px solid #6BDCFC !important;
+  .addscrims_main {
+    background-image: none;
   }
-  .css-1okebmr-indicatorSeparator{
-    display: none !important;
+}
+
+@media only screen and (min-device-width: 961px) and (max-device-width: 1100px) {
+  #circle2 {
+    width: 30%;
+    margin-left: 10%;
+    max-width: 100%;
   }
-  .css-b62m3t-container{
-    text-align: left;
+  .match-fixing {
+    width: 511px !important;
   }
-  .css-6j8wv5-Input{
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
+  .addscrims_open_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  .css-739597-control{
-    box-shadow: none !important;
+  .addscrims_slotlist_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  
-  @media only screen and (max-device-width: 425px) {
-    .addscrims_header{
-      margin-top: 55px;
-    }
-    .addscrims_header h1 {
-      font-size: 32px;
-      margin-left: -51px;
-      margin-top: 10px;
-    }
-    .addscrims_header h1:before {
-      left: 27px;
-      top: 90px;
-      height: 2rem;
-    }
-    .addscrims_main {
-      background-image: none;
-    }
+  .addscrims_close_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  
-  @media only screen and (max-device-width: 640px) {
-    .addscrims_header{
-      margin-top: 55px;
-    }
-    .addscrims_open_btn {
-      width: 100%;
-      margin-bottom: 5%;
-      margin-left: 1%;
-    }
-    .match-fixing {
-      width: 200px !important;
-    }
-    .addscrims_main {
-      background-image: none;
-    }
-    .addscrims_slotlist_btn {
-      width: 100%;
-      margin-bottom: 5%;
-      margin-left: 1%;
-    }
-    .addscrims_close_btn {
-      width: 100%;
-      margin-bottom: 5%;
-      margin-left: 1%;
-    }
-    .addscrims_regform {
-      width: 60%;
-      margin-left: 15%;
-    }
-    .regheader:before {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 4rem;
-      background-color: #ffff;
-      left: 60px;
-      top: 70px;
-      opacity: 0.5;
-    }
-    .regheader {
-      padding-left: 20%;
-    }
-    .addscrims_select-box__list {
-      width: 100% !important;
-    }
-    
-    .react-datepicker__triangle::before {
-      display: none;
-    }
-    .react-datepicker__triangle::after {
-      display: none;
-    }
+  .regheader:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 4rem;
+    background-color: #ffff;
+    left: 130px;
+    top: 50px;
+    opacity: 0.5;
   }
-  
-  @media only screen and (min-device-width: 641px) and (max-device-width: 960px) {
-    .addscrims_header{
-      margin-top: 55px;
-    }
-    .addscrims_regform {
-      width: 65%;
-      margin-left: 15%;
-    }
-    .addscrims_header h1 {
-  
-      font-size: 45px;
-      margin-top: 10px;
-    }
-    .addscrims_header h1::before{
-      height: 3rem;
-      top: 84px;
-    }
-    .match-fixing {
-      width: 500px !important;
-    }
-    .addscrims_open_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_slotlist_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_close_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .regheader:before {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 4rem;
-      background-color: #ffff;
-      left: 120px;
-      top: 50px;
-      opacity: 0.5;
-    }
-    .regheader {
-      padding-left: 20%;
-    }
-    
-    .addscrims_main {
-      background-image: none;
-    }
+  .regheader {
+    padding-left: 15%;
   }
-  
-  @media only screen and (min-device-width: 961px) and (max-device-width: 1100px) {
-    #circle2 {
-      width: 30%;
-      margin-left: 10%;
-      max-width: 100%;
-    }
-    .match-fixing {
-      width: 511px !important;
-    }
-    .addscrims_open_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_slotlist_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_close_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .regheader:before {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 4rem;
-      background-color: #ffff;
-      left: 130px;
-      top: 50px;
-      opacity: 0.5;
-    }
-    .regheader {
-      padding-left: 15%;
-    }
+}
+
+@media only screen and (min-device-width: 1101px) and (max-device-width: 1300px) {
+  .addscrims_open_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  
-  @media only screen and (min-device-width: 1101px) and (max-device-width: 1300px) {
-    .addscrims_open_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_slotlist_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_close_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
+  .addscrims_slotlist_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  
-  @media only screen and (min-device-width: 1600px) and (max-device-width: 2000px) {
-    .addscrims_regform {
-      width: 40%;
-      margin-left: 27%;
-    }
+  .addscrims_close_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
   }
-  
-  @media only screen and (min-device-width: 2400px) and (max-width: 2800px) {
-    .addscrims_regform {
-      width: 35%;
-      margin-left: 30%;
-    }
-    .addscrims_main {
-      background-repeat: no-repeat !important;
-      background-image: url("../../assets/scrims/babb3.png");
-      background-size: cover !important;
-    }
-    .addscrims_open_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_slotlist_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
-    .addscrims_close_btn {
-      width: 30%;
-      font-size: 18px;
-      padding: 10px;
-    }
+}
+
+@media only screen and (min-device-width: 1600px) and (max-device-width: 2000px) {
+  .addscrims_regform {
+    width: 40%;
+    margin-left: 27%;
   }
-  
-  
-  
-  
+  .addscrims_open_btn {
+    padding-left: 9.5%;
+  }
+}
+
+@media only screen and (min-device-width: 2400px) and (max-width: 2800px) {
+  .addscrims_regform {
+    width: 35%;
+    margin-left: 30%;
+  }
+  .addscrims_main {
+    background-repeat: no-repeat !important;
+    background-image: url("../../assets/scrims/babb3.png");
+    background-size: cover !important;
+  }
+  .addscrims_open_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .addscrims_slotlist_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .addscrims_close_btn {
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+
+

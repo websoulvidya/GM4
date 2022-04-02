@@ -7,7 +7,7 @@ body {
 .slot_header {
   height: 8rem;
   width: -webkit-fill-available;
-  background-color: #87ceeb;
+  background-color: #6bdcfc;
   color: white;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 .sub_slot_header {
   height: 3rem;
   width: -webkit-fill-available;
-  background-color: #87ceeb;
+  background-color: #6bdcfc;
   color: white;
   display: flex;
   align-items: center;
@@ -789,7 +789,7 @@ progress[value]::-webkit-progress-value {
     right: 56px !important;
    }
 }
- @media (min-width: 377px) and (max-width: 394px){
+ @media (min-width: 377px) and (max-width: 402px){
  
 .slot-list-pay-section .slot-list-prize-pool {
   left: 19%;
@@ -855,7 +855,7 @@ progress[value]::-webkit-progress-value {
   right: -44%;
 }
 } 
-@media (min-width: 395px) and (max-width: 414px){
+@media (min-width: 403px) and (max-width: 414px){
   .slot_header {
     height: 6rem !important;
     margin-top: 54px;
@@ -1741,28 +1741,28 @@ progress[value]::-webkit-progress-value {
     color: rgb(102 98 98);
     font-weight: 800;
     left: 6% !important;
-    font-size: 11px !important;
+    font-size: 10px !important;
     top: 19px !important;
   }
   .slot-list-pay-section-sd h6 {
     color: rgb(102 98 98);
     font-weight: 800;
     left: 5% !important;
-    font-size: 11px !important;
+    font-size: 10px !important;
     top: 20px !important;
   }
   .slot-list-pay-section span {
     color: rgb(102 98 98);
     font-weight: 800;
     left: 71px !important;
-    font-size: 11px !important;
+    font-size: 10px !important;
     top: -22px !important;
   }
   .slot-list-pay-section-sd span {
     color: rgb(102 98 98);
     font-weight: 800;
     left: 72px !important;
-    font-size: 11px !important;
+    font-size: 10px !important;
     top: -22px !important;
   }
   .slot-list-pay-section span::after {
@@ -1785,13 +1785,13 @@ progress[value]::-webkit-progress-value {
   .slot-list-progress-bar {
     width: 50% !important;
     position: absolute;
-    right: 2px !important;
+    right: -1px !important;
     bottom: 30% !important;
   }
   .slot-list-progress-bar-sd {
     width: 51% !important;
     position: absolute;
-    right: 2px !important;
+    right: -1px !important;
     bottom: 30% !important;
   }
   .slot-list-pay-section .slot-list-prize-pool {
@@ -1816,7 +1816,7 @@ progress[value]::-webkit-progress-value {
   }
   .slot_match_date {
     font-size: 10px !important;
-    left: 24% !important;
+    left: 25% !important;
   }
   .slot-list-carditems {
     width: calc(22% - 5px) !important;
@@ -2459,7 +2459,7 @@ progress[value]::-webkit-progress-value {
     right: 11px !important;
   }
 }
-  @media only screen  and (max-width:1500px){
+   @media only screen  and (max-width:1500px){
     .slot-list-card {
       height: 221px;
     }
@@ -2512,7 +2512,7 @@ progress[value]::-webkit-progress-value {
     .slot-list-pay-section-sd span::after {
       height: 23px;
       top: -20px;
-      left: 7px;
+      left: 9px;
     }
     .slotlist-rule {
       top: 7px;
@@ -2547,7 +2547,7 @@ progress[value]::-webkit-progress-value {
     .slot-list-pay-section {
       right: 66px;
     }
-  }
+  } 
   @media (min-width: 1501px) and (max-width: 1550px) {
     .slotlist-team-img img {
       transform: scale(1);
