@@ -111,8 +111,8 @@ function Signup() {
     <fieldset id='field-style'>
       <div>
 
-      <input className='signup-data' placeholder="Full name" type="text" tabindex="1" name='textorg' {...register("textorg", { required: "** Name is Required" })}  autoComplete='off'/>   {errors.textorg && (<span className='errormsgleft1-1'>{errors.textorg.message}</span>)}
-      <input className='signup-data' placeholder="Last name" type="text" tabindex="1" name='text' {...register("text", { required: "** Name is Required" })}  autoComplete='off'/>   {errors.text && (<span className='errormsgleft1-1'>{errors.text.message}</span>)}
+      <input className='signup-data' placeholder="Full name" type="text" tabindex="1" name='textorg' {...register("textorg", { required: "** Name is Required",pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"Only Alphabets are allowed"}})}  autoComplete='off'/>   {errors.textorg && (<span className='errormsgleft1-1'>{errors.textorg.message}</span>)}
+      <input className='signup-data' placeholder="Last name" type="text" tabindex="1" name='text' {...register("text", { required: "** Name is Required",pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"Only Alphabets are allowed"} })}  autoComplete='off'/>   {errors.text && (<span className='errormsgleft1-1'>{errors.text.message}</span>)}
 
       </div>
       <div>
@@ -144,8 +144,8 @@ function Signup() {
     <fieldset id='field-style'>
       <div>
 
-      <input className='signup-data' placeholder="Full name" type="text" tabindex="1" name='textuser' {...register("textuser", { required: "** Name is Required" })}  autoComplete='off'/>   {errors.textuser && (<span className='errormsgleft1-1'>{errors.textuser.message}</span>)}
-      <input className='signup-data' placeholder="Last name" type="text" tabindex="1"  name='textuser1' {...register("textuser1", { required: "** Name is Required" })}  autoComplete='off'/>   {errors.textuser1 && (<span className='errormsgleft1-1'>{errors.textuser1.message}</span>)}
+      <input className='signup-data' placeholder="Full name" type="text" tabindex="1" name='textuser' {...register("textuser", { required: "** Name is Required",pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"Only Alphabets are allowed"} })}  autoComplete='off'/>   {errors.textuser && (<span className='errormsgleft1-1'>{errors.textuser.message}</span>)}
+      <input className='signup-data' placeholder="Last name" type="text" tabindex="1"  name='textuser1' {...register("textuser1", { required: "** Name is Required",pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"Only Alphabets are allowed"} })}  autoComplete='off'/>   {errors.textuser1 && (<span className='errormsgleft1-1'>{errors.textuser1.message}</span>)}
 
       </div>
       <div>
