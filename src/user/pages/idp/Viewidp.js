@@ -33,7 +33,7 @@ function Viewidp() {
                 <div class="round-social-buttons">
                     <a class="social-button whatsapp" href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a class="social-button discord" href="https://www.discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
-                    <a class="social-button gmail" href="https://www.gmail.com/" target="_blank"><i class="fab fa-google"></i></a>
+                    <a class="social-button gmail" href="https://www.gmail.com/" target="_blank"><img className='gm-icon-idp' src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="" /> </a>
                     <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
              </div>
