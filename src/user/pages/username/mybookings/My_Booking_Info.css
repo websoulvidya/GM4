@@ -38,22 +38,16 @@ body{
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
+    border: 1px solid white;
 }
 
 .myBoolingInfo_wrapper1{
     width: 100%;
     margin: 0;
-    /* background-image: url('../../../assets/bab 7.png');  */
-    background-size: cover;
-    padding-top: 1rem;
-    background-repeat: no-repeat;
-    z-index: -1;
-
 }
 .myBoolingInfo_container{
     width: 60%;
     margin: 0 auto;
-    height: 500px;
     margin-top: 5rem;
     position: relative;
 }
@@ -62,9 +56,8 @@ body{
     margin: 0 auto;
     box-shadow: 5px 5px #87CEEB;
     border: 1px solid #87CEEB;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 400px;
-    
 }
 .myBoolingInfo_card h2{
     margin-top: 1rem;
@@ -74,35 +67,38 @@ body{
 }
 .Image_flex-abh{
     display: flex;
-    height: 200px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 0%;
     width: 85%;
     justify-content: space-between;
+    align-items: center;
+    
 }
 .Image_box-abh{
-    width: 40% !important;
+    width: 48% !important;
+    flex-grow: 0;
 }
 .Image_box-abh img{
     object-fit: cover;
-    height: 100%;
     width: 100% !important;
     border-radius: 10px;
+    height: 100% !important;
+    max-height: 250px; 
+    min-height: 200px;
 }
 .text-box-abh{
-    width: 55% !important;
+    width: 50% !important;;
+    flex-grow: 0;
+    align-items: center;
 }
 .text-box_flex_box1-abh{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+    justify-content: space-between;
     align-items: center !important;
-    margin-bottom: 1rem;
 }
 .p_pool-abh{
-    justify-content: center !important;
     text-align: center;
 }
 .p_pool-abh h4{
@@ -110,7 +106,6 @@ body{
     padding: 0 !important;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    /* padding-right: 25px !important; */
 }
 .p_pool-abh p{
     margin: 0 !important;
@@ -138,24 +133,26 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .myInfoProgress{
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0.5rem auto;
 }
 .progresstextflex-abh{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .progresstextflex-abh p{
     font-size: 14px;
     font-weight: 500;
     color: gray;
     margin-top: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 .timeFlexbox_match-abh{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
 }
@@ -197,7 +194,7 @@ body{
     width: 40%;
     border-radius: 5px;
     position: absolute;
-    bottom: 15%;
+    bottom: -5%;
     right: 10%;
     justify-content: space-around;
     align-items: center;
@@ -280,7 +277,6 @@ body{
 .myInfo_cancel_form{
     width: 100%;
     margin: 0 auto;
-    /* background-image: url('../../../assets/bab 7.png');  */
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 1.9rem;
@@ -339,7 +335,7 @@ body{
     margin: 3px;
     padding: 0;
 }
-@media (min-width: 651px) and (max-width: 950px){
+@media (min-width: 651px) and (max-width: 1199px){
     .timeFlexbox_match-abh h4{
         font-size: 14px !important;
     }
@@ -349,7 +345,38 @@ body{
     .myInfo_cancel h1{
         font-size: 45px;
     }
+    .myBoolingInfo_container{
+        width: 80%;
+    }
+    .p_pool-abh h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .p_pool-abh p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .entry-abh h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .entry-abh p{
+        font-size: 14px;
+        font-weight: 500; 
+    }
+    .my_Time-abh p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .my_Date-abh p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .Image_box-abh img{
+        max-height: 200px;
+    }
 }
+
 @media(max-width:650px){
     .myInfo_cancel h1{
         font-size: 35px;
@@ -364,6 +391,11 @@ body{
     .myBoolingInfo_container{
         width: 95%;
         margin-left: 20px !important;
+    }
+    .blue_box-abh{
+        bottom: -10%;
+        right: 10%;
+        height: 3rem;
     }
     .blue_box-abh h4{
         font-size: 16px;
@@ -420,16 +452,14 @@ body{
     .myInfo_form{
         width: 80%;
     }
-}
-@media(max-width:470px){
+    .myBoolingInfo_card{
+        height: 300px;
+    }
     .timeFlexbox_match-abh h4{
         font-size: 14px !important;
     }
     .text-box_flex_box1-abh h4{
         font-size: 14px !important;
-    }
-    .myBoolingInfo_container{
-        margin-top: 12rem;
     }
     .blue_box-abh h4{
         font-size: 10px;
@@ -438,104 +468,42 @@ body{
     .horidiv2-abh{
         height: 30px;
     }
-
-}
-@media(max-width:430px){
-    .Image_box-abh img{
-        height: 180px;
-    }
-    .myBoolingInfo_card{
-        height: 350px !important;
-    }
-    .Image_flex-abh{
-        top: 16%;
-        height: 180px;
-    }
-    .blue_box-abh{
-        bottom: 25%;
-        width: 55% !important;
-    }
-    .hori-div-abh{
-        height: 30px !important;
-    }
-    .horidiv3-abh{
-        height: 30px;
-    }
-    .Image_box-abh{
-        width: 50% !important;
-    }
-    .text-box-abh{
-        width: 50% !important;
-    }
-    .timeFlexbox_match-abh h4{
-        font-weight: 700 !important;
-        font-size: 10px !important;
-    }
-    .text-box_flex_box1-abh h4{
-        font-weight: 700 !important;
-        font-size: 10px !important;
-    }
     .progresstextflex-abh p{
         font-size: 10px;
-    }
-    .text-box_flex_box1-abh{
-        margin-top: 1.8rem;
-    }
-    .matches_header_info h1{
-        font-size: 26px;
-    }
-}
-@media(max-width:330px){
-    .Image_box-abh{
-        width: 42% !important;
-    }
-    .text-box-abh{
-        width: 58% !important;
+        font-weight: 700;
     }
     .Image_box-abh img{
-        height: 150px;
-    }
-    .Image_flex-abh{
-        top: 12%;
-        height: 160px;
-    }
-    .myBoolingInfo_card{
-        height: 280px !important;
-    }
-    .blue_box-abh{
-        bottom: 40% !important;
-        width: 55% !important;
-    }
-    .text-box_flex_box1-abh{
-        margin-top: 1rem;
-    }
-    
-}
-@media (min-width: 651px) and (max-width: 1004px){
-    .timeFlexbox_match-abh h4{
-        font-size: 14px !important;
-    }
-    .text-box_flex_box1-abh h4{
-        font-size: 14px !important;
+        min-height: 170px;
     }
 }
-@media (min-width: 651px) and (max-width: 733px){
-    .timeFlexbox_match-abh h4{
-        font-size: 12px !important;
-    }
+@media(max-width:455px){
     .text-box_flex_box1-abh h4{
         font-size: 12px !important;
     }
+    .timeFlexbox_match-abh h4{
+        font-size: 12px !important;
+    }
 }
-@media(max-width:398px){
+@media(max-width:393px){
+    .text-box_flex_box1-abh h4{
+        font-size: 10px !important;
+    }
     .timeFlexbox_match-abh h4{
         font-size: 10px !important;
     }
+}
+@media(max-width:332px){
     .text-box_flex_box1-abh h4{
-        font-size: 10px !important;
+        font-size: 8px !important;
+        font-weight: 700;
+    }
+    .timeFlexbox_match-abh h4{
+        font-size: 8px !important;
+        font-weight: 700;
     }
     .progresstextflex-abh p{
-        font-size: 10px !important;
+        font-size: 7px;
+        font-weight: 800;
     }
 }
 @media(max-width:310px){
@@ -543,4 +511,7 @@ body{
         padding: 8px;
         width:80%;
     }
+}
+@media (min-width: 1550px) and (max-width: 2000px){
+
 }
