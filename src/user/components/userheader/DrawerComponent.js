@@ -8,8 +8,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import MoreIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
 import logo from '../../assets/logo.png';
+import Grid from '@mui/material/Grid';
+
 
 
 
@@ -44,6 +47,17 @@ const DrawerComponent=() =>{
             marginBottom:"10px",
             marginTop:"45%",
             marginRight:"10%",
+            color:"rgb(102 98 98)",
+
+
+        },
+        [theme.breakpoints.down('md')]: {
+            marginLeft: theme.spacing(1),
+            width: 'auto',
+            marginLeft:"0%",
+            marginBottom:"10px",
+            marginTop:"70%",
+            marginRight:"1%",
             color:"rgb(102 98 98)",
 
 
@@ -177,7 +191,7 @@ const DrawerComponent=() =>{
                     </ListItemIcon>
                 </ListItem>
 
-                <Search id="userheader-searchbar">
+                {/* <Search id="userheader-searchbar">
                     <SearchIconWrapper id="userheader-searchicon">
                     <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
                     </SearchIconWrapper>
@@ -185,7 +199,7 @@ const DrawerComponent=() =>{
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
                     />
-                </Search>
+                </Search> */}
 
             </List>
             
@@ -196,10 +210,51 @@ const DrawerComponent=() =>{
             {openDrawer ?"x":<MenuIcon />}
         </IconButton> */}
 
-        <IconButton  onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
+        {/* <IconButton 
+        disableFocusRipple="true"
+        disableRipple="true" onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
             {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
-            :<MenuIcon id="userheader-menuicon" style={{color:"#6BDCFC"}} />}
-        </IconButton>
+            :<MoreIcon  
+            disableFocusRipple="true"
+            disableRipple="true"
+             id="userheader-menuicon" style={{color:"#6BDCFC"}} />}
+        </IconButton> */}
+
+        
+        <Grid item xs={12} sm={12} md={12}>
+
+            <Grid item xs={2} sm={4} md={4}>
+                <img onClick={() => navigate('/')}  src={logo}  alt="" class="header-logo" />
+            </Grid>
+            <Grid item xs={8} sm={8} md={8}>
+                <Search  id="userheader-searchbar">
+                    <SearchIconWrapper id="userheader-searchicon">
+                    <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
+                    </SearchIconWrapper>
+                    <StyledInputBase id="usersearch-content"
+                    placeholder="Search…"
+                    inputProps={{ 'aria-label': 'search' }}
+                    />
+                </Search>
+            </Grid>
+            <Grid item xs={2} sm={2} md={2}>
+                <IconButton 
+                size="large"
+                aria-label="show more"
+                aria-haspopup="true"
+                color="inherit"
+                disableFocusRipple="true"
+                disableRipple="true"
+                onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
+                {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
+                :<MoreIcon 
+                disableFocusRipple="true"
+                disableRipple="true"
+                id="userheader-moreicon" onClick={() => setOpenDrawer(!openDrawer)}   style={{color:"#6BDCFC"}} />}
+                </IconButton>
+            {/* id="header-menuicon" */}
+            </Grid>
+            </Grid>
 
       
     </div>

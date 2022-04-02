@@ -15,10 +15,10 @@ function Orghome() {
           <Dashboard/>
         </div>
         <div class="uk-column-1-2 org-home">
-          <Sidenav/>
+          <Sidenav />
           <Cardhome/>
         </div>
-        <div class="org-footer">
+        <div>
           <Footer/>
         </div>
       </div>
