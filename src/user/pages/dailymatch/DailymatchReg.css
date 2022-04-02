@@ -12,6 +12,9 @@ body{
     height: 910px !important;
  
 }
+.invalideBorder{
+    border: 1px solid red !important;
+}
 /* .regheader:before {
     content: "";
     position: absolute;
@@ -73,7 +76,7 @@ body{
     text-transform: uppercase;
 }
 
-.scrimregbtn {
+.dailymatchregbtn {
     background-color: #6bdcfc;
     font-size: 20px;
     padding-left: 17.5%;
@@ -84,10 +87,10 @@ body{
     border: 1px solid #6bdcfc;
     color: white;
     border-radius: 5px;
-    bottom: -59px;
+    bottom: -37px;
     position: relative;
 }
-.scrimregbtn:hover{
+.dailymatchregbtn:hover{
     cursor: pointer;
 }
 .reginput{
@@ -142,36 +145,43 @@ body{
     color: #979393;
     cursor: pointer;
   }
-  .slotlist_content{
+  .daily_slotlist_content{
     position: absolute;
     width: 100%;
     padding: 0;
-    z-index: 1;
+    z-index: 0;
     left: 0px;
     color: #979393;
     margin-top: 20px!important;
-    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 30px -10px rgb(0 0 0 / 10%);
     cursor: pointer;
   }
-  .slotlist_item{
+  .daily_slotlist_item{
     display: block;
-    padding: 15px;
+    padding: 10px;
     background-color: #fff;
     transition: all 0.2s;
-    left: 44%;
   }
 
-  .slotlist_item:hover{
+  .daily_slotlist_item:hover{
    
     background-color: #ffff
   }
-  .dailyreg_selectdownicon{
-    position: absolute;
-    right: -35%;
-    top: 4px;
-  }
+  .daily_slotlist_item p{
+    position: relative;
+    left:-31%;
+     } 
+  .daily_slotlist_item p{
+    position: relative;
+    left:-31%;
+     } 
+     .dailyreg_selectdownicon{
+        position: absolute;
+        right: -35%;
+        top: 4px;
+      }
   /* ERROR MESSAGE */
-    .errormsgleft{
+    .dailymatch_errormsgleft{
 
     font-size: 13px;
     position: absolute;
@@ -181,7 +191,7 @@ body{
     font-weight: 500;
     text-align: left;
     }
-    .errormsgright{
+    .dailymatch_errormsgright{
     font-size: 13px;
     position: absolute;
     left: 15px;
@@ -249,14 +259,37 @@ body{
 /* end */
 
  /* RESPONSIVE SECTION */
+ /*  */
+@media only screen and (min-device-width: 100px)and (max-device-width : 519px) {
+    @media only screen and (min-device-width: 100px)and (max-device-width : 519px) {
+        .reginput.uk-margin{
+            margin-top: 35px !important;
+        }
+        .dailymatch_errormsgleft{
+            left: 11%;
+            bottom: -96%;
+             }
+            .dailymatch_errormsgright{
+                left: 23px;
+                top: 100%;
+        
+            }
+            .daily_slotlist_content{
+                z-index: 1;
+              }
+    }
+}
 @media only screen and (min-device-width: 100px)and (max-device-width : 640px) {
  
     .daily_regform{
         width: 60%;
         margin-left: 15%;
-        height: 1081px !important;
+        height: 1199px !important;
         
     } 
+    .dailymatchcircles{
+        height: 953px!important;
+    }
     .dailymatch_regheaderclip h1{
         font-size: 35px;
     }
@@ -305,7 +338,7 @@ body{
         max-width: 100%;
     }
  
-    .scrimregbtn{
+    .dailymatchregbtn{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -327,7 +360,7 @@ body{
 
 @media only screen and (min-device-width: 1101px) and (max-device-width : 1300px){
   
-    .scrimregbtn{
+    .dailymatchregbtn{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -340,7 +373,7 @@ body{
 }
 @media only screen and (min-device-width: 1301px) and (max-device-width : 1500px){
   
-    .scrimregbtn{
+    .dailymatchregbtn{
         width:30%;
         font-size: 18px;
         padding: 10px;
@@ -353,7 +386,7 @@ body{
 }
 @media only screen and (min-device-width: 1501px) and (max-device-width : 1599px){
   
-    .scrimregbtn{
+    .dailymatchregbtn{
         width:30%;
         font-size: 18px;
         padding: 10px;

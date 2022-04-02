@@ -26,13 +26,18 @@ body{
     margin-top: -10px;
     color:#6BDCFC;
     }
-    #userheader-menuicon{
+    /* #userheader-menuicon{
         margin-left:600px;
         width:50px;
         height:150px;
         display:flex;
-        /* margin-top: -55px; */
-        
+    } */
+    #userheader-moreicon{
+        /* bottom:-200px; */
+        margin-left:620px;
+        width: 300px;
+        margin-top: -1030px;
+
     }
     .userheader-link{
     font-size: 20px;
@@ -56,22 +61,21 @@ body{
         color:rgb(102 98 98);
     }
     #userheader-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:80ch;
-        height:40px;
-        margin-top:400px;
-        align-items:center;
+        margin-left: 10px;
+        margin-right: 10px;
+        width:60ch;
+        height:38px;
+        margin-bottom:480px;
     }
     #userheader-searchicon{
-        margin-left:92%;
-        margin-top: -10px;
+        margin-left:90%;
+        /* margin-top: -10px; */
     }
     #usersearch-content{
         align-items: center;
         margin-top:2px;
-        margin-left: -10px;
-        margin-right: 160px;
+        margin-left: -90px;
+        margin-right: 250px;
         align-items: left;
     }
 }
@@ -97,13 +101,16 @@ body{
     margin-top: -10px;
     color:#6BDCFC;
     }
-    #userheader-menuicon{
+    /* #userheader-menuicon{
         margin-left:430px;
         width:50px;
         height:150px;
         display:flex;
-        /* margin-top: -55px; */
-        
+    } */
+    #userheader-moreicon{
+        margin-left:450px;
+        width: 300px;
+        margin-top: -800px;
     }
     .userheader-link{
     font-size: 20px;
@@ -127,21 +134,20 @@ body{
         color:rgb(102 98 98);
     }
     #userheader-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:60ch;
+        margin-left: -38px;
+        margin-right: 10px;
+        width:50ch;
         height:38px;
-        margin-top:420px;
-        align-items:center;
+        margin-bottom:363px;
     }
     #userheader-searchicon{
-        margin-left:90%;
+        margin-left:80%;
     }
     #usersearch-content{
         align-items: center;
         margin-top:2px;
         margin-left: -10px;
-        margin-right: 160px;
+        margin-right:230px;
         align-items: left;
     }
 }
@@ -166,13 +172,16 @@ body{
     margin-top: -10px;
     color:#6BDCFC;
     }
-    #userheader-menuicon{
+    /* #userheader-menuicon{
         margin-left:360px;
         width:50px;
         height:150px;
         display:flex;
-        /* margin-top: -55px; */
-        
+    } */
+    #userheader-moreicon{
+        margin-left:390px;
+        width: 300px;
+        margin-top: -710px;
     }
     .userheader-link{
     font-size: 20px;
@@ -196,20 +205,20 @@ body{
         color:rgb(102 98 98);
     }
     #userheader-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:55ch;
+        margin-left: -38px;
+        margin-right: 10px;
+        width:45ch;
         height:38px;
-        margin-top:400px;
+        margin-bottom:320px;
     }
     #userheader-searchicon{
-        margin-left:90%;
+        margin-left:85%;
     }
     #usersearch-content{
         align-items: center;
         margin-top:2px;
         margin-left: -10px;
-        margin-right: 160px;
+        margin-right: 200px;
         align-items: left;
     }
 }
@@ -233,14 +242,16 @@ body{
     margin-top: -10px;
     color:#6BDCFC;
     }
-    #userheader-menuicon{
+    /* #userheader-menuicon{
         margin-left:240px;
         width:50px;
         height:150px;
         display:flex;
-        /* margin-top: -55px; */
-
-        
+    } */
+    #userheader-moreicon{
+        margin-left:250px;
+        width: 300px;
+        margin-top: -510px;
     }
     .userheader-link{
     font-size: 20px;
@@ -264,11 +275,11 @@ body{
         color:rgb(102 98 98);
     }
     #userheader-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:45ch;
+        margin-left: -38px;
+        margin-right: 10px;
+        width:31ch;
         height:38px;
-        margin-top:400px;
+        margin-bottom:220px;
     }
     #userheader-searchicon{
         margin-left:80%;
@@ -302,13 +313,18 @@ body{
     margin-top: -10px;
     color:#6BDCFC;
     }
-    #userheader-menuicon{
+    /* #userheader-menuicon{
         margin-left:205px;
         width:50px;
         height:150px;
         display:flex;
-        /* margin-top: -55px; */
-        
+    } */
+    #userheader-moreicon{
+        /* bottom:-200px; */
+        margin-left:215px;
+        width: 300px;
+        margin-top: -455px;
+
     }
     .userheader-link{
     font-size: 20px;
@@ -332,14 +348,14 @@ body{
         color:rgb(102 98 98);
     }
     #userheader-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:38ch;
+        margin-left: -38px;
+        margin-right: 10px;
+        width:27ch;
         height:38px;
-        margin-top:350px;
+        margin-bottom:193px;
     }
     #userheader-searchicon{
-        margin-left:80%;
+        margin-left:75%;
     }
     #usersearch-content{
         align-items: center;
@@ -368,14 +384,20 @@ body{
      margin-top: -10px;
      color:#6BDCFC;
     }
-    #userheader-menuicon{
+    /* #userheader-menuicon{
         margin-left:140px;
         width:50px;
         height:160px;
         display:flex;
         color:#6BDCFC;
-        /* margin-top: -55px; */
        
+    } */
+    #userheader-moreicon{
+        /* bottom:-200px; */
+        margin-left:180px;
+        width: 200px;
+        margin-top: -415px;
+
     }
  .userheader-link{
     font-size: 20px;
@@ -399,20 +421,22 @@ body{
         color:rgb(102 98 98);
     }
     #userheader-searchbar{
-        margin-left: 15px;
-        margin-right: 15px;
-        width:32ch;
-        height:38px;
-        margin-top:250px;
+  
+            margin-left: -35px;
+            margin-right: 10px;
+            width:24ch;
+            height:38px;
+            margin-bottom:170px;
+        
     }
     #userheader-searchicon{
-        margin-left:80%;
+        margin-left:75%;
     }
     #usersearch-content{
         align-items: center;
         margin-top:1px;
-        margin-left: -10px;
-        margin-right: 160px;
+        /* margin-left: -10px; */
+        margin-right: 120px;
         align-items: left;
     }
 }

@@ -6,7 +6,10 @@ import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import MenuIcon from '@mui/icons-material/Menu';
+// import MoreVertIcon from '@mui/icons-material/MoreVert';
+import MoreIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logo from '../../assets/logo.png';
@@ -39,7 +42,7 @@ const DrawerComponent=() =>{
             // backgroundColor:"rgb(102 98 98)",
         },
         '&:focus': {
-            // width: '20ch',
+            width: '80ch',
             border:"none"
           },
         marginLeft: 20,
@@ -51,6 +54,17 @@ const DrawerComponent=() =>{
             marginBottom:"10px",
             marginTop:"70%",
             marginRight:"10%",
+            color:"rgb(102 98 98)",
+
+
+        },
+        [theme.breakpoints.down('md')]: {
+            marginLeft: theme.spacing(1),
+            width: 'auto',
+            marginLeft:"0%",
+            marginBottom:"10px",
+            marginTop:"70%",
+            marginRight:"1%",
             color:"rgb(102 98 98)",
 
 
@@ -148,9 +162,10 @@ const DrawerComponent=() =>{
                 </ListItemIcon>
             </ListItem>
 
-            <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)}>
+            <ListItem divider button style={{margin:"10px 0 0px 0px"}} onClick={()=>setOpenDrawer(false)} >
+            {/* onClick={() => navigate('/login')} */}
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px"}}>
+                    <ListItemText  style={{margin:"10px 0 10px 10px"}}>
                         <Link to="/login" style={{textDecoration:"none"}} >
                             <Typography class="header-link">LOGIN</Typography>
                         </Link>
@@ -160,7 +175,7 @@ const DrawerComponent=() =>{
 
             <ListItem divider button style={{margin:"10px 0 10px"}} onClick={()=>setOpenDrawer(true)}>
                 <ListItemIcon>
-                    <ListItemText style={{margin:"10px 0 10px 10px"}} 
+                    <ListItemText  style={{margin:"10px 0 10px 10px"}} 
                         aria-controls="basic-menu"
                         aria-haspopup="true"
                         aria-expanded={openMenu ? 'true':undefined}
@@ -195,23 +210,6 @@ const DrawerComponent=() =>{
                 </ListItemIcon>
             </ListItem>
 
-            <Search  id="header-searchbar">
-                <SearchIconWrapper id="header-searchicon">
-                <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
-                </SearchIconWrapper>
-                <StyledInputBase id="search-content"
-                placeholder="Search…"
-                inputProps={{ 'aria-label': 'search' }}
-                endIcon={<KeyboardArrowDownIcon sx={{width:"30px",color:"red",marginLeft:"-30px"}}/>}
-                />
-            </Search>
-
-        </List>
-        </Drawer>
-             
-        
-        <img src={logo}  alt="" class="header-logo" />
-
             {/* <Search  id="header-searchbar">
                 <SearchIconWrapper id="header-searchicon">
                 <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
@@ -223,10 +221,44 @@ const DrawerComponent=() =>{
                 />
             </Search> */}
 
-        <IconButton  onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
-            {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
-            :<MenuIcon id="header-menuicon" style={{color:"#6BDCFC"}} />}
-        </IconButton>
+        </List>
+        </Drawer>
+             
+        
+            <Grid item xs={12} sm={12} md={12}>
+
+                <Grid item xs={2} sm={4} md={4}>
+                    <img onClick={() => navigate('/')}  src={logo}  alt="" class="header-logo" />
+                </Grid>
+                <Grid item xs={8} sm={8} md={8}>
+                    <Search  id="header-searchbar">
+                        <SearchIconWrapper id="header-searchicon">
+                        <SearchIcon sx={{ display:"right",color:"rgb(102 98 98)"}}/>
+                        </SearchIconWrapper>
+                        <StyledInputBase id="search-content"
+                        placeholder="Search…"
+                        inputProps={{ 'aria-label': 'search' }}
+                        />
+                    </Search>
+                </Grid>
+                <Grid item xs={2} sm={2} md={2}>
+                    <IconButton 
+                    size="large"
+                    aria-label="show more"
+                    aria-haspopup="true"
+                    color="inherit"
+                    disableFocusRipple="true"
+                    disableRipple="true"
+                     onClick={()=> setOpenDrawer(!openDrawer)} style={{borderRadius:"0rem" ,padding:"1rem"}}>
+                    {openDrawer ?<CloseIcon  style={{width:"40px",height:"150px",display:"flex",marginLeft:"50px"}}/>
+                    :<MoreIcon 
+                    disableFocusRipple="true"
+                    disableRipple="true"
+                    id="header-moreicon" onClick={() => setOpenDrawer(!openDrawer)}   style={{color:"#6BDCFC"}} />}
+                    </IconButton>
+                {/* id="header-menuicon" */}
+                </Grid>
+            </Grid>
 
       
     </div>

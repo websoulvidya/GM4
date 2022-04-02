@@ -76,7 +76,7 @@ function Openrooms() {
                       <Typography id="modal-modal-title" variant="h6" component="h2">
                         Rules
                       </Typography>
-                      <Typography id="modal-modal-description" className='rules_modal' sx={{ mt: 2 }} style={{height:'30rem',overflow:'scroll'}} >
+                      <Typography id="modal-modal-description" className='openroom_rules_modal' sx={{ mt: 2 }} style={{height:'30rem',overflow:'scroll'}} >
                         
                         <ul>
                           <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>

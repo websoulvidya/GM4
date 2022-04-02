@@ -43,7 +43,7 @@ function Home() {
              
 
               {/* first slider block starts*/}
-              <div uk-slider="center:true,autoplay:true,autoplay-interval: 100">
+              <div uk-slider="center:true,autoplay:true,autoplay-interval: 1000">
 
                   <div class="uk-position-relative">
 

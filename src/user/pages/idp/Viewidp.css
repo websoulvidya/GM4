@@ -121,9 +121,13 @@ background: #7289DA;
 
 
 .round-social-buttons .social-button.gmail {
-background:#bb0000;
+  background:#FAEBD7;
 }
 
+.gm-icon-idp{
+  width: 2rem;
+  margin-top: -7px;
+}
 
 
 .round-social-buttons .social-button.youtube {

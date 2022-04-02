@@ -183,11 +183,14 @@ body,html{
     background: #738ADB;
   }
   
-
-  .openroom_rounded-social-buttons .social-button.google {
-    background:#bb0000;
+  .openroom_rounded-social-buttons .social-button.gmail {
+    background:#FAEBD7;
   }
   
+  .gmail-oenroom-idp{
+    width: 2rem;
+    margin-top: -7px;
+  }
 
   
   .openroom_rounded-social-buttons .social-button.instagram {
