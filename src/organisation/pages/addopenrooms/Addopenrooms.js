@@ -31,6 +31,7 @@ function Addopenrooms() {
     handleSubmit,
     formState: { errors },
     reset,
+    trigger
   } = useForm();
   const submitData = (data) => {
     console.log(data);
@@ -60,13 +61,13 @@ function Addopenrooms() {
   //navigation
   let navigate = useNavigate();
 
-  const [orgName, setorgName] = useState("");
+  // const [orgName, setorgName] = useState("");
 
-  const handleKeyDown = (e) => {
-    if (e.key === " " && orgName.length===0) {
-      e.preventDefault();
-    }
-  };
+  // const handleKeyDown = (e) => {
+  //   if (e.key === " " && orgName.length===0) {
+  //     e.preventDefault();
+  //   }
+  // };
 
   //modal functions
   const [open, setOpen] = React.useState(false);
@@ -115,17 +116,19 @@ function Addopenrooms() {
                   maxLength={30}
                   {...register("orgzname", {
                     required: "**Organization Name is Required",
+                    pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"**Only Alphabets and numbers allowed"}
                   })}
                   autoComplete="off"
-                  onChange={(e) =>
-                    setorgName(
-                      e.target.value
-                        .replace(/[^\w\s]/gi, "")
-                        .replace(/[0-9]/g, "")
-                    )
-                  }
-                  value={orgName}
-                  onKeyDown={handleKeyDown}
+                  onKeyUp={()=>{trigger("orgzname")}}
+                  // onChange={(e) =>
+                  //   setorgName(
+                  //     e.target.value
+                  //       .replace(/[^\w\s]/gi, "")
+                  //       .replace(/[0-9]/g, "")
+                  //   )
+                  // }
+                  // value={orgName}
+                  // onKeyDown={handleKeyDown}
                 />
                 {errors.orgzname && (
                   <span className="errormsgss">{errors.orgzname.message}</span>

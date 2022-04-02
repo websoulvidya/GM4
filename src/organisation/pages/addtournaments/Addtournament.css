@@ -86,7 +86,7 @@ body{
 }
 .tourform{
     margin-left: 22%;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     border: 1px solid #6bdcfc;
     padding: 20px;
     width:50%;
@@ -125,6 +125,77 @@ body{
     .css-6j8wv5-Input{
         padding-top: 3px !important;
         padding-bottom: 3px !important;
+    }
+    
+     /* Datepicker css */
+     .react-datepicker {
+        font-family: open sans !important;
+        margin-top: -6px !important;
+        margin-bottom: -13px !important;
+        border: 1px solid #6bdcfc !important;
+    } 
+      .react-datepicker__header{
+        background-color: #6bdcfc !important;
+        border: transparent !important;
+      }
+      .react-datepicker__navigation-icon::before {
+       border-color: white !important;
+    }
+    .react-datepicker__navigation{
+        top: 10px !important;
+    }
+
+      .react-datepicker__current-month{
+        color: white !important;
+      }
+    .react-datepicker__day:hover{
+        background-color: #6bdcfc !important;
+        color: #ffff !important;
+    }
+    .react-datepicker__day--selected{
+        background-color: #6bdcfc !important;
+        color: #ffff !important;
+    }
+      .react-datepicker__day--keyboard-selected{
+        border-radius: 2.3rem;
+          background-color:  #6BDCFC !important;
+      }
+      .react-datepicker__day-name {
+        color: white !important;
+    }
+    .react-datepicker__triangle::before {
+    left: -120px !important;
+    border-bottom-color: #6bdcfc !important;
+    }
+    .react-datepicker__triangle::after {
+    left: -120px !important;
+    border-bottom-color: #6bdcfc !important;
+    }
+    .react-datepicker__time-container{
+        width: 150px !important;
+        border: none !important;
+        font-size: open sans !important;
+    }
+    .react-datepicker__time-box{
+        overflow: hidden !important;
+        margin: 0 auto !important;
+        width: 150px !important;
+    }
+    .react-datepicker-time__header{
+        color: white !important;
+      }
+      .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+        padding: 0px 0px !important;
+    }
+      .react-datepicker__time-list-item--selected{
+        background-color: #6bdcfc !important;
+      }
+      .react-datepicker__time-list-item{
+          overflow: hidden !important;     
+      }
+      .react-datepicker__time-list-item:hover{
+        background-color: #6bdcfc !important;
+        color: #ffff !important;    
     }
 
     /* Modal css*/
@@ -178,6 +249,17 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
     @media only screen and (max-device-width : 350px) {
+        .react-datepicker{
+            margin-left:18% !important
+        }
+        .react-datepicker__triangle::before {
+            margin-left: -40px !important;
+            border-bottom-color: #6bdcfc !important;
+            }
+            .react-datepicker__triangle::after {
+                margin-left: -40px !important;
+            border-bottom-color: #6bdcfc !important;
+            }
         .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{
             margin:0 !important;
         }
@@ -244,6 +326,17 @@ input::-webkit-inner-spin-button {
     .circlz{
         background-image: none;
     }
+    .react-datepicker{
+        left:-10px !important
+    }
+    .react-datepicker__triangle::before {
+        left: 10px !important;
+        border-bottom-color: #6bdcfc !important;
+        }
+        .react-datepicker__triangle::after {
+        left: 10px !important;
+        border-bottom-color: #6bdcfc !important;
+        }
 }
 
 @media only screen and (min-device-width: 641px) and (max-device-width : 960px){
@@ -316,10 +409,12 @@ input::-webkit-inner-spin-button {
         padding-left: 10%;
     }
     .circlz{
-        height: 730px;
+        height: 850px;
     }
     .tourform{
-        margin-top: 20px !important;
+        margin-top: 5%;
+        margin-left: 25% !important;
+        margin-bottom: 30% !important;
     }
 }
 
@@ -327,6 +422,7 @@ input::-webkit-inner-spin-button {
     .tourform{
         margin-top: 5%;
         margin-left: 23% !important;
+        margin-bottom: 30% !important;
     }
     .openbtnz{
         width:29%;
@@ -344,7 +440,7 @@ input::-webkit-inner-spin-button {
         padding: 9px !important;
     }
     .circlz{
-        height: 800px;
+        height: 900px;
     }
 }
 @media only screen and (min-device-width: 1251px) and (max-device-width : 1280px){
@@ -372,7 +468,7 @@ input::-webkit-inner-spin-button {
         height: 900px;
     }
 }
-@media only screen and (min-device-width: 1281px) and (max-device-width : 1340px){
+@media only screen and (min-device-width: 1281px) and (max-device-width : 1350px){
     .openbtnz{
         width:29%;
         font-size: 18px;
@@ -395,7 +491,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@media only screen and (min-device-width: 1600px) and (max-device-width : 1800px){
+@media only screen and (min-device-width: 1600px) and (max-device-width : 1649px){
     .tourform{
         margin-top: 5%;
         width: 40%;
@@ -416,7 +512,27 @@ input::-webkit-inner-spin-button {
             height: auto;
     }
 }
+@media only screen and (min-device-width: 1650px) and (max-device-width : 1800px){
+    .tourform{
+        margin-top: 5%;
+        width: 40%;
+        margin-left: 27%;
+    }
+    .openbtnz{
+        margin-left: 0;
+        margin-right: 4%;
+    }
+    .teamlistbtnz{
+        margin-right: 4%;
+    }
 
+        .circlz{
+            background-repeat:no-repeat;
+            background-image: url("../../assets/babb3.png");
+            background-size: cover;
+            height: auto;
+    }
+}
 @media only screen and (min-device-width: 1801px) and (max-device-width : 2100px){
     .tourform{
         margin-top: 5%;
@@ -427,21 +543,21 @@ input::-webkit-inner-spin-button {
             background-repeat:no-repeat;
             background-image: url("../../assets/babb3.png");
             background-size: cover;
-            height: 820px;
+            height: 900px;
     }
     .openbtnz{
         width:28.5%;
-        font-size: 18px;
+        font-size: 17px;
         padding: 8px;
     }
     .teamlistbtnz{
         width:32%;
-        font-size: 18px;
+        font-size: 17px;
         padding: 8px;
     }
     .closebtnz{
         width:28.5%;
-        font-size: 18px;
+        font-size: 17px;
         padding: 8px;
     }
 }

@@ -480,9 +480,36 @@ body{
         margin-top: 4%;
     }
 }
+@media only screen and (min-device-width: 1600px) and (max-device-width : 1650px){
+    .regformz{
+        margin-top: 5%;
+        width: 40%;
+        margin-left: 27%;
+    }
+        .circles{
+            background-repeat:no-repeat;
+            background-image: url("../../assets/babb3.png");
+            background-size: cover;
+            height: 750px;
+    }
+    .openbtnns{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slotlistbtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .closebtn{
+        width:30%;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
 
-
-@media only screen and (min-device-width: 1600px) and (max-device-width : 1800px){
+@media only screen and (min-device-width: 1650px) and (max-device-width : 1800px){
     .regformz{
         margin-top: 5%;
         width: 40%;
