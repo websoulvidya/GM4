@@ -226,7 +226,7 @@ const handles4KeyDown = (e) => {
               </div>
 
               <div class="uk-margin uk-width-1-2@s tour-reginput">
-                <input class="uk-input" type="text" placeholder="Player3 ID" id="palyer3id" minLength={5} maxLength={30}
+                <input class="uk-input" type="text" placeholder="Player3 ID" id="palyer3id" 
                 {...register("player3id", { required: "**Player ID is Required"
                 ,pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"**Only Alphabets and Numbers are allowed"} })} 
                 maxLength={30} onKeyUp={()=>{trigger("player3id")}} autoComplete='off'/>
