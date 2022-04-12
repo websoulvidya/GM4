@@ -99,9 +99,6 @@ export default function Homeheader() {
     const theme=useTheme()
     const matches=useMediaQuery(theme.breakpoints.down("md" || "sm"));
 
-    console.log(theme.breakpoints.down("md" || "sm"));
-
-
     // code for dropdown
     const [anchorEl,setAnchorEl]=useState(null);
     const openMenu=Boolean(anchorEl);

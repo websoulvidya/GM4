@@ -1,4 +1,7 @@
-import React from 'react';
+import React,{useEffect,useLayoutEffect,useState} from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom'
+
 import Userheader from '../../../components/userheader/Userheader';
 import Footer from '../../../components/footer/Footer';
 import { Card } from '@mui/material';
@@ -10,19 +13,74 @@ import { Link} from 'react-router-dom';
 import Profilepic1 from './../../../assets/user-profile/Profilepic1.jpeg';
 import Userprofilebanner from './../../../assets/user-profile/Userprofilebanner.jpg';
 
-import {useLayoutEffect} from 'react';
 
 
 function Profile() {
  
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-});
+//   useLayoutEffect(() => {
+//     window.scrollTo(0, 0)
+// });
+
+const navigate = useNavigate();
+const [userInfo, setUserInfo] = useState()
+
+
+const getUserInfo= async()=>{
+  const id = localStorage.getItem("id");
+  let url = `https://gm4-server.herokuapp.com/api/user/profile/${id}`;
+  let options = {
+      method: 'GET',
+      url: url,
+      headers: {
+        'Content-Type':"Application/json",
+        'Authorization':"Bearer "+localStorage.getItem("token")
+      },
+    
+  }
+    
+  try {
+      let response = await axios(options);
+  setUserInfo(response.data);
+  } catch (error) {
+     console.log(error)
+  }
+}
+
+//API for user profile picture
+const [userProfile, setUserProfile] = useState()
+
+    const getUserProfile= async()=>{
+      const id = localStorage.getItem("id");
+      let url = `https://gm4-server.herokuapp.com/api/user/profile/photo/${id}`;
+      let options = {
+          method: 'GET',
+          url: url,
+          headers: {
+          },
+        
+      }
+        
+      try {
+          let response = await axios(options);
+          setUserProfile(response.data);
+      } 
+      catch (error) {
+        console.log(error)
+      }
+    }
+
+useEffect(() => {
+ getUserInfo();
+ 
+}, [userInfo])
+
+
+useEffect(()=>{
+  getUserProfile();
+},[userProfile])
+
 
   return (
-
-
- 
 
     <div>
       <Userheader/>
@@ -48,17 +106,17 @@ function Profile() {
                 
                 </div>
                 <img alt='' className='user-profile-card-img'
-                src={Profilepic1}>
+                src={userProfile && userProfile}>
                 </img>
 
                     
                 <div className='userprofile-card-text'>
 
-                     <h3><b>AngelChris</b></h3> 
+                     <h3 style={{textTransform:"uppercase"}}><b>{userInfo && userInfo.firstName} {userInfo && userInfo.lastName}</b></h3> 
                      <p><EmailIcon fontSize='small'/>
-                     {''}{''} angelchris458@gmail.com</p>
+                     {''}{''}{userInfo && userInfo.email}</p>
                      <p><LocalPhoneIcon fontSize='small'/>
-                     {''} {''}9876543210 </p>
+                     {''} {''}{userInfo && userInfo.mobile}</p>
                      </div>
                      <Link to={'/editprofile'}>
                      <button class="EditprofileButton" >Edit</button>

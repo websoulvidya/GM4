@@ -1,4 +1,7 @@
-import React,{useEffect,useLayoutEffect} from 'react';
+import React,{useEffect,useLayoutEffect,useState} from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom'
+
 import './Userhome.css';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
@@ -23,6 +26,24 @@ import Banner from "../../assets/homepage/banner.jpg";
 
 function Userhome() {
 
+  const navigate = useNavigate();
+
+  // //API integration code
+  // const [info,setInfo]= useState("")
+  // const userName = async (e) => {
+  //   let user= await localStorage.getItem('username')
+  //   if(user){
+  //     setInfo(user)
+  //   }else{
+  //     navigate('/login')
+  //   }
+  // }
+  // useEffect(() => {
+  //  userName();
+  // }, [info])
+
+
+  
   
     // funcion for aos
     useEffect(() => {

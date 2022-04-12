@@ -58,10 +58,18 @@ Link:hover{
 }
 #userhome-headermenu{
     width: 180px;
-    font-size: 16px;
+    font-size: 18px;
     color:rgb(102 98 98);
 }
-
+#userhome-headermenu button{
+    border:none;
+    font-size: 16px;
+    background-color:#ffff;
+}
+#userhome-headermenu button:hover{
+    background-color:#f5f5f5;
+    color:#5295D9;
+}
 .userheader-links{
     font-size: 18px;
     color:rgb(102 98 98);
@@ -71,6 +79,7 @@ Link:hover{
     align-items: center;
     margin-top: 12px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .userheader-links:hover{
     color:#6BDCFC;

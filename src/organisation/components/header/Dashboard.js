@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React,{useEffect,useLayoutEffect,useState} from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
@@ -107,6 +108,37 @@ export default function PrimarySearchAppBar() {
 
   const navigate = useNavigate();
 
+  //API integration code
+  const [info,setInfo]= useState("")
+  const userName = async (e) => {
+    let user= await localStorage.getItem('username')
+    if(user){
+      setInfo(user)
+    }else{
+      navigate('/login')
+    }
+  }
+  useEffect(() => {
+   userName();
+  }, [info])
+
+   //Logout functions
+   const userLogout=async()=>{
+    let url = 'https://gm4-server.herokuapp.com/api/signout';
+    let options = {
+        method: 'GET',
+        url: url,
+    }
+    try {
+     const response =await axios(options);
+     alert(response.data.message)
+     localStorage.clear();
+     navigate('/')
+    } catch (error) {
+      alert(error.message)
+    }
+}
+
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -152,7 +184,9 @@ export default function PrimarySearchAppBar() {
       >
      
       <MenuItem onClick={() => navigate('/organisation/profile')}>Profile</MenuItem>
-      <MenuItem onClick={() => navigate('/')}>Logout</MenuItem>        
+      {/* <MenuItem >Logout</MenuItem>         */}
+      <MenuItem ><button class="logout-button" onClick={userLogout} style={{textDecoration:"none"}}>Logout</button></MenuItem>
+
 
 
     </Menu>
@@ -251,7 +285,9 @@ export default function PrimarySearchAppBar() {
         <LogoutIcon color="action"/>
 
         </IconButton>
-        <p>Logout</p>
+        {/* <p>Logout</p> */}
+        <p><button class="logout-button" onClick={userLogout} style={{textDecoration:"none"}}>Logout</button></p>
+
       </MenuItem>
 
       

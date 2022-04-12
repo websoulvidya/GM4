@@ -6,6 +6,18 @@ body{
 #userheader-closeicon{
     color:#6BDCFC
 }
+#userhome-headermenu button{
+    border:none;
+    font-size: 16px;
+    background-color:#ffff;
+}
+#userhome-headermenu button:hover{
+    background-color:#f5f5f5;
+    color:#5295D9;
+}
+.userheader-link{
+    text-transform:uppercase;
+}
 @media (min-width: 768px) and (max-width: 899px) {
     body{
         margin: 0 !important;

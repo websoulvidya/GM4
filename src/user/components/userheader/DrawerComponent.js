@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
+import axios from 'axios';
 import './Drawercomponent.css';
 import {Drawer,Typography,List,ListItem,ListItemIcon,ListItemText,Menu,MenuItem,Box} from '@mui/material';
 import { useNavigate } from 'react-router-dom'
@@ -24,6 +25,37 @@ const DrawerComponent=() =>{
     const [openDrawer, setOpenDrawer]= useState(false);
     const [showdrop, setshowdrop]=useState(false);
     const [showlang, setshowlang]= useState(false);
+
+    const [info,setInfo]= useState("")
+    const userName = async (e) => {
+      let user= await localStorage.getItem('username')
+      if(user){
+        setInfo(user)
+      }else{
+        navigate('/login')
+      }
+    }
+    useEffect(() => {
+     userName();
+    }, [info])
+
+
+     //Logout functions
+   const userLogout=async()=>{
+    let url = 'https://gm4-server.herokuapp.com/api/signout';
+    let options = {
+        method: 'GET',
+        url: url,
+    }
+    try {
+     const response =await axios(options);
+     alert(response.data.message)
+     localStorage.clear();
+     navigate('/')
+    } catch (error) {
+      alert(error.message)
+    }
+}
 
     // code for search bar
 
@@ -167,7 +199,7 @@ const DrawerComponent=() =>{
                             aria-haspopup="true"
                             aria-expanded={openMenu ? 'true':undefined}
                             onClick={handleClick}><Typography class="userheader-link">
-                                USERNAME</Typography>
+                                {info && info}</Typography>
                         </ListItemText>
                         <Menu  id="userhome-dropdownmenu"
                             anchorEl={anchorEl}
@@ -184,7 +216,8 @@ const DrawerComponent=() =>{
                             <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/profile" class="header-sublink" style={{textDecoration:"none",color:"rgb(102 98 98)"}}>Profile</Link></MenuItem>
                             <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/changepass" class="header-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
                             <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/mybookings" class="header-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
-                            <MenuItem onClick={handleClose} id="userhome-headermenu"><Link to="/logout" class="header-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+                            <MenuItem onClick={userLogout} id="userhome-headermenu"><Link to="/logout" class="header-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+                            <MenuItem  id="userhome-headermenu" ><button onClick={userLogout} class="userheader-sublink" style={{textDecoration:"none"}}>Logout</button></MenuItem>
 
                         </Menu>
                                         

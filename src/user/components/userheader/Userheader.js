@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
-import "./Userheader.css";
+import React,{useEffect,useLayoutEffect,useState} from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom'
+import "./Userheader.css";
 import { Link } from 'react-router-dom';
 import {AppBar,Toolbar,Typography,useMediaQuery,useTheme} from '@mui/material';
 import Box from '@mui/material/Box';
@@ -24,6 +25,37 @@ function Userheader() {
 
 
   const navigate = useNavigate();
+
+  //API integration code
+  const [info,setInfo]= useState("")
+  const userName = async (e) => {
+    let user= await localStorage.getItem('username')
+    if(user){
+      setInfo(user)
+    }else{
+      navigate('/login')
+    }
+  }
+  useEffect(() => {
+   userName();
+  }, [info])
+  
+   //Logout functions
+   const userLogout=async()=>{
+      let url = 'https://gm4-server.herokuapp.com/api/signout';
+      let options = {
+          method: 'GET',
+          url: url,
+      }
+      try {
+       const response =await axios(options);
+       alert(response.data.message)
+       localStorage.clear();
+       navigate('/')
+      } catch (error) {
+        alert(error.message)
+      }
+}
 
     // code for search bar
 
@@ -97,7 +129,6 @@ function Userheader() {
     const theme=useTheme()
     const matches=useMediaQuery(theme.breakpoints.down("md" || "sm"));
 
-    console.log(theme.breakpoints.down("md" || "sm"));
     
     
 
@@ -167,7 +198,7 @@ function Userheader() {
                   aria-haspopup="true"
                   aria-expanded={openMenu ? 'true':undefined}
                   onClick={handleClick}
-                  >USERNAME
+                  >{info && info}
               </Typography>
               <Menu  id="userhome-dropdownmenu"
                             anchorEl={anchorEl}
@@ -184,7 +215,7 @@ function Userheader() {
                                     <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/profile" class="userheader-sublink" style={{textDecoration:"none"}}>Profile</Link></MenuItem>
                                     <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/changepass" class="userheader-sublink" style={{textDecoration:"none"}}>Changepassword</Link></MenuItem>
                                     <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/mybookings" class="userheader-sublink" style={{textDecoration:"none"}}>My Bookings</Link></MenuItem>
-                                    <MenuItem  id="userhome-headermenu" onClick={handleClose}><Link to="/logout" class="userheader-sublink" style={{textDecoration:"none"}}>Logout</Link></MenuItem>
+                                    <MenuItem  id="userhome-headermenu" ><button onClick={userLogout} class="userheader-sublink" style={{textDecoration:"none"}}>Logout</button></MenuItem>
                                     
 
                                 </Menu>
