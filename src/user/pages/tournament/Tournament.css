@@ -250,6 +250,7 @@
         progress[value]::-webkit-progress-value {
             background-color: #6BDCFC;
             border-radius: 10px;
+            transition: 1s ease 0.3s;
             
         }
        .tour-progress-bar .tourprogressbar-left-text{

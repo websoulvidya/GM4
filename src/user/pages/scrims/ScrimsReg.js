@@ -1,22 +1,68 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { useForm } from 'react-hook-form';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import "../../pages/scrims/ScrimsReg.css"
-
-
+import axios from  "axios"
+import {useParams} from "react-router-dom"
+import { useNavigate } from "react-router";
 function ScrimsReg() {
+const {id} = useParams();
+
+const [fetchedData, setFetchedData] = useState([])
+
+async function fetchData() {
+  const { data } = await axios.post(
+    `https://gm4-server.herokuapp.com/api/user/scrim/registration/${id}/${localStorage.getItem('id')}`,{ headers: {"Authorization" : `Bearer ${token1}`} }
+      ).then((response)=>{
+          
+        setFetchedData(response.data)
+
+      }).catch(()=>{
+        console.log("Error")
+      })
+    }
+
+useEffect(() => {
+  fetchData()
+}, [])
+
+const token1 = localStorage.getItem("token")
+console.log(token1)
+console.log(localStorage.getItem('id'))
   const { register, handleSubmit, formState: { errors }, reset,trigger} = useForm();
 
-  const submitData = (data) =>{
+  async function submitData(e) {
   reset();
-  };
+  fetchData()
+  }
+
+
+
+
+// const submitData = (data) =>{
+// reset();
+
+//   axios.post(`https://gm4-server.herokuapp.com/api/user/scrim/registration/${id}/${localStorage.getItem('id')}`,{ headers: {"Authorization" : `Bearer ${token1}`} }, {
+    
+//     teamname: 'Fred',
+ 
+// }).then(resp => {
+//     console.log(resp.data);
+// }).catch(error => {
+//     console.log(error);
+// });
+ 
+//   };
+
+
+
+
 
   const [isActive, setIsActive] = useState(false);
   const [setected, setSelected] = useState("Select Slot");
   const options = ["Slot 1", "Slot 2", "Slot 3"];
-  
 
  return (
  
@@ -43,7 +89,7 @@ function ScrimsReg() {
             <div className="uk-margin uk-width-1-2@s reginput">
               <input className={`uk-input ${errors.teamtag && "invalideBorder"}`} type="text" placeholder="Team Tag" 
               {...register("teamtag", { required: "**Team Tag is Required" , pattern: { value: /^[^@\s#$!][a-zA-Z0-9_.-\s]*$/, message: "**Only Alphabets and Numbers are allowed" }})} autoComplete='off'
-              onKeyUp={()=>{trigger("teamtag")}} />
+              onKeyUp={()=>{trigger("teamtag")}}  name="teamtag"/>
                 {errors.teamtag && ( <span className='dailymatch_errormsgright'>{errors.teamtag.message}</span>)}      
             </div>
                 
@@ -51,7 +97,7 @@ function ScrimsReg() {
             <div className="uk-margin uk-width-1-2@s reginput">
               <input className={`uk-input ${errors.player1name && "invalideBorder"}`} type="text" placeholder="Player1 Name" 
               {...register("player1name", { required: "**Player Name is Required" ,pattern:{value:/^[^@\s#$!][a-zA-Z_.-\s]*$/,message:"**Only Alphabets are allowed"}})} autoComplete='off'
-              onKeyUp={()=>trigger("player1name")}/>
+              onKeyUp={()=>trigger("player1name")} name="player1name"/>
               {errors.player1name && (<span className='dailymatch_errormsgleft'>{errors.player1name.message}</span>)}
             </div>
           
@@ -59,7 +105,7 @@ function ScrimsReg() {
             <div className="uk-margin uk-width-1-2@s reginput">
               <input className={`uk-input ${errors.player1id && "invalideBorder"}`} type="text" placeholder="Player1 ID" 
                 {...register("player1id", { required: "**Player ID is Required",pattern: { value: /^[0-9]*$/, message: "**Only Numbers are allowed" } })} autoComplete='off'
-               onKeyUp={()=>trigger("player1id")}/>
+               onKeyUp={()=>trigger("player1id")} name="player1id"/>
                   {errors.player1id && ( <span className='dailymatch_errormsgright'>{errors.player1id.message}</span>)}  
             </div>
          

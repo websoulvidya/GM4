@@ -1,11 +1,11 @@
-import React,{useLayoutEffect,useState} from 'react'
+import React,{useLayoutEffect,useState,useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-
+import { useParams } from 'react-router-dom';
 import { Modal } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import axios from "axios"
 
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
@@ -13,25 +13,58 @@ import "./Tournamentreg.css";
 
 
 function Tournamentreg() {
-
+const {id} = useParams();
   {/*Modal functions */}
+  const [tourTeamname, settourTeamname] = useState("");
+  const [tourPlayername1, settourPlayername1] = useState("");
+  const [tourPlayername2, settourPlayername2] = useState("");
+  const [tourPlayername3, settourPlayername3] = useState("");
+  const [tourPlayername4, settourPlayername4] = useState("");
+  const [tourPlayername5, settourPlayername5] = useState("");
+  
+  const [Player1id, setPlayer1id] = useState("");
+  const [Player2id, setPlayer2id] = useState("");
+  const [Player3id, setPlayer3id] = useState("");
+  const [Player4id, setPlayer4id] = useState("");
+  const [Player5id, setPlayer5id] = useState("");
+
+
+  const [values, setValues] = useState({
+    teamsname: '',
+    teamtag: '',
+   
+});
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const token = localStorage.getItem("token")
+   console.log(token)
+  const userid = localStorage.getItem("id")
 
-  //code for validations
+console.log(userid)
+
+
+
 
   const { register, handleSubmit, watch, formState: { errors }, reset,trigger} = useForm();
-  const submitData = (data,validate) => {
-    validate.teamsname="";
-    console.log(data);
+  const submitData = (data) => {
+ 
     reset();
+    const postData ={
+      tourTeamname,tourPlayername1,tourPlayername2,
+    };
+    axios.post(`https://gm4-server.herokuapp.com/api/user/tournament/register/${userid}/${id}`,postData,{ headers: {"Authorization" : `Bearer ${token}`} }).then((response)=>{
+      
+   console.log(response.data)
+  
+    }).catch(()=>{
+     console.log("Error")
+    })
+
+    
   }
 
-  const [validate, setValidate]=useState({
-    teamsname:'',
-  });
 
 
   // const submitData = (data) =>{
@@ -63,18 +96,7 @@ function Tournamentreg() {
     p: 4,
   };
 
-const [tourTeamname, settourTeamname] = useState("");
-const [tourPlayername1, settourPlayername1] = useState("");
-const [tourPlayername2, settourPlayername2] = useState("");
-const [tourPlayername3, settourPlayername3] = useState("");
-const [tourPlayername4, settourPlayername4] = useState("");
-const [tourPlayername5, settourPlayername5] = useState("");
 
-const [Player1id, setPlayer1id] = useState("");
-const [Player2id, setPlayer2id] = useState("");
-const [Player3id, setPlayer3id] = useState("");
-const [Player4id, setPlayer4id] = useState("");
-const [Player5id, setPlayer5id] = useState("");
 
 
 const handleKeyDown = (e) => {
@@ -267,14 +289,14 @@ const handles4KeyDown = (e) => {
               </div>
 
 
-              <div  class="uk-margin uk-width-1-2@s tour-reginput">
+              {/* <div  class="uk-margin uk-width-1-2@s tour-reginput">
                     <Link to="/tournament/payment">
                       <a class="uk-button uk-button-default uk-input scan-btn tour-reginput" href="#"  style={{color:"#9999A6"}}
                       {...register("feepayment", { required: "** Registration fee is required" })} autoComplete='off'
                       >Scan QR Code for payment</a>
                       {errors.feepayment && (<span className='tour-errormsg'>{errors.feepayment.message}</span>)}
                     </Link>
-              </div>
+              </div> */}
 
               <div class="uk-margin uk-width-1-2@s tour-reginput" >
                 <div uk-form-custom="target: true" class="payment-upload">

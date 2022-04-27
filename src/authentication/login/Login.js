@@ -224,7 +224,7 @@ const TabsList = styled(TabsListUnstyled)`
                 setTimeout(() => {
                     navigate('/userhome')
                   },200)
-                  alert(response.data.message)
+                  alert("Login Successfully")
                 }
                 else{
                   console.log(response.data.message)

@@ -453,10 +453,11 @@ body{
     }
     .scrims-time-section .match-time {
     top: 29%;
+    left:8%;
     }
     .scrims-time-section .idp-time {
     top: 29%;
-    right: -33%;
+    right: -52%;
     }
     .scrims-date .scrims-matchtitle {
     left: -7px;

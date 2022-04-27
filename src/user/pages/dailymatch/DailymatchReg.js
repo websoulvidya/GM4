@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useForm } from 'react-hook-form';
 import "../../pages/dailymatch/DailymatchReg.css"
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
-
+import axios  from "axios"
 
 function DailymatchReg() {
 
@@ -12,6 +12,7 @@ function DailymatchReg() {
   const { register, handleSubmit, watch, formState: { errors }, reset,trigger } = useForm();
 
   const submitData = (data) => {
+alert("Succesfully Registerd")
     reset();
   };
 
@@ -19,6 +20,7 @@ function DailymatchReg() {
   const [setected, setSelected] = useState("Select Slot");
   const options = ["Slot 1", "Slot 2", "Slot 3"];
 
+  
   return (
   
       <div>

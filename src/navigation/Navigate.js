@@ -133,12 +133,12 @@ export default function Navigate() {
       <Route path="/editprofile" element={<EditProfile/>}/>
       <Route path="/changepass" element={<Changepass />}/>
       <Route path="/mybookings" element={<Mybookings />}/>
-      <Route path="/tournament" element={<Tournament />}/>
-      <Route path="/tournament/registration" element={<Tournamentreg />}/>
+      <Route path="/tournament/" element={<Tournament />}/>
+      <Route path="/tournament/registration/:id" element={<Tournamentreg />}/>
       <Route path="/tournament/payment" element={<Tourpayment />}/>
 
       <Route path="/scrims" element={<Scrims />}/>
-      <Route path="/scrims/scrimsreg" element={<ScrimsReg />}/>
+      <Route path="/scrims/scrimsreg/:id" element={<ScrimsReg />}/>
       <Route path="/dailymatch" element={<Dailymatch />}/>
       <Route path="/dailymatch/dailymatchreg" element={<DailymatchReg/>}/>
       <Route path="/openrooms" element={<Openrooms />}/>

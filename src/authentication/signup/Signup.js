@@ -382,7 +382,7 @@ const TabsList = styled(TabsListUnstyled)`
             {
                 userformIsValid = false;
                 setUserErrField(pre => ({
-                    ...pre, passwordErr: "Please enter Password in correct format **"
+                    ...pre, passwordErr: "Please enter Password in correct format(Aa1@) **"
                 }))
             }
 
