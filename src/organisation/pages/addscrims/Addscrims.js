@@ -12,8 +12,14 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import expire from "../../assets/scrims/expired.png";
 import { useNavigate } from "react-router-dom";
-import Select from 'react-select'
-import {useLayoutEffect} from "react";
+// import Select from 'react-select'
+import { useLayoutEffect } from "react";
+//drop down 
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import axios from "axios";
+
 // modal style
 const style = {
   position: "absolute",
@@ -28,6 +34,7 @@ const style = {
 };
 
 
+
 function Adddscrims() {
   // for validation
   // const {
@@ -40,16 +47,54 @@ function Adddscrims() {
   //   console.log(data);
   //   reset();
   // };
-  const { register, watch, handleSubmit, formState: { errors }, reset,trigger} = useForm()
-  const submitData = (data) =>{
-    reset();
-    };
-// const [orgName, setorgName] = useState("");
-// const handleKeyDown = (e) => {
-//   if (e.key === " " && orgName.length===0) {
-//     e.preventDefault();
-//   }
-// };
+  //drop down 
+  const [selectSlot, setSelectSlot] = React.useState('');
+
+  const handleSelect = (event) => {
+    setSelectSlot(event.target.value);
+  };
+
+  const { register, watch, handleSubmit, formState: { errors }, reset, trigger } = useForm()
+  const submitData = async (data) => {
+    const orginId = localStorage.getItem('id');
+    const token = localStorage.getItem('token');
+    console.log("Token ", token)
+    console.log("id", orginId)
+    let url = `https://gm4-server.herokuapp.com/api/organiser/add/scrim/${orginId}`;
+    const options = {
+      method: "POST",
+      url: url,
+      headers: {
+        "Authorization": `Bearer ${token}`,
+      },
+      data: {
+        organizationName: data.scrimname,
+        matchDate: selectedDate.toISOString(),
+        matchTime: selectedTime.toISOString(),
+        idpTime: selectedTimes.toISOString(),
+        matchType: selectSlot
+      }
+    }
+
+    try {
+      const response = await axios(options);
+      alert("Scrims added successfully")
+      setSelectedDate(null)
+      setSelectedTime(null)
+      setSelectedTimes(null) 
+      reset();
+
+    } catch (error) {
+      alert(error.response.data.error)
+      console.log(error.response.data)
+    }
+  };
+  // const [orgName, setorgName] = useState("");
+  // const handleKeyDown = (e) => {
+  //   if (e.key === " " && orgName.length===0) {
+  //     e.preventDefault();
+  //   }
+  // };
 
 
 
@@ -58,12 +103,12 @@ function Adddscrims() {
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedTimes, setSelectedTimes] = useState(null);
 
- 
+
 
   //  navigation section in modal
   let navigate = useNavigate();
 
- 
+
 
   //  modal section
   const [open, setOpen] = React.useState(false);
@@ -71,11 +116,11 @@ function Adddscrims() {
   const handleClose = () => setOpen(false);
 
 
-// dropdown section 
+  // dropdown section 
   const colourStyles = {
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
       // const color = chroma(data.color);
-      console.log({ data, isDisabled, isFocused, isSelected });
+      // console.log({ data, isDisabled, isFocused, isSelected });
       return {
         ...styles,
         backgroundColor: isFocused ? "#6BDCFC" : null,
@@ -84,15 +129,15 @@ function Adddscrims() {
     }
   };
 
-  const options = [
-    { value: 'Tournament', label: 'Tournament' },
-    { value: 'Scrims', label: 'Scrims' },
-    { value: 'Daily Match', label: 'Daily Match' },
-    { value: 'Open Rooms', label: 'Open Rooms' }
-  ]
+  // const options = [
+  //   { value: 'Tournament', label: 'Tournament' },
+  //   { value: 'Scrims', label: 'Scrims' },
+  //   { value: 'Daily Match', label: 'Daily Match' },
+  //   { value: 'Open Rooms', label: 'Open Rooms' }
+  // ]
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
-}, []);
+  }, []);
 
   return (
     <div>
@@ -115,39 +160,36 @@ function Adddscrims() {
                   placeholder="Organization Name"
                   id="scrimname"
                   {...register("scrimname", {
-                    required: "**organization Name is Required", 
-                    pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"**Only Alphabets and numbers allowed and no first space"}})}
+                    required: "**organization Name is Required",
+                    pattern: { value: /^[^@\s#$!][a-zA-Z0-9_.-\s]*$/, message: "**Only Alphabets and numbers allowed and no first space" }
+                  })}
                   autoComplete="off"
-                  onKeyUp={()=>{trigger("scrimname")}}
+                  onKeyUp={() => { trigger("scrimname") }}
                   maxLength={30}
                 // onChange= {(e)=>setorgName(e.target.value.replace(/[^\w\s]/gi,"").replace(/[0-9]/g,"") )}
                 // value={orgName}
                 // onKeyDown={handleKeyDown}
-                
+
                 />
                 {errors.scrimname && (
                   <span className="errormsg">{errors.scrimname.message}</span>
                 )}
               </div>
               <div div class="uk-margin">
-              <div class="uk-input">
-                <DatePicker
-                  selected={selectedDate}
-                  onChange={(date) => setSelectedDate(date)}
-                  dateFormat="dd/MM/yyyy"
-                  id="addscrims_dat"
-                  placeholderText="Match Date"
-                  autoComplete="off"
-                  minDate={new Date()}
-      showDisabledMonthNavigation
-      onChangeRaw={(e) => e.preventDefault()}
-    
-      isClearable={true}
-                />
-                
-
-               
-              </div>
+                <div class="uk-input">
+                  <DatePicker
+                    selected={selectedDate}
+                    onChange={(date) => setSelectedDate(date)}
+                    dateFormat="dd/MM/yyyy"
+                    id="addscrims_dat"
+                    placeholderText="Match Date"
+                    autoComplete="off"
+                    minDate={new Date()}
+                    showDisabledMonthNavigation
+                    onChangeRaw={(e) => e.preventDefault()}
+                    isClearable={true}
+                  />
+                </div>
               </div>
               <div class="uk-margin">
                 <div class="uk-input">
@@ -184,30 +226,51 @@ function Adddscrims() {
                 </div>
               </div>
               <div class="uk-margin">
-              <Select  maxLength={20} options={options} placeholder={'Match Type'} styles={colourStyles}theme={(theme) => ({
-      ...theme,
-      colors: {
-        ...theme.colors,
-        primary: '#6BDCFC',
-      
-      },
-    })}  />
+                {/* <Select maxLength={20} options={options} placeholder={'Match Type'} styles={colourStyles} theme={(theme) => ({
+                  ...theme,
+                  colors: {
+                    ...theme.colors,
+                    primary: '#6BDCFC',
+
+                  },
+                })} /> */}
+                <FormControl sx={{ m: 1, minWidth: 120 }}>
+                  <Select
+                    value={selectSlot}
+                    onChange={handleSelect}
+                    displayEmpty
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    style={{
+                      width: '200px',
+                      height: '40px',
+                      color: 'gray'
+                    }}
+                  >
+                    <MenuItem value="">
+                      <>Select options</>
+                    </MenuItem>
+                    <MenuItem value={"Tournament"}>Tournament</MenuItem>
+                    <MenuItem value={"Scrims"}>Scrims</MenuItem>
+                    <MenuItem value={"Daily Match"}>Daily Match</MenuItem>
+                    <MenuItem value={"Open Rooms"}>Open Rooms</MenuItem>
+                  </Select>
+                </FormControl>
               </div>
 
-              
+
               <div>
-              <br />
+                <br />
                 <button class="addscrims_open_btn" onClick={handleOpen}>
                   Open
                 </button>
                 <Link to="/Slotlistadd">
-                  
+
                   <button class="addscrims_slotlist_btn">Slotlist</button>
                 </Link>
 
                 <Link to="/orghome"><button class="addscrims_close_btn">Close</button></Link>
               </div>
-             
+
               <Modal
                 open={open}
                 onClose={handleClose}
@@ -227,17 +290,17 @@ function Adddscrims() {
                     style={{ height: "auto", overflow: "scroll" }}
                   >
                     <h3>oh no! Unfortunately your Free Trail has expired</h3>
-                    <img src={expire} alt='expiry'/>
+                    <img src={expire} alt='expiry' />
                     <span>
                       If you want to continue , you need to take a Membership
                     </span>
                     <br />
                   </Typography>
                   <div className="button_area-s">
-                  <button onClick={handleClose} className="modal_close">
+                    <button onClick={handleClose} className="modal_close">
                       Cancel
                     </button>
-                    
+
                     <button
                       className="modal_close"
                       onClick={() => {
@@ -252,11 +315,11 @@ function Adddscrims() {
             </fieldset>
           </form>
         </div>
-        <br/>
-<br/>
-<br/>
-<br/>
-<br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
 
       <Footer />

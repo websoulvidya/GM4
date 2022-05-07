@@ -155,6 +155,9 @@ body{
     right: -35%;
     top: 4px;
   }
+  .scri__drop{
+      color: rgb(146, 143, 143); 
+  }
 
     /* ERROR MESSAGE */
     .scrimerrormsgleft{
