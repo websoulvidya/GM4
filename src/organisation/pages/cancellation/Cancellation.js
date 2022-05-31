@@ -155,7 +155,6 @@ const [cancell, setcancell] = useState([])
               </div>
             </div>
           </div>
-          
            )
           })}
 
