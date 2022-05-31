@@ -47,9 +47,10 @@ function Addopenrooms() {
   };
 
   const submitData = async (data) => {
-    let orginId = localStorage.getItem('id')
+    // let orginId = localStorage.getItem('id')
+    // console.log(orginId);
     let token = localStorage.getItem('token')
-    let url = `https://gm4-server.herokuapp.com/api/organiser/openroom/create/${orginId}`
+    let url = `http://localhost:8000/api/organiser/openroom/create/${localStorage.getItem('id')}`
     const options = {
       method: "POST",
       url: url,
@@ -62,16 +63,18 @@ function Addopenrooms() {
         matchTime: selectedTime.toISOString(),
         matchType: selectSlot
       }
+      
     }
     try {
       const response = await axios(options);
       alert("Room Added Successfully")
-      setSelectedDate(null)
-      setSelectedTime(null)
+      setSelectedDate("")
+      setSelectedTime("")
       reset();
-
+      console.log(response)
     } catch (error) {
       alert(error.response.data.error)
+      console.log(error)
     }
   };
 
@@ -195,7 +198,9 @@ function Addopenrooms() {
                 </div>
               </div>
               <div class="uk-margin">
-                <FormControl sx={{ m: 1, minWidth: 120 }}>
+                <FormControl sx={{ m: 1, minWidth: 300 }} style ={{
+                  marginLeft: '0px'
+                }}>
                   <Select
                     value={selectSlot}
                     onChange={handleSelect}

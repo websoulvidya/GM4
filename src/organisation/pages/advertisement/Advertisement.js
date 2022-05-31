@@ -18,6 +18,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Container } from '@mui/material';
 
+
+
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
@@ -68,7 +70,7 @@ function Advertisement() {
 
                                     </div>
                                     {/* <a href="" >choose plan</a> */}
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={`/ads_payment`} state={{ from: "Intro" }} >Choose plan</Link>
                                 </div>
                             </Grid>
                             {/* each card section */}
@@ -88,7 +90,7 @@ function Advertisement() {
 
                                     </div>
                                     {/* <button>choose plan</button> */}
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={'/ads_payment'} state={{ from: "Base" }} >Choose plan</Link>
                                 </div>
                             </Grid>
                             <Grid item xl={3} xs={12} md={4} lg={3} sm={6}>
@@ -106,7 +108,7 @@ function Advertisement() {
                                         </ul>
 
                                     </div>
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={'/ads_payment'} state={{ from: "Popular" }}>Choose plan</Link>
                                 </div>
                             </Grid>
                             <Grid item xl={3} xs={12} md={4} lg={3} sm={6}>
@@ -124,7 +126,7 @@ function Advertisement() {
                                         </ul>
 
                                     </div>
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={'/ads_payment'} state={{ from: "Enterprice" }} >Choose plan</Link>
                                 </div>
                             </Grid>
 

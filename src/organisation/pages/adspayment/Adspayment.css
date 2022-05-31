@@ -59,6 +59,9 @@
     margin-right: auto;
 
 }
+#catgry{
+    display: none;
+}
 
 #ads_tour_pay_card h3 {
     display: flex;
