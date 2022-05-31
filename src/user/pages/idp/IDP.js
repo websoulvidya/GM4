@@ -1,4 +1,4 @@
-import React ,{useLayoutEffect} from 'react';
+import React ,{useLayoutEffect,useEffect,useState} from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
 import './IDP.css';
@@ -7,7 +7,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import img1 from '../../assets/homepage/idp-pubg.jpg'
-
+import Moment from "react-moment";
+import axios from "axios"
 
 //Style for modal
 
@@ -27,17 +28,53 @@ const style = {
 
 function IDP() {
 
+  
+    const userid = localStorage.getItem('id')
+    const token = localStorage.getItem("token")
+    const [tournamentList, setTournamentlist] = useState([])
+    const [scrimsList,setScrimsList] = useState([])
+    const [dailtmatchList, setDailymatchList] = useState([])
+    //tournament
+    useEffect(() => {
+    
+      axios.get(`http://localhost:8000/api/user/list/booked/tournaments/${localStorage.getItem('id')}`, { headers: { "Authorization": `Bearer ${token}` } }).then((response) => {
+    
+        setTournamentlist(response.data)
+       
+      }).catch(() => {
+        console.log("Error")
+      })
+    }, [])
+    
+//scrims
+useEffect(()=>{
+    axios.get(`http://localhost:8000/api/user/view/booked/scrims/${localStorage.getItem('id')}`,{ headers: {"Authorization" : `Bearer ${token}`} }).then((response)=>{
+           setScrimsList(response.data)
+           
+        }).catch(()=>{
+      console.log("Error")
+    })
+  }, [])
+  
+  //dailymatch
+  useEffect(() => {
+    axios.get(`http://localhost:8000/api/user/booked/matches/${localStorage.getItem('id')}`, { headers: { "Authorization": `Bearer ${token}` } }).then((response) => {
+  
+      setDailymatchList(response.data)
+     
+    }).catch(() => {
+      console.log("Error")
+    })
+  }, [])
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
 
-    //Use State for rendering modal on click the rules icon
+
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return(
+
     <div>
       <Userheader/>
 
@@ -50,7 +87,11 @@ function IDP() {
 
       <div className="myBoolingInfo_wrapper11">
         <Grid container>
-          <Grid item md={6} xs={12} xl={4}>
+            {/* Tournament */}
+       { tournamentList.filter((i, index) => (index ===0)).map((i, index) => {
+                   return (
+
+                        <Grid item md={6} xs={12} xl={4}>
               
                 <div className="myBoolingInfo_container1">
                     <div className="myBoolingInfo_card1">
@@ -62,27 +103,27 @@ function IDP() {
                             <div className="text-box">
                                 <div className="text-box_flex_box1">
                                     <div className="p_pool">
-                                        <h4>ORGANISER NAME</h4>
+                                        <h4> {i.tournamentId.organiserName}</h4>
                                     </div>
                                 </div>
                                 <progress className='progress-th' value="3333" max="10000"></progress>
                                 <div className="progresstextflex">
                                     <div>
-                                        <p>100 joined</p>
+                                        <p>{i.tournamentId.numberOfRegs} joined</p>
                                     </div>
                                     <div>
-                                        <p>400 spot left</p>
+                                        <p>{(i.tournamentId.teamLimit) - (i.tournamentId.numberOfRegs)} spot left</p>
                                     </div>
                                 </div>
                                 <div className="timeFlexbox_match">
                                     <div className="my_Date1">
                                         <h4>MATCH DATE</h4>
-                                        <p>06/05/2022</p>
+                                        <p><Moment format="DD/MM/YYYY">{i.tournamentId.matchDate}</Moment></p>
                                     </div>
                                     <div className="horidiv3"></div>
                                     <div className="my_Time1">
                                         <h4>MATCH TIME</h4>
-                                        <p>2:30pm</p>
+                                        <p><Moment format='LT'>{i.tournamentId.matchTime}</Moment></p>
                                     </div>
                                 </div>
                             </div>
@@ -90,12 +131,12 @@ function IDP() {
                     </div>
                     <div className="blue_box">
                         <div>
-                            <h4>IDP TIME</h4>
-                            <p>9:00am</p>
+                            <h4>Entry Fee</h4>
+                            <p>{i.tournamentId.entryFee}</p>
                         </div>
                         <div className="horidiv2"></div>
                         <div>
-                        <h4>  <a className='idp-link' href="/viewidp" > VIEW IDP</a></h4>
+                        <h4>  <a className='idp-link' href="/booedtournament" > View More</a></h4>
                          
                         </div>
                     </div>
@@ -104,6 +145,17 @@ function IDP() {
                     </div>
                 </div>
                 </Grid>
+                       )
+                    })}
+
+
+                    {/* scrims */}
+
+
+                  
+                    { scrimsList.filter((scr, index) => (index ===0)).map((scr, index) => {
+                   return (
+          
                 <Grid item md={6} xs={12} xl={4}>
                 <div className="myBoolingInfo_container1">
                     <div className="myBoolingInfo_card1">
@@ -115,7 +167,7 @@ function IDP() {
                             <div className="text-box">
                                 <div className="text-box_flex_box1">
                                     <div className="p_pool">
-                                        <h4>ORGANISER NAME</h4>
+                                        <h4> {scr.scrimId.organizationName}</h4>
                                         {/* <p>300</p> */}
                                     </div>
                                     {/* <div className="hori-div">
@@ -125,24 +177,24 @@ function IDP() {
                                         <p>300</p>
                                     </div> */}
                                 </div>
-                                <progress className='progress-th' value="3333" max="10000"></progress>
+                                <progress className='progress-th' value={scr.scrimId.numberOfRegs} max="100"></progress>
                                 <div className="progresstextflex">
                                     <div>
-                                        <p>100 joined</p>
+                                        <p>{scr.scrimId.numberOfRegs} joined</p>
                                     </div>
                                     <div>
-                                        <p>400 spot left</p>
+                                        <p>{50 -scr.scrimId.numberOfRegs} spot left</p>
                                     </div>
                                 </div>
                                 <div className="timeFlexbox_match">
                                     <div className="my_Date1">
                                         <h4>MATCH DATE</h4>
-                                        <p>06/05/2022</p>
+                                        <p><Moment format="DD/MM/YYYY">{scr.scrimId.matchDate}</Moment></p>
                                     </div>
                                     <div className="horidiv3"></div>
                                     <div className="my_Time1">
                                         <h4>MATCH TIME</h4>
-                                        <p>2:30pm</p>
+                                        <p><Moment format='LT'>{scr.scrimId.matchTime}</Moment></p>
                                     </div>
                                 </div>
                             </div>
@@ -151,11 +203,11 @@ function IDP() {
                     <div className="blue_box">
                         <div>
                             <h4>IDP TIME</h4>
-                            <p>9:00am</p>
+                            <p><Moment format='LT'>{scr.scrimId.idpTime}</Moment></p>
                         </div>
                         <div className="horidiv2"></div>
                         <div>
-                            <h4>  <a className='idp-link' href="/viewidp" > VIEW IDP</a></h4>
+                            <h4>  <a className='idp-link' href="/bookedscrims" >View More</a></h4>
                             {/* <p>Scrim</p> */}
                         </div>
                     </div>
@@ -164,6 +216,14 @@ function IDP() {
                     </div>
                 </div>
                 </Grid>
+                       
+                       )
+                    })}
+
+                {/* daily match  */}
+                {dailtmatchList.filter((dmt,index)=>(index ===0)).map((dmt,idex)=>{
+                    return(
+         
                 <Grid item md={6} xs={12} xl={4}>
                 <div className="myBoolingInfo_container1">
                     <div className="myBoolingInfo_card1">
@@ -175,7 +235,7 @@ function IDP() {
                             <div className="text-box">
                                 <div className="text-box_flex_box1">
                                     <div className="p_pool">
-                                        <h4>ORGANISER NAME</h4>
+                                        <h4>{dmt.dailyMatchId.organizationName}</h4>
                                     </div>
                                     {/* <div className="hori-div">
                                     </div>
@@ -184,24 +244,24 @@ function IDP() {
                                         <p>300</p>
                                     </div> */}
                                 </div>
-                                <progress className='progress-th' value="3333" max="10000"></progress>
+                                <progress className='progress-th' value={dmt.dailyMatchId.numberOfRegs} max="100"></progress>
                                 <div className="progresstextflex">
                                     <div>
-                                        <p>100 joined</p>
+                                        <p>{dmt.dailyMatchId.numberOfRegs} joined</p>
                                     </div>
                                     <div>
-                                        <p>400 spot left</p>
+                                        <p>{100-dmt.dailyMatchId.numberOfRegs} spot left</p>
                                     </div>
                                 </div>
                                 <div className="timeFlexbox_match">
                                     <div className="my_Date1">
                                         <h4>MATCH DATE</h4>
-                                        <p>06/05/2022</p>
+                                        <p><Moment format="DD/MM/YYYY">{dmt.dailyMatchId.matchDate}</Moment></p>
                                     </div>
                                     <div className="horidiv3"></div>
                                     <div className="my_Time1">
                                         <h4>MATCH TIME</h4>
-                                        <p>2:30pm</p>
+                                        <p><Moment format='LT'>{dmt.dailyMatchId.matchTime}</Moment></p>
                                     </div>
                                 </div>
                             </div>
@@ -210,11 +270,11 @@ function IDP() {
                     <div className="blue_box">
                         <div>
                             <h4>IDP TIME</h4>
-                            <p>9:00am</p>
+                            <p><Moment format='LT'>{dmt.dailyMatchId.idpTime}</Moment></p>
                         </div>
                         <div className="horidiv2"></div>
                         <div>
-                        <h4>  <a className='idp-link' href="/viewidp" > VIEW IDP</a></h4>
+                        <h4>  <a className='idp-link' href="/bookeddaily" > View More</a></h4>
                             {/* <p>Scrim</p> */}
                         </div>
                     </div>
@@ -223,6 +283,9 @@ function IDP() {
                     </div>
                 </div>
                 </Grid>
+                               
+                               )
+                            })}
                 </Grid>
 
             </div>

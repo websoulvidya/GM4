@@ -1,23 +1,18 @@
 import React, { useLayoutEffect, useState, useEffect } from 'react';
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
-import "../../pages/openrooms/Openrooms.css";
-import axios from "axios"
-import Moment from "react-moment";
-import {
-  BrowserRouter as Router,
-  Routes, Link,
-  Route
-} from "react-router-dom";
-
-import OpenRoomsImg from "../../assets/OpenRooms/openroom.jpeg";
-import OpenroomIDP from "../../pages/openrooms/OpenroomIDP"
+import "../../pages/dailymatch/Dailymatch.css"
+import DailyImg from "../../assets/DailyMatch/dailymatch.jpeg"
+import Moment from 'react-moment';
 
 
+import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import axios from "axios"
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -30,59 +25,66 @@ const style = {
   p: 4,
 };
 
-<Router>
-  <Link to="/Openrooms/openroomidp" ></Link>
-  <Routes>
-    <Route exact path="/openrooms" component={Openrooms}></Route>
-    <Route path="/openrooms/openroomidp" component={OpenroomIDP}></Route>
-  </Routes>
-</Router>
 
-function Openrooms() {
+function Dailymatch() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-
-  const [openRoomList, setOpenRoomList] = useState([])
+  const [dailtmatchList, setDailymatchList] = useState([])
   const token = localStorage.getItem("token")
-
   useEffect(() => {
-    axios.get(`https://gm4-server.herokuapp.com/api/user/openroom/list/all/${localStorage.getItem('id')}`, { headers: { "Authorization": `Bearer ${token}` } }).then((response) => {
-
-      setOpenRoomList(response.data)
-
+    axios.get(`http://localhost:8000/api/user/booked/matches/${localStorage.getItem('id')}`, { headers: { "Authorization": `Bearer ${token}` } }).then((response) => {
+  
+      setDailymatchList(response.data)
+     
     }).catch(() => {
       console.log("Error")
     })
   }, [])
+  
 
-
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0)
+  // });
+  // const location = useLocation();
+ //progreebar 
+ const Progress = ({value}) => {
+  const [style, setStyle] = React.useState({});
+  
+  setTimeout(() => {
+    const newStyle = {
+      opacity: 1,
+      width: `${value}%`
+    }
+    
+    setStyle(newStyle);
+  }, 200);
+}
 
   return (
+
     <div>
       <Userheader />
-      <div className='openroom-main-wrapper'>
-        <div className='openroom_headerclip'>
-          <h1>Open Rooms </h1>
+      <div className='dailymatch-main-wrapper' style={{ overflowX: "hidden" }}>
+        <div className='dailymatch_headerclip'>
+          <h1>Booked Daily Match </h1>
         </div>
-        <div className='openroom-card-list'>
+        <div className='dailymatch-card-list'>
           <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-grid uk-text-center main-card" uk-grid>
 
-
-            {openRoomList.map(val => {
-
-              return (
-                <div className='openroom-carditems'>
-                  <div class="openroom-card">
-                    <div className='openroom-main-titile'>
-                      <h3>{val.matchType}</h3>
+            {dailtmatchList.map((val) => {
+            const maximumVal = 50;
+                   return (
+                <div className='dailymatch-carditems'>
+                  <div class="dailymatch-card">
+                    <div className='dailymatch-main-titile'>
+                      <h3>{val.dailyMatchId.matchType} </h3>
                     </div>
-                    <div className='openroom-team-img'>
-                      <img src={OpenRoomsImg} />
+                    <div className='dailymatch-team-img'>
+                      <img src={DailyImg} />
                     </div>
-                    <div className='openroom-rule'>
-                      <i class="fa fa-gavel rule-icon" aria-hidden="true" onClick={handleOpen}></i>
+                    <div className='dailymatch-rule'>
+                      <i class="fa fa-gavel dailymatch-icon" aria-hidden="true" onClick={handleOpen}></i>
                       <Modal
                         open={open}
                         onClose={handleClose}
@@ -94,7 +96,7 @@ function Openrooms() {
                           <Typography id="modal-modal-title" variant="h6" component="h2">
                             Rules
                           </Typography>
-                          <Typography id="modal-modal-description" className='openroom_rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
+                          <Typography id="modal-modal-description" className='dailymatch_rules_modal' sx={{ mt: 2 }} style={{ height: '30rem', overflow: 'scroll' }} >
 
                             <ul>
                               <li>The room ID and password for the game will be provided 15 mins before the start time of the contest</li>
@@ -114,36 +116,35 @@ function Openrooms() {
 
                     </div>
 
-                    <div className='openroom-time-section'>
+                    <div className='dailymatch-time-section'>
                       <h6>match time</h6>
-                      <p className='match-time'><Moment format="LT">{val.matchTime}</Moment></p>
-                      <span>Match date</span>
-                      <p className='openroom-matchdate'><Moment format="DD/MM/YYYY">{val.matchDate}</Moment></p>
+                      <p className='match-time'><Moment format='LT'>{val.dailyMatchId.matchTime}</Moment></p>
+                      <span>idp time</span>
+                      <p className='idp-time'><Moment format='LT'>{val.dailyMatchId.idpTime}</Moment></p>
                     </div>
-
-                    <div className='openroom-progress-bar'>
-                      <progress value="3333" max="10000" className='opneroomprogress'>
+                    <div className='dailymatch-date'>
+                      <p className='dailymatch-matchtitle'>Match date</p>
+                      <span classname="dailymatch-matchdate"><Moment format="DD/MM/YYYY">{val.dailyMatchId.matchDate}</Moment></span>
+                    </div>
+                    <div className='dailymatch-progress-bar'>
+                      <progress value={val.dailyMatchId.numberOfRegs} max="100" className='dailyprogress'>
 
                       </progress>
 
-                      <p className='progressbar-left-text'>100 Joined</p>
-                      <p className='progressbar-right-text'>400 Spot left</p>
+                      <p className='progressbar-left-text'>{val.dailyMatchId.numberOfRegs} Joined</p>
+                      <p className='progressbar-right-text'>{maximumVal-(val.dailyMatchId.numberOfRegs)} Spot left</p>
                     </div>
-                    <div className='openroom-reg-section'>
+                    <div className='dailymatch-reg-section'>
                       <h6>Hosted By</h6>
-                      <p>{val.organiserName}</p>
+                      <p>{val.dailyMatchId.organizationName}</p>
 
-                      <a href={`/openrooms/openroomidp/${val._id}`} >View IDP</a>
+                      <Link to={`/viewidp/${val._id}`}>View IDP</Link>
                     </div>
                   </div>
                 </div>
 
-
-
               )
             })}
-
-
 
           </div>
         </div>
@@ -151,8 +152,11 @@ function Openrooms() {
       </div>
       <Footer />
     </div>
+
   );
 
 }
 
-export default Openrooms
+export default Dailymatch;
+
+

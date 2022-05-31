@@ -201,7 +201,14 @@ body{
     width: 100%;
     text-align: left;
     }
-
+.slotlistclass{
+    color: #979393 !important;
+    left:5%
+}
+.slotselectclass{
+    width:100%;
+    border: solid 1px #e9e3e3;
+}
 /* END */
   @media (min-width: 200px) {
     .dailyregslot_dropdown {

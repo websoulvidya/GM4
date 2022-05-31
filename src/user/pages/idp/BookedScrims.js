@@ -6,7 +6,7 @@ import "../../pages/scrims/Scims.css"
 import axios  from "axios"
 import Moment from "react-moment";
 import {BrowserRouter as Router,  Routes,Link,  Route} from "react-router-dom";
-import ScrimsReg from './ScrimsReg';
+
 
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -33,14 +33,14 @@ const [scrimsList,setScrimsList] = useState([])
 const token1 = localStorage.getItem("token")
 
 useEffect(()=>{
-  axios.get(`https://gm4-server.herokuapp.com/api/user/read/all/scrims/${localStorage.getItem('id')}`,{ headers: {"Authorization" : `Bearer ${token1}`} }).then((response)=>{
-          
-    setScrimsList(response.data)
-
-  }).catch(()=>{
-    console.log("Error")
-  })
-},[])
+    axios.get(`http://localhost:8000/api/user/view/booked/scrims/${localStorage.getItem('id')}`,{ headers: {"Authorization" : `Bearer ${token1}`} }).then((response)=>{
+           setScrimsList(response.data)
+           
+        }).catch(()=>{
+      console.log("Error")
+    })
+  }, [])
+  
 
 //   useLayoutEffect(() => {
 //     window.scrollTo(0, 0)
@@ -64,13 +64,13 @@ useEffect(()=>{
 }
 var result = range(1, 100); 
 console.log(result);
-  <Router >
-    <Link to="/scrims/scrimsreg" ></Link>
-      <Routes>
-            <Route exact path="/scrims" component={Scrims}></Route>
-            <Route  path="/scrims/scrimsreg" component={ScrimsReg}></Route>
-      </Routes>
-  </Router>
+//   <Router >
+//     <Link to="/scrims/scrimsreg" ></Link>
+//       <Routes>
+//             <Route exact path="/scrims" component={Scrims}></Route>
+//             <Route  path="/scrims/scrimsreg" component={ScrimsReg}></Route>
+//       </Routes>
+//   </Router>
  
   return(
 
@@ -78,7 +78,7 @@ console.log(result);
       <Userheader/>
       <div className='scrims-main-wrapper'>
       <div className='scrims_headerclip'>
-        <h1>Scrims</h1>
+        <h1>Booked Scrims</h1>
       </div>
          <div className='scrims-card-list'>
           <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-grid uk-text-center main-card" uk-grid>
@@ -87,22 +87,11 @@ console.log(result);
 {scrimsList.map(val=>{
   
 const maxValue = 50;
-  // let date = new Date(val.matchDate);
-  // let dateMDY = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
-
-  // let time1 = new Date(val.matchTime);
-  // let matchTime1 = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit'}).format(time1)
-
-  // let time2 = new Date(val.idpTime);
-  // let idpTime1 = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit'}).format(time2)
-
-
-
   return(
     <div className='scrims-carditems'>
     <div class="scrims-card">
       <div className='scrims-main-titile'>
-        <h3>Scrims name</h3>
+        <h3>{val.scrimId.matchType}</h3>
       </div>
       <div className='scrims-team-img'>
         <img src={ScrimImg} />
@@ -142,13 +131,13 @@ const maxValue = 50;
      
       <div className='scrims-time-section'>
         <h6>match time</h6>
-        <p className='match-time'><Moment format="LT">{val.matchTime}</Moment></p>
+        <p className='match-time'><Moment format="LT">{val.scrimId.matchTime}</Moment></p>
         <span>idp time</span>
-        <p className='idp-time'><Moment format="LT">{val.idpTime}</Moment></p>
+        <p className='idp-time'><Moment format="LT">{val.scrimId.idpTime}</Moment></p>
       </div>
       <div className='scrims-date'>
         <p className='scrims-matchtitle'>Match date</p>
-        <span classname="scrims-matchdate"><Moment format="LT">{val.matchDate}</Moment></span>
+        <span classname="scrims-matchdate"><Moment format='DD/MM/YYYY'>{val.scrimId.matchDate}</Moment></span>
       </div>
       <div className='scrims-progress-bar'>
 
@@ -156,15 +145,14 @@ const maxValue = 50;
 
         </progress>
 
-        <p className='progressbar-left-text'>{val.numberOfRegs} Joined</p>
-        <p className='progressbar-right-text'>{maxValue-(val.numberOfRegs)}  Spot left</p>
+        <p className='progressbar-left-text'>{val.scrimId.numberOfRegs} Joined</p>
+        <p className='progressbar-right-text'>{maxValue-(val.scrimId.numberOfRegs)}  Spot left</p>
       </div>
       <div className='scrims-reg-section'>
         <h6>Hosted By</h6>
-        <p>{val.organizationName}</p>
-        <Link to={`/scrims/scrimsreg/${val._id}`}>Reg Now</Link>
-       {/* <a href={`/scrims/scrimsreg/${val._id}`} >Reg Now </a> */}
-      </div>
+        <p>{val.scrimId.organizationName}</p>
+        <Link to={`/viewidp/${val._id}`} >View IDP</Link>
+             </div>
     </div>
   </div>
 

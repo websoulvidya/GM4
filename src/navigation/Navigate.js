@@ -45,8 +45,9 @@ import Tourpayment from '../user/pages/tournament/Tourpayment';
 import Viewidp from '../user/pages/idp/Viewidp';
 
 import OpenroomIDP from "../user/pages/openrooms/OpenroomIDP";
-
-
+import BookedTour from "../user/pages/idp/BookedTour";
+import BookedScrims from "../user/pages/idp/BookedScrims";
+import BookedDaily from "../user/pages/idp/BookedDaily";
 
 
 //org module page links
@@ -140,14 +141,19 @@ export default function Navigate() {
       <Route path="/scrims" element={<Scrims />}/>
       <Route path="/scrims/scrimsreg/:id" element={<ScrimsReg />}/>
       <Route path="/dailymatch" element={<Dailymatch />}/>
-      <Route path="/dailymatch/dailymatchreg" element={<DailymatchReg/>}/>
+      <Route path="/dailymatch/dailymatchreg/:id" element={<DailymatchReg/>}/>
       <Route path="/openrooms" element={<Openrooms />}/>
-      <Route path="/openrooms/openroomidp" element={<OpenroomIDP/>}/>
+      <Route path="/openrooms/openroomidp/:id" element={<OpenroomIDP/>}/>
 
-      <Route path="/viewidp" element={<Viewidp/>}/>
+      <Route path="/viewidp/:id" element={<Viewidp/>}/>
 
+      <Route path="/booedtournament" element={<BookedTour/>}/>
 
-      <Route path="/MyBookingInfo" element={<MyBookingInfo />}/>  
+      <Route path="/bookedscrims" element={<BookedScrims/>}/>
+
+      <Route path="/bookeddaily" element={<BookedDaily/>}/>
+
+      <Route path="/MyBookingInfo/:id/:id" element={<MyBookingInfo />}/>  
 
 
 

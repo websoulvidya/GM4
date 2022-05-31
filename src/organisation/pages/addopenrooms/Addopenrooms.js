@@ -8,7 +8,6 @@ import { useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
-import Select from "react-select";
 
 //modal imports
 // import Backdrop from '@mui/material/Backdrop';
@@ -20,6 +19,13 @@ import Typography from "@mui/material/Typography";
 
 //expired image
 import expire from "../../assets/expiry.png";
+
+//drop down 
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import axios from "axios";
+
 
 function Addopenrooms() {
   useLayoutEffect(() => {
@@ -33,17 +39,49 @@ function Addopenrooms() {
     reset,
     trigger
   } = useForm();
-  const submitData = (data) => {
-    console.log(data);
-    reset();
+
+  const [selectSlot, setSelectSlot] = React.useState('');
+
+  const handleSelect = (event) => {
+    setSelectSlot(event.target.value);
+  };
+
+  const submitData = async (data) => {
+    // let orginId = localStorage.getItem('id')
+    // console.log(orginId);
+    let token = localStorage.getItem('token')
+    let url = `http://localhost:8000/api/organiser/openroom/create/${localStorage.getItem('id')}`
+    const options = {
+      method: "POST",
+      url: url,
+      headers: {
+        "Authorization": `Bearer ${token}`,
+      },
+      data: {
+        organiserName: data.orgzname,
+        matchDate: selectedDate.toISOString(),
+        matchTime: selectedTime.toISOString(),
+        matchType: selectSlot
+      }
+      
+    }
+    try {
+      const response = await axios(options);
+      alert("Room Added Successfully")
+      setSelectedDate("")
+      setSelectedTime("")
+      reset();
+      console.log(response)
+    } catch (error) {
+      alert(error.response.data.error)
+      console.log(error)
+    }
   };
 
   // Datepicker
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
-
-  // If current Date & Time needed use the below code
-  // const [startDate, setStartDate] = useState(new Date());
+ 
 
   //modal style
   const style = {
@@ -74,16 +112,10 @@ function Addopenrooms() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const options = [
-    { value: "Tournament", label: "Tournament" },
-    { value: "Scrims", label: "Scrims" },
-    { value: "Daily Match", label: "Daily Match" },
-    { value: "Open Rooms", label: "Open Rooms" },
-  ];
+
   const colourStyles = {
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
-      // const color = chroma(data.color);
-      console.log({ data, isDisabled, isFocused, isSelected });
+      // const color = chroma(data.color); 
       return {
         ...styles,
         backgroundColor: isFocused ? "#6BDCFC" : null,
@@ -116,19 +148,19 @@ function Addopenrooms() {
                   maxLength={30}
                   {...register("orgzname", {
                     required: "**Organization Name is Required",
-                    pattern:{value:/^[^@\s#$!][a-zA-Z0-9_.-\s]*$/,message:"**Only Alphabets and numbers allowed"}
+                    pattern: { value: /^[^@\s#$!][a-zA-Z0-9_.-\s]*$/, message: "**Only Alphabets and numbers allowed" }
                   })}
                   autoComplete="off"
-                  onKeyUp={()=>{trigger("orgzname")}}
-                  // onChange={(e) =>
-                  //   setorgName(
-                  //     e.target.value
-                  //       .replace(/[^\w\s]/gi, "")
-                  //       .replace(/[0-9]/g, "")
-                  //   )
-                  // }
-                  // value={orgName}
-                  // onKeyDown={handleKeyDown}
+                  onKeyUp={() => { trigger("orgzname") }}
+                // onChange={(e) =>
+                //   setorgName(
+                //     e.target.value
+                //       .replace(/[^\w\s]/gi, "")
+                //       .replace(/[0-9]/g, "")
+                //   )
+                // }
+                // value={orgName}
+                // onKeyDown={handleKeyDown}
                 />
                 {errors.orgzname && (
                   <span className="errormsgss">{errors.orgzname.message}</span>
@@ -166,18 +198,29 @@ function Addopenrooms() {
                 </div>
               </div>
               <div class="uk-margin">
-                <Select
-                  options={options}
-                  placeholder={"Match Type"}
-                  isSearchable={false}
-                  styles={colourStyles}
-                  theme={(theme) => ({
-                    ...theme,
-                    colors: {
-                      ...theme.colors,
-                      primary: "#6BDCFC",
-                    },
-                  })} />
+                <FormControl sx={{ m: 1, minWidth: 300 }} style ={{
+                  marginLeft: '0px'
+                }}>
+                  <Select
+                    value={selectSlot}
+                    onChange={handleSelect}
+                    displayEmpty
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    style={{
+                      width: '200px',
+                      height: '40px',
+                      color: 'gray'
+                    }}
+                  >
+                    <MenuItem value="">
+                      <>Select options</>
+                    </MenuItem>
+                    <MenuItem value={"Tournament"}>Tournament</MenuItem>
+                    <MenuItem value={"Scrims"}>Scrims</MenuItem>
+                    <MenuItem value={"Daily Match"}>Daily Match</MenuItem>
+                    <MenuItem value={"Open Rooms"}>Open Rooms</MenuItem>
+                  </Select>
+                </FormControl>
               </div>
               <br />
               <div>

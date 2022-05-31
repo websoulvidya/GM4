@@ -1,30 +1,22 @@
 import React from 'react';
-
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
-
 import './Advertisement.css'
-
-
 import img7 from '../../assets/homeimages/img7.jpg'
-
 import {
     Link,
 } from 'react-router-dom';
-
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Container } from '@mui/material';
-
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
-
 function Advertisement() {
     return (
         <div style={{overflowX:"hidden"}}>
@@ -50,14 +42,12 @@ function Advertisement() {
                             {/* each card sections */}
                             <Grid item xl={3} xs={12} md={4} lg={3} sm={6}>
                                 <div className='ads_card'>
-
                                     {/*start ads price details */}
                                     <div className='plan_price' >
                                         <h6>Intro</h6>
                                         <h4>$19<span>/month</span></h4>
                                     </div>
                                     {/* end ads price details */}
-
                                     <div className='ads_details'>
                                         <span>Plan Includes:</span>
                                         <ul>
@@ -65,10 +55,9 @@ function Advertisement() {
                                             <li> praesentium dolorem odio facilis, necessitatibus harum placeat?</li>
                                             <li> quisquam voluptatem doloremque, dolores itaque porro sed dignissimos,</li>
                                         </ul>
-
                                     </div>
                                     {/* <a href="" >choose plan</a> */}
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={`/ads_payment`} state={{ from: "Intro" }} >Choose plan</Link>
                                 </div>
                             </Grid>
                             {/* each card section */}
@@ -85,10 +74,9 @@ function Advertisement() {
                                             <li> praesentium dolorem odio facilis, necessitatibus harum placeat?</li>
                                             <li> quisquam voluptatem doloremque, dolores itaque porro sed dignissimos,</li>
                                         </ul>
-
                                     </div>
                                     {/* <button>choose plan</button> */}
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={'/ads_payment'} state={{ from: "Base" }} >Choose plan</Link>
                                 </div>
                             </Grid>
                             <Grid item xl={3} xs={12} md={4} lg={3} sm={6}>
@@ -104,9 +92,8 @@ function Advertisement() {
                                             <li> praesentium dolorem odio facilis, necessitatibus harum placeat?</li>
                                             <li> quisquam voluptatem doloremque, dolores itaque porro sed dignissimos,</li>
                                         </ul>
-
                                     </div>
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={'/ads_payment'} state={{ from: "Popular" }}>Choose plan</Link>
                                 </div>
                             </Grid>
                             <Grid item xl={3} xs={12} md={4} lg={3} sm={6}>
@@ -122,12 +109,10 @@ function Advertisement() {
                                             <li> praesentium dolorem odio facilis, necessitatibus harum placeat</li>
                                             <li> quisquam voluptatem doloremque dolores itaque porro sed dignissimos</li>
                                         </ul>
-
                                     </div>
-                                    <Link to={'/ads_payment'} >Choose plan</Link>
+                                    <Link to={'/ads_payment'} state={{ from: "Enterprice" }} >Choose plan</Link>
                                 </div>
                             </Grid>
-
                         </Grid>
                     </Box>
                 </Container>
@@ -140,5 +125,4 @@ function Advertisement() {
         </div>
     )
 }
-
 export default Advertisement;

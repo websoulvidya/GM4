@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useLayoutEffect, useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from "axios"
 import "../../pages/openrooms/OpenroomIDP.css"
 import Userheader from '../../components/userheader/Userheader';
 import Footer from '../../components/footer/Footer';
+
 function OpenroomIDP() {
+    const { id } = useParams();
+    const [openRoomList, setOpenRoomList] = useState([])
+    const token = localStorage.getItem("token")
+  
+    useEffect(() => {
+      axios.get(`https://gm4-server.herokuapp.com/api/user/openroom/list/all/${localStorage.getItem('id')}`, { headers: { "Authorization": `Bearer ${token}` } }).then((response) => {
+  
+        setOpenRoomList(response.data)
+  
+      }).catch(() => {
+        console.log("Error")
+      })
+    }, [])
     return (
         <div className='openidppage'> 
             <Userheader/>
@@ -10,15 +26,20 @@ function OpenroomIDP() {
                 <div className='openidp_headerclip'>
                     <h1>IDP page</h1>
                 </div>
+
+                { openRoomList.filter((val) => (val._id == id)).map((val) => {
+                        if(val._id == id){
+                   return (
+
                 <div className='idpcard-wrapper'>
                     <div className='openidp-carditems'>
                         <div class="openidp-card">
                        
                             <div className='openroom-idpshare'>
                            
-                                <h6 className='openroom-id'>ID</h6><p>Team12</p>
+                                <h6 className='openroom-id'>ID</h6><p>{(val._id).slice(0,8)}</p>
                         
-                               <h6 className='openroom-pwd'>Password</h6> <p>1234567</p>
+                               <h6 className='openroom-pwd'>Password</h6> <p>{(val.organiserId).slice(0,6)}</p>
                             
                             </div>
                           
@@ -35,6 +56,12 @@ function OpenroomIDP() {
                     <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
                 </div>
                 </div>
+
+)
+}
+})}
+
+
             </div>
 
 
