@@ -21,6 +21,15 @@ function Tournamentreg() {
   const [tourPlayername3, settourPlayername3] = useState("");
   const [tourPlayername4, settourPlayername4] = useState("");
   const [tourPlayername5, settourPlayername5] = useState("");
+<<<<<<< HEAD
+=======
+
+  const [Player1id, setPlayer1id] = useState("");
+  const [Player2id, setPlayer2id] = useState("");
+  const [Player3id, setPlayer3id] = useState("");
+  const [Player4id, setPlayer4id] = useState("");
+  const [Player5id, setPlayer5id] = useState("");
+>>>>>>> d1fce7414b40943d3781cab63f3c1035a658d58a
 
   // const [Player1id, setPlayer1id] = useState("");
   // const [Player2id, setPlayer2id] = useState("");
@@ -28,6 +37,14 @@ function Tournamentreg() {
   // const [Player4id, setPlayer4id] = useState("");
   // const [Player5id, setPlayer5id] = useState("");
 
+<<<<<<< HEAD
+=======
+  const [values, setValues] = useState({
+    teamsname: '',
+    teamtag: '',
+
+  });
+>>>>>>> d1fce7414b40943d3781cab63f3c1035a658d58a
   let fromdata = new FormData();
 
   const [open, setOpen] = React.useState(false);
@@ -36,7 +53,10 @@ function Tournamentreg() {
   const token = localStorage.getItem("token")
   const userid = localStorage.getItem("id")
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1fce7414b40943d3781cab63f3c1035a658d58a
 
 
   const { register, handleSubmit, watch, formState: { errors }, reset, trigger } = useForm();
@@ -73,6 +93,43 @@ function Tournamentreg() {
       alert(error.response.data.error.name) 
     }
 
+<<<<<<< HEAD
+=======
+  const { register, handleSubmit, watch, formState: { errors }, reset, trigger } = useForm();
+  const submitData = async (data) => {
+    console.log(data)
+    fromdata.append("teamName", data.teamsname)
+    fromdata.append("teamTag", data.teamtag)
+    fromdata.append("player1", data.player1name)
+    fromdata.append("id1", data.player1id)
+    fromdata.append("player2", data.player2name)
+    fromdata.append("id2", data.player2id)
+    fromdata.append("player3", data.player3name)
+    fromdata.append("id3", data.player3id)
+    fromdata.append("player4", data.player4name)
+    fromdata.append("id4", data.player4id)
+    fromdata.append("player5", data.player5name)
+    fromdata.append("id5", data.player5id)
+    fromdata.append('screenshort', data.paymentupload)
+
+    let url = `https://gm4-server.herokuapp.com/api/user/tournament/register/${userid}/${id}`;
+    const options = {
+      method: "POST",
+      url: url,
+      data: fromdata,
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    }
+    try {
+      const response = await axios(options);
+      alert('Tournement Registration successfully')
+      reset();
+    } catch (error) {
+      alert(error.response.data.error.name) 
+    }
+
+>>>>>>> d1fce7414b40943d3781cab63f3c1035a658d58a
   }
 
   //code to scroll to the top of window
@@ -350,7 +407,11 @@ function Tournamentreg() {
                             files[0]?.type
                           ) || 'Only PNG, JPEG and GIF files allowed',
                       },
+<<<<<<< HEAD
                     })}   />
+=======
+                    })} />
+>>>>>>> d1fce7414b40943d3781cab63f3c1035a658d58a
 
                   <input class="uk-input " type="text" placeholder="Upload Screenshot of payment" style={{ backgroundColor: "#fffff" }}
                     autoComplete='off' />

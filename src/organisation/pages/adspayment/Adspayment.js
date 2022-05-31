@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 
 import './Adspayment.css';
 
@@ -26,6 +26,12 @@ import { date, string } from 'yup/lib/locale';
 import * as yup from 'yup';
 import { Formik } from 'formik';
 import { useFormik } from 'formik';
+import { useLocation } from 'react-router-dom'
+
+// api calling 
+
+import { useParams } from 'react-router-dom';
+import axios from "axios"
 
 
 //modal style 
@@ -36,14 +42,77 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
+
+
+
 function Ads_payment() {
 
     //form submit
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
-    const submitData = (data) => {
-        reset();
-    };
+    // const submitData = (data) => {
+    //     reset();
+    // };
+// api calling
 
+let token = localStorage.getItem("token")                                 
+  const userid = localStorage.getItem("id")
+  let fromdata = new FormData();
+
+  const location = useLocation()
+  const { from }  = location.state;
+
+  const [category, setCategory] = useState(from);
+//   const [organiserName, setOrganiserName] = useState("");
+//   console.log(organiserName);
+  const [paymentScreenshot, setPaymentScreenshot] = useState("");
+  const [image1, setImage1] = useState("");
+  const [image2, setImage2] = useState("");
+  const [image3, setImage3] = useState("");
+  const [image4, setImage4] = useState("");
+  const [bannerImage, setBannerImage4] = useState("");
+  
+  const handlescrnshotChange = (event)=> {
+    setPaymentScreenshot(event.target.files[0]);
+    
+};
+  
+  
+  const submitData = async (data) => {
+    console.log(data)
+    fromdata.append("category",category )
+    fromdata.append("organiserName", data.orgsname)
+    fromdata.append("paymentScreenshot",data.scrnshot)
+    fromdata.append("image1", data.ads1)
+    fromdata.append("image2", data.adsImg2)
+    fromdata.append("image3", data.adsImg3)
+    fromdata.append("image4", data.adsImg4)
+    fromdata.append("bannerImage", data.bannerImg)
+    
+
+    let url = `http://localhost:8000/organiser/request/ad/${userid}`;
+    console.log(userid);
+    console.log(token);
+    const options = {
+      method: "POST",
+      url: url,
+      data: fromdata,
+      headers: {
+        "Authorization": `Bearer ${token}`,
+      },
+     
+    }
+    try {
+      const response = await axios(options);
+      alert('Tournement Registration successfully')
+      console.log(response);
+      reset();
+    } catch (error) {
+      alert(error.response.data) 
+      console.log(error.response.data);
+     
+    }
+
+  }
 
     return (
         <div style={{ overflowX: "hidden" }}>
@@ -112,14 +181,23 @@ function Ads_payment() {
                             <h2 class="joinhead"></h2>
                             <div class="uk-margin">
                                 <input className="uk-input" type="text" placeholder="Organizer name" id='orgsname' style={{ backgroundColor: "#F8F8F8" }}
-                                    {...register("orgsname", { required: "**Organizer Name is Required" })} autoComplete='off' />
+                                    {...register("orgsname", { required: "**Organizer Name is Required" })} autoComplete='off'  />
+                                {errors.orgsname && (<span className="adspayment-errormsg">{errors.orgsname.message}</span>)}
+                            </div>
+                            <div class="uk-margin">
+                                <input className="uk-input" type="text" placeholder="Organizer name" id='catgry' style={{ backgroundColor: "#F8F8F8" }}
+                                    {...register("catogery", { required: "**Organizer Name is Required" })} autoComplete='off' value={category}/>
                                 {errors.orgsname && (<span className="adspayment-errormsg">{errors.orgsname.message}</span>)}
                             </div>
 
                             <div class="uk-margin" uk-margin>
                                 <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
                                     <input className="uk-input" type="file" placeholder="Upload Screenshot of Payment"
-                                        autoComplete='off' {...register('scrnshot', {
+                                     
+                                        //  onChange={handlescrnshotChange}
+                                        autoComplete='off'
+                                        // value={paymentScreenshot}
+                                         {...register('scrnshot', {
                                             required: "**Payment screenShot is required ",
                                             validate: {
                                                 // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
@@ -129,7 +207,8 @@ function Ads_payment() {
                                                         files[0]?.type
                                                     ) || 'Only PNG, JPEG e GIF',
                                             },
-                                        })} />
+                                        })} 
+                                        />
                                     <input class="uk-input uk-form-width-extra-large" type="text" placeholder="Upload Screenshot of Payment" name='paymentScreenshot' style={{ marginTop: '.5rem' }} disabled />
                                     {errors.scrnshot && (<span className='adspayment-errormsg'>{errors.scrnshot.message}</span>)}
 
@@ -158,21 +237,52 @@ function Ads_payment() {
                                 </div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input type="file" />
+                                        <input type="file"
+                                        {...register('adsImg1', {
+                                            required: "**Banner image is required ",
+                                            validate: {
+                                                // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+
+                                                acceptedFormats: files =>
+                                                    ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                        files[0]?.type
+                                                    ) || 'Only PNG, JPEG e GIF',
+                                            },
+                                        })} />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg2' placeholder="Image 2" style={{ marginTop: '.5rem' }} disabled />
                                     </div>
                                 </div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input type="file" />
+                                        <input type="file"  name='adsImg2' {...register('adsImg2', {
+                                                required: "**Banner image is required ",
+                                                validate: {
+                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+
+                                                    acceptedFormats: files =>
+                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                            files[0]?.type
+                                                        ) || 'Only PNG, JPEG e GIF',
+                                                },
+                                            })}/>
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg3' placeholder="Image 3" style={{ marginTop: '.5rem' }} disabled />
                                     </div>
                                 </div>
                                 <div class="uk-margin" uk-margin>
                                     <div uk-form-custom="target: true" style={{ width: '100%', textAlign: 'start' }}>
-                                        <input type="file" />
+                                        <input type="file" {...register('adsImg3', {
+                                                required: "**Banner image is required ",
+                                                validate: {
+                                                    // lessThan1MB: files => files[0]?.size < 10000 || 'Max 10MB',
+
+                                                    acceptedFormats: files =>
+                                                        ['image/jpeg', 'image/png', 'image/gif'].includes(
+                                                            files[0]?.type
+                                                        ) || 'Only PNG, JPEG e GIF',
+                                                },
+                                            })} />
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='adsImg4' placeholder="Image 4" style={{ marginTop: '.5rem' }} disabled />
                                     </div>
@@ -195,8 +305,10 @@ function Ads_payment() {
 
                                         <input class="uk-input uk-form-width-extra-large" type="text" name='bannerImage' placeholder="Select file" style={{ marginTop: '.5rem' }} disabled />
                                         {errors.bannerImg && (<span className='adspayment-errormsg'>{errors.bannerImg.message}</span>)}
+                                        
                                     </div>
                                 </div>
+                               
                             </div>
                             <button class="ads-paymentbtn" type='submit'>Submit</button>
 

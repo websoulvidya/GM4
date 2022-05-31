@@ -7,7 +7,14 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
-import Select from "react-select";
+
+
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import axios from "axios";
+
+
 
 //modal imports
 import Box from "@mui/material/Box";
@@ -29,9 +36,49 @@ function Adddailymatch() {
     reset,
     trigger
   } = useForm();
-  const submitData = (data) => {
-    console.log(data);
-    reset();
+  // const submitData = (data) => {
+  //   console.log(data);
+  //   reset();
+  // };
+
+  const [selectSlot, setSelectSlot] = React.useState('');
+
+
+  const handleSelect = (event) => {
+    setSelectSlot(event.target.value);
+  };
+
+  const submitData = async (data) => {
+    let orginId = localStorage.getItem('id')
+    // console.log(orginId);
+    let token = localStorage.getItem('token')
+    let url = `https://gm4-server.herokuapp.com/api/organiser/create/dailyMatch/${orginId}`
+    const options = {
+      method: "POST",
+      url: url,
+      headers: {
+        "Authorization": `Bearer ${token}`,
+      },
+      data: {
+        organizationName : data.orgname,
+        matchDate : selectedDate.toISOString(),
+        matchTime : selectedTime.toISOString(),
+        idpTime : selectedTimes.toISOString(),
+        matchType : selectSlot
+      }
+    }
+    try {
+      const response = await axios(options);
+      alert("Daily match Added Successfully")
+      setSelectedDate("")
+      setSelectedTime("")
+      reset();
+      console.log(response);
+
+    } catch (error) {
+      alert(error.response.data.error)
+      console.log(error.response.data.error);
+    }
   };
 
   //modal style
@@ -67,12 +114,7 @@ function Adddailymatch() {
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedTimes, setSelectedTimes] = useState(null);
 
-  const options = [
-    { value: "Tournament", label: "Tournament" },
-    { value: "Scrims", label: "Scrims" },
-    { value: "Daily Match", label: "Daily Match" },
-    { value: "Open Rooms", label: "Open Rooms" },
-  ];
+ 
   const colourStyles = {
     option: (styles, { data, isDisabled, isFocused, isSelected }) => {
       // const color = chroma(data.color);
@@ -175,19 +217,29 @@ function Adddailymatch() {
                 </div>
               </div>
               <div class="uk-margin">
-                <Select
-                  options={options}
-                  placeholder={"Match Type"}
-                  isSearchable={false}
-                  styles={colourStyles}
-                  theme={(theme) => ({
-                    ...theme,
-                    colors: {
-                      ...theme.colors,
-                      primary: "#6BDCFC",
-                    },
-                  })}
-                />
+                <FormControl sx={{ m: 1, minWidth: 300 }} style ={{
+                  marginLeft: '0px'
+                }}>
+                  <Select
+                    value={selectSlot}
+                    onChange={handleSelect}
+                    displayEmpty
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    style={{
+                      width: '200px',
+                      height: '40px',
+                      color: 'gray'
+                    }}
+                  >
+                    <MenuItem value="">
+                      <>Select options</>
+                    </MenuItem>
+                    <MenuItem value={"Tournament"}>Tournament</MenuItem>
+                    <MenuItem value={"Scrims"}>Scrims</MenuItem>
+                    <MenuItem value={"Daily Match"}>Daily Match</MenuItem>
+                    <MenuItem value={"Open Rooms"}>Open Rooms</MenuItem>
+                  </Select>
+                </FormControl>
               </div>
               <div>
                 {/* Buttons */}

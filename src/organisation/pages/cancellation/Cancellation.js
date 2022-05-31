@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+
 import Dashboard from '../../components/header/Dashboard';
 import Footer from '../../components/footer/Footer';
 
@@ -21,7 +21,8 @@ import Box from '@mui/material/Box';
 import {
   Link,
 } from 'react-router-dom';
-
+import axios from "axios";
+import { useLayoutEffect, useEffect, useState } from "react";
 
 
 const style = {
@@ -40,13 +41,32 @@ const style = {
 
 
 
+
+
+
 function Cancellation() {
+
+
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
   });
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+const [cancell, setcancell] = useState([])
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    axios.get(`http://localhost:8000/api/organiser/cancellation/request/listall/${localStorage.getItem('id')}`, { headers: { "Authorization": `Bearer ${token}` } }).then((response) => {
+  
+      setcancell(response.data)
+      console.log(response.data);
+     
+    }).catch(() => {
+      console.log("Error")
+    })
+  }, [])
 
 
   return (
@@ -64,10 +84,14 @@ function Cancellation() {
       {/* 2 */}
       <div className='cancel-card-list'>
         <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-grid uk-text-center main-card" uk-grid>
+          {cancell.map((val) => {
+            return(
+
+           
           <div className='cancel-carditems'>
             <div class="cancel-card">
               <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
+                <h3>{val.teamName}</h3>
               </div>
               <div className='cancel-team-img'>
                 <img src={matchImg6} />
@@ -131,327 +155,12 @@ function Cancellation() {
               </div>
             </div>
           </div>
+           )
+          })}
 
 
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img' >
-                <img src={matchImg2} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img'>
-                <img src={matchImg3} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img' >
-                <img src={matchImg3} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img' >
-                <img src={matchImg4} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img' >
-                <img src={matchImg5} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img'>
-                <img src={matchImg6} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img'>
-                <img src={matchImg6} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='cancel-carditems'>
-            <div class="cancel-card">
-              <div className='cancel-main-titile'>
-                <h3>Tournament name</h3>
-              </div>
-              <div className='cancel-team-img'>
-                <img src={matchImg6} />
-              </div>
-              <div className='cancel-rule'>
-                <i class="fa fa-gavel rule-icon" onClick={handleOpen} aria-hidden="true"></i>
-
-              </div>
-
-              <div className='cancel-time-section'>
-                <h6>match time</h6>
-                <p className='cancellPage-match-time'>3:00</p>
-                <span>idp time</span>
-                <p className='cancellPage-idp-time'>2:45</p>
-              </div>
-              <div className='cancel-date'>
-                <p className='cancel-matchtitle'>Match date</p>
-                <span classname="cancel-matchdate">16-01-2022</span>
-              </div>
-              <div className='cancel-progress-bar'>
-                <progress value="3333" max="10000">
-
-                </progress>
-
-                <p className='cancellPage-progressbar-left-text'>100 Joined</p>
-                <p className='cancellPage-progressbar-right-text'>400 Spot left</p>
-              </div>
-              <div className='cancel-reg-section'>
-                <h6>Hosted By</h6>
-                <p>E-Sports Team</p>
-
-                {/* <a >reg now</a> */}
-                <Link to={'/view_page'} >VIEW</Link>
-              </div>
-            </div>
-          </div>
+        
+        
 
 
         </div>

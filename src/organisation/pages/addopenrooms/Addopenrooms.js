@@ -198,9 +198,7 @@ function Addopenrooms() {
                 </div>
               </div>
               <div class="uk-margin">
-                <FormControl sx={{ m: 1, minWidth: 300 }} style ={{
-                  marginLeft: '0px'
-                }}>
+                <FormControl sx={{ m: 1, minWidth: 120 }}>
                   <Select
                     value={selectSlot}
                     onChange={handleSelect}
