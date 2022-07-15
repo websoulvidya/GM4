@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { useForm } from 'react-hook-form';
@@ -445,5 +445,5 @@ function ScrimsReg() {
 
   );
 }
->>>>>>> d1fce7414b40943d3781cab63f3c1035a658d58a
+
 export default ScrimsReg;
